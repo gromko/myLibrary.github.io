@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Лінзи. Оптична сила й фокусна відстань лінзи. Отримання зображень за допомогою лінзи. Формула тонкої лінзи &raquo; mozok.click</title>
+<meta name="description" content="Оптична сила й фокусна відстань лінзи. У наш час ніхто не замислюється над тим, що саме застосування лінз істотно пришвидшило розвиток цивілізації людей." />
+<meta name="keywords" content="пришвидшило, істотно, розвиток, цивілізації, людей, застосування, замислюється, фокусна, відстань, лінзи, ніхто, Оптична" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2312-lnzi-optichna-sila-y-fokusna-vdstan-lnzi-otrimannya-zobrazhen-za-dopomogoyu-lnzi-formula-tonkoyi-lnzi.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Лінзи. Оптична сила й фокусна відстань лінзи. Отримання зображень за допомогою лінзи. Формула тонкої лінзи</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2312").Button("#infc2312"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2312" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2312" class="infcont">
+			<ul>
+				<li><i>Переглядів: 55823</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 28-01-2018, 16:08</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2312'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2312-lnzi-optichna-sila-y-fokusna-vdstan-lnzi-otrimannya-zobrazhen-za-dopomogoyu-lnzi-formula-tonkoyi-lnzi.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2312'); return false;">1</a></li>
+		<li><a href="2312-lnzi-optichna-sila-y-fokusna-vdstan-lnzi-otrimannya-zobrazhen-za-dopomogoyu-lnzi-formula-tonkoyi-lnzi.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2312'); return false;">2</a></li>
+		<li><a href="2312-lnzi-optichna-sila-y-fokusna-vdstan-lnzi-otrimannya-zobrazhen-za-dopomogoyu-lnzi-formula-tonkoyi-lnzi.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2312'); return false;">3</a></li>
+		<li><a href="2312-lnzi-optichna-sila-y-fokusna-vdstan-lnzi-otrimannya-zobrazhen-za-dopomogoyu-lnzi-formula-tonkoyi-lnzi.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2312'); return false;">4</a></li>
+		<li><a href="2312-lnzi-optichna-sila-y-fokusna-vdstan-lnzi-otrimannya-zobrazhen-za-dopomogoyu-lnzi-formula-tonkoyi-lnzi.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2312'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/28/index.html" ><i>28-01-2018, 16:08</i></a></span>
+	<h3 class="btl"><span id="news-title">Лінзи. Оптична сила й фокусна відстань лінзи. Отримання зображень за допомогою лінзи. Формула тонкої лінзи</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2312" style="display:inline;"><p>Оптична сила й фокусна відстань лінзи. У наш&nbsp;час ніхто не замислюється над тим, що саме застосування лінз істотно пришвидшило розвиток цивілізації людей. Адже за допомогою лінз вдалося &laquo;проникнути&raquo; в таємниці мікросвіту та Всесвіту! Лінзи (мал. 137) дали людині можливість побачити невидимі неозброєним оком об&rsquo;єкти й ті, що перебувають на великій відстані, а також фіксувати візуальну інформацію за допомогою фото- та відеозйомки.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-150.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Лінза &mdash; прозоре тіло, обмежене з двох боків сферичними поверхнями, або з одного боку сферичною, а з другого &mdash; плоскою поверхнею.</p>
+<p style="word-spacing: 1.1px;">За формою лінзи поділяють на опуклі &mdash; лінзи, що посередині товщі, ніж біля країв (мал. 138, а), та увігнуті &mdash; лінзи, що посередині тонші (мал. 138, б).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-151.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо товщина лінзи b у багато разів менша від радіусів сферичних поверхонь Я<sub>х</sub>&nbsp;та R<sub>2</sub>, що її обмежують, то така лінза називається тонкою лінзою (мал. 139).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-152.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Далі, говорячи про лінзу, ми завжди матимемо на увазі тонку лінзу. Для тонкої лінзи можна вважати, що вся лінза лежить в одній площині.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Для характеристики лінз введені такі поняття.</p>
+<p style="word-spacing: 1.1px;">Головна оптична вісь &mdash; пряма ОО<sub>2</sub>, яка проходить через центри сферичних поверхонь, що обмежують лінзу (мал. 139, а, б).</p>
+<p style="word-spacing: 1.1px;">Оптичний центр лінзи &mdash; точка О, що лежить на головній оптичній осі в центрі лінзи (мал. 140, а, б). Промінь світла, що проходить через оптичний центр лінзи, не змінює свого напрямку.</p>
+<p style="word-spacing: 1.1px;">Зазвичай опуклі лінзи є збиральними (мал. 140, а), а увігнуті &mdash; розсіювальними (мал. 140, б).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-153.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Промені, що падають на збиральну лінзу паралельно головній оптичній осі, після заломлення в лінзі перетинаються в одній точці, яку називають фокусом лінзи й позначають F (мал. 140, а, б, с. 87).</p>
+<p style="word-spacing: 1.1px;">Кожна збиральна лінза має два фокуси, розташовані на однакових відстанях по обидва боки від лінзи. Фокус збиральної лінзи називають дійсним, оскільки в ньому перетинаються промені (мал. 140, а, с. 87).</p>
+<p style="word-spacing: 1.1px;">Якщо направити на розсіювальну лінзу пучок променів, що паралельні головній оптичній осі, то після заломлення в лінзі вони вийдуть розбіжним пучком (мал. 140, б, с. 87). Однак їхні уявні продовження зберуться в одній точці на головній оптичній осі, яку називають уявним фокусом лінзи й позначають F. Кожна розсіювальна лінза також має два фокуси, які розташовані на однакових відстанях по обидва боки від лінзи.</p>
+<p style="word-spacing: 1.1px;">Слід зазначити, що одна й та сама лінза може бути як збиральною, так і розсіювальною. Наприклад, скляна двоопукла лінза в повітрі є збиральною, а якщо її занурити в рідину, що має абсолютний показник заломлення більший, ніж у скла, то лінза буде розсіювальною!</p>
+<p style="word-spacing: 1.1px;">Фокусна відстань &mdash; відстань від оптичного центра лінзи до її фокуса. Фокусну відстань також позначають символом F. Вимірюють фокусну відстань у метрах.</p>
+<p style="word-spacing: 1.1px;">Фокусну відстань збиральної лінзи домовилися вважати додатною (F &gt; 0), а розсіювальної &mdash; від&rsquo;ємною (F &lt; 0).</p>
+<p style="word-spacing: 1.1px;">Більш опукла лінза сильніше заломлює промені, отже, вона має меншу фокусну відстань.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Оптична сила лінзи &mdash; це фізична величина, що обернена до фокусної відстані й характеризує заломлювальні властивості лінзи. Оптичну силу</p>
+<p style="word-spacing: 1.1px;">лінзи позначають символом D, та визначають за формулою:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-154.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Одиницю оптичної сили лінзи називають діоптрія.</p>
+<p style="word-spacing: 1.1px;">1 діоптрія (дптр) &mdash; це оптична сила лінзи з фокусною відстанню 1 м.</p>
+<p style="word-spacing: 1.1px;">Якщо лінза збиральна, то її оптична сила є додатною (D &gt; 0). Оптична сила розсіювальної лінзи &mdash; від&rsquo;ємна (D &lt; 0).</p>
+<p style="word-spacing: 1.1px;">Отримання зображень за допомогою лінзи. Будь-який предмет можна уявити як сукупність точок. Кожна точка предмета світиться власним або відбитим світлом і випускає промені в усіх напрямках. Якщо промені, що виходять зі світної точки, після заломлення в лінзі перетинаються, то точка перетину і є зображенням світної точки. Нагадуємо, якщо після заломлення в лінзі перетинаються дійсні промені, то отримане зображення називають дійсним. Якщо промені, що йдуть від світної точки, після заломлення в лінзі розбігаються, то перетинатися можуть лише їхні уявні продовження, і таке зображення називають уявним.</p>
+<p style="word-spacing: 1.1px;">Зображення світної точки &mdash; це точка перетину заломлених у лінзі променів (або уявних продовжень променів), що виходять зі світної точки.</p>
+<p style="word-spacing: 1.1px;">Для побудови зображення світної точки з усієї сукупності світлових променів, що з неї виходять, використовують такі:</p>
+<p style="word-spacing: 1.1px;">промінь, що проходить через оптичний центр лінзи (цей промінь не заломлюється й не змінює свого напрямку);</p>
+<p style="word-spacing: 1.1px;">промінь, що йде до лінзи паралельно головній оптичній осі (після заломлення в збиральній лінзі цей промінь проходить через фокус, а у випадку розсіювальної лінзи цей промінь після заломлення в лінзі буде мати такий напрямок, нібито він виходить з фокуса); промінь, що проходить через фокус і падає на збиральну лінзу (згідно з властивістю оборотності променів, після заломлення в лінзі цей промінь іде паралельно головній оптичній осі).</p>
+<p style="word-spacing: 1.1px;">На малюнку 141 показано зразок побудови зображення предмета, отриманого за допомогою збиральної лінзи.</p>
+<p style="word-spacing: 1.1px;">Збиральна лінза на малюнках схематично зображується у вигляді двосторонньої стрілки. На малюнку необхідно показати оптичний центр лінзи, головну оптичну вісь, фокуси F по обидва боки від лінзи.</p>
+<p style="word-spacing: 1.1px;">Предмет найчастіше зображають у вигляді стрілки.</p>
+<p style="word-spacing: 1.1px;">Для побудови зображення верхньої точки В предмета застосуємо два промені (надалі при побудові завжди будемо використовувати саме два промені). Перший промінь виходить з точки В і, не заломлюючись, проходить через оптичний центр лінзи. Другий промінь проводимо з точки В паралельно головній оптичній осі до лінзи. Після лінзи промінь проходить через фокус до перетину з першим променем. Точка перетину В<sub>х</sub>&nbsp;і є зображенням верхньої точки предмета.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-155.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мол. 141. Побудова зображення предмета, отриманого збиральною лінзою</p>
+<p style="word-spacing: 1.1px;">Оскільки предмет розташовано так, що його нижня точка А міститься на головній оптичній осі, то її зображення також буде міститись на головній оптичній осі. Для цього необхідно опустити перпендикуляр з отриманої точки В<sub>х</sub>&nbsp;на головну оптичну вісь. Як видно з побудови, отримане зображення є зменшеним і перевернутим.</p>
+<p style="word-spacing: 1.1px;">Розглянемо зразок побудови зображення предмета, отриманого за допомогою розсіювальної лінзи (мал. 142, с. 90).</p>
+<p style="word-spacing: 1.1px;">Зверніть увагу, як позначається на малюнках розсіювальна лінза.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-156.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Як і в першому випадку, починаємо з променя, що виходить з верхньої точки предмета і проходить через оптичний центр лінзи.</p>
+<p style="word-spacing: 1.1px;">Другий промінь проводимо з верхньої точки предмета до лінзи паралельно головній оптичній осі. Розсіювальна лінза заломлює промені так, що після виходу з лінзи промені йдуть розбіжним пучком. Тому, щоб відобразити подальший напрямок другого променя, необхідно спочатку побудувати уявний промінь (пунктирна лінія) від фокуса лінзи, що міститься по один бік з предметом, до точки на лінзі, куди падає даний промінь, а після лінзи &mdash; продовжити його суцільною лінією (дійсний промінь).</p>
+<p style="word-spacing: 1.1px;">У випадку розсіювальної лінзи перетинаються не два дійсні промені, а дійсний і уявний. У такому разі отримане зображення називається уявним. Як видно з побудови, зображення предмета зменшене і пряме (не перевернуте).</p>
+<p style="word-spacing: 1.1px;">Як відомо, за допомогою однієї й тієї самої лінзи можна отримати або збільшене, або зменшене зображення предмета. Вид зображення, яке дає збиральна лінза, визначається відстанню від предмета до лінзи.</p>
+<p style="word-spacing: 1.1px;">Відстань від предмета до лінзи прийнято позначати d, а відстань від лінзи до зображення f.</p>
+<p style="word-spacing: 1.1px;">У розглянутому випадку (мал. 141, с. 89) відстань від предмета до лінзи була більшою, ніж дві фокусні відстані d &gt; 2F. За таких умов збиральна лінза формує дійсне, зменшене та перевернуте зображення. Такий тип зображення формується, наприклад, на сітківці ока.</p>
+<p style="word-spacing: 1.1px;">Будемо поступово наближати предмет до лінзи і слідкувати, як змінюється його зображення (мал. 143).</p>
+<p style="word-spacing: 1.1px;">У випадку, коли предмет перебуває в подвійному фокусі d = 2F, зображення дійсне, перевернуте й таких само розмірів, як і предмет.</p>
+<p style="word-spacing: 1.1px;">При 2F &gt; d &gt; F зображення дійсне, перевернуте й збільшене. Таке зображення дозволяє одержати проекційна апаратура на екрані.</p>
+<p style="word-spacing: 1.1px;">При d = F зображення не утворюється.</p>
+<p style="word-spacing: 1.1px;">При d &lt; F зображення уявне, пряме і збільшене. Таке зображення можна отримати за допомогою лупи або мікроскопа.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-157.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мол. 143. Види зображень від збиральної лінзи</p>
+<p style="word-spacing: 1.1px;">Розсіювальна лінза завжди дає уявне, пряме й зменшене зображення. Зображення завжди міститься між лінзою та фокусом. (Переконайтесь у цьому самостійно.)</p>
+<p style="word-spacing: 1.1px;">Формула тонкої лінзи. Існує математична залежність між відстанню d від предмета до лінзи, відстанню f від зображення до лінзи та фокусною відстанню F лінзи. Ця залежність називається формулою тонкої лінзи й записується так:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-158.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Користуючись формулою тонкої лінзи для розв&rsquo;язування задач, слід мати на увазі:</p>
+<p style="word-spacing: 1.1px;">■ відстань f слід брати зі знаком мінус, якщо зображення є уявним, і зі знаком плюс, коли зображення дійсне;</p>
+<p style="word-spacing: 1.1px;">■ фокусна відстань F збиральної лінзи є додатною, розсіювальної &mdash; від&rsquo;ємною.</p>
+<p style="word-spacing: 1.1px;">Формуємо КОМПЕТЕНТНІСТЬ</p>
+<p style="word-spacing: 1.1px;">Я поміркую й зможу пояснити</p>
+<p style="word-spacing: 1.1px;">1. Чим розсіювальна лінза відрізняється від збиральної?</p>
+<p style="word-spacing: 1.1px;">2. Чому фокус розсіювальної лінзи називають уявним?</p>
+<p style="word-spacing: 1.1px;">3. Що таке оптична сила лінзи? Як її визначають?</p>
+<p style="word-spacing: 1.1px;">4. Які промені зручно використовувати для побудови зображення, одержуваного за допомогою лінзи?</p>
+<p style="word-spacing: 1.1px;">5. Від чого залежить характер зображень, одержуваних за допомогою збиральної лінзи?</p>
+<p style="word-spacing: 1.1px;">6. Які фізичні величини пов&rsquo;язує формула тонкої лінзи?</p>
+<p style="word-spacing: 1.1px;">7. Яких правил слід дотримуватися, застосовуючи формулу тонкої лінзи?</p>
+<p style="word-spacing: 1.1px;">Я вмію досліджувати й експериментувати</p>
+<p style="word-spacing: 1.1px;">Збиральну лінзу можна виготовити самостійно та перевірити її в дії. Для цього потрібні: гребінець, ліхтарик, склянка з водою і краплина молока. Спрямуйте світло від ліхтарика через гребінець на центр склянки з водою. Подивіться на хід променів зверху. Щоб краще було видно, як заломлюються промені у склянці, крапніть у воду молока. Можете спробувати визначити фокусну відстань та оптичну силу своєї &laquo;лінзи&raquo;.</p>
+<p style="word-spacing: 1.1px;">Вчимося розв'язувати задачі</p>
+<p style="word-spacing: 1.1px;">Задача. За допомогою лінзи з фокусною відстанню 20 см на екрані одержали зображення предмета. Відстань від лінзи до зображення &mdash; 1 м. На якій відстані від лінзи міститься предмет? Яким буде зображення?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-159.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язання:</p>
+<p style="word-spacing: 1.1px;">Оскільки зображення одержано на екрані, то лінза збиральна. Виходячи з умови задачі f &gt; 2F й аналізуючи можливі види зображень від збиральної лінзи (мал. 143, с. 91), з&rsquo;ясовуємо: предмет міститься між фокусною та подвійною фокусною відстанню. Зробимо креслення (мал. 144).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-160.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Значення d визначимо з формули тонкої лінзи:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-161.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">враховую</p>
+<p style="word-spacing: 1.1px;">чи, що всі величини є додатними.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-162.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Відповідь: d = 0,25 м; зображення дійсне, збільшене й перевернуте.</p>
+<p style="word-spacing: 1.1px;">Я можу застосовувати знання й розв'язувати задачі</p>
+<p style="word-spacing: 1.1px;">В права 13</p>
+<p style="word-spacing: 1.1px;">1.</p>
+<p style="word-spacing: 1.1px;">Скопіюйте малюнок 145 у зошит і для кожного випадку побудуйте зображення предмета АВ у збиральній лінзі. Схарактеризуйте одержані зображення.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-163.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">2.</p>
+<p style="word-spacing: 1.1px;">На малюнку 146 показано головну оптичну вісь (KN) лінзи, світну точку S та її зображення S<sub>1</sub>. Скопіюйте малюнок у зошит і за допомогою відповідних побудов визначте розташування оптичного центра та фокусів лінзи. Визначте тип лінзи й тип зображення.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-164.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3.</p>
+<p style="word-spacing: 1.1px;">Відстань від предмета до збиральної лінзи &mdash; 15 см. Фокусна відстань лінзи &mdash; 20 см. Визначте відстань від зображення до лінзи.</p>
+<p style="word-spacing: 1.1px;">4.</p>
+<p style="word-spacing: 1.1px;">Предмет розташовано на відстані 1 м від лінзи. Уявне зображення предмета розташоване на відстані 25 см від лінзи. Визначте оптичну силу лінзи. Якою є ця лінза &mdash; збиральною чи розсіювальною?</p>
+<p style="word-spacing: 1.1px;">5.</p>
+<p style="word-spacing: 1.1px;">Відстань від уявного зображення предмета до збиральної лінзи, оптична сила якої 2 дптр, становить 0,4 м. Визначте відстань від лінзи до предмета.</p>
+<p style="word-spacing: 1.1px;">6.</p>
+<p style="word-spacing: 1.1px;">Свічка стоїть на відстані 12,5 см від збиральної лінзи, оптична сила якої становить 10 дптр. На якій відстані від лінзи буде отримано зображення і яким воно буде?</p>
+<p style="word-spacing: 1.1px;">7.</p>
+<p style="word-spacing: 1.1px;">За допомогою лінзи на екрані отримали чітке зображення предмета. Визначте оптичну силу лінзи, якщо предмет розташовано на відстані 60 см від неї, а відстань між предметом та екраном становить 90 см.</p>
+<p style="word-spacing: 1.1px;">8*.</p>
+<p style="word-spacing: 1.1px;">Якщо відстань від предмета до лінзи 36 см, то висота зображення &mdash; 10 см. Якщо предмет наблизити до лінзи так, щоб відстань між ними становила 24 см, то висота зображення дорівнюватиме 20 см. Визначте фокусну відстань лінзи.</p>
+<p style="word-spacing: 1.1px;">9*.</p>
+<p style="word-spacing: 1.1px;">Предмет і його зображення розміщені симетрично відносно фокуса лінзи. Відстань від предмета до фокуса лінзи &mdash; 4 см. Визначте фокусну відстань лінзи.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-165.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">10*.</p>
+<p style="word-spacing: 1.1px;">На малюнку 147 показано хід променя АВ до лінзи й ВС після заломлення в лінзі. Побудуйте подальший хід променя DE.</p>
+<p style="word-spacing: 1.1px;">11*.</p>
+<p style="word-spacing: 1.1px;">Симетричну лінзу розрізали точно навпіл по площині симетрії. Яку частину початкової оптичної сили матимуть дві утворені лінзи?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">ЛАБОРАТОРНА РОБОТА 4</p>
+<p style="word-spacing: 1.1px;">Визначення фокусної відстані та оптичної сили тонкої лінзи</p>
+<p style="word-spacing: 1.1px;">Мета роботи експериментально визначити відстані від джерела світла до лінзи та від лінзи до екрана за умови чіткого зображення на екрані. Обчислити фокусну відстань збиральної лінзи та її оптичну силу.</p>
+<p style="word-spacing: 1.1px;">Прилади та матеріали оптична лава з лінзою, екраном і джерелом світла (ліхтарик, лазерна указка, свічка), вимірювальна стрічка.</p>
+<p style="word-spacing: 1.1px;">вказівки щодо виконання роботи</p>
+<p style="word-spacing: 1.1px;">1. За допомогою оптичної лави розташуйте джерело світла, збиральну лінзу в оправі й екран на однаковій висоті (мал. 148). У разі відсутності оптичної лави всі предмети розташуйте на горизонтальній поверхні, а вимірювання проведіть за допомогою лінійки або вимірювальної стрічки.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-166.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">2. Пересуваючи збиральну лінзу, добийтеся чіткого зображення фігурного отвору освітлювача на екрані. Виміряйте відстань l між джерелом світла й екраном, відстань d від джерела світла до лінзи та відстань f від лінзи до екрана. Запишіть результати вимірювань у таблицю.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-167.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Змініть відстань l між джерелом світла й екраном і виконайте пункт 2 із вказівок до виконання роботи.</p>
+<p style="word-spacing: 1.1px;">4. Змініть відстань l ще один раз і знову виконайте пункт 2 із вказівок до виконання роботи.</p>
+<p style="word-spacing: 1.1px;">5. Обчисліть значення фокусної відстані збиральної лінзи для кожного із трьох дослідів за формулою:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-168.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">і запишіть результати об</p>
+<p style="word-spacing: 1.1px;">числень у таблицю.</p>
+<p style="word-spacing: 1.1px;">6. Обчисліть оптичну силу збиральної лінзи для кожного досліду за формулою:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-169.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">і запишіть результати обчислень у таблицю.</p>
+<p style="word-spacing: 1.1px;">7. Порівняйте значення фокусної відстані збиральної лінзи, одержані в кожному з трьох дослідів, і зробіть висновки. Додайте висновки від порівняння значень оптичної сили, що одержані в різних дослідах.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2353-pdruchnik-fzika-9-klas-zasyekna-poglibleniy-rven-chitati-onlayn.html">Фізика 9 клас Засєкіна (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2313-nayprostsh-optichn-priladi.html">Найпростіші оптичні прилади</a></li><li><a href="2116-oko-yak-optichniy-prilad-zr-bachennya-vadi-zoru-ta-yih-korekcya.html">Око як оптичний прилад.  Зір і бачення. Вади зору та їх корекція</a></li><li><a href="2114-lnzi-optichna-sila-ta-fokusna-vdstan-lnzi-formula-tonkoyi-lnzi-otrimannya-zobrazhen-za-dopomogoyu-lnzi.html">Лінзи. Оптична сила та фокусна відстань лінзи. Формула тонкої лінзи. Отрима ...</a></li><li><a href="609-pobudova-zobrazhen-u-lnzah-deyak-optichn-pristroyi-formula-tonkoyi-lnzi.html">Побудова зображень у лінзах. Деякі оптичні пристрої. Формула тонкої лінзи</a></li><li><a href="608-lnzi-optichna-sila-lnzi.html">Лінзи. Оптична сила лінзи</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

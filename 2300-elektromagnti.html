@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Електромагніти &raquo; mozok.click</title>
+<meta name="description" content="Магнітне поле котушки зі струмом. Як було зясовано в попередніх параграфах, навколо будь-якого провідника зі струмом існує магнітне поле. За допомогою установки, що зображена на малюнку 38," />
+<meta name="keywords" content="струмом, магнітне, витка, навколо, насипані, залізні, замкнути, електричне, ошурки, розташуються, перетину, пластинкою, точок, колами, пластинку, горизонтальну, малюнку, параграфах, якого, попередніх" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2300-elektromagnti.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Електромагніти</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2300").Button("#infc2300"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2300" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2300" class="infcont">
+			<ul>
+				<li><i>Переглядів: 9218</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 28-01-2018, 15:54</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2300'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2300-elektromagnti.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2300'); return false;">1</a></li>
+		<li><a href="2300-elektromagnti.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2300'); return false;">2</a></li>
+		<li><a href="2300-elektromagnti.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2300'); return false;">3</a></li>
+		<li><a href="2300-elektromagnti.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2300'); return false;">4</a></li>
+		<li><a href="2300-elektromagnti.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2300'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/28/index.html" ><i>28-01-2018, 15:54</i></a></span>
+	<h3 class="btl"><span id="news-title">Електромагніти</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2300" style="display:inline;"><p>Магнітне поле котушки зі струмом. Як було з&rsquo;ясовано в попередніх параграфах, навколо будь-якого провідника зі струмом існує магнітне поле. За допомогою установки, що зображена на малюнку 38, а можна спостерігати магнітне поле витка зі струмом. Якщо замкнути електричне коло, то залізні ошурки, насипані на горизонтальну пластинку, розташуються колами навколо точок перетину витка з пластинкою (мал. 38, б). Це пояснюється тим, що виток зі струмом можна уявно поділити на велику кількість ділянок, кожну з яких можна вважати близькою до прямолінійного провідника зі струмом. Більш потужне магнітне поле можна отримати за допомогою котушки, що складається з великої кількості витків дроту, по якому протікає електричний струм (мал. 38, в). У цьому разі магнітні поля окремих витків взаємно підсилюються й результуюче магнітне поле виявляється значно потужнішим. Як видно на малюнку 38, г, лінії індукції магнітного поля котушки всередині її витків мають вигляд паралельних прямих, розташованих уздовж осі котушки. Лінії індукції магнітного поля навколо котушки є замкнутими кривими.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-30.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Щоб отримати магнітне поле з паралельними магнітними силовими лініями, як кажуть, однорідне магнітне поле, застосовують довгі котушки, які отримали назву соленоїди (від грец. solen &mdash; трубка). У такому випадку напрямок магнітних силових ліній і напрямок вектора індукції магнітного поля збігаються.</p>
+<p style="word-spacing: 1.1px;">Розгляньте ще раз уважно малюнок 38, г. Що вам нагадує вигляд магнітного поля котушки? Здогадались? Якщо ні, зверніться до малюнка 7, в у &sect; 2 (с. 12). Магнітне поле котушки зі струмом подібне до магнітного поля плоского постійного магніту. Це підтверджено й дослідами: на кінцях котушки магнітне поле інтенсивніше, тобто котушка зі струмом має два полюси &mdash; північний і південний.</p>
+<p style="word-spacing: 1.1px;">У магнітному полі Землі котушка зі струмом поводить себе так само, як і магнітна стрілка. Якщо котушку зі струмом вільно підвісити на достатньо довгих і гнучких провідниках, то вона встановиться таким чином, що один її кінець вказуватиме на північ, а другий &mdash; на південь.</p>
+<p style="word-spacing: 1.1px;">Магнітні полюси котушки можна визначити за допомогою магнітної стрілки або знаючи напрямок струму у витках котушки (за правилом свердлика чи правої руки).</p>
+<p style="word-spacing: 1.1px;">Правило свердлика. Якщо ручку свердлика обертати в напрямку струму у витках котушки, то напрямок поступального руху його вістря вказуватиме на північний полюс магнітного поля котушки (мал. 39, а).</p>
+<p style="word-spacing: 1.1px;">Правило правої руки. Якщо праву руку розмістити так, щоб чотири пальці вказували на напрямок струму у витках котушки, то відігнутий великий палець вказуватиме на північний полюс магнітного поля котушки (мал. 39, б).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-31.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Поза котушкою силові лінії магнітного поля спрямовані від його північного полюса до південного.</p>
+<p style="word-spacing: 1.1px;">За цими самими правилами можна визначити напрямок струму у витках котушки (полярність її включення), якщо відоме розміщення полюсів її магнітного поля.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Як посилити магнітну дію котушки зі струмом. Можливо, ви вже й самостійно можете зробити такі висновки: щоб підсилити магнітне поле котушки, потрібно збільшити кількість витків та/або збільшити силу струму в її витках. Переконаємось у цьому на дослідах.</p>
+<p style="word-spacing: 1.1px;">Розглянемо електричне коло, яке складається з послідовно з&rsquo;єднаних джерела струму, котушки, реостата та вимикача (мал. 40). Для виявлення магнітного поля котушки зі струмом використаємо залізні цвяхи. Замкнемо коло. Цвяхи притягнуться до котушки зі струмом унаслідок дії її магнітного поля. За допомогою реостата змінюватимемо силу струму в котушці. При збільшенні сили струму дія магнітного поля котушки зі струмом підсилюється (мал. 40, б). При значному збільшенні значення сили струму побачимо, що цвяхи притягуватимуться до котушки навіть тоді, коли вона перебуватиме на досить значній відстані від них. При зменшенні сили струму в котушці її магнітне поле слабшає.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-32.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">А чи існує спосіб посилення магнітного поля котушки зі струмом без збільшення сили струму й кількості витків? Як виявилось, магнітне поле котушки при сталій силі струму в ній можна значно підсилити, якщо помістити в неї залізне осердя. Розглянемо котушку зі струмом, до якої притягуються залізні цвяхи (мал. 41, а).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-33.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 41. Дослідження магнітної дії котушки залежно від наявності залізного осердя</p>
+<p style="word-spacing: 1.1px;">Не змінюючи силу струму у витках котушки, помістимо в неї залізне осердя (мал. 41, б). Помітимо, що до котушки з осердям значно інтенсивніше притягуються цвяхи. Отже, завдяки наяв-</p>
+<p style="word-spacing: 1.1px;">ності осердя дія магнітного поля котушки зі струмом збільшилася. (Спробуйте пояснити цю властивість самостійно. Для цього ще раз зверніться до &sect; 3.)</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-34.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Електромагніти. Котушку із залізним осердям усередині називають електромагнітом.</p>
+<p style="word-spacing: 1.1px;">Найпростіший електромагніт можна виготовити, намотавши кілька витків ізольованого дроту на залізний цвях (гвинт). Якщо кінці провідника приєднати до гальванічного елемента, то виготовлений вами електромагніт почне притягувати маленькі металеві предмети, наприклад скріпки (мал. 42, а).</p>
+<p style="word-spacing: 1.1px;">Для збільшення притягальної дії електромагнітів використовують дві котушки, які під&rsquo;єднують до джерела струму послідовно й закріплюють на U-подібному осерді (мал. 42, б).</p>
+<p style="word-spacing: 1.1px;">У техніці та на виробництві широко використовують промислові електромагніти (мал. 43).</p>
+<p style="word-spacing: 1.1px;">Речовини, що намагнічуються в зовнішньому магнітному полі й підсилюють його, поділяються на магнітотверді та магнітом&rsquo;які матеріали. Магнітотверді матеріали використовуються для виготовлення постійних магнітів. Такі матеріали довго зберігають стан намагніченості навіть після припинення дії зовнішнього магнітного поля.</p>
+<p style="word-spacing: 1.1px;">Осердя промислових електромагнітів виготовляють з магнітом&rsquo;яких матеріалів. Котушки таких магнітів виготовляють з великою кількістю витків, намотуючи їх у декілька шарів. Електромагніти з осердям з магнітом&rsquo;яких матеріалів знайшли широке застосування, оскільки швидко розмагнічуються при вимиканні струму, а їх магнітну дію можна легко регулювати, змінюючи силу струму в котушці. Електромагніти з великою підйомною силою використовують для перенесення залізних виробів та брухту чорних металів.</p>
+<p style="word-spacing: 1.1px;">Електромагніти використовують не лише для перенесення металобрухту. У магнітному сепараторі (мал. 44) електромагніт використовують для очищення зерна від насіння</p>
+<p style="word-spacing: 1.1px;">бур&rsquo;янів. Для цього в зерно додають дрібні залізні ошурки, які не прилипають до гладенької поверхні зерна, але прилипають до насіння бур&rsquo;янів. З бункера зерно потрапляє на барабан, усередині якого є електромагніт. Коли барабан обертається, насінини бур&rsquo;янів разом із залізними ошурками притягуються до нього, а зерно &mdash; ні. Завдяки цьому й відбувається очищення зерна.</p>
+<p style="word-spacing: 1.1px;">Електромагніти є основними складовими частинами електромагнітних реле, які працюють при порівняно малих струмах, але дозволяють автоматично замикати та розмикати електричні кола з великими робочими значеннями сили струму.</p>
+<p style="word-spacing: 1.1px;">Формуємо КОМПЕТЕНТНІСТЬ</p>
+<p style="word-spacing: 1.1px;">Я поміркую й зможу пояснити</p>
+<p style="word-spacing: 1.1px;">1. Як визначають напрямок магнітного поля всередині колового провідника зі струмом? Котушки зі струмом? Як змінити напрямок магнітного поля колового провідника або котушки зі струмом на протилежний?</p>
+<p style="word-spacing: 1.1px;">2. Чим відрізняється магнітне поле всередині котушки зі струмом від магнітного поля одного витка за всіх інших однакових умов?</p>
+<p style="word-spacing: 1.1px;">3. Назвіть способи зміни величини індукції магнітного поля котушки зі струмом.</p>
+<p style="word-spacing: 1.1px;">4. Що називають електромагнітами? Назвіть основні властивості електромагнітів. Наведіть приклади використання електромагнітів.</p>
+<p style="word-spacing: 1.1px;">5. Чому при виготовленні електромагнітів на осердя потрібно намотувати ізольований провід?</p>
+<p style="word-spacing: 1.1px;">Я вмію досліджувати й експериментувати</p>
+<p style="word-spacing: 1.1px;">Виготовити електромагніт можна і в домашніх умовах (мал. 45). Для цього нам знадобляться: залізний цвях (довжиною 7-10 см); ізольований мідний дріт (товщиною 1 мм); наждачний папір; ізоляційна стрічка; батарейка.</p>
+<p style="word-spacing: 1.1px;">Намотайте мідний дріт на цвях. Зверніть увагу на те, щоб кожний наступний виток щільно прилягав до попереднього. Намотати дріт потрібно так, щоб залишилися вільні кінці. Для того щоб дріт не розмотувався, закріпіть його ізоляційною стрічкою. Далі за допомогою наждачного паперу зніміть ізоляцію з кінців дроту. З&rsquo;єднайте зачищені кінці дроту з полюсами батареї. Після цього ваш електромагніт буде притягувати маленькі металеві предмети.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-35.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Я можу застосовувати знання й розв'язувати задачі</p>
+<p style="word-spacing: 1.1px;">В права з</p>
+<p style="word-spacing: 1.1px;">1.</p>
+<p style="word-spacing: 1.1px;">Як буде поводитись котушка, якщо до неї наблизити постійний магніт (мал. 46, а)? Якою буде взаємодія двох котушок зі струмом (мал. 46, б)?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-36.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">2.</p>
+<p style="word-spacing: 1.1px;">Напрямок струму в обмотках електромагнітів визначте за даними малюнку 47. Відобразіть цей малюнок у зошиті. Позначте полюси магнітів. Намалюйте кілька ліній магнітної індукції біля обох магнітів і в просторі між ними.</p>
+<p style="word-spacing: 1.1px;">3.</p>
+<p style="word-spacing: 1.1px;">Електромагніт має дві обмотки. Чи залежить ефективність електромагніту від способу з&rsquo;єднання обмоток (мал. 48, а, 6)1</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-37.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4.</p>
+<p style="word-spacing: 1.1px;">Як зміняться покази динамометра, якщо замкнути електричне коло (мал. 49, а)? Укажіть, до яких полюсів джерела струму під&rsquo;єднані провідники А і В, якщо при проходженні по ним електричного струму покази динамометра зменшуються (мал. 49, б).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-38.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5.</p>
+<p style="word-spacing: 1.1px;">Чи можна так намотати обмотку, щоб у разі проходження електричного струму магнітне поле було відсутнє? Проілюструйте свою відповідь.</p>
+<p style="word-spacing: 1.1px;">6.</p>
+<p style="word-spacing: 1.1px;">Установіть полюси електромагніту (мал. 50). Як зміниться підйомна сила електромагніту, якщо повзунок реостата перемістити ліворуч?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-39.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">7.</p>
+<p style="word-spacing: 1.1px;">Намалюйте схему електричного кола, у якому під час замикання ключа буде вмикатись електрична плитка, а під час розмикання &mdash; електричні лампи (мал. 51).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-40.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">ЛАБОРАТОРНА РОБОТА N&deg; І</p>
+<p style="word-spacing: 1.1px;">Складання та випробування електромагніту</p>
+<p style="word-spacing: 1.1px;">Мета роботи навчитися складати прямий і дугоподібний електромагніт з готових деталей та перевірити залежність його дії від кількості витків і сили струму в котушці.</p>
+<p style="word-spacing: 1.1px;">Прилади та матеріали штативи універсальні, джерело живлення (батарея хімічних елементів), реостат, амперметр, вимикач, з&rsquo;єднувальні провідники, компас, деталі для складання електромагніту (пряме й П-подібне осердя, дві котушки, якір з гачком), набір тягарців і гир (до 10 кг), м&rsquo;яка підстилка або деко з піском.</p>
+<p style="word-spacing: 1.1px;">вказівки щодо виконання роботи</p>
+<p style="word-spacing: 1.1px;">1. Складіть електричне коло, з&rsquo;єднавши послідовно батарею, реостат (повзунок у центральному положенні), амперметр, вимикач та одну котушку, надіту на пряме осердя, закріплене у штативі.</p>
+<p style="word-spacing: 1.1px;">2. Замкніть коло й за допомогою компаса визначте магнітні полюси котушки.</p>
+<p style="word-spacing: 1.1px;">3. Підвішуючи тягарці, визначте, яку масу вантажу утримує електромагніт з однією котушкою. Увага! Для виконання досліду під електро-</p>
+<p style="word-spacing: 1.1px;">магнітом установіть деко з піском або постеліть м&rsquo;яку тканину, щоб не зіпсувати поверхню парти, якщо електромагніт не утримає тягарці.</p>
+<p style="word-spacing: 1.1px;">4. За допомогою реостата збільшуйте силу струму в колі до максимальної. Виявіть й опишіть, як змінилася притягальна дія магніту.</p>
+<p style="word-spacing: 1.1px;">5. Складіть електромагніт із двох котушок (мал. 52, а), надітих на пряме осердя. Котушки з&rsquo;єднайте послідовно (щоб на їх вільних кінцях утворилися різнойменні полюси). Перевірте полюси за допомогою компаса.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-41.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 52</p>
+<p style="word-spacing: 1.1px;">6. Перемістіть повзунок реостата в центральне положення. Замкніть коло й визначте, вантаж якої маси утримує прямий електромагніт із двох котушок. За допомогою реостата збільшуйте силу струму в колі до максимальної. Виявіть й опишіть, як змінилася притягальна дія магніту.</p>
+<p style="word-spacing: 1.1px;">7. Складіть підковоподібний електромагніт, надівши послідовно з&rsquo;єднані котушки на осердя у вигляді букви П так, щоб на вільних її кінцях були різнойменні полюси (мал. 52, б).</p>
+<p style="word-spacing: 1.1px;">8. Перемістіть повзунок на реостаті в центральне положення. Замкніть коло й визначте, вантаж якої маси утримує підковоподібний електромагніт.</p>
+<p style="word-spacing: 1.1px;">9. За допомогою реостата збільшуйте силу струму в колі до максимальної. Виявіть й опишіть, як змінилася притягальна дія магніту.</p>
+<p style="word-spacing: 1.1px;">10. Дані, отриманні в ході виконання завдань, запишіть у таблицю.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-42.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">11. Зробіть висновки.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2353-pdruchnik-fzika-9-klas-zasyekna-poglibleniy-rven-chitati-onlayn.html">Фізика 9 клас Засєкіна (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2301-dya-magntnogo-polya-na-provdnik-z-strumom-sila-ampera-dya-magntnogo-polya-na-provdnik-z-strumom.html">Дія магнітного поля на провідник зі струмом. Сила Ампера  Дія магнітного по ...</a></li><li><a href="2295-magntne-pole-ndukcya-magntnogo-polya.html">Магнітне поле. Індукція магнітного поля</a></li><li><a href="2105-dya-magntnogo-polya-na-provdnik-z-strumom-sila-ampera.html">Дія магнітного поля на провідник зі струмом. Сила Ампера</a></li><li><a href="2102-dosld-ersteda-ndukcya-magntnogo-polya.html">Дослід Ерстеда. Індукція магнітного поля</a></li><li><a href="597-magntne-pole-strumu-pravilo-sverdlika.html">Магнітне поле струму. Правило свердлика</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

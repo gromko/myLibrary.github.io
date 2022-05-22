@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Плоске та сферичне дзеркала &raquo; mozok.click</title>
+<meta name="description" content="Плоске дзеркало. Коли ви дивитесь на себе в плоске дзеркало, вам здається, що ваше зображення є реальним і міститься воно за дзеркалом, хоча там ніякого зображення немає. Це зображення утвор" />
+<meta name="keywords" content="зображення, дзеркало, завдяки, немає, утворюється, спільній, дзеркала, плоского, ніякого, міститься, плоске, дивитесь, здається, реальним, Плоске, дзеркалом" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2309-ploske-ta-sferichne-dzerkala.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Плоске та сферичне дзеркала</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2309").Button("#infc2309"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2309" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2309" class="infcont">
+			<ul>
+				<li><i>Переглядів: 8583</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 28-01-2018, 16:04</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2309'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2309-ploske-ta-sferichne-dzerkala.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2309'); return false;">1</a></li>
+		<li><a href="2309-ploske-ta-sferichne-dzerkala.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2309'); return false;">2</a></li>
+		<li><a href="2309-ploske-ta-sferichne-dzerkala.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2309'); return false;">3</a></li>
+		<li><a href="2309-ploske-ta-sferichne-dzerkala.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2309'); return false;">4</a></li>
+		<li><a href="2309-ploske-ta-sferichne-dzerkala.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2309'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/28/index.html" ><i>28-01-2018, 16:04</i></a></span>
+	<h3 class="btl"><span id="news-title">Плоске та сферичне дзеркала</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2309" style="display:inline;"><p>Плоске дзеркало. Коли ви дивитесь на себе в плоске дзеркало, вам здається, що ваше зображення є реальним і міститься воно за дзеркалом, хоча там ніякого зображення немає. Це зображення утворюється лише завдяки спільній дії плоского дзеркала та ока.</p>
+<p style="word-spacing: 1.1px;">Розглянемо, як око сприймає звичайний предмет без будь-яких дзеркал (мал. 115, а). Від кожної точки джерела світла (світної точки S) в усіх напрямках розходяться промені світла. Частина з них розбіжним пучком потрапляє в око. Око сприймає точку в тому місці, звідки йдуть промені, тобто в місці їх перетину, де насправді й розміщена світна точка S.</p>
+<p style="word-spacing: 1.1px;">Дійсне зображення світної точки утворюється в результаті перетину світлових променів, що йдуть від неї.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-118.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На малюнку 115, б показано, як сприймає око зображення точки в дзеркалі. Усі виділені промені (SO, SO<sub>v</sub>&nbsp;SO<sub>2</sub>) відбиваються від дзеркала відповідно до законів відбиття. Промінь SO падає на дзеркало під кутом 0&deg; і під таким самим кутом відбивається, не потрапляючи в око. Інші два відбиті промені потрапляють в око розбіжним пучком, й око бачить світну точку за дзеркалом у точці S'. Насправді в точці S' самі промені не сходяться, там сходяться їхні уявні продовження (на мал. 115, б &mdash; пунктирні лінії), тому таке зображення називають уявним.</p>
+<p style="word-spacing: 1.1px;">Уявне зображення &mdash; це зображення, отримане в результаті перетину не самих світлових променів, а їхніх уявних продовжень.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Плоске дзеркало завжди дає уявне зображення.</p>
+<p style="word-spacing: 1.1px;">Щоб упевнитись у тому, що точки S і S' симетричні відносно дзеркала, виконаємо простий дослід. Для досліду потрібне скло, дві свічки, сірники та лінійка. Розмістимо вертикально скляну пластину, що виконуватиме роль напівпрозорого дзеркала. Оскільки скло прозоре, то будемо бачити й усе те, що міститься за склом.</p>
+<p style="word-spacing: 1.1px;">Якщо запалити свічку й поставити її перед склом, то у склі побачимо її зображення. За склом поставимо таку саму незапалену свічку й пере-</p>
+<p style="word-spacing: 1.1px;">суватимемо її вздовж лінійки доти, поки вона стане здаватися запаленою. Це означає, що незапалена свічка та зображення запаленої свічки збігаються (мал. 116, а).</p>
+<p style="word-spacing: 1.1px;">Якщо тепер виміряти відстані від запаленої свічки до скла і відстань від скла до незапаленої свічки, то вони будуть однаковими (мал. 116, б).</p>
+<p style="word-spacing: 1.1px;">Отже, світна точка та її зображення в плоскому дзеркалі є симетричними.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-119.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Сферичні дзеркала. На малюнку 117 зображені приклади увігнутого та опуклого дзеркал. Точка О &mdash; оптичний центр сферичної поверхні дзеркала. Літерою С позначено вершину сферичної поверхні, яку називають полюсом дзеркала, або центром сферичної дзеркальної поверхні. Пряму ОС, що проходить через центр дзеркальної поверхні О та вершину дзеркала С, називають головною оптичною віссю дзеркала. Усі інші осі, проведені через точку О, називають побічними.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Якщо спрямувати промені паралельно головній оптичній осі увігнутого дзеркала (мал. 117, а), то після відбиття від поверхні дзеркала промені зберуться в точці F, яка лежить на його головній оптичній осі. Цю точку називають головним фокусом дзеркала.</p>
+<p style="word-spacing: 1.1px;">Якщо точкове джерело світла помістити у фокусі увігнутого дзеркала, то промені після відбиття від його поверхні, поширюватимуться паралельно головній оптичній осі дзеркала (згідно з оборотністю світлових променів).</p>
+<p style="word-spacing: 1.1px;">Відстань OF від вершини дзеркала до головного фокуса називають фокусною відстанню дзеркала, вона дорівнює половині радіуса ОС сферичної поверхні дзеркала, тобто OF = 0,5 ОС.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-120.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Фокусна відстань сферичного дзеркала дорівнює половині радіуса сфери, частиною якої є дзеркало,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-121.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Величину, обернену до фокусної відстані, називають оптичною силою D сферичного дзеркала,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-122.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Одиницею оптичної сили в СІ є діоптрія (дптр), [D] = 1 дптр = 1 м<sup>-1</sup>.</p>
+<p style="word-spacing: 1.1px;">Якщо ж спрямувати світлові промені паралельно головній оптичний осі на опукле дзеркало, то</p>
+<p style="word-spacing: 1.1px;">відбиті промені будуть розходитися (мал. 117, б). Їхні продовження перетинатимуться в головному фокусі опуклого дзеркала F, що лежить за ним. Оскільки в цій точці перетинаються не самі промені, а їхні продовження, це означає, що фокус опуклого дзеркала є уявним.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-123.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Отже, увігнуті дзеркала &mdash; збиральні, головний фокус у них дійсний. Опуклі дзеркала &mdash; розсіювальні, головний фокус у них уявний.</p>
+<p style="word-spacing: 1.1px;">На малюнку 118 зображено приклади побудови зображення предмета у сферичних дзеркалах. Розташування й розміри зображення, одержаного за допомогою увігнутого дзеркала, залежать від положення предмета щодо дзеркала. Опукле дзеркало дає тільки уявне, зменшене зображення предмета, яке розташоване між уявним фокусом та полюсом. Уявні зображення є завжди прямими (не перевернутими), а дійсні зображення, навпаки, завжди перевернуті щодо предмета.</p>
+<p style="word-spacing: 1.1px;">Якщо позначити відстань між світною точкою та дзеркалом літерою d, відстань між зображенням цієї точки та дзеркалом літерою f, то можна записати співвідношення, що пов&rsquo;язує ці величини з радіусом сферичної поверхні дзеркала R:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-124.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">З урахуванням співвідношення</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-125.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">цю залежність можна переписати у вигляді</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-126.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Одержана формула справджується у випадку, коли зображення та фокус дзеркала дійсні. Якщо ж зображення або фокус уявні, то перед відповідною літерою ставлять знак &laquo;-&raquo;.</p>
+<p style="word-spacing: 1.1px;">Сферичні дзеркала використовують для виготовлення прожекторів, дзеркал огляду на транспорті, автомобільних фар, проекційних і кишенькових ліхтарів тощо. Якщо взяти увігнуте дзеркало порівняно великих розмірів, то в його фокусі можна одержати дуже високу температуру. Такий пристрій можна використати для нагрівання води сонячними променями. У медицині увігнутими дзеркалами користуються ЛОР-лікарі та стоматологи. Увігнуті дзеркала застосовуються також у телескопах-реф-лекторах, за допомогою яких спостерігають небесні тіла.</p>
+<p style="word-spacing: 1.1px;">В історії стародавніх часів є легенда про те, як Архімед зумів за допомогою дзеркал на чималій відстані підпалити кораблі Риму. Сконструювати велике сферичне дзеркало досить складно, тому, можливо, Архімед використав плоскі дзеркала, які розмістив так, що відбиті від них промені спрямовувались в одну точку.</p>
+<p style="word-spacing: 1.1px;">Формуємо КОМПЕТЕНТНІСТЬ</p>
+<p style="word-spacing: 1.1px;">Я поміркую й зможу пояснити</p>
+<p style="word-spacing: 1.1px;">1. У якому випадку зображення називають дійсним? Уявним?</p>
+<p style="word-spacing: 1.1px;">2. Які характеристики має зображення предмета у плоскому дзеркалі?</p>
+<p style="word-spacing: 1.1px;">3. Як зміниться відстань між людиною та її зображенням у дзеркалі, якщо людина відійде на крок від дзеркала?</p>
+<p style="word-spacing: 1.1px;">4. Які дзеркала називають &laquo;кривими&raquo;?</p>
+<p style="word-spacing: 1.1px;">5. Для чого використовують сферичні дзеркала?</p>
+<p style="word-spacing: 1.1px;">Я вмію досліджувати й експериментувати</p>
+<p style="word-spacing: 1.1px;">1. Прикладіть до дзеркала кінчик олівця. Яка відстань між кінцем олівця та його зображенням? Чому?</p>
+<p style="word-spacing: 1.1px;">2. За допомогою дзеркал фотографи можуть отримати знімок з кількома зображеннями об&rsquo;єкта. Під яким кутом і скільки слід розмістити дзеркал, щоб отримати п&rsquo;ять зображень; шість зображень; вісім зображень? Зробіть пояснювальний малюнок. При нагоді зробіть такий знімок власного зображення.</p>
+<p style="word-spacing: 1.1px;">Я можу застосовувати знання й розв'язувати задачі</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Вправа 11</p>
+<p style="word-spacing: 1.1px;">1.</p>
+<p style="word-spacing: 1.1px;">Промінь світла падає перпендикулярно до поверхні дзеркала. На який кут відхилиться відбитий промінь від падаючого, якщо дзеркало повернути на кут: а) 16&deg;; б) 24&deg;; в) 35&deg;? Зробіть висновок.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-127.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">2.</p>
+<p style="word-spacing: 1.1px;">На одне з двох дзеркал, які розміщені під прямим кутом одне до одного, падають промені 1 і 2. Скопіюйте малюнок 119 у зошит і зобразіть подальший хід цих променів.</p>
+<p style="word-spacing: 1.1px;">3.</p>
+<p style="word-spacing: 1.1px;">Падаючий промінь утворює з поверхнею горизонтально розміщеного дзеркала кут 50&deg;. Як треба змінити розташування дзеркала, щоб відбитий промінь змінив свій напрямок на горизонтальний?</p>
+<p style="word-spacing: 1.1px;">4.</p>
+<p style="word-spacing: 1.1px;">Висота Сонця така, що його промені складають з горизонтом кут 40&deg;. Під яким кутом слід розташувати дзеркало АВ над краєм криниці, щоб відбитий від дзеркала промінь потрапляв на дно криниці (мал. 120)? Намалюйте відповідний малюнок у зошиті й побудуйте хід променів.</p>
+<p style="word-spacing: 1.1px;">5.</p>
+<p style="word-spacing: 1.1px;">Які мінімальні розміри повинно мати дзеркало, щоб ви побачили себе в ньому в повний зріст? Як слід розмістити дзеркало при цьому?</p>
+<p style="word-spacing: 1.1px;">6.</p>
+<p style="word-spacing: 1.1px;">Людина йде в напрямку до плоского дзеркала зі швидкістю 2 м/с. З якою швидкістю вона наближається до свого зображення? З якою швидкістю потрібно віддаляти дзеркало від людини, щоб відстань між людиною та її зображенням не змінювалася?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-128.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">7.</p>
+<p style="word-spacing: 1.1px;">Предмет АВ розташований перед плоским дзеркалом (мал. 121, с. 75). Побудуйте й схарактеризуйте зображення предмета у дзеркалі.</p>
+<p style="word-spacing: 1.1px;">8.</p>
+<p style="word-spacing: 1.1px;">Промінь падає на дзеркало 1 так, як показано на малюнку 122. Визначте кут відбивання променя від дзеркала 2.</p>
+<p style="word-spacing: 1.1px;">9.</p>
+<p style="word-spacing: 1.1px;">Де відносно увігнутого дзеркала, з радіусом кривизни 1,2 м, потрібно розташувати джерело світла, щоб отримати прожектор?</p>
+<p style="word-spacing: 1.1px;">10.</p>
+<p style="word-spacing: 1.1px;">Радіус кривизни увігнутого дзеркала 80 см. На якій відстані від дзеркала слід розташувати предмет, щоб його дійсне зображення було вдвічі більшим, ніж предмет?</p>
+<p style="word-spacing: 1.1px;">11.</p>
+<p style="word-spacing: 1.1px;">На головній оптичній осі увігнутого дзеркала радіусом 40 см міститься світна точка S на відстані 30 см від дзеркала. На якій відстані перед увігнутим дзеркалом слід розташувати плоске дзеркало, щоб промені, відбиті дзеркалами, повернулись у точку S.</p>
+<p style="word-spacing: 1.1px;">ЛАБОРАТОРНА РОБОТА N&deg; 2</p>
+<p style="word-spacing: 1.1px;">Дослідження відбиття світла за допомогою плоского дзеркала</p>
+<p style="word-spacing: 1.1px;">Мета роботи експериментально перевірити закони відбиття світла.</p>
+<p style="word-spacing: 1.1px;">Прилади та матеріали джерело світла (лампочка на підставці, ліхтарик на мобільному телефоні або лазерна указка), плоске дзеркало, екран зі щілиною (цупкий картон із прорізаною щілиною), лінійка, косинець, білий аркуш паперу, транспортир.</p>
+<p style="word-spacing: 1.1px;">вказівки щодо виконання роботи</p>
+<p style="word-spacing: 1.1px;">1. Перпендикулярно до білого аркуша паперу, що лежить на столі, розташуйте екран зі щілиною (мал. 123).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-129.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">2. Спрямуйте на екран світло від джерела так, щоб отримана на папері освітлена смужка була добре помітною. Установіть плоске дзеркало на шляху світлового пучка.</p>
+<p style="word-spacing: 1.1px;">3. Позначте олівцем на аркуші паперу положення дзеркала та хід падаючого й відбитого променів.</p>
+<p style="word-spacing: 1.1px;">4. За допомогою косинця побудуйте перпендикуляр до дзеркала в точці падіння світлового пучка.</p>
+<p style="word-spacing: 1.1px;">5. За допомогою транспортира визначте значення кута падіння та кута відбивання. Порівняйте ці кути.</p>
+<p style="word-spacing: 1.1px;">6. Повторіть дослід для різних кутів падіння.</p>
+<p style="word-spacing: 1.1px;">7. Зробіть висновок.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2353-pdruchnik-fzika-9-klas-zasyekna-poglibleniy-rven-chitati-onlayn.html">Фізика 9 клас Засєкіна (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2312-lnzi-optichna-sila-y-fokusna-vdstan-lnzi-otrimannya-zobrazhen-za-dopomogoyu-lnzi-formula-tonkoyi-lnzi.html">Лінзи. Оптична сила й фокусна відстань лінзи. Отримання зображень за допомо ...</a></li><li><a href="2308-vdbittya-svtla-zakon-vdbittya-svtla.html">Відбиття світла. Закон відбиття світла</a></li><li><a href="2111-vdbivannya-svtla-zakon-vdbivannya-svtla-ploske-dzerkalo.html">Відбивання світла. Закон відбивання світла. Плоске дзеркало</a></li><li><a href="609-pobudova-zobrazhen-u-lnzah-deyak-optichn-pristroyi-formula-tonkoyi-lnzi.html">Побудова зображень у лінзах. Деякі оптичні пристрої. Формула тонкої лінзи</a></li><li><a href="605-vdbivannya-svtla-zakoni-vdbivannya-svtla-ploske-dzerkalo.html">Відбивання світла. Закони відбивання світла. Плоске дзеркало</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

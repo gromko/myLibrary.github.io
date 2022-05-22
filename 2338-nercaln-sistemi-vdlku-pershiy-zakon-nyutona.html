@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Інерціальні системи відліку. Перший закон Ньютона &raquo; mozok.click</title>
+<meta name="description" content="Інерція. У попередніх параграфах ми розглядали прямолінійний рівноприскорений рух тіла, не замислюючись, чому тіло може рухатися рівномірно або прискорено. Що є причиною зміни його швидкості" />
+<meta name="keywords" content="прискорено, рівномірно, причиною, зміни, напрямку, швидкості, рухатися, замислюючись, параграфах, попередніх, розглядали, прямолінійний, рівноприскорений, Інерція" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2338-nercaln-sistemi-vdlku-pershiy-zakon-nyutona.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Інерціальні системи відліку. Перший закон Ньютона</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2338").Button("#infc2338"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2338" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2338" class="infcont">
+			<ul>
+				<li><i>Переглядів: 3434</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 28-01-2018, 16:44</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2338'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2338-nercaln-sistemi-vdlku-pershiy-zakon-nyutona.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2338'); return false;">1</a></li>
+		<li><a href="2338-nercaln-sistemi-vdlku-pershiy-zakon-nyutona.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2338'); return false;">2</a></li>
+		<li><a href="2338-nercaln-sistemi-vdlku-pershiy-zakon-nyutona.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2338'); return false;">3</a></li>
+		<li><a href="2338-nercaln-sistemi-vdlku-pershiy-zakon-nyutona.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2338'); return false;">4</a></li>
+		<li><a href="2338-nercaln-sistemi-vdlku-pershiy-zakon-nyutona.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2338'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/28/index.html" ><i>28-01-2018, 16:44</i></a></span>
+	<h3 class="btl"><span id="news-title">Інерціальні системи відліку. Перший закон Ньютона</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2338" style="display:inline;"><p>Інерція. У попередніх параграфах ми розглядали прямолінійний рівноприскорений рух тіла, не замислюючись, чому тіло може рухатися рівномірно або прискорено. Що є причиною зміни його швидкості або напрямку руху?</p>
+<p style="word-spacing: 1.1px;">Пам&rsquo;ятаєте, у 7 класі ми вже шукали відповідь на ці запитання й з&rsquo;ясували, що тілам властива здатність до збереження руху &mdash; інертність, а взаємодія одних тіл з іншими є лише причиною зміни їхньої швидкості, а не руху як такого. Цей висновок ще називали законом інерції.</p>
+<p style="word-spacing: 1.1px;">Якщо на тіло не діють інші тіла (або дія тіл скомпенсо-вана), воно перебуває у стані спокою або прямолінійного рівномірного руху.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-393.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Наприклад, якщо кулька котиться по гладенькій поверхні за повної відсутності сили тертя та будь-якого опору, то її швидкість залишатиметься постійною і для підтримання руху не потрібно прикладати жодної сили.</p>
+<p style="word-spacing: 1.1px;">Висновків щодо причин виникнення руху та його змін свого часу дійшов видатний італійський учений-дослід-ник Галілео Галілей. Для цього він провів багато дослідів. Деякі досліди Галілея вважаються фундаментальними, оскільки на їхніх результатах ґрунтуються важливі фізичні закони й теорії. Так, висновки Галілея та інших дослідників згодом були узагальнені Ісааком Ньютоном, який сформулював три основні закони механіки.</p>
+<p style="word-spacing: 1.1px;">Але перед тим, як розглянути перший закон Ньютона, нам необхідно з&rsquo;ясувати, чи впливає вибір системи відліку на виконання закону інерції.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-394.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Інерціальна система відліку. Рух (або спокій) будь-якого тіла розглядають відносно певної системи відліку. Пригадаймо: система відліку складається із системи координат, що зв&rsquo;язана з тілом відліку, і секундоміра.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Зрозуміти важливість вибору системи відліку можна, порівнявши рух Місяця відносно Землі та відносно Сонця. Усі знають, що Місяць рухається навколо Землі по траєкторії, що нагадує коло (мал. 232, а). А тепер порівняйте цю траєкторію з траєкторією руху Місяця, якщо система координат зв&rsquo;язана із Сонцем (мал. 232, б).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-395.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Залежність траєкторії, шляху, переміщення та швидкості руху від вибору системи відліку називають відносністю руху.</p>
+<p style="word-spacing: 1.1px;">Будь-який рух (як і стан спокою) є відносним, тобто вимагає вказування системи відліку. Тому, стверджуючи, що тіло зберігає стан спокою або прямолінійного рівномірного руху, варто зазначати систему відліку, відносно якої розглядається цей рух.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Наприклад. Нехай ми маємо систему відліку XOY, відносно якої тіло А перебуває у стані спокою, а тіло В рухається прямолінійно й рівномірно (мал. 233, а).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-396.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Виберемо іншу систему відліку XO'Y', яка рухається відносно першої з прискоренням а (мал. 233, б). Тоді відносно системи відліку XO'Y' і тіло А, і тіло В рухаються прискорено, хоч на них і не діють інші тіла (тобто відсутні сили, що зумовлюють їхнє прискорення). Таким чином, у системі відліку, що рухається з прискоренням, закон інерції не виконується.</p>
+<p style="word-spacing: 1.1px;">Закон інерції виконується в так званих інерціальних системах відліку.</p>
+<p style="word-spacing: 1.1px;">Інерціальна система відліку &mdash; це система відліку, в якій тіло, на яке не діють жодні сили (або рівнодійна цих сил дорівнює нулю), рухається рівномірно й прямолінійно.</p>
+<p style="word-spacing: 1.1px;">Будь-яка система відліку, що рухається відносно інерціальної системи відліку поступально, рівномірно і прямолінійно &mdash; також є інерціальною системою. Системи відліку, що рухаються відносно інерціальних систем із прискоренням (поступально чи обертально) є неінерціальними.</p>
+<p style="word-spacing: 1.1px;">У земних умовах для опису багатьох механічних явищ достатньо інер-ціальну систему відліку зв&rsquo;язати із Землею, знехтувавши при цьому обертальними рухами Землі навколо своєї осі й навколо Сонця.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Перший закон Ньютона. Визначивши роль системи відліку, сформулюємо перший закон Ньютона так:</p>
+<p style="word-spacing: 1.1px;">існують такі системи відліку, відносно яких матеріальна точка зберігає стан спокою або рівномірного прямолінійного руху, якщо на неї не діють інші тіла або дія зовнішніх тіл скомпенсована.</p>
+<p style="word-spacing: 1.1px;">Суттєвим є те, що в інерціальних системах (наприклад, в автобусі на зупинці) для збереження спокою не потрібно прикладати ніяких зусиль, а в неінерціальній системі відліку (наприклад, в автобусі в момент різкого гальмування) пасажирам для цього доводиться напружувати м&rsquo;язи, тримаючись за поручень, незважаючи на те, що додаткової дії в межах салону автобуса не виникає. Ця &laquo;неіснуюча сила&raquo; і є силою інерції.</p>
+<p style="word-spacing: 1.1px;">Формуємо КОМПЕТЕНТНІСТЬ</p>
+<p style="word-spacing: 1.1px;">Я поміркую й зможу пояснити</p>
+<p style="word-spacing: 1.1px;">1. У чому сутність явища інерції? У яких випадках рух тіла можна називати рухом за інерцією?</p>
+<p style="word-spacing: 1.1px;">2. Які системи відліку називаються інерціальними? Неінерціальними?</p>
+<p style="word-spacing: 1.1px;">3. Яким чином можна довести, що система відліку є інерціальною?</p>
+<p style="word-spacing: 1.1px;">4. Поясніть, чому систему відліку, пов&rsquo;язану із землею, вважають інерціальною.</p>
+<p style="word-spacing: 1.1px;">5. Як формулюється перший закон Ньютона? Наведіть приклади, які підтверджують цей закон.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2353-pdruchnik-fzika-9-klas-zasyekna-poglibleniy-rven-chitati-onlayn.html">Фізика 9 клас Засєкіна (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2340-trety-zakon-nyutona-mezh-zastosuvannya-klasichnoyi-mehanki.html">Третій закон Ньютона. Межі застосування класичної механіки</a></li><li><a href="2339-drugiy-zakon-nyutona.html">Другий закон Ньютона</a></li><li><a href="2133-nercaln-sistemi-vdlku-zakoni-nyutona.html">Інерціальні системи відліку. Закони Ньютона</a></li><li><a href="636-pdsumki-rozdlu-5-ruh-vzayemodya-zakoni-zberezhennya.html">Підсумки розділу 5 «Рух і взаємодія. Закони збереження»</a></li><li><a href="624-nercaln-sistemi-vdlku-pershiy-zakon-nyutona.html">Інерціальні системи відліку. Перший закон Ньютона</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

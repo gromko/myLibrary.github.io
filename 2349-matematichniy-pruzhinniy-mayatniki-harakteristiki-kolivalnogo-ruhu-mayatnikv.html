@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Математичний і пружинний маятники. Характеристики коливального руху маятників &raquo; mozok.click</title>
+<meta name="description" content="У  23 ми розглядали коливальні рухи, що виходили за межі коливальних систем,  маятників.Пригадували, що коливальний рух маятників вивчався в 7 класі. Що ж залишилось поза нашої увагою? Узага" />
+<meta name="keywords" content="маятників, маятник, Пружинний, знання, розширимо, масою, закріплене, коливається, жорсткість, пружині, Узагальнимо, пружності, нашої, систем, коливальних, виходили, коливальні, Пригадували, коливальний, розглядали" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2349-matematichniy-pruzhinniy-mayatniki-harakteristiki-kolivalnogo-ruhu-mayatnikv.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Математичний і пружинний маятники. Характеристики коливального руху маятників</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2349").Button("#infc2349"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2349" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2349" class="infcont">
+			<ul>
+				<li><i>Переглядів: 11778</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 28-01-2018, 16:56</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2349'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2349-matematichniy-pruzhinniy-mayatniki-harakteristiki-kolivalnogo-ruhu-mayatnikv.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2349'); return false;">1</a></li>
+		<li><a href="2349-matematichniy-pruzhinniy-mayatniki-harakteristiki-kolivalnogo-ruhu-mayatnikv.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2349'); return false;">2</a></li>
+		<li><a href="2349-matematichniy-pruzhinniy-mayatniki-harakteristiki-kolivalnogo-ruhu-mayatnikv.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2349'); return false;">3</a></li>
+		<li><a href="2349-matematichniy-pruzhinniy-mayatniki-harakteristiki-kolivalnogo-ruhu-mayatnikv.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2349'); return false;">4</a></li>
+		<li><a href="2349-matematichniy-pruzhinniy-mayatniki-harakteristiki-kolivalnogo-ruhu-mayatnikv.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2349'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/28/index.html" ><i>28-01-2018, 16:56</i></a></span>
+	<h3 class="btl"><span id="news-title">Математичний і пружинний маятники. Характеристики коливального руху маятників</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2349" style="display:inline;"><p>У &sect; 23 ми розглядали коливальні рухи, що виходили за межі коливальних систем, &mdash; маятників.</p>
+<p style="word-spacing: 1.1px;">Пригадували, що коливальний рух маятників вивчався в 7 класі. Що ж залишилось поза нашої увагою? Узагальнимо й розширимо наші знання.</p>
+<p style="word-spacing: 1.1px;">Пружинний маятник &mdash; це тіло масою m, закріплене на пружині, жорсткість якої k і яке коливається під дією сили пружності (мал. 266, а, с. 248).</p>
+<p style="word-spacing: 1.1px;">Математичний маятник &mdash; це точкове тіло, підвішене до нерозтяж-ної й невагомої нитки. Математичний маятник &mdash; це поняття абстрактне, тому з певним наближенням математичним маятником можна вважати кульку, підвішену на нитці (мал. 266, б, с. 248).</p>
+<p style="word-spacing: 1.1px;">Ці маятники є коливальними системами, у яких можуть відбуватися коливання. Кожна коливальна система має стан рівноваги. Для математичного маятника &mdash; це положення, у якому центр мас підвішеної кульки лежить на одній вертикалі з точкою підвісу; у горизонтального пружинного маятника &mdash; це положення, у якому пружина не деформована.</p>
+<p style="word-spacing: 1.1px;">Якщо коливальну систему вивести зі стану рівноваги, виникає сила, що повертає систему в рівноважний стан. При цьому коливальне тіло не зупиняється в рівноважному стані, а продовжує свій рух за інерцією. У системі виникають вільні коливання.</p>
+<p style="word-spacing: 1.1px;">Вільними (або власними) називають коливання, які виникають у результаті початкового виведення системи з положення стійкої рівноваги і здійснюються за рахунок внутрішніх сил системи, не зазнаючи впливу з боку змінних зовнішніх сил.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-575.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Період вільних коливань пружинного маятника визначається масою коливного тіла та&nbsp;жорсткістю пружини</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-576.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Період вільних коливань математичного маятника залежить лише від прискорення вільного падіння в даному місці Землі та від</p>
+<p style="word-spacing: 1.1px;">довжини маятника</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-577.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Період не залежить від амплітуди коливань і від маси підвішеного тягарця, що легко перевірити на дослідах із різними маятниками. (Це ви зробите, виконуючи роботи фізичного практикуму.)</p>
+<p style="word-spacing: 1.1px;">Вільні коливання горизонтального пружинного та математичного маятників (за малих кутів відхилення 3-5<sup>о</sup>) ще називають гармонічними коливаннями. У гармонічних коливаннях сили, під дією яких вони відбуваються, завжди пропорційні до зміщення і спрямовані протилежно до нього (до положення рівноваги). Для пружинного маятника &mdash; це сила пружності, для математичного &mdash; рівнодійна сили всесвітнього тяжіння та сили натягу нитки.</p>
+<p style="word-spacing: 1.1px;">Перетворення енергії під час коливального руху маятників. Розглядаючи рухи маятників, вважатимемо, що тертя в обох коливальних системах відсутнє або настільки мале, що ним можна знехтувати. Така система є ізольованою і для неї виконується закон збереження механічної енергії.</p>
+<p style="word-spacing: 1.1px;">У початковий момент (тіло відведено у крайнє ліве положення) коливальна система має максимальну потенціальну енергію. Для пружинного</p>
+<p style="word-spacing: 1.1px;">маятника це</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-578.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">для математичного</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-579.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-580.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рухаючись до положення рівноваги, система зменшує потенціальну енергію, але при цьому збільшується її кінетична енергія, яка набуває максимального значення в положенні рівноваги, де швидкість коливного</p>
+<p style="word-spacing: 1.1px;">тіла є максимальною. Для обох маятників</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-581.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-582.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Проходячи положення рівноваги, тіло зменшує кінетичну енергію й, зупиняючись у крайньому правому положенні, має максимальну потенціальну енергію. Кінетична енергія при цьому дорівнює нулю.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-583.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таким чином, кінетична енергія коливальної системи матиме максимальні значення в моменти проходження тілом положень рівноваги, а потенціальна &mdash; у моменти перебування тіла в точках найбільших відхилень від положення рівноваги. У довільний момент часу сума потенціальної і кінетичної енергії є сталою величиною й дорівнює повній енергії коливань.</p>
+<p style="word-spacing: 1.1px;">На малюнку 267 зображено графік зміни потенціальної та кінетичної енергій коливальної системи за один період коливань.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-584.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 267 Графік зміни потенціальної та кінетичної енергій коливальної системи за один період коливань</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-585.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Використання математичних маятників. Оскільки будь-який маятник має фіксований період коливань, їх використовують для регулювання ходу годинників. Маятники використовують і в геологічних розвідках. У місцях, де залягають породи металевих руд, значення g аномально велике. Точні вимірювання прискорення вільного падіння за допомогою математичного маятника дають змогу виявити такі родовища.</p>
+<p style="word-spacing: 1.1px;">За допомогою математичного маятника можна виявити добове обертання Землі. Цей дослід у 1851 р. в Парижі виконав Ж. Фуко з маятником завдовжки 67 м. Тому маятники, за допомогою яких можна продемонструвати добове обертання Землі навколо своєї осі, називають маятниками Фуко (мал. 268).</p>
+<p style="word-spacing: 1.1px;">Зміст досліду полягає в тому, що площина коливань математичного маятника залишається незмінною відносно інерціальної системи відліку. Тоді відносно неінерціальної системи відліку, пов&rsquo;язаної із Землею, площина коливань маятника має повертатись.</p>
+<p style="word-spacing: 1.1px;">Пізніше цей дослід повторювали в різних місцях. Очевидно, що ефект повороту площини коливань маятника залежить від широти місця проведення досліду, він найбільш виражений на земних полюсах і відсутній на екваторі.</p>
+<p style="word-spacing: 1.1px;">Формуємо КОМПЕТЕНТНІСТЬ</p>
+<p style="word-spacing: 1.1px;">Я поміркую й зможу пояснити</p>
+<p style="word-spacing: 1.1px;">1. Яка коливальна система називається математичним маятником? Пружинним маятником?</p>
+<p style="word-spacing: 1.1px;">2. За яких умов коливання математичного маятника будуть гармонічними?</p>
+<p style="word-spacing: 1.1px;">3. Від чого залежить період коливань пружинного маятника? Математичного маятника?</p>
+<p style="word-spacing: 1.1px;">4. Розкажіть про перетворення енергії під час гармонічних коливань. Скільки разів протягом періоду гармонічного коливання кінетична енергія системи дорівнює її потенціальній енергії в той самий момент часу?</p>
+<p style="word-spacing: 1.1px;">5. Як зміниться хід годинника з маятником на металевому стержні: а) з підвищенням температури; б) при піднятті на гору; в) при переміщенні від полюса до екватора?</p>
+<p style="word-spacing: 1.1px;">Вчимося розв'язувати задачі</p>
+<p style="word-spacing: 1.1px;">Задача. Тягар масою 2 кг здійснює горизонтальні коливання на пружині. Амплітуда коливань 5 см, період коливань 5 с. Обчисліть максимальні значення кінетичної та потенціальної енергії, а також швидкість руху тягарця в момент проходження положення рівноваги.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-586.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">За законом збереження енергії максимальні значення кінетичної й потенціальної енергій рівні між собою. Е &laquo; 4 &bull; 10<sup>3</sup>&nbsp;Дж.</p>
+<p style="word-spacing: 1.1px;">к.іюах</p>
+<p style="word-spacing: 1.1px;">У момент проходження положення рівноваги швидкість руху тягарця максимальна. Її визначаємо з формули</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-587.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-588.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Я можу застосовувати знання й розв'язувати задачі</p>
+<p style="word-spacing: 1.1px;">В права 32</p>
+<p style="word-spacing: 1.1px;">1.</p>
+<p style="word-spacing: 1.1px;">Маятник зробив 50 коливань за 1 хв 40 с. Визначте період, частоту та циклічну частоту коливань.</p>
+<p style="word-spacing: 1.1px;">2.</p>
+<p style="word-spacing: 1.1px;">Як відносяться довжини математичних маятників, якщо за той самий час один з них робить 10, а другий &mdash; 30 коливань?</p>
+<p style="word-spacing: 1.1px;">3.</p>
+<p style="word-spacing: 1.1px;">За один і той самий час перший математичний маятник робить 50 коливань, другий &mdash; 30. Визначте довжини цих маятників, якщо один з них на 32 см коротший від іншого.</p>
+<p style="word-spacing: 1.1px;">4.</p>
+<p style="word-spacing: 1.1px;">Пружинний маятник вивели з положення рівноваги та відпустили. Через який час (у частинах періоду) кінетична енергія коливного тіла дорівнюватиме потенціальній енергії пружини? Коливання відбуваються в горизонтальному напрямку.</p>
+<p style="word-spacing: 1.1px;">5.</p>
+<p style="word-spacing: 1.1px;">Вантаж, маса якого 400 г, коливається горизонтально на пружині, що має жорсткість 250 Н/м. Амплітуда коливань 15 см. Визначте частоту, повну механічну енергію коливань і найбільшу швидкість руху вантажу.</p>
+<p style="word-spacing: 1.1px;">6.</p>
+<p style="word-spacing: 1.1px;">Тіло масою m = 1 кг під дією пружини жорсткістю k = 400 Н/м коливається без тертя в горизонтальній площині вздовж стержня. Користуючись законом збереження енергії, визначте період коливань тіла.</p>
+<p style="word-spacing: 1.1px;">Перевірте себе</p>
+<p style="word-spacing: 1.1px;">Рівень а (початковий)</p>
+<p style="word-spacing: 1.1px;">1. Укажіть, у якому стані перебуває тіло, на яке діє стала за значенням і напрямком сила. А рівномірного прямолінійного руху</p>
+<p style="word-spacing: 1.1px;">Б рівноприскореного прямолінійного руху В рівномірного руху по колу Г у стані вільного падіння</p>
+<p style="word-spacing: 1.1px;">2. Швидкість руху тіла змінюється за законом: v<sub>x</sub>&nbsp;=-10 + 0,4ї. Визначте, у який момент часу швидкість тіла дорівнюватиме 2 м/с.</p>
+<p style="word-spacing: 1.1px;">А 30 с Б 200 с В 300 с Г 20 с</p>
+<p style="word-spacing: 1.1px;">3. За графіком прискорення автобуса (мал. 269) масою 4 т, який рухається прямолінійно, визначте модуль рівнодійної всіх сил, що діють на нього.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-589.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">А 8 кН Б 800 Н В 40 Н Г 40 кН</p>
+<p style="word-spacing: 1.1px;">4. Пластилінова кулька масою 40 г впала на стіл зі швидкістю 2 м/с. Визначте зміну імпульсу кульки.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-590.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Автомобіль, що рухається горизонтальною дорогою, здійснює екстрене гальмування. Укажіть, які перетворення енергії при цьому відбуваються.</p>
+<p style="word-spacing: 1.1px;">А потенціальна енергія перетворюється в кінетичну Б кінетична енергія перетворюється в потенціальну В потенціальна енергія перетворюється у внутрішню Г кінетична енергія перетворюється у внутрішню</p>
+<p style="word-spacing: 1.1px;">6. Установіть відповідність між рухомим тілом і причиною, що зумовила такий характер руху.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Подія</p>
+<p style="word-spacing: 1.1px;">1 яблуко падає</p>
+<p style="word-spacing: 1.1px;">2 збільшується швидкість руху автомобіля</p>
+<p style="word-spacing: 1.1px;">3 космічний корабель обертається навколо Землі</p>
+<p style="word-spacing: 1.1px;">4 лижник рухається вниз по схилу гори</p>
+<p style="word-spacing: 1.1px;">Діючі на тіло сили</p>
+<p style="word-spacing: 1.1px;">А сила тяжіння</p>
+<p style="word-spacing: 1.1px;">Б сила тяжіння, сила реакції опори, сила тертя, сила опору повітря</p>
+<p style="word-spacing: 1.1px;">В сила пружності, сила тяжіння</p>
+<p style="word-spacing: 1.1px;">Г сила тяжіння, сила опору повітря</p>
+<p style="word-spacing: 1.1px;">Д сила тяжіння, сила реакції опори, сила тертя, сила тяги, сила опору повітря</p>
+<p style="word-spacing: 1.1px;">Рівень B (середній)</p>
+<p style="word-spacing: 1.1px;">1. Яблуко, яке падає зі столу у вагоні потяга, відхиляється від вертикальної траєкторії до хвоста потяга. Таке відхилення обумовлене тим, що потяг..</p>
+<p style="word-spacing: 1.1px;">А повертає</p>
+<p style="word-spacing: 1.1px;">Б рухається рівномірно та прямолінійно</p>
+<p style="word-spacing: 1.1px;">В сповільнюється</p>
+<p style="word-spacing: 1.1px;">Г прискорюється</p>
+<p style="word-spacing: 1.1px;">2. Тіло кинули вертикально вгору з початковою швидкістю 12 м/с. Визначте максимальну висоту, на яку піднімається тіло.</p>
+<p style="word-spacing: 1.1px;">А 1,2 м Б 6 м В 7,2 м Г 14,4 м</p>
+<p style="word-spacing: 1.1px;">3. Людина масою 80 кг, стоячи на легкому надувному плоті, відштовхується від нерухомого човна масою 120 кг. При цьому човен набуває швидкості 0,6 м/с. Якої швидкості набуває пліт?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/fizika-9-zasekina-pogl/fizika-9-zasekina-pogl-591.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Амплітуда коливань пружинного маятника 5 см, частота коливань 1 Гц. Який шлях пройде тіло, що коливається, за 10 с? Яким буде переміщення тіла за цей час?</p>
+<p style="word-spacing: 1.1px;">Рівень C (достатній)</p>
+<p style="word-spacing: 1.1px;">1. Визначте, яким буде переміщення тіла через 2 с після початку руху, якщо його початкова швидкість 5 м/с, а прискорення напрямлене вздовж лінії руху й дорівнює 0,4 м/с<sup>2</sup>. Розгляньте всі можливі варіанти.</p>
+<p style="word-spacing: 1.1px;">2. Яку роботу необхідно виконати, щоб потяг який рухається зі швидкістю 72 км/год, збільшив свою швидкість до 108 км/год? Маса поїзда 1000 т. Якою має бути сила тяги локомотива потяга, щоб це збільшення швидкості відбулося на ділянці завдовжки 2 000 м?</p>
+<p style="word-spacing: 1.1px;">3. Тіло масою 1 кг вільно падає з висоти 5 м. На якій висоті кінетична енергія тіла дорівнюватиме його потенціальній енергії? Якою буде швидкість руху тіла на цій висоті?</p>
+<p style="word-spacing: 1.1px;">4. Два математичні маятники одночасно починають коливатися. За той самий час перший маятник здійснив 20 коливань, а другий &mdash; 10. Якою є довжина першого маятника, якщо довжина другого &mdash; 1 м?</p>
+<p style="word-spacing: 1.1px;">Рівень D (високий)</p>
+<p style="word-spacing: 1.1px;">1. Рівняння руху вантажного автомобіля має вигляд х<sub>1</sub>&nbsp;= -270 + 12t, а рівняння руху пішохода, який іде узбіччям того самого шосе, має вигляд х<sub>2</sub>&nbsp;= -1,5t. Накресліть графіки руху та визначте: а) положення автомобіля й пішохода в момент початку спостереження; б) з якими швидкостями й у якому напрямку вони рухалися; в) коли й де вони зустрілися?</p>
+<p style="word-spacing: 1.1px;">2. Тіло вільно ковзає з вершини нерухомої похилої площини під кутом а = 30&deg; до горизонту. Визначте його швидкість у кінці похилої площини та час руху, якщо висота похилої площини 10 м, а коефіцієнт тертя 0,05. Розв&rsquo;яжіть задачу двома способами: 1) застосовуючи закони динаміки й кінематики та 2) застосовуючи закони збереження.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2353-pdruchnik-fzika-9-klas-zasyekna-poglibleniy-rven-chitati-onlayn.html">Фізика 9 клас Засєкіна (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2348-zastosuvannya-zakonv-zberezhennya-energyi-ta-mpulsu-v-mehanchnih-yavischah.html">Застосування законів збереження енергії та імпульсу в механічних явищах</a></li><li><a href="2338-nercaln-sistemi-vdlku-pershiy-zakon-nyutona.html">Інерціальні системи відліку. Перший закон Ньютона</a></li><li><a href="2316-viniknennya-ta-poshirennya-mehanchnih-hvil.html">Виникнення та поширення механічних хвиль</a></li><li><a href="2135-ruh-tla-pd-dyeyu-klkoh-sil.html">Рух тіла під дією кількох сил</a></li><li><a href="632-zastosuvannya-zakonv-zberezhennya-energyi-ta-mpulsu-v-mehanchnih-yavischah.html">Застосування законів збереження енергії та імпульсу в механічних явищах</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->
