@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Рівноприскорений рух. Прискорення. Графіки прямолінійного рівноприскореного руху &raquo; mozok.click</title>
+<meta name="description" content="Прямолінійний рівномірний рух, тобто рух зі сталою швидкістю, - рідкісне явище в навколишньому середовищі. Значно частіше доводиться мати справу з такими рухами, у яких швидкість не є сталою" />
+<meta name="keywords" content="сталою, рухами, такими, справу, швидкість, змінюється, нерівномірними, називають, доводиться, часом, Значно, швидкістю, тобто, рівномірний, рідкісне, явище, Прямолінійний, середовищі, навколишньому, частіше" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2132-rvnopriskoreniy-ruh-priskorennya-grafki-pryamolnynogo-rvnopriskorenogo-ruhu.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Рівноприскорений рух. Прискорення. Графіки прямолінійного рівноприскореного руху</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2132").Button("#infc2132"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2132" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2132" class="infcont">
+			<ul>
+				<li><i>Переглядів: 15170</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 13-01-2018, 14:58</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2132'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2132-rvnopriskoreniy-ruh-priskorennya-grafki-pryamolnynogo-rvnopriskorenogo-ruhu.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2132'); return false;">1</a></li>
+		<li><a href="2132-rvnopriskoreniy-ruh-priskorennya-grafki-pryamolnynogo-rvnopriskorenogo-ruhu.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2132'); return false;">2</a></li>
+		<li><a href="2132-rvnopriskoreniy-ruh-priskorennya-grafki-pryamolnynogo-rvnopriskorenogo-ruhu.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2132'); return false;">3</a></li>
+		<li><a href="2132-rvnopriskoreniy-ruh-priskorennya-grafki-pryamolnynogo-rvnopriskorenogo-ruhu.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2132'); return false;">4</a></li>
+		<li><a href="2132-rvnopriskoreniy-ruh-priskorennya-grafki-pryamolnynogo-rvnopriskorenogo-ruhu.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2132'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/13/index.html" ><i>13-01-2018, 14:58</i></a></span>
+	<h3 class="btl"><span id="news-title">Рівноприскорений рух. Прискорення. Графіки прямолінійного рівноприскореного руху</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2132" style="display:inline;"><p>Прямолінійний рівномірний рух, тобто рух зі сталою швидкістю, - рідкісне явище в навколишньому середовищі. Значно частіше доводиться мати справу з такими рухами, у яких швидкість не є сталою, а із часом змінюється. Такі рухи називають нерівномірними.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-291.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На всіх сучасних транспортних засобах установлюють спеціальні прилади - спідометри (мал. 266), які показують значення швидкості в певний момент часу.</p>
+<p style="word-spacing: 1.1px;">Зрозуміло, що за спідометром не можна визначити напрямок швидкості. Для деяких засобів транспорту, наприклад для морських кораблів і літаків, потрібно знати також напрямок швидкості руху. Тоді, крім спідометра, установлюють ще й інші навігаційні прилади, у найпростішому випадку - компас.</p>
+<p style="word-spacing: 1.1px;">Отже, тепер ми знаємо, що в нерівномірному русі швидкість руху тіла не є сталою величиною і в різні моменти часу має свій напрямок і значення.</p>
+<p style="word-spacing: 1.1px;">Для спрощення розглядатимемо такий нерівномірний рух, під час якого швидкість руху тіла за кожну одиницю часу і взагалі за будь-які рівні інтервали часу змінюється однаково. Такий рух називають рівноприскореним.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Рух тіла, під час якого його швидкість за будь-які рівні інтервали часу змінюється однаково, називають рівноприскореним рухом.</p>
+<p style="word-spacing: 1.1px;">Під час такого руху швидкість може змінюватися по-різному - дуже стрімко (рух кулі в рушниці, старт ракети, розбіг літака тощо) і порівняно повільно (початок руху потяга, гальмування автомобіля тощо).</p>
+<p style="word-spacing: 1.1px;">Якщо за деякий інтервал часу At приріст швидкості дорівнює Ди, то за подвоєний інтервал часу 2Ді приріст швидкості буде подвоєним - 2Ди, за потроєний інтервал часу ЗДі він буде потроєним - ЗДи і т. д.</p>
+<p style="word-spacing: 1.1px;">При цьому якщо значення At змінити, то новому At відповідатиме вже&nbsp;інше значення Ди, але відношення</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-292.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">приросту швидкості до приросту</p>
+<p style="word-spacing: 1.1px;">часу буде таким самим, як і раніше. Отже, у даному рівноприскореному прямолінійному русі відношення</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-293.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">незмінне, інваріантне щодо вибору&nbsp;інтервалу часу At. Вектор</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-294.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">який є сталим для кожного даного прямолінійного рівно-прискореного руху, характеризує зміну швидкості тіла за одиницю часу.</p>
+<p style="word-spacing: 1.1px;">Ця векторна величина - основна характеристика рівноприскореного руху, яку називають прискоренням і позначають літерою а.</p>
+<p style="word-spacing: 1.1px;">Прискоренням тіла в його рівноприскореному прямолінійному русі називають векторну фізичну величину, яка характеризує зміну швидкості за одиницю часу і визначається відношенням зміни швидкості руху тіла до інтервалу часу, протягом якого ця зміна відбулася:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-295.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">З означення рівноприскореного руху випливає, що його прискорення є сталою величиною (а = const).</p>
+<p style="word-spacing: 1.1px;">Якщо у вибраний початковий момент часу t = 0 швидкість руху тіла дорівнює и<sub>0</sub>, а в момент часу t - v, то маємо At = t, Av = v - u<sub>0</sub>. Тоді розглянута вище формула має такий вигляд:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-296.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">де а - прискорення руху тіла; и<sub>0</sub>&nbsp;- початкова швидкість руху тіла; и - його кінцева швидкість руху; t - час, протягом якого ця зміна відбувалася.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Як видно із цієї формули, за одиницю прискорення слід узяти прискорення такого прямолінійного рівноприскореного руху, у якому за одиницю часу швидкість змінюється також на одиницю. І це означає: прискорення дорівнює одиниці, якщо за 1 с швидкість руху тіла змінюється на 1 м/с. Отже, одиницею прискорення в СІ є 1 м/с<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;">Рівноприскорений рух може бути прискореним або сповільненим, залежно від швидкості руху тіла, яка може збільшуватись або зменшуватись із часом відповідно. Знаходячи прискорення руху, потрібно враховувати векторні властивості даної фізичної величини. Розглянемо прискорення та швидкість рівноприскореного руху в проекціях на вісь Ох (мал. 267), тоді прискорення набуватиме вигляду:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-297.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо v<sub>x</sub>&nbsp;&gt; v<sub>0x</sub>, тобто швидкість руху тіла збільшується (мал. 267, а), тоді модуль прискорення а<sub>х</sub>&nbsp;&gt; 0, а його вектор збігається з напрямком руху, то цей рух називають рівноприскореним.</p>
+<p style="word-spacing: 1.1px;">Якщо v<sub>x</sub>&nbsp;&lt; v<sub>0x</sub>, тоді модуль прискорення а<sub>х</sub>&nbsp;&lt; 0, а його вектор буде протилежним до напрямку руху, то такий рух називають рівносповіль-неним.</p>
+<p style="word-spacing: 1.1px;">Ви вже знаєте, як графічно зображується рівномірний прямолінійний рух тіла. Спробуємо подібно до нього представити графічно рівноприско-рений прямолінійний рух.</p>
+<p style="word-spacing: 1.1px;">Почнемо з розгляду графіка проекції прискорення руху т іла a<sub>x</sub>&nbsp;= a<sub>x</sub>(t). Якщо пригадати графік проекції швидкості тіла в рівномірному прямолінійному русі, де v = const, і порівняти його з випадком, коли а = const, то стає зрозумілим, що ці графіки ідентичні. Тому графіком залежності проекції прискорення руху тіла від часу буде також пряма, яка паралельна осі часу t. Залежно від значення проекції прискорення -додатна вона чи від&rsquo;ємна - ця пряма розташована або над віссю, або під нею (мал. 268).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-298.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Графік проекції швидкості руху тіла v = v(t). З кінематичного рівняння v<sub>x</sub>&nbsp;= v<sub>0x</sub>&nbsp;+ a<sub>x</sub>t видно, що залежність проекції швидкості руху тіла від часу є лінійною, як і в рівнянні рівномірного прямолінійного руху. Тоді залишається тільки проаналізувати його для нашого випадку. Залежно від значень проекцій прискорення і початкової швидкості руху тіла v<sub>0x&nbsp;</sub>і а<sub>х</sub>&nbsp;графік матиме різний вигляд (мал. 269), зокрема:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-299.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо v<sub>0x</sub>&nbsp;= 0, то пряма виходитиме з початку координат і, залежно від значення проекції прискорення руху тіла, буде напрямлена вгору (а<sub>х</sub>&nbsp;&gt; 0) або опускатиметься вниз (а<sub>х</sub>&nbsp;&lt; 0). Нахил прямих залежить від значення проекції прискорення: що більше прискорення руху тіла, то крутіше здіймається чи спадає графік.</p>
+<p style="word-spacing: 1.1px;">Графік руху тіла x = x(t). Кінематичні рівняння руху є квадратичною функцією виду у = а + bx + cx :</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-300.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тому графіком залежності координати тіла від часу є парабола, гілки якої згідно з параметрами руху мають різний напрямок. Наприклад, якщо v<sub>0x</sub>&nbsp;=0 і а<sub>х</sub>&nbsp;&gt; 0, то графік має вигляд, зображений на малюнку 270, а. Якщо х<sub>0</sub>&nbsp;^ 0, то вершина параболи зміщується по осі ординат угору або вниз, залежно від значення х<sub>0</sub>.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-301.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо v<sub>0x</sub>&nbsp;=0 і а<sub>х</sub>&nbsp;&lt; 0, то гілки параболи зорієнтовані вниз (мал. 270, б) і зміщення вершини параболи вгору або вниз по осі ординат так само залежить від значення х<sub>0</sub>.</p>
+<p style="word-spacing: 1.1px;">Якщо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-302.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">(мал. 271), то вершина параболи зміщується в точку, координати якої визначаються співвідношеннями:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-303.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">ЗАПИТАННЯ ДО ВИВЧЕНОГО</p>
+<p style="word-spacing: 1.1px;">1. Який рух називають рівноприскореним? Наведіть приклади.</p>
+<p style="word-spacing: 1.1px;">2. Що таке прискорення руху тіла?</p>
+<p style="word-spacing: 1.1px;">3. У якому випадку проекція прискорення руху тіла має додатне, а в якому -від&rsquo;ємне значення?</p>
+<p style="word-spacing: 1.1px;">4. Який вигляд має графік прискорення руху тіла?</p>
+<p style="word-spacing: 1.1px;">5. Чим відрізняється графік швидкості рівномірного прямолінійного руху від графіка швидкості рівноприскореного руху?</p>
+<p style="word-spacing: 1.1px;">6. Як за графіком проекції швидкості рівноприскореного руху визначають проекцію переміщення тіла?</p>
+<p style="word-spacing: 1.1px;">7. Від чого залежить напрямок гілок параболи на графіках рівноприскореного руху тіла?</p>
+<p style="word-spacing: 1.1px;">ЗАДАЧІ ТА ВПРАВИ</p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язуємо разом</p>
+<p style="word-spacing: 1.1px;">1. Прискорення тіла дорівнює -5 м/с<sup>2</sup>. Як це розуміти? Поясніть. Відповідь: тіло рухається рівносповільнено прямолінійно. На це вказує</p>
+<p style="word-spacing: 1.1px;">знак &laquo;-&raquo; біля значення прискорення.</p>
+<p style="word-spacing: 1.1px;">2. Тіло кинули вертикально вгору зі швидкістю 40 м/с. Яка буде швидкість руху тіла через 2 с, через 5 с? Визначте, який шлях пройде тіло і яке його переміщення. Прискорення вільного падіння дорівнює 10 м/с<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-304.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Отже, у момент t<sub>1</sub>&nbsp;= 2 c тіло перебуває на висоті 60 м і має швидкість 20 м/с, напрямлену вгору. Оскільки напрямок руху не змінювався, то шлях, пройдений тілом, 60 м.</p>
+<p style="word-spacing: 1.1px;">Для моменту t<sub>2</sub>&nbsp;= 5 c за такими самими формулами отримаємо:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-305.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">У момент t<sub>2</sub>&nbsp;= 5 c тіло перебуває на висоті 75 м і має швидкість 10 м/с, яка напрямлена вниз. Отже, у момент t<sub>2</sub>&nbsp;= 5 c тіло рухається вже після повороту. Пройдений тілом шлях визначимо як суму двох шляхів (рух</p>
+<p style="word-spacing: 1.1px;">тіла вгору і вниз) за формулою</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-306.png" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-307.png" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Рівень А</p>
+<p style="word-spacing: 1.1px;">201. Що потрібно знати, щоб визначити положення тіла в будь-який момент часу, якщо воно рухається рівноприскорено?</p>
+<p style="word-spacing: 1.1px;">202. Прискорення тіла дорівнює 2 м/с<sup>2</sup>. На скільки зміниться швидкість руху цього тіла за 1 с?</p>
+<p style="word-spacing: 1.1px;">203. Початкова і кінцева швидкості руху тіла відповідно дорівнюють 5 м/с і 10 м/с. Як рухається це тіло?</p>
+<p style="word-spacing: 1.1px;">204. Початкова і кінцева швидкості руху тіла відповідно дорівнюють 15 м/с і 10 м/с. Як рухається це тіло?</p>
+<p style="word-spacing: 1.1px;">205. Прискорення тіла дорівнює 3 м/с<sup>2</sup>. Що це означає? Поясніть.</p>
+<p style="word-spacing: 1.1px;">206. Які з наведених залежностей описують рівноприскорений рух?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-308.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">207. Залежність від часу координати точки, яка рухається вздовж осі Ох, має вигляд:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-309.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Опишіть характер руху. Які початкова швидкість і прискорення руху тіла? Запишіть рівняння для проекції швидкості руху тіла.</p>
+<p style="word-spacing: 1.1px;">208. Швидкість руху матеріальної точки в будь-який момент часу задано рівнянням v = 3 + t, м/с. Визначте початкову швидкість і прискорення тіла.</p>
+<p style="word-spacing: 1.1px;">209. На малюнку 272 зображено графіки проекцій швидкостей руху двох тіл. Визначте: а) вид руху тіл; б) прискорення руху тіл; в) через скільки секунд після початку руху швидкості тіл будуть однаковими. Запишіть залежність координат тіл від часу.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-310.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рівень Б</p>
+<p style="word-spacing: 1.1px;">210. Кулька котиться по жолобу без початкової швидкості і за першу секунду проходить 10 см. Який шлях вона пройде за 3 с?</p>
+<p style="word-spacing: 1.1px;">211. За яку секунду від початку рівноприскореного руху тіло пройде шлях, утричі більший за шлях, пройдений за попередню секунду?</p>
+<p style="word-spacing: 1.1px;">212. Через 10 с після початку руху швидкість поїзда дорівнює 0,6 м/с. Через який час після початку руху швидкість поїзда дорівнюватиме 3 м/с?</p>
+<p style="word-spacing: 1.1px;">213. Автомобіль почав рухатися з прискоренням 1,5 м/с<sup>2</sup>&nbsp;і за деякий час проїхав відстань 12 м. Визначте його швидкість руху в цей момент і середню швидкість.</p>
+<p style="word-spacing: 1.1px;">214. Схил завдовжки 100 м лижник проїхав за 20 с, рухаючись із прискоренням 0,3 м/с<sup>2</sup>. Яка швидкість лижника на початку і в кінці схилу?</p>
+<p style="word-spacing: 1.1px;">215. Визначте вид руху, відповідний до ділянок графіка АВ і ВС (мал. 273). Визначте прискорення тіла на кожній з ділянок. Який модуль швидкості тіла на початку і наприкінці руху?</p>
+<p style="word-spacing: 1.1px;">216. На малюнку 274 зображено графік залежності проекції швидкості прямолінійного руху тіла від часу. З яким прискоренням рухалося тіло в інтервалах часу: 1-3 с; 3-5 с; 5-7 с? Накресліть графік залежності проекції прискорення від часу руху.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-311.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-312.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">217. Залежності від часу координат двох точок, які рухаються вздовж осі Ох, мають вигляд: х<sub>1</sub>&nbsp;= 15 + t<sup>2</sup>, м і х<sub>2</sub>&nbsp;= 8t, м. Опишіть характер руху кожного тіла. Побудуйте графіки руху. Визначте час і місце зустрічі тіл.</p>
+<p style="word-spacing: 1.1px;">218. За графіком проекції прискорення руху тіла (мал. 275) побудуйте графіки для проекції швидкості і для проекції переміщення, якщо початкова швидкість руху тіла дорівнює 2 м/с.</p>
+<p style="word-spacing: 1.1px;">219. Тіло рухається вздовж прямої спочатку протягом 5 с рівномірно зі швидкістю 5 м/с, потім рівноприскорено протягом 10 с із прискоренням 1 м/с<sup>2</sup>, напрямленим протилежно до початкової швидкості. Побудуйте графіки залежності швидкості, координати і пройденого тілом шляху від часу. Початкова координата дорівнює нулю, напрям осі координат -уздовж початкового напрямку руху тіла.</p>
+<p style="word-spacing: 1.1px;">220. Тіло падає з висоти 78,4 м. Визначте його переміщення за останню секунду падіння.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2149-pdruchnik-fzika-9-klas-sirotyuk-chitati-onlayn.html">Фізика 9 клас Сиротюк</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2136-vzayemodya-tl-mpuls-zakon-zberezhennya-mpulsu.html">Взаємодія тіл. Імпульс. Закон збереження імпульсу</a></li><li><a href="628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html">Рух тіла під дією сили тяжіння</a></li><li><a href="625-drugiy-zakon-nyutona.html">Другий закон Ньютона</a></li><li><a href="623-peremschennya-pd-chas-rvnopriskorenogo-pryamolnynogo-ruhu-rvnyannya-koordinati.html">Переміщення під час рівноприскореного прямолінійного руху. Рівняння координ ...</a></li><li><a href="622-rvnopriskoreniy-pryamolnyniy-ruh-priskorennya-shvidkst-rvnopriskorenogo-pryamolnynogo-ruhu.html">Рівноприскорений прямолінійний рух. Прискорення. Швидкість рівноприскореног ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

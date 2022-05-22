@@ -1,0 +1,924 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Комп'ютерна графіка. Векторний графічний редактор. Створення простих та складених векторних зображень &raquo; mozok.click</title>
+<meta name="description" content="До графічних зображень належать різноманітні малюнки, креслення, графіки, діаграми та інші зображення, які можна виводити на екран, друкувати, пересилати електронною поштою, розміщувати в Ін" />
+<meta name="keywords" content="компютерної, графіки, розвиток, зображень, спричинив, Інтернеті, сучасних, появу, Стрімкий, створюються, техніки, засобами, відображаються, опрацьовуються, розміщувати, електронною, креслення, діаграми, малюнки, різноманітні" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2157-kompyuterna-grafka-vektorniy-grafchniy-redaktor-stvorennya-prostih-ta-skladenih-vektornih-zobrazhen.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Комп'ютерна графіка. Векторний графічний редактор. Створення простих та складених векторних зображень</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2157").Button("#infc2157"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2157" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2157" class="infcont">
+			<ul>
+				<li><i>Переглядів: 27774</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 15-01-2018, 08:11</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2157'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2157-kompyuterna-grafka-vektorniy-grafchniy-redaktor-stvorennya-prostih-ta-skladenih-vektornih-zobrazhen.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2157'); return false;">1</a></li>
+		<li><a href="2157-kompyuterna-grafka-vektorniy-grafchniy-redaktor-stvorennya-prostih-ta-skladenih-vektornih-zobrazhen.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2157'); return false;">2</a></li>
+		<li><a href="2157-kompyuterna-grafka-vektorniy-grafchniy-redaktor-stvorennya-prostih-ta-skladenih-vektornih-zobrazhen.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2157'); return false;">3</a></li>
+		<li><a href="2157-kompyuterna-grafka-vektorniy-grafchniy-redaktor-stvorennya-prostih-ta-skladenih-vektornih-zobrazhen.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2157'); return false;">4</a></li>
+		<li><a href="2157-kompyuterna-grafka-vektorniy-grafchniy-redaktor-stvorennya-prostih-ta-skladenih-vektornih-zobrazhen.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2157'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/15/index.html" ><i>15-01-2018, 08:11</i></a></span>
+	<h3 class="btl"><span id="news-title">Комп'ютерна графіка. Векторний графічний редактор. Створення простих та складених векторних зображень</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2157" style="display:inline;"><p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-285.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<ul>
+<li>що таке комп&rsquo;ютерна графіка;</li>
+<li>як кодуються текстові, графічні та звукові дані;</li>
+<li>що розуміють під колірною моделлю;</li>
+<li>які параметри графічних зображень впливають на їхню якість;</li>
+<li>у яких форматах можна зберігати графічні файли й у чому їхня відмінність;</li>
+<li>як і для чого перетворюють один формат графічного файла в інший.</li>
+</ul>
+<p>&nbsp;</p>
+<p style="word-spacing: 1.1px;">23.1. Що таке комп&rsquo;ютерна графіка?</p>
+<p style="word-spacing: 1.1px;">До графічних зображень належать різноманітні малюнки, креслення, графіки, діаграми та інші зображення, які можна виводити на екран, друкувати, пересилати електронною поштою, розміщувати в Інтернеті тощо.</p>
+<p style="word-spacing: 1.1px;">Стрімкий розвиток сучасних ІКТ спричинив появу та розвиток комп&rsquo;ютерної графіки &mdash; зображень, які створюються, опрацьовуються та відображаються засобами комп&rsquo;ютерної техніки.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерна графіка &mdash; це сукупність методів, прийомів і засобів створення та опрацювання графічних зображень за допомогою комп&rsquo;ютера.</p>
+<p style="word-spacing: 1.1px;">Сучасні апаратні та програмні засоби (мал. 23.1) значно розширюють спектр застосування комп&rsquo;ютерної графіки. Це зручні інструменти для роботи з графічними зображеннями не лише для професіоналів, а й для пересічних користувачів.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-286.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 23.1</p>
+<p style="word-spacing: 1.1px;">Сьогодні комп&rsquo;ютерну графіку використовують під час конструювання та моделювання, створення рекламних роликів, в архітектурі та дизайні, у видавничій справі, кінематографі тощо.</p>
+<p style="word-spacing: 1.1px;">23.2. Як кодуються текстові, графічні та звукові дані?</p>
+<p style="word-spacing: 1.1px;">Ви вже знаєте, що для опрацювання даних за допомогою комп&rsquo;ютера використовують двійкове кодування даних. Під час кодування текстових повідомлень кожному символу ставиться у відповідність деякий двійковий код залежно від обраної таблиці кодування символів.</p>
+<p style="word-spacing: 1.1px;">Для зберігання та опрацювання графічних і звукових повідомлень за допомогою комп&rsquo;ютера також потрібне двійкове подання даних. Процес кодування в цьому разі є досить складним, оскільки за допомогою комп&rsquo;ютера можна зберігати та опрацьовувати лише обмежені обсяги даних, у той час як природні сигнали &mdash; носії даних &mdash; є неперервними. Тому переведення аналогових сигналів до цифрового вигляду відбувається шляхом дискретизації (мал. 23.2).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-287.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 23.2</p>
+<p style="word-spacing: 1.1px;">Дискретизація (від англ. discretisation) &mdash; процес усунення неперервності (часової та просторової) аналогових сигналів &mdash; носіїв даних.</p>
+<p style="word-spacing: 1.1px;">У випадку просторової дискретизації зображення ділять на невеликі області, у межах яких його характеристики (положення, колір, яскравість) вважаються незмінними.</p>
+<p style="word-spacing: 1.1px;">У разі застосування дискретизації в часі на невеликі інтервали відповідно ділиться час. У межах цих інтервалів характеристики природних сигналів вважають незмінними.</p>
+<p style="word-spacing: 1.1px;">Наочним прикладом часової дискретизації є кодування звуку за допомогою комп&rsquo;ютера &mdash; приведення до цифрової форми (оцифровка). До комп&rsquo;ютера надходить не сам звук (звукова хвиля), а електричний сигнал, зареєстрований деяким пристроєм, наприклад мікрофоном, радіо тощо.</p>
+<p style="word-spacing: 1.1px;">Іншим прикладом є дискретизація рухомого зображення, яку ми спостерігаємо при кодуванні відео. У цьому разі ілюзія руху створюється шляхом швидкої зміни кадрів. При цьому кадри залишаються статичними.</p>
+<p style="word-spacing: 1.1px;">Розрізняють два основні методи створення та кодування графічних зображень: растровий і векторний.</p>
+<p style="word-spacing: 1.1px;">Растрове зображення складається з точок &mdash; пікселів відповідних кольорів і нагадує аркуш паперу в клітинку, на якому кожна клітинка зафарбована певним кольором.</p>
+<p style="word-spacing: 1.1px;">Координати, форма, колір і розмір пікселів задаються при визначенні растра. Лише колір може змінюватись. Під час кодування для прямокутного растра характеристикам кожного пікселя ставиться у відповідність цифровий код.</p>
+<p style="word-spacing: 1.1px;">Кожний растровий малюнок складається з певної кількості точок на одній горизонталі та одній вертикалі, які характеризують розмір малюнка. Наприклад, для операційної системи Windows типові розміри екрана монітора в пікселях можуть становити 640 х 480, 1024 х 768, 1280 х 1024. Що більша кількість пікселів міститься на екрані за одних і тих самих геометричних розмірів малюнка, то вища якість відтворення малюнка.</p>
+<p style="word-spacing: 1.1px;">Крім розмірів, малюнок характеризується також кольором кожного пікселя. Таким чином, для створення або збереження растрового малюнка необхідно зазначити його розміри та колір кожного пікселя.</p>
+<p style="word-spacing: 1.1px;">Обсяг файла, що містить растрове графічне зображення, &mdash; це переважно добуток розмірів (кількість пікселів за шириною й висотою) цього</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-288.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">зображення на глибину кольору &mdash; кількість бітів, що необхідна для кодування кольору пікселя.</p>
+<p style="word-spacing: 1.1px;">Растрова графіка дає можливість одержати високу якість зображення, тому за її допомогою можна ефективно відтворювати реальні образи. Переваги растрових зображень: добре відтворюють напівтіні, плавні переходи між кольорами. Растрові зображення використовуються для запису фотографій, художніх репродукцій тощо. Недолік растрової графіки &mdash; великі за обсягом файли для зберігання растрових зображень, а також втрата якості зображення при збільшенні або зменшенні його розміру: зменшені зображення втрачають деталі, натомість на збільшених &mdash; проявляється їхня мозаїчна структура (мал. 23.3).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-289.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Векторні малюнки будуються за допомогою математичного опису простих об&rsquo;єктів &mdash; ліній, кіл, з яких створюються більш складні. Такі прості об&rsquo;єкти називають графічними примітивами. Векторний малюнок (мал. 23.4) складається з переліку об&rsquo;єктів та наданих їм властивостей, зокрема форми, місця розміщення, розміру, контуру, вмісту. Перевагою векторної графіки є те, що файли, у яких зберігаються векторні зображення, у 10-1000 разів менші за обсягом, ніж файли, у яких зберігаються аналогічні растрові зображення. Векторні зображення легко редагувати та масштабувати без втрати якості.</p>
+<p style="word-spacing: 1.1px;">У векторній графіці повністю використовують усі переваги роздільної здатності того конкретного пристрою, на який виводиться малюнок. При відтворенні векторного зображення пристрої виведення отримують вказівки намалювати об&rsquo;єкт заданого розміру, використовуючи відповідну роздільну здатність пристрою.</p>
+<p style="word-spacing: 1.1px;">Недоліком векторної графіки є &laquo;неприродність&raquo; малюнка. Природа &laquo;уникає&raquo; прямих ліній, і не завжди малюнок можна скласти з кіл і прямих ліній без втрати якості. Через це векторну графіку використовують здебільшого для побудови креслень, технічних та стилізованих малюнків, шрифтів, карт. Крім того, у векторних малюнках нечітко відтворюється колористичність відтінків.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-290.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">23.3. Що розуміють під колірною моделлю?</p>
+<p style="word-spacing: 1.1px;">Серед кольорів розрізняють: некольорові &mdash; білий, чорний, відтінки сірого; кольорові &mdash; прості (чисті) та змішані. Змішані кольори отримують унаслідок змішування кольорів.</p>
+<p style="word-spacing: 1.1px;">Колірна модель &mdash; це спосіб утворення кольору шляхом змішування кольорів.</p>
+<p style="word-spacing: 1.1px;">Колірні моделі є засобом опису колірних відтінків, які можуть бути відтворені переважно на екрані монітора чи за допомогою кольорового принтера.</p>
+<p style="word-spacing: 1.1px;">Для комп&rsquo;ютерного подання використовують різні колірні моделі, найпоширенішими з яких є подані в таблиці 23.1.</p>
+<p style="word-spacing: 1.1px;">Таблиця 23.1</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>Колірна модель</p>
+</td>
+<td>
+<p>Базові кольори моделі</p>
+</td>
+<td>
+<p>Спосіб утворення кольору</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RGB</p>
+</td>
+<td>
+<p>Червоний (Red), зелений (Green), синій (Blue)</p>
+</td>
+<td>
+<p>Будь-який колір складається з трьох основних (червоний, зелений, синій) та додаткових (блакитний, пурпурний, жовтий)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CMYK</p>
+</td>
+<td>
+<p>Додаткові: блакитний (Cyan), пурпурний (Magenta), жовтий (Yellow) та ключовий &mdash; чорний (blacK)</p>
+</td>
+<td>
+<p>До ключового кольору (чорного) додаються блакитний, пурпурний та жовтий, які доповнюють основні (відповідно червоний, зелений, синій) до білого</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>Колірна модель</p>
+</td>
+<td>
+<p>Базові кольори моделі</p>
+</td>
+<td>
+<p>Спосіб утворення кольору</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HSB</p>
+</td>
+<td>
+<p>Відтінок кольору &mdash; фон (Hue), контрастність (Saturation), яскравість (Brightness)</p>
+</td>
+<td>
+<p>Колір вибирається з палітри, де фон &mdash; це номер кольору в спектральній палітрі, насиченість &mdash; його інтенсивність, яскравість &mdash; вміст чорної фарби</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">RGB (від англ. Red, Green, Blue &mdash; червоний, зелений, синій) &mdash; це найбільш поширений спосіб кодування кольору. Використовується під час відображення зображення на екрані монітора комп&rsquo;ютера чи телевізора, демонстрації презентацій, відеофрагментів, графіки. Будь-який колір можна отримати внаслідок зміни яскравості основних кольорів &mdash; червоного, зеленого та синього (мал. 23.5). У моделі RGB кожний з основних кольорів може набувати значень від 0 до 255. Наприклад, RGB(255,0,0) відображатиметься як червоний, оскільки параметр червоного кольору заданий його найбільшим значенням, а інші дорівнюють 0.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-291.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">CMYK (від англ. Cyan, Magenta, Yellow, blacK &mdash; блакитний, пурпурний, жовтий, чорний) &mdash; відповідає малюванню фарбами на паперовому аркуші та використовується під час створення зображень для подальшого їх друкування за допомогою кольорового принтера. Це можуть бути рекламні плакати, фотографії, карти тощо. У цій моделі кожний з основних кольорів може набувати значень від 0 до 100 (мал. 23.6). Ці кольори отримують у результаті віднімання з білого кольору основних кольорів моделі RGB. Чорний колір задається окремо. При збільшенні кількості фарби зменшується яскравість кольору.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-292.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">HSB (від англ. Hue, Saturation, Brightness &mdash; тон, насиченість, яскравість) &mdash; використовується для опису кольорів з моделей RGB і CMYK та є найбільш наближеною моделлю до сприйняття кольору оком людини (мал. 23.7).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-293.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Компонентами моделі HSB є:</p>
+<p style="word-spacing: 1.1px;">&bull; тон (Hue) &mdash; конкретний відтінок: червоний, жовтий, зелений, пурпурний тощо;</p>
+<p style="word-spacing: 1.1px;">&bull; насиченість (Saturation) &mdash; характеризує інтенсивність або чистоту кольору: зменшуючи насиченість, ми розбавляємо його білим кольором;</p>
+<p style="word-spacing: 1.1px;">&bull; яскравість кольору (Brightness) &mdash; залежить від кількості чорної фарби, доданої до певного кольору: що менше чорної фарби, то більша яскравість кольору.</p>
+<p style="word-spacing: 1.1px;">Для відображення на моніторі комп&rsquo;ютера модель HSB перетвориться</p>
+<p style="word-spacing: 1.1px;">на RGB, а для друку на принтері &mdash; на модель CMYK.</p>
+<p style="word-spacing: 1.1px;">Діапазони кольорів різних моделей не збігаються, тому точне переведення заданого кольору з однієї моделі в іншу неможливе. Наприклад, під час друкування зображення після його перегляду на екрані монітора відбувається конвертування зображення з моделі RGB у CMYK. Є графічні редактори, які підтримують різні колірні моделі: тоді на екрані монітора можна побачити, який вигляд матиме комп&rsquo;ютерне зображення на папері.</p>
+<p style="word-spacing: 1.1px;">Вправа 1. Утворення кольорів.</p>
+<p style="word-spacing: 1.1px;">Завдання. Проаналізуйте, як зміна яскравості впливає на колір.</p>
+<p style="word-spacing: 1.1px;">1. Завантажте графічний редактор Paint за допомогою вказівки Пуск/Усі програми/Стандартні/Paint.</p>
+<p style="word-spacing: 1.1px;">2. На вкладці Початок у групі Кольори оберіть інструмент Редагування кольорів</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-294.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. У квадраті з кольорами в правій частині вікна Редагувати палітру клацніть мишею на кольорі обраного відтінку (мал. 23.7).</p>
+<p style="word-spacing: 1.1px;">4. За допомогою повзунка у правій частині вікна обирайте світліші й темніші кольори обраного відтінку. Визначте, як змінюються при цьому значення параметрів Відтінок, Контраст, Яскравість.</p>
+<p style="word-spacing: 1.1px;">5. Повторіть дії п.3 для іншого обраного кольору. Зробіть висновки про зміну кольору за різних значень параметра Яскравість.</p>
+<p style="word-spacing: 1.1px;">6. Натисніть кнопку Скасувати та закрийте вікно графічного редактора.</p>
+<p style="word-spacing: 1.1px;">23.4. Які параметри графічних зображень впливають на їхню якість?</p>
+<p style="word-spacing: 1.1px;">При створенні будь-яких графічних зображень бажано враховувати їхні основні властивості: розмір зображення, глибину кольору, роздільну здатність зображення (розмір пікселів для растрового зображення), колірну модель та обсяг файла, що міститиме це зображення.</p>
+<p style="word-spacing: 1.1px;">Розмір зображення визначається розмірами робочого поля відтворю-вального пристрою й задається в одиницях вимірювання довжини (наприклад, у сантиметрах або дюймах під час друкування на принтері) чи пікселях (наприклад, під час демонстрації за допомогою монітора чи проектора) за шириною та висотою зображення.</p>
+<p style="word-spacing: 1.1px;">Глибина кольору &mdash; кількість бітів, які використовуються для представлення кольору одного пікселя. Визначає метод кодування даних про колір і пропорційну залежність між кількістю бітів двійкового коду кольору та кількістю доступних кольорів.</p>
+<p style="word-spacing: 1.1px;">Роздільна здатність вимірюється переважно кількістю крапок, розміщених на відрізку розміром один дюйм (англ. dpi &mdash; dots per inch &mdash; крапок на дюйм).</p>
+<p style="word-spacing: 1.1px;">Що більшою є роздільна здатність зображення, то вищою буде його якість, а відповідно й обсяг файла для збереження зображення. Збільшуючи роздільну здатність, зображення роблять детальнішим, але тільки до певного рівня. Причиною цього є обмеження:</p>
+<p style="word-spacing: 1.1px;">&bull; оптичної роздільної здатності ока &mdash; око не розрізняє дуже дрібних деталей;</p>
+<p style="word-spacing: 1.1px;">&bull; роздільної здатності обладнання &mdash; зображення спрощується до максимальної роздільної здатності приладу.</p>
+<p style="word-spacing: 1.1px;">Є й інші одиниці вимірювання роздільної здатності: растрової</p>
+<p style="word-spacing: 1.1px;">графіки і сканерів &mdash; у spM &mdash; samples per inch (зразки, екземпляри на дюйм); моніторів &mdash; у ppi &mdash; pixel per inch (пікселі на дюйм).</p>
+<p style="word-spacing: 1.1px;">Орієнтовна роздільна здатність різного устаткування:</p>
+<p style="word-spacing: 1.1px;">сканер &mdash; 600-2400 dpi; монітор &mdash; 72-96 ppi; принтер &mdash; 300-1200dpi; проектор &mdash; 2400 dpi.</p>
+<p style="word-spacing: 1.1px;">Обсяг файла зображення вимірюється в байтах (Кб, Мб), залежить від глибини кольору, обраної колірної моделі, способу кодування, роздільної здатності для растрового зображення та складності графічних примітивів &mdash; для векторного.</p>
+<p style="word-spacing: 1.1px;">23.5. У яких форматах можна зберігати графічні файли й у чому їхня відмінність?</p>
+<p style="word-spacing: 1.1px;">Є багато форматів для запису графічних зображень у файл. У деяких з них підтримується тільки растрова або тільки векторна графіка,</p>
+<p style="word-spacing: 1.1px;">в інших &mdash; обидва типи графіки. Розглянемо найпоширеніші формати графічних файлів (табл. 23.2).</p>
+<p style="word-spacing: 1.1px;">Таблиця 23.2</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>Графічний</p>
+<p>формат</p>
+<p>BMP (Bit Map Picture)</p>
+</td>
+<td>
+<p>Принцип побудови графічних зображень</p>
+<p>Растровий</p>
+</td>
+<td>
+<p>Особливості формату</p>
+<p>Підтримується в будь-яких Windows-сумісних програмах. Файли в цьому форматі мають великий обсяг Підтримується в усіх графічних програмах, при стисненні файлів не відбувається втрат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>GIF (Graphics Interchange Format)</p>
+</td>
+<td>
+<p>Растровий</p>
+</td>
+<td>
+<p>Файли цього формату займають менше місця порівняно з файлами в форматі BMP, що містять те саме зображення. Зменшення обсягу файлів досягається завдяки використанню алгоритмів стиснення, але це відбувається за рахунок втрат у палітрі кольорів малюнка. Маленька глибина кольорів &mdash; 8 біт. Графічні зображення у форматі GIF можуть мати прозорі області. Використовується для запису малих графічних форм або зображень із чіткими краями</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>JPEG (Joint Photographic Expert Group)</p>
+</td>
+<td>
+<p>Растровий</p>
+</td>
+<td>
+<p>Завдяки алгоритмам стиснення використання цього формату дає змогу суттєво зменшувати розміри графічних файлів, не маючи втрат у палітрі кольорів малюнка. Велика глибина кольорів (до 32 біт)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PNG (Portable Network Graphics)</p>
+</td>
+<td>
+<p>Растровий</p>
+</td>
+<td>
+<p>Поєднує найважливіші характеристики форматів GIF і JPG. Забезпечує ефективне стиснення без втрат. Зображення цього формату можуть мати прозорі області</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TIFF (Tagged Image File Format)</p>
+</td>
+<td>
+<p>Растровий</p>
+</td>
+<td>
+<p>Розроблений для збереження графічних зображень з високою роздільною здатністю, отриманих за допомогою сканера для запису монохромних зображень. Зберігаються дані в структурованому вигляді, що дає змогу здійснювати швидкий доступ до різних фрагментів великого зображення</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SVG (Scalable Vector Graphics)</p>
+</td>
+<td>
+<p>Векторний</p>
+</td>
+<td>
+<p>Масштабований векторний формат. Текст у графіці SVG є текстом, а не зображенням, тому його можна виділяти й копіювати, він індексується пошуковими машинами</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>WMF (Windows Metafile Format)</p>
+</td>
+<td>
+<p>Векторний і растровий</p>
+</td>
+<td>
+<p>Формат використовується для збереження векторних зображень Колекції картинок Microsoft. Якщо прочитати файл WMF у векторному графічному редакторі, то одержимо векторний малюнок. Якщо той самий файл прочитати в растровому редакторі, то одержимо растрове зображення</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>EPS</p>
+<p>(Encapsulated</p>
+<p>PostScript)</p>
+</td>
+<td>
+<p>Векторний і растровий</p>
+</td>
+<td>
+<p>Використовується переважно для друку в професійній поліграфії. Містить як векторні зображення, так і растрові</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PDF (Portable Document Format)</p>
+</td>
+<td>
+<p>Векторний і растровий</p>
+</td>
+<td>
+<p>Відкритий формат файла для представлення документів у незалежному від пристрою виведення та роздільної здатності вигляді. Може містити тексти, растрові та векторні зображення</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Для розміщення на веб-сторінках в Інтернеті використовують растрові зображення у форматах JPG, GIF, PNG, оскільки ці формати передбачають стискання даних, і файли мають менший обсяг, ніж відповідні файли форматів без стискання.</p>
+<p style="word-spacing: 1.1px;">Вправа 2. Растрові формати графічних файлів.</p>
+<p style="word-spacing: 1.1px;">Завдання. Збережіть зображення Берегиня (Олег Шупляк)^рд (мал. 23.8) у форматах PNG, BMP, GIF і проаналізуйте якість зображення та обсяг файла в кожному з форматів.</p>
+<p style="word-spacing: 1.1px;">1. У власній структурі папок створіть папку Графіка та в ній папку Формати. Скопіюйте до неї файл Берегиня (Олег Шупляк).jpg з папки Комп&rsquo;ютерна графіка.</p>
+<p style="word-spacing: 1.1px;">2. Клацніть правою кнопкою миші на скопійованому файлі та оберіть вказівку Відкрити за допомогою/Paint.</p>
+<p style="word-spacing: 1.1px;">3. Відкрийте меню роботи з файлами за допомогою інструмента</p>
+<p style="word-spacing: 1.1px;">в лівій верхній частині вікна. Наведіть вказівник миші на вказівку Зберегти як та оберіть Зображення у форматі GIF (мал. 23.9).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-295.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-296.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 23.9</p>
+<p style="word-spacing: 1.1px;">4. Проаналізуйте, чи змінилась якість зображення. Щоб зробити висновок, збільште масштаб відображення зображення. Закрийте вікно графічного редактора.</p>
+<p style="word-spacing: 1.1px;">5. Послідовно знову відкрийте вихідний файл у форматі JPG та збережіть його у форматах BMP та PNG. Оцініть якість отриманих зображень. Закрийте вікно графічного редактора.</p>
+<p style="word-spacing: 1.1px;">6. У папці Графіка/Формати своєї структури папок оберіть подання Таблиця (мал. 23.10). Проаналізуйте обсяг файлів кожного формату. У якому з форматів обране зображення має найменший обсяг файла? Кращу якість? Зробіть висновки.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-297.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">1. Для чого використовується комп&rsquo;ютерна графіка?</p>
+<p style="word-spacing: 1.1px;">2. Які типи зображень використовуються в комп&rsquo;ютерній графіці?</p>
+<p style="word-spacing: 1.1px;">3. У чому полягають переваги та недоліки растрових і векторних зображень?</p>
+<p style="word-spacing: 1.1px;">4. Що таке графічні примітиви у складі векторного зображення?</p>
+<p style="word-spacing: 1.1px;">5. Чи можна визначити розширення імені графічного файла, переглядаючи зображення, що міститься в файлі? Чи залежить якість зображення від типу файла?</p>
+<p style="word-spacing: 1.1px;">6. Які особливості кодування текстових, графічних і звукових даних?</p>
+<p style="word-spacing: 1.1px;">7. Що означає вираз &laquo;оцифровка зображення, фото&raquo;?</p>
+<p style="word-spacing: 1.1px;">8. У чому полягають принципи кодування кольору в колірних моделях RGB, CMYK, HSB?</p>
+<p style="word-spacing: 1.1px;">9. Графічні файли яких форматів використовують для розміщення на веб-сторінках в Інтернеті?</p>
+<p style="word-spacing: 1.1px;">1. Визначте критерії для порівняння растрових і векторних зображень, побудуйте для цього таблицю.</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>Критерії порівняння</p>
+</td>
+<td>
+<p>Растрове зображення</p>
+</td>
+<td>
+<p>Векторне зображення</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Результати заповнення таблиці обговоріть у парі.</p>
+<p style="word-spacing: 1.1px;">2. Пограйте в гру &laquo;Растрове чи векторне&raquo;: один з учасників гри наводить приклад зображення, а інший називає, до якого виду комп&rsquo;ютерної графіки його слід віднести. Наприклад, фотографія &mdash; растрове, креслення &mdash; векторне тощо. Обґрунтуйте свій вибір, спираючись на властивості кожного з видів графіки.</p>
+<p style="word-spacing: 1.1px;">3. Наведіть приклади зображень, які недоцільно зберігати у векторних форматах.</p>
+<p style="word-spacing: 1.1px;">4. Розгляньте кодування кольору в моделі RGB, за якого яскравість кольорів кодується одним бітом &mdash; має значення 0 або 1 (мал. 23.11). Обговоріть, якою є глибина кольору при такому кодуванні. Як залежить кількість можливих кольорів при такому кодуванні від кількості бітів коду кожного кольору?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-298.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">1. Використовуючи модель яскравості кольорів (мал. 23.12) за адресою https://www.geogebra.Org/o/hF5UhSPQ за допомогою повзунків для кожного з трьох основних кольорів визначте, як зміна яскравості від 0 до 255 впливає на відображення кольору.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-299.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 23.12</p>
+<p style="word-spacing: 1.1px;">2. За допомогою онлайнового конвертера кольорів за адресою http://colorscheme.ru/color-converter.html проаналізуйте, як утворюються кольори в колірній моделі RGB. Для цього задайте значення від 0 до 255 для червоного, зеленого та синього кольорів і перегляньте, якому кольору відповідає вказаний набір значень. Наприклад, колір RGB(0,100,100) відображений на малюнку 23.13.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-300.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 23.13</p>
+<p style="word-spacing: 1.1px;">Визначте, як кожний із вказаних кольорів подається в колірній моделі CMYK.</p>
+<p style="word-spacing: 1.1px;">3. Розгляньте приклад аналогового й дискретного подання графічних даних на прикладі графіка функції у = х<sup>2</sup>&nbsp;(мал. 23.14, а, б). Наведіть інші приклади аналогового й дискретного подання даних.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-301.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Визначте, у чому полягають методи таблично-хвильового (Wave-Table) синтезу та FM (Frequency Modulation) для кодування звуку. Для цього скористайтесь матеріалами з файла Методи кодування звуку з папки Комп&rsquo;ютерна графіка. Обговоріть особливості, переваги та недоліки кожного із цих методів.</p>
+<p style="word-spacing: 1.1px;">Дослідіть, як зміна глибини кольору впливає на відображення зображення та обсяг файла. Для цього відкрийте в середовищі графічного редактора Paint зображення Колаж.рпд та збережіть його у форматі bmp з різною глибиною кольору, обираючи послідовно тип файла Монохромний рисунок (глибина кольору &mdash; 1 біт), 16-колірний рисунок (глибина кольору &mdash; 4 біти), 256-колірний рисунок (глибина кольору &mdash; 8 біт) (мал. 23.15). Для збереження кожного наступного файла відкривайте вихідне зображення. Створіть і заповніть таблицю аналізу результатів дослідження.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-302.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-303.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">для чого використовують векторні графічні редактори;</p>
+<p style="word-spacing: 1.1px;">які засоби векторного графічного редактора використовують для створення графічних об&rsquo;єктів та налаштування їхніх властивостей; як створювати малюнки з кривих і ламаних; як до зображення додати текст і розмістити його вздовж контуру; як розміщувати об&rsquo;єкти в різних шарах та опрацьовувати різношарові зображення.</p>
+<p style="word-spacing: 1.1px;">24.1. Для чого використовують векторні графічні редактори?</p>
+<p style="word-spacing: 1.1px;">Ви вже вмієте створювати та опрацьовувати зображення за допомогою растрового графічного редактора, зокрема Paint. Також ви створювали зображення з використанням фігур та змінювали їхні властивості безпосередньо в текстовому документі чи презентації. Для цього використовується вбудований векторний графічний редактор, який входить до складу офісних програм. Засобами такого векторного редактора ви додавали фігури в документ, налаштовували їхні властивості, змінювали порядок розміщення одна відносно одної, групували кілька фігур в один об&rsquo;єкт.</p>
+<p style="word-spacing: 1.1px;">Для створення та опрацювання векторних зображень використовують векторні графічні редактори.</p>
+<p style="word-spacing: 1.1px;">Популярними сьогодні векторними графічними редакторами є Adobe Illustrator, Corel Draw, Freehand, Xara X, Inkscape.</p>
+<p style="word-spacing: 1.1px;">Векторний редактор Inkscape є вільно поширюваним програмним продуктом з відкритим кодом. Цей редактор є кросплатформним &mdash; розробники надають інсталяційні пакети для різних операційних систем: Windows, Mac OS X, Linux. Основним форматом зображень є SVG, проте всі проекти, створені в Inkscape, можна експортувати у формати, які використовуються в браузерах чи типографіях.</p>
+<p style="word-spacing: 1.1px;">Завантажити Inkscape, як і інші програми, можна за допомогою</p>
+<p style="word-spacing: 1.1px;">відповідної вказівки з головного меню або ярлика</p>
+<p style="word-spacing: 1.1px;">програми</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-304.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-305.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">24.2. Які засоби векторного графічного редактора використовують для створення графічних об&rsquo;єктів та налаштування їхніх властивостей?</p>
+<p style="word-spacing: 1.1px;">Векторний графічний редактор Inkscape містить набір інструментів для створення й опрацювання зображень. Деякі з них подібні до відповідних інструментів інших графічних редакторів, зокрема Палітра ко-</p>
+<p style="word-spacing: 1.1px;">льорів у нижній частині екрана, Панель інструментів, рядок меню, що містить вказівки для роботи з файлом та окремими об&rsquo;єктами зображення (мал. 24.1).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-306.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Водночас середовище графічного редактора Inkscape містить додаткові інструменти для роботи. На Панелі команд винесено інструменти, що дублюють відповідні вказівки з меню Файл. За допомогою цих інструментів можна створити новий документ, виконати відкриття, збереження чи друк файла тощо. Панель управління прилипанням містить інструменти, які дають можливість управляти створенням зображень із графічних примітивів. Набір інструментів на Панелі параметрів інструментів змінюється залежно від інструмента, обраного на Панелі інструментів, чи виділеного об&rsquo;єкта зображення. За допомогою цих інструментів можна налаштовувати значення властивостей об&rsquo;єктів, що створюються. Наприклад, для інструмента</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-307.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">на Панелі параметрів інструментів можна</p>
+<p style="word-spacing: 1.1px;">обрати форму фігури &mdash; багатокутник чи зірка, кількість кутів, відношення радіусів тощо. Управляти відображенням панелей можна за домогою відповідних вказівок з меню Перегляд/Показати/Сховати (мал. 24.2).</p>
+<p style="word-spacing: 1.1px;">У робочій області розміщено полотно, на якому створюється зображення у вигляді аркуша паперу. Розміри та орієнтацію сторінки, як і для текстових документів, можна змінити за допомогою вказівки Файл/Па-раметри документа. Краще орієнтуватися в розмірах об&rsquo;єктів, їх розмі-</p>
+<p style="word-spacing: 1.1px;">щенні на сторінці та вирівнювати об&rsquo;єкти один щодо одного допоможуть Лінійки та Сітка сторінки, відобразити чи приховати які можна за допомогою відповідних вказівок з меню Перегляд (мал. 24.2).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-308.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 24.2</p>
+<p style="word-spacing: 1.1px;">Щоб змінити розміри об&rsquo;єкта, обернути чи нахилити його, слід спочатку виділити об&rsquo;єкт за допомогою інструмента Позначення і трансформація об&rsquo;єкта</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-309.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Після цього навколо</p>
+<p style="word-spacing: 1.1px;">об&rsquo;єкта з&rsquo;являються маркери зміни розмірів у вигляді стрілок (мал. 24.3), при протягуванні мишею за будь-який з них відбувається зменшення чи збільшення об&rsquo;єкта. Якщо після цього ще раз клацнути мишею на об&rsquo;єкті, маркери навколо нього набувають іншого вигляду й за їх допомогою можна обертати об&rsquo;єкт або нахиляти його (мал. 24.4).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-310.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Виконувати перетворення об&rsquo;єкта можна також за допомогою вказівки меню Об&rsquo;єкт/Трансформувати. При цьому в правій частині вікна з&rsquo;являється область завдань Трансформувати (мал. 24.5), на відповідних вкладках якої можна задавати параметри переміщення, зміни масштабу, обертання чи нахилу об&rsquo;єкта.</p>
+<p style="word-spacing: 1.1px;">Вказівки меню Об&rsquo;єкт (мал. 24.6) використовують і для зміни інших властивостей об&rsquo;єктів. За їх допомогою можна змінювати порядок розміщення об&rsquo;єктів, групувати кілька об&rsquo;єктів в один, вирівнювати та компонувати об&rsquo;єкти, виконувати обертання на кут 90&deg; чи віддзеркалювати об&rsquo;єкт, налаштовувати колір і стиль заливки та контуру об&rsquo;єкта тощо.</p>
+<p style="word-spacing: 1.1px;">Виконання вказівки Заповнення та штрих з меню Об&rsquo;єкт приводить до відображення в правій частині вікна однойменної області завдань (мал. 24.7). За допомогою інструментів на вкладках Заповнення, Колір штриха, Стиль штриха змінюють відповідні властивості заливки та контура фігури. Як і для фігур, що створюються в середовищі текстового документа, фігури можуть заливатися суцільним кольором, лінійним чи радіальним градієнтом, візерунком тощо. Необхідний колір можна обрати як на палітрі, так і в області Заповнення та штрих, використовуючи подання кольору в одній з колірних моделей.</p>
+<p style="word-spacing: 1.1px;">Крім кольору та способу заливки, можна також обрати ефекти Розмиття та Непрозорість. Значення 0 % для ефекту Непрозорість зробить об&rsquo;єкт повністю прозорим. Задаючи значення, відмінне від 100 %, можна зробити об&rsquo;єкт частково прозорим, у цьому разі частково буде видно об&rsquo;єкт, що розташований під ним.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-311.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 1. Середовище Inkscape.</p>
+<p style="word-spacing: 1.1px;">Завдання. Ознайомтесь із призначенням інструментів векторного графічного редактора Inkscape, особливостями малювання фігур та налаштування їхніх властивостей.</p>
+<p style="word-spacing: 1.1px;">1. У власній папці створіть папку Векторна графіка.</p>
+<p style="word-spacing: 1.1px;">2. Виконайте вказівку Пуск/Усі програми/Inkscape.</p>
+<p style="word-spacing: 1.1px;">3. Відкрийте меню, ознайомтесь із набором вказівок кожного з пунктів меню.</p>
+<p style="word-spacing: 1.1px;">4. Послідовно наведіть вказівник миші на кожний з інструментів панелей, розташованих у лівій та правій частинах вікна. За допомогою спливаючих підказок визначте назви інструментів.</p>
+<p style="word-spacing: 1.1px;">5. Оберіть інструмент</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-312.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">на Панелі інструментів. На Палітрі</p>
+<p style="word-spacing: 1.1px;">в нижній частині вікна оберіть колір на власний розсуд.</p>
+<p style="word-spacing: 1.1px;">6. На Панелі параметрів інструментів у верхній частині вікна оберіть форму фігури &mdash; зірка. Виконайте протягування мишею на полотні, щоб намалювати зірку бажаного розміру.</p>
+<p style="word-spacing: 1.1px;">7. Оберіть інструмент Позначення і трансформація об&rsquo;єкта</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-313.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">та виділіть намальований об&rsquo;єкт. Ще раз клацніть на ньому мишею, щоб з&rsquo;явилися маркери для обертання та нахилу об&rsquo;єкта (мал. 24.4). Виконайте обертання намальованої фігури за допомогою одного з маркерів на кутах об&rsquo;єкта.</p>
+<p style="word-spacing: 1.1px;">8. На Панелі параметрів інструментів у верхній частині вікна змініть кількість кутів виділеного об&rsquo;єкта. Зробіть висновок, як впливає цей параметр на відображення фігури.</p>
+<p style="word-spacing: 1.1px;">9. Виконайте вказівку Об&rsquo;єкт/Заповнення та штрих. На вкладці Заповнення послідовно обирайте різні способи заливки: суцільний колір, лінійний градієнт, радіальний градієнт, візерунок. Поекспериментуйте з різними способами заливки. Визначте вплив ефектів Розмиття та Непрозорість на відображення фігури. Оберіть заповнення фігури на власний розсуд.</p>
+<p style="word-spacing: 1.1px;">10. Збережіть результати у файлі з іменем Зірка в папці Векторна графіка своєї структури папок.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-314.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">24.3. Як створювати малюнки з кривих і ламаних?</p>
+<p style="word-spacing: 1.1px;">Для малювання довільних контурів, яків растровому графічному редакторі Paint, можна скористатися інструментом</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-315.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">дія якого нагадує</p>
+<p style="word-spacing: 1.1px;">малювання звичайним олівцем від руки.</p>
+<p style="word-spacing: 1.1px;">На відміну від інших графічних редакторів, Inkscape не містить окремого інструмента для малювання прямих ліній. Малювати прямі та криві</p>
+<p style="word-spacing: 1.1px;">лінії можна за допомогою інструмента</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-316.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">При цьому, щоб намалювати</p>
+<p style="word-spacing: 1.1px;">пряму, слід зафіксувати її початкову точку, виконати протягування мишею до кінцевої точки та двічі клацнути мишею. Якщо клацнути мишею один раз, то створення лінії продовжується &mdash; таким чином можна побудувати ламану, в кінцевій точці якої слід двічі клацнути мишею.</p>
+<p style="word-spacing: 1.1px;">За замовчуванням за допомогою інструмента</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-317.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">малюють так звані</p>
+<p style="word-spacing: 1.1px;">криві Безьє. Такі криві визначаються чотирма точками, дві з яких називаються вузлами кривої. Дві інші точки є маркерами напрямків відповідно до кожного з вузлів (мал. 24.8). Крива розміщується по дотичній до лінії напрямку.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-318.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Криві Безьє запроваджено в 1962 р. П&rsquo;єром Безьє з автомобілебудівної компанії Рено, хоча ще в 1959 р. використовувались Полем де Кастельє з компанії &laquo;Сітроен&raquo;, але його дослідження не публікувались і приховувались компанією як комерційна таємниця до кінця 1960-х.</p>
+<p style="word-spacing: 1.1px;">Щоб намалювати криву, спочатку слід намалювати фрагмент лінії, як для прямої, і, не відпускаючи кнопку миші, рухати мишею, щоб створити маркери напрямку для заданого вузла. Завершують створення лінії подвійним клацанням мишею. Форму кривої в подальшому можна змінити</p>
+<p style="word-spacing: 1.1px;">за допомогою інструмента</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-319.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Після вибору цього інструмента вздовж</p>
+<p style="word-spacing: 1.1px;">кривої будуть відображені вузли, які можна переміщувати, щоб отримати криву необхідної форми.</p>
+<p style="word-spacing: 1.1px;">24.4. Як до зображення додати текст і розмістити його вздовж контуру?</p>
+<p style="word-spacing: 1.1px;">Як і в інших графічних редакторах, до створеного зображення в середовищі Inhscape можна додавати текстові</p>
+<p style="word-spacing: 1.1px;">написи. Для цього використовують інструмент</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-320.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">з Панелі інструментів. Створений текстовий напис можна редагувати та форматувати. Для виконання дій з текстом використовують вказівки меню Текст (мал. 24.9).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-321.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Налаштувати параметри форматування тексту можна за допомогою вказівки Текст/Текст та шрифт.</p>
+<p style="word-spacing: 1.1px;">Щоб текст розміщувався вздовж кривої або контуру фігури, слід виділити текстовий напис і відповідний графічний об&rsquo;єкт при натисненій клавіші Shift та виконати вказівку Текст/Розмістити по контуру.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">24.5. Як розміщувати об&rsquo;єкти в різних шарах та опрацьовувати різношарові зображення?</p>
+<p style="word-spacing: 1.1px;">Якщо зображення складається з кількох незалежних об&rsquo;єктів, їх можна розмістити в різних шарах. За замовчуванням зображення містить один шар, і всі об&rsquo;єкти розміщуються в ньому. Для додавання нових шарів зображення та управління об&rsquo;єктами в них використовують вказівки меню Шар (мал. 24.10) та область завдань Шари (мал. 24.11), яку можна викликати за допомогою відповідної вказівки з меню Шар або інструмента з Панелі команд.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-322.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-323.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Інструменти цієї області завдань дублюють деякі вказівки меню Шар. За їх допомогою можна прискорити роботу з багатошаровими зображеннями та зробити її більш наочною: виділити необхідний шар, додати новий шар</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-324.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">перемістити його вище чи</p>
+<p style="word-spacing: 1.1px;">нижче</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-325.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">перейменувати, двічі клацнувши на його імені,</p>
+<p style="word-spacing: 1.1px;">показати чи приховати</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-326.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">заблокувати чи розблокувати</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-327.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">. Вибір</p>
+<p style="word-spacing: 1.1px;">вказівки Шар/Додати шар або відповідного інструмента приводить до відображення вікна Додавання шару (мал. 24.12), у якому слід задати ім&rsquo;я нового шару та спосіб розміщення відносно поточного шару.</p>
+<p style="word-spacing: 1.1px;">Вправа 2. Багатошарове зображення.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть зображення, що складається з трьох різнокольорових фігур різної форми, що різміщені в різних шарах. Змініть порядок розташування шарів.</p>
+<p style="word-spacing: 1.1px;">1. У векторному графічному редакторі Inkscape створіть новий документ. Збережіть його з іменем Фігури в папці Векторна графіка своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">2. На палітрі кольорів оберіть жовтий колір. Намалюйте фігуру у формі зірки.</p>
+<p style="word-spacing: 1.1px;">3. Виконайте вказівку Шар/Шари. В області завдань Шари (мал. 24.11) двічі клацніть на імені шару та змініть його на Зірка.</p>
+<p style="word-spacing: 1.1px;">4. Оберіть інструмент</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-328.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">щоб додати новий шар. У вікні Додавання шару (мал. 24.12) введіть ім&rsquo;я шару Круг.</p>
+<p style="word-spacing: 1.1px;">5. На палітрі оберіть синій колір. Намалюйте круг за допомогою відповідного інструмента. Щоб отримати круг, а не еліпс, утримуйте натисненою клавішу Shift.</p>
+<p style="word-spacing: 1.1px;">6. Виконайте вказівку Шар/Додати шар. Задайте ім&rsquo;я шару Прямокутник.</p>
+<p style="word-spacing: 1.1px;">7. На палітрі оберіть червоний колір. Намалюйте прямокутник за допомогою відповідного інструмента.</p>
+<p style="word-spacing: 1.1px;">8. В області завдань Шари виділіть шар Круг. Оберіть інструмент</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-329.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">щоб</p>
+<p style="word-spacing: 1.1px;">розмістити цей шар на передньому плані. Об&rsquo;єкти, що утворюють зображення, змінять порядок розміщення (мал. 24.13).</p>
+<p style="word-spacing: 1.1px;">9. Збережіть результати роботи.</p>
+<p style="word-spacing: 1.1px;">Вправа 3. Значок папки.</p>
+<p style="word-spacing: 1.1px;">Завдання. Засобами графічного редактора Inkscape створіть значок папки за зразком (мал. 24.14).</p>
+<p style="word-spacing: 1.1px;">1. У векторному графічному редакторі Inkscape створіть новий документ. Збережіть його з іменем Значок папки в папці Векторна графіка своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">2. Намалюйте в центрі полотна прямокутник за допомогою інструмента Створення прямокутників і квадратів</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-330.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Продублюйте цей прямокутник за допомогою вказівки меню Зміни/Дублювати.</p>
+<p style="word-spacing: 1.1px;">4. Перемістіть верхній прямокутник трохи вгору. Для цього виберіть його за допомогою інструмента Позначення і трансформація , якщо навколо</p>
+<p style="word-spacing: 1.1px;">нього відображено маркери зміни розміру (мал. 24.15) &mdash; натискайте на клавіатурі клавішу Т.</p>
+<p style="word-spacing: 1.1px;">5. Продублюйте прямокутник двічі й розташуйте створені копії нижче основного зображення.</p>
+<p style="word-spacing: 1.1px;">6. Виділіть перші два прямокутники при натисненій клавіші Shift і згрупуйте їх за допомогою вказівки Об&rsquo;єкт/Групувати.</p>
+<p style="word-spacing: 1.1px;">7. Створіть ярличок для папки, використавши один зі створених раніше прямокутників, розміщених нижче. Виділіть цей прямокутник, зменшіть його</p>
+<p style="word-spacing: 1.1px;">розмір, оберіть інструмент</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-331.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">та заокругліть його кути за допомогою</p>
+<p style="word-spacing: 1.1px;">круглого маркера (мал. 24.16), перемістіть у верхню частину майбутньої папки, як показано на малюнку 24.17.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-332.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">8. Виділіть обидва об&rsquo;єкти (ярлик і папку) при натисненій клавіші Shift і використайте вказівку меню Об&rsquo;єкт/Групувати.</p>
+<p style="word-spacing: 1.1px;">9. Змініть колір прямокутника, що залишився в нижній частині полотна, на червоний, щоб не плутати його з іншим об&rsquo;єктом.</p>
+<p style="word-spacing: 1.1px;">10. У меню Об&rsquo;єкт оберіть вказівку Вирівняти та розподілити... й за допомогою інструментів у відповідній області завдань вирівняйте об&rsquo;єкти один відносно одного, як на малюнку 24.18.</p>
+<p style="word-spacing: 1.1px;">11. За потреби клацніть на червоному прямокутнику, щоб маркери зміни розмірів змінилися маркерами обертання та нахилу, &mdash; стрілка над центром угорі стала горизонтальною.</p>
+<p style="word-spacing: 1.1px;">12. Виконайте протягування за маркер нахилу вправо, щоб перетворити прямокутник на паралелограм, після чого виділіть усі фігури і здійсніть вирівнювання за лівою межею (мал. 24.19).</p>
+<p style="word-spacing: 1.1px;">13. Намалюйте вкладений у папку аркуш паперу, щоб було зрозуміліше, що зображено папку. Для цього знову оберіть інструмент Створення прямокутників і квадратів і намалюйте поверх папки білий чи світло-жовтий</p>
+<p style="word-spacing: 1.1px;">прямокутник трохи меншого розміру, ніж сама папка (мал. 24.20).</p>
+<p style="word-spacing: 1.1px;">14. Додайте новий шар. Для цього виконайте вказівку меню Шар/Дода-ти шар. Надайте новому шару ім&rsquo;я Шар 2. Виділіть червоний прямокутник і виконайте вказівку Шар/Пересунути позначене до шару та вкажіть Шар 2.</p>
+<p style="word-spacing: 1.1px;">15. Змініть колір червоного прямокутника на жовтий. Отримаємо зображення, як на зразку (мал. 24.14).</p>
+<p style="word-spacing: 1.1px;">16. Збережіть результати роботи.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-333.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">1. Для чого призначені векторні графічні редактори?</p>
+<p style="word-spacing: 1.1px;">2. Для чого в графічному редакторі використовують лінійки й сітку? Як їх відобразити?</p>
+<p style="word-spacing: 1.1px;">3. Які графічні примітиви можна використати у векторному графічному редакторі Inkscape для створення зображень? Які властивості об&rsquo;єктів при цьому можна змінювати?</p>
+<p style="word-spacing: 1.1px;">4. Які способи заливки можна застосувати до об&rsquo;єктів зображення?</p>
+<p style="word-spacing: 1.1px;">5. За допомогою яких засобів графічного редактора Inkscape можна обертати, відображати й масштабувати об&rsquo;єкти?</p>
+<p style="word-spacing: 1.1px;">6. Чому інструменти на Панелі параметрів об&rsquo;єктів змінюються при виборі іншого інструмента?</p>
+<p style="word-spacing: 1.1px;">7. Які особливості малювання ліній у графічному редакторі Inkscape?</p>
+<p style="word-spacing: 1.1px;">8. Як додати текстові написи до зображення? Які дії слід виконати, щоб розмістити текст уздовж контуру фігури, яка є на зображенні?</p>
+<p style="word-spacing: 1.1px;">9. Як згрупувати кілька фігур в один об&rsquo;єкт?</p>
+<p style="word-spacing: 1.1px;">10. Як розмістити зображення в різних шарах? Які інструменти редактора Inkscape можна використати для управління шарами?</p>
+<p style="word-spacing: 1.1px;">1. Обговоріть, що мають спільного та чим відрізняються растровий графічний редактор Paint і векторний Inkscape. За результатами побудуйте діаграму Венна.</p>
+<p style="word-spacing: 1.1px;">2. Складіть одне для одного інструкцію малювання деякого зображення в середовищі редактора Inkscape. Намалюйте зображення за інструкцією, запропонованою вашим сусідом чи сусідкою.</p>
+<p style="word-spacing: 1.1px;">3. Ознайомтесь із галереєю зображень, створених засобами графічного редактора Inkscape http://inkscape.deviantart.com/favourites/?offset=72. Обговоріть, які фрагменти зображень могли бути створені за допомогою кривих Безьє.</p>
+<p style="word-spacing: 1.1px;">4. Розгляньте піктограми до розділів на сайті http://edufuture.biz, зокрема відображені на малюнку 24.21. Обговоріть, за допомогою яких інструментів векторного графічного редактора можна створити такі піктограми. Запропонуйте одне одному алгоритм створення однієї з таких піктограм.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-334.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">1. Створіть засобами векторного графічного редактора заготовки розма-льовок для дошкільнят за зразками (мал. 24.22).</p>
+<p style="word-spacing: 1.1px;">2. Створіть засобами векторного графічного редактора піктограми для позначення прогнозу погоди (мал. 24.23).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-335.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-336.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Створіть засобами векторного графічного редактора інструменти для програвача мультимедіа (мал. 24.24). Розробіть власний дизайн інструментів.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-337.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Створіть інформаційні таблички для кабінетів фізики, хімії чи біології, які міститимуть назву кабінету, його логотип &mdash; маленьке зображення, що відображає відповідну науку, назву класу.</p>
+<p style="word-spacing: 1.1px;">Вправа 4. Фігурний текст.</p>
+<p style="word-spacing: 1.1px;">Завдання. Дослідіть особливості створення фігурного тексту в середовищі графічного редактора Inkscape. Скористайтесь інструкціями за адресою</p>
+<p style="word-spacing: 1.1px;">h ttp://inkscape. pain t-net. ги/ ?id=23.</p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Обираємо майбутню професію&raquo;</p>
+<p style="word-spacing: 1.1px;">Створіть постер про професію, яку будете представляти на &laquo;Ярмарці професій&raquo;. Розмістіть на постері логотип, створений засобами графічного редактора, та напис із назвою професії.</p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Е-урядування&raquo;</p>
+<p style="word-spacing: 1.1px;">Розробіть ескіз паспорта громадянина України у вигляді ID-картки.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-338.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">СТВОРЕННЯ ПРОСТИХ ВЕКТОРНИХ ЗОБРАЖЕНЬ</p>
+<p style="word-spacing: 1.1px;">Як створювати прості векторні зображення в середовищі векторного графічного редактора; як змінювати значення властивостей графічних об&rsquo;єктів; як зафарбовувати об&rsquo;єкти, використовуючи однорідні, градієнтні, візерункові й текстурні заливки.</p>
+<p style="word-spacing: 1.1px;">У власній структурі папок створіть папку Практична робота 10.</p>
+<p style="word-spacing: 1.1px;">Під час виконання практичних завдань пам&rsquo;ятайте про правила безпеки життєдіяльності при роботі з комп&rsquo;ютером!</p>
+<p style="word-spacing: 1.1px;">Завдання 1. Дитяче свято (8 балів)</p>
+<p style="word-spacing: 1.1px;">Для облаштування дитячого свята створіть прикраси, що мають форму різних геометричних фігур, за допомогою інструментів векторного графічного редактора. Для кожної з фігур застосуйте різні заливки: однорідні різних кольорів, градієнтні, візерункові та текстурні. Збережіть результат у файлі з іменем Прикраси в папці Практична робота 10 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">Завдання 2. Прапори (12 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть у середовищі векторного графічного редактора зображення прапора України та прапорів країн-сусідів України. Збережіть результат у файлі з іменем Прапори в папці Практична робота 10 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">Завдання 3. Піктограми (12 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть у середовищі векторного графічного редактора зображення шести піктограм. Скористайтеся зразками, поданими на малюнку 25.1, або придумайте власні піктограми. Збережіть результат у файлі з іменем Піктограми в папці Практична робота 10 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-339.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-340.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">СТВОРЕННЯ СКЛАДЕНИХ ВЕКТОРНИХ ЗОБРАЖЕНЬ</p>
+<p style="word-spacing: 1.1px;">Як створювати складені векторні зображення в середовищі векторного графічного редактора; як опрацьовувати багатошарові зображення; як додати текстові написи до зображення.</p>
+<p style="word-spacing: 1.1px;">У власній структурі папок створіть папку Практична робота 11.</p>
+<p style="word-spacing: 1.1px;">Під час виконання практичних завдань пам&rsquo;ятайте про правила безпеки життєдіяльності при роботі з комп&rsquo;ютером!</p>
+<p style="word-spacing: 1.1px;">Завдання 1. Логотип команди (12 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть у середовищі векторного графічного редактора логотип команди, яка братиме участь у змаганні &laquo;Молодь за чисту планету&raquo;. Використайте символіку, що вирізнятиме українську команду з-поміж інших команд світу. Збережіть результат у файлі з іменем Логотип у папці Практична робота 11 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">Завдання 2. Емблема (12 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть у середовищі векторного графічного редактора емблему команди на змагання &laquo;Козацькі забави&raquo;. Назву команди розмістіть уздовж основної фігури емблеми. Збережіть результат у файлі з іменем Емблема в папці Практична робота 11 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">Завдання 3. Дудл для Google (12 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть у середовищі векторного графічного редактора дудл для пошукової системи Google до Дня незалежності України. Збережіть результат у файлі з іменем Дудл у папці Практична робота 11 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-341.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">завдання 4. Постер (12 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть у середовищі векторного графічного редактора постер для учнів початкової школи &laquo;Вивчаємо англійський алфавіт&raquo;. Збережіть результат у файлі з іменем Постер у папці Практична робота 11 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">Дудл для Google (від англ. Doodle &mdash; каракулі, малюнки на полях) &mdash; незвичний святковий логотип головної сторінки пошукової системи Google. Дудли з&rsquo;являються на честь свят, річниць важливих подій чи ювілеїв відомих особистостей. Зокрема, до дня народження української письменниці Марко Вовчок (Марії Вілінської) Google присвятив дудл цій річниці (мал. 26.1).</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2159-pdruchnik-nformatika-9-klas-morze-barna-vember-nova-programa-2017.html">Інформатика 9 клас Морзе</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Підручник Інформатика 9 клас Бондаренко читати онлайн (нова програма 2017)</a></li><li><a href="682-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="662-malyunki-ta-gperposilannya-na-veb-stornc.html">Малюнки та гіперпосилання на веб-сторінці</a></li><li><a href="657-robota-z-kompyuternimi-publkacyami.html">Робота з комп'ютерними публікаціями</a></li><li><a href="647-osnovn-ponyattya-kompyuternoyi-grafki.html">Основні поняття комп'ютерної графіки</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

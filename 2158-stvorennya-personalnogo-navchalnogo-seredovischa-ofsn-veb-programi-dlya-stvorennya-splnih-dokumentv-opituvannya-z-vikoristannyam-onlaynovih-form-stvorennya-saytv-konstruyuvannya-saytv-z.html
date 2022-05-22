@@ -1,0 +1,832 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Створення персонального навчального середовища. Офісні веб-програми для створення спільних документів. Опитування з використанням онлайнових форм. Створення сайтів. Конструювання сайтів з використанням онлайн-систем &raquo; mozok.click</title>
+<meta name="description" content="Що таке персональне навчальне середовище?Найрізноманітніші сервіси та інформаційні дані, що розміщені сьогодні в мережі Інтернет, не можуть бути охоплені одночасно кожним користувачем. Тому" />
+<meta name="keywords" content="мережі, обмінюватись, даними, комунікувати, правильно, уміння, успішною, змінному, світі, будувати, дотримуватися, спільноти, професійним, спрямуванням, утворювати, етикету, прагне, правил, мережевого, запити" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2158-stvorennya-personalnogo-navchalnogo-seredovischa-ofsn-veb-programi-dlya-stvorennya-splnih-dokumentv-opituvannya-z-vikoristannyam-onlaynovih-form-stvorennya-saytv-konstruyuvannya-saytv-z.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Створення персонального навчального середовища. Офісні веб-програми для створення спільних документів. Опитування з використанням онлайнових форм. Створення сайтів. Конструювання сайтів з використанням онлайн-систем</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2158").Button("#infc2158"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2158" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2158" class="infcont">
+			<ul>
+				<li><i>Переглядів: 21992</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 15-01-2018, 08:13</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2158'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:85px;">85</li>
+		<li><a href="2158-stvorennya-personalnogo-navchalnogo-seredovischa-ofsn-veb-programi-dlya-stvorennya-splnih-dokumentv-opituvannya-z-vikoristannyam-onlaynovih-form-stvorennya-saytv-konstruyuvannya-saytv-z.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2158'); return false;">1</a></li>
+		<li><a href="2158-stvorennya-personalnogo-navchalnogo-seredovischa-ofsn-veb-programi-dlya-stvorennya-splnih-dokumentv-opituvannya-z-vikoristannyam-onlaynovih-form-stvorennya-saytv-konstruyuvannya-saytv-z.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2158'); return false;">2</a></li>
+		<li><a href="2158-stvorennya-personalnogo-navchalnogo-seredovischa-ofsn-veb-programi-dlya-stvorennya-splnih-dokumentv-opituvannya-z-vikoristannyam-onlaynovih-form-stvorennya-saytv-konstruyuvannya-saytv-z.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2158'); return false;">3</a></li>
+		<li><a href="2158-stvorennya-personalnogo-navchalnogo-seredovischa-ofsn-veb-programi-dlya-stvorennya-splnih-dokumentv-opituvannya-z-vikoristannyam-onlaynovih-form-stvorennya-saytv-konstruyuvannya-saytv-z.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2158'); return false;">4</a></li>
+		<li><a href="2158-stvorennya-personalnogo-navchalnogo-seredovischa-ofsn-veb-programi-dlya-stvorennya-splnih-dokumentv-opituvannya-z-vikoristannyam-onlaynovih-form-stvorennya-saytv-konstruyuvannya-saytv-z.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2158'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/15/index.html" ><i>15-01-2018, 08:13</i></a></span>
+	<h3 class="btl"><span id="news-title">Створення персонального навчального середовища. Офісні веб-програми для створення спільних документів. Опитування з використанням онлайнових форм. Створення сайтів. Конструювання сайтів з використанням онлайн-систем</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2158" style="display:inline;"><p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-342.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<ul>
+<li>що таке персональне навчальне середовище;</li>
+<li>як у персональному навчальному середовищі застосовують хмарні технології;</li>
+<li>як організовують опитування за допомогою онлайнових форм;</li>
+<li>як організувати доступ до інформаційних матеріалів у персональному навчальному середовищі.</li>
+</ul>
+<p>&nbsp;</p>
+<p style="word-spacing: 1.1px;">27.1. Що таке персональне навчальне середовище?</p>
+<p style="word-spacing: 1.1px;">Найрізноманітніші сервіси та інформаційні дані, що розміщені сьогодні в мережі Інтернет, не можуть бути охоплені одночасно кожним користувачем. Тому однією з навичок, які має сформувати людина, котра прагне бути успішною в змінному світі, &mdash; це уміння комунікувати: обмінюватись даними в мережі, правильно будувати запити, дотримуватися правил мережевого етикету та утворювати спільноти за професійним спрямуванням. Кожен з нас перебуває в деякому інформаційному просторі: навчається у школі, отримує відомості з газет, книг, телебачення, очно спілкується з рідними та друзями й віртуально &mdash; у соціальних мережах. Але інформаційний простір при цьому не вичерпується територією проживання чи колом спілкування. Він розширюється в міру того, наскільки людина залучає до нього нові джерела знань, зокрема професійні спільноти: групи, які створюються в мережі та реальному житті за інтересами. Учасники таких спільнот часто обмінюються своїми знаннями, дають рекомендації щодо використання нових ресурсів, допомагають оволодіти ними. Користувач Інтернету, включений у роботу таких груп, поступово накопичує сукупність даних і засобів, які використовує у своїй діяльності зараз, або планує переглянути чи використати в майбутньому. Таким чином формується його інформаційне середовище.</p>
+<p style="word-spacing: 1.1px;">Інформаційний простір не рівнозначний інформаційному середовищу: перебуваючи в одному й тому самому інформаційному просторі, людина може змінювати одне інформаційне середовище на інше. Більше того, можна одночасно перебувати в різних інформаційних середовищах. Інформаційне середовище &mdash; це не тільки середовище для здійснення діяльності, а й засіб створення персональної навчальної мережі &mdash; такої мережі, де ми можемо взаємодіяти не тільки з нашими колегами, наприклад учасниками співтовариства, а і їх колегами по спільній діяльності. Інформаційне середовище, яке створює навколо себе людина з метою задоволення власних навчальних потреб та досягнення відповідних навчальних цілей, має назву персонального навчального середовища.</p>
+<p style="word-spacing: 1.1px;">Слово персональне насамперед означає те, що навчальні цілі в кожної людини власні (персональні), тому й інформаційне середовище щодо навчальних цілей також буде персональним.</p>
+<p style="word-spacing: 1.1px;">Використовуючи персональне навчальне середовище, користувач створює свою персональну мережу, вузлами якої можуть бути люди,</p>
+<p style="word-spacing: 1.1px;">інформаційні матеріали мережі, інформаційні матеріали, створені користувачем такого середовища, сукупність ресурсів, потрібних людині для того, щоб знайти відповіді на різноманітні питання, створити потрібний зміст для навчання та проілюструвати досліджувані процеси (мал. 27.1).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-343.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.1</p>
+<p style="word-spacing: 1.1px;">27.2. Як у персональному навчальному середовищі застосовують хмарні технології?</p>
+<p style="word-spacing: 1.1px;">Для організації персонального навчального середовища зазвичай використовують хмарні технології.</p>
+<p style="word-spacing: 1.1px;">Хмарні технології &mdash; це інформаційні технології, що передбачають віддалене опрацювання та зберігання даних.</p>
+<p style="word-spacing: 1.1px;">Хмара &mdash; це деякий сервер або мережа розподілених центрів опрацювання даних, де зберігаються дані та програми, які використовують користувачі за допомогою глобальної мережі. Хмарні технології дають змогу споживачам використовувати програми без встановлення на власний комп&rsquo;ютер й доступу до особистих файлів з будь-якого комп&rsquo;ютера, що має доступ в Інтернет.</p>
+<p style="word-spacing: 1.1px;">Користування хмарною системою зберігання даних надається у вигляді інтернет-сервісу. Зростання попиту користувачів на такі сервіси зумовлено зручністю користування інформаційними даними, зокрема: не потрібні потужні комп&rsquo;ютери;</p>
+<p style="word-spacing: 1.1px;">менше витрат на придбання програмного забезпечення та його систематичне оновлення; необмежений обсяг збереження даних;</p>
+<p style="word-spacing: 1.1px;">доступність із різних пристроїв і відсутність прив&rsquo;язки до робочого місця;</p>
+<p style="word-spacing: 1.1px;">забезпечення захисту даних від втрат і виконання багатьох видів навчальної діяльності, контролю й оцінювання, тестування онлайн, відкритості освітнього середовища; економія коштів на утримання технічних фахівців.</p>
+<p style="word-spacing: 1.1px;">Але користувачу доведеться пам&rsquo;ятати пароль доступу, без якого дані назавжди залишаться у хмарному сховищі під замком. Найпростішим хмарним сховищем можна вважати скриньку електронної пошти, на яку можна відправляти дані самому собі.</p>
+<p style="word-spacing: 1.1px;">Можна виділити такі популярні в Україні та світі хмарні сервіси зберігання даних: AmazonCloudDrive, AmazonCloudPlayer, Bitcasa, Box.net, Copy.com, Dropbox, Flickr, GoogleDrive, JungleDisk, iCloud, Mega, MediaFire, Mozy, Office365, OneDrive, Photobucket, Yunpan360, 4shared тощо.</p>
+<p style="word-spacing: 1.1px;">Найпопулярнішими серед спеціалізованих хмарних сервісів на сьогодні є Dropbox і Google Drive. Безкоштовний обсяг даних, що можуть бути збережені зараз у хмарних сховищах, подано на малюнку 27.2.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-344.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.2</p>
+<p style="word-spacing: 1.1px;">Хмарне сховище можна використовувати для розміщення даних, які збережені у файлах на локальному диску, створення документів і надання доступу до їхнього перегляду, редагування та коментування іншими користувачами мережі, що належать до вашого кола спілкування.</p>
+<p style="word-spacing: 1.1px;">Наприклад, у сховищі Google Диск користувач може використовувати стандартні офісні веб-програми (табл. 27.1) та доповнювати їх список, підключивши інші додатки.</p>
+<p style="word-spacing: 1.1px;">Таблиця 27.1</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-345.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 1. Google Диск.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть сховище для зберігання файлів у персональному навчальному середовищі засобами Google Диск.</p>
+<p style="word-spacing: 1.1px;">1. У браузері відкрийте сторінку пошукової системи Google.</p>
+<p style="word-spacing: 1.1px;">2. Якщо у вас є акаунт Google, то увійдіть до сервісу під своїм акаунтом. В іншому разі &mdash; зареєструйте персональний акаунт.</p>
+<p style="word-spacing: 1.1px;">Примітка. Реєстрація акаунта Google нагадує реєстрацію електронної скриньки на звичайному поштовому сервері. Якщо потрібна допомога, то скористайтесь інструкцією AKayHT_Google, яка збережена в папці Навчальне середовище.</p>
+<p style="word-spacing: 1.1px;">3. Перейдіть до списку сервісів, обравши інструмент Додатки Google у правому верхньому куті вікна браузера.</p>
+<p style="word-spacing: 1.1px;">4. У списку сервісів, що відкрився, оберіть сервіс Диск.</p>
+<p style="word-spacing: 1.1px;">5. На запит служби підтримки оберіть персональний акаунт доступу до диска, якщо на комп&rsquo;ютері працює ще декілька користувачів. Натисніть кнопку Продовжити (Continue).</p>
+<p style="word-spacing: 1.1px;">6. Розгляньте структуру сховища (мал. 27.3).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-346.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 2. Публікація документів на Google Диску.</p>
+<p style="word-spacing: 1.1px;">Завдання. Розмістіть у персональному навчальному сховищі документи, збережені на локальному диску.</p>
+<p style="word-spacing: 1.1px;">1. Увійдіть у середовище власного Google Диска й натисніть кнопку Створити.</p>
+<p style="word-spacing: 1.1px;">2. У списку об&rsquo;єктів для створення оберіть вказівку Папка (мал. 27.4).</p>
+<p style="word-spacing: 1.1px;">3. У вікні Нова папка введіть назву папки &mdash; Проектсховище та натисніть кнопку Створити.</p>
+<p style="word-spacing: 1.1px;">4. Відкрийте папку Проект сховище у сховищі Мій диск. Перетягніть у поле папки потрібні файли з папки Проект своєї структури папок (мал. 27.5).</p>
+<p style="word-spacing: 1.1px;">5. Перевірте, чи відображений у сховищі розміщений файл (мал. 27.6).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-347.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 3. Створення документа на Google Диску.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть у персональному навчальному сховищі текстовий документ для формування списку учасників проекту &laquo;Ярмарок професій&raquo;. Надайте до нього доступ іншим учням класу за їхньою електронною адресою з правами доступу: Редагування.</p>
+<p style="word-spacing: 1.1px;">1. У списку об&rsquo;єктів, який відкривається після натиснення кнопки Створити, вашого Google Диска, оберіть Google Документи.</p>
+<p style="word-spacing: 1.1px;">2. Перейменуйте Документ без назви на Список учасників (мал. 27.7).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-348.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Запишіть заголовок документа. Використайте позначені на малюнку 27.8 інструменти онлайнового редактора для форматування тексту.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-349.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.8</p>
+<p style="word-spacing: 1.1px;">4. Додайте після заголовка таблицю подібно до того, як ви додавали таблицю до текстового документа в офісних текстових процесорах (мал. 27.9). Сформуйте заголовки таблиці. Оформіть їх на власний розсуд, використавши повне меню інструментів (вказівка Більше) (мал. 27.10).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-350.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.9</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-351.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.10</p>
+<p style="word-spacing: 1.1px;">5. Надайте спільний доступ до редагування іншим учням класу, які братимуть участь у заході. Для цього натисніть</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-352.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">й у вікні,</p>
+<p style="word-spacing: 1.1px;">що відкриється, введіть електронні адреси учнів класу. Налаштуйте рівень доступу: Редагування (мал. 27.11). Завершіть надання доступу натисненням кнопки Готово.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-353.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.11</p>
+<p style="word-spacing: 1.1px;">6. Зверніть увагу на те, що всі, хто відкривають одночасно з вами документ, отримують автоматично колір маркування тексту (мал. 27.12) і можуть одночасно працювати з документом.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-354.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.12</p>
+<p style="word-spacing: 1.1px;">7. Завершіть редагування документа.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">27.3. Як організовують опитування за допомогою онлайнових форм?</p>
+<p style="word-spacing: 1.1px;">Для організації опитування в межах персонального навчального середовища використовують Google Форми. Google Форми &mdash; сервіс, за допомогою якого можна організувати різні опитування, збирати відповіді в одній електронній таблиці та підбивати підсумки за результатами опитування. Зазначимо, що Google Форми часто використовують для створення системи звітів, контролю щоденної, щотижневої, щомісячної, квартальної чи річної діяльності працівників корпорацій чи державних (комунальних) установ. Для зменшення витрат часу на опис і складання паперових звітів цей сервіс пропонує електронну форму для ведення звітності, заповнити яку може кожен працівник, котрий має комп&rsquo;ютер на робочому місці, підключення до Інтернету та встановлений браузер.</p>
+<p style="word-spacing: 1.1px;">В онлайновій формі можна використати такі типи елементів при формуванні запитань для опитування:</p>
+<p style="word-spacing: 1.1px;">з короткими відповідями &mdash; невеличке поле для відкритої відповіді (наприклад, підходить для запитань про прізвище, посаду, ввести певне число тощо);</p>
+<p style="word-spacing: 1.1px;">абзац &mdash; велике текстове поле для відкритої відповіді (наприклад, Ваші побажання, Коментарі тощо);</p>
+<p style="word-spacing: 1.1px;">прапорці &mdash; усі варіанти відповіді відображаються списком і можна обрати будь-яку кількість варіантів. Тут доцільно додати довідку типу Оберіть не більш ніж три варіанти; спадний список &mdash; варіанти відповіді відображаються випадаючим списком і можна обрати лише один варіант. Тут доцільно на місці першого варіанта відповіді писати Виберіть зі списку, а в тексті довідки &mdash; Натисніть кнопку зі стрілкою та виберіть зі списку; з варіантами відповіді &mdash; усі варіанти відповіді відображаються списком і можна обрати лише один варіант;</p>
+<p style="word-spacing: 1.1px;">лінійна шкала &mdash; відповідь відображається у вигляді шкали (від 3 до 10 проміжних значень), на якій можна задати опис тільки крайніх значень;</p>
+<p style="word-spacing: 1.1px;">таблиця &mdash; запитання передбачає ряд категорій (підпитань), на кожне з яких дається відповідь у вигляді однакової шкали. Тут шкала може містити від 1 до 5 проміжних значень; дата &mdash; для введення даних у форматі дати; час &mdash; для введення даних у форматі часу.</p>
+<p style="word-spacing: 1.1px;">Вправа 4. Створення опитувальника.</p>
+<p style="word-spacing: 1.1px;">завдання. Створіть опитувальник для проведення анкетування учнів щодо вибору їхньої майбутньої професії.</p>
+<p style="word-spacing: 1.1px;">1. У сховищі Google Диск створіть онлайнову форму. Для цього у списку Створити оберіть вказівку Створити/Більше/Google Форми. Розгляньте об&rsquo;єкти вікна, що відкрилось (мал. 27.13).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-355.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">2. Змініть назву форми: Твій вибір майбутнього. В описі форми вкажіть, що це опитування учнів 9 класу відбувається під час проведення проекту &laquo;Ярмарок професій&raquo;.</p>
+<p style="word-spacing: 1.1px;">3. Змініть тип запитання, яке запропоноване системою, на З короткими відповідями (мал. 27.14).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-356.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.14</p>
+<p style="word-spacing: 1.1px;">4. Замість фрази Запитання без назви введіть текст: Введіть своє прізвище та ім&rsquo;я. Поставте позначку, що на це запитання користувач має відповісти обов&rsquo;язково.</p>
+<p style="word-spacing: 1.1px;">5. Додайте ще запитання. Для цього натисніть інструмент Додати</p>
+<p style="word-spacing: 1.1px;">6. Аналогічно вводьте зміни до опитувальника за зразком, який подано у файлі Опитування в папці Навчальне середовище.</p>
+<p style="word-spacing: 1.1px;">7. Зауважте, що ви можете змінити кольори теми оформлення форми опитування й навіть малюнок у полі заголовка, якщо скористаєтесь інструментом</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-357.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">8. Надішліть форму опитування учням класу, ввівши їхні адреси в полі Надіслати.</p>
+<p style="word-spacing: 1.1px;">9. Підготуйте таблицю для збирання відповідей. Для цього оберіть вкладку Відповіді (мал. 27.15). Натисніть Створити електронну таблицю та налаштуйте її розташування. Завершіть створення таблиці для збору відповідей натисненням кнопки Створити.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-358.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.15</p>
+<p style="word-spacing: 1.1px;">10. Перевірте, чи помістились усі запитання в таблиці Твій вибір майбутнього (відповіді). Очікуйте відповідей однокласників та слідкуйте, як при цьому змінюється вигляд таблиці відповідей.</p>
+<p style="word-spacing: 1.1px;">11. У меню Форма електронної таблиці для збору відповідей оберіть вказівку Підсумок. Розгляньте, як змінюються діаграми підсумку у відповідь на зміну таблиці відповідей.</p>
+<p style="word-spacing: 1.1px;">27.4. Як організувати доступ до інформаційних матеріалів у персональному навчальному середовищі?</p>
+<p style="word-spacing: 1.1px;">Доступ до інформаційних матеріалів персонального навчального середовища можна організувати декількома способами:</p>
+<p style="word-spacing: 1.1px;">1) використати онлайновий сервіс електронних закладок для швидкого доступу до сайтів з будь-якого пристрою, які використовує користувач;</p>
+<p style="word-spacing: 1.1px;">2) розмістити документи, збережені на локальному диску, у хмару;</p>
+<p style="word-spacing: 1.1px;">3) синхронізувати Google Диск із локальним диском комп&rsquo;ютера. Сьогодні є декілька різноманітних онлайнових сервісів (мал. 27.16)</p>
+<p style="word-spacing: 1.1px;">для створення електронних закладок, що є аналогами звичайних закладок, які створюють засобами браузера. Прикладом є сервіс Pocket (https://getpocket.com/), де можна зберігати посилання на сайти й отримувати до них доступ через телефон, планшет і комп&rsquo;ютер, навіть без підключення до Інтернету. Іншим сервісом, який використовують для таких цілей, є Streme (http://streme.co/). За допомогою сервісу Streme можна створювати групи закладок, якими легко обмінюватися. Групи закладок можуть бути доступними тільки для читання, або їх можуть редагувати інші користувачі. Таким чином створюється спільнота навколо обраної теми. Streme автоматично визначає тип даних, на які створено закладку &mdash; відео, аудіо та інші види мультимедіа, щоб подати їх у найзручніший спосіб. А це означає, що деякі інформаційні матеріали можна переглянути без переходу на сайт-джерело.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-359.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 27.16</p>
+<p style="word-spacing: 1.1px;">Серед Додатків Google також є сервіс, який дає змогу створювати закладки. Щоб перейти до нього, у списку сервісів обирають Більше/Інші продукти від Google. У групі Веб пошук обирають Закладки (мал. 27.17).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-360.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для того щоб додати закладку до сховища, обирають вказівку Додати закладку. У вікні додавання нової закладки (мал. 27.18) вказують назву закладки, її URL-адресу, додають опис &mdash; рубрику, у якій буде розміщена закладка для швидкого пошуку, примітку &mdash; нагадування чи завдання, яке слід виконати із цією закладкою.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-361.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Додані закладки у сховищі можна упорядковувати за заголовком, описом, датою. У подальшому можна змінювати їхній опис. Закладки також можна експортувати, наприклад, можна поділитися ними з друзями, переславши веб-сторінку з адресами через електронну пошту.</p>
+<p style="word-spacing: 1.1px;">Для того щоб отримувати повідомлення про зміни, які відбулися на сайті, чи появу нових дописів, наприклад, у веб-журналах чи блогах, використовують так звані канали новин, що організовують за допомогою технології RSS, якуще називають фідом (від англ. feed &mdash; живлення, постачання, канал)</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-362.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Стрічки новин RSS дають змогу швидко ознайомитися зі змінами змісту сайта, безпосередньо не заходячи на нього за допомогою браузера.</p>
+<p style="word-spacing: 1.1px;">Для того щоб мати доступ до власних документів з будь-яких пристроїв, можна синхронізувати дані, які розміщені на різних пристроях. Для цього встановлюють додаток Google Диск на комп&rsquo;ютері. За замовчуванням усі дані в розділі Мій диск будуть синхронізовані з Google Диском на комп&rsquo;ютері.</p>
+<p style="word-spacing: 1.1px;">Синхронізація даних &mdash; це процес, що забезпечує встановлення відповідності даних на всіх пристроях, незалежно від того, на якому з них відбувалися зміни. Наприклад, файл, який змінено у хмарному офісному пакеті, матиме такий самий зміст, як його відповідник на локальному Google Диску.</p>
+<p style="word-spacing: 1.1px;">Щоб налаштувати синхронізацію, виконують такі дії:</p>
+<p style="word-spacing: 1.1px;">1. Відкрити Google Диск. Обрати Пуск /Всі програми/ Google Диск.</p>
+<p style="word-spacing: 1.1px;">2. Натиснути значок Google Диск</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-363.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">на панелі завдань у правому</p>
+<p style="word-spacing: 1.1px;">нижньому куті екрана. 3. Натиснути</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-364.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">в правому верхньому куті вікна та обрати Нала-</p>
+<p style="word-spacing: 1.1px;">штування/Параметри синхронізації.</p>
+<p style="word-spacing: 1.1px;">4. Обрати дані для синхронізації: Синхронізувати всі об&rsquo;єкти в розділі Мій диск чи Синхронізувати тільки ці папки. Якщо обрано другий варіант, то позначити папки для синхронізації.</p>
+<p style="word-spacing: 1.1px;">5. Натиснути Застосувати.</p>
+<p style="word-spacing: 1.1px;">1. Що означає персональне навчальне середовище для вас особисто?</p>
+<p style="word-spacing: 1.1px;">2. Що таке хмарні технології та які переваги їхнього застосування?</p>
+<p style="word-spacing: 1.1px;">3. Які хмарні технології ви використовуєте у своєму навчальному середовищі? Наведіть приклади.</p>
+<p style="word-spacing: 1.1px;">4. Які типи документів можна завантажувати в Google Диск, а які &mdash; створювати?</p>
+<p style="word-spacing: 1.1px;">5. Як надавати спільний доступ до документів у своєму хмарному сховищі? Які рівні доступу можна надати?</p>
+<p style="word-spacing: 1.1px;">6. Як створюють опитування за допомогою Google Форм?</p>
+<p style="word-spacing: 1.1px;">7. Для чого використовують електронні закладки на ресурси Інтернету? Чим вони відрізняються від закладок браузера?</p>
+<p style="word-spacing: 1.1px;">8. Як дізнаватися про зміни на сайті, не заходячи на нього у браузері?</p>
+<p style="word-spacing: 1.1px;">9. Що таке синхронізація даних та для яких цілей її застосовують?</p>
+<p style="word-spacing: 1.1px;">1. Наведіть три причини, чому в інформаційному суспільстві важливо створювати персональне навчальне середовище. Обговоріть у парі, які з наведених причин збігаються та як проранжувати спільні причини за ступенем важливості для планування свого майбутнього.</p>
+<p style="word-spacing: 1.1px;">2. Перемістіть до Google Диска презентацію, створену в проекті &laquo;Ярмарок професій&raquo;. Надайте доступ до завантаженого документа для коментування двом учням класу, щоб отримати від них дві похвали щодо змісту пропонованої презентації та однієї пропозиції щодо її удосконалення. Візьміть участь у такому коментуванні документів, які створені іншими учнями.</p>
+<p style="word-spacing: 1.1px;">3. Створіть на Google Диску документ для спільного створення реклами у формі малюнка однієї з професій, які ви представлятимете на &laquo;Ярмарку професій&raquo;. Долучіть до спільного редагування ще одного учня класу. Надайте доступ для коментування результатів своєї роботи вчителю та учню-експерту, якого визначить учитель.</p>
+<p style="word-spacing: 1.1px;">4. Засобами редактора таблиць Google Диска створіть електронну таблицю для підрахунку витрат електроенергії домашніми побутовими приладами протягом дня. Кожен введіть потрібні значення відповідно до використання пристроїв удома. Визначте, чия родина більш ощадлива у використанні електроенергії.</p>
+<p style="word-spacing: 1.1px;">5. Обговоріть, у чому подібність і відмінність кнопки RSS та кнопок Оповіщення й Підписатись</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-365.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">на каналі Цікава наука</p>
+<p style="word-spacing: 1.1px;">1. Створіть модель власного персонального навчального середовища у вигляді карти знань. Додайте у вузли карти потрібні посилання на ресурси різних типів. Збережіть карту у файлі Я навчаюсь у папці Проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">2. Створіть онлайнове опитування учнів класу з метою визначення думки однокласників щодо однієї з тем:</p>
+<p style="word-spacing: 1.1px;">1) чи раціонально учні розподіляють свій час і що в цьому їм допомагає;</p>
+<p style="word-spacing: 1.1px;">2) як учні ставляться до проблеми милосердя до бездомних тварин та які ваші пропозиції щодо цієї теми підтримують;</p>
+<p style="word-spacing: 1.1px;">3) які шляхи вирішення проблеми сміття в селі, мікрорайоні, місті, запропоновані вами, підтримують учні класу;</p>
+<p style="word-spacing: 1.1px;">4) як учні класу ставляться до здорового способу життя та чи мають проблеми зі шкідливими звичками?</p>
+<p style="word-spacing: 1.1px;">Використайте у формі опитування не менш як 5 запитань різного типу. Оформіть її на власний розсуд і надішліть однокласникам для отримання відповідей.</p>
+<p style="word-spacing: 1.1px;">3. Встановіть додаток Google Диск на персональний комп&rsquo;ютер. Синхронізуйте папки, які ви використовуєте в навчанні, з хмарним диском Мій диск. Оберіть для цього потрібні параметри налаштувань синхронізації.</p>
+<p style="word-spacing: 1.1px;">4. Додайте в персональне сховище закладок 5 закладок на сайти, якими ви найчастіше користуєтесь. У сховищі закладок опишіть призначення та зміст сайта. Поділіться своїми закладками з друзями та перевірте, чи є у вас закладки на одні й ті самі ресурси. Зробіть висновок, чи можна вас вважати групою користувачів цих сервісів.</p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Е-урядування&raquo;</p>
+<p style="word-spacing: 1.1px;">1. За допомогою Google Форми створіть опитувальник для проведення анкетування, наскільки прозорими та зручними є е-послуги, доступні у вашому місті чи громаді.</p>
+<p style="word-spacing: 1.1px;">2. Створіть опитування та проведіть анкетування, що допоможе спланувати, якою має бути е-послуга для зворотного зв&rsquo;язку щодо неякісного надання послуг, не прибирання сміття на вулицях, неякісно відремонтованих доріг тощо з можливістю надсилання фото для підтвердження.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-366.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">ОФІСНІ ВЕБ-ПРОГРАМИ ДЛЯ СТВОРЕННЯ СПІЛЬНИХ ДОКУМЕНТІВ. ОПИТУВАННЯ З ВИКОРИСТАННЯМ ОНЛАйНОВИХ ФОРМ.</p>
+<p style="word-spacing: 1.1px;">Як працювати з офісними веб-програмами на Google Диску;</p>
+<p style="word-spacing: 1.1px;">як організовувати опитування з використанням онлай-нових форм;</p>
+<p style="word-spacing: 1.1px;">як працювати з електронною поштою.</p>
+<p style="word-spacing: 1.1px;">Групу з трьох учнів, які спільно працюватимуть над виконанням практичної роботи.</p>
+<p style="word-spacing: 1.1px;">Під час виконання практичних завдань пам&rsquo;ятайте про правила безпеки життєдіяльності при роботі з комп&rsquo;ютером!</p>
+<p style="word-spacing: 1.1px;">Завдання. Літня школа (36 балів)</p>
+<p style="word-spacing: 1.1px;">Учні 9 класу вирішили організувати в школі під час літніх канікул 5-денну літню</p>
+<p style="word-spacing: 1.1px;">школу для молодших школярів, яка триватиме не більш як три години кожного</p>
+<p style="word-spacing: 1.1px;">запланованого дня. Розподіліть обов&rsquo;язки в групі та виконайте завдання:</p>
+<p style="word-spacing: 1.1px;">1. Обговоріть ідею літньої школи: вивчення мови, опанування робототехніки, організація пластунського руху, підтримка здорового способу життя, цікава наука, умілі руки тощо.</p>
+<p style="word-spacing: 1.1px;">2. Створіть текстові онлайнові документи: оголошення про проведення літньої школи;</p>
+<p style="word-spacing: 1.1px;">розпорядок роботи літньої школи та план-графік проведення заходів; лист-звернення до волонтерів, батьків, адміністрації щодо допомоги в облаштуванні літньої школи; приєднайте до нього план-графік заходів.</p>
+<p style="word-spacing: 1.1px;">Зауважте, що кожен учасник групи створює інший документ у своєму хмарному сховищі та надає доступ із правом редагування всім учасникам групи. Учасники групи спільно редагують і коментують підготовлені документи.</p>
+<p style="word-spacing: 1.1px;">3. Розробіть онлайнову форму для підготовки роботи літньої школи та відповідну електронну таблицю для отримання відповідей з форми для:</p>
+<p style="word-spacing: 1.1px;">реєстрації учасників літньої школи, де буде передбачено ім&rsquo;я та прізвище учня, клас, у якому навчається, особливі умови для підтримки здоров&rsquo;я, контактна особа (батько чи мати, його чи її телефон), інтереси учня, інші умови, які важливі відповідно до специфіки школи; голосування майбутніх учасників літньої школи щодо запланованих заходів і внесення власних пропозицій;</p>
+<p style="word-spacing: 1.1px;">реєстрації волонтерів літньої школи, у якій буде передбачено ім&rsquo;я та прізвище волонтера, вік, яку волонтерську діяльність може запропонувати під час проведення літньої школи, який термін участі у школі: від одноразової участі &mdash; до повної зайнятості протягом 5 днів, контакти.</p>
+<p style="word-spacing: 1.1px;">Кожен з учасників групи створює окрему форму, розсилає її іншим членам групи, які дають відповіді на поставлені запитання у формі, щоб перевірити її роботу. За потреби тексти запитань в опитуваннях після опрацювання можна змінити.</p>
+<p style="word-spacing: 1.1px;">4. Засобами офісних веб-програм спільно розробіть документи: кошторис організації проведення літньої школи, у якому передбачте організаційні витрати й витрати для проведення заходів під час роботи літньої школи;</p>
+<p style="word-spacing: 1.1px;">презентацію літньої школи та її засновників;</p>
+<p style="word-spacing: 1.1px;">малюнок-емблему літньої школи, яка відображає основну мету її організації.</p>
+<p style="word-spacing: 1.1px;">5. Оцініть роботу кожного у групі за критеріями роботи в групі, які розміщені у файлі Робота в групі в папці Навчальне середовище.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-367.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">яку структуру можуть мати сайти; які відмінності можуть мати веб-сторінки сайта; у чому полягає процес створення веб-сайта; що передбачає веб-дизайн;</p>
+<p style="word-spacing: 1.1px;">який вигляд має код розмітки веб-сторінки мовою HTML; які засоби використовують для створення веб-сайта; як створити веб-сайт в мережі.</p>
+<p style="word-spacing: 1.1px;">29.1. Яку структуру можуть мати сайти?</p>
+<p style="word-spacing: 1.1px;">Сукупність веб-сторінок певної тематики із системою навігації, що дає можливість переміщуватись між ними за допомогою гіперпоси-лань, збережених на одному сервері, утворює сайт, або веб-сайт.</p>
+<p style="word-spacing: 1.1px;">Структура сайта визначає наявність розділів, сторінок, посилань на сторінки, розташування цих елементів та їхній взаємозв&rsquo;язок.</p>
+<p style="word-spacing: 1.1px;">Під час планування структури сайта необхідно продумати кілька основних складових: структуру каталогів, структуру навігації, заставку сайта (мал. 29.1). Важливо визначитися з необхідною кількістю сторінок і встановити зв&rsquo;язки між ними.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-368.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розглядають внутрішню та зовнішню структуру сайта. Продумана внутрішня структура сайта дає змогу всі необхідні матеріали розташувати зручно й доступно в розділах і підрозділах. Навіть якщо сайт містить великий обсяг відомостей, слід розробити таку внутрішню структуру, у якій можна легко зорієнтуватися потенційним клієнтам.</p>
+<p style="word-spacing: 1.1px;">Розрізняють лінійну, ієрархічну та довільну внутрішню структуру сайта. Лінійну (послідовну) структуру веб-сайта (мал. 29.2) доцільно використовувати в разі послідовного подання відомостей, наприклад, про товари та послуги або матеріали навчального посібника. Перегляд таких сайтів здійснюється послідовно: від початкової (головної) до останньої сторінки. Кожна сторінка має посилання тільки на одну, наступну сторінку сайта. Інколи, для зручності навігації по сайту, до сторінки також додається посилання на попередню сторінку.</p>
+<p style="word-spacing: 1.1px;">При ієрархічній, або деревоподібній, структурі (мал. 29.3) створюється одна головна сторінка, яка не має попередніх, решта сторінок має лише одну попередню сторінку.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-369.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-370.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">При довільній структурі кожна сторінка може містити посилання на довільну кількість сторінок сайта. Така структура найкраще підходить для сайтів, що містять різні за тематикою матеріали: каталогів, зібрань статей з різних тем або добірок посилань. Прикладом такої структури є сайт Бібліотека української літератури (www.ukrlib.com.ua).</p>
+<p style="word-spacing: 1.1px;">На практиці майже завжди використовується поєднання деревоподібної та послідовної структур, тобто гібридна структура (мал. 29.4). Наприклад, зміст електронної книги або каталог статей починається з ієрархічно розташованих сторінок, але кожний окремий розділ чи статтю доцільно розбити на кілька частин, які розташовуються послідовно одна за одною.</p>
+<p style="word-spacing: 1.1px;">Інколи розглядають мережеву структуру (мал. 29.5), що базується на побудові системи такої навігації сайта, коли між вертикальними й горизонтальними елементами (сторінками) є взаємний зв&rsquo;язок і можливість швидкого переходу з однієї сторінки на іншу без додаткової необхідності відвідування проміжних сторінок. Така структура призводить до зайвого збільшення кількості гіперпосилань, а її застосування є обмеженим для сайтів з великою кількістю сторінок.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-371.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Зовнішня структура визначає спосіб розміщення відомостей на сторінці при виборі кожного пункту меню. Також можна вказати конкретне місце для розміщення банера, картинок, додаткових посилань на сайті. Зовнішня структура має гармонійно відповідати дизайну сайта.</p>
+<p style="word-spacing: 1.1px;">Навігація по сайту має бути простою та зрозумілою: користувач у будь-який час повинен знати відповіді на такі запитання: Де він перебуває? Куди можна піти? Як туди дістатися? Як повернутися назад? Так, для легкого визначення місця розташування на сайті можна виділити ту сторінку в меню, на якій перебуває користувач, а меню зробити доступним на всіх сторінках сайта. Також можна зробити так звані навігаційні ключі, тобто у верхній частині кожної сторінки вказати повний</p>
+<p style="word-spacing: 1.1px;">шлях до цієї сторінки за схемою: головна сторінка &mdash; назва розділу &mdash; назва сторінки. При цьому слід дотримуватися правила трьох кліків: до будь-якої сторінки сайта користувач має дістатися не більш ніж за три переходи (три кліки). Розрізняють текстову систему навігації, навігацію за допомогою кнопок та використання навігаційних карт.</p>
+<p style="word-spacing: 1.1px;">Інколи замість головної сторінки сайта з&rsquo;являється заставка. Це велике фото зі звуковим супроводом або відеоролик. Такі сторінки створюють, щоб привернути увагу користувача.</p>
+<p style="word-spacing: 1.1px;">Головна сторінка сайта має задовольняти правилу &laquo;3 по 3&raquo;, тобто три абзаци по три речення про тематику та зміст, авторів і призначення сайта. Крім того, вона має відповідати таким вимогам: відображати тематику сайта;</p>
+<p style="word-spacing: 1.1px;">бути цікавою, щоб користувач мав бажання переглянути інші сторінки сайта;</p>
+<p style="word-spacing: 1.1px;">містити інструмент реалізації пошуку по сайту; містити розділ з актуальними даними, що постійно оновлюються, наприклад, новини, акції, поради дня тощо;</p>
+<p style="word-spacing: 1.1px;">містити відомості про спосіб зворотного зв&rsquo;язку (e-mail, телефон, адресу).</p>
+<p style="word-spacing: 1.1px;">Зовнішній вигляд решти сторінок сайта має бути витриманим у єдиному стилі. На них має бути вказано назву ресурсу й посилання на головну сторінку.</p>
+<p style="word-spacing: 1.1px;">Залежно від засобу створення сайти можуть мати однакові елементи структури. До них належать логотип власника сайта чи графічний декор, назва сайта, фірми чи сторінки, гіперпосилання чи панель навігації сайта, дані, які наповнюють вміст сторінки сайта, контактні дані тощо. Більшість сайтів побудовано з використанням адаптивного дизайну компоновки веб-сторінок, тобто такого, що налаштовується до зміни розмірів екрана. У сучасних сайтах може застосовуватися складне компонування розділів, яке поєднує незмінні області та частини, розмір яких змінюється відповідно до зміни розміру екрана. Рідше складові веб-сторінки мають чітко встановлені розміри, які відображають сайт саме так, як задумано дизайнером.</p>
+<p style="word-spacing: 1.1px;">29.2. Які відмінності можуть мати веб-сторінки сайта?</p>
+<p style="word-spacing: 1.1px;">Веб-сторінка &mdash; документ або інформаційний ресурс, доступ до якого здійснюється за допомогою браузера. Веб-сторінки здебільшого створюються мовою HTML чи XHTML і можуть містити гіперпосилання для швидкого переходу на інші сторінки. Відомості на веб-сторінці подаються в різних формах: текст, статичні й анімовані графічні зображення, аудіо, відео тощо.</p>
+<p style="word-spacing: 1.1px;">Інформаційний вміст веб-сторінки зазвичай називають контентом.</p>
+<p style="word-spacing: 1.1px;">Веб-сторінки можуть бути статичними та інтерактивними.</p>
+<p style="word-spacing: 1.1px;">Статичні веб-сторінки створюються за допомогою мови розмітки HTML. Створення нових статичних сторінок або редагування наявних автор виконує на комп&rsquo;ютері в середовищі HTML-редактора, а потім завантажує на веб-сайт. Це трудомісткий процес. Переважно статичні веб-сторінки використовують для сайтів з постійною структурою та зовнішнім виглядом сторінки, при цьому кожна сторінка може мати свій шаблон оформлення.</p>
+<p style="word-spacing: 1.1px;">Інтерактивна веб-сторінка надає можливість користувачеві вводити деякі дані, а потім забезпечує, відповідно до введених даних, їхнє опрацювання на сервері.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-372.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">При створенні інтерактивних веб-сторінок використовують спеціальні скрипти, записані мовами j&#097;vascript і VBScript, або Ftash-ролики (swf-файли).</p>
+<p style="word-spacing: 1.1px;">Сайти, що містять інтерактивні веб-сторінки, називають динамічними. Для створення та супроводження динамічних сайтів використовують CMS (Content Management System) &mdash; систему управління сайтом, яку називають двигунцем сайта. Засоби розробки сайтів забезпечують відокремлення змістової частини (контенту) від дизайну (шаблону веб-сторінки), що дає змогу змінювати вміст веб-сторінки, не змінюючи дизайн, і змінювати шаблон сайта, не змінюючи вміст його веб-сторінок. Такі двигунці мають багато різних модулів: форуми, гостьові книги, поштові розсилки, контакти, опитувальники, форми реєстрації, форми пошуку, систему обміну повідомленнями між користувачами та інші компоненти, які перетворюють сайт з інформаційного засобу на комунікаційний.</p>
+<p style="word-spacing: 1.1px;">Веб-сторінки також мають свої специфічні елементи, що відрізняє їх між собою. Розрізняють такі типи веб-сторінок: сторінки розділу веб-сайта, форми, домашні сторінки, сторінки форуму та чату, веб-каталоги тощо.</p>
+<p style="word-spacing: 1.1px;">Сторінка розділу веб-сайта &mdash; це статична веб-сторінка, зміст якої користувач лише переглядає й не виконує ніяких додаткових дій.</p>
+<p style="word-spacing: 1.1px;">Веб-сторінки у вигляді форми по своїй суті є аналогами паперових опитувальників. До форми користувач може записувати свої дані та надсилати їх на сервер, де розміщується веб-сторінка й де дані будуть опрацьовані.</p>
+<p style="word-spacing: 1.1px;">Форми зазвичай містять поля для заповнення, списки чи перемикачі для вибору одного чи декількох елементів. Форми застосовують для отримання відомостей про користувачів сайта, їхні думки з приводу питання, винесеного для обговорення, виявлення споживчих переваг тощо. До найуживаніших форм належать: пошук відомостей на сайті, ідентифікація користувача (введення логіна та пароля), зворотний зв&rsquo;язок, каталог посилань, гостьова книга тощо.</p>
+<p style="word-spacing: 1.1px;">Поняття домашня сторінка має декілька значень:</p>
+<p style="word-spacing: 1.1px;">головна веб-сторінка деякого сайта, на яку користувач потрапляє, коли вводить своє доменне ім&rsquo;я у вікні браузера. Така сторінка містить елементи для переходу на інші сторінки сайта; веб-сайт, що належить певній людині. Спочатку цей термін (від англ. Home Page) означав дім людини в Інтернеті, місце, де вона зберігає власні дані. Тепер такі сторінки містять, окрім даних про власника, і корисні відомості з певної тематики, зображення, повідомлення чи цікаві факти;</p>
+<p style="word-spacing: 1.1px;">веб-сторінка (стартова), яка першою завантажується в браузері. Стартова сторінка &mdash; сторінка, яка завантажується до вікна браузера за замовчуванням при кожному запуску браузера на певному комп&rsquo;ютері або при кожному натисненні кнопки Додому. Здебільшого за стартову обирають одну зі спеціалізованих сторінок, які містять посилання, що використовуються конкретним користувачем найчастіше, зокрема веб-пошту, новини, каталоги ресурсів, а також популярні сервіси, такі як пошук в Інтернеті, перевірка на віруси, онлайн-переклад тощо.</p>
+<p style="word-spacing: 1.1px;">Сторінка форуму або чату подібна до таблиці, у рядках якої користувач записує своє повідомлення, при цьому відображається його аватар (маленьке зображення, що ідентифікує користувача), його мережеве ім&rsquo;я (нік) та інструменти для коментування повідомлень.</p>
+<p style="word-spacing: 1.1px;">При створенні веб-каталогу застосовують мінімум засобів оформлення, розміщуючи посилання на ресурси в таблиці розділів або лінійному</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-373.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">списку. Наприклад, перша сторінка інформаційної системи Конкурс, за допомогою якої можна відстежувати конкурс вступу до вищих навчальних закладів, побудована за типом веб-каталогу (мал. 29.6), що надає можливість територіального пошуку вищих навчальних закладів (http://vstup.info).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-374.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">29.3. У чому полягає процес створення веб-сайта?</p>
+<p style="word-spacing: 1.1px;">Процес створення веб-сайта складається з таких етапів:</p>
+<p style="word-spacing: 1.1px;">визначення теми та мети створення сайта, розробка концепції веб-сайта та його структури;</p>
+<p style="word-spacing: 1.1px;">проведення дослідження з обраної теми;</p>
+<p style="word-spacing: 1.1px;">вибір способу подання даних і стилю оформлення веб-сторінок; розмітка та програмування сайта; наповнення сайта даними; художнє оформлення сторінок; розміщення веб-сторінок на сервері; популяризація сайта та підтримка його роботи.</p>
+<p style="word-spacing: 1.1px;">Перший етап передбачає визначення теми та мети створення сайта, його цільової аудиторії, з&rsquo;ясування, якими будуть інформаційні джерела сайта, з яких розділів він складатиметься тощо. Перш ніж розпочинати розробку, необхідно проаналізувати тему, вивчити сайти потенційних конкурентів &mdash; це допоможе створити власну концепцію. Далі слід визначити вид сайта та відповідно до цього з&rsquo;ясувати його структуру, зазначити функціональні можливості (пошук, каталог, стрічка новин тощо), вказати, які сторінки мають бути на сайті та які блоки слід розміщувати на сторінках і в якому вигляді.</p>
+<p style="word-spacing: 1.1px;">Як тільки концепцію й загальну структуру сайта буде визначено, можна обирати стиль його оформлення, проектування структури окремих веб-сторінок, добирати найбільш вдалі способи зображення тих чи інших даних. Ці два етапи майже не піддаються формалізації й вимагають від їх виконавця не стільки володіння технологіями веб-програмування, скільки спеціалізованих знань у тій галузі, якій буде присвячено сайт, художнього смаку й досвіду користування Інтернетом.</p>
+<p style="word-spacing: 1.1px;">Розмітка сайта визначає параметри форматування тексту та інших об&rsquo;єктів на сторінках. Програмування сайта передбачає створення різних веб-компонентів, завдяки яким опрацьовуються дані, що вводяться на сайті його відвідувачами на інтерактивних веб-сторінках.</p>
+<p style="word-spacing: 1.1px;">Вміст сайта, який зазвичай займає 70-80 % його площі, безпосередньо впливає на дизайн майбутнього сайта. Тому спочатку добирають контент сайта, тобто всі матеріали та дані, які потрібно буде розмістити: текст, таблиці, малюнки, графіки тощо, і лише потім обирають його художнє оформлення. Перед розміщенням в Інтернеті сайт тестується як розробником, так і замовником, після цього виправляють знайдені помилки та некоректності.</p>
+<p style="word-spacing: 1.1px;">Публікація сайта в Інтернеті передбачає його розміщення за обраним доменним ім&rsquo;ям, яке реєструється у великих пошукових машинах і каталогах. Для того щоб сайт відвідувала значна кількість користувачів, потрібно здійснювати заходи щодо його популяризації &mdash; &laquo;розкрутки&raquo;. Для цього використовується контекстна й банерна реклама, SEO, SMO та інші методи.</p>
+<p style="word-spacing: 1.1px;">Пошукова система враховує такі параметри сайта при визначенні його релевантності (ступеня відповідності запиту, що вводиться при пошуку):</p>
+<p style="word-spacing: 1.1px;">&bull; щільність ключових слів;</p>
+<p style="word-spacing: 1.1px;">&bull; індекс цитування сайта &mdash; залежить від кількості й авторитетності веб-ресурсів, які посилаються на цей сайт; багато пошукових систем не враховують посилання одна на одну; важливо, щоб посилання були з подібних за тематикою сайтів.</p>
+<p style="word-spacing: 1.1px;">До факторів, що знижують рейтинг сайта, належать: технології, які пошукові системи розглядають як спам, занадто довгі URL-адреси, надлишкова кількість посилань, графічна навігація, переадресація URL-адрес тощо.</p>
+<p style="word-spacing: 1.1px;">SEO (від англ. Search Engine Optimization &mdash; пошукова оптиміза-ція) &mdash; комплекс заходів для підняття позицій сайта в результатах пошуку пошукових систем за певними запитами користувачів. Зазвичай, що вищою є позиція сайта в результатах пошуку, то більше зацікавлених відвідувачів переходить на нього з пошукових систем.</p>
+<p style="word-spacing: 1.1px;">SMO (від англ. Social Media Optimization &mdash; оптимізація сайта під соціальні мережі) &mdash; комплекс заходів, спрямованих на залучення на сайт відвідувачів із соціальних медіа: бло-гів, соціальних мереж тощо.</p>
+<p style="word-spacing: 1.1px;">29.4. Що передбачає веб-дизайн?</p>
+<p style="word-spacing: 1.1px;">Дизайн веб-сайта &mdash; це кропітка робота, яка спирається на знання основних понять дизайну (тобто понять точки, лінії, текстури, фактури, форми, кольору, пропорції, композиції, симетрії, асиметрії, рівноваги, динаміки, ритму, гармонії, контрасту, колориту, перспективи, центру мас), використання правил ергономіки (науки, яка вивчає робочі процеси з метою створення оптимальних умов праці, що сприяють підвищенню її продуктивності, а також зберігають сили, здоров&rsquo;я, працездатність людини) та врахування таких основних складових веб-дизайну:</p>
+<p style="word-spacing: 1.1px;">форма подання та стиль наповнення сайта, його зміст; оформлення &mdash; графічні елементи, навігація, шрифти, кольорова гама;</p>
+<p style="word-spacing: 1.1px;">технології &mdash; засоби створення, форматування сторінок і надання їм динамізму;</p>
+<p style="word-spacing: 1.1px;">подання &mdash; швидкість і надійність відображення сайта в мережі; мета &mdash; причина створення сайта й очікувані результати.</p>
+<p style="word-spacing: 1.1px;">Веб-дизайнеру, який вперше створює сайт, слід враховувати такі поради:</p>
+<p style="word-spacing: 1.1px;">недоцільно використовувати великі анімовані зображення на головній сторінці, рядки, що &laquo;розбігаються&raquo; в різні боки, &laquo;миготливі&raquo; елементи &mdash; це заважає зосередитись на вмісті сторінки; не слід використовувати широкі зображення &mdash; вони уповільнюють процес завантаження сторінки;</p>
+<p style="word-spacing: 1.1px;">не варто розміщувати на головній сторінці велику кількість кнопок, емблем каталогів, посилань &mdash; це перевантажує графіку сайта; недоцільно розміщувати на сторінці &laquo;довгі&raquo; тексти. Користувач не має прокручувати екран більш ніж на 2,5-3 екрани; не слід робити кольорову гаму занадто яскравою. Треба прагнути до створення єдиної атмосфери на сайті, і тло не має переважати;</p>
+<p style="word-spacing: 1.1px;">необхідно перевіряти сайт на наявність помилок &mdash; вони псують враження про важливість сайта;</p>
+<p style="word-spacing: 1.1px;">потрібно використовувати правило &laquo;п&rsquo;ятірки&raquo;: не більш ніж п&rsquo;ять шрифтів (як за типом, так і за розміром) на одній сторінці; не слід використовувати напис Сторінка в розробці &mdash; краще прибрати посилання на таку сторінку.</p>
+<p style="word-spacing: 1.1px;">При доборі відповідного дизайну для сайта важливо пам&rsquo;ятати, що форма має завжди підкреслювати зміст, не бути &laquo;агресивною&raquo; при перегляді, гармонійно поєднувати елементи декору, стилю, кольору, бути зручною для перегляду.</p>
+<p style="word-spacing: 1.1px;">29.5. Який вигляд має код розмітки веб-сторінки мовою HTML?</p>
+<p style="word-spacing: 1.1px;">Типова проста веб-сторінка складається з текстових блоків (абзаців, списків, таблиць), кількох малюнків невеликих розмірів, горизонтальних розмежувальних ліній та гіперпосилань. Більш складні веб-сторінки містять структуровані сторінки, які називають фреймами, елементи управління (кнопки, перемикачі, поля введення), динамічні ефекти та графічні рухомі об&rsquo;єкти тощо.</p>
+<p style="word-spacing: 1.1px;">Згідно із чинним стандартом абзаци на веб-сторінці розмежовуються порожнім рядком і не мають відступів у першому рядку. Абзац може бути вирівняний за одним із країв або по центру екрана. Браузер автоматично масштабує горизонтальне відображення різних елементів сторінки, враховуючи характеристики монітора комп&rsquo;ютера користувача й розміри вікна, у якому демонструється веб-сторінка.</p>
+<p style="word-spacing: 1.1px;">Крім текстових даних веб-сторінка містить невидимий для користувача HTML-код, тобто набір тегів &mdash; команд, що визначають розмітку документа. Під час відкриття веб-сторінки браузер використовує цей набір для відображення її елементів у заданій розмітці.</p>
+<p style="word-spacing: 1.1px;">Назва кожного тега &mdash; це одна або декілька літер, взятих у кутові дужки (&lt; та &gt;), яким відповідають певні англійські слова, що пояснюють їхнє призначення. Наприклад, назва тега &lt;BODY&gt; виникла від англійського слова body &mdash; тіло, головна частина, а сам тег використовується для створення вмісту веб-сторінки.</p>
+<p style="word-spacing: 1.1px;">Тег записують так: &lt;Тег&gt;...текст... &lt;/Тег&gt;.</p>
+<p style="word-spacing: 1.1px;">Відкриваючий тег &lt;Тег&gt; позначає місце початку дії тега на сторінці, текст &mdash; фрагмент тексту, до якого буде застосовано форматування, закриваючий тег &lt;/Тег&gt; визначає місце закінчення дії тега на сторінці. Пару тегів (відкриваючий і закриваючий) називають контейнером. Закриваючий тег відрізняється від відкриваючого лише тим, що в коді перед його іменем ставиться символ &laquo;/&raquo;. Більшість тегів є парними, однак є й одинарні.</p>
+<p style="word-spacing: 1.1px;">Один тег може мати кілька параметрів &mdash; атрибутів. Наприклад,</p>
+<p style="word-spacing: 1.1px;">&lt;Тег параметр_1= значення_1 параметр_2=значення_2 &gt;...текст, що відображається на сторінці... &lt;/Тег&gt;.</p>
+<p style="word-spacing: 1.1px;">Закриваючий тег не містить жодних параметрів, а лише вказує на місце закінчення дії контейнера. На відміну від нього у відкриваючому тегу вказуються всі необхідні параметри.</p>
+<p style="word-spacing: 1.1px;">Правила запису параметрів: після назви тега після пропуску зазначається ім&rsquo;я параметра (наприклад, ALIGN &mdash; ім&rsquo;я параметра, який вказує на спосіб вирівнювання тексту), далі зазначають &laquo;=&raquo; й у лапках записують значення параметра (наприклад, ALIGN= &laquo;center&raquo;). За необхідності далі вказують інші параметри через пропуск. Після останнього параметра ставлять символ &gt;.</p>
+<p style="word-spacing: 1.1px;">Теги можуть бути вкладеними, тобто один контейнер може перебувати всередині іншого, тоді загальний запис виглядатиме так:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-375.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для підготовки найпростішого htm-файла можна використати текстовий редактор Блокнот, після написання коду в якому слід задати ім&rsquo;я файла та вказати розширення &mdash; htm.</p>
+<p style="word-spacing: 1.1px;">Наприклад, щоб отримати веб-сторінку, як показано на малюнку 29.7, потрібно набрати код.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-376.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Зрозуміло, що веб-сторінка реального сайта матиме такі самі складові коду, однак набагато більше тегів і їхніх параметрів. Щоб переглянути цей код, потрібно в меню браузера обрати вказівку Перегляд HTML-коду.</p>
+<p style="word-spacing: 1.1px;">29.6. Які засоби використовують для створення веб-сайта?</p>
+<p style="word-spacing: 1.1px;">Процес створення статичних веб-сторінок, з яких може складатися сайт, фактично полягає в розмітці гіпертекстових документів, що здійснюється за допомогою мови розмітки. Розмітка гіпертексту не залежать від браузера, у середовищі якого відображається веб-сторінка. Тому одні й ті самі гіпертекстові документи можуть по-різному відображатися за допомогою різних браузерів, хоча для більшості простих документів їхній вигляд буде подібним.</p>
+<p style="word-spacing: 1.1px;">Створювати веб-сторінки можна за допомогою звичайного текстового редактора або спеціального HTML-редактора (мал. 29.8).</p>
+<p style="word-spacing: 1.1px;">Текстові редактори (наприклад, Блокнот) дають змогу, знаючи призначення та опис тегів мови розмітки, створювати веб-сторінки &laquo;вручну&raquo;, без автоматизації. Для прискорення цього процесу до текстових процесорів було додано спеціальні функції, які дають можливість вставляти гіперпосилання до тексту та зберігати документ у форматі HTML. Крім того, є спеціальні програми &mdash; HTML-редактори, які дають змогу автоматизувати цей процес. Такі програми належать до засобів автоматизованої розробки веб-сайтів.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-377.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Усі HTML-редактори можна поділити на дві категорії: текстові й графічні. Перші передбачають набір коду вручну, хоча й зі значною автоматизацією цього процесу. Їхні інструменти дають змогу автоматизовано вставляти до документа потрібні теги його розмітки. Здебільшого теги не містять додаткових параметрів форматування об&rsquo;єкта, а лише вказу</p>
+<p style="word-spacing: 1.1px;">ють браузеру, який саме спосіб форматування застосований. Тому веб-сторінка, створена за допомогою такого редактора, має простий вигляд.</p>
+<p style="word-spacing: 1.1px;">У графічних HTML-редакторах веб-сторінки формуються приблизно в такий самий спосіб, як і під час створення макетів звичайних документів, коли користувач може обрати потрібний йому шаблон веб-сторінки, а потім поступово його заповнювати текстом, малюнками й зображеннями, гіпертекстовими посиланнями, таблицями та спеціальними додатковими елементами. При цьому шаблон такої сторінки передбачає вбудовані засоби навігації. Зрозуміло, що такий документ також має HTML-формат, і за потреби його можна переглянути в середовищі звичайного текстового редактора типу Блокнот і, знаючи мову HTML (часто говорять HTML-код), вручну вносити до нього потрібні зміни.</p>
+<p style="word-spacing: 1.1px;">Вправа 1. Створення простої веб-сторінки на основі наявної.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть веб-сторінку своєї вулиці за допомогою редагування наявної веб-сторінки Вулиця^їт, що зберігається у відповідному файлі.</p>
+<p style="word-spacing: 1.1px;">1. Створіть папку Сайти у власній структурі папок.</p>
+<p style="word-spacing: 1.1px;">2. Перегляньте у браузері веб-сторінку Вулиця^т, що зберігається в папці Навчальне середовище.</p>
+<p style="word-spacing: 1.1px;">Виділіть основні змістові блоки цієї веб-сторінки. Поміркуйте, чи маєте ви достатньо відомостей, щоб створити таку саму сторінку відображення даних про вулицю, на якій ви проживаєте. Чи достатнім буде використання вільної енциклопедії Вікіпедії, щоб знайти додаткові відомості для цієї сторінки?</p>
+<p style="word-spacing: 1.1px;">3. Розгляньте HTML-код сторінки, для чого відкрийте її в середовищі текстового редактора Блокнот.</p>
+<p style="word-spacing: 1.1px;">Для того щоб зрозуміти призначення деяких тегів цього документа, поставте у відповідність виділені блоки веб-сторінки та фрагменти коду її розмітки.</p>
+<p style="word-spacing: 1.1px;">4. Збережіть документ із HTML-кодом сторінки в папці Сайти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">5. Внесіть зміни до тексту, що формує вміст сторінки, пам&rsquo;ятаючи, що всі теги та їхні параметри містяться в кутових дужках &lt;&gt;, &lt;/&gt;.</p>
+<p style="word-spacing: 1.1px;">6. Збережіть внесені зміни.</p>
+<p style="word-spacing: 1.1px;">7. Перегляньте, як буде відображатися створена веб-сторінка у браузері.</p>
+<p style="word-spacing: 1.1px;">29.7. Як створити веб-сайт в мережі?</p>
+<p style="word-spacing: 1.1px;">Для створення веб-сайта безпосередньо в мережі Інтернет можна скористатись одним із сервісів, які надають відповідні засоби та інструменти для створення сайта та послугу безкоштовного хостингу &mdash; розміщення сайта на власному сервері. Для цього потрібно спочатку пройти процедуру реєстрації на сайті обраного сервісу, а потім слідувати відповідним вказівкам.</p>
+<p style="word-spacing: 1.1px;">Розглянемо процес створення сайта в Інтернеті на прикладі сервісу Google Сайти (Google Sites). Якщо в користувача вже є свій акаунт Google, то він може скористатись ним, якщо ні &mdash; спершу потрібно налаштувати свій обліковий запис.</p>
+<p style="word-spacing: 1.1px;">Вправа 2. Створення структури сайта засобами сервісу Google Сайти. завдання. Створіть сайт про дивовижні споруди світу, який складається з двох веб-сторінок &mdash; опису сайта й опису однієї зі споруд. Розмістіть на першій сторінці сайта зображення, що ілюструє дивовижні споруди світу.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-378.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Розгорніть список тем, які можна застосувати для стильового оформлення сторінок сайта (мал. 29.11).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-379.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 29.11</p>
+<p style="word-spacing: 1.1px;">5. Налаштуйте додаткові параметри: опис сайта, який потрібен для розміщення його в певній категорії, параметри доступу чи тип контенту (обмеження на вік). Встановіть прапорець Я не робот (мал. 29.12).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-380.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">6. Завершіть процес створення макета сайта, натиснувши кнопку Створити сайт.</p>
+<p style="word-spacing: 1.1px;">7. Доповніть головну сторінку сайта сторінкою з описом однієї зі споруд. Для цього оберіть інструмент Додати сторінку у верхній частині вікна (мал. 29.13).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-381.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">8. Оберіть зі списку запропонованих шаблонів сторінки (веб-сторінка, оголошення, файловий менеджер, список) шаблон веб-сторінка. Зазначте назву сторінки Варто побачити! Укажіть, що створена сторінка буде розміщуватись на домашній сторінці (мал. 29.14).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-382.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 3. Створення вмісту веб-сайта засобами сервісу Google Сайти.</p>
+<p style="word-spacing: 1.1px;">Завдання. Додайте текст і зображення до створеного макета сайта Дивовижні споруди.</p>
+<p style="word-spacing: 1.1px;">1. Перейдіть за адресою навчального сайта https://sites.google.com/site/ divoviznisporudi/, ознайомтесь із вмістом його головної сторінки, перейдіть на сторінку Варто побачити! Скористайтесь матеріалами як зразком для наповнення вмісту сайта.</p>
+<p style="word-spacing: 1.1px;">2. Скориставшись своїм обліковим записом, перейдіть до послуги Google Сайти. Відкрийте сайт Дивовижні споруди, створений у попередній вправі. Перейдіть у режим редагування головної сторінки &mdash; оберіть інструмент Редагувати</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-383.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Змініть заголовок Домашня сторінка, вказавши свою назву головної сторінки сайта (наприклад, Дивовижні споруди світу).</p>
+<p style="word-spacing: 1.1px;">3. Заповніть текстове поле сторінки вступом про дивовижні споруди світу (можна скористатися матеріалами з файла Дивовижні споруди.docx із папки Навчальне середовище\Дивовижні споруди або підготувати власний вступ).</p>
+<p style="word-spacing: 1.1px;">4. Завантажте зображення Дивовижні споруди.jpg з папки Навчальне середовище\Дивовижні споруди, скориставшись послугою Вставити з меню вбудованого редактора веб-сторінки (мал. 29.15).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-384.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Перейдіть на сторінку Варто побачити! Додайте до неї опис однієї зі споруд на ваш розсуд. Додайте зображення обраної споруди. Для вибору споруди скористайтесь посиланнями у файлі Дивовижні споруди з папки Навчальне середовище\Дивовижні споруди або пошуком в Інтернеті.</p>
+<p style="word-spacing: 1.1px;">6. Збережіть зміни й перегляньте створений сайт. Переконайтеся, що за допомогою засобів навігації можна переходити на домашню сторінку та сторінку Варто побачити!</p>
+<p style="word-spacing: 1.1px;">1. Які типи веб-сторінок розрізняють? Що спільного та які відмінності вони мають?</p>
+<p style="word-spacing: 1.1px;">2. Із чого починається створення веб-сайтів?</p>
+<p style="word-spacing: 1.1px;">3. З яких етапів складається процес створення сайта?</p>
+<p style="word-spacing: 1.1px;">4. Чи є процес &laquo;розкрутки&raquo; сайта обов&rsquo;язковим? Поясніть.</p>
+<p style="word-spacing: 1.1px;">5. Які розрізняють види внутрішньої структури веб-сторінок?</p>
+<p style="word-spacing: 1.1px;">6. Яким чином можна встановити, хто має авторські права на дизайн сайта?</p>
+<p style="word-spacing: 1.1px;">7. Як структура веб-сторінки впливає на її сприйняття користувачем?</p>
+<p style="word-spacing: 1.1px;">8. Назвіть приклади онлайнових сервісів, на яких можна створювати та розміщувати сайти в мережі.</p>
+<p style="word-spacing: 1.1px;">1. Порівняйте сайти, адреси яких наведено у файлі Список сайтів папки Навчальне середовище. Встановіть, які з них є професійними, а які &mdash; любительськими. Виділіть три ознаки для такого визначення. Обговоріть результати в парі.</p>
+<p style="word-spacing: 1.1px;">2. Чи можна назвати використання готових шаблонів та елементів для створення сайтів порушенням авторських прав? Обговоріть у парах.</p>
+<p style="word-spacing: 1.1px;">3. Розгляньте приклади дизайну сайтів у презентації Дизайн сайтів з папки Навчальне середовище. Обміняйтесь думками, для яких прикладів дизайн дібрано доцільно. Що б ви запропонували змінити для покращення сприйняття матеріалу тих сайтів, дизайн яких, на вашу думку, дібрано невдало?</p>
+<p style="word-spacing: 1.1px;">4. Чи можна стверджувати, що в користувача, який володіє прийомами роботи із сайтом, наприклад, www.site.pryklad.com, буде достатньо навичок для роботи із сайтом www.karta.pryklad.com? Аргументуйте відповідь. Обговоріть у парах.</p>
+<p style="word-spacing: 1.1px;">5. Чому різні сайти відвідує різна кількість користувачів? Чи завжди популярний сайт є корисним для користувачів? Сплануйте, які відомості ви б хотіли розмістити на персональному сайті. Обговоріть у парах, чи користуватиметься такий сайт популярністю та на яку аудиторію він буде розрахований.</p>
+<p style="word-spacing: 1.1px;">6. Чи можна створити якісний сайт без спеціальної освіти з веб-програмування? Якими уміннями має володіти майбутній автор сайта? Обговоріть у парах.</p>
+<p style="word-spacing: 1.1px;">1. Розгляньте приклади сайтів навчальних закладів, що зареєстровані на освітньому порталі www.osvita.org.ua. Відшукайте, чи є на цих сайтах зразки банерів. Засобами графічного редактора створіть банер сайта свого навчального закладу.</p>
+<p style="word-spacing: 1.1px;">2. Знайдіть в Інтернеті приклади сайтів інтернет-магазинів, які займаються онлайновим продажем комп&rsquo;ютерної техніки. Проаналізуйте їхні вміст і структуру. Сплануйте макет сайта інтернет-магазину, який матиме спеціалізацію з продажу принтерів. Створіть схему макета засобами графічного редактора або текстового процесора. Обґрунтуйте вибір програмного середовища для створення макета. Засобами безкоштовної служби Google створіть статичну веб-сторінку згідно з розробленим вами макетом. Надішліть електронною поштою запрошення відвідати створену вами веб-сторінку вчителеві та сусіду чи сусідці по парті.</p>
+<p style="word-spacing: 1.1px;">3. Відкрийте головну сторінку з іменем index.htm з папки Навчальне середо-вище\Уроки HTML. Визначте структуру сайта, перегляньте вміст різних розділів. Ознайомтеся з додатковими відомостями про теги й атрибути мови HTML.</p>
+<p style="word-spacing: 1.1px;">Дослідіть, які дії можна виконувати після створення сайта засобами сервісу Google Сайти. Для цього оберіть інструмент Інші дії</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-385.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">у верхній частині вікна. Оберіть вказівку Керування сайтом. Дослідіть, як змінити тему оформлення сайта й налаштувати інші властивості сайта (мал. 29.16).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-386.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Обираємо майбутню професію&raquo;</p>
+<p style="word-spacing: 1.1px;">Створіть сайт, у якому на головній сторінці розмістіть опис проекту &laquo;Ярмарок професій&raquo; і подій, які відбувались під час його проведення. Передбачте навігаційне меню, за допомогою якого можна перейти на сторінку сайта з відомостями про професію, яку ви представляєте, та на сторінку посилань на сайти навчальних закладів, у яких можна опанувати обрану професію.</p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Е-урядування&raquo;</p>
+<p style="word-spacing: 1.1px;">Розробіть сайт із матеріалами про те, як відкрити власний бізнес за допомогою е-послуг. Сплануйте структуру сайта й елементи навігації.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-387.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">КОНСТРУЮВАННЯ САЙТІВ З ВИКОРИСТАННЯМ ОНЛАйН-СИСТЕМ</p>
+<p style="word-spacing: 1.1px;">Як за допомогою сервісу Google Сайти створювати сайти; як налаштувати стильове оформлення сайта, створеного засобами сервісу Google Сайти; як додавати нові сторінки до сайта; як додавати на створені веб-сторінки текст, зображення та інші об&rsquo;єкти;</p>
+<p style="word-spacing: 1.1px;">як редагувати вміст веб-сторінки.</p>
+<p style="word-spacing: 1.1px;">У власній структурі папок створіть папку Практична робота 13.</p>
+<p style="word-spacing: 1.1px;">Під час виконання практичних завдань пам&rsquo;ятайте про правила безпеки життєдіяльності при роботі з комп&rsquo;ютером!</p>
+<p style="word-spacing: 1.1px;">Завдання 1. Дивовижні споруди світу (6 балів)</p>
+<p style="word-spacing: 1.1px;">Доповніть власний сайт Дивовижні споруди світу. На головній сторінці сайта додайте гіперпосилання на веб-сторінку, що містить добірку цікавих для вас споруд. Додайте до сайта ще три веб-сторінки, на яких розмістіть матеріали про інші дивовижні споруди, обрані на власний розсуд. Проілюструйте матеріали зображеннями або додайте посилання на відео, що розміщені на YouTube. Матеріали про споруди знайдіть в Інтернеті, зображення, які ви плануєте розмістити на веб-сторінках, збережіть у папці Практична робота 13 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">Завдання 2. Мої захоплення (12 балів)</p>
+<p style="word-spacing: 1.1px;">Засобами сервісу Google Сайти створіть сайт про власні захоплення. Матеріали, які вам знадобляться для додавання на веб-сторінки, збережіть у папці Практична робота 13 своєї структури папок. На головній сторінці розмістіть вступ і додайте зображення. Створіть інші три веб-сторінки, на яких детальніше опишіть свої три захоплення, проілюструйте їх зображеннями чи додайте посилання на відео, розміщені на YouTube.</p>
+<p style="word-spacing: 1.1px;">завдання 3. рідкісні тварини (12 балів)</p>
+<p style="word-spacing: 1.1px;">Засобами сервісу Google Сайти створіть сайт про рідкісних тварин. Матеріали, які вам знадобляться для додавання на веб-сторінки, збережіть у папці Практична робота 13 своєї структури папок. На головній сторінці розмістіть вступ і додайте зображення. Створіть інші три веб-сторінки, на яких подайте відомості про трьох тварин, проілюструйте їх зображеннями чи додайте посилання на відео, розміщені на YouTube.</p>
+<p style="word-spacing: 1.1px;">завдання 4. Наші проекти (12 балів)</p>
+<p style="word-spacing: 1.1px;">Засобами сервісу Google Сайти створіть сайт про проект, який реалізовано учнями вашого класу на уроках чи в позаурочний час. Матеріали, які вам знадобляться для додавання на веб-сторінки, збережіть у папці Практична робота 13 своєї структури папок. На головній сторінці сайта опишіть обраний проект, укажіть його мету та завдання, додайте відгуки учнів про проведений проект і пропозицію його підтримки іншими учнями шкіл. Створіть інші три веб-сторінки, на яких розмістіть відомості про реалізацію проекту, список використаних ресурсів, отримані результати, проілюструйте їх зображеннями чи додайте посилання на відео, розміщені на YouTube.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p>&nbsp;</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-388.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Завдання 1. &laquo;Дні цікавої' науки&raquo;</p>
+<p style="word-spacing: 1.1px;">Для підготовки до проведення днів цікавої науки у школі ви з однокласниками вирішили створити збірку ресурсів Інтернету, що містять цікаві досліди, вироби з підручних матеріалів, які демонструють закономірності, вивчені на уроках фізики, хімії, біології тощо. Збірка має містити зображення, відео та посилання на тематичні сайти, інструкції для створення моделі власними руками чи проводити експерименти без шкоди здоров&rsquo;ю та без затрат коштів. Зауважте, що під час формування збірки слід дотримуватись авторських прав.</p>
+<p style="word-spacing: 1.1px;">1. Оберіть форму подання збірки ресурсів, що буде зручною для використання учнями класу. Створіть збірку у вибраному середовищі. Організуйте спосіб розміщення матеріалів, який буде доступний учням класу.</p>
+<p style="word-spacing: 1.1px;">2. Заповніть таблицю виконання завдання &mdash; файл Таблиця-наука, збережений у папці Компе-тентнісні завдання.</p>
+<p style="word-spacing: 1.1px;">3. Надайте доступ до матеріалів учителю.</p>
+<p style="word-spacing: 1.1px;">Завдання 2. &laquo;Оновлюємо комп&rsquo;ютерний клас&raquo;</p>
+<p style="word-spacing: 1.1px;">Учні 9 класу вирішили звернутись до адміністрації школи з пропозицією про необхідність доукомплектування комп&rsquo;ютерного класу своєї школи. Для цього вони планують визначити, які апаратні засоби, встановлені у класі, потребують заміни, де можна придбати комплектуючі та за яку мінімальну вартість. Окрім цього, учні планують запропонувати замінити програмне забезпечення, необхідне для навчання, на відповідне за призначенням, але яке поширюється з ліцензією вільного використання.</p>
+<p style="word-spacing: 1.1px;">1. Оберіть форму подання звернення, яке буде зручним для перегляду адміністрацією школи. Створіть звернення у вибраному середовищі. Організуйте спосіб розміщення матеріалів, що буде доступним учням класу.</p>
+<p style="word-spacing: 1.1px;">2. Заповніть таблицю виконання завдання &mdash; файл Таблиця-комп&rsquo;ютери, збережений у папці Компетентнісні завдання.</p>
+<p style="word-spacing: 1.1px;">3. Надайте доступ до матеріалів учителю.</p>
+<p style="word-spacing: 1.1px;">Завдання 3. &laquo;Інтернет і наше життя&raquo;</p>
+<p style="word-spacing: 1.1px;">Після роботи з інтернет-сервісом про еволюцію Інтернету за адресою http://evolutionofweb.appspot.com/7hhru для проведення Всесвітнього дня Інтернету в школі учні 9 класу вирішили створити комп&rsquo;ютерну модель, яка демонструє, як змінювалося їхнє життя разом зі зміною Інтернету. Для цього вони планують створити лінію часу, де розмістять власні фотографії, малюнки ґаджетів і програм, які вони використовували, та як зростали їхні власні інформаційні потреби в користуванні мережевими послугами.</p>
+<p style="word-spacing: 1.1px;">1. Оберіть форму подання моделі, що дасть змогу реалізувати заплановане. Створіть модель у вибраному середовищі. Організуйте спосіб розміщення матеріалів, який буде доступний учням класу.</p>
+<p style="word-spacing: 1.1px;">2. Заповніть таблицю виконання завдання &mdash; файл Таблиця-модель, збережений у папці Компетентнісні завдання.</p>
+<p style="word-spacing: 1.1px;">3. Надайте доступ до матеріалів учителю.</p>
+<p style="word-spacing: 1.1px;">Завдання 4. &laquo;Комп&rsquo;ютерні віруси&raquo;</p>
+<p style="word-spacing: 1.1px;">Для проведення Дня безпечного Інтернету у школі учні 9 класу вирішили створити комп&rsquo;ютерну модель, яка демонструє шкідливий вплив комп&rsquo;ютерних вірусів та способи захисту від таких загроз. Для цього учні планують створити графічний образ кожного з відомих їм вірусів, &laquo;оживити&raquo; дії вірусів та озвучити можливі результати від імені програм і комп&rsquo;ютера, які підлягають вірусній атаці.</p>
+<p style="word-spacing: 1.1px;">1. Оберіть форму подання моделі, що дасть змогу реалізувати заплановане. Створіть модель у вибраному середовищі. Організуйте спосіб розміщення матеріалів, який буде доступний учням класу.</p>
+<p style="word-spacing: 1.1px;">2. Заповніть таблицю виконання завдання &mdash; файл Таблиця-віруси, збережений у папці Компе-тентнісні завдання.</p>
+<p style="word-spacing: 1.1px;">3. Надайте доступ до матеріалів учителю.</p>
+<p style="word-spacing: 1.1px;">Завдання 5. STEM-центр</p>
+<p style="word-spacing: 1.1px;">Учні вашої школи вирішили облаштувати STEM-центр і представити свою ідею адміністрації та батьківському комітету школи. Вони запропонували вам долучитися до проекту. Ви вирішили пояснити, що означають літери S, T, E, M у його назві, та як організовані такі центри в Україні та світі. Для такого центру ви плануєте розробити сайт, розмістити на ньому логотип STEM-центру, тому вам слід розробити карту структури сайта, а для організації зворотного зв&rsquo;язку із центром, попереднього запису на заняття ви також маєте розробити форму реєстрації. Для придбання обладнання для центру ви створюєте кошторис, розрахунки для якого будете здійснювати у проекті, написаному мовою програмування.</p>
+<p style="word-spacing: 1.1px;">1. Оберіть форму подання своєї ідеї, що дасть змогу продемонструвати всі знайдені відомості та напрацьовані матеріали. Створіть представлення ідеї у вибраному середовищі. Організуйте спосіб розміщення матеріалів, який буде доступний учням класу.</p>
+<p style="word-spacing: 1.1px;">2. Заповніть таблицю виконання завдання &mdash; файл Таблиця-STEM, збережений у папці Компе-тентнісні завдання.</p>
+<p style="word-spacing: 1.1px;">3. Надайте доступ до матеріалів учителю.</p>
+<p style="word-spacing: 1.1px;">Завдання 6. Smart City</p>
+<p style="word-spacing: 1.1px;">Переглядаючи матеріали сайта http://forum.e.gov.ua/itdir2/, ви дізнались, що в Україні декілька міст має цікавий досвід реалізації проекту Smart City. Таке &laquo;розумне&raquo; місто чи село ви плануєте запропонувати створити громаді свого населеного пункту. Для цього вам потрібно розробити інформаційні матеріали, у яких подати пояснення, що таке Smart City, навести 5 ознак такого &laquo;розумного&raquo; міста чи села, подати приклади реалізації проекту в 5 населених пунктах України, 5 містах Європи та 5 містах у світі. Створіть власні пропозиції щодо побудови Smart City у вашому населеному пункті у вигляді дорожньої карти реформи.</p>
+<p style="word-spacing: 1.1px;">1. Оберіть форму подання своїх матеріалів, що дасть змогу продемонструвати всі знайдені відомості та напрацьовані матеріали. Створіть представлення матеріалів у вибраному середовищі. Організуйте спосіб розміщення матеріалів, який буде доступний учням класу.</p>
+<p style="word-spacing: 1.1px;">2. Заповніть таблицю виконання завдання &mdash; файл Таблиця-SMART, збережений у папці Компетентнісні завдання.</p>
+<p style="word-spacing: 1.1px;">3. Надайте доступ до матеріалів учителю.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-389.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Об&rsquo;єднайтесь у групи по 3-4 учні та створіть навчальний проект із дослідження обраної предметної галузі навчального курсу &laquo;Інформатика&raquo; на одну із запропонованих тем чи обраних самостійно:</p>
+<p style="word-spacing: 1.1px;">сучасні інформаційні технології у професійній діяльності: як вони змінюють професію; комп&rsquo;ютер майбутнього: перші кроки чи далекі перспективи; програми для роботи з текстом: чи є альтернатива;</p>
+<p style="word-spacing: 1.1px;">надбудови табличного процесора: користь для користувача чи зайвий застосунок; редактори комп&rsquo;ютерної графіки: нові інструменти для майбутнього художника; фрактали &mdash; це математика чи інформатика;</p>
+<p style="word-spacing: 1.1px;">&bull; вікісайти: основи конструювання та приклади застосувань;</p>
+<p style="word-spacing: 1.1px;">&bull; Офіс 365: сховище чи онлайнові офісні програми;</p>
+<p style="word-spacing: 1.1px;">&bull; робототехніка: як знання інформатики допоможуть керувати роботом;</p>
+<p style="word-spacing: 1.1px;">&bull; BD-моделювання: програми та реалізація.</p>
+<p style="word-spacing: 1.1px;">Матеріали свого дослідження подайте у вигляді сайта, структуру та спосіб його створення оберіть самостійно.</p>
+<p style="word-spacing: 1.1px;">Починаючи роботу над проектом:</p>
+<p style="word-spacing: 1.1px;">1. Визначтесь із темою, обговоріть у малій групі своїх однодумців рольовий розподіл (можливо, ви спробуєте себе в ролі однієї з професій: редактора, дизайнера, дослідника, менеджера тощо), сформулюйте завдання для дослідження проблеми; створіть план реалізації проекту; сплануйте передбачуваний результат реалізації проекту та спосіб його презентації.</p>
+<p style="word-spacing: 1.1px;">2. У процесі виконання проектних завдань потрібно розглянути такі запитання:</p>
+<p style="word-spacing: 1.1px;">1) Які основні ідеї ви розглядатимете у своєму проекті? Які ідеї вам потрібно буде дослідити та вивчити додатково?</p>
+<p style="word-spacing: 1.1px;">2) Де ви шукатимете потрібні відомості? Які відомості ви можете знайти в газетах, книжках або в Інтернеті? З якими людьми ви, можливо, захочете і зможете зустрітися та обговорити проблему?</p>
+<p style="word-spacing: 1.1px;">3) Як побудувати інформаційну модель результату вашого дослідження?</p>
+<p style="word-spacing: 1.1px;">4) Які офісні веб-програми та інтернет-сховища можуть бути корисними для організації спільної роботи над виконанням проекту?</p>
+<p style="word-spacing: 1.1px;">5) У який спосіб можна організувати опитування учнів щодо вашого проекту? Як використати результати опитування для його покращення?</p>
+<p style="word-spacing: 1.1px;">6) У який спосіб ви плануєте провести презентацію результатів дослідження? Як розподілити обов&rsquo;язки між членами групи, щоб кожен продемонстрував свій персональний внесок у виконання проекту?</p>
+<p style="word-spacing: 1.1px;">7) Яких ресурсів (інформаційних, матеріальних, людських) вам бракує для виконання завдань проекту і яким чином можна вирішити цю проблему?</p>
+<p style="word-spacing: 1.1px;">Взаємооцінювання та рефлексію роботи над проектом краще проводити на всіх етапах його реалізації. Для цього складайте й використовуйте контрольні списки для кожного з етапів реалізації проекту, оцінюйте роботу кожного над частиною спільного завдання, допомагайте одне одному у вирішенні проблем.</p>
+<p style="word-spacing: 1.1px;">Обговорюйте кожну ідею спільно, використовуйте для цього карти знань, таблиці планування й листки нагадування про плани та їх терміни. Залучайте до реалізації свого проекту старших й однолітків &mdash; їхні поради та стороннє бачення можуть стати вам у пригоді. Скористайтесь таким чек-листом в оцінюванні своєї роботи у групі:</p>
+<p style="word-spacing: 1.1px;">&bull; Я слухав/слухала, коли інші говорили.</p>
+<p style="word-spacing: 1.1px;">&bull; Я пропонував/пропонувала свої ідеї.</p>
+<p style="word-spacing: 1.1px;">&bull; Я запитував/запитувала інших про їхні ідеї.</p>
+<p style="word-spacing: 1.1px;">&bull; Я ділився/ділилася матеріалами й інструментами.</p>
+<p style="word-spacing: 1.1px;">&bull; Я звертався/зверталася до моїх партнерів за допомогою, коли вона мені була потрібна.</p>
+<p style="word-spacing: 1.1px;">&bull; Я допоміг/допомогла комусь у моїй групі.</p>
+<p style="word-spacing: 1.1px;">&bull; Я сказав/сказала іншим, що мені подобаються їхні ідеї.</p>
+<p style="word-spacing: 1.1px;">&bull; Я дотримувався/дотримувалася черги й намагався/намагалася, щоб інші теж стежили за цим.</p>
+<p style="word-spacing: 1.1px;">Завжди перевіряйте, чи всі учасники групи розуміють завдання, дослухаються до ідей та думок інших, терпляче пояснюють одне одному, як можна вирішити проблему, діляться всіма матеріалами одне з одним.</p>
+<p style="word-spacing: 1.1px;">3. Сплануйте підсумковий етап &mdash; захист проекту. Під час підготовки до цього заходу вам потрібно узагальнити всі напрацювання, підготувати слайдову презентацію для супроводу вашого виступу. Для інформування запрошених на захист проектів гостей (учнів інших класів, учителів, батьків тощо) щодо тематики, програми та регламенту його проведення доцільно створити текстовий документ.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2159-pdruchnik-nformatika-9-klas-morze-barna-vember-nova-programa-2017.html">Інформатика 9 клас Морзе</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="752-stvorennya-personalnogo-navchalnogo-seredovischa.html">Створення персонального навчального середовища</a></li><li><a href="682-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="666-bezpechne-zbergannya-danih.html">Безпечне зберігання даних</a></li><li><a href="659-napovnennya-personalnogo-navchalnogo-seredovischa.html">Наповнення персонального навчального середовища</a></li><li><a href="658-personalne-navchalne-seredovische-ta-distancyna-robota-z-danimi.html">Персональне навчальне середовище та дистанційна робота з даними</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

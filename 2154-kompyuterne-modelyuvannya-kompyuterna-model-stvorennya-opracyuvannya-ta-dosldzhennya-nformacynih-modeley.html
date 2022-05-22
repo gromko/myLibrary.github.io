@@ -1,0 +1,760 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Комп'ютерне моделювання. Комп'ютерна модель. Створення, опрацювання та дослідження інформаційних моделей &raquo; mozok.click</title>
+<meta name="description" content="Що таке компютерна модель та які її особливості?Ви знаєте, що у процесі пізнання та практичної діяльності людина використовує різноманітні моделі для дослідження реального обєкта в різних ум" />
+<meta name="keywords" content="дослідження, обєкт, процесі, галузі, замінюють, уявний, предметної, реальний, деякої, оригінал, властивості, оригіналу, суттєві, цього, зберігаючи, важливі, матеріальний, умовах, практичної, діяльності" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2154-kompyuterne-modelyuvannya-kompyuterna-model-stvorennya-opracyuvannya-ta-dosldzhennya-nformacynih-modeley.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Комп'ютерне моделювання. Комп'ютерна модель. Створення, опрацювання та дослідження інформаційних моделей</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2154").Button("#infc2154"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2154" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2154" class="infcont">
+			<ul>
+				<li><i>Переглядів: 56237</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 15-01-2018, 08:00</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2154'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2154-kompyuterne-modelyuvannya-kompyuterna-model-stvorennya-opracyuvannya-ta-dosldzhennya-nformacynih-modeley.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2154'); return false;">1</a></li>
+		<li><a href="2154-kompyuterne-modelyuvannya-kompyuterna-model-stvorennya-opracyuvannya-ta-dosldzhennya-nformacynih-modeley.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2154'); return false;">2</a></li>
+		<li><a href="2154-kompyuterne-modelyuvannya-kompyuterna-model-stvorennya-opracyuvannya-ta-dosldzhennya-nformacynih-modeley.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2154'); return false;">3</a></li>
+		<li><a href="2154-kompyuterne-modelyuvannya-kompyuterna-model-stvorennya-opracyuvannya-ta-dosldzhennya-nformacynih-modeley.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2154'); return false;">4</a></li>
+		<li><a href="2154-kompyuterne-modelyuvannya-kompyuterna-model-stvorennya-opracyuvannya-ta-dosldzhennya-nformacynih-modeley.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2154'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/15/index.html" ><i>15-01-2018, 08:00</i></a></span>
+	<h3 class="btl"><span id="news-title">Комп'ютерне моделювання. Комп'ютерна модель. Створення, опрацювання та дослідження інформаційних моделей</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2154" style="display:inline;"><p>ВИ ДІЗНАЄТЕСЯ:</p>
+<p style="word-spacing: 1.1px;">&bull; чому люди створюють моделі та користуються ними;</p>
+<p style="word-spacing: 1.1px;">&bull; якими бувають моделі;</p>
+<p style="word-spacing: 1.1px;">&bull; як описують математичну модель;</p>
+<p style="word-spacing: 1.1px;">&bull; приклади інформаційних моделей;</p>
+<p style="word-spacing: 1.1px;">&bull; етапи створення інформаційної моделі;</p>
+<p style="word-spacing: 1.1px;">&bull; як створюють інформаційні моделі в різних програмних середовищах&nbsp;та які їх особливості;</p>
+<p style="word-spacing: 1.1px;">&bull; чим відрізняються комп&rsquo;ютерні&nbsp;моделі;</p>
+<p style="word-spacing: 1.1px;">&bull; з яких етапів складається процес комп&rsquo;ютерного моделювання.</p>
+<p style="word-spacing: 1.1px;">&bull; що таке комп&rsquo;ютерна модель середовища;</p>
+<p style="word-spacing: 1.1px;">12.1. Що таке комп&rsquo;ютерна модель та які її особливості?</p>
+<p style="word-spacing: 1.1px;">Ви знаєте, що у процесі пізнання та практичної діяльності людина використовує різноманітні моделі для дослідження реального об&rsquo;єкта в різних умовах. Модель &mdash; це матеріальний або уявний об&rsquo;єкт, яким у процесі дослідження деякої предметної галузі замінюють реальний об&rsquo;єкт-оригінал, зберігаючи важливі для цього дослідження суттєві властивості оригіналу. Якщо модель подають за допомогою спрощеного матеріального об&rsquo;єкта, то отримують матеріальну модель. Якщо модель подають за допомогою описів, формул, зображень, схем, таблиць, креслень, графіків, то в такому разі мають справу з інформаційною моделлю. Оскільки інформаційні моделі доступні для опрацювання на комп&rsquo;ютері, то для них у різних середовищах створюють комп&rsquo;ютерну модель.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерна модель &mdash; це інформаційна модель, подана у знаковій</p>
+<p style="word-spacing: 1.1px;">формі та реалізована за допомогою комп&rsquo;ютера.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерна модель допомагає спостерігати й досліджувати явища й процеси в динаміці їх розгортання, здійснювати багаторазові випробування моделі, отримувати різноманітні кількісні показники в числовому або графічному поданні, зокрема такі, які потребують виконання складних, численних або трудомістких розрахунків.</p>
+<p style="word-spacing: 1.1px;">За допомогою комп&rsquo;ютерного моделювання вивчаються об&rsquo;єкти та явища, які неможливо, дорого або небезпечно відтворювати в реальних умовах. Це дає змогу не лише економити матеріальні ресурси, а й зберігати екологічні умови існування людини, уникати можливих шкідливих або руйнівних наслідків проведення випробувань.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерне моделювання є унікальним інструментом пізнання швидкоплинних або надповільних процесів. Їх можна досліджувати на комп&rsquo;ютері, розтягуючи чи стискаючи час або навіть зупиняючи його для вивчення певних етапів процесу. Моделювати й вивчати за допомогою комп&rsquo;ютера можна й такі явища, які не відбувалися, або невідомо, чи відбудуться коли-небудь у реальному житті, як, наприклад, зустріч нашої планети з іншим небесним тілом.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерне моделювання застосовують для розв&rsquo;язування широкого кола завдань, зокрема:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-146.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">конструювання транспортних засобів; аналіз поширення забруднюючих речовин в атмосфері; комп&rsquo;ютерні тренажери для тренування пілотів; емуляція роботи електронних пристроїв;</p>
+<p style="word-spacing: 1.1px;">дослідження поведінки будівель, конструкцій і деталей під механічним навантаженням;</p>
+<p style="word-spacing: 1.1px;">проектування виробничих процесів, наприклад хімічних; прогнозування цін на фінансових ринках; моделювання роботів й автоматичних маніпуляторів тощо.</p>
+<p style="word-spacing: 1.1px;">Різні сфери застосування комп&rsquo;ютерних моделей висувають різні вимоги до надійності одержуваних за їх допомогою результатів. Для моделювання будівель, деталей літаків, елементів нафтогазового обладнання потрібна висока точність і ступінь достовірності, тоді як моделі еволюції міст і соціально-економічних систем використовуються для отримання наближених результатів.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">12.2. Чим відрізняються комп&rsquo;ютерні моделі?</p>
+<p style="word-spacing: 1.1px;">Розрізняють різні види комп&rsquo;ютерних моделей (мал. 12.1).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-147.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Фізична комп&rsquo;ютерна модель передбачає, що комп&rsquo;ютер є частиною деякого експериментального пристрою чи тренажера, який за допомогою датчиків сприймає зовнішні сигнали, здійснює відповідні розрахунки та видає сигнали, що впливають на управління відповідними маніпуляторами. Наприклад, під час підготовки пілотів літальних апаратів використовують навчальну модель літака, яка оснащена відповідною комп&rsquo;ютерною технікою, що &laquo;реагує&raquo; на дії пілота, змінює нахил кабіни, покази приладів, вид з ілюмінатора, тим самим моделюючи політ реального літака.</p>
+<p style="word-spacing: 1.1px;">Графічна комп&rsquo;ютерна модель &mdash; це сукупність певним чином організованих даних (знаків, сигналів), що відображають найістотніші властивості об&rsquo;єктів дослідження. До таких моделей належать наочні, графічні, анімаційні, текстові, табличні інформаційні моделі, реалізовані засобами різних програмних середовищ. Це можуть бути також схеми, графи, графіки, діаграми, малюнки, відео, карти тощо, робота з якими здійснюється з використанням комп&rsquo;ютера.</p>
+<p style="word-spacing: 1.1px;">Імітаційна модель реалізується деякою комп&rsquo;ютерною програмою чи пакетом програм, що імітує поведінку складної технічної, економічної, біологічної, соціальної чи іншої системи з потрібною точністю. Такі моделі використовують для дослідження змін об&rsquo;єктів обраної системи дослідження, для створення комп&rsquo;ютерних ігор, &laquo;віртуальних світів&raquo;, навчальних програм та анімацій. Наприклад, гру Minecraft можна використати для імітації археологічних розкопок, зміни ландшафту залежно від кліматичних умов, будівництва власних будинків, застосовуючи стилі різних епох тощо.</p>
+<p style="word-spacing: 1.1px;">Обчислювальна комп&rsquo;ютерна модель реалізується програмою для розрахунку стану системи, що моделюється за її математичною моделлю. Її застосовують для моделювання різних фізичних, біологічних, соціальних та інших явищ. Наприклад, коливання маятника, поширення хвиль, зміни чисельності населення, популяції певного виду тварин тощо. Такі моделі часто застосовують для багаторазового проведення випробувань, у тому числі &mdash; зі зміною параметрів, з подальшим збором та опрацюванням отриманих результатів чи для розв&rsquo;язування задач на найкращий розкрій деталі, мінімальні витрати чи максимальний прибуток.</p>
+<p style="word-spacing: 1.1px;">Логічні комп&rsquo;ютерні моделі ґрунтуються на моделюванні знань, побудові системи штучного інтелекту, в основі якої лежить база знань деякої предметної галузі. Бази знань складаються з фактів &mdash; даних і правил.</p>
+<p style="word-spacing: 1.1px;">Наприклад, комп&rsquo;ютерна програма, яка &laquo;уміє&raquo; грати в шахи, складається з алгоритмів дій кожної шахової фігури, реалізує правила взаємодії фігур різних кольорів та пропонує логіку дії комп&rsquo;ютера у відповідь на дію реального гравця (мал. 12.2).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-148.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 1. Атлас людини.</p>
+<p style="word-spacing: 1.1px;">Завдання. Визначте, які засоби онлайнового сервісу ZygoteBody підтверджують те, що у середовищі подано наочну графічну комп&rsquo;ютерну модель анатомії людини.</p>
+<p style="word-spacing: 1.1px;">1. У полі адреси браузера введіть https://zygotebody.com/ та дочекайтеся завантаження онлайнового середовища.</p>
+<p style="word-spacing: 1.1px;">2. У списку компонентів оберіть стать моделі людини (мал. 12.3).</p>
+<p style="word-spacing: 1.1px;">3. Рухайте повзунком на панелі відображення систем органів, яка задає рівні глибини проникнення: від покривної системи &mdash; до нервової (мал. 12.4).</p>
+<p style="word-spacing: 1.1px;">4. Управляйте процесом перегляду моделі: повертайте модель за допомогою стрілок</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-149.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">у вікні середовища або скористайтесь відповідними клавішами клавіатури; змінюйте розмір моделі за допомогою інструментів масштабування чи коліщатка миші.</p>
+<p style="word-spacing: 1.1px;">5. Розгляньте відео про додаткові можливості зареєстрованого користувача сервісу в пробній чи придбаній версії, наприклад відео про додаткові</p>
+<p style="word-spacing: 1.1px;">інструменти</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-150.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">6. Зробіть висновок за умовою завдання та завершіть роботу із середовищем. Вправа 2. Віртуальна лабораторія.</p>
+<p style="word-spacing: 1.1px;">Завдання. Проведіть комп&rsquo;ютерний дослід для визначення середовища водного розчину за допомогою показника pH розчину на сайті Віртуальної освітньої лабораторії.</p>
+<p style="word-spacing: 1.1px;">1. На сайті віртуальної лабораторії за адресою http://www.virtulab.net/ оберіть розділ Хімія.</p>
+<p style="word-spacing: 1.1px;">2. На сторінці 2 списку лабораторних дослідів знайдіть дослід для визначення середовища водного розчину за допомогою показника pH розчину (мал. 12.5).</p>
+<p style="word-spacing: 1.1px;">3. Ознайомтесь із характеристиками індикатора, натиснувши на його колір. Визначте, які речовини мають обраний pH.</p>
+<p style="word-spacing: 1.1px;">4. Перейдіть до експерименту, натиснувши кнопку Дальше.</p>
+<p style="word-spacing: 1.1px;">5. Обираючи скляні палички, нанесіть віртуальний розчин на кожний з індикаторів. Перевірте, чи змінюється колір індикаторної смужки.</p>
+<p style="word-spacing: 1.1px;">6. Заповніть таблицю результатів експерименту, послідовно клацаючи на клітинці таблиці результатів і на значеннях рівня pH, середовища та речовини.</p>
+<p style="word-spacing: 1.1px;">7. Перевірте, чи отримали ви результат, поданий на малюнку 12.6, та чи є він правильним.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-151.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-152.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-153.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">8. Розгляньте інші досліди, які можна виконати у віртуальній хімічній лабораторії. Які з них не можна провести без організації спеціальних умов?</p>
+<p style="word-spacing: 1.1px;">9. Завершіть роботу із середовищем.</p>
+<p style="word-spacing: 1.1px;">Вправа 3. Графік функції.</p>
+<p style="word-spacing: 1.1px;">Завдання. Перевірте, як залежить розміщення на координатній площині графіка функції y = a(x + b)<sup>2</sup>&nbsp;+ c від значень параметрів моделі &mdash; значень коефіцієнтів a, b, c. Використайте для цього обчислювальну графічну модель, створену в середовищі GeoGebra.</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте модель, створену в середовищі GeoGebra за адресою https://ggbm.at/raWMhFr4 (мал. 12.7).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-154.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">1. Змінюйте значення параметрів моделі &mdash; значення коефіцієнтів a, b, c за допомогою повзунків від мінімального значення -5 до максимального 5.</p>
+<p style="word-spacing: 1.1px;">2. Визначте, за яких значень параметрів можна отримати розміщення графіка, як на малюнках 12.8, а, б, в.</p>
+<p style="word-spacing: 1.1px;">3. Встановіть, якого вигляду набуде рівняння в кожному з випадків. Чи відповідають отримані результати вивченому в курсі алгебри?</p>
+<p style="word-spacing: 1.1px;">4. Завершіть роботу з моделлю.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-155.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 4. Музичні експерименти.</p>
+<p style="word-spacing: 1.1px;">завдання. Використовуючи один з режимів середовища Chrome Music Lab,</p>
+<p style="word-spacing: 1.1px;">створіть власну комп&rsquo;ютерну модель артмузики.</p>
+<p style="word-spacing: 1.1px;">1. У браузері Google Chrome відкрийте середовище Chrome Music Lab за адресою https://musiclab.chromeexperiments.com/Experiments.</p>
+<p style="word-spacing: 1.1px;">2. Оберіть один із запропонованих режимів &mdash; прийом Кандинського (мал. 12.9).</p>
+<p style="word-spacing: 1.1px;">3. Після завантаження режиму намалюйте за допомогою миші декілька хвиль або фігур, звучання яких можна перевірити, якщо підключити до комп&rsquo;ютера акустичну систему. Зауважте, що фігури можна малювати як поруч одну з одною, так і одну над одною.</p>
+<p style="word-spacing: 1.1px;">4. Запустіть на виконання створений музичний фрагмент. За потреби внесіть до нього зміни. Використайте при цьому інструменти середовища (мал. 12.10).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-156.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Поверніться до головної сторінки лабораторії за допомогою інструмента у вигляді стрілки ліворуч. Оберіть інший режим роботи: ритм, спектрограма, акорд, звукові хвилі, арпеджіо, мелодія, Voice Spinner, гармоніки, перфострічка, осцилятор, струни. Проекспериментуйте зі створенням музики у вибраному режимі.</p>
+<p style="word-spacing: 1.1px;">6. Завершіть роботу із середовищем.</p>
+<p style="word-spacing: 1.1px;">12.3. З яких етапів складається процес комп&rsquo;ютерного моделювання?</p>
+<p style="word-spacing: 1.1px;">Процес комп&rsquo;ютерного моделювання складається з декількох етапів, кожний з яких передбачає певні дії (табл. 12.1).</p>
+<p style="word-spacing: 1.1px;">Таблиця 12.1</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>№</p>
+</td>
+<td>
+<p>Етап</p>
+</td>
+<td>
+<p>Дії</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Постановка завдання та його аналіз</p>
+</td>
+<td>
+<p>1. Визначити, з якою метою створюється модель.</p>
+<p>2. Уточнити, які результати та в якій формі слід отримати.</p>
+<p>3. Визначити, які вихідні дані потрібні для створення моделі</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Побудова</p>
+<p>інформаційної</p>
+<p>моделі</p>
+</td>
+<td>
+<p>1. Визначити властивості моделі та виявити взаємозв&rsquo;язки між ними.</p>
+<p>2. Оцінити, які з властивостей є істотними при побудові моделі, а якими можна знехтувати.</p>
+<p>3. Математично описати залежність між властивостями моделі</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>Розробка методу та алгоритму реалізації комп&rsquo;ютерної моделі</p>
+</td>
+<td>
+<p>1. Вибрати чи розробити метод отримання вихідних результатів.</p>
+<p>2. Скласти алгоритм отримання результатів за вибраними методами.</p>
+<p>3. Перевірити правильність алгоритму</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>Розробка комп&rsquo;ютерної моделі</p>
+</td>
+<td>
+<p>1. Вибрати засоби програмної реалізації алгоритму на комп&rsquo;ютері.</p>
+<p>2. Розробити комп&rsquo;ютерну модель.</p>
+<p>3. Перевірити правильність створеної комп&rsquo;ютерної моделі</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>Проведення</p>
+<p>комп&rsquo;ютерного</p>
+<p>експерименту</p>
+</td>
+<td>
+<p>1. Розробити план дослідження.</p>
+<p>2. Провести експеримент на основі створеної комп&rsquo;ютерної моделі.</p>
+<p>3. Проаналізувати отримані результати.</p>
+<p>4. Створити висновки щодо властивостей створеної моделі</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Для створення та опрацювання комп&rsquo;ютерних моделей використовуються наявні програмні засоби (математичні програми, електронні таблиці, графічні редактори тощо), онлайнові інструменти, що належать до сервісів Веб 2.0, або розробляються оригінальні програми за допомогою мов програмування.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерний експеримент &mdash; дослідження математичної моделі за допомогою комп&rsquo;ютера, під час якого за одними параметрами моделі обчислюють інші її параметри й на цій основі роблять висновки про властивості об&rsquo;єкта, описані математичною моделлю.</p>
+<p style="word-spacing: 1.1px;">Дослідження математичної моделі за допомогою комп&rsquo;ютера можна лише умовно віднести до експерименту, бо він відображає не природні явища чи процеси, а є лише чисельною реалізацією створеної математичної моделі. Результати проведеного експерименту характеризують властивості моделі, а не прототипу.</p>
+<p style="word-spacing: 1.1px;">У ході експерименту може виникнути потреба виправити план дослідження. Наприклад, поглибити його в деякому напрямку. Отримані результати можуть викликати сумніви, які вимагатимуть вибору іншого методу дослідження, уточнення моделі або навіть внесення змін у постановку завдання. І тоді весь процес починають знову.</p>
+<p style="word-spacing: 1.1px;">Розглянемо процес побудови комп&rsquo;ютерної моделі на прикладі розв&rsquo;язування такої задачі: учні 9 класу розробляють автономний літальний апарат, який хочуть обладнати світловим маячком, що блиматиме з деякою частотою. Метою створення комп&rsquo;ютерної моделі є складання, програмування та перевірка електричного кола, яке забезпечить блимання маячка з програмним управлінням. Для створення маячка можна взяти світлодіод. Блимання маячка можна забезпечити такими подіями: протягом 0,5 с на світлодіод потрібно подавати високий сигнал, який &laquo;засвітить&raquo; маячок, і протягом 0,5 с &mdash; низький сигнал, який його &laquo;погасить&raquo;. Таким чином, в електричну схему слід включити джерело живлення, заземлення, з&rsquo;єднувальні проводи, світлодіод, опір, програмний елемент. Створення комп&rsquo;ютерної моделі будемо здійснювати у віртуальній лабораторії https://circuits.io/, яка дає змогу створювати комп&rsquo;ютерні моделі реальних схем для мікроконтролерів. Оберемо для проекту такі компоненти (табл. 12.2).</p>
+<p style="word-spacing: 1.1px;">Таблиця 12.2</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-157.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Реалізуємо в моделі електричне коло (мал. 12.11).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-158.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">За складеною інформаційною моделлю схеми отримуємо значення необхідних параметрів моделі: опір 220 Ом, вихід на мікроконтролері № 13, коротка ніжка світлодіода &mdash; це &laquo;-&raquo;, а довга &mdash; &laquo;+&raquo;. Кольором світло-діода можна знехтувати.</p>
+<p style="word-spacing: 1.1px;">При побудові комп&rsquo;ютерної моделі слід врахувати, що на макетній платі лінії електричного кола розташовані вертикально. На платі мікро-контролера Arduino точки виходу (піни) мають номери від 0 до 13 (0 та 1 зазвичай не використовують), а точка &laquo;земля&raquo; позначена входом GND.</p>
+<p style="word-spacing: 1.1px;">Для створення моделі скористаємось меню віртуальної лабораторії (мал. 12.12).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-159.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Щоб відкрити список компонентів, обирають меню Components (Компоненти).</p>
+<p style="word-spacing: 1.1px;">Клацання на обраному у списку об&rsquo;єкті переносить його в робоче поле. Щоб повернути об&rsquo;єкт, використовують інструмент</p>
+<p style="word-spacing: 1.1px;">З&rsquo;єднання елементів у схему відбувається клацанням на відповідному отворі макетної плати та роз&rsquo;ємі мікроконтролера. Видалення з&rsquo;єднання &mdash; клавішею Delete на клавіатурі. Отримаємо комп&rsquo;ютерну модель (мал. 12.13).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-160.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Особливістю обраного середовища є те, що для цього проекту автоматично генерується програмний код, який можна переглянути в Редакторі коду (Code Editor). Внесемо зміни у програмний код. Зокрема, у тілі програми (мал. 12.14) змінимо значення тривалості подання сигналу на 500 = 0,5 с.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-161.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для іншого проекту в цьому коді слід вносити більш суттєві зміни. Перевіримо правильність створеної моделі. Для цього запустимо складену модель, натиснувши Start Simulation. Якщо під час створення моделі не було помилок, то світлодіод на макетній платі блиматиме.</p>
+<p style="word-spacing: 1.1px;">Проведемо комп&rsquo;ютерний експеримент. Змінимо значення часу світіння світлодіода. Для цього в команді delay(500), яка у програмі слідує за командою передавання високого сигналу напруги, задамо значення 400, а в наступній команді delay(500) значення параметра вкажемо 200. Після запуску програми маячок блиматиме частіше.</p>
+<p style="word-spacing: 1.1px;">1. Як співвідносяться поняття комп&rsquo;ютерна та інформаційна модель?</p>
+<p style="word-spacing: 1.1px;">2. Чому люди різних професій використовують у своїй діяльності комп&rsquo;ютерні моделі?</p>
+<p style="word-spacing: 1.1px;">3. Які з видів комп&rsquo;ютерних моделей ви можете застосовувати у школі?</p>
+<p style="word-spacing: 1.1px;">4. У чому подібність і відмінність фізичної та імітаційної комп&rsquo;ютерних моделей?</p>
+<p style="word-spacing: 1.1px;">5. Що лежить в основі побудови розрахункової комп&rsquo;ютерної моделі?</p>
+<p style="word-spacing: 1.1px;">6. Яка комп&rsquo;ютерна модель використовується для створення системи штучного інтелекту?</p>
+<p style="word-spacing: 1.1px;">7. Чим корисне використання графічної комп&rsquo;ютерної моделі під час вивчення шкільних предметів? Наведіть приклади.</p>
+<p style="word-spacing: 1.1px;">8. З яких етапів складається процес побудови комп&rsquo;ютерної моделі? Чи обов&rsquo;язковим є виконання кожної з дій відповідного етапу?</p>
+<p style="word-spacing: 1.1px;">9. Що розуміють під поняттям &laquo;комп&rsquo;ютерний експеримент&raquo;?</p>
+<p style="word-spacing: 1.1px;">1. Обговоріть, у чому подібність і відмінність етапів створення інформаційної та комп&rsquo;ютерної моделей. Подайте результати свого обговорення в текстовому документі, використовуючи відповідну схему.</p>
+<p style="word-spacing: 1.1px;">2. Обговоріть, до якого типу комп&rsquo;ютерних моделей можна віднести платформу BioDigital, роботу з якою розпочинають після реєстрації на сайті https://human.biodigital.com/signup.html. Чим вона подібна до онлайно-вого сервісу ZygoteBody?</p>
+<p style="word-spacing: 1.1px;">3. Розгляньте модель Сонячної системи, запропоновану за посиланням http://www.cosmos-online.ru/files/scope.swf.</p>
+<p style="word-spacing: 1.1px;">Оберіть у парі один з режимів роботи із сервісом, описаним у файлі Інструкція космос із папки Моделювання. За інструкцією проведіть</p>
+<p style="word-spacing: 1.1px;">комп&rsquo;ютерний експеримент. Розкажіть одне одному про дії, які виконували під час експерименту, та отримані результати. Обговоріть, чим подібні проведені експерименти.</p>
+<p style="word-spacing: 1.1px;">4. Розгляньте карту польотів літаків у реальному часі, подану за адресою https://planefinder. net/?embedrefer=true (мал. 12.15). Визначте, чи є в небі літак поблизу вашого місця проживання, змінивши масштаб карти. Обговоріть, чи можна вважати такий сервіс комп&rsquo;ютерною моделлю й до якого типу її слід віднести.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-162.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">1. Відвідайте віртуальну 30-екскурсію до історико-археологічного музею &laquo;Прадавня Аратта &mdash; Україна&raquo; в с.Трипілля на Київщині за адресою http://incognita.day.kiev.ua/museums/trypillia/ (мал. 12.16). Визначте, які інструменти сервісу можна використати, щоб відвідати зали експозиції, розглянути стелю чи підлогу приміщення, змінити відстань до експоната, розглянути експозицію ліворуч, праворуч або взагалі &laquo;повернутися&raquo; навколо осі перегляду. Створіть інформаційну модель &mdash; інструкцію з роботи із сервісом. Зробіть висновок про те, чи можна вважати цей сервіс комп&rsquo;ютерною моделлю музею.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте у вікні браузера сервіс Динамічна періодична система хімічних елементів за адресою http://www.ptable.com/?lang=uk#.</p>
+<p style="word-spacing: 1.1px;">Оберіть один з хімічних елементів у таблиці та скористайтесь усіма режимами, які можна отримати у вкладках Вікіпедія, Властивості, Орбіталь, Ізотопи, Compounds (Сполуки). Складіть список об&rsquo;єктів, які використані в середовищі. Зробіть висновок про те, які комп&rsquo;ютерні моделі можна подавати за допомогою цього сервісу.</p>
+<p style="word-spacing: 1.1px;">3. Відкрийте у вікні браузера сервіс WolframAlpha за адресою https://www. wolframalpha.com/(мал. 12.17). Зайдіть у розділ Математика та ознайомтеся із правилами запису виразів для розв&rsquo;язування задач. Поверніться на головну сторінку, у поле введення формули чи запиту введіть рівняння для знаходження коренів, наприклад х<sup>л</sup>2+2х+1=0, та натисніть кнопку запуску</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-163.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розгляньте отримані результати (мал. 12.17).</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок про те, які комп&rsquo;ютерні моделі можна подавати за допомогою цього сервісу. Для підтвердження своїх здогадок знайдіть додаткові відомості в Інтернеті про WolframAlpha.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-164.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-165.jpg" alt="" /></p>
+<ul>
+<li>як створити комп&rsquo;ютерну модель у різних середовищах;</li>
+<li>що таке карта знань та як з нею працювати;</li>
+<li>як створювати карти знань.</li>
+</ul>
+<p style="word-spacing: 1.1px;">13.1. Як створити комп&rsquo;ютерну модель у різних середовищах?</p>
+<p style="word-spacing: 1.1px;">Для створення комп&rsquo;ютерних моделей можна використовувати різні середовища прикладних програм, таких як редактор презентацій чи табличний процесор, та середовища спеціальних програм. Розглянемо приклад створення комп&rsquo;ютерної моделі для розв&rsquo;язування завдання: учні 9 класу розробляють пристрій для відстеження тривалості деякої події. Для цього вони планують використати математичний маятник &mdash; кульку, підвішену на нитці деякої довжини, і визначити таку довжину нитки, яка забезпечить їм потрібне значення часу. Час, за який маятник здійснить одне повне коливання (повернеться в початковий стан), називається періодом коливань. Для математичного маятника період коливань можна знайти за допомогою</p>
+<p style="word-spacing: 1.1px;">співвідношення</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-166.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">довжина нитки математичного</p>
+<p style="word-spacing: 1.1px;">маятника, а g = 9,8 Н/кг, п = 3,14 (число пі, або стала Архімеда).</p>
+<p style="word-spacing: 1.1px;">Звичайно, можна знайти розв&rsquo;язок завдання алгебраїчним методом. Але використаємо для цього відомі вам програмні засоби. Оскільки передбачається обчислювальний експеримент, то скористаємось для цього табличним процесором. Побудуємо таблицю значень функції Т, задаючи значення довжини l (мал. 13.1).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-167.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Знайдемо, наприклад, таке значення довжини маятника, за якого період становить 2 с.</p>
+<p style="word-spacing: 1.1px;">Обчислення проведемо для І, яке змінюється від 0,1 до 2 із кроком 0,1. Відобразимо значення Т, обчислені у стопцях В та E, на діаграмі. Оберемо для цього вид діаграми &mdash; графік (мал. 13.2).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-168.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Проведемо комп&rsquo;ютерний експеримент. Будемо змінювати значення Tk = 2 (діапазон</p>
+<p style="word-spacing: 1.1px;">Е5:Е24). Пряма, яка перетинає графік функції періоду, визначає шукане значення довжини підвіски.</p>
+<p style="word-spacing: 1.1px;">Для розв&rsquo;язування завдання можна скористатись сервісом, що дає змогу побудувати за обраними математичними моделями відповідні графічні комп&rsquo;ютерні моделі. Зокрема, може бути використано сервіс побудови графіків функцій на сайті Формула (http://formula.co.ua/uk/ function-plotter). Якщо ввести значення параметрів моделі та описати функції за прийнятою системою позначень, отримаємо шуканий результат (мал. 13.3).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-169.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо навести вказівник миші на точку перетину графіків, то у спливаючому меню отримаємо шукані значення координат. Звісно, що, використовуючи сервіс побудови графіків із сайта Формула, результат отримаємо швидше, але тут ми не можемо управляти позначками на осі координат, точністю наближень та здійснювати обчислення, потрібні для опису математичних моделей. Тому використання табличного процесора в такому випадку має більшу доцільність.</p>
+<p style="word-spacing: 1.1px;">Вправа 1. Аналіз крові.</p>
+<p style="word-spacing: 1.1px;">Завдання. Доповніть комп&rsquo;ютерну модель персонального лікаря-консуль-танта, за якою за показниками загального аналізу крові можна буде отримати висновок про стан здоров&rsquo;я людини чи її схильність до деяких захворювань.</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище Lazarus (PyCharm) та завантажте проект Кров.</p>
+<p style="word-spacing: 1.1px;">2. Пригадайте команди мови програмування Free Pascal (Python) для створення діалогових вікон, текстових написів, кнопок управління, програмування розгалужень. Розгляньте початок реалізації комп&rsquo;ютерної моделі у проекті.</p>
+<p style="word-spacing: 1.1px;">3. Встановіть, яким чином вводять показник гемоглобіну з аналізу крові та як у програмному коді організовано отримання результату.</p>
+<p style="word-spacing: 1.1px;">4. Доповніть проект об&rsquo;єктами та відповідними командами так, щоб користувач міг внести свої дані про інші 4 зі списку стандартних показників загального аналізу крові, вибрані самостійно з файла Аналіз крові, збереженого в папці Моделювання.</p>
+<p style="word-spacing: 1.1px;">5. Збережіть змінений проект у папці Моделі.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-170.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 2. Магнітне поле.</p>
+<p style="word-spacing: 1.1px;">Завдання. Складіть у середовищі редактора презентацій комп&rsquo;ютерну модель, яка демонструє дію магнітного поля на провідник зі струмом.</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте відео, розміщене на каналі Віртуальна школа (https://www.youtube.com/watch?v=LUHtb-ZjxHg), що демонструє дію магнітного поля на провідник зі струмом. Проаналізуйте модель, яку відображено, починаючи із часу 1.04 (мал. 13.4).</p>
+<p style="word-spacing: 1.1px;">2. У середовищі редактора презентацій змініть макет першого слайда на порожній слайд.</p>
+<p style="word-spacing: 1.1px;">3. На слайді намалюйте схему електричного кола та магніту, у магнітному полі якого перебуває коло:</p>
+<p style="word-spacing: 1.1px;">джерело живлення, ключ у положенні &laquo;вимкнуто&raquo;, з&rsquo;єднувальні проводи, штатив, магніт (мал. 13.4). Скористайтеся при цьому вбудованими засобами вкладки Вставка/Фігури. Передбачте, що фрагмент кола &mdash; рамку з проводів &mdash; потрібно намалювати окремо (група з трьох ліній).</p>
+<p style="word-spacing: 1.1px;">4. Додайте анімацію до ключа: обертання. Змініть параметр обертання кількість на 20&deg; проти годинникової стрілки.</p>
+<p style="word-spacing: 1.1px;">5. Додайте аналогічну анімацію обертання до рамки. Доберіть потрібний параметр ефекту.</p>
+<p style="word-spacing: 1.1px;">6. Задайте тригер: при натисненні на ключ &laquo;вимкнуто&raquo; розпочинається дія анімаційного ефекту &mdash; після обертання ключа розпочинається обертання рамки (мал. 13.5).</p>
+<p style="word-spacing: 1.1px;">7. Запустіть показ презентації та перевірте дію моделі. За потреби змініть значення параметрів анімаційних ефектів.</p>
+<p style="word-spacing: 1.1px;">8. Збережіть файл з іменем Магніт у режимі демонстрації (.ppsx) у папці Моделі.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-171.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">13.2. Що таке карта знань та як з нею працювати?</p>
+<p style="word-spacing: 1.1px;">Для подання комп&rsquo;ютерних моделей, які відображають структурні зв&rsquo;язки між деякими об&rsquo;єктами чи поняттями, використовують програми для створення карт знань.</p>
+<p style="word-spacing: 1.1px;">Карта знань &mdash; це засіб для подання графічної комп&rsquo;ютерної моделі, що передбачає відображення об&rsquo;єктів певної предметної галузі та зв&rsquo;язків між ними.</p>
+<p style="word-spacing: 1.1px;">Об&rsquo;єкти (назви, терміни, зображення) для наочності на карті знань зв&rsquo;язані гілками, що відходять від центрального поняття або ідеї відповідної предметної галузі.</p>
+<p style="word-spacing: 1.1px;">Карти знань застосовують для створення інформаційних моделей, візуалізації нових ідей, фіксування та структурування даних, аналізу</p>
+<p style="word-spacing: 1.1px;">й впорядкування даних, класифікації понять, відображення процесів, прийняття рішень тощо.</p>
+<p style="word-spacing: 1.1px;">Карти знань відрізняються від схем, які можна, наприклад, побудувати в середовищі текстового процесора, тим, що можуть містити текст, малюнки, позначки, файли, посилання на ресурси Інтернету тощо.</p>
+<p style="word-spacing: 1.1px;">Карти знань створюють за певними правилами:</p>
+<p style="word-spacing: 1.1px;">основне поняття інформаційної моделі (об&rsquo;єкт уваги) сфокусовано в центрі (мал. 13.6);</p>
+<p style="word-spacing: 1.1px;">теми й ідеї, пов&rsquo;язані з основним поняттям, розходяться від центру; гілки позначаються ключовими словами та образами; ідеї наступного порядку (рівня) також зображаються у вигляді гілок, що відходять від центральних гілок, і так далі.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-172.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">13.3. Як створювати карти знань?</p>
+<p style="word-spacing: 1.1px;">Карти знань можна зображати на папері або на дошці вручну. Але зручнішим та ефективнішим є їх створення з використанням різного програмного забезпечення, що розроблене для роботи з картами знань. Таким чином створюють комп&rsquo;ютерні моделі, що відображають структурно-логічні схеми. Сьогодні є достатня кількість безкоштовних для користувачів програм для створення карт знань. Є й такі, за користування якими потрібно сплатити певні кошти. Деякі програми потребують попереднього встановлення на комп&rsquo;ютері, інші реалізовані як онлайнові ресурси, і їхнє використання передбачає наявність інтернет-зв&rsquo;язку.</p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм побудови карти знань у середовищі FreeMind, яке можна завантажити з Головного меню комп&rsquo;ютера або ярлика програми. Зрозуміло, що спочатку ця програма має бути встановлена на комп&rsquo;ютер.</p>
+<p style="word-spacing: 1.1px;">Вікно редактора карт знань FreeMind (мал. 13.7) містить меню, набір інструментів та робоче поле.</p>
+<p style="word-spacing: 1.1px;">Робоче поле призначене для створення карти знань: введення тексту для вузлів і встановлення зв&rsquo;язків між вузлами; редагування та форматування введеного тексту, стандартних позначок і малюнків.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-173.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Після завантаження редактора центральний вузол з текстом Нова асоціативна карта розташовується в центрі робочого поля. Для того щоб змінити текст у вузлі, двічі клацають лівою кнопкою миші або в контекстному меню вузла обирають вказівку Редагувати. Дію редагування чи форматування вмісту вузла можна здійснити у вікні Змінити текст у редакторі (мал. 13.8), який викликається відповідною вказівкою в контекстному меню вузла. Інструменти, що використовуються для форматування тексту у вузлі, нагадують окремі інструменти роботи з текстом у середовищі текстового процесора. Завершують редагування натисненням кнопки Гаразд.</p>
+<p style="word-spacing: 1.1px;">Дії зі складовими карти, їх створення, переміщення, редагування, форматування тощо можна виконати за допомогою відповідних вказівок контекстного або головного меню програми (мал. 13.9). Дії, які найчастіше використовують під час роботи з картою, винесені на панель інструментів (мал. 13.10).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-174.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-175.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У вузол можна додати текст, зображення, файл, посилання. Декілька вузлів можна об&rsquo;єднати у групу &mdash; хмару за допомогою потрібної вказівки або комбінації клавіш (мал. 13.11).</p>
+<p style="word-spacing: 1.1px;">Створену карту знань зберігають за допомогою вказівок меню Файл. Якщо передбачається, що карту не будуть більше редагувати чи форматувати, її можна експортувати в документи різних форматів, у тому числі і як графічне зображення. Файл карти знань, створеної в середовищі FreeMind має розширення тт.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-176.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 13.11</p>
+<p style="word-spacing: 1.1px;">Вправа 3. Навчальні заклади.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть комп&rsquo;ютерну інформаційну модель мережі професійного спрямування та відповідних навчальних закладів, наближених до вашого регіону проживання, які готують відповідних фахівців, що містить посилання на веб-сторінку навчального закладу в Інтернеті.</p>
+<p style="word-spacing: 1.1px;">1. Запустіть на виконання програму FreeMind. Оберіть вказівку Файл/Новий.</p>
+<p style="word-spacing: 1.1px;">2. Створіть комп&rsquo;ютерну інформаційну модель, у центральному вузлі якої напишіть обрану спеціальність (наприклад, інформаційні технології).</p>
+<p style="word-spacing: 1.1px;">3. Додайте вузли до центрального вузла із заголовками: Спеціалізовані навчальні заклади, Навчальні заклади зі спорідненою спеціальністю.</p>
+<p style="word-spacing: 1.1px;">4. За допомогою сайта vstup.info здійсніть пошук за територіальним принципом за попередній рік вступу. По черзі обирайте коледжі за назвою, близькою до назви бажаної спеціальності. Натисніть на посилання з назвою навчального закладу та перевірте, чи є обрана вами спеціальність у переліку спеціальностей денної форми навчання. Назву навчального закладу додавайте до вузла Спеціалізовані навчальні заклади.</p>
+<p style="word-spacing: 1.1px;">5. Якщо за назвою не можна визначитися, чи готує навчальний заклад за обраною спеціальністю, зайдіть на сторінку закладу та перевірте за таблицею спеціальностей. У разі позитивного результату такий навчальний заклад додайте до вузла Навчальні заклади зі спорідненою спеціальністю.</p>
+<p style="word-spacing: 1.1px;">6. Додайте до центрального вузла зображення, яке може бути емблемою обраної спеціальності. Для цього оберіть вказівку контекстного меню Вставити/Вибрати файл з картинкою. Збережіть карту з іменем Навчальні заклади.mm у папці Моделі своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">7. Знайдіть в Інтернеті сайт чи веб-сторінку двох навчальних закладів, які б ви обрали для освоєння професії першочергово. Скопіюйте адресу з поля адреси браузера.</p>
+<p style="word-spacing: 1.1px;">8. Додайте посилання до вузла з назвою навчального закладу, обравши вказівку контекстного меню Вставити/Вказати посилання (текстове поле). Переконайтеся, що за доданим посиланням можна перейти до сайта.</p>
+<p style="word-spacing: 1.1px;">9. Зв&rsquo;яжіть два навчальні заклади, які територіально є найменш віддаленими від вашого місця проживання. Для цього виділіть два вузли мишею при натисненій клавіші Ctrl і в контекстному меню оберіть Вставити/Створити зв&rsquo;язок. Перенесіть лінію зв&rsquo;язків так, щоб вона не перекривала об&rsquo;єкти на карті.</p>
+<p style="word-spacing: 1.1px;">10. Доберіть серед набору піктограм такі, які зазначають навчальний заклад, де навчається або навчався ваш знайомий.</p>
+<p style="word-spacing: 1.1px;">11. Збережіть зміни у створеній карті.</p>
+<p style="word-spacing: 1.1px;">Вправа 4. Створення карти знань для уроку.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть комп&rsquo;ютерну інформаційну модель навчального матеріалу одного з обраних самостійно уроків у вигляді карти знань, використовуючи</p>
+<p style="word-spacing: 1.1px;">поданий алгоритм.</p>
+<p style="word-spacing: 1.1px;">Алгоритм створення карт знань</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте вікно програми FreeMind.</p>
+<p style="word-spacing: 1.1px;">2. У центральному вузлі карти знань замість &laquo;Нова асоціативна карта&raquo; запишіть тему уроку. Сформулюйте її стисло й точно та(або) додайте зображення.</p>
+<p style="word-spacing: 1.1px;">3. Розділіть тему на кілька самостійних підтем, тобто створіть розгалуження до найголовніших підрозділів, від яких відходять розгалуження до інших підтем.</p>
+<p style="word-spacing: 1.1px;">4. На гілках розміщуйте слова або картинки залежно від обраної ідеї й теми.</p>
+<p style="word-spacing: 1.1px;">5. Визначте основні завдання й дії. У всіх розгалуженнях подайте ключові слова, що їх характеризують і допомагають пригадати певне поняття.</p>
+<p style="word-spacing: 1.1px;">6. Знайдіть усі зв&rsquo;язки й подайте їх на карті знань.</p>
+<p style="word-spacing: 1.1px;">7. Додайте до одного-двох вузлів карти посилання на знайдене в мережі відео та знайдений веб-сайт із довідковими матеріалами.</p>
+<p style="word-spacing: 1.1px;">8. Використайте різні візуальні засоби.</p>
+<p style="word-spacing: 1.1px;">9. Збережіть відповідну карту в файлі Урок папки Моделі своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">1. Які середовища можна використати для створення карт знань?</p>
+<p style="word-spacing: 1.1px;">2. Чому для побудови комп&rsquo;ютерної моделі важливо правильно обрати засіб її створення? Наведіть приклади.</p>
+<p style="word-spacing: 1.1px;">3. Чи можна засобами редактора створення презентацій побудувати комп&rsquo;ютерну обчислювальну модель?</p>
+<p style="word-spacing: 1.1px;">4. Чи можна вважати мову програмування &laquo;універсальним засобом&raquo; для створення комп&rsquo;ютерних моделей? Відповідь поясніть.</p>
+<p style="word-spacing: 1.1px;">5. Що таке карти знань? Висловте свою думку, чому вони мають таку назву.</p>
+<p style="word-spacing: 1.1px;">6. Як пов&rsquo;язані карти знань та інформаційні моделі?</p>
+<p style="word-spacing: 1.1px;">7. У яких програмах можна створювати комп&rsquo;ютерні моделі у вигляді карт знань? Наведіть приклади.</p>
+<p style="word-spacing: 1.1px;">8. Як створюють карту знань в одному з відомих вам редакторів карт знань?</p>
+<p style="word-spacing: 1.1px;">1. Розгляньте комп&rsquo;ютерну модель словника, запропоновану за адресою http://vslovar.ru/bes/17012.html.</p>
+<p style="word-spacing: 1.1px;">Обговоріть, у якому відомому вам середовищі можна реалізувати модель, аналогічну до розглянутої. Які засоби цього середовища слід використати? Зробіть висновок про те, чи можна засобами обраного середовища &laquo;покращити&raquo; модель.</p>
+<p style="word-spacing: 1.1px;">2. Обговоріть ідею створення комп&rsquo;ютерної моделі, яка реалізує відомий фізичний експеримент, що демонструє властивість магнітів, які притягуються різнойменними полюсами та відштовхуються однойменними. У якому середовищі ви би створювали таку модель? Створіть таку модель і продемонструйте в парі. Чи можна, обравши різні з відомих вам середовищ, досягти однакового результату?</p>
+<p style="word-spacing: 1.1px;">3. Обговоріть ідею створення комп&rsquo;ютерної моделі, за допомогою якої можна досліджувати основні властивості функції</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-177.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">залежно від значень k.</p>
+<p style="word-spacing: 1.1px;">Створіть таку модель та продемонструйте в парі. Визначте, який із засобів доцільніше використати при створенні моделі: онлайнове середовище для побудови графіків функції чи табличний процесор.</p>
+<p style="word-spacing: 1.1px;">4. Обговоріть ідею створення комп&rsquo;ютерної моделі, за допомогою якої можна досліджувати кількість коренів квадратного рівняння та визначати їхні значення. Визначте, у якому із середовищ можна її реалізувати. Створіть таку модель і продемонструйте в парі.</p>
+<p style="word-spacing: 1.1px;">1. Створіть комп&rsquo;ютерну модель проведення експерименту з хімії, під час якого відбувається реакція йонного обміну з випаданням осаду (мал. 13.12).</p>
+<p style="word-spacing: 1.1px;">Збережіть модель з іменем Осад у папці Моделі своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">2. Створіть комп&rsquo;ютерну модель малого та великого кіл кровообігу, використайте графічний файл Серце з папки Моделювання. Пригадайте з біології, як називаються позначені на малюнку 13.13 складові схеми, і передбачте, що при натисненні на відповідне число на схемі має з&rsquo;являтись підпис. Наприклад, числу 5 відповідає підпис &laquo;ліве передсердя&raquo;. Передбачте у своїй моделі наявність краплини, яка рухається по колу за траєкторією, вказаною стрілками, змінюючи свій колір відповідно до кольорів, що відповідають позначенню венозної та артеріальної крові. Збережіть модель з іменем Кровообігу папці Моделі своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">3. При розробці моделі для Зй-друку отримано 4 точки А, В, С, D, які задані своїми координатами. Дослідіть, як будуть розташовуватись одна відносно одної рейки, що сполучають точки A, C та B, D. Для цього побудуйте комп&rsquo;ютерну модель у відомій вам програмі. Збережіть модель з іменем Рейки в папці Моделі своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">4. Створіть карту знань Графіки, яка моделює відомості про графіки функцій, вивчені на уроках математики. Використовуйте відомі вам програми для побудови графіків функцій. Зображення графіків додайте до вузлів моделі. Збережіть карту в папці Моделі своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">Вправа 5. Сервіси для створення карт знань.</p>
+<p style="word-spacing: 1.1px;">Використовуючи шаблон презентації Створення карт знань, що збережена в папці Моделювання, створіть карту знань про сервіси Інтернету, якими можна скористатися для створення карт знань. Сплануйте, які відомості про сервіс ви розміщуватимете на карті. Надішліть створену карту електронною поштою сусіду чи сусідці, що працює за комп&rsquo;ютером ліворуч.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-178.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Е-урядування&raquo;</p>
+<p style="word-spacing: 1.1px;">Створіть модель середовища для зберігання даних під час надання онлайнових послуг для створення реєстру-запису до дошкільного навчального закладу.</p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Обираємо майбутню професію&raquo;</p>
+<p style="word-spacing: 1.1px;">Створіть карту знань для обраної професії, що міститиме назви підприємств чи установ вашого регіону, яким потрібні працівники обраної професії. Скористайтесь онлайн-сервісом для пошуку вакансій.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-179.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">СТВОРЕННЯ, ОПРАЦЮВАННЯ ТА ДОСЛІДЖЕННЯ ІНФОРМАЦІЙНИХ МОДЕЛЕЙ</p>
+<p style="word-spacing: 1.1px;">Які існують програми для створення та дослідження комп&rsquo;ютерних моделей;</p>
+<p style="word-spacing: 1.1px;">які моделі можна будувати в середовищі табличного процесора;</p>
+<p style="word-spacing: 1.1px;">як створити карту знань.</p>
+<p style="word-spacing: 1.1px;">У власній структурі папок створіть папку Практична робота 5.</p>
+<p style="word-spacing: 1.1px;">Під час виконання практичних завдань пам&rsquo;ятайте про правила безпеки життєдіяльності при роботі з комп&rsquo;ютером!</p>
+<p style="word-spacing: 1.1px;">Завдання 1. Трикутник і коло (4 бали)</p>
+<p style="word-spacing: 1.1px;">Використайте комп&rsquo;ютерну модель трикутника, вписаного в коло, за адресою https://ggbm.at/NKBKwrKf, проведіть дослідження, як залежить розміщення центра кола, описаного навколо трикутника, від виду трикутника (мал. 14.1).</p>
+<p style="word-spacing: 1.1px;">Зауважте, що змінити вигляд трикутника можна, змінюючи положення його вершин. Зробіть висновок про вид і призначення комп&rsquo;ютерної моделі.</p>
+<p style="word-spacing: 1.1px;">Завдання 2. Хімічний експеримент (10 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть комп&rsquo;ютерну модель проведення експерименту з хімії, під час якого відбувається реакція йонного обміну, у результаті якого виділяється газ (мал. 14.2).</p>
+<p style="word-spacing: 1.1px;">Збережіть модель з іменем Хімічна реакція в папці Практична робота 5 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">завдання 3. Грілка (10 балів)</p>
+<p style="word-spacing: 1.1px;">Учні 9 класу проводять дослідження для визначення, що ефективніше використовувати як грілку: цеглину масою 2 кг чи воду об&rsquo;ємом 2 л, налиту, наприклад, у пластикову пляшку. Вважають, що і цегла, і вода охолоджуватимуться на однакову температуру. Використовуючи відомі з курсу фізики формули для обчислення кількості теплоти, дев&rsquo;ятикласники склали математичну модель задачі:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-180.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розробіть обчислювальну комп&rsquo;ютерну модель, яка відповідає поданій математичній. Доберіть засіб для створення моделі самостійно. Дані про питомі теплоємності води с<sub>в</sub>, цегли с<sub>ц</sub>&nbsp;та густину води р<sub>в</sub>&nbsp;знайдіть в Інтернеті. За отриманим значенням зробіть висновок: якщо отримане значення більше за 1, то краще використовувати воду, якщо ні &mdash; цеглину. Збережіть модель з іменем Грілка в папці Практична робота 5 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-181.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Завдання 4. Велика двадцятка (10 балів)</p>
+<p style="word-spacing: 1.1px;">Складіть карту знань про країни-члени Великої двадцятки (G-20). Розмістіть країни, згрупувавши їх за територіальним принципом так, щоб назви вузлів відповідали континентам. Для кожної країни додайте посилання на відповідну статтю у Вікіпедії. Визначте за комп&rsquo;ютерною моделлю континент, на якому розташовано найбільше країн-членів Групи двадцяти міністрів фінансів та керівників центральних банків. Свою відповідь позначте червоним кольором відповідного вузла. Збережіть карту з іменем Велика двадцятка в папці Практична робота 5 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2159-pdruchnik-nformatika-9-klas-morze-barna-vember-nova-programa-2017.html">Інформатика 9 клас Морзе</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="760-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="753-modelyuvannya-ponyattya-model.html">Моделювання. Поняття моделі</a></li><li><a href="669-stvorennya-y-opracyuvannya-modeley-na-prikladah-zadach-z-rznih-predmetnih-galuzey-modelyuvannya-fzichnih-yavisch.html">Створення й опрацювання моделей на прикладах задач із різних предметних гал ...</a></li><li><a href="668-etapi-kompyuternogo-modelyuvannya.html">Етапи комп’ютерного моделювання</a></li><li><a href="667-kompyuterne-modelyuvannya-obyektv-procesv-nformacyn-model.html">Комп’ютерне моделювання об’єктів і процесів. Інформаційні моделі</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

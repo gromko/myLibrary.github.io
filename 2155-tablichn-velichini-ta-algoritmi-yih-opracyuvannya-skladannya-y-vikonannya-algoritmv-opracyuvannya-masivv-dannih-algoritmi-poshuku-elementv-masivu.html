@@ -1,0 +1,1116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Табличні величини та алгоритми їх опрацювання. Складання й виконання алгоритмів опрацювання масивів данних. Алгоритми пошуку елементів масиву &raquo; mozok.click</title>
+<meta name="description" content="Що таке таблична величина?Ви вмієте створювати програми мовами програмування Free Pascal чи Python для опрацювання певної кількості змінних. Їхні значення вводять за допомогою команд введенн" />
+<meta name="keywords" content="програмування, змінних, велику, опрацьовувати, потрібно, часто, повідомлень, наприклад, текстовому, кількість, множину, подають, вигляді, таблиць, зручності, змінної, значень, однієї, вікнах, описані" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2155-tablichn-velichini-ta-algoritmi-yih-opracyuvannya-skladannya-y-vikonannya-algoritmv-opracyuvannya-masivv-dannih-algoritmi-poshuku-elementv-masivu.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Табличні величини та алгоритми їх опрацювання. Складання й виконання алгоритмів опрацювання масивів данних. Алгоритми пошуку елементів масиву</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2155").Button("#infc2155"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2155" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2155" class="infcont">
+			<ul>
+				<li><i>Переглядів: 45048</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 15-01-2018, 08:04</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2155'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2155-tablichn-velichini-ta-algoritmi-yih-opracyuvannya-skladannya-y-vikonannya-algoritmv-opracyuvannya-masivv-dannih-algoritmi-poshuku-elementv-masivu.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2155'); return false;">1</a></li>
+		<li><a href="2155-tablichn-velichini-ta-algoritmi-yih-opracyuvannya-skladannya-y-vikonannya-algoritmv-opracyuvannya-masivv-dannih-algoritmi-poshuku-elementv-masivu.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2155'); return false;">2</a></li>
+		<li><a href="2155-tablichn-velichini-ta-algoritmi-yih-opracyuvannya-skladannya-y-vikonannya-algoritmv-opracyuvannya-masivv-dannih-algoritmi-poshuku-elementv-masivu.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2155'); return false;">3</a></li>
+		<li><a href="2155-tablichn-velichini-ta-algoritmi-yih-opracyuvannya-skladannya-y-vikonannya-algoritmv-opracyuvannya-masivv-dannih-algoritmi-poshuku-elementv-masivu.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2155'); return false;">4</a></li>
+		<li><a href="2155-tablichn-velichini-ta-algoritmi-yih-opracyuvannya-skladannya-y-vikonannya-algoritmv-opracyuvannya-masivv-dannih-algoritmi-poshuku-elementv-masivu.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2155'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/15/index.html" ><i>15-01-2018, 08:04</i></a></span>
+	<h3 class="btl"><span id="news-title">Табличні величини та алгоритми їх опрацювання. Складання й виконання алгоритмів опрацювання масивів данних. Алгоритми пошуку елементів масиву</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2155" style="display:inline;"><p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-182.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<ul>
+<li>що таке таблична величина;</li>
+<li>як описувати табличні величини мовами програмування;</li>
+<li>як здійснювати введення та виведення табличних величин у програмах;</li>
+<li>як для роботи з масивами на формах проектів використовують візуальні елементи.</li>
+</ul>
+<p>&nbsp;</p>
+<p style="word-spacing: 1.1px;">15.1. Що таке таблична величина?</p>
+<p style="word-spacing: 1.1px;">Ви вмієте створювати програми мовами програмування Free Pascal чи Python для опрацювання певної кількості змінних. Їхні значення вводять за допомогою команд введення, що описані правилами мови програмування, у вікнах повідомлень чи, наприклад, у текстовому полі. Але часто потрібно опрацьовувати велику кількість змінних або множину значень однієї змінної. Для зручності їх подають у вигляді таблиць (мал. 15.1).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-183.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 15.1</p>
+<p style="word-spacing: 1.1px;">Щоб розрізняти таблицю, їй надають ім&rsquo;я &mdash; позначають словом, словосполученням або літерою. Наприклад, на малюнку 15.1 Алфавіт &mdash; ім&rsquo;я таблиці-рядка, у кожну клітинку якого занесено по одній літері українського алфавіту. F &mdash; ім&rsquo;я таблиці, яка містить квадрати чисел від 1 до 10. До клітинок таблиці можуть бути занесені величини різних типів: цілі, дійсні, символьні, рядкові та інші.</p>
+<p style="word-spacing: 1.1px;">Клітинки таблиці нумерують. У таблицях може міститися різна кількість клітинок. У таблиці Температура_повітря нумерація розпочинається з 1 й завершується 24. Таким чином можна знайти кількість клітинок таблиці.</p>
+<p style="word-spacing: 1.1px;">Щоб знайти кількість клітинок таблиці, треба від номера останньої клітинки відняти номер першої клітинки та отримане значення збільшити на одиницю.</p>
+<p style="word-spacing: 1.1px;">У нашому випадку: 24 - 1 + 1 = 24.</p>
+<p style="word-spacing: 1.1px;">Різні клітинки таблиці мають різні номери, але значення в різних клітинках можуть повторюватися. За номером клітинки визначають місце її розташування в таблиці та значення, яке можна опрацьовувати. Так утворюється лінійна таблиця.</p>
+<p style="word-spacing: 1.1px;">Якщо складовими лінійної таблиці знову є лінійні таблиці (рядки чи стовпчики), тоді маємо двовимірну таблицю, окремими елементами якої є лінійні таблиці. Якщо в двовимірній таблиці зазначити номер рядка та номер стовпця, де розташована клітинка, тоді два вказані номери (у цілком визначеному порядку) визначають координати клітинки в усій двовимірній таблиці.</p>
+<p style="word-spacing: 1.1px;">Впорядкований набір змінних деякого типу називають табличною величиною.</p>
+<p style="word-spacing: 1.1px;">15.2. Як описувати табличні величини мовами програмування?</p>
+<p style="word-spacing: 1.1px;">Сукупність деяких значень величини одного типу мовою програмування Free Pascal можна описати змінною інтервального чи перелічуваного типу (табл. 15.1).</p>
+<p style="word-spacing: 1.1px;">Таблиця 15.1</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-184.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Сукупність однотипних змінних, що об&rsquo;єднані спільним іменем та яким можна надавати значення в процесі виконання програми, у мові програмування Free Pascal називають масивом.</p>
+<p style="word-spacing: 1.1px;">Під масивом розуміють структурований тип даних &mdash; набір однотипних змінних, що розташовані в пам&rsquo;яті безпосередньо одне за одним, доступ до яких здійснюється за його порядковим номером (індексом). Індекс елемента масиву &mdash; це ціле число, яке вказує на місце розташування елемента в масиві. Для опису масиву мовою Free Pascal у розділі опису змінних var вказують його ім&rsquo;я, діапазон номерів елементів і тип елементів масиву (мал. 15.2).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-185.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Наприклад, на малюнку 15.2 задано опис лінійної табличної величини &mdash; одновимірного масиву з іменем а, який складається з не більш ніж 10 цілих чисел. Двовимірний масив b зі 100 цілих чисел (таблиця</p>
+<p style="word-spacing: 1.1px;">з 10 рядків, у кожному з яких є таблиця з 10 значень або таблиця з 10 рядків і 10 стовпців) можна задати одним з поданих способів.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-186.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Щоб звернутися до конкретного елемента лінійного масиву, слід після імені масиву записати у квадратних дужках індекс потрібного елемента, наприклад а[4]. Аналогічно можна звернутися до будь-якого елемента двовимірного масиву, але у квадратних дужках слід записати номер рядка та номер стовпчика, де розташований потрібний елемент. Наприклад, b [2,3] &mdash; елемент, що у двовимірному масиві розташований на перетині другого рядка та третього стовпчика.</p>
+<p style="word-spacing: 1.1px;">У мові програмування Python є декілька складених типів даних, що використовуються для групування значень. Найбільш універсальним є список, що може бути створений як послідовність елементів, розділених комами і взятих у квадратні дужки. Елементи списку не обов&rsquo;язково мають належати одному типу, інтерпретатор мови визначить тип у процесі виконання програми. Окрім того, кількість елементів списку може змінюватись. Індекси списків починаються з 0. Наприклад, змінна data = [&lsquo;blue&rsquo;, &lsquo;brown&rsquo;, 178, 70] &mdash; це список із чотирьох елементів, елемент data[2] = 178. Довжину списку, тобто кількість його елементів, можна визначити за допомогою функції len. Наприклад, len(data) = 4.</p>
+<p style="word-spacing: 1.1px;">Доступ до елемента списку a = [[1,2,3], [4, 5, 6]], який дорівнює 6, здійснюють за допомогою посилання на номер списку та відповідного елемента вкладеного списку: a[1][2].</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-187.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">15.3. Як здійснювати введення та виведення табличних</p>
+<p style="word-spacing: 1.1px;">величин у програмах?</p>
+<p style="word-spacing: 1.1px;">У мові програмування Free Pascal не передбачено спеціальних засобів для введення-виведення масиву, який складається з різних, але однотипних значень. Тому таку операцію організовують поелементно, тобто при введенні масиву необхідно послідовно вводити значення 1, 2, 3... n елемента. Для цього зазвичай використовують цикл for.</p>
+<p style="word-spacing: 1.1px;">Для введення та виведення елементів масиву можна застосувати відомі вам об&rsquo;єкти форми: текстове поле Edit, напис Label, вікна повідомлень, або задавати випадкові значення з деякого діапазону.</p>
+<p style="word-spacing: 1.1px;">У мові програмування Python є декілька способів створення та зчитування списків:</p>
+<p style="word-spacing: 1.1px;">1) створити порожній список (який не містить елементів, наприклад, a[]) та додати до нього елементи за допомогою методу append;</p>
+<p style="word-spacing: 1.1px;">2) використати операції конкатенації списку (приєднання другого списку в кінець першого), повторення списку (мал. 15.3).</p>
+<p style="word-spacing: 1.1px;">У мові програмуваня Python вивести всі елементи списку а можна за допомогою команди print(a), при цьому буде виведено значення елементів списку, поміщені у квадратні дужки, через кому.</p>
+<p style="word-spacing: 1.1px;">Якщо потрібно вивести елементи списку в стовпець або рядок, використовують поелементне виведення (мал. 15.4).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-188.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 1. Введення масиву дійсних чисел.</p>
+<p style="word-spacing: 1.1px;">Завдання. Розробіть проект для введення масиву х, що складається з n (n &lt; 20) дійсних чисел, де значення кількості елементів масиву вводять у текстове поле, а самі елементи &mdash; у вікні введення.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-189.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">розробка проекту в середовищі програмування Lazarus.</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Введення масиву.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі (мал. 15.5) об&rsquo;єкти, надайте значення їхнім властивостям самостійно.</p>
+<p style="word-spacing: 1.1px;">3. Створіть процедуру опрацювання події натиснення кнопки Розпочати введення. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: х &mdash; масив дійсних чисел, n &mdash; кількість елементів масиву, і &mdash; номер (індекс) елемента масиву.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-190.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. У вікні редактора коду запишіть команди введення кількості елементів масиву та значень елементів у вікні повідомлення з використанням оператора повторення for.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-191.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">розробка проекту в середовищі програмування PyCharm</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище програмування PyCharm. Створіть новий файл програми мовою програмування Python з іменем Введення масиву в папці Навчальні проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">2. У вікні редактора коду введіть команди для імпорту бібліотеки візуальних компонентів.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-192.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Запишіть програму за зразком, використавши метод append &mdash; додавання елементів списку (мал. 15.6).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-193.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-194.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Розмістіть елементи управління на екранній формі (мал. 15.7), доповнивши програму кодом (мал. 15.8).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-195.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Перевірте, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх.</p>
+<p style="word-spacing: 1.1px;">6. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">Вправа 2. Виведення масиву цілих чисел.</p>
+<p style="word-spacing: 1.1px;">Завдання. Розробіть проект для поелементного виведення масиву а з n (n &lt; 20) цілих чисел від 0 до 10 у вікні повідомлення, де значення кількості елементів масиву вводять у текстове поле, а елементи добираються випадково після запуску програми.</p>
+<p style="word-spacing: 1.1px;">розробка проекту в середовищі програмування Lazarus.</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Виведення масиву.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі (мал. 15.9) об&rsquo;єкти, надайте значення їхнім властивостям самостійно.</p>
+<p style="word-spacing: 1.1px;">3. Створіть процедуру опрацювання події натиснення кнопки Розпочати. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: а &mdash; масив цілих чисел; п &mdash; кількість елементів масиву; і &mdash; номер (індекс) елемента масиву; s &mdash; рядок, у якому формуватиметься масив значень для виведення.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-196.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-197.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. У вікні редактора коду в тілі програми запишіть команди введення кількості елементів масиву та надання значень елементів масиву за допомогою функції генерування цілих чисел.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-198.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Продовжте введення програми (мал. 15.10).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-199.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі програмування PyCharm</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище програмування PyCharm. Створіть новий файл програми мовою програмування Python з іменем Виведення масиву в папці Навчальні проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">2. У вікні редактора коду введіть команди оголошення об&rsquo;єктів екранної форми проекту (мал. 15.11).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-200.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Продовжте програму за зразком (мал. 15.12), створюючи рядкову величину sl, у якій формується результуючий список значень, розділених пропусками. Наприклад, для n = 3 одним з можливих результатів буде список, поданий на малюнку 15.13.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-201.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Розмістіть елементи управління на екранній формі (мал. 15.14), доповнивши програму кодом (мал. 15.15).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-202.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-203.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Перевірте, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх.</p>
+<p style="word-spacing: 1.1px;">6. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">15.4. Як для роботи з масивами на формах проектів використовують візуальні елементи?</p>
+<p style="word-spacing: 1.1px;">Для введення, виведення та опрацювання масиву текстових рядків у середовищах програмування можна використовувати елемент управління &mdash; багаторядкове текстове поле.</p>
+<p style="word-spacing: 1.1px;">У середовищі Lazarus багаторядкове текстове поле задають елементом Memo</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-204.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">з панелі компонентів екранної</p>
+<p style="word-spacing: 1.1px;">форми Стандартна (мал. 15.16).</p>
+<p style="word-spacing: 1.1px;">Розмір текстового поля змінюють у процесі налаштування екранної форми перетягуванням маркерів зміни розміру або в програмі, надаючи необхідних значень властивостям Width {Ширина), Height {Висота).</p>
+<p style="word-spacing: 1.1px;">Опрацювання тексту в полі Memo можливе також із використанням буфера обміну, при цьому можна застосовувати стандартні комбінації клавіш: Ctrl+X &mdash; вирізати, Ctrl+C &mdash; копіювати, Ctrl+V &mdash; вставити.</p>
+<p style="word-spacing: 1.1px;">В інспекторі об&rsquo;єктів змінюють значення таких властивостей елемента управління Memo (табл. 15.2).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-205.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таблиця 15.2</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>Властивість</p>
+</td>
+<td>
+<p>Опис</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Name</p>
+</td>
+<td>
+<p>Ім&rsquo;я. Використовують у програмі для доступу до елемента управління та його властивостей, зокрема для доступу до тексту, який введений у поле редагування</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lines</p>
+</td>
+<td>
+<p>Масив рядків, що відповідає вмісту поля. Доступ до рядка здійснюється за номером. Рядки нумеруються, починаючи з нуля</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MaxLength</p>
+</td>
+<td>
+<p>Максимальна довжина тексту в полі Memo. Значення 0 знімає обмеження довжини</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Left</p>
+</td>
+<td>
+<p>Відстань від лівої межі поля до лівої межі форми</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Top</p>
+</td>
+<td>
+<p>Відстань від правої межі поля до правої межі форми</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Font</p>
+</td>
+<td>
+<p>Шрифт, який використовують для відображення тексту</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Корисним для введення та виведення як лінійних масивів, так і двовимірних є використання елемента StringGrid (Таблиця рядків), який міститься на вкладці Additional (мал. 15.17).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-206.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-207.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Після розміщення елемента управління на формі проекту користувач отримує таблицю, яка складається з рядків (Rows) і стовпців (Cols). Таблиця &mdash; це двовимірний масив, значенням якого є рядки символів, а отже, кожний елемент має тип string. Доступ до елементів масиву здійснюється через властивість Cells (Клітинка). Клітинці таблиці, яка міститься на перетині стовпця з номером Col і рядка з номером Row, відповідає елемент масиву Cells[Col,Row]. Зверніть увагу на те, що при зверненні до клітинки елемента StringGrid спершу вказують стовпець, а потім рядок. Нумерація стовпців і рядків починається з нуля. Перелік основних властивостей елемента управління StringGrid подано в таблиці 15.3.</p>
+<p style="word-spacing: 1.1px;">Таблиця 15.3</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>Властивість</p>
+</td>
+<td>
+<p>Опис</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ColCount</p>
+</td>
+<td>
+<p>Кількість стовпців таблиці</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RowCount</p>
+</td>
+<td>
+<p>Кількість рядків таблиці</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>FixedCols</p>
+</td>
+<td>
+<p>Кількість фіксованих стовпців таблиці. Зазвичай фіксується один &mdash; крайній лівий, який використовують для заголовка. Усі фіксовані стовпці виділяються кольором і при горизонтальній прокрутці таблиці не змінюють свого розташування</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>Властивість</p>
+</td>
+<td>
+<p>Опис</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>FixedRows</p>
+</td>
+<td>
+<p>Кількість фіксованих рядків таблиці, які використовують аналогічно до фіксованих стовпців</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>FixedColor</p>
+</td>
+<td>
+<p>Колір фіксованих стовпців і рядків таблиці</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>VisibleColCount</p>
+<p>VisibleRowCount</p>
+</td>
+<td>
+<p>Кількість видимих (тих, що прокручуються) стовпців або рядків</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ScrollBars</p>
+</td>
+<td>
+<p>Наявність у таблиці смуг прокручування. Якщо вказати значення властивості ssAutoBoth, то смуги прокручування з&rsquo;являтимуться за потреби автоматично</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Вправа 3. Обмін даними.</p>
+<p style="word-spacing: 1.1px;">Завдання. У середовищі Lazarus розробіть проект, у якому стовпець із п&rsquo;яти слів, які користувач вводить у багаторядкове поле, буде розміщуватись у рядку таблиці.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-208.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 15.18</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Обмін даними.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на формі проекту багаторядкове поле, таблицю та кнопку Сформувати для запуску проекту.</p>
+<p style="word-spacing: 1.1px;">3. Задайте значення властивостей об&rsquo;єктів форми (табл. 15.4).</p>
+<p style="word-spacing: 1.1px;">Таблиця 15.4</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-209.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Створіть процедуру опрацювання події натиснення кнопки Сформувати. У вікні редактора коду опишіть змінні: і &mdash; лічильник номерів рядків у багаторядковому полі та номерів стовпців у таблиці виведення; a &mdash; масив значень (мал. 15.19).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-210.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 15.19</p>
+<p style="word-spacing: 1.1px;">5. Запишіть програму для зчитування даних з текстового поля, формування написів у таблиці та заповнення клітинок таблиці (мал. 15.20).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-211.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">6. Запустіть проект на виконання. Перевірте, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх.</p>
+<p style="word-spacing: 1.1px;">7. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">1. Чим табличні величини відрізняються від текстових або числових величин?</p>
+<p style="word-spacing: 1.1px;">2. У чому особливість опису табличних величин мовами програмування Free Pascal, Python?</p>
+<p style="word-spacing: 1.1px;">3. У чому відмінність табличної величини та елемента табличної величини?</p>
+<p style="word-spacing: 1.1px;">4. Чи обов&rsquo;язково кожному елементу табличної величини ставити у відповідність його номер? Для чого потрібні такі номери?</p>
+<p style="word-spacing: 1.1px;">5. Чи можна визначити кількість елементів за описом табличної величини мовами програмування Free Pascal, Python?</p>
+<p style="word-spacing: 1.1px;">6. Які засоби для введення й виведення елементів табличної величини передбачені у програмах мовами програмування Free Pascal, Python?</p>
+<p style="word-spacing: 1.1px;">7. Які елементи управління використовують для введення чи виведення значень табличних величин у середовищі програмування Lazarus?</p>
+<p style="word-spacing: 1.1px;">1. Обговоріть, чим відрізняється елемент управління Memo в середовищі Lazarus від елементів управління Edit і Label?</p>
+<p style="word-spacing: 1.1px;">2. Обговоріть, які засоби мов програмування Free Pascal, Python можна використати в проекті, щоб після введення елементів табличних даних їх можна було б опрацьовувати: додавати, дублювати, записувати в різному порядку.</p>
+<p style="word-spacing: 1.1px;">3. Запропонуйте одне одному приклади проектів, у яких доцільно вводити значення табличної величини, використовуючи:</p>
+<p style="word-spacing: 1.1px;">а) текстові поля чи написи;</p>
+<p style="word-spacing: 1.1px;">б) генерування випадкових чисел;</p>
+<p style="word-spacing: 1.1px;">в) елемент управління &mdash; багаторядкове поле;</p>
+<p style="word-spacing: 1.1px;">г) елемент управління &mdash; таблицю рядків;</p>
+<p style="word-spacing: 1.1px;">д) вікно повідомлення.</p>
+<p style="word-spacing: 1.1px;">Оберіть один із запропонованих проектів, щоб його можна було реалізувати в довільному з вивчених середовищ програмування.</p>
+<p style="word-spacing: 1.1px;">1. Придумайте назву таблиці. Запишіть значення елемента таблиці з індексом 2. Визначте кількість елементів табличної величини.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-212.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">2. Поставте у відповідність опис табличної величини та відповідну таблицю значень:</p>
+<p style="word-spacing: 1.1px;">1) таблиця з 10 текстових величин;</p>
+<p style="word-spacing: 1.1px;">2) таблиця з 10 дійсних чисел;</p>
+<p style="word-spacing: 1.1px;">3) таблиця із 6 символьних величин;</p>
+<p style="word-spacing: 1.1px;">4) таблиця з послідовності 9 чисел, що змінюються через 0,1;</p>
+<p style="word-spacing: 1.1px;">5) таблиця із 7 текстових величин.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-213.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Наведіть приклади можливих значень табличних величин, які можна додати в масив або список за їхнім описом (табл. 15.5).</p>
+<p style="word-spacing: 1.1px;">Таблиця 15.5</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-214.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Засобами обраного самостійно середовища програмування створіть проект Розклад уроків, у якому назви уроків формують табличну величину з іменем nazva за допомогою вікна введення, а результат виводиться у вигляді стовпця таблиці.</p>
+<p style="word-spacing: 1.1px;">5. Засобами обраного самостійно середовища програмування створіть проект Гравітаційна стала, у якому формуються значення елементів лінійної таблиці з 5 дійсних чисел з діапазону від 6.0 до 7.0, а результат виводиться в написі, повторюючи послідовність отриманих значень двічі.</p>
+<p style="word-spacing: 1.1px;">6. Засобами обраного самостійно середовища програмування створіть проект Зріст, у якому вводиться масив цілих чисел, що відповідають зросту членів вашої родини, і виводиться в таблицю з відповідними підписами стовпців.</p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Е-урядування&raquo;</p>
+<p style="word-spacing: 1.1px;">Визначте, для чого в біометричний паспорт додають чип. Як він програмується та як з нього зчитати дані?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-215.jpg" alt="" /></p>
+<ul>
+<li>як можна опрацьовувати табличні величини;</li>
+<li>як описати програму зміни значення елемента табличної величини;</li>
+<li>як описати алгоритми знаходження суми чи кількості елементів табличної величини мовами програмування.</li>
+</ul>
+<p style="word-spacing: 1.1px;">16.1. Як можна опрацьовувати табличні величини?</p>
+<p style="word-spacing: 1.1px;">Практичні завдання, для розв&rsquo;язування яких можна застосовувати алгоритми опрацювання табличних величин, можуть мати різне формулювання. Наприклад, найпростіше завдання може розпочинатися зі слів: &laquo;Дано n чисел...&raquo;, і далі вказується, що саме потрібно зробити із цими числами. Але зазвичай трапляються складніші завдання, у яких спосіб організації даних задано неявно. Наприклад, сформувати таблицю квадратів двоцифрових чисел. При написанні програм для розв&rsquo;язування подібних завдань слід виконати такі дії:</p>
+<p style="word-spacing: 1.1px;">1) за умовою завдання встановити, чи можна подати вхідні дані у вигляді табличної величини (масиву для мови Free Pascal чи списку &mdash; для Python);</p>
+<p style="word-spacing: 1.1px;">2) надати табличній величині одне ім&rsquo;я (його в програмі буде використано для роботи з окремими елементами табличних даних);</p>
+<p style="word-spacing: 1.1px;">3) визначити тип елементів табличної величини та описати його в розділі змінних var (Free Pascal) або задати порожній список, у якому буде зберігатися набір даних;</p>
+<p style="word-spacing: 1.1px;">4) у програмному коді записати команди для введення елементів табличної величини в пам&rsquo;ять комп&rsquo;ютера.</p>
+<p style="word-spacing: 1.1px;">Подальше опрацювання табличних величин зводиться до використання алгоритмів:</p>
+<p style="word-spacing: 1.1px;">&bull; зміни значень елементів масиву;</p>
+<p style="word-spacing: 1.1px;">&bull; знаходження підсумків за набором даних, які передбачають використання простих арифметичних операцій чи виразів над елементами масиву;</p>
+<p style="word-spacing: 1.1px;">&bull; обчислення суми або кількості значень елементів, що задовольняють заданим умовам;</p>
+<p style="word-spacing: 1.1px;">&bull; пошуку елементів табличної величини, що задовольняють заданим умовам;</p>
+<p style="word-spacing: 1.1px;">&bull; упорядкування масиву за деякою ознакою.</p>
+<p style="word-spacing: 1.1px;">16.2. Як описати програму зміни значення елемента табличної</p>
+<p style="word-spacing: 1.1px;">величини?</p>
+<p style="word-spacing: 1.1px;">Програми для опрацювання табличних величин мовами програмування містять три складові: введення, опрацювання та виведення елементів табличної величини. Оскільки кожна із частин передбачає виконання</p>
+<p style="word-spacing: 1.1px;">декількох дій, кількість яких визначається розміром табличної величини, то для опису дій, що повторюються, використовують команди повторення, наприклад цикл for. При цьому для кожної із частин можна використовувати окремий оператор циклу &mdash; тоді всі складові програми виконуватимуться послідовно, або розмістити всі передбачувані команди в одному циклі &mdash; усі складові виконуватимуться одночасно.</p>
+<p style="word-spacing: 1.1px;">У мові програмування Free Pascal для зміни значення елемента масиву, як і для зміни значення деякої простої змінної, використовують операцію присвоювання :=, у якій у лівій частині звертаються до потрібного елемента масиву, для цього вказують ім&rsquo;я масиву й у квадратних дужках задають номер (індекс) елемента, а в правій &mdash; відповідне значення. При цьому розмір масиву залишається незмінним й операцію присвоювання можна застосувати тільки в тому разі, коли надане значення відповідає типу елементів оголошеного масиву.</p>
+<p style="word-spacing: 1.1px;">Мовою програмування Python можна не тільки змінювати елементи списку з використанням операції присвоювання, яка позначається символом =, а й збільшувати чи зменшувати розмір списку. Операції послідовної зміни елементів списку a=[2, 4, 6, 8, &lsquo;десять&rsquo;] та отриманих результатів подано в таблиці 16.1. Візьміть до уваги, що нумерація елементів списку починається з 0.</p>
+<p style="word-spacing: 1.1px;">Таблиця 16.1</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-216.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 1. Квадрати значень.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть проект Квадрати значень, у якому елементи табличної величини a, яка містить 10 цілих чисел, змінюються їх квадратами.</p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі програмування Lazarus</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Квадрати значень.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі (мал. 16.1) об&rsquo;єкти, надайте значення їхнім властивостям за зразком (табл. 16.2).</p>
+<p style="word-spacing: 1.1px;">Таблиця 16.2</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-217.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-218.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Створіть процедуру опрацювання події Виконати. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: a &mdash; масив цілих чисел, і &mdash; номер (індекс) елемента масиву.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-219.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. У вікні редактора коду запишіть команди введення, опрацювання та виведення елементів масиву (мал. 16.2). Зверніть увагу на те, що багатосторінкове текстове поле містить тільки текстові дані, тому для опрацювання їх спочатку слід перетворити на цілі числа, а потім для виведення результати подати рядками.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-220.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Введіть у багаторядкове поле ліворуч послідовно 10 натуральних чисел, натискаючи після кожного клавішу Enter. Перевірте на цьому тестовому прикладі, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх.</p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі PyCharm</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище програмування PyCharm.</p>
+<p style="word-spacing: 1.1px;">2. Створіть новий файл програми мовою програмування Python з іменем Квадрати значень у папці Навчальні проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">3. У вікні редактора коду введіть команди (мал. 16.3).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-221.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Введіть значення елементів списку для тестового прикладу &mdash; числа від 1 до 10 у вікні виконання проекту після зазначеної вказівки.</p>
+<p style="word-spacing: 1.1px;">Введіть елемент списку</p>
+<p style="word-spacing: 1.1px;">6. Перевірте, чи відповідають умові завдання отримані результати. Якщо є помилки, виправте їх.</p>
+<p style="word-spacing: 1.1px;">7. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">16.3. Як описати алгоритми знаходження суми чи кількості елементів табличної величини мовами програмування?</p>
+<p style="word-spacing: 1.1px;">Засобами мов програмування можна автоматизувати процес знаходження підсумкових даних: суми, добутку, середнього значення набору числових</p>
+<p style="word-spacing: 1.1px;">даних. Такі задачі передбачають, що табличні елементи не змінюватимуться, а результатом їх виконання буде одне підсумкове значення.</p>
+<p style="word-spacing: 1.1px;">У програмах, де передбачено дії з елементами табличної величини, що задовольнять деяким умовам, використовують оператор розгалуження if. Опис умов здійснюють так само, як і з простими змінними. Для запису простих умов використовують оператори порівняння: &gt;, &lt;, &lt;=, &gt;=, =, &lt;&gt;, а складені умови формують із простих з використанням логічних операторів and, or, not.</p>
+<p style="word-spacing: 1.1px;">Вправа 2. Середнє значення.</p>
+<p style="word-spacing: 1.1px;">Завдання. Складіть проект Середнє для обчислення середнього значення десяти дійсних чисел з діапазону 9,0-10,0, отриманих у ході деякого експерименту.</p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі програмування Lazarus</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Середнє значення.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі (мал. 16.4) об&rsquo;єкти, надайте значення їхнім властивостям за зразком (табл. 16.4).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-222.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таблиця 16.3</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-223.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Створіть процедуру опрацювання події натиснення кнопки Розрахувати. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: a &mdash; масив дійсних чисел, і &mdash; номер (індекс) елемента масиву, s &mdash; середнє значення.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-224.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. У вікні редактора коду запишіть команди введення, опрацювання та виведення елементів масиву (мал. 16.5). Зверніть увагу на те, що елементи масиву генеруються випадково. А для перетворення значення елемента</p>
+<p style="word-spacing: 1.1px;">дійсного типу в рядковий використано команду FloatTostrF &mdash; перетворення дійсного числа з фіксованою крапкою із 3 цифр, серед яких 2 &mdash; у дробовій частині, у рядкову величину: FloatTostrF(a[i+1],ffFixed,3,2) (мал. 16.5).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-225.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Перевірте, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі PyCharm</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище програмування PyCharm.</p>
+<p style="word-spacing: 1.1px;">2. Створіть новий файл програми мовою програмування Python з іменем Середнє значення в папці Навчальні проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">3. У вікні редактора коду введіть команди (мал. 16.6). Візьміть до уваги, що для округлення дійсного числа можна застосувати команду round(&lt;величина&gt;, &lt;порядок&gt;), яка не потребує підключення бібліотеки math.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-226.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Запустіть проект на виконання. Перевірте, чи відповідають отримані результати умові завдання. Наприклад, при одному із запусків програми отримано результат (мал. 16.7):</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-227.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Якщо є помилки, виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши зміни.</p>
+<p style="word-spacing: 1.1px;">Вправа 3. Сума додатних елементів таблиці.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть програму для знаходження суми додатних елементів заданої таблиці.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-228.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-229.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">розробка проекту в середовищі програмування Lazarus</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Сума додатних.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі (мал. 16.8) об&rsquo;єкти, самостійно надайте значення їхнім властивостям.</p>
+<p style="word-spacing: 1.1px;">3. Заповніть таблицю значеннями. Для цього в контекстному меню об&rsquo;єкта StringGrid1 оберіть вказівку Змінити StringGrid... У вікні редактора таблиці введіть потрібні значення (мал. 16.9).</p>
+<p style="word-spacing: 1.1px;">4. Створіть процедуру опрацювання події натиснення кнопки Розрахувати. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: а &mdash; масив дійсних чисел; і &mdash; номер (індекс) стовпця масиву; j &mdash; номер (індекс) рядка масиву; s &mdash; сума.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-230.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. У вікні редактора коду запишіть команди присвоювання значень елементів масиву, їх опрацювання та виведення значення суми елементів (мал. 16.10).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-231.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">6. Запустіть проект на виконання. Перевірте, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши зміни.</p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі PyCharm</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище програмування PyCharm.</p>
+<p style="word-spacing: 1.1px;">2. Створіть новий файл програми мовою програмування Python з іменем Сума додатних у папці Навчальні проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">3. У вікні редактора коду введіть команди (мал. 16.11).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-232.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Запустіть проект на виконання. Перевірте, чи відповідають умові завдання отримані результати. Якщо є помилки, виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">Вправа 4. Кількість елементів.</p>
+<p style="word-spacing: 1.1px;">завдання. Створіть програму для знаходження кількості елементів лінійної таблиці з 10 цілих чисел, які дорівнюють її першому елементу.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-233.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">розробка проекту в середовищі програмування Lazarus</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Кількість елементів.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі (мал. 16.12) об&rsquo;єкти, самостійно надайте значення їхнім властивостям.</p>
+<p style="word-spacing: 1.1px;">3. Створіть процедуру опрацювання події натиснення кнопки Виконати. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: а &mdash; масив дійсних чисел; і &mdash; номер (індекс) елемента масиву; k &mdash; кількість.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-234.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. У вікні редактора коду запишіть команди введення значень елементів масиву, їх опрацювання та виведення значення кількості елементів, які дорівнюють її першому елементу, враховуючи, що нумерація рядків у багаторядковому текстовому полі починається з 0 (мал. 16.13).</p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Перевірте на контрольному прикладі, дібраному самостійно, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі PyCharm</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище програмування PyCharm.</p>
+<p style="word-spacing: 1.1px;">2. Створіть новий файл програми мовою програмування Python з іменем Кількість елементів у папці Навчальні проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">3. У вікні редактора коду введіть команди (мал. 16.14).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-235.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Запустіть проект на виконання. Перевірте на контрольному прикладі, дібраному самостійно, чи відповідають умові завдання отримані результати. Якщо є помилки, виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">1. Яким є порядок розв&rsquo;язування задач, у яких передбачено опрацювання деякої сукупності даних?</p>
+<p style="word-spacing: 1.1px;">2. Які є способи зміни елементів масиву мовою програмування Free Pascal, а які &mdash; мовою програмування Python? Чи можна вважати, що за способом зміни табличних величин одна мова переважає іншу?</p>
+<p style="word-spacing: 1.1px;">3. Які елементи управління в середовищі Lazarus можна використати для введення й виведення елементів масиву?</p>
+<p style="word-spacing: 1.1px;">4. Як описати алгоритм зміни значень табличних елементів мовами програмування Free Pascal, Python?</p>
+<p style="word-spacing: 1.1px;">5. Як описати алгоритм знаходження суми чи добутку значень табличних елементів мовами програмування Free Pascal, Python?</p>
+<p style="word-spacing: 1.1px;">6. Як описати алгоритм знаходження суми чи кількості табличних елементів, що відповідають заданим умовам, мовами програмування Free Pascal, Python?</p>
+<p style="word-spacing: 1.1px;">1. Мовами програмування Free Pascal, Python запишіть фрагмент програми, у якій будуть реалізовані такі завдання:</p>
+<p style="word-spacing: 1.1px;">1) П&rsquo;ятому елементу лінійної таблиці А рядкового типу з 10 елементів надати значення 123.</p>
+<p style="word-spacing: 1.1px;">2) Першому елементу лінійної таблиці А цілого типу з 10 елементів надати значення восьмого елемента цієї ж таблиці.</p>
+<p style="word-spacing: 1.1px;">3) Елементу з номером і лінійної таблиці А дійсного типу надати значення 15,5.</p>
+<p style="word-spacing: 1.1px;">4) Сьомому елементу лінійної таблиці Nomer цілого типу з 10 елементів надати деяке конкретне значення.</p>
+<p style="word-spacing: 1.1px;">5) Другому елементу лінійної таблиці Nomer дійсного типу з 10 елементів надати значення вмісту цієї ж клітинки, збільшене вдвічі.</p>
+<p style="word-spacing: 1.1px;">6) Елементу двовимірної таблиці з іменем Costs цілого типу, який міститься на перетині другого стовпця та третього рядка, надати значення вмісту цієї ж клітинки, збільшене на 1.</p>
+<p style="word-spacing: 1.1px;">Перевірте записи одне в одного. Обговоріть, чи можуть відрізнятися фрагменти програм, записані однією й тією самою мовою програмування.</p>
+<p style="word-spacing: 1.1px;">2. Мовами програмування Free Pascal, Python запишіть фрагмент програми, у якій перевірятимуться такі умови:</p>
+<p style="word-spacing: 1.1px;">1) Вміст першого елемента лінійної таблиці Year рядкового типу дорівнює значенню високосний.</p>
+<p style="word-spacing: 1.1px;">2) Вміст кожного елемента лінійної таблиці А дійсного типу належить заданому відрізку [a,b],</p>
+<p style="word-spacing: 1.1px;">3) Вміст шостого елемента лінійної таблиці А дійсного типу не перевищує значення величини Н.</p>
+<p style="word-spacing: 1.1px;">4) Вміст п&rsquo;ятого елемента лінійної таблиці з іменем Book цілого типу не збігається з пятнадцятим елементом цієї ж таблиці, збільшеним утричі.</p>
+<p style="word-spacing: 1.1px;">5) Вміст сьомого елемента лінійної таблиці А дійсного типу не перевищує дійсного числа К і вміст першого елемента лінійної таблиці з іменем City літерного типу дорівнює Київ.</p>
+<p style="word-spacing: 1.1px;">3. Обговоріть, як зміниться програмний код у проектах Квадрати значень, Середнє значення, якщо:</p>
+<p style="word-spacing: 1.1px;">1) вхідні дані будуть подані величинами іншого типу;</p>
+<p style="word-spacing: 1.1px;">2) вхідні дані генеруватимуться випадково;</p>
+<p style="word-spacing: 1.1px;">3) на екранній формі проекту в середовищі Lazarus використати інші елементи управління, наприклад, таблиці рядків StringGrid;</p>
+<p style="word-spacing: 1.1px;">4) у середовищі PyCharm використати елементи управління з бібліотеки tkinter: інформаційне вікно, текстове поле, напис тощо.</p>
+<p style="word-spacing: 1.1px;">Щоб перевірити власні припущення, внесіть відповідні зміни до кожного з проектів. Запустіть їх на виконання та збережіть з іменами Квадрати значень новий і Середнє значення новий у папці Проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">1. У вибраному середовищі програмування створіть проект Надбавка, у якому заробітна плата 10 працівників деякого підприємства, подана дійсними величинами в лінійній таблиці, збільшується на 15 %. Елементи управління доберіть самостійно.</p>
+<p style="word-spacing: 1.1px;">2. У вибраному середовищі програмування створіть проект Продаж товару, у якому для введеної кількості проданих одиниць товару, яка фіксується кожну годину за зміну (8 год), знаходять підсумкове значення, яке виводиться в текстове поле.</p>
+<p style="word-spacing: 1.1px;">3. У вибраному середовищі програмування створіть проект Конвеєр, за допомогою якого можна знайти сумарне навантаження на його стрічки за умови: на конвеєрі працюють по 5 робітників на трьох лініях, на стрічку надходять фрукти різної ваги, яка задається випадково. Елементи управління доберіть самостійно.</p>
+<p style="word-spacing: 1.1px;">4. У вибраному середовищі програмування створіть проект Підрахунок, у якому знаходять суму додатних і кількість від&rsquo;ємних елементів лінійної таблиці дійсного типу.</p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Обираємо майбутню професію&raquo;</p>
+<p style="word-spacing: 1.1px;">Для роботи у проекті &laquo;Обираємо майбутню професію&raquo; у вибраному середовищі програмування створіть проект Вибір, у якому задано список якостей, необхідних для роботи за деякою професією. Користувач проекту може вказати наявність чи відсутність цієї якості відповідною позначкою: наявність &mdash; 1, відсутність &mdash; 0. У результаті виконання проекту користувач отримує рекомендації щодо того, якою мірою його якості відповідають вимогам професії.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-236.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">СКЛАДАННЯ й ВИКОНАННЯ АЛГОРИТМІВ ОПРАЦЮВАННЯ ТАБЛИЧНИХ ВЕЛИЧИН</p>
+<p style="word-spacing: 1.1px;">Як вводити та виводити значення табличних величин у програмах;</p>
+<p style="word-spacing: 1.1px;">які алгоритми є базовими для опрацювання табличних величин;</p>
+<p style="word-spacing: 1.1px;">як описати алгоритми заходження суми чи кількості елементів табличної величини.</p>
+<p style="word-spacing: 1.1px;">У власній структурі папок створіть папку Практична робота 6.</p>
+<p style="word-spacing: 1.1px;">Під час виконання практичних завдань пам&rsquo;ятайте про правила безпеки життєдіяльності при роботі з комп&rsquo;ютером!</p>
+<p style="word-spacing: 1.1px;">Завдання 1. Зміна ціни (12 балів)</p>
+<p style="word-spacing: 1.1px;">У магазині одягу є гнучка система зміни ціни. Кожного тижня товар змінював свою ціну за таблицею.</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>1 тиждень</p>
+</td>
+<td>
+<p>2 тиждень</p>
+</td>
+<td>
+<p>3 тиждень</p>
+</td>
+<td>
+<p>4 тиждень</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Підвищення на 10 %</p>
+</td>
+<td>
+<p>Підвищення на 5 %</p>
+</td>
+<td>
+<p>Зниження на 7 %</p>
+</td>
+<td>
+<p>Зниження на 10 %</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">У вибраному середовищі програмування створіть проект Знижки, у якому за введеною вартістю товару можна обчислити:</p>
+<p style="word-spacing: 1.1px;">1) значення ціни товару протягом кожного тижня та вивести їх на екран у вигляді таблиці (списку) значень;</p>
+<p style="word-spacing: 1.1px;">П р и м і т к а. Щоб знайти результат збільшення ціни а на 1 %, виконують дію а*1,01; щоб зменшити на 1 %, виконують дію а*0,99;</p>
+<p style="word-spacing: 1.1px;">2) відсоток зміни ціни протягом місяця, як добуток відсоткових змін кожного тижня.</p>
+<p style="word-spacing: 1.1px;">Завдання 2. Кислотність ґрунтів (12 балів)</p>
+<p style="word-spacing: 1.1px;">На 10 земельних ділянках проведено обстеження рівня pH ґрунту. Результати обстеження подано в таблиці.</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>9</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>9</p>
+</td>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">У вибраному середовищі програмування створіть проект Ґрунти, у якому можна визначити кількість земельних ділянок з кислими (pH &lt; 7), нейтральними (pH = 7) та лужними (pH &gt; 7) ґрунтами.</p>
+<p style="word-spacing: 1.1px;">завдання 3. Гра (12 балів)</p>
+<p style="word-spacing: 1.1px;">На деякій гральній дошці, яка має форму прямокутної таблиці з 5 стовпців і 5 рядків, випадково розміщуються білі та чорні фігури. У вибраному середовищі програмування створіть проект Гра, у якому після запуску гри фігури розташовуються в таблиці й виводиться повідомлення, фігур якого кольору на полі для гри виявилося більше.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-237.jpg" alt="" /></p>
+<ul>
+<li>як описати програму пошуку заданого елемента;</li>
+<li>як описати програму пошуку елемента з найбільшим або найменшим значенням;</li>
+<li>як упорядкувати дані в лінійній таблиці;</li>
+<li>як шукати елемент в упорядкованій таблиці.</li>
+</ul>
+<p style="word-spacing: 1.1px;">18.1. Як описати програму пошуку заданого елемента?</p>
+<p style="word-spacing: 1.1px;">При опрацюванні табличних величин часто розв&rsquo;язують завдання пошуку елемента, який відповідає деякій умові. Для розв&rsquo;язування цього завдання можна, як у прикладах, розглянутих на попередніх уроках, переглядати кожний елемент масиву та підраховувати кількість входжень. Якщо така кількість дорівнює 0, то зазначеного елемента таблична величина не містить, якщо більше 0, то містить. Але такий підхід є нераціональним, особливо якщо кількість елементів дуже велика, наприклад, понад 1000, а збіг є вже серед перших елементів. У цьому разі використовують цикл while та виконують такі дії:</p>
+<p style="word-spacing: 1.1px;">1. Уводять спеціальну логічну величину &mdash; прапорець, призначення якої полягатиме в тому, що її значення зберігатиме результат наявності чи відсутності такої величини в таблиці. Початкове значення цієї величини &mdash; false, яке означає, що шукане значення поки що не траплялось у масиві.</p>
+<p style="word-spacing: 1.1px;">2. Переглядають усі елементи табличної величини, починаючи з першого, доти, доки не буде переглянуто всі елементи або знайдено елемент із потрібним значенням.</p>
+<p style="word-spacing: 1.1px;">3. Якщо елемент знайдено, то змінюють значення прапорця на true та переривають виконання циклу. Нагадаємо, що для переривання виконання циклу використовують команду break.</p>
+<p style="word-spacing: 1.1px;">4. Здійснюють виведення результату залежно від значення прапорця. Якщо потрібно не просто визначити наявність елемента, а його номер</p>
+<p style="word-spacing: 1.1px;">у масиві чи списку даних, то вводять змінну, наприклад flag, для фіксування такого номера. Початкове значення змінній flag можна присвоїти 0 (у Free Pascal передбачено нумерацію елементів масиву з 1) або -1 (у Python передбачено нумерацію елементів масиву з 0). Якщо елемент буде знайдено, тоді змінній flag присвоюють його номер. Тоді ця змінна може слугувати прапорцем завершення перегляду елементів: якщо flag&gt;0 (Free Pascal) flag&gt;-1 (Python), тоді виконання циклу зупиняють.</p>
+<p style="word-spacing: 1.1px;">Вправа 1. Пошук номера елемента.</p>
+<p style="word-spacing: 1.1px;">завдання. Створіть проект Номер елемента, у якому здійснюють пошук номера елемента лінійної таблиці з 10 цілих чисел, значення якого дорівнює її першому елементу.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-238.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі програмування Lazarus</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Номер елемента.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі (мал. 18.1) об&rsquo;єкти, самостійно надайте значення їхнім властивостям.</p>
+<p style="word-spacing: 1.1px;">3. Створіть процедуру опрацювання події Виконати. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: а &mdash; масив цілих чисел; і &mdash; номер (індекс) елемента масиву; flag &mdash; номер шуканого елемента.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-239.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. У вікні редактора коду запишіть команди введення значень елементів масиву, знаходження номера елемента та виведення його значення або повідомлення, що такого елемента не існує (мал. 18.2).</p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Перевірте на контрольному прикладі, дібраному самостійно, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">розробка проекту в середовищі PyCharm</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище програмування PyCharm.</p>
+<p style="word-spacing: 1.1px;">2. Створіть новий файл програми мовою програмування Python з іменем Номер елемента в папці Навчальні проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">3. У вікні редактора коду введіть команди введення значень елементів масиву, знаходження номера елемента та виведення його значення або повідомлення, що такого елемента не існує (мал. 18.3).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-240.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-241.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 18.3</p>
+<p style="word-spacing: 1.1px;">4. Запустіть проект на виконання. Перевірте на контрольному прикладі, дібраному самостійно, чи відповідають умові завдання отримані результати. Якщо є помилки &mdash; виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">18.2. Як описати програму пошуку елемента з найбільшим або найменшим значенням?</p>
+<p style="word-spacing: 1.1px;">Для того щоб зрозуміти, як відбувається пошук найбільшого елемента деякої табличної величини, уявімо себе на місці виконавця алгоритму. Елементи табличної величини записані в пам&rsquo;яті, доступ до комірок якої здійснюється за номерами елементів. Виконавець може одночасно відкривати доступ до однієї комірки. Нехай задано лінійну таблицю з n цілих чисел (мал. 18.4).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-242.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Виконаємо такий алгоритм:</p>
+<p style="word-spacing: 1.1px;">1) прочитаємо з пам&rsquo;яті перший елемент таблиці. Його значення дорівнює 5. Запам&rsquo;ятаємо його як максимальне &mdash; надамо його значення величині max;</p>
+<p style="word-spacing: 1.1px;">2) прочитаємо другий елемент таблиці. Його значення більше за max, тому &laquo;забудемо&raquo; про попереднє значення й запам&rsquo;ятаємо значення max=6;</p>
+<p style="word-spacing: 1.1px;">3) прочитаємо третій елемент таблиці. Його значення менше за max, тому можна приступати до наступного кроку без зміни значення max.</p>
+<p style="word-spacing: 1.1px;">Продовжимо таким чином кроки алгоритму, поки не будуть переглянуті всі елементи лінійної таблиці до n включно. На кожній ітерації циклу в змінній max міститиметься найбільше значення з пройденої частини лінійної таблиці, а по завершенні циклу змінна max зберігатиме максимальне значення в усьому масиві.</p>
+<p style="word-spacing: 1.1px;">Пошук найменшого елемента масиву здійснюють за аналогічним алгоритмом, знаходячи відповідно елемент (min), який є меншим від усіх переглянутих елементів.</p>
+<p style="word-spacing: 1.1px;">Вправа 2. Різниця між найбільшим і найменшим.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть проект Випробування, у якому знаходять різницю між найбільшим і найменшим елементом лінійної таблиці з 10 дійсних чисел, які набувають значень від 5 до 10 випадково.</p>
+<p style="word-spacing: 1.1px;">розробка проекту в середовищі програмування Lazarus</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Випробування.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі (мал. 18.5) об&rsquo;єкти, самостійно надайте значення їхнім властивостям.</p>
+<p style="word-spacing: 1.1px;">3. Створіть процедуру опрацювання події натиснення кнопки Знайти. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: а &mdash; масив дійсних чисел; і &mdash; номер (індекс) елемента масиву; max &mdash; найбільше значення серед елементів; min &mdash; найменше значення серед елементів.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-243.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 18.5</p>
+<p style="word-spacing: 1.1px;">4. У вікні редактора коду запишіть команди випадкового генерування елементів масиву та виведення їх у таблицю, пошуку найбільшого й найменшого елементів масиву, виведення різниці значень max і min (мал. 18.6). Зауважте, для того щоб отримати випадкове дійсне число, яке відповідає умові 5&lt;x&lt;10, використано вираз: 10.0 - random*5.0.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-244.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Перевірте, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки &mdash; виправте їх.</p>
+<p style="word-spacing: 1.1px;">6. Знайдіть на екранній формі найбільше та найменше значення елементів згенерованої таблиці. Обчисліть їхню різницю. Перевірте програму на наявність логічних помилок. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі PyCharm</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище програмування PyCharm.</p>
+<p style="word-spacing: 1.1px;">2. Створіть новий файл програми мовою програмування Python з іменем Випробування в папці Навчальні проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">3. У вікні редактора коду запишіть команди випадкового генерування елементів масиву та виведення списком у вікні виконання проекту, пошуку найбільшого й найменшого елементів масиву, виведення різниці значень max і min (мал. 18.7). Зауважте, для того щоб отримати випадкове дійсне число за умовою 5 &lt; x &lt; 10 з двома знаками після коми, використано вираз: round((10.0 - random.random()*5.0),2).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-245.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Запустіть проект на виконання. У згенерованому списку знайдіть найбільше та найменше значення елементів. Обчисліть їхню різницю. Перевірте програму на наявність логічних помилок.</p>
+<p style="word-spacing: 1.1px;">5. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">18.3. Як упорядковувати дані в лінійній таблиці?</p>
+<p style="word-spacing: 1.1px;">Для розв&rsquo;язування багатьох задач зручно спочатку впорядкувати дані за певною ознакою. Наприклад, пошук елемента в масиві чи списку можна значно прискорити, якщо відповідні дані впорядковані. При цьому ознакою такого впорядкування може бути за зростанням (якщо значення елементів не повторюються), за неспаданням (якщо значення елементів можуть повторюватись), за спаданням, за незростанням.</p>
+<p style="word-spacing: 1.1px;">Правило (ознака), за яким виконують впорядкування елементів, називають ключем впорядкування. У словниках ключами є слова, впорядковані в лексикографічному порядку (тобто відповідно до порядку літер в алфавіті). Список учнів впорядковано за ключем, що відповідає їх номеру в алфавітній книзі школярів. Дати переважно впорядковуються за ключем &laquo;рррр.мм.дд&raquo;, де рррр &mdash; рік, мм &mdash; місяць, дд &mdash; день. Основним при організації впорядкування є визначення відношення порядку на множині елементів, яка впорядковується, тобто для будь-яких двох елементів цієї множини важливо визначити, який з них слідує за іншим, передує іншому або що вони збігаються.</p>
+<p style="word-spacing: 1.1px;">Є багато різних методів впорядкування, які відрізняються один від одного ступенем ефективності. Ступінь ефективності враховує кількість порівнянь та кількість обмінів, які виконано під час впорядкування: що меншою є така кількість, то ефективнішим є метод впрорядкування.</p>
+<p style="word-spacing: 1.1px;">Розглянемо один з методів впорядкування лінійної таблиці &mdash; метод вибору. За таким методом спочатку з набору з довільним розташуванням елементів вибирають елемент із найменшим значенням i виконують його взаємозаміну зі значенням у першій клітинці таблицї, &mdash; таким чином у першій клітинці таблиці розташовується найменше значення вмісту клітинок таблиці. Далі знаходять елемент із найменшим значенням з решти n - 1 елементїв i виконують його взаємозаміну з вмістом клітинки з номером два i т. д. Потім розглядаються елементи, що лишилися, серед яких знову знаходять найменший, який потім міняють місцями з вмістом третьої клітинки. Таким чином, для прикладу таблиці з 5 елементів, яка містить значення довжини п&rsquo;яти олівців, послідовно розглядають чотири різні набори олівців (чотири таблиці, що мають різну довжину): у першо-</p>
+<p style="word-spacing: 1.1px;">му наборі було п&rsquo;ять елементів, у другому &mdash; чотири, у третьому &mdash; три, у четвертому &mdash; два. З кожним набором елементів виконують однакові дії:</p>
+<p style="word-spacing: 1.1px;">&bull; у наборі вибирають найменший елемент, запам&rsquo;ятовують його номер у такому наборі (таблиці);</p>
+<p style="word-spacing: 1.1px;">&bull; знайдений найменший елемент міняють місцями з першим елементом набору, що розглядається.</p>
+<p style="word-spacing: 1.1px;">Приклад упорядкування лінійної таблиці з 5 цілих чисел продемонстровано на малюнку 18.8, де жовтим кольором виділено найменший елемент серед елементів, що залишаються для перегляду на кожному кроці, стрілками &mdash; порядок обміну елементами.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-246.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Зверніть увагу на те, що хоча лінійна таблиця має п&rsquo;ять елементів, достатньо 4 рази знайти найменше значення елементів з іще не впорядкованої частини лінійної таблиці та обміняти його місцями зі значенням першого із ще не впорядкованої частини масиву елементів.</p>
+<p style="word-spacing: 1.1px;">Вправа 3. Упорядкування масиву.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть проект Упорядкування, у якому елементи лінійної таблиці з 10 цілих чисел впорядковуються за зростанням.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-247.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розробка проекту</p>
+<p style="word-spacing: 1.1px;">в середовищі програмування Lazarus</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Упорядкування.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі (мал. 18.9) об&rsquo;єкти, самостійно надайте значення їхнім властивостям.</p>
+<p style="word-spacing: 1.1px;">3. Створіть процедуру опрацювання події Упорядкувати. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: а &mdash; масив цілих чисел; і &mdash; номер ітерації пошуку мінімального елемента масиву; j &mdash; номер елемента масиву; min &mdash; найменше значення елемента; nmin &mdash; номер найменшого елемента.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-248.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. У вікні редактора коду запишіть команди введення елементів масиву в багаторядкове текстове поле, впорядкування елементів та їх виведення в багаторядкове текстове поле (мал. 18.10).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-249.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Перевірте, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">Розробка проекту в середовищі PyCharm</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте середовище програмування PyCharm.</p>
+<p style="word-spacing: 1.1px;">2. Створіть новий файл програми мовою програмування Python з іменем Упорядкування в папці Навчальні проекти своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">3. У вікні редактора коду запишіть команди введення значень елементів списку, його впорядкування та виведення списку у вікні виконання програми. Використайте у проекті змінні: а &mdash; список цілих чисел; і &mdash; номер ітерації пошуку мінімального елемента списку; j &mdash; номер елемента списку; min &mdash; найменше значення елемента; nmin &mdash; номер найменшого елемента (мал. 18.11).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-250.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">18.4. Як прискорити пошук елемента в лінійній таблиці?</p>
+<p style="word-spacing: 1.1px;">Якщо невідомо, які дані зберігаються в лінійній таблиці, то прискорити пошук елемента, що відповідає певній умові, у програмах мовою програмування Free Pascal неможливо. Якщо заздалегідь відомі деякі ознаки даних, серед яких ведеться пошук, наприклад таблиця впорядкована, можна суттєво скоротити час роботи, застосовуючи спеціальні методи пошуку.</p>
+<p style="word-spacing: 1.1px;">Одним з методів пошуку, більш ефективним, ніж лінійний, є бінарний (двійковий) пошук, який називається також методом ділення навпіл. При його використанні на кожному кроці область пошуку скорочується вдвічі.</p>
+<p style="word-spacing: 1.1px;">Для ознайомлення із цим методом доцільно уточнити властивості елементів таблиці &mdash; вони мають бути впорядковані за зростанням. Позначимо шуканий елемент масиву (списку) змінною х.</p>
+<p style="word-spacing: 1.1px;">Можливі два випадки:</p>
+<p style="word-spacing: 1.1px;">1) якщо х менший від елемента, розташованого посередині масиву (списку), тоді завдяки впорядкованості таблиці можна не розглядати всі елементи, розташовані правіше від середнього, і застосувати цей метод до лівої половини таблиці;</p>
+<p style="word-spacing: 1.1px;">2) якщо х більший від елемента, розташованого посередині масиву (списку), тоді, міркуючи аналогічно, можна виключити з розгляду ліву половину таблиці й застосувати цей метод до його правої частини. Таким чином, на кожному кроці відсікається та частина таблиці, де не</p>
+<p style="word-spacing: 1.1px;">може бути знайдено заданий елемент х.</p>
+<p style="word-spacing: 1.1px;">Розглянемо суть методу на прикладі. Наприклад, знайдемо, чи є серед елементів таблиці з іменем а з 10 цілих чисел, впорядкованих за зростанням, значення х = 6 (мал. 18.12).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-251.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Знайдемо номер елемента, що міститься посередині таблиці: m = 5. Оскільки 6 &lt; а[5], то далі розглядаються лише елементи, індекси яких менші ніж 5. Про інші елементи можна відразу сказати, що вони більші за х, оскільки таблиця впорядкована за зростанням, і тому правіше від а[5] шуканого елемента немає. Далі розглядатимемо тільки елементи таблиці від а[1] до а[4], знаходимо індекс середнього елемента цієї частини: m = 2, і порівнюємо задане число 6 з елементом а[2].</p>
+<p style="word-spacing: 1.1px;">Виявляється, що 6 &gt; а[2]. Це означає, що необхідно розглядати праву частину цієї половини таблиці від а[3] до а[4]. Знову знаходимо індекс середнього елемента m = 3 й порівнюємо його із шуканим: а[3] = 6. Елемент m знайдено &mdash; його номер 3.</p>
+<p style="word-spacing: 1.1px;">У програмах мовою програмування Python для прискорення пошуку можна використати вбудовані засоби мови, зокрема ідеологію побудови циклу for, у якому замість індексів елементів можна переглядати самі елементи. Наприклад, у команді циклу</p>
+<p style="word-spacing: 1.1px;">For elem in a:</p>
+<p style="word-spacing: 1.1px;">змінна elem &laquo;пробігатиме&raquo; всі елементи списку а.</p>
+<p style="word-spacing: 1.1px;">Можна не переглядати елементи списку, а просто перевірити входження елемента elem у список а за допомогою фрагмента програми:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-252.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 4. швидкий пошук.</p>
+<p style="word-spacing: 1.1px;">завдання. У середовищі програмування Lazarus створіть проект Швидкий пошук для визначення, чи є вказане значення серед елементів лінійної таблиці з 10 цілих чисел.</p>
+<p style="word-spacing: 1.1px;">1. У папці Навчальні проекти своєї структури папок створіть папку Швидкий пошук.</p>
+<p style="word-spacing: 1.1px;">2. Відкрийте середовище Lazarus і створіть новий проект. Розмістіть на екранній формі об&rsquo;єкти, самостійно надайте значень їхнім властивостям. Наприклад, як на малюнку 18.13.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-253.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 18.13</p>
+<p style="word-spacing: 1.1px;">3. Створіть процедуру опрацювання події натиснення кнопки Відповідь. У вікні редактора коду опишіть змінні, які будуть використовуватись у проекті: а &mdash; масив цілих чисел; x &mdash; шуканий елемент; і &mdash; номер елемента масиву; m &mdash; номер елемента, з якого здійснюють пошук; p &mdash; ліва межа пошуку; r &mdash; права межа пошуку; f &mdash; прапорець пошуку.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-254.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. У вікні редактора коду запишіть команди введення елементів масиву в багаторядкове текстове поле, впорядкування елементів та їх виведення в багаторядкове текстове поле (мал. 18.14).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-255.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 18.14</p>
+<p style="word-spacing: 1.1px;">5. Запустіть проект на виконання. Перевірте, чи відповідають умові завдання дії, пов&rsquo;язані з об&rsquo;єктами управління екранної форми. Якщо є помилки, виправте їх. Завершіть роботу з проектом і середовищем програмування, зберігши всі зміни.</p>
+<p style="word-spacing: 1.1px;">1. У чому полягає особливість пошуку першого елемента лінійної таблиці, який відповідає заданій умові?</p>
+<p style="word-spacing: 1.1px;">2. Який алгоритм лежить в основі пошуку найбільшого елемента лінійної таблиці?</p>
+<p style="word-spacing: 1.1px;">3. Чим відрізняється алгоритм пошуку найменшого елемента лінійної таблиці від алгоритму пошуку найбільшого елемента?</p>
+<p style="word-spacing: 1.1px;">4. З якою метою впорядковують дані в лінійній таблиці?</p>
+<p style="word-spacing: 1.1px;">5. Який алгоритм лежить в основі упорядкування масиву за зростанням?</p>
+<p style="word-spacing: 1.1px;">6. Чи завжди можна скласти програму для &laquo;швидкого&raquo; пошуку в лінійній таблиці елемента, що відповідає заданій умові? Наведіть приклади.</p>
+<p style="word-spacing: 1.1px;">1. Обговоріть, як зміниться програмний код у проекті Пошук елемента, якщо:</p>
+<p style="word-spacing: 1.1px;">а) розглядати таблицю дійсних чисел та здійснювати пошук елемента, який дорівнює останньому елементу;</p>
+<p style="word-spacing: 1.1px;">б) у середовищі Lazarus лінійну таблицю вводити в елемент управління StringGrid;</p>
+<p style="word-spacing: 1.1px;">в) у середовищі PyCharm елементи списку генеруються випадково. Внесіть відповідні зміни у проект Пошук елемента, збережіть зміни у проекті з новим іменем у папку Проекти власної структури папок, запустіть проект на виконання та перевірте своє припущення.</p>
+<p style="word-spacing: 1.1px;">2. Обговоріть, як зміниться програмний код у проекті Випробування, якщо:</p>
+<p style="word-spacing: 1.1px;">а) знаходити різницю між найбільшим елементом таблиці та середнім значенням усіх елементів;</p>
+<p style="word-spacing: 1.1px;">б) знаходити найменший елемент серед елементів лінійної таблиці з парними індексами;</p>
+<p style="word-spacing: 1.1px;">в) знаходити найбільший елемент у прямокутній таблиці а цілих чисел, що складається з 5 рядків і 5 стовпців.</p>
+<p style="word-spacing: 1.1px;">Внесіть відповідні зміни у проект Випробування, збережіть зміни у проекті з новим іменем у папку Проекти власної структури папок, запустіть проект на виконання та перевірте своє припущення.</p>
+<p style="word-spacing: 1.1px;">3. Обговоріть, як зміниться програмний код у проекті Упорядкування, якщо упорядковувати елементи лінійної таблиці за спаданням. Внесіть відповідні зміни у проект Упорядкування, збережіть зміни у проекті з новим іменем у папку Проекти власної структури папок, запустіть проект на виконання та перевірте своє припущення.</p>
+<p style="word-spacing: 1.1px;">1. У вибраному середовищі програмування створіть проект Спортивні результати, у якому за поданою таблицею випробувань на тренуванні зі стрибків у довжину знаходять номер першої спроби, яка повторює контрольний результат.</p>
+<p style="word-spacing: 1.1px;">2. У вибраному середовищі програмування створіть проект Прогноз погоди, у якому за поданою таблицею температури протягом тижня знаходять найбільший і найменший показники температури.</p>
+<p style="word-spacing: 1.1px;">3. У середовищі програмування PyCharm створіть проект Швидкий пошук для знаходження у списку з 10 дійсних чисел елемента, що відповідає заданій умові.</p>
+<p style="word-spacing: 1.1px;">4. У вибраному середовищі програмування створіть проект Функція, у якому за даними значеннями функції, поданої таблично, знаходять найбільше, найменше значення функції, кількість значень, які містяться над віссю Ох та під віссю Ох, чи досягає функція свого найбільшого значення на області визначення більш ніж один раз.</p>
+<p style="word-spacing: 1.1px;">5. У вибраному середовищі програмування створіть проект гри Відгадай число. Користувач вводить число, яке, на його думку, може міститись у лінійній таблиці з 10 цілих чисел, що генеруються випадково від 0 до деякого випадкового цілого числа.</p>
+<p style="word-spacing: 1.1px;">Якщо таке число відгадане, то гра припиняється й виводиться</p>
+<p style="word-spacing: 1.1px;">повідомлення про перемогу; якщо після 5 спроб число не вгадують, то гра припиняється з повідомленням про невдалі спроби. У грі можуть бути підказки, які спрямовуватимуть користувача на правильний вибір значення.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-256.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Проаналізуйте матеріали, подані за посиланням https://uk.wikipedia.org/ wiki/Сортування бульбашкою. За наведеними прикладами, наочною демонстрацією (мал. 18.15) та описом алгоритму складіть проект у вибраному середовищі програмування, у якому елементи лінійної таблиці з 10 дійсних чисел будуть упорядковані за зростанням &laquo;методом сортування бульбашкою&raquo;.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-257.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">складання й виконання алгоритму пошуку значень у таблиці</p>
+<p style="word-spacing: 1.1px;">Як описати алгоритми пошуку елемента табличної величини за поданою властивістю мовами програмування.</p>
+<p style="word-spacing: 1.1px;">У власній структурі папок створіть папку Практична робота 7.</p>
+<p style="word-spacing: 1.1px;">Під час виконання практичних завдань пам&rsquo;ятайте про правила безпеки життєдіяльності при роботі з комп&rsquo;ютером!</p>
+<p style="word-spacing: 1.1px;">Завдання 1. Черга (12 балів)</p>
+<p style="word-spacing: 1.1px;">У магазині утворилася черга з 5 покупців. Час обслуговування кожного покупця в черзі подано в таблиці:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-258.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У вибраному середовищі програмування створіть проект Черга, у якому можна отримати:</p>
+<p style="word-spacing: 1.1px;">1) номер покупця, якого обслуговували найкоротший час;</p>
+<p style="word-spacing: 1.1px;">2) час найтривалішого обслуговування в черзі;</p>
+<p style="word-spacing: 1.1px;">3) лінійну таблицю або список із сумарним часом очікування свого обслуговування кожним покупцем.</p>
+<p style="word-spacing: 1.1px;">Завдання 2. Спортивні змагання (10 балів)</p>
+<p style="word-spacing: 1.1px;">У деяких видах спортивних змагань виступ спортсмена оцінюється десятьма суддями. Із сукупності виставлених ними балів вилучаються найвищий і найнижчий бали. На основі решти балів обчислюється середнє арифметичне, яке й зараховується спортсмену як оцінка його виступу. Судді користуються десятибальною системою, виставляючи оцінки від 0 до 10. У вибраному середовищі програмування створіть проект Спортивні змагання, у якому можна за виставленими суддівськими оцінками та вказаними правилами розрахунку визначити середню оцінку виступу спортсмена.</p>
+<p style="word-spacing: 1.1px;">Завдання 3. Табель (12 балів)</p>
+<p style="word-spacing: 1.1px;">У вибраному середовищі програмування створіть проект Табель, у якому реалізовано електронний табель. У проекті передбачте, що в лінійній таблиці задають назви предметів, які вивчає учень. Елементи управління екранної форми передбачають можливість за номером предмета дізнатись оцінку з відповідного предмета; отримати дані про максимальну оцінку з предметів, що вивчаються; кількість предметів, які мають найвищу та найнижчу оцінки; середній бал успішності.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2159-pdruchnik-nformatika-9-klas-morze-barna-vember-nova-programa-2017.html">Інформатика 9 клас Морзе</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="683-opracyuvannya-elementv-masivu.html">Опрацювання елементів масиву</a></li><li><a href="679-opracyuvannya-dvovimrnih-masivv-danih.html">Опрацювання двовимірних масивів даних</a></li><li><a href="678-dvovimrniy-masiv-danih.html">Двовимірний масив даних</a></li><li><a href="675-vdobrazhennya-danih-u-tablichny-form.html">Відображення даних у табличній формі</a></li><li><a href="672-odnovimrniy-masiv-danih.html">Одновимірний масив даних</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

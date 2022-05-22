@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Відбивання світла. Закон відбивання світла. Плоске дзеркало &raquo; mozok.click</title>
+<meta name="description" content="Коли світло падає на поверхню якого-небудь тіла, частина світла відбивається від поверхні і поширюється у просторі. Таке явище називають відбиванням світла." />
+<meta name="keywords" content="світла, просторі, поширюється, явище, називають, відбиванням, поверхні, відбивається, якого, поверхню, небудь, частина, світло, падає" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2111-vdbivannya-svtla-zakon-vdbivannya-svtla-ploske-dzerkalo.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Відбивання світла. Закон відбивання світла. Плоске дзеркало</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2111").Button("#infc2111"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2111" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2111" class="infcont">
+			<ul>
+				<li><i>Переглядів: 14239</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 13-01-2018, 09:33</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2111'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2111-vdbivannya-svtla-zakon-vdbivannya-svtla-ploske-dzerkalo.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2111'); return false;">1</a></li>
+		<li><a href="2111-vdbivannya-svtla-zakon-vdbivannya-svtla-ploske-dzerkalo.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2111'); return false;">2</a></li>
+		<li><a href="2111-vdbivannya-svtla-zakon-vdbivannya-svtla-ploske-dzerkalo.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2111'); return false;">3</a></li>
+		<li><a href="2111-vdbivannya-svtla-zakon-vdbivannya-svtla-ploske-dzerkalo.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2111'); return false;">4</a></li>
+		<li><a href="2111-vdbivannya-svtla-zakon-vdbivannya-svtla-ploske-dzerkalo.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2111'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/13/index.html" ><i>13-01-2018, 09:33</i></a></span>
+	<h3 class="btl"><span id="news-title">Відбивання світла. Закон відбивання світла. Плоске дзеркало</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2111" style="display:inline;"><p style="word-spacing: 1.1px;"><span style="word-spacing: 1.1px; letter-spacing: 0px;">Коли світло падає на поверхню якого-небудь тіла, частина світла відбивається від поверхні і поширюється у просторі. Таке явище називають відбиванням світла.</span></p>
+<p style="word-spacing: 1.1px;">Поверхні тіл можуть бути гладкими або шорсткими. Коли, перебуваючи в кімнаті, ми дивимося на шорстку поверхню, наприклад на поверхню стола, підлоги, стіни, ми бачимо цю поверхню. А ось поверхня</p>
+<p style="word-spacing: 1.1px;">чистого дзеркала невидима, зате у дзеркалі видно зображення предметів (мал. 118). Якщо поверхню дзеркала послідовно покривати шарами розведеної у воді крейди, зображення врешті-решт зникне, і ми спостерігатимемо шорстку поверхню - шар крейди. Ретельно відполірувавши одну з граней мідного бруска, ми можемо зробити його поверхню дзеркальною. Існують також і природні дзеркальні поверхні, наприклад спокійна водна поверхня озера (мал. 119).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-86.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розглянемо, як світло відбивається від дзеркальної поверхні.</p>
+<p style="word-spacing: 1.1px;">Дослід. За допомогою спеціального приладу (мал. 120, а) направимо на дзеркальну поверхню в точку О пучок світла так, щоб промінь світла ОА (мал. 120, б) лежав у площині приладу. Дійшовши до поверхні, пучок світла змінює напрямок свого поширення - відбувається відбивання світла.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-87.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У результаті досліду побачимо, що відбитий промінь світла ОВ також лежить у площині приладу. Змінюватимемо напрямок падаючого променя світла, пересуваючи джерело світла, при цьому буде змінюватися і напрямок відбитого променя світла зі збереженням усіх його властивостей. Але обидва промені світла завжди лежатимуть у площині приладу. Таким чином, ми встановили перший закон відбивання світла.</p>
+<p style="word-spacing: 1.1px;">Промінь світла падаючий, промінь світла відбитий і перпендикуляр, проведений у точку падіння світла, лежать в одній площині.</p>
+<p style="word-spacing: 1.1px;">Цей дослід дає нам змогу встановити і другий закон відбивання світла.</p>
+<p style="word-spacing: 1.1px;">Пряма MN - дзеркальна поверхня, АО - падаючий промінь світла, ОВ -відбитий промінь світла, ОС - перпендикуляр до поверхні в точці падіння світла. Кут, утворений падаючим променем світла і перпендикуляром ОС, називають кутом падіння світла. Його позначають літерою а (альфа). Кут, утворений відбитим променем світла ОВ і перпендикуляром ОС, називають кутом відбивання світла. Його позначають літерою р (бета).</p>
+<p style="word-spacing: 1.1px;">Вимірявши транспортиром кут падіння світла і кут відбивання світла, бачимо, що ці кути рівні між собою. Отже, ми встановили другий закон відбивання світла.</p>
+<p style="word-spacing: 1.1px;">Кут відбивання променя світла дорівнює куту падіння променя світла.</p>
+<p style="word-spacing: 1.1px;">Якщо поверхня дзеркала є площиною, таке дзеркало називають плоским дзеркалом.</p>
+<p style="word-spacing: 1.1px;">Трапляється, що людина помиляється, покладаючися тільки на свої зорові відчуття. Наприклад, коли ми дивимося у дзеркало, нам здається, що предмети, які насправді розташовані перед дзеркалом, знаходяться за ним. Як це пояснити?</p>
+<p style="word-spacing: 1.1px;">Справа в особливостях нашого зору і сприйняття. Ми маємо природжену здатність бачити будь-який предмет або його частини тільки у прямолінійному напрямку, по якому світло від джерела світла, наприклад свічки, або освітленого предмета безпосередньо потрапляє в наші очі (мал. 121).</p>
+<p style="word-spacing: 1.1px;">Дивлячися у плоске дзеркало, ми не дивимося на предмет, що знаходиться перед ним, проте світло від предмета все ж таки потрапляє в наші очі, відбившися від дзеркала. Тому в нашій свідомості виникає образ предмета. Оскільки відбите від дзеркала світло поширюється прямолінійно, нам здається, що ми бачимо предмет прямо перед нами, але не там, де він насправді знаходиться, а за дзеркалом. Малюнок 122 наочно це пояснює.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-88.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тому кажуть, що у дзеркалі ми бачимо уявне пряме зображення предмета.</p>
+<p style="word-spacing: 1.1px;">Дивлячися у дзеркало, ви бачите своє уявне зображення.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Зображення предмета у плоскому дзеркалі &mdash; уявне, пряме.</p>
+<p style="word-spacing: 1.1px;">Розмістимо вертикально шматок плоского скла, яке виконуватиме роль дзеркала (мал. 123, а). Оскільки скло прозоре, ми бачимо предмети, що</p>
+<p style="word-spacing: 1.1px;">знаходяться за ним. Візьмемо дві свічки, запалимо одну з них і поставимо цю свічку перед склом. Як у дзеркалі, ми побачимо у склі зображення свічки, що горить. Другу свічку розмістимо з другого боку скла так, щоб здавалося, що вона також горить, і, таким чином, сумістимо другу свічку із зображенням першої. Виміряємо відстань між склом і кожною зі свічок (мал. 123, б). Виявляється, що ці відстані однакові.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-89.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Предмет і його зображення у плоскому дзеркалі завжди розміщені на однаковій відстані від дзеркала.</p>
+<p style="word-spacing: 1.1px;">Досліди показують, що висота зображення свічки дорівнює висоті самої свічки.</p>
+<p style="word-spacing: 1.1px;">Розміри зображення предмета у плоскому дзеркалі дорівнюють розмірам самого предмета.</p>
+<p style="word-spacing: 1.1px;">Зображення предмета у плоскому дзеркалі має ще одну особливість. Подивіться на зображення вашої лівої руки у плоскому дзеркалі. Пальці на зображенні розташовані так, ніби це є ваша права рука (мал. 124).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-90.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Усі розглянуті особливості зображення предмета у плоскому дзеркалі дають змогу зробити висновок: зображення предмета у плоскому дзеркалі симетричне самому предмету.</p>
+<p style="word-spacing: 1.1px;">Спостереження. Підійдіть до дзеркала і подивіться на своє зображення. Ви бачите, що зображення вашого тіла має ті самі розміри, що й ви самі. Відійдіть від дзеркала або підійдіть до нього ближче. Ваше зображення переміститься на ту саму відстань. Підніміть ліву руку. Ваше зображення підніме праву руку.</p>
+<p style="word-spacing: 1.1px;">У плоскому дзеркалі ви бачите зображення предметів, що мало відрізняються від самих предметів. Це пояснюється тим, що дзеркало відбиває від 70 до 90 % падаючого на нього світла, а його поверхня плоска і гладка.</p>
+<p style="word-spacing: 1.1px;">Білий папір або сніг також відбивають значну частину світла - до 85 %, але, дивлячися на чистий аркуш паперу, ви не побачите зображень яких-небудь предметів, що знаходяться поряд, а тільки рівну білу поверхню. Отже, світло відбивається не тільки від дзеркальних поверхонь. Промені світла відбиваються від будь-якого предмета, який не пропускає світла. Якщо поверхня предмета шорстка (нерівна або матова), окремі світлові промені відбиваються від неї не в одному, а в різних напрямках (мал. 125). Таке світло називають розсіяним, а поверхню - розсіювальною.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-91.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Завдяки розсіяному світлу ми бачимо предмети і в тих місцях, куди прямі сонячні промені не проникають, наприклад у кімнаті: сюди найчастіше потрапляє сонячне світло, розсіяне хмарами, будинками, деревами.</p>
+<p style="word-spacing: 1.1px;">ЗАПИТАННЯ ДО ВИВЧЕНОГО</p>
+<p style="word-spacing: 1.1px;">1. Що таке відбивання світла?</p>
+<p style="word-spacing: 1.1px;">2. Які закони відбивання світла ви знаєте? Сформулюйте їх.</p>
+<p style="word-spacing: 1.1px;">3. Яке дзеркало називають плоским?</p>
+<p style="word-spacing: 1.1px;">4. Які особливості має зображення предмета у плоскому дзеркалі?</p>
+<p style="word-spacing: 1.1px;">5. Чому шорсткі поверхні розсіюють світло, а від дзеркальних воно майже повністю відбивається?</p>
+<p style="word-spacing: 1.1px;">ЗАДАЧІ ТА ВПРАВИ</p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язуємо разом</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-92.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">1. Який з променів відбивається під більшим кутом, а який - під меншим (мал. 126)?</p>
+<p style="word-spacing: 1.1px;">Відповідь: промінь 1 під більшим, 2 -під меншим.</p>
+<p style="word-spacing: 1.1px;">2. За якої умови рух людини відносно дзеркала не змінить її положення відносно зображення?</p>
+<p style="word-spacing: 1.1px;">Відповідь: коли людина рухається паралельно поверхні дзеркала.</p>
+<p style="word-spacing: 1.1px;">Рівень А</p>
+<p style="word-spacing: 1.1px;">57. Кут падіння світла на дзеркало дорівнює 60&deg;. Використовуючи транспортир, накресліть хід відбитого променя.</p>
+<p style="word-spacing: 1.1px;">58. Користуючися малюнком 127, накресліть для кожного випадку хід відбитого променя.</p>
+<p style="word-spacing: 1.1px;">59. Для спостереження за поверхнею моря з підводного човна, що знаходиться під водою на невеликій глибині, використовують оптичний прилад, який називають перископом (грец. periskopeo - &laquo;дивлюся навколо, оглядаю&raquo;). На малюнку 128 зображено схему дзеркального перископа. Поясніть його дію.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-93.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">60. На малюнку 129 зображено покази годинника у плоскому дзеркалі. Котру годину показує годинник?</p>
+<p style="word-spacing: 1.1px;">61. На автомобілях установлюють дзеркала (мал. 130). Навіщо це роблять?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-94.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">62. В атракціоні &laquo;Кімната сміху&raquo; використовують дзеркала, які викривляють зображення предметів (мал. 131). Чому вони викривляють зображення предметів?</p>
+<p style="word-spacing: 1.1px;">63. Чи можна побачити у дзеркалі свою потилицю? Як це зробити?</p>
+<p style="word-spacing: 1.1px;">64. Прикладіть до дзеркала кінчик олівця. Чому він не збігається з кінцем зображення олівця? Яка відстань між кінчиком олівця і його зображенням?</p>
+<p style="word-spacing: 1.1px;">65. Чому сніжинки виблискують на сонці?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-95.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рівень Б</p>
+<p style="word-spacing: 1.1px;">66. Чи однаково відбивають світло шліфована і нешліфована поверхні сталевої пластини? Що досягається шліфуванням?</p>
+<p style="word-spacing: 1.1px;">67. Яке відбивання світла від стін будинків або кіноекрана: дзеркальне чи розсіяне?</p>
+<p style="word-spacing: 1.1px;">68. Чому осьові й поперечні розмітки на дорогах наносять білою фарбою?</p>
+<p style="word-spacing: 1.1px;">69. Поясніть такі явища: а) за безхмарного неба темніє після заходу Сонця швидше, ніж коли є хмари; б) за хмарного неба в сонячний день дно глибокого колодязя видно краще, ніж за ясного неба.</p>
+<p style="word-spacing: 1.1px;">70. Побудуйте хід променя, що падає на дзеркало, і хід променя, відбитого від дзеркала (мал. 132).</p>
+<p style="word-spacing: 1.1px;">71. Як потрібно поставити лампу біля дзеркала, щоб краще бачити в ньому своє обличчя?</p>
+<p style="word-spacing: 1.1px;">72. Як відіб&rsquo;ється промінь, який падає перпендикулярно до поверхні дзеркала?</p>
+<p style="word-spacing: 1.1px;">73. Відбитий і падаючий промені утворюють прямий кут. Скільком градусам дорівнює кут падіння?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-96.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Лабораторна робота № 3</p>
+<p style="word-spacing: 1.1px;">Дослідження відбивання світла за допомогою плоского дзеркала</p>
+<p style="word-spacing: 1.1px;">Мета: перевірити виконання законів відбивання світла.</p>
+<p style="word-spacing: 1.1px;">Прилади і матеріали: плоске дзеркало на підставці, транспортир, лінійка, аркуш паперу.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-97.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">X і д роботи</p>
+<p style="word-spacing: 1.1px;">1. Поставте дзеркало так, щоб його площина була вертикальною (перпендикулярною до площини аркуша паперу). Позначте олівцем положення дзеркала та не зрушуйте його з місця під час досліду.</p>
+<p style="word-spacing: 1.1px;">2. За допомогою олівця позначте точки 1 і 2 так, як показано на малюнку 133. Тепер у дзеркалі можна побачити зображення точки 2'.</p>
+<p style="word-spacing: 1.1px;">3. Позначте точку 3 так, щоб вона лежала на продовженні прямої, що проходить через точки 1 і 2'. Тепер можна забрати дзеркало і сполучити точки 2 і 1 прямою - це й буде падаючий промінь світла. Точки 1 і 3 лежать на відбитому промені світла. З точки 1 проведіть перпендикуляр до площини дзеркала. Позначте на малюнку кути падіння та відбивання. Виміряйте їх за допомогою транспортира. Запишіть отримані результати в таблицю.</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>№ досліду</p>
+</td>
+<td>
+<p>Кут падіння</p>
+</td>
+<td>
+<p>Кут відбивання</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">4. Повторіть експеримент ще двічі, змінюючи кут падіння променя світла на дзеркало. Отримані результати також запишіть у таблицю.</p>
+<p style="word-spacing: 1.1px;">5. Зробіть висновок за виконаною роботою, а також дайте відповідь на такі запитання: 1) Чому зображення предмета у плоскому дзеркалі називають уявним?</p>
+<p style="word-spacing: 1.1px;">2) Які особливості зображення, отриманого за допомогою плоского дзеркала?</p>
+<p style="word-spacing: 1.1px;">Для допитливих</p>
+<p style="word-spacing: 1.1px;">Користуючися малюнком 134, виготовте найпростіший перископ і перевірте його в дії.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-98.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2149-pdruchnik-fzika-9-klas-sirotyuk-chitati-onlayn.html">Фізика 9 клас Сиротюк</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2112-zalomlennya-svtla-na-mezh-podlu-dvoh-seredovisch-zakon-zalomlennya-svtla.html">Заломлення світла на межі поділу двох середовищ. Закон заломлення світла</a></li><li><a href="2110-svtloviy-promn-svtloviy-puchok-zakon-pryamolnynogo-poshirennya-svtla-sonyachne-ta-msyachne-zatemnennya.html">Світловий промінь і світловий пучок. Закон прямолінійного поширення світла. ...</a></li><li><a href="2109-svtlov-yavischa-dzherela-y-priymach-svtla-shvidkst-poshirennya-svtla.html">Світлові явища. Джерела й приймачі світла. Швидкість поширення світла</a></li><li><a href="606-zalomlennya-svtla-na-mezh-podlu-dvoh-seredovisch-zakoni-zalomlennya-svtla.html">Заломлення світла на межі поділу двох середовищ. Закони заломлення світла</a></li><li><a href="605-vdbivannya-svtla-zakoni-vdbivannya-svtla-ploske-dzerkalo.html">Відбивання світла. Закони відбивання світла. Плоске дзеркало</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Комп'ютерні публікації. Створення комп'ютерних публікацій на основі шаблону. Проектування публікації для подання результатів самостійного дослідження &raquo; mozok.click</title>
+<meta name="description" content="Які види публікацій розрізняють?Публікація  це оприлюднення деяких відомостей.За допомогою цього терміна називають єдину за формою та вмістом оприлюднену роботу.На сьогодні більшість публіка" />
+<meta name="keywords" content="публікацій, редагується, матується, створюється, більшість, сьогодні, використанням, звичайних, встановлених, компютерах, процесорів, редакторів, текстових, роботу, оприлюднену, деяких, відомостей, оприлюднення, Публікація, розрізняють" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2156-kompyutern-publkacyi-stvorennya-kompyuternih-publkacy-na-osnov-shablonu-proektuvannya-publkacyi-dlya-podannya-rezultatv-samostynogo-dosldzhennya.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Комп'ютерні публікації. Створення комп'ютерних публікацій на основі шаблону. Проектування публікації для подання результатів самостійного дослідження</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2156").Button("#infc2156"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2156" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2156" class="infcont">
+			<ul>
+				<li><i>Переглядів: 23897</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 15-01-2018, 08:07</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2156'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2156-kompyutern-publkacyi-stvorennya-kompyuternih-publkacy-na-osnov-shablonu-proektuvannya-publkacyi-dlya-podannya-rezultatv-samostynogo-dosldzhennya.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2156'); return false;">1</a></li>
+		<li><a href="2156-kompyutern-publkacyi-stvorennya-kompyuternih-publkacy-na-osnov-shablonu-proektuvannya-publkacyi-dlya-podannya-rezultatv-samostynogo-dosldzhennya.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2156'); return false;">2</a></li>
+		<li><a href="2156-kompyutern-publkacyi-stvorennya-kompyuternih-publkacy-na-osnov-shablonu-proektuvannya-publkacyi-dlya-podannya-rezultatv-samostynogo-dosldzhennya.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2156'); return false;">3</a></li>
+		<li><a href="2156-kompyutern-publkacyi-stvorennya-kompyuternih-publkacy-na-osnov-shablonu-proektuvannya-publkacyi-dlya-podannya-rezultatv-samostynogo-dosldzhennya.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2156'); return false;">4</a></li>
+		<li><a href="2156-kompyutern-publkacyi-stvorennya-kompyuternih-publkacy-na-osnov-shablonu-proektuvannya-publkacyi-dlya-podannya-rezultatv-samostynogo-dosldzhennya.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2156'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/15/index.html" ><i>15-01-2018, 08:07</i></a></span>
+	<h3 class="btl"><span id="news-title">Комп'ютерні публікації. Створення комп'ютерних публікацій на основі шаблону. Проектування публікації для подання результатів самостійного дослідження</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2156" style="display:inline;"><p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-259.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<ul>
+<li>які види публікацій розрізняють;</li>
+<li>які засоби використовують для створення&nbsp;публікацій;</li>
+<li>як підготувати вдалу публікацію;</li>
+<li>як створити публікацію за допомогою програми Microsoft Publisher 2010;</li>
+<li>як працювати з текстом у середовищі Microsoft Publisher 2010;</li>
+<li>які особливості роботи із зображеннями в публікаціях;</li>
+<li>як роздрукувати публікацію.</li>
+</ul>
+<p>&nbsp;</p>
+<p style="word-spacing: 1.1px;">20.1. Які види публікацій розрізняють?</p>
+<p style="word-spacing: 1.1px;">Публікація &mdash; це оприлюднення деяких відомостей.</p>
+<p style="word-spacing: 1.1px;">За допомогою цього терміна називають єдину за формою та вмістом оприлюднену роботу.</p>
+<p style="word-spacing: 1.1px;">На сьогодні більшість публікацій створюється, редагується й фор-матується з використанням звичайних текстових редакторів і процесорів, встановлених на комп&rsquo;ютерах. Друковані версії публікацій роздру-ковуються з їх комп&rsquo;ютерних версій. У такому разі вживають термін комп&rsquo;ютерна публікація.</p>
+<p style="word-spacing: 1.1px;">За способом розповсюдження публікації можна поділити на друковані та електронні.</p>
+<p style="word-spacing: 1.1px;">Розрізняють такі друковані видання: книги, журнали, брошури, газети, буклети, листівки тощо. Кожне з них має своє призначення, автора матеріалу й відповідно &mdash; певну структуру, формат видання та правила розповсюдження.</p>
+<p style="word-spacing: 1.1px;">Брошура (фр. brochure від brogher &mdash; зшивати) &mdash; неперіодичне текстове книжкове видання обсягом понад 4, але не більш як 48 сторінок, з&rsquo;єднаних між собою. Найчастіше брошури використовуються в рекламних чи освітніх цілях.</p>
+<p style="word-spacing: 1.1px;">Буклет (фр. bouclette &mdash; завиток) &mdash; переважно багатокольорова аркушева роздруківка, складена в два або кілька згинів. До такого виду друкованої продукції найчастіше звертаються туристичні агенції, виробники промислових і продовольчих товарів, організації та установи в рекламних цілях, у період відзначення ювілеїв, подій чи проведення інших знакових заходів. Буклет має багатосмужну структуру, здебільшого 6 смуг.</p>
+<p style="word-spacing: 1.1px;">Інформаційний бюлетень (лат. bulla &mdash; документ із печаткою, італ. bulletino &mdash; записка, листок) &mdash; видання, яке випускається з метою інформування з певних питань цільової групи людей, спеціалістів або інших користувачів. Інформаційний бюлетень переважно складається з добірки актуальних тематичних відомостей, оформлених у вигляді статей.</p>
+<p style="word-spacing: 1.1px;">Часто під час навчання учням і студентам пропонується створити реферати. Реферат (нім. referat, лат. refere &mdash; доповідати) &mdash; письмова</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-260.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">доповідь або виступ з певної теми, у яких узагальнюються відомості з одного чи кількох джерел.</p>
+<p style="word-spacing: 1.1px;">Електронними публікаціями називають розповсюдження відомостей за допомогою електронних носіїв, таких як диски чи флеш-накопичувачі, або за допомогою Інтернету.</p>
+<p style="word-spacing: 1.1px;">20.2. Які засоби використовують для створення публікацій?</p>
+<p style="word-spacing: 1.1px;">Для створення зразка друкованої продукції та підготовки до тиражування потрібна видавнича система. Завдяки розвитку сучасних інформаційних технологій створено настільну видавничу систему. У широкому розумінні цей термін означає сукупність апаратних і програмних засобів відповідного призначення.</p>
+<p style="word-spacing: 1.1px;">Підготовка публікації &mdash; комплексний процес, який складається з таких етапів: набору, редагування й коригування тексту, підготовки зображень, розробки дизайну та верстки видання. Для здійснення зазначеного процесу необхідна технічна підтримка &mdash; апаратна і програмна.</p>
+<p style="word-spacing: 1.1px;">До мінімальної конфігурації настільної видавничої системи мають належати пристрої введення, збереження та опрацювання, виведення та передавання даних.</p>
+<p style="word-spacing: 1.1px;">Cукупність програм, необхідних для створення видання, можна умовно поділити на групи (мал. 20.1).</p>
+<p style="word-spacing: 1.1px;">Програми опрацювання зображень (зокрема, растрової графіки) використовують для створення та опрацювання ілюстративного матеріалу. Прикладами програм для виконання зазначених функцій є Adobe Photoshop, Corel Photo-Paint, Fractal Design Painter, Micrografx Picture Publisher.</p>
+<p style="word-spacing: 1.1px;">Для розробки самостійних графічних продуктів, таких як фірмові знаки, логотипи, візитівки, оголошення, афіші, запрошення, листівки, застосовуються програми поліграфічного дизайну (зокрема, опрацювання векторної графіки). Наприклад, Adobe Illustrator, Corel DRAW, Macromedia FreeHand, Micrografx Designer.</p>
+<p style="word-spacing: 1.1px;">Програми власне настільної видавничої системи призначені для розробки видань: газет, книг, журналів, брошур, багатосторінкових документів за допомогою комп&rsquo;ютера. Вони містять засоби опрацювання графіки та поліграфічного дизайну. Прикладами таких програм є Adobe PageMaker, QuarkXpress, Corel Ventura, Microsoft Publisher.</p>
+<p style="word-spacing: 1.1px;">20.3. Як підготувати вдалу публікацію?</p>
+<p style="word-spacing: 1.1px;">Процес створення комп&rsquo;ютерної публікації, як і будь-якого іншого інформаційного продукту (наприклад, мультимедійної презентації) починається з формування концепції та структури публікації відповідно до її призначення та особливостей цільової аудиторії.</p>
+<p style="word-spacing: 1.1px;">Відповідно до обраного типу публікації створюється певний шаблон чи добирається з набору стандартних шаблонів (листівка, оголошення, інформаційний бюлетень, каталог, рекламний буклет тощо).</p>
+<p style="word-spacing: 1.1px;">Шаблон публікації визначає її структуру, наявність і розміщення об&rsquo;єктів: текстових написів, зображень, таблиць, діаграм, фігурного тексту тощо, котрі мають параметри, значення яких можна змінювати.</p>
+<p style="word-spacing: 1.1px;">Наступним кроком є добір колірної та шрифтової схеми публікації. Як джерелами можна скористатися стандартними наборами схем, що містяться в бібліотеках програм підготовки публікацій, чи створити власні. Також можна змінити лише деякі параметри наявних схем, наприклад, створити власний стиль заголовків статей.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-261.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Інформаційне наповнення публікації передбачає добір і підготовку текстового та ілюстративного матеріалу для створення публікації відповідно до розробленого шаблону. Процес підготовки інформаційного наповнення буде більш ефективним за умови створення сценарію чи схеми публікації на папері. Наприклад, при створенні сценарію інформаційного бюлетеня потрібно визначити: кількість сторінок публікації, кількість статей та їх назви, кількість зображень та їх опис, потребу в зміні стандартного шаблону (додавання чи видалення деяких об&rsquo;єктів і яких саме).</p>
+<p style="word-spacing: 1.1px;">Після створення комп&rsquo;ютерної публікації потрібно перевірити макет, роздрукувати сигнальний примірник та, за потреби, внести редакційні правки: виправити помилки в тексті, замінити зображення, додати чи видалити деякі об&rsquo;єкти публікації (сторінку, бланк опитування чи замовлення, календар, девіз організації тощо), удосконалити стильове оформлення тощо.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерні публікації розраховані переважно на перегляд однією особою, що впливає насамперед на добір розміру літер, шрифту та кількості тексту на сторінці. Водночас незалежно від типу публікації є загальні критерії вдалої публікації:</p>
+<p style="word-spacing: 1.1px;">назва публікації інтригує, зацікавлює, провокує; тексти написані грамотно, стиль мовлення зрозумілий і легко читається;</p>
+<p style="word-spacing: 1.1px;">назви статей оригінальні, цікаві;</p>
+<p style="word-spacing: 1.1px;">малюнки якісні та привабливі; додані підписи коментують малюнки або містять посилання на їх автора чи джерело отримання; основний матеріал (статті) подано з дотриманням закону про авторське право;</p>
+<p style="word-spacing: 1.1px;">усі елементи публікації поєднано однією ідеєю, що відображена в її назві;</p>
+<p style="word-spacing: 1.1px;">публікація містить елементи, що привертають увагу читачів відповідної вікової групи, наприклад, фото авторів, кросворд, оголошення про конкурс чи акцію, рубрики (Цікавинки, Зроби сам тощо);</p>
+<p style="word-spacing: 1.1px;">вказано анонс, зміст і контакти авторів публікації; стильове оформлення відповідає тематиці публікації та особливостям аудиторії читачів.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">20.4. Як створити публікацію за допомогою програми Microsoft Publisher 2010?</p>
+<p style="word-spacing: 1.1px;">Microsoft Publisher 2010 &mdash; це програма з пакета Microsoft Office, за допомогою якої можна створювати, оформлювати та публікувати документи різного типу. За її допомогою можна готувати інформаційний бюлетень чи буклет для друку, форми для розсилання електронною поштою або публікації в Інтернеті. Завантажити програму можна тими самими способами, що й інші програми з пакета Microsoft Office. Відкрити та зберегти файли, створені в середовищі Mwrosoft PubUsher 2010, можна тими самими способами, як і документи в інших програмах цього пакета.</p>
+<p style="word-spacing: 1.1px;">Програма містить набір шаблонів публікацій, які згруповано за категоріями: Буклети, Бюлетені, Візитні картки, Вітальні листівки, Етикетки тощо (мал.20.2), &mdash; щоб полегшити користувачеві пошук потрібного шаблону.</p>
+<p style="word-spacing: 1.1px;">Створюючи нову публікацію, бажано заздалегідь визначити, якою вона має бути. Тоді відразу після завантаження програми можна обрати шаблон, що відповідає потрібному типу публікації. Після запуску програми відображається меню Файл з обраною вказівкою Створити.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-262.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 20.2</p>
+<p style="word-spacing: 1.1px;">У центральній частині вікна відображається набір категорій шаблонів (мал. 20.2). Після вибору певної категорії, наприклад Бюлетені, будуть відображені доступні шаблони (мал. 20.3), для обраного шаблону в правій частині вікна пропонується обрати колірну схему, схему шрифтів та інші параметри (мал. 20.4). Налаштувавши всі параметри обраного шаблону, натискають кнопку Створити.</p>
+<p style="word-spacing: 1.1px;">Змінити колірні та шрифтові схеми, параметри сторінки й навіть обраний шаблон можна за допомогою інструментів на вкладці Макет сторінки (мал. 20.5).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-263.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-264.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-265.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Усі об&rsquo;єкти публікації, яка розробляється за допомогою програми Microsoft Publisher 2010, включаючи блоки тексту, не залежать один від одного. Будь-який об&rsquo;єкт можна розміщувати точно в потрібному місці, і є можливість управління розміром, формою й зовнішнім виглядом кожного об&rsquo;єкта.</p>
+<p style="word-spacing: 1.1px;">Після створення публікації на основі шаблону слід у відповідних об&rsquo;єктах, які визначають її структуру, замінити текст і малюнки такими, що відповідають задуму публікації. У тексті автозаповнювача шаблону публікації зазначається, скільки орієнтовно слів має бути в кожній статті, щоб вона помістилася в бюлетень відповідно до обраного шаблону. Якщо текст статті підготовлено заздалегідь і збережено в текстовому файлі, можна автоматично замінити текст автозаповнювача. Для цього потрібно виділити текст, що заміщується, у контекстному меню обрати вказівку Змінити текст/Текстовий файл і вказати файл, що містить необхідний текст.</p>
+<p style="word-spacing: 1.1px;">Створена на основі шаблону публікація залежно від типу може містити різну кількість сторінок, наприклад, бюлетень за замовчуванням складається із чотирьох сторінок, а буклет &mdash; із двох.</p>
+<p style="word-spacing: 1.1px;">Переміщуватися до потрібної сторінки публікації зручно за допомогою панелі Навігація по сторінках у лівій частині вікна програми (мал. 20.6, а, б).</p>
+<p style="word-spacing: 1.1px;">За потреби можна додавати нові сторінки до публікації або видаляти наявні. Для цього використовують відповідні вказівки контекстного меню (мал. 20.7), яке з&rsquo;являється, якщо клацнути правою кнопкою миші на одній зі сторінок в області Навігація по сторінках. Якщо слід видалити деякі сторінки з внутрішніх двосторонніх сторінок, з&rsquo;являється вікно Видалення сторінки (мал. 20.8), у якому вказують, які саме сторінки слід видалити.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-266.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-267.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">20.5. Як працювати з текстом у середовищі Microsoft Publisher 2010?</p>
+<p style="word-spacing: 1.1px;">На відміну від роботи в середовищі текстового процесора, у якому текст заповнює весь простір сторінки між полями й перетікає з однієї сторінки</p>
+<p style="word-spacing: 1.1px;">на іншу, у Microsoft Publisher 2010 текст розміщується в контейнерах. Кожний контейнер &mdash; це текстове поле, яке можна додати до публікації за допомогою інструмента Накреслити текстове поле. Цей інструмент можна знайти як на вкладці Основне, так і Вставлення. Користувач формує публікації, розміщуючи текстові поля на сторінках. Можна розмістити текстове поле в потрібному місці сторінки, надати йому потрібного розміру, розбити його на стовпці або зв&rsquo;язати одне текстове поле з іншим, так що текст перетікатиме між контейнерами, навіть якщо вони містяться на різних сторінках.</p>
+<p style="word-spacing: 1.1px;">Текстове поле можна повертати, для цього після його виділення достатньо навести вказівник миші на зелений маркер повороту. Коли вказівник миші набуде вигляду кола, слід натиснути кнопку миші й виконати протягування в необхідному напрямку.</p>
+<p style="word-spacing: 1.1px;">Змінювати параметри форматування тексту в контейнері можна за допомогою інструментів на вкладці Формат в області Знаряддя для текстових полів (мал. 20.9), яка з&rsquo;являється після виділення текстового поля.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-268.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розміри контейнера можуть бути такими, що введений текст із обраними параметрами форматування повністю не вміщується всередині текстового поля. У цьому разі в правій нижній частині виділеного текстового поля відображається позначка Текст в області переповнення</p>
+<p style="word-spacing: 1.1px;">Текст</p>
+<p style="word-spacing: 1.1px;">при цьому не зникає, а розташовується в так званій &laquo;області переповнення&raquo;. Це означає, що деяка частина тексту прихована. У цьому разі потрібно або збільшити розміри текстового поля, або зменшити розмір шрифту, або перенести частину тексту в інше текстове поле.</p>
+<p style="word-spacing: 1.1px;">При зв&rsquo;язуванні текстових полів текст, що не вміщується в одному полі, може &laquo;перетікати&raquo; в інше. Ланцюжок зв&rsquo;язаних текстових полів становить текст однієї статті. Зв&rsquo;язати текстові поля можна різними способами:</p>
+<p style="word-spacing: 1.1px;">&bull; клацнути на позначці Текст в області переповнення</p>
+<p style="word-spacing: 1.1px;">У виділеному текстовому полі та обрати текстове поле, у якому слід продовжити відображення тексту;</p>
+<p style="word-spacing: 1.1px;">виділити перше текстове поле, обрати інструмент</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-269.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">у групі</p>
+<p style="word-spacing: 1.1px;">Зв&rsquo;язування на вкладці Формат в області Знаряддя для текстових полів та обрати текстове поле, в якому слід продовжити відображення тексту.</p>
+<p style="word-spacing: 1.1px;">У текстовому полі, у якому продовжується текст після зв&rsquo;язування, з&rsquo;являється позначка</p>
+<p style="word-spacing: 1.1px;">що вказує на текстове поле, де розміщується</p>
+<p style="word-spacing: 1.1px;">попередня частина статті.</p>
+<p style="word-spacing: 1.1px;">Можна розірвати зв&rsquo;язок між зв&rsquo;язаними полями, для цього використовують інструмент Розрив у групі Зв&rsquo;язування на вкладці Формат.</p>
+<p style="word-spacing: 1.1px;">Вправа 1. Додавання нового текстового поля до публікації'.</p>
+<p style="word-spacing: 1.1px;">Завдання. Додайте до бюлетеня Математичні ілюзії.риЬ новий текстовий</p>
+<p style="word-spacing: 1.1px;">напис і налаштуйте зв&rsquo;язування написів і перетікання тексту.</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте публікацію Математичні ілюзії.риЬ з папки Комп&rsquo;ютерні публікації та перегляньте вміст цього бюлетеня.</p>
+<p style="word-spacing: 1.1px;">2. Оберіть першу сторінку публікації та налаштуйте зручний для роботи масштаб відображення.</p>
+<p style="word-spacing: 1.1px;">3. Виділіть перше текстове поле статті із заголовком Моє знайомство з творчістю Вазарелі. Зверніть увагу на значок Текст в області переповнення в текстовому полі внизу праворуч (мал. 20.10).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-270.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 20.10</p>
+<p style="word-spacing: 1.1px;">4. На вкладці Вставлення оберіть інструмент Накреслити текстове поле. Накресліть у межах незаповненої області під заголовком Моє знайомство з творчістю Вазарелі нове текстове поле.</p>
+<p style="word-spacing: 1.1px;">5. Виділіть текст першого текстового поля статті (мал. 20.10) та натисніть</p>
+<p style="word-spacing: 1.1px;">кнопку</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-271.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">на панелі інструментів Зв&rsquo;язувати текстові поля. Оберіть</p>
+<p style="word-spacing: 1.1px;">щойно додане текстове поле. Текст статті, що не вмістився до першого текстового поля, відобразиться у другому (мал. 20.11).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-272.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 20.11</p>
+<p style="word-spacing: 1.1px;">6. За потреби змініть параметри форматування тексту так, щоб весь текст статті розмістився у двох текстових полях.</p>
+<p style="word-spacing: 1.1px;">7. Збережіть результати роботи у файлі з тим самим іменем у папці Публікації своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">Вправа 2. Створення інформаційного бюлетеня.</p>
+<p style="word-spacing: 1.1px;">Завдання. Створіть інформаційний бюлетень Блогосфера.риЬ із двох</p>
+<p style="word-spacing: 1.1px;">сторінок і двох основних статей: Типоблогія та Секрет цікавості блогів.</p>
+<p style="word-spacing: 1.1px;">1. Завантажте програму Microsoft Publisher 2010 одним з відомих вам способів.</p>
+<p style="word-spacing: 1.1px;">2. Серед наявних шаблонів оберіть категорію Бюлетені та шаблон Тиснення (мал. 20.3).</p>
+<p style="word-spacing: 1.1px;">3. Щоб отримати бюлетень із двох сторінок, видаліть третю та четверту сторінки. Для цього на панелі Навігація по сторінках послідовно в контекстному меню четвертої, а потім третьої сторінки оберіть вказівку Видалити (мал. 20.7). Підтвердіть видалення четвертої сторінки, для видалення третьої у вікні Видалення сторінок оберіть Лише сторінку справа (мал. 20.8).</p>
+<p style="word-spacing: 1.1px;">4. Визначте, яку колірну схему було застосовано до обраного шаблону. Для цього відкрийте вкладку Макет сторінки. Проаналізуйте, як вибір іншої колірної схеми впливає на вигляд бюлетеня. Оберіть на вкладці Макет сторінки в області Схеми колірну схему, яка вам більше до вподоби.</p>
+<p style="word-spacing: 1.1px;">5. Проаналізуйте, як вибір іншої шрифтової схеми впливає на оформлення бюлетеня. На вкладці Макет сторінки в області Схеми оберіть інструмент Шрифт і застосуйте до публікації іншу шрифтову схему на свій вибір.</p>
+<p style="word-spacing: 1.1px;">6. Збережіть внесені зміни у файлі Блогосфера.pub у папці Публікації своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">7. Ознайомтеся зі змістом статей Типоблогія за адресою http://blogosphere.com.ua/2008/02/07/typoblohija та Секрет цікавості блогів http://blogosphere.com.ua/2011/09/13/ interesting-blogs-secrets/. За відсутності доступу до Інтер-нету потрібні матеріали можна знайти у файлі Блогосфера. doc у папці Комп&rsquo;ютерні публікації.</p>
+<p style="word-spacing: 1.1px;">8. Проаналізуйте, як можна структурувати матеріали відповідно до шаблону бюлетеня (мал. 20.12), які підзаголовки виділити в кожній статті та як розподілити текст у контейнерах на сторінках.</p>
+<p style="word-spacing: 1.1px;">9. Введіть такі заголовки публікації та статей: заголовок бюлетеня &mdash; Блогосфера; заголовок першої статті &mdash; Типоблогія; заголовок внутрішньої статті &mdash; Секрет цікавості блогів. Для цього клацніть усередині відповідного текстового поля та введіть потрібний текст, змінивши вміст автозаповнювача.</p>
+<p style="word-spacing: 1.1px;">10. Замініть текст автозаповнювача статті Типоблогія відповідним текстом. Для цього скопіюйте текст статті з веб-сторінки до буфера обміну, клацніть на автозаповнювачі та вставте текст із буфера обміну.</p>
+<p style="word-spacing: 1.1px;">Пересвідчіться, що при копіюванні тексту з відповідної статті він не поміщається в повному обсязі в текстових контейнерах статті Типоблогія. У цьому разі можна здійснити зв&rsquo;язування текстових полів та організувати перетікання тексту в інші текстові поля або відредагувати текстовий матеріал: виділити в тексті головне, спростити речення, виділити підзаголовок і записати його в області Заголовок другої статті та розмістити частину статті в нижній частині сторінки або на наступній сторінці тощо.</p>
+<p style="word-spacing: 1.1px;">11. Аналогічно розмістіть статтю Секрет цікавості блогів.</p>
+<p style="word-spacing: 1.1px;">12. Перегляньте публікацію та збережіть внесені зміни.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-273.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 20.12</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">20.6. Які особливості роботи із зображеннями в публікаціях?</p>
+<p style="word-spacing: 1.1px;">Як і в інших програмах пакета Microsoft Office 2010, до публікацій можна додавати зображення з файла, картинки з колекції Microsoft або фігури за допомогою відповідних інструментів з групи Зображення на вкладці Вставлення (мал. 20. 13).</p>
+<p style="word-spacing: 1.1px;">Аналогічно до того, як текст у публікаціях розміщується в текстових полях, кожний малюнок розташовується в контейнері, який називають рамкою.</p>
+<p style="word-spacing: 1.1px;">Використовують різні способи додавання нового зображення в публікацію:</p>
+<p style="word-spacing: 1.1px;">Заміна малюнка-заповнювача в наявній рамці за допомогою вказівки з його контекстного меню Змінити зображення/Змінити рисунок (мал. 20.14).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-274.jpg" alt="" /><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-275.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Щоб замінити малю-нок-заповнювач у групі об&rsquo;єктів, що містить текстовий підпис малюнка, спочатку виділяють групу, після чого викликають контекстне меню, клацнувши правою кнопкою миші на малюнку.</p>
+<p style="word-spacing: 1.1px;">Додавання нового малюнка з файла чи колекції картинок Microsoft за допомогою відповідних інструментів вкладки Вставлення. У цьому разі малюнок буде розміщений по центру сторінки й після вставлення для нього слід налаштувати розміри та положення на сторінці.</p>
+<p style="word-spacing: 1.1px;">Малювання зображення на сторінці публікації за допомогою фігур.</p>
+<p style="word-spacing: 1.1px;">У готових шаблонах публікацій зображення та текстовий підпис до нього можуть бути згруповані в один об&rsquo;єкт. Як і в середовищі текстового процесора, згрупувати або розгрупувати виділені об&rsquo;єкти можна за допомогою відповідних вказівок контекстного меню (мал. 20.15).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-276.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Після того, як малюнок розміщено на сторінці публікації, можна змінювати його місце розташування, а також параметри форматування за допомогою інструментів вкладки Формат в області Знаряддя для зображень (мал. 20.16), яка з&rsquo;являється, якщо двічі клацнути на малюнку.</p>
+<p style="word-spacing: 1.1px;">Як і в середовищі текстового процесора, управляючи обтіканням тексту навколо малюнка, можна встановлювати різні варіанти взаємного розташування малюнків і тексту.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-277.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Крім малюнків, до публікацій можна додавати й інші графічні об&rsquo;єкти, зокрема спеціальні об&rsquo;єкти з бібліотеки стандартних блоків Microsoft Publisher, які обирають на вкладці Вставлення в групі Стандартні блоки (мал. 20.17).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-278.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">За допомогою кнопки в правому нижньому куті цієї групи можна відкрити вікно Бібліотека стандартних блоків (мал. 20.18), у якому переглядають перелік усіх доступних об&rsquo;єктів і обирають потрібний. Подібні об&rsquo;єкти (календарі, заголовки, емблеми тощо) можна побачити у друкованих виданнях, наприклад газетах, оголошеннях, грамотах, які ви вже бачили в повсякденному житті.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-279.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 20.18</p>
+<p style="word-spacing: 1.1px;">Якщо розміри малюнка, яким пропонується замінити малюнок-заповнювач, відрізняються від розмірів вихідного малюнка, то між зображенням і його підписом може з&rsquo;явитися значний за розмірами проміжок. Щоб змінити розташування малюнка та підпису, спочатку розгрупуйте ці об&rsquo;єкти, розташуйте їх відповідно до нових розмірів і згрупуйте.</p>
+<p style="word-spacing: 1.1px;">Вправа 3. Заміна малюнків зі стандартного шаблону.</p>
+<p style="word-spacing: 1.1px;">Завдання. На першій сторінці інформаційного бюлетеня Блогосфера.риЬ</p>
+<p style="word-spacing: 1.1px;">замініть малюнок на зображення, що міститься у файлі Блоги.jpg.</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте файл Блогосфера.риЬ з папки Публікації своєї структури папок. На екрані відобразиться перша сторінка публікації.</p>
+<p style="word-spacing: 1.1px;">2. Виділіть малюнок-заповнювач на сторінці. Зверніть увагу на те, що малюнок згруповано з текстовим підписом. Після виділення групи клацніть правою клавішею миші на малюнку та оберіть в контекстному меню вказівку Змінити зображення/Змінити рисунок (мал. 20.14).</p>
+<p style="word-spacing: 1.1px;">3. Виберіть джерело нового зображення &mdash; зазначте файл Блоги.jpg з папки Комп&rsquo;ютерні публікації.</p>
+<p style="word-spacing: 1.1px;">4. Змініть текст автозаповнювача, що містить підпис під малюнком, на означення блогу Для цього введіть текст: Блог (англ. blog, від &laquo;web log&raquo;) &mdash; мережевий журнал або щоденник подій.</p>
+<p style="word-spacing: 1.1px;">5. Збережіть внесені до публікації зміни.</p>
+<p style="word-spacing: 1.1px;">У разі масового тиражування спочатку друкують декілька сигнальних примірників для перевірки та виправлення можливих помилок, узгодження з експертами макета та стильового оформлення публікації тощо.</p>
+<p style="word-spacing: 1.1px;">20.7. Як роздрукувати публікацію?</p>
+<p style="word-spacing: 1.1px;">Один з варіантів випуску публікації &mdash; надрукувати її на принтері. Після створення та форматування публікації її слід підготувати до друку, для цього необхідно перевірити параметри сторінки та за потреби змінити їх значення. Це можна зробити за допомогою інструментів групи Параметри сторінки на вкладці Макет сторінки аналогічно до налаштування параметрів сторінки в середовищі текстового процесора.</p>
+<p style="word-spacing: 1.1px;">Після завершення налагодження параметрів публікації доцільно перевірити її макет, оскільки зміна параметрів сторінки може привести до зміни параметрів деяких об&rsquo;єктів. Для цього серед інструментів, які доступні в меню Файл/Властивості, слід обрати Перевірити макет (мал. 20.19)</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-280.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 20.19</p>
+<p style="word-spacing: 1.1px;">За результатами перевірки в правій частині вікна буде відображено область завдань Перевірка макета. У цій області подається список об&rsquo;єктів, які мають деякі &laquo;невідповідності&raquo;: наявність області переповнення тексту в текстовому полі, непропорційна зміна розмірів зображень тощо (мал. 20.20). Користувачеві залишається переглянути поданий список та внести виправлення до налаштувань усіх чи окремих об&rsquo;єктів публікації.</p>
+<p style="word-spacing: 1.1px;">Друк публікації здійснюється аналогічно до друку, наприклад, текстового документа, створеного засобами текстового процесора.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-281.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 4. Друк інформаційного буклета.</p>
+<p style="word-spacing: 1.1px;">завдання. Роздрукуйте на принтері інформаційний буклет Проект Укрaїнa.pub.</p>
+<p style="word-spacing: 1.1px;">1. Відкрийте файл Проект Україна.pub з папки Комп&rsquo;ютерні публікації.</p>
+<p style="word-spacing: 1.1px;">2. У меню Файл/Властивості оберіть інструмент Перевірити макет.</p>
+<p style="word-spacing: 1.1px;">3. В області завдань Перевірка макета перегляньте список недоліків публікації. Внесіть зміни, щоб усунути важливі недоліки, зокрема для текстових полів, що містять текст в області переповнення.</p>
+<p style="word-spacing: 1.1px;">4. Виконайте вказівку меню Файл/Друк. У лічильнику Кількість копій завдання друку вкажіть кількість копій, які потрібно надрукувати, та натисніть кнопку Друк (мал. 20.21).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-282.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">1. У чому полягає відмінність між друкованою та електронною публікацією?</p>
+<p style="word-spacing: 1.1px;">2. Які засоби необхідні для підготовки друкованого видання? Що належить до мінімальної конфігурації настільної видавничої системи?</p>
+<p style="word-spacing: 1.1px;">3. Які є програмні засоби створення комп&rsquo;ютерних публікацій?</p>
+<p style="word-spacing: 1.1px;">4. З яких об&rsquo;єктів складається публікація?</p>
+<p style="word-spacing: 1.1px;">5. Які операції над об&rsquo;єктами визначають зовнішній вигляд публікації?</p>
+<p style="word-spacing: 1.1px;">6. Які особливості має робота з текстом у середовищі Microsoft Publisher 2010?</p>
+<p style="word-spacing: 1.1px;">7. Як можна зв&rsquo;язати текстові поля в публікації?</p>
+<p style="word-spacing: 1.1px;">8. Які графічні об&rsquo;єкти може містити комп&rsquo;ютерна публікація, створена засобами програми Microsoft Publisher 2010?</p>
+<p style="word-spacing: 1.1px;">9. Які особливості має робота з графічними об&rsquo;єктами під час створення публікації?</p>
+<p style="word-spacing: 1.1px;">10. Як замінити малюнки-заповнювачі в публікації, створеній на основі шаблону, власними малюнками?</p>
+<p style="word-spacing: 1.1px;">11. Для чого використовують об&rsquo;єкти Бібліотеки стандартних блоків?</p>
+<p style="word-spacing: 1.1px;">12. Що спільного мають текстові об&rsquo;єкти й малюнки в публікаціях, створених засобами Microsoft Publisher 2010?</p>
+<p style="word-spacing: 1.1px;">13. Як створити бюлетень засобами програми Mcrosoft Publisher 2010? Чи є відмінність у створенні інформаційного буклета та бюлетеня?</p>
+<p style="word-spacing: 1.1px;">14. Як надрукувати публікацію? Що слід врахувати перед друкуванням?</p>
+<p style="word-spacing: 1.1px;">1. Розгляньте зображення публікацій, які збережені в папці Комп&rsquo;ютерні публікації. Обговоріть, чи можна за їхнім виглядом визначити, до якого виду друкованого видання вони належать. Аргументуйте свою думку.</p>
+<p style="word-spacing: 1.1px;">2. Чи подібними є процеси вставляння малюнків у текстові документи, комп&rsquo;ютерні публікації та презентації? Обговоріть у парах.</p>
+<p style="word-spacing: 1.1px;">3. Знайдіть спільне та відмінності при опрацюванні графічних зображень засобами програм Microsoft Publisher, Mcrosoft Word та Microsoft PowerPoint. Обговоріть у парах. Побудуйте діаграму Венна.</p>
+<p style="word-spacing: 1.1px;">4. Які об&rsquo;єкти можна зв&rsquo;язувати в комп&rsquo;ютерних публікаціях і як це зробити? Чи можна засобами програми Mcrosoft Publisher створювати складені зображення, які складаються з кількох фігур і згруповані в один об&rsquo;єкт, так само, як у текстових документах? Обговоріть у парах.</p>
+<p style="word-spacing: 1.1px;">5. Що спільного й чим різняться етапи підготовки текстового документа, публікації та слайдової презентації? Які є особливості? Обговоріть у парах. Складіть порівняльну таблицю.</p>
+<p style="word-spacing: 1.1px;">6. Чим текст у публікації, створеній засобами програми Microsoft Publisher 2010, відрізняється від тексту документа, створеного засобами текстового процесора? Знайдіть спільне та відмінне. За результатами побудуйте діаграму Венна.</p>
+<p style="word-spacing: 1.1px;">7. Публікації яких типів ви створювали під час вивчення шкільних предметів чи проведення позашкільних заходів? Якою була їх структура? Обговоріть у парах. Заповніть таблицю.</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td>
+<p>№</p>
+</td>
+<td>
+<p>Тип публікації</p>
+</td>
+<td>
+<p>Структура публікації</p>
+</td>
+<td>
+<p>Назва предмета чи заходу</p>
+</td>
+<td>
+<p>Приклад завдання</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">8. Люди яких професій найбільш часто використовують настільні видавничі системи? Назвіть кожний по п&rsquo;ять професій, обговоріть у парі та складіть спільний список.</p>
+<p style="word-spacing: 1.1px;">1. До інформаційного бюлетеня Нобелівські лауреати.риЬ, що зберігається в папці Комп&rsquo;ютерні публікації, додайте потрібний текст із однойменного текстового документа та налаштуйте параметри його перетікання у зв&rsquo;язаних текстових полях. Змініть колірну та шрифтову схеми публікації на власний розсуд.</p>
+<p style="word-spacing: 1.1px;">2. Створіть програмку балетної вистави Спляча красуня на основі шаблону бюлетеня за власним вибором. Замініть автозаповнювачі в публікації даними з файла Спляча красуня.doc, що зберігається в папці Комп&rsquo;ютерні публікації. Передбачте, що бюлетень має складатися з двох сторінок, додайте необхідні об&rsquo;єкти. Виконайте перевірку макета.</p>
+<p style="word-spacing: 1.1px;">3. Створіть інформаційний буклет Смачно і корисно, де розмістіть поради щодо організації здорового харчування. Матеріали для змістового наповнення буклета можна знайти в Інтернеті чи переглянути текстові документи, що зберігаються в папці Комп&rsquo;ютерні публікації\Харчування.</p>
+<p style="word-spacing: 1.1px;">4. Ваші знайомі планують в травні провести у вашому місті фестиваль робототехніки. Розробіть інформаційний буклет до такого заходу з іменем Фестиваль робототехніки. Структуру буклету та матеріали до нього доберіть самостійно.</p>
+<p style="word-spacing: 1.1px;">5. Складіть критерії оцінювання публікації. Розроблені критерії подайте у вигляді таблиці.</p>
+<p style="word-spacing: 1.1px;">Перегляньте публікації, що зберігаються в папці Комп&rsquo;ютерні публікації, оберіть дві найбільш вдалі та аргументуйте ваш вибір. Заповніть створену вами таблицю</p>
+<p style="word-spacing: 1.1px;">Критерії оцінювання комп &rsquo;ютерних публікацій.</p>
+<p style="word-spacing: 1.1px;">Дослідіть можливі формати збереження комп&rsquo;ютерних публікацій, створених засобами Microsoft Publisher 2010. За результатами складіть таблицю. Чи можна опублікувати комп&rsquo;ютерну публікацію в Інтернеті? Як це зробити?</p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Обираємо майбутню професію&raquo;</p>
+<p style="word-spacing: 1.1px;">1. Створіть інформаційний бюлетень з відомостями про виконання завдань проекту.</p>
+<p style="word-spacing: 1.1px;">2. Створіть буклет для анонсування заходу &laquo;Ярмарок професій&raquo;.</p>
+<p style="word-spacing: 1.1px;">Проект &laquo;Е-урядування&raquo;</p>
+<p style="word-spacing: 1.1px;">Створіть інформаційний бюлетень про е-послуги, які можна запровадити в школі. Знайдіть в Інтернеті матеріали про особливості е-голосування в країнах Європи. На їх основі підготуйте статтю, яку внесіть до бюлетеня.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-283.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">СТВОРЕННЯ ПРОСТОЇ КОМП&rsquo;ЮТЕРНОЇ ПУБЛІКАЦІЇ НА ОСНОВІ ШАБЛОНУ</p>
+<p style="word-spacing: 1.1px;">Як створити публікацію на основі шаблону; у чому полягають особливості роботи з графічними й текстовими об&rsquo;єктами під час створення комп&rsquo;ютерних публікацій;</p>
+<p style="word-spacing: 1.1px;">як створювати зв&rsquo;язки між об&rsquo;єктами публікації.</p>
+<p style="word-spacing: 1.1px;">У власній структурі папок створіть папку Практична робота 8.</p>
+<p style="word-spacing: 1.1px;">Під час виконання практичних завдань пам&rsquo;ятайте про правила безпеки життєдіяльності при роботі з комп&rsquo;ютером!</p>
+<p style="word-spacing: 1.1px;">Завдання 1. Зміна параметрів форматування публікації(4 бали) Визначте вид публікації Довідники.риЬ з папки Комп&rsquo;ютерні публікації, які об&rsquo;єкти містить ця публікація, яку колірну та шрифтову схеми до неї застосовано. Оберіть іншу колірну та шрифтову схеми на власний розсуд. Змініть розміри чи положення об&rsquo;єктів так, щоб вони не перекривали один одного і в текстових полях не було тексту в області переповнення. Збережіть результати у файлі з тим самим іменем в папці Практична робота 8 своєї структури папок. завдання 2. Буклет &laquo;Олександрія&raquo; (8 балів)</p>
+<p style="word-spacing: 1.1px;">На офіційному сайті Дендрологічного парку &laquo;Олександрія&raquo; за адресою http://www.alexandria-park.com.ua (або у файлах з папки Комп&rsquo;ютерні публі-кації\Олександрія) знайдіть відомості, що містять коротку довідку про парк, фотоальбом, години роботи, умови замовлення екскурсій та проживання неподалік від парку. На основі одного з наявних шаблонів створіть буклет, колірну та шрифтову схеми оберіть на власний розсуд. Підготуйте потрібні матеріали та створіть буклет вказаної структури (мал. 22.1). Збережіть публікацію з іменем Олександрія.риЬ в папці Практична робота 8 своєї структури папок.</p>
+<table style="word-spacing: 1.1px;" border="1">
+<tbody>
+<tr>
+<td colspan="3">
+<p>1 сторінка</p>
+</td>
+<td colspan="3">
+<p>2 сторінка</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Короткі</p>
+<p>відомості</p>
+</td>
+<td>
+<p>Фото парку, контакти</p>
+</td>
+<td>
+<p>Візитівка</p>
+<p>парку,</p>
+<p>автор буклета</p>
+</td>
+<td>
+<p>Екскурсійна програма (фото та підписи до них)</p>
+</td>
+<td>
+<p>Умови</p>
+<p>замовлення,години роботи парку</p>
+</td>
+<td>
+<p>Умови</p>
+<p>проживання</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">завдання 3. інформаційний бюлетень &laquo;зроби сам!&raquo; (12 балів) Створіть на основі одного з наявних шаблонів бюлетень Зроби сам!, що складається з двох сторінок. Розмістіть у публікації ідеї, приклади та поради щодо створення подарунків власноруч. Шаблон бюлетеня, колірну та шрифтову схеми оберіть на власний розсуд. Для підготовки публікації використайте матеріали блогу http://www.zrobysama.com.ua з дотриманням закону про авторське право.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/informatika-9-morze/informatika-9-morze-284.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">ПРОЕКТУВАННЯ ТА СТВОРЕННЯ КОМП&rsquo;ЮТЕРНОЇ ПУБЛІКАЦІЇ ДЛЯ ПОДАННЯ РЕЗУЛЬТАТІВ САМОСТІЙНОГО ДОСЛІДЖЕННЯ</p>
+<p style="word-spacing: 1.1px;">У чому полягає процес проектування публікації; які є види публікацій;</p>
+<p style="word-spacing: 1.1px;">алгоритм створення комп&rsquo;ютерної публікації.</p>
+<p style="word-spacing: 1.1px;">У власній структурі папок створіть папку Практична робота 9.</p>
+<p style="word-spacing: 1.1px;">Під час виконання практичних завдань пам&rsquo;ятайте про правила безпеки життєдіяльності при роботі з комп&rsquo;ютером!</p>
+<p style="word-spacing: 1.1px;">Завдання 1. інтернет-переклад (12 балів)</p>
+<p style="word-spacing: 1.1px;">Дослідіть особливості використання Goog/e-перекладача для здійснення автоматичного перекладу текстів і веб-сторінок та можливостей браузера Goog/e Chrome щодо перекладу веб-сторінок. Сплануйте сценарій майбутньої публікації, що міститиме поради щодо інтернет-перекладу. Визначте вид публікації, її структуру, кількість сторінок. Скористайтесь наявними шаблонами, оберіть стильове оформлення публікації на власний розсуд і додайте текст і зображення за результатами вашого дослідження. Збережіть публікацію з іменем Інтернет-переклад.риЬ у папці Практична робота 9 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">Завдання 2. Моє захоплення (12 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть електронну публікацію про власне захоплення. Включіть до неї опис того, чим ви захоплюєтесь, історичну довідку про те, як давно люди займаються подібною справою, зображення власних доробок чи предметів захоплення тощо. Вид електронної публікації оберіть самостійно. Результат збережіть з іменем Моє захоплення.риЬ у папці Практична робота 9 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">завдання 3. Майстер своєї справи (12 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть електронну публікацію про особу, яка проживає або проживала в районі чи області, до якої належить ваш населений пункт. Дослідіть за матеріалами місцевої преси, якими успіхами славиться ваш земляк (землячка) та в якій сфері він (вона) працює. Знайдіть відомості в Інтернеті про навчальний заклад, який закінчив (закінчила) та ще якими випускниками славиться заклад. Вид електронної публікації оберіть самостійно. Результат збережіть з іменем Люди діла.риЬ у папці Практична робота 9 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">завдання 4. Цікава наука (12 балів)</p>
+<p style="word-spacing: 1.1px;">Створіть електронну публікацію про досліди, винаходи чи експерименти, які можна відтворити у звичайних умовах без застосування додаткового обладнання. Знайдіть відомості в Інтернеті з описом демонстрації досліду, переліком необхідних засобів для його проведення. Розмістіть текст і відповідні зображення в публікації з дотриманням авторських прав. Доповніть публікацію переліком правил техніки безпеки під час проведення експерименту. Вид електронної публікації оберіть самостійно. Результат збережіть з іменем Наука.риЬ у папці Практична робота 9 своєї структури папок.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2159-pdruchnik-nformatika-9-klas-morze-barna-vember-nova-programa-2017.html">Інформатика 9 клас Морзе</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="733-kompyutern-publkacyi.html">Комп'ютерні публікації</a></li><li><a href="682-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="681-vikonannya-navchalnih-proektv.html">Виконання навчальних проектів</a></li><li><a href="657-robota-z-kompyuternimi-publkacyami.html">Робота з комп'ютерними публікаціями</a></li><li><a href="655-ponyattya-kompyuternoyi-publkacyi.html">Поняття комп'ютерної публікації</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

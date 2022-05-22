@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Інерціальні системи відліку. Закони Ньютона &raquo; mozok.click</title>
+<meta name="description" content="Рух і спокій відносні. Якщо відносно однієї системи тіло перебуває у стані спокою, то щодо інших систем відліку тіло може рухатися. Розглянемо, наприклад, шайбу, що лежить на льодовому майда" />
+<meta name="keywords" content="Землі, відносно, льоду, Шайба, майданчику, льодовому, лежить, знаходиться, спокої, вплив, впливом, шайбу, компенсується, Розглянемо, перебуває, стані, системи, однієї, відносні, спокою" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2133-nercaln-sistemi-vdlku-zakoni-nyutona.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Інерціальні системи відліку. Закони Ньютона</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2133").Button("#infc2133"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2133" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2133" class="infcont">
+			<ul>
+				<li><i>Переглядів: 3633</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 13-01-2018, 15:01</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2133'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2133-nercaln-sistemi-vdlku-zakoni-nyutona.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2133'); return false;">1</a></li>
+		<li><a href="2133-nercaln-sistemi-vdlku-zakoni-nyutona.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2133'); return false;">2</a></li>
+		<li><a href="2133-nercaln-sistemi-vdlku-zakoni-nyutona.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2133'); return false;">3</a></li>
+		<li><a href="2133-nercaln-sistemi-vdlku-zakoni-nyutona.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2133'); return false;">4</a></li>
+		<li><a href="2133-nercaln-sistemi-vdlku-zakoni-nyutona.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2133'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/01/13/index.html" ><i>13-01-2018, 15:01</i></a></span>
+	<h3 class="btl"><span id="news-title">Інерціальні системи відліку. Закони Ньютона</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2133" style="display:inline;"><p>Рух і спокій відносні. Якщо відносно однієї системи тіло перебуває у стані спокою, то щодо інших систем відліку тіло може рухатися. Розглянемо, наприклад, шайбу, що лежить на льодовому майданчику. Шайба знаходиться у спокої відносно льоду (Землі), тому що вплив на неї Землі компенсується впливом льоду. Але для хокеїста, що рухається повз шайбу прямолінійно і рівномірно, вона також рухається прямолінійно і рівномірно у протилежний бік. Таким чином, одне і те саме тіло (шайба) відносно однієї системи відліку (пов&rsquo;язаної із Землею)</p>
+<p style="word-spacing: 1.1px;">перебуває у стані спокою, відносно іншої (пов&rsquo;язаної з хокеїстом) рухається прямолінійно і рівномірно. Але хокеїст ударив по шайбі ключкою (мал. 276).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-313.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У результаті дуже нетривалої дії ключки шайба починає рухатися, набуваючи деякої швидкості. Цікаво, що після удару, коли дія ключки на шайбу вже припинилася, шайба продовжує свій рух. Тим часом після удару вплив на шайбу інших тіл залишився таким самим, як і до удару: як і раніше, дія Землі компенсується дією льоду, а ключка, як і до удару, ніякого впливу на рух шайби не робить. Шайба після удару рухається по прямій лінії</p>
+<p style="word-spacing: 1.1px;">з майже сталою швидкістю, якої вона набула в момент удару. Але шайба врешті-решт зупиниться, хоча з досліду відомо: що більш гладенькими будуть лід і шайба, то тривалішим буде рух шайби. Тому можна здогадатися, що якщо б зовсім усунути дію льоду на рухому шайбу (цю дію називають тертям), то шайба продовжувала б рухатися відносно Землі зі сталою швидкістю безупинно.</p>
+<p style="word-spacing: 1.1px;">Проте якщо б поряд із цією шайбою, що рухається рівномірно, рухався хокеїст з такою самою швидкістю, то відносно нього (системи відліку, пов&rsquo;язаної з ним) шайба знаходилася б у спокої. І в цьому випадку одне й те саме тіло в одній системі відліку (Земля) рухається прямолінійно і рівномірно, відносно іншої (хокеїст) - знаходиться у спокої.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Цей приклад і багато інших, подібних до нього, є проявом одного з основних законів механіки, який називають першим законом руху, або першим законом Ньютона.</p>
+<p style="word-spacing: 1.1px;">Існують такі інерціальні системи відліку, відносно яких тіло, що рухається поступально, зберігає свою швидкість сталою, якщо на нього не діють інші тіла (або дії інших тіл компенсуються).</p>
+<p style="word-spacing: 1.1px;">Саме явище збереження швидкості руху тіла (зокрема, стану спокою) при компенсації зовнішніх дій на тіло називають інерцією. Тому перший закон Ньютона часто називають законом інерції. Повсякденний вираз &laquo;рух за інерцією&raquo; й означає рух тіла зі сталою швидкістю (тобто прямолінійно і рівномірно), коли дії інших тіл компенсуються.</p>
+<p style="word-spacing: 1.1px;">У першому законі Ньютона йдеться про рівномірний прямолінійний рух. Рух ми можемо розглядати тільки в якій-небудь системі відліку. Виникають запитання: у якій же системі відліку виконується перший закон? Чи можна вважати, що він виконується в будь-якій системі відліку? Навіть наближений аналіз механічних явищ показує, що закон інерції виконується далеко не в усіх системах відліку.</p>
+<p style="word-spacing: 1.1px;">Перший закон Ньютона дає змогу визначити, чи є система відліку інер-ціальною. Для цього потрібно вибрати яке-небудь тіло, для якого сили, що діють, зрівноважені, і простежити за тим, як воно рухається відносно системи відліку, що цікавить нас. Якщо рух рівномірний і прямолінійний (в окремому випадку - спокій), то система інерціальна; якщо рух нерівномірний - система неінерціальна.</p>
+<p style="word-spacing: 1.1px;">Виникає запитання: чи існують строго інерціальні системи? Ньютон, формулюючи закон інерції і включаючи його до основних законів динаміки, стверджував тим самим, що такі системи відліку в природі існують. Насправді, якщо у природі має місце закон інерції, то повинна існувати і така система відліку, де він виконується абсолютно строго, тобто інерціальна система відліку. А якщо існує хоча б одна така система, то із цього випливає, що їх є незліченна множина, тому що всяка система відліку, що рухається рівномірно і прямолінійно відносно інерціальної, буде також інерціальною.</p>
+<p style="word-spacing: 1.1px;">Щоб з&rsquo;ясувати зв&rsquo;язок між силою, що діє на тіло, і прискоренням руху тіла, слід виконати дослід. Для проведення досліду вибираємо тіло, яке діє на всі інші тіла з однаковою силою. Таким тілом може слугувати розтягнута або стиснута пружина, у якій діє сила пружності. Від усіх інших</p>
+<p style="word-spacing: 1.1px;">сил сила пружності відрізняється певною особливістю, вона залежить тільки від того, наскільки розтягнута або стиснута пружина, але не залежить від того, до якого тіла пружина прикріплена. Тому на будь-яке тіло, прикріплене до пружини, розтягнутої на певну довжину, діє одна і та сама сила - сила пружності пружини.</p>
+<p style="word-spacing: 1.1px;">Оскільки сила одна й та сама, то якась величина повинна бути однакова для всіх тіл, що прискорюються цією силою. На досліді і з&rsquo;ясуємо, що це за величина.</p>
+<p style="word-spacing: 1.1px;">Дослід. До візка, маса якого відома (т), прикріпимо один кінець пружини, а другий її кінець прикріпимо до нитки з вантажем, перекинутої через блок (мал. 277, а). Унаслідок притягання до Землі вантаж рухається вниз і розтягує пружину. Вона, розтягнута на певну довжину АІ, діє силою пружності на візок і надає йому прискорення. Це прискорення можна виміряти, наприклад, воно дорівнює а.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-314.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Повторимо дослід з двома візками однакової маси (їхня маса - 2т), з&rsquo;єднаними разом (мал. 277, б). Нам потрібно виміряти прискорення візків при тому самому видовженні пружини, оскільки сила повинна бути незмінною. Щоб видовження пружини було таким самим, як на початку досліду, потрібно підвісити до нитки інший вантаж. Дослід показує, що при</p>
+<p style="word-spacing: 1.1px;">тому самому видовженні АІ пружини прискорення двох візків дорівнює</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-315.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо з&rsquo;єднати три, чотири і більше візків, то при тому самому видовженні АІ пружини прискорення тіл виявиться у три, чотири і більше разів меншим, ніж одного візка. Виявляється, що зі збільшенням маси візка в певне число разів прискорення, якого набуває тіло під час дії тієї самої сили, зменшується у стільки само разів. А це означає, що однаковим виявляється добуток маси візка і його прискорення.</p>
+<p style="word-spacing: 1.1px;">Це дало Ньютону підставу стверджувати, що сила визначається добутком маси тіла і його прискорення, та сформулювати найважливіший закон механіки, який назвали другим законом Ньютона.</p>
+<p style="word-spacing: 1.1px;">Сила, що діє на тіло, визначається добутком маси тіла і його прискорення, наданого цією силою.</p>
+<p style="word-spacing: 1.1px;">Формулу, що виражає другий закон Ньютона, слід записувати в такому вигляді:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-316.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Із цієї формули можна отримати вираз для приско</p>
+<p style="word-spacing: 1.1px;">рення руху тіла</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-317.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">з якого видно, що прискорення тіла завжди напрямлене так само, як і сила, що спричиняє його.</p>
+<p style="word-spacing: 1.1px;">Прискорення руху тіла прямо пропорційне силі, прикладеній до нього, та обернено пропорційне до маси тіла і напрямлене в бік дії сили.</p>
+<p style="word-spacing: 1.1px;">Слід зауважити, що другий закон Ньютона, як і перший, виконується лише для матеріальних точок. У разі дії сил на протяжне тіло другий закон описує прискорення не всього тіла, а тільки його центра мас. Проте під час поступального руху твердого тіла всі його точки мають однакові прискорення, тому другий закон виконується для будь-якої його точки.</p>
+<p style="word-spacing: 1.1px;">Кожен із законів Ньютона поступово розкриває зміст одного з найважливіших понять механіки - поняття сили. Якщо другий закон стверджує, що будь-яка сила спричиняє прискорення, то третій закон говорить, що всі сили мають характер взаємодій.</p>
+<p style="word-spacing: 1.1px;">Сили, з якими які-небудь два тіла діють одне на одне, завжди рівні за значенням, але протилежні за напрямком.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-318.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Нехай, наприклад, на столі лежить тіло (мал. 278). З якою силою воно діє на стіл</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-319.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">з такою самою</p>
+<p style="word-spacing: 1.1px;">за значенням силою стіл діє на тіло N. Математично це</p>
+<p style="word-spacing: 1.1px;">записують так:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-320.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Знак &laquo;-&raquo; указує протилежність&nbsp;напрямків дії цих сил.</p>
+<p style="word-spacing: 1.1px;">Третій закон Ньютона справджується не тільки для нерухомих, але й для рухомих тіл.</p>
+<p style="word-spacing: 1.1px;">Проте рівність сил не завжди обумовлена третім законом. Слід розрізняти сили взаємодії, прикладені до різних взаємодіючих тіл, і так звані рівнодійні сили, що діють на одне тіло. Сили взаємодії підкоряються третьому закону Ньютона, а сили, що діють на одне тіло, підкоряються другому закону.</p>
+<p style="word-spacing: 1.1px;">Щоб розібратися в цьому докладніше, розглянемо такий приклад.</p>
+<p style="word-spacing: 1.1px;">На поверхні Землі лежить тіло (мал. 279).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-321.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На тіло діє сила mg, з якою його притягує Земля. Але згідно з третім законом Ньютона і тіло притягує до себе Землю з такою самою за значенням, але протилежно напрямленою силою (mg\. Отже,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-322.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">згідно з третім законом Ньютона.</p>
+<p style="word-spacing: 1.1px;">Окрім гравітаційної взаємодії Землі і тіла, між ними існує ще й пружна: з якою силою тіло тисне на Землю, з такою самою силою і Земля тисне на тіло, тобто</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-323.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">згідно з третім законом Ньютона.</p>
+<p style="word-spacing: 1.1px;">Таким чином, на тіло діють дві сили:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-324.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для цих сил, оскільки вони прикладені до одного тіла, можна записати другий закон Ньютона:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-325.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тіло перебуває у спокої, тобто</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-326.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Цю рівність сил&nbsp;доведено на основі другого закону Ньютона.</p>
+<p style="word-spacing: 1.1px;">На Землю також діють дві сили:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-327.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вони зрівноважені, тобто</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-328.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">Ця рівність так само є наслідком застосування другого закону.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">ЗАПИТАННЯ ДО ВИВЧЕНОГО</p>
+<p style="word-spacing: 1.1px;">1. Які системи відліку називають інерціальними? Неінерціальними?</p>
+<p style="word-spacing: 1.1px;">2. Сформулюйте перший закон Ньютона.</p>
+<p style="word-spacing: 1.1px;">3. У якій системі відліку виконується перший закон Ньютона? Чи можна вважати, що він виконується в будь-якій системі відліку?</p>
+<p style="word-spacing: 1.1px;">4. Сформулюйте другий закон Ньютона.</p>
+<p style="word-spacing: 1.1px;">5. Що можна сказати про напрям сили і прискорення, якого сила надає тілу?</p>
+<p style="word-spacing: 1.1px;">6. Як можна виміряти силу, спираючись на другий закон Ньютона?</p>
+<p style="word-spacing: 1.1px;">7. Чи можна, виходячи з формули F = та, стверджувати, що сила, прикладена до тіла, залежить від маси тіла і від його прискорення?</p>
+<p style="word-spacing: 1.1px;">8. Використовуючи другий закон Ньютона, сформулюйте перший закон Ньютона.</p>
+<p style="word-spacing: 1.1px;">9. Сформулюйте третій закон Ньютона і запишіть його формулу.</p>
+<p style="word-spacing: 1.1px;">10. Якими дослідами можна перевірити третій закон Ньютона?</p>
+<p style="word-spacing: 1.1px;">11. Як напрямлені прискорення, що отримують тіла під час їх взаємодії?</p>
+<p style="word-spacing: 1.1px;">ЗАДАЧІ ТА ВПРАВИ</p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язуємо разом</p>
+<p style="word-spacing: 1.1px;">1. Велосипедист рухається зі швидкістю 5 м/с. З якою швидкістю рухався пішохід, що вийшов з того самого місця на 1 год раніше, якщо велосипедист наздогнав його через 30 хв після початку свого руху?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-329.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">2. Яке з поданих тверджень найточніше виражає другий закон Ньютона?</p>
+<p style="word-spacing: 1.1px;">А Сила, що діє на тіло, дорівнює добутку маси тіла і прискорення, наданого тілу цією силою.</p>
+<p style="word-spacing: 1.1px;">Б Прискорення, якого набуває тіло, прямо пропорційне рівнодійній усіх сил, що прикладені до цього тіла, і обернено пропорційне масі тіла.</p>
+<p style="word-spacing: 1.1px;">В Рівнодійна всіх сил, що діють на тіло, дорівнює добутку маси тіла і прискорення, наданого тілу цією рівнодійною силою.</p>
+<p style="word-spacing: 1.1px;">Відповідь: твердження Б найточніше відображає другий закон Ньютона.</p>
+<p style="word-spacing: 1.1px;">Рівень А</p>
+<p style="word-spacing: 1.1px;">221. Автомобіль з вимкненим двигуном проїхав до повної зупинки по рівній горизонтальній дорозі ще якийсь час. Чи можна стверджувати, що весь час він рухався за інерцією?</p>
+<p style="word-spacing: 1.1px;">222. Тіло рухається зі сталою швидкістю під дією кількох сил. Чи можна цей стан тіла розглядати як рух за інерцією?</p>
+<p style="word-spacing: 1.1px;">223. Людина, упираючись руками у стіну вагона, хоче зрушити його з місця. Проте вагон зберігає стан спокою. Поясніть чому.</p>
+<p style="word-spacing: 1.1px;">224. З яким прискоренням рухається автомобіль, якщо його швидкість за 6 с збільшилася від 144 км/год до 216 км/год?</p>
+<p style="word-spacing: 1.1px;">225. За який час ракета набуває першої космічної швидкості 7,9 км/с, якщо вона рухається з прискоренням 50 м/с<sup>2</sup>?</p>
+<p style="word-spacing: 1.1px;">226. Як установиться поверхня бензину в цистерні п ід час рівномірного, прискореного й сповільненого руху потяга?</p>
+<p style="word-spacing: 1.1px;">227. Сила 200 Н діє на тіло масою 5 кг. Визначте прискорення, з яким рухається тіло.</p>
+<p style="word-spacing: 1.1px;">228. Визначте масу тіла, якому сила 5000 Н надає прискорення 0,2 м/с<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;">229. З яким прискоренням рухається тіло масою 300 кг, коли на нього діє сила 1500 Н?</p>
+<p style="word-spacing: 1.1px;">230. Визначте масу тіла, якому сила 500 Н надає прискорення 0,2 м/с<sup>2</sup>. Визначте переміщення тіла за 30 с руху із стану спокою.</p>
+<p style="word-spacing: 1.1px;">231. Під дією сили 2,5 кН швидкість автомобіля масою 5 т збільшилася від 54 км/год до 72 км/год. Визначте прискорення, з яким рухався автомобіль, і час розгону.</p>
+<p style="word-spacing: 1.1px;">232. Протягом 30 с людина жердиною відштовхує від пристані баржу, прикладаючи зусилля 400 Н. На яку відстань від пристані відпливе баржа, якщо її маса 300 т?</p>
+<p style="word-spacing: 1.1px;">233. На два тіла діють рівні сили. Перше тіло має масу 50 г і рухається з прискоренням 1 м/с<sup>2</sup>. Друге тіло рухається з прискоренням 1 см/с<sup>2</sup>. Яка маса другого тіла?</p>
+<p style="word-spacing: 1.1px;">234. Сила тяги, що діє на автомобіль, дорівнює 1 кН, а опір рухові -0,5 кН. Чи не суперечить це третьому закону Ньютона?</p>
+<p style="word-spacing: 1.1px;">235. Барон Мюнхгаузен переконував, що сам себе витягнув за чуба з болота. Чому це неможливо?</p>
+<p style="word-spacing: 1.1px;">236. Лінкор, зіткнувшися з маленьким пароплавом, може потопити його і майже не отримати при цьому пошкоджень. Чи не суперечить це третьому закону Ньютона?</p>
+<p style="word-spacing: 1.1px;">237. Хлопчик і дівчинка тягнуть за динамометр у протилежні боки. Які покази динамометра, якщо хлопчик тягне із силою 300 Н, а дівчинка - 200 Н?</p>
+<p style="word-spacing: 1.1px;">Рівень Б</p>
+<p style="word-spacing: 1.1px;">238. Візок, рухаючись зі стану спокою під дією сили, пройшов шлях 40 м за деякий час. Коли на візок поклали тягарець масою 20 г, то під дією тієї самої сили він за той самий час пройшов шлях 20 см. Яка маса візка?</p>
+<p style="word-spacing: 1.1px;">239. Чи можна стверджувати, що інерція одного з двох неоднакових тіл більша або менша? Відповідь поясніть.</p>
+<p style="word-spacing: 1.1px;">240. На основі тривалої історії вивчення Всесвіту можна побачити, що в кожній картині світу виділяють три складових елементи: 1) уявлення про матеріальну першооснову (про природу спостережуваних об&rsquo;єктів);</p>
+<p style="word-spacing: 1.1px;">2) уявлення про механізм спостережуваних об&rsquo;єктів (про механізм здійснення процесів, явищ, у яких беруть участь спостережувані об&rsquo;єкти);</p>
+<p style="word-spacing: 1.1px;">3) уявлення про структуру, масштаби, способи існування (стаціонарність, змінність, розвиток) цілого. Чим відрізняється механічна картина світу від електромагнітної?</p>
+<p style="word-spacing: 1.1px;">241. Стоячи у вагоні потяга, що рухається рівномірно, ви підстрибнули. Чи опуститеся ви на те саме місце, звідки підстрибнули, відносно вагона? Відносно залізничного полотна? Яка із цих двох систем відліку є інерціальною? Чи є інерціальною системою карусель, штучний супутник Землі?</p>
+<p style="word-spacing: 1.1px;">242. Порівняйте прискорення двох кульок однакового радіуса під час взаємодії, якщо першу кульку зроблено зі сталі, а другу - зі свинцю.</p>
+<p style="word-spacing: 1.1px;">243. Електричне поле надає електрону прискорення 2000 км/с<sup>2</sup>. Яке прискорення це поле буде надавати протону, якщо відомо, що маса протона приблизно у дві тисячі разів більша за масу електрона?</p>
+<p style="word-spacing: 1.1px;">244. Сила F надає тілу масою m<sub>1</sub>&nbsp;прискорення 2 м/с<sup>2</sup>, а тілу масою т<sub>2</sub>&nbsp;-прискорення 3 м/с<sup>2</sup>. Якого прискорення під дією тієї самої сили набудуть обидва тіла, коли їх з&rsquo;єднати одне з одним?</p>
+<p style="word-spacing: 1.1px;">245. На тіло масою 1 кг подіяла сила 10 Н. Через який час модуль прискорення тіла буде 10 м/с<sup>2</sup>? Яке за значенням прискорення в той момент, коли сила тільки-но почала діяти на тіло? Відповідь обґрунтуйте.</p>
+<p style="word-spacing: 1.1px;">246. Під дією якої постійної сили тіло масою 300 г, що знаходилось у стані спокою, протягом 5 с пройде шлях 25 м?</p>
+<p style="word-spacing: 1.1px;">247. Пасажирський потяг масою 400 т рухається зі швидкістю 40 км/год. Визначте силу гальмування, якщо гальмівний шлях потяга 200 м.</p>
+<p style="word-spacing: 1.1px;">248. У таблиці наведено дані, одержані під час вивчення залежності прискорення тіла від прикладеної до нього сили при незмінній масі. Побудуйте графік; зробіть висновок про досліджувану залежність.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-330.png" alt="" /></p>
+<p style="word-spacing: 1.1px;">249. З яким прискоренням падають тіла на Марсі, якщо сила притягання тіл на його поверхні у 2,8 раза менша від сили притягання таких самих тіл на Землі?</p>
+<p style="word-spacing: 1.1px;">250. М&rsquo;яч масою 0,5 кг після удару, що тривав 0,2 с, набуває швидкості 10 м/с. Визначте середню силу удару.</p>
+<p style="word-spacing: 1.1px;">251. Потяг масою 500 т після припинення тяги локомотива під дією сили тертя, яка дорівнює 98 кН, зупиняється через 1 хв. З якою швидкістю їхав потяг?</p>
+<p style="word-spacing: 1.1px;">252. Вагон масою 20 т рухається рівносповільнено, маючи початкову швидкість руху 54 км/год і прискорення 0,3 м/с<sup>2</sup>. Яка сила гальмування діє на вагон? Через який час вагон зупиниться? Який шлях вагон пройде до зупинки?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; max-width: 90%; margin-left: auto; margin-right: auto;" src="uploads/physics-9-syrotyuk/physics-9-syrotyuk-331.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">253. Чи можна привести в рух сталевий візок за допомогою магніту, прикріпленого так, як показано на малюнку 280?</p>
+<p style="word-spacing: 1.1px;">254. Чи однаково буфери стискуються під час зіткнення двох пасажирських залізничних вагонів, якщо: 1) один з них перебуває у спокої; 2) обидва рухаються;</p>
+<p style="word-spacing: 1.1px;">3) один вагон заповнений пасажирами, а другий порожній? Жорсткість буферних пружин у вагонів однакова.</p>
+<p style="word-spacing: 1.1px;">255. З погляду фізики дію не можна відрізнити від протидії. Поясніть чому.</p>
+<p style="word-spacing: 1.1px;">256. Якщо сили, з якими взаємодіють тіло і динамометр під час зважування, не зрівноважуються (бо прикладені до різних тіл), то чому тіло і динамометр після певного видовження його пружини нерухомі?</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="2149-pdruchnik-fzika-9-klas-sirotyuk-chitati-onlayn.html">Фізика 9 клас Сиротюк</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2135-ruh-tla-pd-dyeyu-klkoh-sil.html">Рух тіла під дією кількох сил</a></li><li><a href="636-pdsumki-rozdlu-5-ruh-vzayemodya-zakoni-zberezhennya.html">Підсумки розділу 5 «Рух і взаємодія. Закони збереження»</a></li><li><a href="625-drugiy-zakon-nyutona.html">Другий закон Ньютона</a></li><li><a href="624-nercaln-sistemi-vdlku-pershiy-zakon-nyutona.html">Інерціальні системи відліку. Перший закон Ньютона</a></li><li><a href="622-rvnopriskoreniy-pryamolnyniy-ruh-priskorennya-shvidkst-rvnopriskorenogo-pryamolnynogo-ruhu.html">Рівноприскорений прямолінійний рух. Прискорення. Швидкість рівноприскореног ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->
