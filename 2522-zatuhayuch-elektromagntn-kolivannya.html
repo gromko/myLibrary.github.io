@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Затухаючі електромагнітні коливання &raquo; mozok.click</title>
+<meta name="description" content="Рівняння затухаючих електромагнітних коливань. Уявімо собі коливальний контур, до складу якого входить конденсатор С, котушка L і активний опір R (мал. 178). Нехай у певний момент часу конде" />
+<meta name="keywords" content="конденсатор, зарядили, напруги, момент, певний, відєднали, зовнішнє, конденсатора, резистор, електричному, живлення, джерело, Нехай, активний, Уявімо, коливань, електромагнітних, затухаючих, коливальний, контур" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2522-zatuhayuch-elektromagntn-kolivannya.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Затухаючі електромагнітні коливання</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2522").Button("#infc2522"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2522" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2522" class="infcont">
+			<ul>
+				<li><i>Переглядів: 4573</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 21:31</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2522'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2522-zatuhayuch-elektromagntn-kolivannya.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2522'); return false;">1</a></li>
+		<li><a href="2522-zatuhayuch-elektromagntn-kolivannya.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2522'); return false;">2</a></li>
+		<li><a href="2522-zatuhayuch-elektromagntn-kolivannya.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2522'); return false;">3</a></li>
+		<li><a href="2522-zatuhayuch-elektromagntn-kolivannya.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2522'); return false;">4</a></li>
+		<li><a href="2522-zatuhayuch-elektromagntn-kolivannya.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2522'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 21:31</i></a></span>
+	<h3 class="btl"><span id="news-title">Затухаючі електромагнітні коливання</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2522" style="display:inline;"><p>Рівняння затухаючих електромагнітних коливань. Уявімо собі коливальний контур, до складу якого входить конденсатор С, котушка L і активний опір R (мал. 178). Нехай у певний момент часу конденсатор зарядили до напруги U і від&rsquo;єднали зовнішнє джерело живлення. Якби в електричному колі, крім конденсатора, був лише резистор R, то струм продовжувався б лише доти, поки потенціали обкладок конденсатора не зрівнялися. Якщо ж у коліє ще й котушка індуктивністю L, то електрорушійна сила самоіндукції, що виникає в котушці під час зміни сили струму, підтримає струм, який зменшується, і відбудеться перезарядка обкладок конденсатора, але не до початкового значення. Після цього струм у контурі йтиме у протилежному напрямі, конденсатор знову перезарядиться, втративши ще дещо в заряді. Виникають затухаючі електромагнітні коливання, які ми вже дослідили якісно.</p>
+<p style="word-spacing: 1.1px;">Одержимо рівняння затухаючих електромагнітних коливань на основі узагальнення закону Ома для кола, що містить джерело ЕРС. Напруга на обкладках конденсатора U. За законом Ома сума напруг, які є в колі, повинна дорівнювати сумі діючих в цьому колі електрорушійних сил. Зрозуміло, що в цьому випадку в колі діє лише одна електрорушійна сила - електрорушійна</p>
+<p style="word-spacing: 1.1px;">сила самоіндукції. Отже,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-647.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Виразимо всі змінні в цьому&nbsp;рівнянні через заряд q. Силу струму можна визначити за зміною заряду за одиницю часу,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-648.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Напруга</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-649.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">а швидкість зміни сили&nbsp;струму</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-650.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Підставимо ці формули у вираз закону Ома і отримаємо&nbsp;рівняння</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-651.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">яке можна переписати у вигляді</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-652.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо тепер ввести позначення</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-653.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">то рівняння матиме вигляд</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-654.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">а його розв'язок</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-655.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">коефіцієнт за&nbsp;тухання.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Отримане рівняння описує затухаючі гармонічні коливання заряду в реальному коливальному контурі.</p>
+<p style="word-spacing: 1.1px;">Формула періоду затухаючих коливань. Період затухаючих коливань визначається формулою</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-656.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">або через параметри коливального&nbsp;контуру</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-657.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Ця формула дає&nbsp;можливість зробити важливий висновок про те, за яких умов коливання в досліджуваному колі можливі.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-658.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Період коливань повинен&nbsp;бути додатним числом і не може бути нескінченно великим. Отже, підкореневий вираз у знаменнику повинен бути більший від нуля,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-659.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">або</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-660.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Лише за цих умов коливання в колі можливі і коло</p>
+<p style="word-spacing: 1.1px;">можна вважати коливальним контуром.</p>
+<p style="word-spacing: 1.1px;">Формула</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-661.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">відразу переходить у формулу Томсона</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-662.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">якщо припустити, що R = 0 (ідеальний коливальний контур).</p>
+<p style="word-spacing: 1.1px;">Відповідно із рівняння</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-663.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">також можна отримати фор</p>
+<p style="word-spacing: 1.1px;">мули для опису незатухаючих гармонічних коливань. Якщо R = 0, то</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-664.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язком такого рівняння є функція</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-665.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">амплітуда коливань заряду конденсатора з циклічною частотою</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-666.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Які енергетичні перетворення відбуваються у процесі електромагнітних коливань в ідеальному і реальному коливальних контурах?</p>
+<p style="word-spacing: 1.1px;">2. Якими рівняннями описуються затухаючі електромагнітні коливання? Запишіть рівняння для коливань напруги і заряду.</p>
+<p style="word-spacing: 1.1px;">3. Який фізичний зміст коефіцієнта затухання коливань ? Що треба зробити, щоб коливання в коливальному контурі стали незатухаючими?</p>
+<p style="word-spacing: 1.1px;">4. Як можна встановити умови, за яких коливання в контурі взагалі не можливі?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Приклади розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">Задача. На мал. 179 наведено графік залежності сили струму від часу для вільних електромагнітних коливань у контурі. Визначити ємність конденсатора, якщо індуктивність котушки дорівнює 0,1 Гн. Записати рівняння залежності сили струму в контурі і напруги від часу. Побудувати графік залежності u(t).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-667.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо в умові задачі немає ніяких застережень, то вважається, що коливальний процес відбувається в ідеальному коливальному контурі.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-668.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">З графіка видно, що І<sub>т</sub>&nbsp;= З А. Тоді з рівності максимальних енергій в коливальному контурі,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-669.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">обчислюємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-670.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-671.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">і коливання сили струму, як видно з графіка, здійснюються за законом синуса з початковою</p>
+<p style="word-spacing: 1.1px;">фазою, рівною нулю, а саме</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-672.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">рівняння зміни напруги матиме вигляд</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-673.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Графік залежності и(0 зображено на мал. 180.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-674.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 23</p>
+<p style="word-spacing: 1.1px;">1. Коливальний контур складається з конденсатора ємністю ІмкФ і котушки індуктивністю 4 Гн. Амплітуда коливань заряду на конденсаторі становить 100 мкКл. Написати залежності g(f), i(t), u(t). Визначити амплітуди коливань сили струму та напруги.</p>
+<p style="word-spacing: 1.1px;">2. Коливальний контур складається із котушки, індуктивність якої 0,2 мГн, та двох однакових конденсаторів ємністю 4 мкФ кожен, з&rsquo;єднаних послідовно. Визначити період вільних коливань у контурі, максимальний заряд конденсатора та максимальну напругу на кожному конденсаторі. Максимальна сила струму в контурі 0,1 А.</p>
+<p style="word-spacing: 1.1px;">3. У коливальному контурі індуктивністю L і ємністю С конденсатор заряджений до максимальної напруги U<sub>m</sub>. Якою буде сила струму у момент, коли напруга на конденсаторі зменшиться у 2 рази? Коливання вважати незатухаючими.</p>
+<p style="word-spacing: 1.1px;">4. Заряджений конденсатор ємністю 10 мкФ підключили до котушки індуктивністю 0,1 Гн. Через 5 періодів амплітуда коливань напруги в контурі становила 95 % від початкової напруги на конденсаторі. Чому дорівнює активний опір контуру?</p>
+<p style="word-spacing: 1.1px;">5. Конденсатор, який має ємність 10 мкФ, зарядили до напруги U<sub>т</sub>&nbsp;- 400 В і приєднали до котушки. Після цього в контурі виникли затухаючі коливання. Яка кількість теплоти виділиться в контурі за час, протягом якого амплітуда зменшиться у 2 рази?</p>
+<p style="word-spacing: 1.1px;">6. У коливальному контурі індуктивність котушки становить 0,2 Гн, а амплітуда сили струму дорівнює 40 мА. Визначити енергію електричного поля конденсатора і магнітного поля котушки в той момент, коли миттєве значення сили струму буде у 2 рази менше, ніж амплітудне значення.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2523-avtokolivannya.html">Автоколивання</a></li><li><a href="2521-rvnyannya-scho-opisuyut-procesi-v-dealnomu-kolivalnomu-kontur.html">Рівняння, що описують процеси в ідеальному коливальному контурі</a></li><li><a href="2520-otrimannya-vlnih-elektromagntnih-kolivan.html">Отримання вільних електромагнітних коливань</a></li><li><a href="2517-rezonans-u-kol-zmnnogo-strumu.html">Резонанс у колі змінного струму</a></li><li><a href="2513-kondensator-u-kol-zmnnogo-strumu.html">Конденсатор у колі змінного струму</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

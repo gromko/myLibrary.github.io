@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Механізми виникнення індукційного струму в провідниках &raquo; mozok.click</title>
+<meta name="description" content="Виникнення ЕРС під час руху провідника в магнітному полі. Звернімося до питання про природу ЕРС індукції. Спочатку розглянемо механізм виникнення ЕРС індукції під час руху провідника в стаці" />
+<meta name="keywords" content="індукції, магнітному, провідника, механізм, стаціонарному, розглянемо, виникнення, природу, Звернімося, питання, Виникнення, Спочатку" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2508-mehanzmi-viniknennya-ndukcynogo-strumu-v-provdnikah.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Механізми виникнення індукційного струму в провідниках</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2508").Button("#infc2508"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2508" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2508" class="infcont">
+			<ul>
+				<li><i>Переглядів: 2917</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 19:49</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2508'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2508-mehanzmi-viniknennya-ndukcynogo-strumu-v-provdnikah.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2508'); return false;">1</a></li>
+		<li><a href="2508-mehanzmi-viniknennya-ndukcynogo-strumu-v-provdnikah.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2508'); return false;">2</a></li>
+		<li><a href="2508-mehanzmi-viniknennya-ndukcynogo-strumu-v-provdnikah.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2508'); return false;">3</a></li>
+		<li><a href="2508-mehanzmi-viniknennya-ndukcynogo-strumu-v-provdnikah.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2508'); return false;">4</a></li>
+		<li><a href="2508-mehanzmi-viniknennya-ndukcynogo-strumu-v-provdnikah.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2508'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 19:49</i></a></span>
+	<h3 class="btl"><span id="news-title">Механізми виникнення індукційного струму в провідниках</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2508" style="display:inline;"><p>Виникнення ЕРС під час руху провідника в магнітному полі. Звернімося до питання про природу ЕРС індукції. Спочатку розглянемо механізм виникнення ЕРС індукції під час руху провідника в стаціонарному магнітному полі.</p>
+<p style="word-spacing: 1.1px;">Нехай в однорідному магнітному полі індукцією В розміщено прямолінійний металевий провідник довжиною І, який може ковзати по паралельних стержнях (мал. 142). При цьому швидкість руху провідника v напрямлена під кутом а до вектора В . Під час руху провідника зі швидкістю v будуть рухатись і його власні електрони та йони. А оскільки вони рухаються в магнітному полі, то на кожен йон та електрон діє сила Лоренца. Якщо йони під впливом сили Лоренца не покидають положень стійкої рівноваги у вузлах кристалічної ґратки, то вільні електрони провідника зміщуються до одного його кінця А, залишаючи на другому кінці В надлишок позитивних зарядів. Це розділення зарядів триватиме доти, поки вони не створять все-</p>
+<p style="word-spacing: 1.1px;">редині провідника таке електростатичне поле (напрямлене від В до А), в якому на електричні заряди провідника діятиме сила, рівна за значенням і протилежна за напрямком силі Лоренца. Отже, зміщення електронів до кінця А припиниться за умови</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-433.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки напруга на полюсах в разі розімкненого кола дорівнює ЕРС, то ЕРС індукції, яка виникає в провіднику під час його руху в магнітному полі, визначається формулою = Blusina.</p>
+<p style="word-spacing: 1.1px;">Таким чином, причиною виникнення ЕРС індукції в рухомому провіднику є сила Лоренца.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-434.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">ЕРС індукції такої природи виникає в будь-якому провіднику, коли він рухається в магнітному полі так, що його швидкість перпендикулярна до його власної довжини та утворює з вектором індукції магнітного поля кут а (іншими словами, коли він перетинає лінії індукції магнітного поля). Провідник стає джерелом ЕРС. Цю властивість використовують у генераторах електроенергії.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Пояснення діамагнетизму на основі правила Ленца. У &sect; 26 ми зазначили, що в діамагнетику, внесеному в зовнішнє магнітне поле, відбувається так званий діамагнітний ефект, котрий полягає у виникненні в атомів речовини індукованого (наведеного) магнітного момента, який завжди напрямлений проти вектора індукції магнітного поля, тому відносна магнітна проникність діамагнетиків менша за одиницю (р &lt; 1). Оскільки зовнішнє магнітне поле діє не тільки на вільні носії заряду в провіднику, а й взагалі на всі заряджені частинки речовини, що рухаються, в тому числі і на зв&rsquo;язані електрони, котрі рухаються на певних відстанях навколо атомних ядер, то при цьому виникають зміни в орбітальних рухах електронів, що є причиною виникнення діамагнітного ефекту в усіх без винятку речовинах.</p>
+<p style="word-spacing: 1.1px;">Діамагнетизм речовини якісно можна пояснити на основі правила Ленца щодо напрямку індукційного струму в провідниках.</p>
+<p style="word-spacing: 1.1px;">Уявімо собі рух електрона навколо атомного ядра як деякий струм по замкненому контуру у формі орбіталі електрона. Відомо, що зі збільшенням магнітного потоку крізь замкнений контур (а в разі внесення речовини в зовнішнє магнітне поле магнітний потік, що пронизує електронні орбіти, зростає) в ньому виникає індукційний струм, напрям якого, за правилом Ленца, має бути таким, щоб власним магнітним полем протидіяти зміні зовнішнього магнітного поля, яка породжує цей індукційний струм. З цього випливає, що у кожного атома речовини в момент внесення в зовнішнє магнітне поле індукцією В виникає власний магнітний момент, напрямлений проти цього поля.</p>
+<p style="word-spacing: 1.1px;">Індукційне електричне поле. Розглянемо випадок утворення індукційного струму в замкненому провіднику, коли змінюється магнітний потік через площину, обмежену цим провідником, але ніякого відносного руху</p>
+<p style="word-spacing: 1.1px;">немає. Магнітне поле, що пронизує контур, в цьому випадку привести заряди у рух не може, оскільки воно діє лише на рухомі заряди (зрозуміло, хаотичний тепловий рух не враховуємо). Проте на нерухомі заряди може діяти електричне поле. Якщо це так, то звідки це поле береться? Можливо саме змінне магнітне поле може створювати (індукувати) електричне поле, яке вже й збуджує в замкненому провіднику індукційний струм?</p>
+<p style="word-spacing: 1.1px;">Таке припущення вперше висловив Дж. Максвелл. Розвиваючи цю ідею, він створив теорію електромагнітного поля, яка була підтверджена багатьма дослідами. За теорією Максвелла, у просторі, в якому існує змінне магнітне поле, обов&rsquo;язково виникає так зване індукційне електричне поле. При цьому виникнення індукційного електричного поля ніяк не пов&rsquo;язане з наявністю в даній частині простору провідника. Наявність провідника лише дає змогу виявити це поле за збудженим ним індукційним електричним струмом.</p>
+<p style="word-spacing: 1.1px;">Тепер явище електромагнітної індукції постає перед нами у новому світлі. Головне в ньому - це процес утворення змінним магнітним полем індукційного електричного поля. Суть явища електромагнітної індукції в нерухомому провіднику полягає, в першу чергу, у виникненні електричного поля, яке приводить у рух електричні заряди.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Електричне поле, що виникає в результаті зміни магнітного поля, має зовсім іншу структуру і властивості, ніж вивчене нами електростатичне (стаціонарне). Нагадаємо, що електростатичне поле зв&rsquo;язане з електричними зарядами, і його лінії напруженості починаються і закінчуються на цих зарядах. Внаслідок цього воно не може підтримувати замкнутий рух вільних електронів або інших носіїв заряду, тобто забезпечити виникнення ЕРС. Індукційне електричне поле створює ЕРС в замкненому контурі, отже, воно безпосередньо не пов&rsquo;язане з електричними зарядами, його лінії напруженості не мають ні початку, ні кінця - вони замкнені, як і лінії індукції магнітного поля. Таке поле називають вихровим. Крім того, лінії напруженості електричного і індукції магнітного полів розміщенні у взаємно перпендикулярних площинах (мал. 143). Чим швидше змінюється магнітна індукція, тим більша напруженість електричного поля. Згідно з правилом Ленца із зменшенням магнітної індукції напрям вектора напруженості визначається за правилом свердлика (правого гвинта). У випадку збільшення магнітної індукції напрям вектора індукції утворює лівій гвинт з напрямом вектора В .</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-435.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 143. До визначення напрямку вектора напруженості вихрового електричного поля</p>
+<p style="word-spacing: 1.1px;">Ще раз звернімо увагу на принципову відмінність між індукційним електричним і електростатичним полями нерухомих зарядів. При переміщенні зарядів в електростатичному полі робота вздовж замкнутої траєкторії дорівнює нулю. Однак це не стосується індукційного поля. Дійсно, досліди з електромагнітної індукції показали, що в замкнутому провіднику, який міститься в змінному магнітному полі, виникає індукційний електричний струм. Отже, в ньому переміщуються заряди. І якщо провідник має опір, то&nbsp;він нагрівається, і при цьому виконується робота. Однак у замкнутому контурі зі струмом відсутнє джерело струму, яке б могло виконувати цю роботу. Значить, роботу виконує індукційне поле, а отже, робота індукційного поля вздовж замкненої траєкторії не дорівнює нулю.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p>&nbsp;</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-436.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вихрові струми. До цього часу ми говорили лише про лінійні провідники, в яких виникає індукційний струм у змінному магнітному полі. Якщо ж цей провідник буде виготовлено у вигляді суцільної пластини, то змінне магнітне поле теж зумовлює індукційні струми, вони самі собою замикаються всередині і тому називаються вихровими струмами.</p>
+<p style="word-spacing: 1.1px;">Вперше вихрові струми виявив французький учений Франсуа Араго Фуко (1786-1853) у 1824 р., тому їх ще називають струмами Фуко. Фуко відкрив явище нагрівання металевих тіл, які обертаються у магнітному полі, вихровими струмами. Струми Фуко виникають під дією змінного електромагнітного поля і за своєю фізичною природою нічим не відрізняються від індукційних струмів, що виникають у лінійних провідниках.</p>
+<p style="word-spacing: 1.1px;">Оскільки електричний опір провідників малий, то сила струмів Фуко може досягати великих значень. Згідно з правилом Ленца вони вибирають у провіднику такий напрямок, щоб протидіяти причині, яка їх викликає. Наприклад, суцільний провідник (пластина), рухаючись у сильному магнітному полі, зазнає сильного гальмування, яке пояснюється взаємодією струмів Фуко з магнітним полем (мал. 144). (Цей ефект використовують для демпфірування рухливих частин гальванометрів, сейсмографів тощо.)</p>
+<p style="word-spacing: 1.1px;">Оскільки вихрові індукційні струми циркулюють всередині провідника, то вони зумовлюють його сильне нагрівання. Теплову дію струмів Фуко використовують в індукційних печах. Останні мають вигляд котушки, яка живиться від високочастотної батареї великої сили. В середину поміщають тіло-провідник, в якому виникають вихрові струми, які й розігрівають його до плавлення.</p>
+<p style="word-spacing: 1.1px;">У багатьох випадках струми Фуко небажані, шкідливі. Для боротьби з ними вдаються до спеціальних заходів. Наприклад, осердя трансформаторів набирають з тонких пластин, перериваючи шляхи утворення великих вихрових струмів.</p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Яка природа сили, що збуджує індукційний струм у провіднику, який рухається у постійному магнітному полі?</p>
+<p style="word-spacing: 1.1px;">2. Яка природа сили, що збуджує індукційний струм у нерухомому контурі, який пронизується змінним магнітним полем?</p>
+<p style="word-spacing: 1.1px;">3. Чим відрізняється вихрове електричне поле від електростатичного, чи стаціонарного?</p>
+<p style="word-spacing: 1.1px;">4. Вектор індукції магнітного поля Землі напрямлений з півдня на північ, а автомобіль має швидкість із заходу на схід. Чи буде відбуватись дія магнітного поля на заряди кузова автомобіля?</p>
+<p style="word-spacing: 1.1px;">5. Заряджені частинки у радіаційних поясах Землі рухаються по гвинтових лініях уздовж ліній магнітноїіндукції Землі, але поблизу магнітних полюсів вони гальмуються і розпочинають рухатися у протилежному напрямі. Яка причина гальмування?</p>
+<p style="word-spacing: 1.1px;">6. Що таке вихрові струми? У чому проявляється їх негативний вплив?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2507-elektrorushyna-sila-ndukcyi.html">Електрорушійна сила індукції</a></li><li><a href="2504-dya-magntnogo-polya-na-ruhom-zaryadzhen-chastinki.html">Дія магнітного поля на рухомі заряджені частинки</a></li><li><a href="2303-dya-magntnogo-polya-na-ruhomim-elektrichniy-zaryad-sila-lorenca.html">Дія магнітного поля на рухомим електричний заряд. Сила Лоренца</a></li><li><a href="2301-dya-magntnogo-polya-na-provdnik-z-strumom-sila-ampera-dya-magntnogo-polya-na-provdnik-z-strumom.html">Дія магнітного поля на провідник зі струмом. Сила Ампера  Дія магнітного по ...</a></li><li><a href="598-sila-ampera.html">Сила Ампера</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

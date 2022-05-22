@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Робота і потужність змінного струму &raquo; mozok.click</title>
+<meta name="description" content="Активна і реактивна потужності. Якщо в коло змінного струму послідовно з лампами підключити котушку індуктивності, то спричинений індуктивністю котушки зсув фаз між коливаннями струму і напр" />
+<meta name="keywords" content="струму, менші, зумовить, напруги, коливаннями, показання, добуток, амперметра, вольтметра, показань, котушки, ватметра, індуктивністю, послідовно, змінного, потужності, реактивна, лампами, підключити, спричинений" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2516-robota-potuzhnst-zmnnogo-strumu.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Робота і потужність змінного струму</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2516").Button("#infc2516"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2516" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2516" class="infcont">
+			<ul>
+				<li><i>Переглядів: 6692</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 21:24</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2516'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2516-robota-potuzhnst-zmnnogo-strumu.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2516'); return false;">1</a></li>
+		<li><a href="2516-robota-potuzhnst-zmnnogo-strumu.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2516'); return false;">2</a></li>
+		<li><a href="2516-robota-potuzhnst-zmnnogo-strumu.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2516'); return false;">3</a></li>
+		<li><a href="2516-robota-potuzhnst-zmnnogo-strumu.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2516'); return false;">4</a></li>
+		<li><a href="2516-robota-potuzhnst-zmnnogo-strumu.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2516'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 21:24</i></a></span>
+	<h3 class="btl"><span id="news-title">Робота і потужність змінного струму</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2516" style="display:inline;"><p>Активна і реактивна потужності. Якщо в коло змінного струму послідовно з лампами підключити котушку індуктивності, то спричинений індуктивністю котушки зсув фаз між коливаннями струму і напруги зумовить менші показання ватметра, ніж добуток показань вольтметра й амперметра. Активна потужність витрачається на виконання корисної роботи, а потужність, яка поглинається котушкою індуктивності, в корисній роботі участі не бере, оскільки під час наростання струму в магнітному полі котушки індуктивності накопичується енергія, яка повертається назад до генератора зі зменшенням струму, тобто в колі відбувається перекачування енергії від генератора в коло і навпаки. Потужність у колі з реактивним опором називається реактивною потужністю Q.</p>
+<p style="word-spacing: 1.1px;">Реактивна потужність Q визначається добутком ефективної напруги, реактивного струму (складової сили струму, перпендикулярної до напруги) та синусом кута зсуву фаз між діючими в колі силою струму і напругою,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-566.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Одиниця реактивної потужності - вар,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-567.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Помноживши сторони трикутника напруг (мал. 158, а) на величину струму І, дістанемо трикутник потужностей (мал. 161). Повна потужність S</p>
+<p style="word-spacing: 1.1px;">визначається формулою</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-568.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Одиниця повної потужності - вольт на ампер, [S]=1B А .</p>
+<p style="word-spacing: 1.1px;">Коефіцієнт потужності. З трикутника потужностей видно, що активна потужність змінного струму в колі з активним і реактивним опорами визначається як Р - Scos&lt;p, оскільки S = UI, то Р - [//cosip.</p>
+<p style="word-spacing: 1.1px;">cosq&gt; називається коефіцієнтом потужності. Величину коефіцієнта потужності можна обчислити з трикутника напруг, опорів або потужностей:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-569.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-570.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Коефіцієнт потужності показує ефективність використання електричної енергії в даному колі. Наприклад, якщо cos&lt;p = 0,8, то це означає що 80% енергії споживається колом, а 20% повертається до генератора. При цьому частина цієї енергії перетворюється у теплову (внутрішню енергію обмоток генератора, ліній електропередачі і споживача). Потужність теплових втрат Р = 1<sup>2</sup>R. Енергія, яка витрачається на нагрівання проводів, обернено пропорційна квадрату коефіцієнта потужності. Наприклад, якщо costp = 0,8, то втрати майже в 1,5 рази більші, ніж при cos&lt;p = 1.</p>
+<p style="word-spacing: 1.1px;">Підвищення коефіцієнта потужності одне з головних завдань будь-якого виробництва. Однією з важливих умов збільшення созф є правильна експлуатація електродвигунів, включених в електричну мережу. До них треба підключати таке навантаження, щоб потужність, яку вони розвиватимуть під час роботи, була якомога ближчою до їх номінальної потужності, вказаної в паспорті. Варто підкреслити, що на холостому ходу коефіцієнт потужності становить 0,2-0,3, а під час роботи на повну потужність він досягає 0,85. Тому треба уникати холостого ходу електродвигунів.</p>
+<p style="word-spacing: 1.1px;">Особливо ефективним способом підвищення cos&lt;p є підключення паралельно двигуну, що працює, спеціальних компенсуючих конденсаторів. Цим способом коефіцієнт потужності установки можна довести до одиниці. У випадку паралельного з&rsquo;єднання індуктивності і ємності в колі змінного струму енергія нагромаджується в магнітному полі котушки індуктивності й електричному полі конденсатора і повертається до джерела від цих елементів кола в різні моменти часу. Тому при паралельному з&rsquo;єднанні котушки індуктивності й конденсатора частина реактивної енергії циркулює між ємністю й індуктивністю, минаючи джерело (генератор) і проводи лінії. Саме тому одним із способів збільшення cosip є підключення конденсатора паралельно індуктивно-активному навантаженню.</p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. За яких умов ділянка кола змінного струму зі з&rsquo;єднаними послідовно резистором, котушкою і конденсатором споживатиме найбільшу потужність? Чому вона дорівнює?</p>
+<p style="word-spacing: 1.1px;">2. У чому відмінність одиниць активної і реактивної потужностей?</p>
+<p style="word-spacing: 1.1px;">3. Використовуючи формулу Р = UIcoscp, доведіть, що втрата енергії відбувається лише на активному опорі даної ділянки кола змінного струму.</p>
+<p style="word-spacing: 1.1px;">4. Яка потужність ділянки кола - активна, реактивна чи повна - визначається як добуток значень миттєвого струму на миттєву напругу? На яку з трьох потужностей орієнтуються, розраховуючи необхідні перерізи дротів у колах змінного струму?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Приклади розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">Задача 1. Котушка, активний опір якої R<sub>K</sub>&nbsp;= 6 Ом, а індуктивний X<sub>L</sub>&nbsp;= 10 Ом, з&rsquo;єднана послідовно з активним навантаженням опором R= 2 Ом та конденсатором, ємнісний опір якого Х<sub>с</sub>&nbsp;= 4 Ом. В коло подається напруга 50 В. Визначити: а) повний опір кола; б) струм у колі; в) коефіцієнт потужності; г) активну, реактивну та повну потужність кола; ґ) напругу на кожному навантаженні.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-571.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-572.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Задача 2. На мал. 162 зображено графік зміни напруги для синусоїдального змінного струму.</p>
+<p style="word-spacing: 1.1px;">Визначити:</p>
+<p style="word-spacing: 1.1px;">а) Циклічну частоту струму, амплітудне значення напруги, діюче значення напруги.</p>
+<p style="word-spacing: 1.1px;">б) В коло включено тільки резистор, активний опір якого вказано на малюнку. Обчислити амплітудне і діюче значення струму, середню потужність струму в цьому випадку. Записати закон зміни сили струму в колі. Побудувати графіки зміни сили струму та середньої потужності.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-573.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">в) В коло включено послідовно активний опір R і котушку з індуктивністю L (відповідні значення вказані на малюнку). Обчислити реактивний і повний опір, амплітудне значення струму в цьому колі, коефіцієнт потужності та кут зсуву фаз струму відносно напруги; середню потужність. Побудувати графіки зміни сили струму та середньої потужності.</p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язання</p>
+<p style="word-spacing: 1.1px;">а) За даними графіка визначаємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-574.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-575.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">б) Якщо в колі є лише активне навантаження опором R = 8 Ом, то амплітудне значення сили струму</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-576.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">діюче значення сили струму</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-577.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки на активному навантаженні струм збігається за фазою з напругою, то середня потужність</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-578.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Закон зміни сили струму в колі:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-579.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Графіки зміни сили струму та потужності наведено на мал. 163, а,б. в) Якщо коло складається з послідовно з&rsquo;єднаних активного навантаження та котушки індуктивності, реактивний та повний опори становлять</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-580.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 163. Графіки зміни сили струму (а), потужності (б) у випадку лише активного навантаження у колі</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-581.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 164. Графіки зміни сили струму (а) та потужності (б) у випадку послідовного з&rsquo;єднання активного навантаження та котушки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-582.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Амплітудне значення сили струму</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-583.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Коефіцієнт потужності та кут зсуву фаз:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-584.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Середня активна потужність</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-585.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Графіки зміни сили струму та потужності у випадку послідовного з&rsquo;єднання активного опору та котушки індуктивності наведено на мал. 164, а, б. Слід зазначити, що у цьому випадку середня потужність набуває від&rsquo;ємних значень, на відміну від попереднього випадку, коли коло містить лише активний опір.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Вправа 21</p>
+<p style="word-spacing: 1.1px;">1. У коло змінного струму напругою 220 В і частотою 50 Гц під&rsquo;єднано послідовно конденсатор ємністю 35,4 мкФ, котушку, індуктивність якої 0,7 Гн, та резистор, активний опір якого 100 Ом. Визначити струм у колі і спад напруг на кожному елементі.</p>
+<p style="word-spacing: 1.1px;">2. У коло змінного струму напругою 220 В включено послідовно конденсатор, котушку та активний опір. Визначити спад напруг на активному навантаженні, якщо спад напруг на конденсаторі у 2 рази більший, а на котушці - у 3 рази більший, ніж на активному навантаженні.</p>
+<p style="word-spacing: 1.1px;">3. На мал. 165 наведено векторну діаграму напруг у колі змінного струму. Напруги на ділянках кола відповідно дорівнюють t/j = 70 В, С/<sub>2</sub>&nbsp;= 15 В,</p>
+<p style="word-spacing: 1.1px;">U<sub>a</sub>&nbsp;= ЗО В, U<sub>A</sub>&nbsp;= 75 В. U<sub>s</sub>&nbsp;= 20 В, U<sub>t</sub>&nbsp;= 10 В. Активний опір на п&rsquo;ятій ділянці Я<sub>5</sub>&nbsp;= 4 Ом. Накреслити схему електричного кола, визначити повну напругу в колі, повний опір кола, коефіцієнт потужності і споживану потужність.</p>
+<p style="word-spacing: 1.1px;">4. У котушці в колі постійного струму під напругою 12 В тече струм 4 А. У тій самій котушці у колі змінного струму промислової частоти під напругою 12 В тече струм 2,4 А (за показами амперметра). Визначити індуктивність котушки. Якою буде активна потужність струму у колі, якщо послідовно з котушкою включити конденсатор ємністю 394 мкФ? Накреслити векторну діаграму для цього випадку.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-586.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. У нерозгалуженій ділянці кола змінного струму (мал. 166) г = 3 Ом, X<sub>L</sub>&nbsp;= 6 Ом, Х<sub>с</sub>=2 Ом. Побудувати векторну діаграму. Визначити повний опір та коефіцієнт потужності.</p>
+<p style="word-spacing: 1.1px;">6. У нерозгалуженій ділянці кола змінного струму (мал. 166) напруги на ділянках кола відповідно дорівнюють: (7<sub>Г</sub>= 40 В, U<sub>L</sub>&nbsp;= 80 В, U<sub>c</sub>&nbsp;= 50 В. Визначити повну напругу у колі та коефіцієнт потужності. Побудувати векторну діаграму.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2517-rezonans-u-kol-zmnnogo-strumu.html">Резонанс у колі змінного струму</a></li><li><a href="2515-elektrichno-kolo-zmnnogo-strumu-z-aktivnim-ta-reaktivnim-navantazhennyami.html">Електричне коло змінного струму із активним та реактивним навантаженнями</a></li><li><a href="2514-kotushka-nduktivnost-v-kol-zmnnogo-strumu.html">Котушка індуктивності в колі змінного струму</a></li><li><a href="2513-kondensator-u-kol-zmnnogo-strumu.html">Конденсатор у колі змінного струму</a></li><li><a href="2512-aktivniy-opr-u-kol-zmnnogo-strumu.html">Активний опір у колі змінного струму</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

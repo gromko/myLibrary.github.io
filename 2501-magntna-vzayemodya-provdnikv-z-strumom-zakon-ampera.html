@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Магнітна взаємодія провідників зі струмом. Закон Ампера &raquo; mozok.click</title>
+<meta name="description" content="Електрична і магнітна взаємодії. Як ми знаємо, нерухомі електричні заряди взаємодіють між собою через електричне поле. Дослідимо характер взаємодії провідників, по яких тече струм." />
+<meta name="keywords" content="взаємодії, електричне, через, Дослідимо, провідників, струм, собою, характер, взаємодіють, знаємо, магнітна, нерухомі, електричні, заряди, Електрична" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2501-magntna-vzayemodya-provdnikv-z-strumom-zakon-ampera.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Магнітна взаємодія провідників зі струмом. Закон Ампера</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2501").Button("#infc2501"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2501" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2501" class="infcont">
+			<ul>
+				<li><i>Переглядів: 9450</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 19:29</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2501'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2501-magntna-vzayemodya-provdnikv-z-strumom-zakon-ampera.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2501'); return false;">1</a></li>
+		<li><a href="2501-magntna-vzayemodya-provdnikv-z-strumom-zakon-ampera.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2501'); return false;">2</a></li>
+		<li><a href="2501-magntna-vzayemodya-provdnikv-z-strumom-zakon-ampera.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2501'); return false;">3</a></li>
+		<li><a href="2501-magntna-vzayemodya-provdnikv-z-strumom-zakon-ampera.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2501'); return false;">4</a></li>
+		<li><a href="2501-magntna-vzayemodya-provdnikv-z-strumom-zakon-ampera.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2501'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 19:29</i></a></span>
+	<h3 class="btl"><span id="news-title">Магнітна взаємодія провідників зі струмом. Закон Ампера</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2501" style="display:inline;"><p>Електрична і магнітна взаємодії. Як ми знаємо, нерухомі електричні заряди взаємодіють між собою через електричне поле. Дослідимо характер взаємодії провідників, по яких тече струм.</p>
+<p style="word-spacing: 1.1px;">Якщо два паралельних гнучких провідники під&rsquo;єднати до джерела струму так, щобу провідниках виникли струми протилежного напрямку (мал. 102, а),</p>
+<p style="word-spacing: 1.1px;">то провідники почнуть відштовхуватися один від одного. Якщо струми одного напряму, провідники притягатимуться (мал. 102, б). Взаємодіють між собою, притягуючись або відштовхуючись, не лише прямолінійні провідники зі струмом, а й провідники довільної форми, по яких протікає струм, наприклад провідники у вигляді прямокутних рамок, витків. Така ж взаємодія відбувається і між котушками зі струмом (мал. 103).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-323.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Взаємодія провідників зі струмом не завжди зводиться до притягання або відштовхування. Якщо, наприклад, маленьку прямокутну рамку, по якій тече електричний струм, розташувати поблизу прямолінійного провідника зі струмом, то рамка повернеться і розташується так,&nbsp;щоб провідник опинився у її площині (мал. 104, а). Ще один приклад. Два прямолінійні провідники зі струмом, розташовані так, як показано на мал. 104, б (у провіднику 2 струм напрямлений від нас), взагалі не взаємодіють.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-325.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 103. Взаємодія котушок зі струмом Мал. 104. а - взаємодія провідника та&nbsp;рамки, по яким протікають струми; 6-у взаємно перпендикулярних провідниках зі струмом взаємодія не спостерігається</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Описані взаємодії між електричними струмами<sup>1</sup>&nbsp;(тобто рухомими електричними зарядами) не можна пояснити, виходячи із законів електростатики. Таку взаємодію називають магнітною, передається вона через магнітне поле. Сили, з якими провідники зі струмом діють один на одного, називають магнітними силами.</p>
+<p style="word-spacing: 1.1px;">Магнітні сили. Закон Ампера. Магнітне поле діє на всі частини провідника зі струмом. Щоб кількісно дослідити магнітну взаємодію провідників зі струмом, використовують метод моделювання. Розглядають не весь провідник, а лише незначну його ділянку, малою довжиною А/, весь провідник складається з подібних ділянок, так, як і будь-яке заряджене тіло - із точкових зарядів. Добуток 7AZ, тобто добуток сили струму І, що проходить по малій ділянці провідника, на її довжину АІ, називають елементом струму. Елемент струму ІАІ -модель для дослідження магнітної взаємодії.</p>
+<p style="word-spacing: 1.1px;">Взаємодію електричних струмів вперше виявив і дослідив у 1820 р. французький фізик А. Ампер (1775-1836). Тому закон, що описує взаємодію провідників зі струмом, називають законом Ампера.</p>
+<p style="word-spacing: 1.1px;">Оскільки створити відокремлений елемент струму не можна, Ампер проводив досліди із замкнутими провідниками. Схему установки для дослідження сили взаємодії між прямолінійними провідниками зі струмом зображено на мал. 105. За її допомогою можна вимірюва-</p>
+<p style="word-spacing: 1.1px;">зі струмом</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-326.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 105. Схема установки для дослідження магнітної взаємодії провідників</p>
+<p style="word-spacing: 1.1px;"><sup>1</sup>&nbsp;Словом &laquo;струми* для спрощення замінюється фраза &laquo;провідники, по яких проходить електричний струм&raquo;.</p>
+<p style="word-spacing: 1.1px;">ти силу взаємодії, змінюючи силу струму у провідниках та їх взаємне розташування.</p>
+<p style="word-spacing: 1.1px;">У результаті проведених досліджень Ампер зумів встановити вираз для сили взаємодії, що діє між двома елементами струму:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-327.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Два нескінченно малі елементи провідників зі струмом взаємодіють між собою із силою AF, яка прямо пропорційна довжинам цих елементів Д/<sub>1</sub>&nbsp;та Д1<sub>2</sub>, силам струму в них /j та /<sub>2</sub>, обернено пропорційна квадрату відстані між ними г<sup>2</sup>&nbsp;і залежить від взаємної орієнтації цих елементів (мап. 106),</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-328.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">відносна магнітна проникність середовища -скалярна фізична величина, що характеризує вплив однорідного середовища на магнітне поле.</p>
+<p style="word-spacing: 1.1px;"><span style="word-spacing: 1.1px;">Закон Ампера відіграє таку ж роль у магнітостатиці, як і закон Кулона в електростатиці. За допомогою закону Ампера можна обчислити силу взаємодії провідників зі струмом довільної довжини і форми. Обчисливши силу взаємодії між елементами струму, визначають інтегральну суму.&nbsp;</span></p>
+<p style="word-spacing: 1.1px;">&nbsp;</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Наприклад, формула для обчислення сили взаємодії (сили Ампера) між двома прямими паралельними провідниками скінченної довжини І зі струмами І,</p>
+<p style="word-spacing: 1.1px;">і/<sub>2</sub>, відстань між якими г, набуває вигляду</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-329.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо струми</p>
+<p style="word-spacing: 1.1px;">течуть в один бік, сила взаємодії намагається зблизити провідники, якщо ж струми течуть у різні боки - віддалити.</p>
+<p style="word-spacing: 1.1px;">У СІ дану формулу було використано для означення одиниці сили струму - ампера.</p>
+<p style="word-spacing: 1.1px;">1 А - одиниця сили струму, яка дорівнює силі постійного струму, що, проходячи по двох паралельних прямолінійних провідниках нескінченної довжини з дуже малою площею поперечного перерізу, які розміщені у вакуумі на відстані 1 м один від одного, спричинює силу взаємодії 2 -10&nbsp;<sup>7</sup>&nbsp;Н на кожній ділянці провідників довжиною 1 м.</p>
+<p style="word-spacing: 1.1px;">Магнітна стала. З визначення ампера можна обчислити значення магнітної сталої,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-330.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Врахувавши, що для вакууму</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-331.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">маємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-332.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Цікавий результат отримаємо, коли обчислимо добуток двох сталих -електричної та магнітної. Для зручності значення електричної сталої запи-</p>
+<p style="word-spacing: 1.1px;">шемо у вигляді</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-333.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Отримаємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-334.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-335.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">А як відомо,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-336.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">це швидкість світла, яку прийнято позначати с. Отже,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-337.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Отримане співвідношення вказує на єдину природу електричних, магнітних і світлових явищ.</p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Як взаємодіють між собою паралельні струми? Що спричинює їх взаємодію?</p>
+<p style="word-spacing: 1.1px;">2. Що встановлює закон Ампера?</p>
+<p style="word-spacing: 1.1px;">3. Чому дорівнює магнітна стала?</p>
+<p style="word-spacing: 1.1px;">4. Дайте визначення одиниці сили струму в СІ.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2502-magntne-pole-strumu.html">Магнітне поле струму</a></li><li><a href="2301-dya-magntnogo-polya-na-provdnik-z-strumom-sila-ampera-dya-magntnogo-polya-na-provdnik-z-strumom.html">Дія магнітного поля на провідник зі струмом. Сила Ампера  Дія магнітного по ...</a></li><li><a href="2299-magntne-pole-provdnika-z-strumom.html">Магнітне поле провідника зі струмом</a></li><li><a href="2105-dya-magntnogo-polya-na-provdnik-z-strumom-sila-ampera.html">Дія магнітного поля на провідник зі струмом. Сила Ампера</a></li><li><a href="598-sila-ampera.html">Сила Ампера</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

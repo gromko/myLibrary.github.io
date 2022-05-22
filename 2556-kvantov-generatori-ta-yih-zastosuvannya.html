@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Квантові генератори та їх застосування &raquo; mozok.click</title>
+<meta name="description" content="Спонтанне і вимушене випромінювання. Як ми знаємо, перехід квантової системи (атома, йона, молекули) з одного енергетичного стану в інший супроводжується випромінюванням або поглинанням кван" />
+<meta name="keywords" content="випромінювання, кванта, поглинанням, випромінюванням, електромагнітного, супроводжується, такий, люмінесценції, теплового, механізм, інший, говорили, стану, квантової, перехід, знаємо, вимушене, системи, атома, енергетичного" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2556-kvantov-generatori-ta-yih-zastosuvannya.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Квантові генератори та їх застосування</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2556").Button("#infc2556"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2556" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2556" class="infcont">
+			<ul>
+				<li><i>Переглядів: 14693</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 22:50</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2556'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2556-kvantov-generatori-ta-yih-zastosuvannya.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2556'); return false;">1</a></li>
+		<li><a href="2556-kvantov-generatori-ta-yih-zastosuvannya.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2556'); return false;">2</a></li>
+		<li><a href="2556-kvantov-generatori-ta-yih-zastosuvannya.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2556'); return false;">3</a></li>
+		<li><a href="2556-kvantov-generatori-ta-yih-zastosuvannya.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2556'); return false;">4</a></li>
+		<li><a href="2556-kvantov-generatori-ta-yih-zastosuvannya.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2556'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 22:50</i></a></span>
+	<h3 class="btl"><span id="news-title">Квантові генератори та їх застосування</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2556" style="display:inline;"><p>Спонтанне і вимушене випромінювання. Як ми знаємо, перехід квантової системи (атома, йона, молекули) з одного енергетичного стану в інший супроводжується випромінюванням або поглинанням кванта електромагнітного випромінювання. Досі ми говорили лише про такий механізм випромінювання (теплового випромінювання, люмінесценції), за якого атом переходить на нижчий енергетичний рівень спонтанно (самодовільно, без будь-якого зовнішнього впливу) (мал. 289, а).</p>
+<p style="word-spacing: 1.1px;">Перейти на нижчий енергетичний рівень та випромінити квант енергії квантова система може і під впливом зовнішнього електромагнітного поля (мал. 289, б). Таке випромінювання називається вимушеним (індукованим). Характерною особливістю вимушеного випромінювання є те, що воно тотожне первинному падаючому на речовину випромінюванню, тобто збігається з ним за частотою, напрямками поширення і поляризації та когерентне у всьому об&rsquo;ємі речовини. Цю особливість використовують у джерелах потужного когерентного випромінювання - квантових генераторах (лазерах, мазерах).</p>
+<p style="word-spacing: 1.1px;">З&rsquo;ясуємо деякі особливості механізму індукованого випромінювання. Припустимо, що через речовину проходить електромагнітна хвиля. Як відомо, за рахунок поглинутої енергії частина атомів речовини переходить у збуджений стан (вищий за енергією). Збуджений атом може віддати свою енергію, що дорівнює hv = Е<sub>2</sub>- Е<sub>р</sub>&nbsp;сусіднім атомам під час зіткнення чи випромінити фотон у будь-якому напрямі. Якщо зовнішня електромагнітна</p>
+<p style="word-spacing: 1.1px;">хвиля має частоту</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1017.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">то вона ніби &diams;струшує&raquo; із збудженого атома</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1018.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">подібні до себе кванти випромінювання, не затрачаючи на це енергії. Під її дією атоми узгоджено переходять на нижчі енергетичні рівні, випромінюючи хвилі, які збігаються за частотою і фазою із падаючою хвилею.</p>
+<p style="word-spacing: 1.1px;">У випадку квантової системи, що має два енергетичні рівні (загальна кількість рівнів завжди велика, але йдеться про &laquo;діючі&raquo; рівні), якою б потужною не була зовнішня хвиля, кількість збуджених атомів буде не більшою від незбуджених. Бо хвиля одночасно збуджує атоми і спричинює індуковані переходи з верхнього рівня на нижній.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Для створення потужного індукованого випромінювання необхідна така квантова система, в якій кількість атомів у збудженому стані перевищувала б кількість атомів в основному стані (система з інверсним станом). Такою може бути квантова система з трьох енергетичних рівнів.</p>
+<p style="word-spacing: 1.1px;">Принцип дії квантових генераторів. Можливість індукованого (вимушеного) випромінювання передбачив ще 1917 р. А. Ейнштейн. Можливість створення інверсного заселення передбачив радянський фізик В. О. Фабрикант у 1939 р. Таким чином зародилась нова галузь фізики -квантова електроніка, розвиток якої привів до створення квантових генераторів - мазерів та лазерів.</p>
+<p style="word-spacing: 1.1px;">У 1951-1954 рр. радянські фізики М. Г. Басов і О. М. Прохоров запропонували застосовувати для збудження атомів газорозрядну лампу, яка оточує прозорий стрижень. Під час спалаху цієї лампи атоми стрижня переходять у збуджений стан, після чого можливе підсилення світла. 1954 року М. Г. Басов і 0. М. Прохоров та американський фізик Ч. Таунас сконструювали прилад, який працював на довжині хвилі Х = 1,27 см , його назвали &laquo;мазер&raquo;, а у 1960 р. в СІЛА вдалось побудувати прилад, який випромінював в оптичному діапазоні, - його назвали &laquo;лазер&raquo;.</p>
+<p style="word-spacing: 1.1px;">Квантові генератори - це джерела когерентного електромагнітного випромінювання з точно певною частотою і високою напрямленістю.</p>
+<p style="word-spacing: 1.1px;">Лазер - квантовий генератор когерентних хвиль оптичного діапазону. Назва &laquo;лазер&raquo; є абревіатурою англійської фрази &laquo;Light Amplification by Stimulated Emission of Radiation&raquo; - підсилення світла за допомогою індукованого (вимушеного) випромінювання.</p>
+<p style="word-spacing: 1.1px;">Мазер - генератор когерентного вузьконапрямленого монохроматичного електромагнітного випромінювання сантиметрового радіодіапазону (ультракороткі хвилі). Принцип дії подібний до принципу дії лазера і ґрунтується на вимушеному випромінюванні.</p>
+<p style="word-spacing: 1.1px;">Розглянемо принцип дії рубінового лазера, схему якого наведено на мал. 290. Він складається з штучного рубінового стержня (окис алюмінію з домішками хрому), торці якого точно паралельні, гладенько відполіровані і покриті сріблом, причому лівий торець роблять непрозорим, а правий (вихідний) - напівпрозорим. *</p>
+<p style="word-spacing: 1.1px;">Світлове випромінювання лазера створюється атомами Хрому. Саме атоми Хрому в кристалі мають три енергетичні рівні (мал. 291), для збудження яких використовують спеціальну потужну газорозрядну лампу, що має форму спіралі і дає синьо-зелене світло.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p>&nbsp;</p>
+<p style="word-spacing: 1.1px;">При опроміненні світлом ксенонової лампи, атоми Хрому переходять з основного енергетичного рівня 1 на збуджений рівень 3. На рівні 3 електрон</p>
+<p style="word-spacing: 1.1px;">&laquo;живе&raquo; дуже мало, приблизно 10'<sup>8</sup>&nbsp;с, після цього самовільно без випромінювання переходить до стану 2 (енергія при цьому передається кристалічній ґратці). На рівні 2 електрони можуть перебувати тривалий час (приблизно 10~<sup>3</sup>с), чим забезпечується інверсний (перенаселений) стан. У цьому випадку кристал рубіну є активним середовищем. Якщо тепер декілька електронів перейдуть із стану 2 в стан 1, вони стимулюють вимушене випромінювання інших атомів і починається лазерна генерація.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1019.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Внаслідок переходів 2-&gt; 1 випромінюються фотони у різних напрямках. Ті з них, які йдуть під кутом до осі кристала, виходять з нього і для наступних процесів не мають ніякого значення. А хвиля, що проходить вздовж осі кристала, багато разів відбивається від спеціальних дзеркал, які наносяться на торцях кристала і утворюють так званий резонатор. Хвиля індукованого випромінювання збуджених атомів хрому швидко підсилюється. Через один із торців стрижня (напівпрозорий) виходить потужний короткочасний імпульс червоного світла. Рубіновий лазер працює в імпульсному режимі. Але є лазери безперервної дії. Наразі розроблено різні лазери на склі, газах, напівпровідниках і т. ін. Коефіцієнт корисної дії газового лазера на С0<sub>2</sub>&nbsp;досягає 20%, саме їх використовують в промисловості.</p>
+<p style="word-spacing: 1.1px;">Лазер - це одне з найбільших досягнень сучасної фізики. За допомогою лазера дістають когерентні хвилі, які завдяки високому ступеню напрямле-ності можуть сфокусувати всю енергію лазерного випромінювання в пляму розмірами, близькими до довжини хвилі. Це приводить до того, що результуюче значення напруженості поля Е у світлі лазера настільки велике, що може відірвати електрон від атома, нагріти середовище до температури випаровування тощо.</p>
+<p style="word-spacing: 1.1px;">Лазерне випромінювання має такі властивості:</p>
+<p style="word-spacing: 1.1px;">лазери здатні створювати пучки світла з дуже малим кутом розбіжності; світло лазера є монохроматичним; лазер є найпотужнішим джерелом світла.</p>
+<p style="word-spacing: 1.1px;">Лазери використовують для зв&rsquo;язку в космосі, випаровування чи зварювання матеріалів у вакуумі, в хірургічних операціях (офтальмологія), для збудження хімічних реакцій, здійснення керованої термоядерної реакції та ін.</p>
+<p style="word-spacing: 1.1px;">Поняття про нелінійну оптику. Квантові генератори створюють світлові пучки дуже високої інтенсивності. Вектор напруженості такої хвилі змінює оптичні характеристики середовища, в якому поширюється хвиля (показник заломлення, коефіцієнт поглинання тощо), тобто поляризація середовища нелінійно залежить від напруженості поля хвилі. При поширенні таких хвиль порушується принцип суперпозиції і хвилі можуть впливати одна на одну.</p>
+<p style="word-spacing: 1.1px;">Нелінійний характер залежності між поляризацією середовища і напруженістю діючого світлового поля веде до виникнення нових оптичних ефектів і до істотних змін у перебігу вже відомих оптичних явищ.</p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Яке випромінювання називають спонтанним і чому воно є некогерентним?</p>
+<p style="word-spacing: 1.1px;">2. Яке випромінювання називають вимушеним (або індукованим)? Виконайте рисунок і поясніть процес утворення вимушеного випромінювання.</p>
+<p style="word-spacing: 1.1px;">3. Поясніть принцип ди рубінового лазера.</p>
+<p style="word-spacing: 1.1px;">4. Чим відрізняється лазерне випромінювання від випромінювань, створюваних іншими джерелами світла ? Назвіть основні сфери застосування лазерів.</p>
+<p style="word-spacing: 1.1px;">Найголовніше в розділі &laquo;&laquo;Квантові властивості матерії&raquo;</p>
+<p style="word-spacing: 1.1px;">Початок квантової теорії було закладено гіпотезою квантування М. Планка, згідно з якою енергія електромагнітного випромінювання квантується. Ця гіпотеза дозволила пояснити розподіл інтенсивності енергії в спектрі випромінювання абсолютно чорного тіла.</p>
+<p style="word-spacing: 1.1px;">А. Ейнштейн, створюючи теорію фотоефекту, запропонував вважати, що світло випромінюється та поглинається окремими квантами - фотонами. Фотонна теорія світла чудово пояснює ефект Комптона, тиск світла.</p>
+<p style="word-spacing: 1.1px;">До числа перших моделей атома належать модель Томсона та планетарна (ядерна) модель Резерфорда-Бора. Щоб усунути протиріччя нестабільності атома Резерфорда-Бора та пояснити лінійчаті спектри атомів, Н. Бор сформулював два постулати: 1) електрони в атомах можуть рухатись лише на певних орбітах з квантованим моментом імпульсу (внаслідок чого значення радіуса орбіти та енергії електрона дискретні); 2) електрон у стаціонарному стані не випромінює, перехід електрона з вищого стану на нижчий супроводжується випромінюванням, енергія кванта випромінювання дорівнює різниці значень енергій між початковим і кінцевим станом. Момент імпульсу</p>
+<p style="word-spacing: 1.1px;">електрона в атомі квантується за правилом</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1020.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де п - ціле число, яке</p>
+<p style="word-spacing: 1.1px;">називають квантовим числом.</p>
+<p style="word-spacing: 1.1px;">Стан атома Гідрогену з п = 1 називають основним станом (його енергія Е, = -13,55 еВ), більшим значенням п відповідають збуджені стани, енергія яких Е<sub>п</sub>&nbsp;= -13,6 / п<sup>2</sup>&nbsp;еВ.</p>
+<p style="word-spacing: 1.1px;">Атоми переходять у збуджені стани внаслідок співударів з іншими атомами або поглинаючи квант випромінювання відповідної енергії. Повертаючись у основний стан, атом випромінює.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p>&nbsp;</p>
+<p style="word-spacing: 1.1px;">Перехід електрона в збудженому атомі з верхнього енергетичного рівня на нижній може відбуватись не лише спонтанно, а й вимушено - під впливом зовнішнього електромагнітного поля, у результаті чого отримується</p>
+<p style="word-spacing: 1.1px;">монохроматичне і когерентне випромінювання. Джерела такого випромінювання - квантові генератори (лазери, мазери).</p>
+<p style="word-spacing: 1.1px;">Чим більше електронів має атом, тим складніша схема його енергетичних рівнів і спектр. Спектри випромінювання речовини в атомарному стані (атомарні спектри) - лінійчаті. Молекулярні спектри - смугасті, оскільки енергія молекул складається із енергії електронів, енергії коливального руху атомів, енергії обертання молекули навколо центра тяжіння. Усі ці складові дискретні, і відповідно кількість можливих переходів із одного енергетичного стану в інший дуже велика. Це зумовлює велику кількість спектральних ліній, які утворюють смугу.</p>
+<p style="word-spacing: 1.1px;">У рідких і твердих тілах, де енергія кожної частинки включає в себе й енергію її взаємодії з іншими частинками, спектри випромінювання неперервні.</p>
+<p style="word-spacing: 1.1px;">Гіпотеза де Бройля про те, що електрон та інші частинки мають хвильові властивості, дозволила пояснити квантування борівських орбіт на основі корпускулярно-хвильового дуалізму: дозволені орбіти відповідають стоячим хвилям, довжина яких вкладається на орбіті ціле число раз.</p>
+<p style="word-spacing: 1.1px;">Теорія Бора, яка поєднувала класичні та квантові ідеї не спроможна була пояснити всі особливості будови складних атомів (вона добре пояснювала лише особливості будови атома водню).</p>
+<p style="word-spacing: 1.1px;">Е. Шредінгер та В. Гейзенберг розробили нову теорію, яка отримала назву квантової механіки, яка і нині є основною теорією явищ мікросвіту. Згідно з квантовою механікою стан електрона в атомі характеризується чотирма квантовими числами. Розподіл електронів по рівнях в багатоелектронних атомах підпорядковується принципу Паулі, згідно з яким два електрони в атомі не можуть мати однакові набори квантових чисел.</p>
+<p style="word-spacing: 1.1px;">Оболонкова структура атомів приводить до періодичності властивостей хімічних елементів.</p>
+<p style="word-spacing: 1.1px;">На початку XX ст. завдяки дослідам Резерфорда вдалось встановити, що в центрі атома міститься крихітне за розмірами ядро, але в ньому зосереджена практично вся маса атома. Одночасно із створенням квантової теорії та спробами пояснити будову атома і його електронних оболонок розпочалось дослідження й атомного ядра. Вивчення властивостей атомних ядер, їх різних перетворень і ядерних (радіоактивних) випромінювань має надзвичайно велике наукове і практичне значення.</p>
+<p style="word-spacing: 1.1px;">У цьому розділі ми розглянемо основи ядерної фізики та фізики елементарних частинок.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2554-spektri-teplovogo-vipromnyuvannya-ta-lyumnescencyi.html">Спектри теплового випромінювання та люмінесценції</a></li><li><a href="2550-eksperimentalne-pdtverdzhennya-postulatv-bora.html">Експериментальне підтвердження постулатів Бора</a></li><li><a href="2544-korpuskulyarno-hviloviy-dualzm-svtla.html">Корпускулярно-хвильовий дуалізм світла</a></li><li><a href="2543-gpoteza-kvantv-planka.html">Гіпотеза квантів Планка</a></li><li><a href="2525-harakteristiki-elektromagntnih-hvil.html">Характеристики електромагнітних хвиль</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

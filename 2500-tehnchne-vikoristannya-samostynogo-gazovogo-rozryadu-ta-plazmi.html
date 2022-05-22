@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Технічне використання самостійного газового розряду та плазми &raquo; mozok.click</title>
+<meta name="description" content="Різні види самостійного розряду та їх використання. Залежно від властивостей і стану газу, характеру і розташування електродів, а також від прикладеної до електродів напруги виникають різні " />
+<meta name="keywords" content="розряду, електродів, самостійного, різні, виникають, тліючий, коронний, розряди, дуговий, іскровий, напруги, також, властивостей, Залежно, використання, стану, характеру, Різні, розташування, прикладеної" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2500-tehnchne-vikoristannya-samostynogo-gazovogo-rozryadu-ta-plazmi.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Технічне використання самостійного газового розряду та плазми</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2500").Button("#infc2500"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2500" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2500" class="infcont">
+			<ul>
+				<li><i>Переглядів: 8472</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 19:24</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2500'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2500-tehnchne-vikoristannya-samostynogo-gazovogo-rozryadu-ta-plazmi.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2500'); return false;">1</a></li>
+		<li><a href="2500-tehnchne-vikoristannya-samostynogo-gazovogo-rozryadu-ta-plazmi.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2500'); return false;">2</a></li>
+		<li><a href="2500-tehnchne-vikoristannya-samostynogo-gazovogo-rozryadu-ta-plazmi.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2500'); return false;">3</a></li>
+		<li><a href="2500-tehnchne-vikoristannya-samostynogo-gazovogo-rozryadu-ta-plazmi.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2500'); return false;">4</a></li>
+		<li><a href="2500-tehnchne-vikoristannya-samostynogo-gazovogo-rozryadu-ta-plazmi.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2500'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 19:24</i></a></span>
+	<h3 class="btl"><span id="news-title">Технічне використання самостійного газового розряду та плазми</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2500" style="display:inline;"><p>Різні види самостійного розряду та їх використання. Залежно від властивостей і стану газу, характеру і розташування електродів, а також від прикладеної до електродів напруги виникають різні види самостійного розряду, а саме: тліючий, коронний, іскровий та дуговий розряди.</p>
+<p style="word-spacing: 1.1px;">Тліючий розряд спостерігається в газах або парах за низького тиску (у межах декілька десятків міліметрів ртутного стовпа і меншого).</p>
+<p style="word-spacing: 1.1px;">На мал. 94 зображена установка для отримання тліючого розряду в газорозрядній трубці. Електроди газорозрядної трубки під&rsquo;єднують до джерела постійного струму з напругою в декілька тисяч вольт. Насосом відкачують повітря з трубки. (При атмосферному тиску газ усередині трубки йонізувати не вдається, оскільки даної напруги недостатньо.) Після зменшення тиску газу приблизно до 40-50 мм рт. ст. в трубці спостерігається вузький шнур, що світиться. Починається самостійний газовий розряд. За тиску близько 0,5 мм рт. ст. розряд заповнює всю трубку, причому стовп біля анода розбивається на ряд шарів, довжина яких із зниженням тиску зростає. Частини світного стовпа, поділені темними проміжками називають стратами. За тиску близько 0,02 мм рт. ст. свічення в трубці слабшає, страти пропадають, але яскраво починає світитися скло навпроти катода.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-310.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Залежність форми тліючого розряду від тиску газу дає можливість використовувати тліючий розряд у вакуумній техніці для попередньої (візуальної) оцінки ступеня його розрідження.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Тліючий розряд використовується також в газосвітних трубках (мал. 95), лампах денного світла, стабілізаторах напруги, для отримання електронних і йонних пучків тощо. Якщо в катоді зробити щілину, то крізь неї в простір за катодом проходять вузькі йонні пучки.</p>
+<p style="word-spacing: 1.1px;">За нормального тиску в газі, що перебуває в сильно неоднорідному електричному полі (наприклад, біля загострень або дротів ліній високої напруги) спостерігається розряд, світна область якого часто нагадує корону. Тому його і назвали коронним (мал. 96).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-311.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Густина заряду на поверхні провідника тим більша, чим більша його кривизна. На вістрі густина заряду максимальна, тому навколо вістря виникає сильне електричне поле. Коли напруженість поля перевищує 3 &bull; 10<sup>6</sup>&nbsp;В/м, настає розряд. За такої великої напруженості йонізація за допомогою електронного удару відбувається при атмосферному тиску. З віддаленням від поверхні провідника напруженість швидко зменшується. Тому йонізація і пов&rsquo;язане з нею свічення газу спостерігається в обмеженій ділянці простору - поблизу коронуючих електродів. У разі коронування катода (негативна корона) електрони, що викликають ударну йонізацію молекул газу, вибиваються з катода внаслідок бомбардування його позитивними йонами. Якщо коронує анод (позитивна корона), то народження електронів відбувається внаслідок фотойоні-зації газу поблизу анода.</p>
+<p style="word-spacing: 1.1px;">За достатньо високої напруги між електродами коронний розряд переходить в іскровий. З підвищенням напруги коронний розряд на вістрі набуває вигляду світлих полос, що виходять з вістря.</p>
+<p style="word-spacing: 1.1px;">Заряджена грозова хмара індукує на поверхні Землі під собою електричні заряди протилежного знака. Особливо великий заряд скупчується на вістрях. Тому перед грозою або під час грози нерідко на вістрях і гострих кутах високо піднятих предметів спалахують схожі на пензлики конуси світла.</p>
+<p style="word-spacing: 1.1px;">Коронний розряд доводиться враховувати, маючи справу з високою напругою. За наявності виступаючих частин або дуже тонких дротів може початися коронний розряд. Це призводить до значних втрат електроенергії. Чим вища напруга високовольтної лінії, тим товстішими мають бути дроти.</p>
+<p style="word-spacing: 1.1px;">Коронний розряд використовують для електричного очищення газів (електрофільтри). Посудина, наповнена димом, несподівано стає абсолютно прозорою, якщо внести до неї гострі металеві електроди, сполучені з електричною машиною; усі тверді і рідкі частинки осідатимуть на електродах. Пояснення явища полягає в тому, що як тільки біля дроту запалюється корона, повітря усередині посудини сильно йонізується. Газові йони прилипають до частинок пилу і заряджають їх. Оскільки усередині посудини діє сильне електричне поле, заряджені частинки пилу рухаються під дією поля до електродів, де й осідають. Коронний розряд використовується і в лічильнику елементарних частинок Гейгера-Мюллера, про який ви дізнались у 9-му класі і який ми детальніше розглянемо у розділі &laquo;Ядерна фізика&raquo;, вивчаючи методи реєстрації радіоактивних випромінювань.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Іскровиіі розряд (мал. 97) виникає в газі при нормальному тиску за наявності електричного поля напруженістю, не меншою за напруженість пробою (для повітря це 3 МВ/м). Отже, якщо поступово збільшувати напругу між вміщеними в атмосферне повітря електродами, то при напрузі пробою між ними пролітає іскровий розряд, який з величезною швидкістю пронизує проміжок між електродами, гасне і знову виникає, так що око бачить одну суцільну іскру.</p>
+<p style="word-spacing: 1.1px;">Красиве і небезпечне явище природи - блискавка - є іскровим розрядом в атмосфері.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-312.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Напруженість поля, за якої настає іскровий пробій газу, має різне значення у різних газів і залежить від їх стану (тиску, температури). Чим більша відстань між електродами, тим потрібна більша пробивна напруга для настання іскрового пробою газу. Знаючи, як залежить напруга пробою від відстані між електродами будь-якої певної форми, можна виміряти невідому напругу за максимальною довжиною іскри. На цьому оснований пристрій - іскровий вольтметр - для грубої оцінки великих напруг.</p>
+<p style="word-spacing: 1.1px;">Іскровий заряд, який виникає між електродами &laquo;свічки запалення&raquo; використовується для запалювання робочої суміші в двигуні внутрішнього згорання.</p>
+<p style="word-spacing: 1.1px;">Якщо запалити іскровий розряд, а потім поступово зменшувати електричний опір кола, зменшуючи відстань між електродами, то розряд перейде з переривчатого у безперервний - виникне новий вид газового розряду -дуговий. При цьому сила струму різко зростає, досягаючи десятків і сотень ампер, а напруга на розрядному проміжку падає до кількох десятків вольт.</p>
+<p style="word-spacing: 1.1px;">Дуговий розряд можна отримати, обминувши стадію іскри. У 1802 р. російський фізик В. В. Петров (1761-1834) винайшов електричну дугу (мал. 98).</p>
+<p style="word-spacing: 1.1px;">Основною причиною дугового розряду є інтенсивне випускання електронів розжареним електродом. Електрони прискорюються електричним полем і здійснюють ударну йонізацію молекул газу. Немалу роль відіграє при цьому і термічна йонізація молекул навколишнього середовища.</p>
+<p style="word-spacing: 1.1px;">Особливо широко використовується електрична дуга для зварювання та різання металів.</p>
+<p style="word-spacing: 1.1px;">У 1888 р. російський учений і винахідник М. Г. Славянов уперше в світі провів електрозварювання. Великий внесок у технологію електрозварювання зробив наш вітчизняний учений Є. О. Натон. Сьогодні електрозварювання застосовується в автомобільній галузі, авіабудуванні, суднобудуванні, будівництві та інших високотехнологічних галузях.</p>
+<p style="word-spacing: 1.1px;">Внаслідок високої температури електроди дуги випускають сліпуче світло, і тому електрична дуга є одним з кращих джерел світла. Вона споживає всього близько 3 Вт на канделу і є значно економічнішою, ніж найкращі лампи розжарювання. Електрична дуга вперше була використана для освітлення у 1875 р. російським інженером-винахідником П. Н. Яблочковим (1847&mdash; 1894).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-313.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Одним з прикладів використання дугового розряду для освітлення можуть бути ксенонові лампи. У них світло створюється дуговим розрядом між двома електродами, які вміщені в колбу, заповнену інертним газом ксеноном (мал. 99).</p>
+<p style="word-spacing: 1.1px;">Усі ви мабуть чули про сучасні енергозберігаючі лампи (мал. 100). Це люмінесцентні лампи(ртутнілампинизькоготиску), в яких також використовується газовий розряд. Така лампа має колбу у вигляді трубки, виготовленої зі скла, на кінцях якої впаяні електроди 1. Колба лампи наповнена дозованою кількістю інертного газу і ртуті. У цих парах і відбувається дуговий розряд. Електрони 2 співударяються з атомами ртуті, внаслідок чого випромінюється ультрафіолетове світло, яке поглинається люмінофором 3, яким покрита внутрішня поверхня скляної колби. Люмінофор випромінює видиме світло.</p>
+<p style="word-spacing: 1.1px;">Потужне джерело ультрафіолетового випромінювання, яке застосовується в медицині, біології, техніці, сільському господарстві, медтехніці, є дуговою розрядною ртутною лампою високого тиску.</p>
+<p style="word-spacing: 1.1px;">Плазма та її властивості. Практичне застосування плазми. Плазму називають четвертим станом речовини. Майже всі речовини за поступового підвищення їх температури від абсолютного нуля проходять послідовно такі стани: твердий, рідкий, газоподібний, плазма (від грецького plasma -оформлене).</p>
+<p style="word-spacing: 1.1px;">Плазмою називають частково або повністю йонізований газ, в якому концентрація позитивних і негативних зарядів практично однакова, тобто в цілому плазма є електрично нейтральною системою.</p>
+<p style="word-spacing: 1.1px;">Плазма оточує нашу Землю у вигляді йоносфери, забезпечуючи стійкий радіозв&rsquo;язок. Плазма заповнює увесь Всесвіт у вигляді дуже розрідженого міжпланетного газу. У стані плазми перебуває переважна частина речовини Всесвіту - зорі, зоряні атмосфери, туманності, галактичне і міжзоряне середовище. Нарешті з плазми складається наше Сонце.</p>
+<p style="word-spacing: 1.1px;">Біля Землі плазма існує у вигляді сонячного вітру (мал. 101, а), що заповнює магнітосферу Землі (утворюючи радіаційні пояси Землі) та йоносферу. Сонячний вітер впливає на всю Сонячну систему, починаючи з геліосфери.</p>
+<p style="word-spacing: 1.1px;">Геліосфера - це сонячне магнітне поле, роздуте сонячним вітром на всю Сонячну систему.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-314.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Через зіткнення частинок сонячного вітру з верхніми шарами атмосфери відбувається йонізація і збудження її атомів і молекул. Випромінювання збуджених атомів спостерігається як полярне сяйво. Процесами у навколоземній плазмі зумовлені магнітні бурі, полярні сяйва (мал. 101, б).</p>
+<p style="word-spacing: 1.1px;">Фізиків плазма спочатку цікавила як своєрідний провідник електричного струму, а також як джерело світла. Нині фізичні властивості плазми ретельно досліджують заради багатьох інших застосувань.</p>
+<p style="word-spacing: 1.1px;">Будь-яка плазма характеризується ступенем (іонізації а - відношенням кількості йонізованих частинок до повної їх кількості в одиниці об&rsquo;єму плазми. Залежно від значення а говорять про слабко (а становить частки відсотка), помірно (а - декілька відсотків) і повністю (а близький до 100%) йонізовану плазму.</p>
+<p style="word-spacing: 1.1px;">Плазма є сумішшю декількох компонент, неоднаково нагрітих. Однією з цих компонент є електрони, другою - позитивні йони і третьою - нейтральні атоми. Вони рівномірно перемішані між собою. Проте у електронів, йонів і нейтральних атомів плазми (на відміну від суміші газів) середня кінетична енергія різна. Електрони, як правило, мають набагато більшу енергію, ніж йони, а кінетична енергія йонів може перевищувати енергію нейтральних атомів і молекул. Тому можна говорити, що плазма є сумішшю компонент з різними температурами.</p>
+<p style="word-spacing: 1.1px;">Слід розрізняти три різні температури: електронну Т<sub>е</sub>, йонну Т<sub>Л</sub>&nbsp;і атомну Т<sub>л</sub>. Зазвичай Т<sub>г</sub>&raquo; Т<sub>л</sub>&nbsp;&gt; Т<sub>я</sub>. Дуже велика відмінність між Т<sub>е</sub>&nbsp;і Т<sub>(І</sub>&nbsp;зумовлена величезною різницею у масі електронів та йонів. Зовнішні джерела електричної енергії, за допомогою яких створюється і підтримується газовий розряд, передають енергію безпосередньо електронам плазми, оскільки саме легкі електрони є носіями електричного струму.</p>
+<p style="word-spacing: 1.1px;">Плазму з йонною температурою Г<sub>й</sub>&nbsp;&lt; 10 &rsquo; К називають низькотемпературною, а з Т<sub>л</sub>&nbsp;&gt; 10<sup>6</sup>&nbsp;К - високотемпературною. Високотемпературна плазма є основним об&rsquo;єктом дослідження в ядерній фізиці (для створення керованих термоядерних реакцій синтезу). У природних умовах термоядерні реакції відбуваються на Сонці: ядра Гідрогену з&rsquo;єднуються один з одним, утворюючи ядра Гелію, при цьому виділяється значна кількість енергії. Штучна реакція термоядерного синтезу була здійснена у водневій бомбі.</p>
+<p style="word-spacing: 1.1px;">Низькотемпературна плазма знаходить застосування в газорозрядних джерелах світла, газових лазерах.</p>
+<p style="word-spacing: 1.1px;">Найширше застосування плазма знайшла в світлотехніці - в газорозрядних лампах, що освітлюють вулиці світиться неонова або аргонова плазма. Дуга електричної зварки теж плазма. Звичайне полум&rsquo;я має деяку теплопровідність. Воно, хоч і слабко йонізоване, але є плазмою. Причина цієї провідності - невелика домішка натрію, який можна розпізнати по жовтому світінню полум&rsquo;я.</p>
+<p style="word-spacing: 1.1px;">Плазма застосовується у багатьох різних газорозрядних приладах: засобах відображення інформації, випрямлячах електричного струму, стабілізаторах напруги, плазмових підсилювачах і генераторах надвисоких частот. Всі так звані газові лазери (гелій-неоновий, криптоновий, на діоксиді вуглецю та ін.) насправді плазмові: газові суміші в них йонізовані електричним розрядом.</p>
+<p style="word-spacing: 1.1px;">Властивості, характерні для плазми, мають електрони провідності в металі (йони, жорстко закріплені у кристалічній ґратці, нейтралізують їх заряди), а також сукупність вільних електронів і рухомих &laquo;дірок&raquo; (вакансій) у напівпровідниках. Тому такі системи називають плазмою твердих тіл.</p>
+<p style="word-spacing: 1.1px;">Існують генератори низькотемпературної плазми - плазмотрони, - в яких використовується електрична дуга. За допомогою плазмотрона можна нагрівати майже будь-який газ до 7000-10000 К за соті і тисячні частки секунди. Із створенням плазмотрона виникла нова галузь науки - плазмова хімія: багато хімічних реакцій прискорюються або відбуваються лише в плазмовому струмені. Плазмотрони застосовуються і в гірничо рудній промисловості, і для різки металів. Створені також плазмові двигуни, магнітогідродинамічні електростанції. Енергетична установка, в якій енергія робочого тіла (рідкого або газоподібного електропровідного середовища, що рухається в магнітному полі) перетворюється безпосередньо в електричну енергію, називається магнітогідродинамічним генератором. Розробляються різні схеми плазмового прискорення заряджених частинок.</p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Наведіть приклади самостійних розрядів і поясніть умови їх виникнення.</p>
+<p style="word-spacing: 1.1px;">2. Що називають плазмою? Які властивості відрізняють плазму від газу?</p>
+<p style="word-spacing: 1.1px;">3. Ним відрізняється високотемпературна плазма від низькотемпературної?</p>
+<p style="word-spacing: 1.1px;">4. Де і з якою метою використовують властивості високотемпературної і низькотемпературної плазми?</p>
+<p style="word-spacing: 1.1px;">Найголовніше в розділі &laquo;Електричний струм&raquo;</p>
+<p style="word-spacing: 1.1px;">Напрямлений (упорядкований) рух заряджених частинок називають електричним струмом. Для виникнення та існування електричного струму потрібні: вільні носії заряду (позитивно і негативно заряджені частинки - йони, електрони) і сили, які створюють і підтримують їх упорядкований рух (такою силою, як правило, є сила електричного поля в провіднику).</p>
+<p style="word-spacing: 1.1px;">Сила струму І - фізична величина, яка характеризує швидкість перерозподілу електричного заряду в провіднику і визначається відношенням заряду q, що пройшов через поперечний переріз провідника протягом деякого</p>
+<p style="word-spacing: 1.1px;">часу, до величини цього інтервалу часу t,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-315.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Електричне коло - де сукупність з&rsquo;єднаних між собою провідниками джерел струму та споживачів електричної енергії, в яких струм виконує роботу.</p>
+<p style="word-spacing: 1.1px;">Закон Ома - залежність сили струму від різниці потенціалів (електричної напруги) між двома фіксованими точками електричного кола. Відкритий у 1826 р. Г. Омом. Закон Ома має два формулювання:</p>
+<p style="word-spacing: 1.1px;">Для однорідної ділянки кола сила струму І в ній прямо пропорційна напрузі U, прикладеній до даної ділянки, і обернено пропорційна її опору</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-316.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для повного кола з джерелом струму, ЕРС якого &pound;, закон Ома має вигляд</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-317.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де R - опір зовнішньої ділянки електричного кола, г - внутрішній&nbsp;опір джерела струму.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Основною характеристикою джерела струму є електрорушійна сила (ЕРС) - фізична величина, що характеризує енергію сторонніх сил джерела струму й визначається відношенням роботи сторонніх сил (тобто сил неелектростатичного походження) до позитивного електричного заряду, що</p>
+<p style="word-spacing: 1.1px;">переноситься ними по замкнутому колу,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-318.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На ділянці кола з послідовно з&rsquo;єднаними провідниками виконуються такі співвідношення:</p>
+<p style="word-spacing: 1.1px;">1) сила струму в усіх провідниках однакова, І = І<sub>х</sub>= /<sub>2</sub>;</p>
+<p style="word-spacing: 1.1px;">2) напруга на ділянці дорівнює сумі напруг на кожному провіднику,</p>
+<p style="word-spacing: 1.1px;">и = и<sub>г</sub>&nbsp;+ и<sub>2</sub>;</p>
+<p style="word-spacing: 1.1px;">3) загальний опір з&rsquo;єднання дорівнює сумі опорів кожного провідника,</p>
+<p style="word-spacing: 1.1px;">Н = + jR<sub>2</sub>*</p>
+<p style="word-spacing: 1.1px;">Для паралельного з&rsquo;єднання виконуються такі співвідношення:</p>
+<p style="word-spacing: 1.1px;">1) напруга на окремих провідниках і на всій ділянці однакова, U = U<sub>l</sub>&nbsp;= U<sub>2</sub>\</p>
+<p style="word-spacing: 1.1px;">2) сила струму до розгалуження дорівнює сумі сил струмів у кожному провіднику, / = І<sub>г</sub>&nbsp;+ 12 ;</p>
+<p style="word-spacing: 1.1px;">3) величина, обернена до загального опору ділянки, дорівнює сумі обернених величин опорів кожного провідника,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-319.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для розрахунку складних розгалужених кіл застосовують також правила Кірхгофа. Перше правило випливає з закону збереження електричного заряду і називається правилом вузлів: алгебраїчна сума струмів /<sub>л</sub>, що</p>
+<p style="word-spacing: 1.1px;">сходяться в будь-якій точці розгалуження, дорівнює нулю,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-320.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де</p>
+<p style="word-spacing: 1.1px;">п - кількість провідників, що сходяться в точці розгалуження. При цьому додатними вважаються струми, що прямують до точки розгалуження, від&rsquo;ємними - струми, ІЦО виходять з неї.</p>
+<p style="word-spacing: 1.1px;">Друге правило називають правилом контурів: у будь-якому довільно вибраному замкнутому контурі алгебраїчна сума добутків сил струмів І<sub>к</sub></p>
+<p style="word-spacing: 1.1px;">на опори R<sub>k</sub>&nbsp;відповідних ділянок контуру дорівнює алгебраїчній сумі ЕРС у цьому контурі,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-321.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Електричний струм в металах утворюють вільні електрони, в електролітах різноіменні йони, що рухаються у протилежних напрямах, в газах -електрони та йони, у напівпровідниках - електрони й дірки.</p>
+<p style="word-spacing: 1.1px;">Маса речовини, що виділяється під час електролізу за час Ді, дорівнює</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-322.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де М - молярна маса речовини, п - її валентність, N<sub>A</sub>&nbsp;- стала&nbsp;Авогадро, е - заряд електрона.</p>
+<p style="word-spacing: 1.1px;">Гази при температурах, близьких до кімнатної, складаються з нейтральних молекул і є діелектриками. Внаслідок нагрівання, а також під дією випромінювання та інших факторів відбувається йонізація газів, які стають провідниками (виникає газовий розряд). Розряд, який припиняється після вимкнення йонізатора, називають несамостійним, а розряд, який існує і після припинення дії йонізатора - самостійним. У самостійному розряді йони й електрони утворюються шляхом йонізації електронним ударом, термоелектронної емісії тощо.</p>
+<p style="word-spacing: 1.1px;">Щоб створити струм у вакуумі, у вакуумну трубку вводять джерело електронів. Найчастіше таким джерелом є нагрітий катод.</p>
+<p style="word-spacing: 1.1px;">Напівпровідники - речовини, які за своєю електропровідністю займають проміжне місце між провідниками і діелектриками. Напівпровідники мають специфічні, характерні лише для них властивості, які чітко виражені вже при кімнатній температурі (300 К, а саме: 1) концентрація носіїв струму, а отже, і електропровідність напівпровідників сильно залежить від зовнішніх впливів - наявності домішок, температури, опромінювання, зовнішнього електричного поля; 2) з підвищенням температури електропровідність напівпровідників різко зростає за експоненціальним законом.</p>
+<p style="word-spacing: 1.1px;">Хімічно чисті напівпровідники характеризуються власною провідністю, яка зумовлена рухом електронів проти силових ліній поля (провідність n-типу або електронна провідність) і так званих * дірок&raquo; у напрямі силових ліній (провідність p-типу або діркова провідність).</p>
+<p style="word-spacing: 1.1px;">На місці контакту двох напівпровідників з різною провідністю (наприклад, р- і n-типу) виникає так званий електронно-дірковий напівпровідниковий р-п-перехід, який використовують у напівпровідникових приладах (напівпровідниковий діод, транзистор).</p>
+<p style="word-spacing: 1.1px;">Між електричним та магнітним полями існує тісний зв'язок: змінне в часі електричне поле породжує магнітне, а змінне магнітне поле породжує електричне. Цей зв'язок встановлено завдяки відкриттю у 1831 р. англійським вченим М. Фарадеєм явища електромагнітної індукції. Згодом це явище стало основою всієї електротехніки і радіотехніки, а також основним принципом виробництва електроенергії.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2562-metodi-reyestracyi-yonzuyuchogo-vipromnyuvannya.html">Методи реєстрації йонізуючого випромінювання</a></li><li><a href="2555-rentgenvske-vipromnyuvannya.html">Рентгенівське випромінювання</a></li><li><a href="2545-tisk-svtla.html">Тиск світла</a></li><li><a href="2499-elektrichniy-strum-u-gazah.html">Електричний струм у газах</a></li><li><a href="2495-strum-u-vakuum-ta-yogo-zastosuvannya.html">Струм у вакуумі та його застосування</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

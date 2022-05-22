@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Трансформатор &raquo; mozok.click</title>
+<meta name="description" content="Будова та принцип дії трансформатора. Змінний струм має ту перевагу перед постійним, що напругу і силу струму можна в дуже широких межах перетворювати (трансформувати) майже без втрат енергі" />
+<meta name="keywords" content="енергії, розташовані, великих, електроенергію, виробляють, правило, електростанції, відстанях, звести, високою, напругою, передавати, треба, мінімуму, втрати, споживачів, втрат, перевагу, перед, постійним" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2519-transformator.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Трансформатор</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2519").Button("#infc2519"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2519" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2519" class="infcont">
+			<ul>
+				<li><i>Переглядів: 9431</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 21:27</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2519'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2519-transformator.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2519'); return false;">1</a></li>
+		<li><a href="2519-transformator.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2519'); return false;">2</a></li>
+		<li><a href="2519-transformator.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2519'); return false;">3</a></li>
+		<li><a href="2519-transformator.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2519'); return false;">4</a></li>
+		<li><a href="2519-transformator.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2519'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 21:27</i></a></span>
+	<h3 class="btl"><span id="news-title">Трансформатор</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2519" style="display:inline;"><p>Будова та принцип дії трансформатора. Змінний струм має ту перевагу перед постійним, що напругу і силу струму можна в дуже широких межах перетворювати (трансформувати) майже без втрат енергії. Як правило, електростанції, де виробляють електроенергію, розташовані на великих відстанях від її споживачів. Щоб звести до мінімуму втрати енергії, її треба передавати під високою напругою.</p>
+<p style="word-spacing: 1.1px;">Пристрої, які дають можливість підвищувати напругу (у разі подачі енергії від генераторів до лінії електропередачі) і знижувати її (у разі подачі від лінії електропередачі до споживачів), називаються трансформаторами.</p>
+<p style="word-spacing: 1.1px;">На мал. 172 зображено схему трансформатора та його умовне позначення. Він складається із двох індуктивно зв&rsquo;язаних котушок (обмоток) з різною кількістю витків мідного дроту. Одну з обмоток, яку називають первинною, під&rsquo;єднують до джерела змінної напруги.</p>
+<p style="word-spacing: 1.1px;">Прилади, які споживають електроенергію, під&rsquo;єднують до вторинної обмотки. Для того, щоб магнітне поле не розсіювалось у просторі, котушки розміщують на замкнутому осерді, виготовленому із листів спеціальної трансформаторної сталі, ізольованих один від одного тонким шаром лаку. Це роблять для того, щоб зменшити втрати на нагрівання. Нагадуємо, що у суцільних провідниках виникають значні вихрові струми (струми Фуко), які зумовлюють нагрівання провідника (&sect; 29).</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-597.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">З&rsquo;ясуємо принцип дії трансформатора. Трансформатор перетворює змінний струм однієї напруги на змінний струм іншої напруги за незмінної частоти. Якщо первинну обмотку під&rsquo;єднати до джерела змінної напруги, а вторинна буде розімкнута (цей режим роботи називають холостим ходом трансформатора), то в первинній обмотці з&rsquo;явиться слабкий струм, який створює в осерді змінний магнітний потік. Цей потік наводить у кожному витку обмоток однакову ЕРС, тому ЕРС індукції в кожній обмотці буде прямо</p>
+<p style="word-spacing: 1.1px;">пропорційна кількості витків у цій обмотці, тобто</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-598.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо вторинна обмотка буде розімкнута, то напруга на її затискачах U<sub>2&nbsp;</sub>дорівнюватиме ЕРС в<sub>2</sub>, яка в ній наводиться. У первинній обмотці ЕРС &pound;, за числовим значенням мало відрізняється від напруги U<sub>x</sub>, яка підводиться до</p>
+<p style="word-spacing: 1.1px;">цієї обмотки. Практично їх можна вважати однаковими, тому</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-599.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де k &mdash; коефіцієнт трансформації. Коли вторинних обмоток декілька, коефіцієнт трансформації для кожної з них визначають аналогічно.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Якщо у вторинне коло трансформатора увімкнути навантаження, у вторинній обмотці з&rsquo;явиться струм. Цей струм створює магнітний потік, який, за правилом Ленца, повинен зменшити зміну магнітного потоку в осерді, що, у свою чергу, призведе до зменшення ЕРС індукції в первинній обмотці. Але ця ЕРС дорівнює напрузі, прикладеній до первинної обмотки, тому струм у первинній обмотці повинен зрости, відновлюючи початкову зміну магнітного потоку. При цьому збільшується потужність, яку споживає трансформатор від мережі.</p>
+<p style="word-spacing: 1.1px;">Оскільки при роботі трансформатора відбуваються втрати енергії, то потужність, яка споживається первинною обмоткою, більша від потужності у вторинній обмотці. ККД трансформатора г| буде визначатись відношенням потужності Р<sub>2</sub>&nbsp;вторинної обмотки до потужності Р<sub>1</sub>&nbsp;первинної обмотки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-600.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">ККД сучасних трансформаторів часто перевищує 90% і доходить до 99%. Невеликі втрати електричної енергії під час її передавання з первинної обмотки у вторинну зумовлені виділенням джоулевого тепла у дротах обмоток і перемагнічуванням осердя. Для навантаженого трансформатора на первинній обмотці напруга на затискачах вторинної обмотки становить</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-601.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">спад напруги на вторинній обмотці, тоді коефіцієнт</p>
+<p style="word-spacing: 1.1px;">трансформації</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-602.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">спад напруги на навантаженні.</p>
+<p style="word-spacing: 1.1px;">Передавання електроенергії. Споживачі електроенергії є всюди. А виробляється вона лише на електростанціях, які розташовані в певних місцях. Консервувати електроенергію у великих масштабах немає можливості. Її треба використовувати відразу після вироблення. Тому виникає потреба передавати електроенергію на великі відстані. Але таке передавання пов&rsquo;язане із значними втратами. Адже електричний струм нагріває проводи</p>
+<p style="word-spacing: 1.1px;">лінії електропередачі. Згідно із законом Джоуля-Ленца енергія, яка витрачається на нагрівання проводів лінії, визначається формулою Q = I<sup>2</sup>Rt, де Я - опір лінії. При великій довжині лінії передавання енергії взагалі може бути економічно не вигідним. Істотно зменшити опір лінії практично дуже важко. Тому доводиться зменшувати силу струму.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-603.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки потужність струму пропорційна добутку сили струму на напругу, то, щоб зберегти передавану потужність, треба підвищувати напругу в лінії передачі. Причому, чим довша лінія передачі, тим вигідніше використовувати вищу напругу. Так, у деяких високовольтних лініях передач використовують напругу 500 кВ. Але генератори змінного струму будують на напруги, що не перевищують 16-20 кВ, оскільки використання вищої напруги вимагало б складніших спеціальних заходів для ізоляції обмоток та інших частин генераторів. Тому на великих електростанціях ставлять підвищувальні трансформатори. Трансформатор підвищує напругу в лінії у стільки разів, у скільки зменшує силу струму.</p>
+<p style="word-spacing: 1.1px;">Перед безпосереднім використанням електроенергії споживачами її напругу знижують за допомогою знижувальних трансформаторів.</p>
+<p style="word-spacing: 1.1px;">Повністю уникнути втрат під час передавання електроенергії не вдається. За дуже високої напруги між проводами починається коронний розряд, що призводить до втрат енергії.</p>
+<p style="word-spacing: 1.1px;">На мал. 173 показано електричну схему лінії електропередачі, на якій U - напруга на генераторі, С/<sub>втр</sub>&nbsp;- напруга на проводах лінії електропередачі, С/<sub>СП</sub>ож &rdquo; напруга на споживачі. Якщо частина втрат потужності у відносних одиницях становить k, тоді потужність втрат на лінії пов&rsquo;язана з потужністю, переданою споживачу, формулою Р<sub>втр</sub>&nbsp;= кР<sub>спож</sub>&nbsp;.</p>
+<p style="word-spacing: 1.1px;">Потужність генератора дорівнює сумі потужностей споживача і потужності втрат,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-604.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Чому гуде трансформатор, увімкнений в коло змінного струму? Яка частота цього звуку?</p>
+<p style="word-spacing: 1.1px;">2. Вторинна обмотка трансформатора замкнена на: а) малий опір г; б) великий опір R. Порівняйте в обох випадках напругу на вторинній обмотці і потужність, яку споживає трансформатор.</p>
+<p style="word-spacing: 1.1px;">3. За яким законом треба збільшувати робочу напругу лінії, щоб зі збільшенням її довжини коефіцієнт корисної дії лінії залишався сталим?</p>
+<p style="word-spacing: 1.1px;">Приклади розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">Задача 1. Знижувальний трансформатор з коефіцієнтом трансформації k = 5 включений у коло з напругою 220 В. Який опір вторинної обмотки, якщо напруга на виході трансформатора 40 В, а опір корисного навантаження 4 Ом? Яка потужність витрачається на нагрівання вторинної обмотки? Яку потужність споживає трансформатор з мережі? Який ККД трансформатора?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-605.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Потужність вторинної обмотки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-606.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Потужність трансформатора</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-607.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">ККД трансформатора</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-608.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Відповідь: 0,4 Ом, 40 Вт, 440 Вт, 90%.</p>
+<p style="word-spacing: 1.1px;">Задача 2. Лінія електропередач має опір 100 Ом. Яку напругу повинен мати генератор електростанції, щоб передаючи по цій лінії до споживача повну потужність 250 кВт, втрати на лінії не перевищували 4% переданої до споживача повної потужності?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-609.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язання</p>
+<p style="word-spacing: 1.1px;">Напруга генератора</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-610.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Потужність генератора дорівнює сумі потужностей споживача Р і потужності втрат Р . Потужність втрат можна виразити як</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-611.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">тоді</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-612.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Отже</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-613.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 22</p>
+<p style="word-spacing: 1.1px;">1. Сила струму в первинній обмотці трансформатора 0,5 А, напруга на її кінцях 220 В. Сила струму у вторинній обмотці 11 А, напруга на її кінцях 9,5 В. Визначити ККД трансформатора.</p>
+<p style="word-spacing: 1.1px;">2. Для визначення кількості витків у первинній і вторинній обмотках трансформатора поверх вторинної обмотки намотали п<sub>3</sub>&nbsp;= 80 витків дроту і, після підключення первинної обмотки до мережі з напругою 220 В, за допомогою вольтметра визначили напругу на кінцях додаткової обмотки U<sub>3</sub>&nbsp;= 20 В</p>
+<p style="word-spacing: 1.1px;">і на кінцях вторинної обмотки U<sub>2</sub>&nbsp;= 36 В. Визначити число витків у первинній і вторинній обмотках. Чому дорівнює коефіцієнт трансформації?</p>
+<p style="word-spacing: 1.1px;">3. Електричний двигун працює від джерела електричного струму, напруга на клемах якого дорівнює 120 В, а сила струму - 7,5 А. Визначити втрати потужності в обмотці двигуна і його ККД, якщо опір обмотки дорівнює 2,2 Ом.</p>
+<p style="word-spacing: 1.1px;">4. Генератор струму з напругою на клемах 220 В передає в зовнішнє коло потужність 11 кВт. Якого мінімального перерізу повинні бути мідні дроти лінії передачі, щоб втрати напруги в них не перевищували 2 % від вказаної напруги? Довжина лінії передачі дорівнює 50 м.</p>
+<p style="word-spacing: 1.1px;">5. У мережу з напругою 220 В одночасно включені електродвигун потужністю 0,3 кВт і ККД 90 %, електрична піч потужністю 1 кВт і десять ламп потужністю 150 Вт кожна. Визначити силу струму в двигуні, печі і лампах, загальну силу струму і спожиту потужність.</p>
+<p style="word-spacing: 1.1px;">6. Під якою напругою треба передавати електроенергію на відстань І = 10 км, щоб при густині струму /'=0,5 А/мм<sup>2</sup>&nbsp;у сталевому проводі двопровідної лінії електропередачі втрати енергії становили 1%? Питомий опір сталі р = 0,12 мкОм-м.</p>
+<p style="word-spacing: 1.1px;">7. Вторинна обмотка трансформатора, що має 100 витків, пронизується магнітним потоком, який змінюється з часом за законом Ф = 0,01cos314f. Написати формулу, що виражає залежність ЕРС вторинної обмотки від часу, і визначити діюче значення ЕРС.</p>
+<p style="word-spacing: 1.1px;">Найголовніше в розділі &laquo;Електромагнітне поле&raquo;</p>
+<p style="word-spacing: 1.1px;">Взаємодія між електричними струмами, яку називають магнітною, відбувається через магнітне поле. Провідники зі струмами одного напрямку притягуються, а зі струмами протилежних напрямків - відштовхуються з силою, що визначається законом Ампера: сила взаємодії між двома паралельними провідниками довжиною І зі струмами І, і /<sub>г</sub>, відстань між якими г (І &raquo;г),</p>
+<p style="word-spacing: 1.1px;">дорівнює</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-614.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Основною характеристикою магнітного поля є вектор магнітної індукції В . Магнітна індукція на відстані г від прямолінійного провідника зі струмом І дорівнює</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-615.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Магнітна індукція в центрі колового витка радіусом г, по якому проходить струм/,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-616.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">всередині котушки з числом витків N і довжиною І -</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-617.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Індукція магнітного поля, створеного кількома струмами, дорівнює векторній сумі індукцій магнітних полів, створених кожним з цих струмів</p>
+<p style="word-spacing: 1.1px;">окремо (принцип суперпозиції),</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-618.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Сила Ампера F<sub>A</sub>&nbsp;- сила, що діє з боку магнітного поля на прямолінійний провідник зі струмом І довжиною ДІ. У випадку однорідного магнітного поля F<sub>a</sub>&nbsp;= BIAl sin а , де а- кут між напрямком струму І в провіднику та індукцією магнітного поля В . Напрям сили визначають за правилом лівої руки.</p>
+<p style="word-spacing: 1.1px;">Сила Лоренца Р<sub>л</sub>&nbsp;- сила, що діє з боку магнітного поля на рухому заряджену частинку. В однорідному полі з індукцією В вона визначається як Р<sub>л</sub>&nbsp;=qBvsina, де q - електричний заряд частинки, v - модуль швидкості її руху, a - кут між векторами швидкості 0 та індукції В . Напрям сили Лоренца визначають за правилом лівої руки.</p>
+<p style="word-spacing: 1.1px;">Електромагнітна індукція - явище, яке вперше спостерігав у 1832 р. М. Фарадей і яке полягає у виникненні вихрового електричного поля в результаті зміни з часом магнітного поля.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">У контурі, який перетинається змінним магнітним потоком, вільні носії заряду переміщуються під дією вихрового електричного поля, здійснюючи при цьому роботу, що означає виникнення ЕРС індукції.</p>
+<p style="word-spacing: 1.1px;">Закон електромагнітної індукції кількісно описує явище електромагнітної індукції: ЕРС індукції у замкнутому контурі, який міститься в змінному магнітному полі, дорівнює швидкості зміни магнітного потоку ДФ, що</p>
+<p style="word-spacing: 1.1px;">пронизує контур, з протилежним знаком,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-619.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо провідник замкнений, то відповідно до ЕРС індукції виникає індукційний струм</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-620.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо провідник розімкнений, то на його кінцях виникає різниця потенціалів</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-621.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Значення ЕРС індукції, що виникає на кінцях провідника довжиною І, який рухається в магнітному полі індукцією В зі швидкістю v, S<sub>i</sub>&nbsp;= Blvsina. Напрям ЕРС індукції визначають за правилом правої руки.</p>
+<p style="word-spacing: 1.1px;">Правило Ленца, сформульоване Е. X. Ленцом у 1833 р. - положення, яке визначає напрям індукційного струму: індукційний струм у замкнутому контурі напрямлений так, що створений ним магнітний потік через площу, обмежену контуром, протидіє зміні магнітного потоку, який збуджує даний струм.</p>
+<p style="word-spacing: 1.1px;">Самоіндукція - окремий випадок електромагнітної індукції, що полягає у виникненні ЕРС індукції в електричному колі внаслідок зміни струму в самому колі. ЕРС самоіндукції визначається законом електромагнітної індукції:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-622.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де L - індуктивність контуру, І - сила струму в ньому.</p>
+<p style="word-spacing: 1.1px;">Змінний струм - електричний струм, який періодично змінює значення і напрям. Змінний електричний струм одержують за допомогою індукційного генератора.</p>
+<p style="word-spacing: 1.1px;">При обертанні рамки з постійною швидкістю в постійному магнітному полі магнітний потік, що пронизує рамку, змінюється за законом Ф = BS cos a -BS cos Ш , а в рамці виникає ЕРС індукції, яка змінюється в часі за синусоїдальним законом,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-623.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо&nbsp;у рамці N витків, то</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-624.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Електромагнітне поле - форма матерії, завдяки якій здійснюється взаємодія між електрично зарядженими частинками. Електричне і магнітне поля є окремими проявами електромагнітного поля. Взаємозв&rsquo;язок між ними та їх взаємоперетворення відображаються рівняннями Максвелла.</p>
+<p style="word-spacing: 1.1px;">Вивчаючи у 10 класі основи механіки, ми ознайомились з особливим видом руху - механічними коливаннями та хвилями. Серед різноманітних електромагнітних явищ особливе місце належить електромагнітним коливанням та хвилям. Адже тріумфом електромагнітної теорії у XIX ст. стало експериментальне відкриття електромагнітних хвиль. Це відкриття започаткувало розвиток принципово нових засобів зв'язку.</p>
+<p style="word-spacing: 1.1px;">З одним із видів електромагнітних коливань - вимушеними коливаннями, якими є змінний струм, ми уже ознайомились. Надалі мова піде про електромагнітні коливання, які виникають у коливальному контурі.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2518-generatori-zmnnogo-strumu.html">Генератори змінного струму</a></li><li><a href="2516-robota-potuzhnst-zmnnogo-strumu.html">Робота і потужність змінного струму</a></li><li><a href="2514-kotushka-nduktivnost-v-kol-zmnnogo-strumu.html">Котушка індуктивності в колі змінного струму</a></li><li><a href="2508-mehanzmi-viniknennya-ndukcynogo-strumu-v-provdnikah.html">Механізми виникнення індукційного струму в провідниках</a></li><li><a href="2107-yavische-elektromagntnoyi-ndukcyi-dosldi-faradeya-ndukcyniy-elektrichniy-strum.html">Явище електромагнітної індукції. Досліди фарадея. Індукційний електричний с ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

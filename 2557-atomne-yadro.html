@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Атомне ядро &raquo; mozok.click</title>
+<meta name="description" content="Протонно-нейтронна модель атомного ядра. Історія ядерної фізики почала свій відлік з 1896 року. У цьому році Анрі Беккерель відкрив явище радіоактивності, яке не можна було пояснити на основ" />
+<meta name="keywords" content="пояснити, можна, радіоактивності, явище, основі, тогочасних, атома, будову, уявлень, відкрив, Беккерель, Історія, атомного, модель, нейтронна, ядерної, фізики, цьому, відлік, почала" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2557-atomne-yadro.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Атомне ядро</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2557").Button("#infc2557"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2557" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2557" class="infcont">
+			<ul>
+				<li><i>Переглядів: 2826</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 22:51</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2557'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2557-atomne-yadro.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2557'); return false;">1</a></li>
+		<li><a href="2557-atomne-yadro.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2557'); return false;">2</a></li>
+		<li><a href="2557-atomne-yadro.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2557'); return false;">3</a></li>
+		<li><a href="2557-atomne-yadro.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2557'); return false;">4</a></li>
+		<li><a href="2557-atomne-yadro.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2557'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 22:51</i></a></span>
+	<h3 class="btl"><span id="news-title">Атомне ядро</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2557" style="display:inline;"><p>Протонно-нейтронна модель атомного ядра. Історія ядерної фізики почала свій відлік з 1896 року. У цьому році Анрі Беккерель відкрив явище радіоактивності, яке не можна було пояснити на основі тогочасних уявлень про будову атома.</p>
+<p style="word-spacing: 1.1px;">На початку 30-х років XX ст. була досліджена структура атомного ядра і розроблена його модель, яку і по нині використовують для пояснення процесів мікросвіту. Згідно з цією моделлю до складу ядра атома входять частинки двох видів - протони та нейтрони. (Надалі ми частіше вживатимемо термін &diams;частинки&raquo;, але не забуваємо, що ці частинки мають і хвильові властивості.)</p>
+<p style="word-spacing: 1.1px;">Протон (позначається р) стабільна елементарна частинка. З одного протона складається ядро атома Гідрогену. Протон має елементарний позитивний заряд е = 1,6-10&nbsp;<sup>19</sup>&nbsp;Кл.</p>
+<p style="word-spacing: 1.1px;">Нейтрон (позначається п) електрично нейтральна частинка. Нейтрон стабільна частинка лише у складі стабільних атомних ядер. Вільний нейтрон - нестабільна частинка, яка розпадається на інші частинки.</p>
+<p style="word-spacing: 1.1px;">Нейтрони та протони як складові атомного ядра мають спільну назву -нуклони.</p>
+<p style="word-spacing: 1.1px;">Оскільки атом в цілому електронейтральний, а заряд протона за модулем дорівнює заряду електрона, то кількість протонів Z у ядрі дорівнює кількості електронів в атомній оболонці. Число протонів Z в атомному ядрі визначає атомний номер і місце елемента в таблиці Менделєєва. Кожне атомне ядро характеризується зарядом Ze, масою т<sub>я</sub>&nbsp;і масовим числом А, що дорівнює кількості нуклонів у ядрі, А = N+Z&gt; де N - кількість нейтронів, Z -кількість протонів.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p>Позначаючи ядра хімічного елемента, вказується число протонів Z внизу і масове число А - вгорі. Наприклад, ядро Гелію позначається так: gHe .</p>
+<p style="word-spacing: 1.1px;">Наближено розміри ядер вперше були визначені Резерфордом у досліді з розсіювання а-частинок. Зрозуміло, що, оскільки мікрочастинкам властивий корпускулярно-хвильовий дуалізм, розміри ядра є дещо розмитими. Тим не менш, оцінити розміри ядра вдається під час розсіювання електронів на ядрах. Виявилось, що ядра мають приблизно сферичну форму, причому радіус ядер збільшується залежно від масового числа за формулою г*(1,2Ю'<sup>1г,</sup>м)А<sup>1/8</sup>&nbsp;. Розміри ядер за порядком величини становлять 10&nbsp;<sup>14</sup>-10&nbsp;<sup>10</sup>&nbsp;м, у той час як для зовнішніх електронних оболонок атомів характерні розміри порядку 10&nbsp;<sup>10</sup>&nbsp;м.</p>
+<p style="word-spacing: 1.1px;">У 1919 р. був побудований прилад, яким можна визначати маси атомів з точністю до 0,01%. Цей прилад, як ви уже знаєте (&sect; 25 ), називається мас-спектрограф. Маси ядер прийнято вимірювати в атомних одиницях маси (а.о.м.). Маса протона т<sub>р</sub>&nbsp;= 1,672617-10&nbsp;<sup>2і</sup>&nbsp;кг = 1,00728 а.о.м., нейтрона т<sub>п</sub>&nbsp;= 1,674920-10&nbsp;<sup>27</sup>&nbsp;кг = 1,00866 а.о.м. (Згідно з формулою взаємозв&rsquo;язку маси-енергії Е = тс<sup>2</sup>&nbsp;маси ядер також вимірюють одиницями енергії -електрон-вольтами.)</p>
+<p style="word-spacing: 1.1px;">В ядрі зосереджена майже вся (понад 99,95 %) маса атома. Таким чином, з точки зору атомних масштабів, ядра мають мізерно малі розміри і гігантську міцність. Це є причиною якісного розмежування явищ атомної та ядерної фізики. В атомній фізиці, розглядаючи переходи електронів на орбітах, ядро вважають зарядженою матеріальною точкою. У ядерній фізиці мають справу з такими великими енергіями, що майже завжди нехтують впливом процесів, що відбуваються в електронних оболонках.</p>
+<p style="word-spacing: 1.1px;">Енергія зв&rsquo;язку. Дослідженнями доведено, що загальна маса ядра завжди менша від суми мас частинок, з яких воно складається, тобто М<sub>я</sub>&nbsp;&lt; Zm<sub>p</sub>&nbsp;+ Nm<sub>n</sub>&nbsp;(т<sub>р</sub>&nbsp;та т<sub>п</sub>&nbsp;- маси протона та нейтрона у вільному стані).</p>
+<p style="word-spacing: 1.1px;">Різницю між сумою мас нуклонів (нейтронів і протонів), які входять до складу ядра, і масою ядра називають дефектом маси Am. Дефект маси визначає енергію зв&rsquo;язку: чим більший дефект мас, тим більша енергія зв&rsquo;язку і тим стійкіше ядро.</p>
+<p style="word-spacing: 1.1px;">Енергія зв&rsquo;язку ядра Е<sub>зв</sub>&nbsp;визначається роботою, яку потрібно виконати, щоб розділити ядро на окремі частинки і віддалити їх одну від одної на таку відстань, на якій їхньою взаємодією можна нехтувати.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p>&nbsp;</p>
+<p style="word-spacing: 1.1px;">Згідно з законом взаємозв&rsquo;язку маси-енергії Е<sub>зв</sub>&nbsp;= А тс<sup>2</sup>. Оскільки енергію зв&rsquo;язку звичайно виражають у МеВ, а дефект мас у а.о.м. і, враховуючи, що с<sup>2</sup>&nbsp;= 9-Ю<sup>16</sup>&nbsp;м<sup>2</sup>/с<sup>2</sup>&nbsp;та 1еВ = 1,6Ю~<sup>19</sup>&nbsp;Дж, для обчислень можна користуватись формулою Е<sub>зв</sub>&nbsp;= Am 931,5 МеВ/а.о.м.</p>
+<p style="word-spacing: 1.1px;">Якби не було дефекту маси, то ядро розпалося б на нуклони самостійно, без виконання роботи. Для забезпечення стабільності ядра його маса має бути меншою за суму мас його нуклонів.</p>
+<p style="word-spacing: 1.1px;">Важливу інформацію про властивості ядер містить залежність енергії зв&rsquo;язку від масового числа А.</p>
+<p style="word-spacing: 1.1px;">Питомою енергією зв&rsquo;язку називають енергію зв&rsquo;язку, яка припадає на один нуклон.</p>
+<p style="word-spacing: 1.1px;">На мал. 292 наведено криву залежності питомої енергії зв&rsquo;язку від атомного числа для стабільних ядер. Як видно з малюнка, питома енергія зв&rsquo;язку спочатку зростає із збільшенням масового числа, досягає насичення (близько 8 МеВ/нуклон для А&laquo;15) і для А&gt;60 крива повільно спадає. Питома енергія зв&rsquo;язку має максимум (приблизно 8,8 МеВ) для А&laquo;56. Максимум кривої відповідає найстабільнішим ядрам.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1021.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Сильна взаємодія. Ядра атомів можна аналізувати не лише з точки зору енергії, але й з точки зору тих сил, які утримують нуклони в ядрі. Сили, які діють між ядерними частинками і зумовлюють утворення атомних ядер мають особливий характер. Оскільки ці сили перевищують електромагнітну кулонівську силу відштовхування, яка, в свою чергу, перевищує гравітаційну силу притягання, то ці сили отримали назву сильних (ядерних) сил. Ядерні сили належать до нового типу взаємодії - сильної взаємодії.</p>
+<p style="word-spacing: 1.1px;">Дослідження показали, що ядерні сили притягання діють між будь-якими двома нуклонами на відстанях між центрами частинок близько 2 &bull; 10"<sup>15</sup>&nbsp;м і різко зменшуються із збільшенням відстані; на відстанях, більших за 3 &bull; 10&nbsp;<sup>10</sup>&nbsp;м, вони вже практично дорівнюють нулю. Коли ж нуклони, зіткнувшись, зближаються до відстані 0,5 &bull; 10~<sup>15</sup>&nbsp;м, ядерні сили виявляють себе як сили відштовхування. Пригадайте, подібний характер має взаємодія між молекулами, але сили й енергія взаємодії нуклонів у мільйони разів більші, а відстані між частинками в мільйони разів менші.</p>
+<p style="word-spacing: 1.1px;">Дуже малий радіус дії ядерних сил свідчить про те, що нуклони всередині ядра взаємодіють лише із сусідніми, а не з усіма нуклонами ядра. Відповідно можна помітити деяку схожість між атомним ядром та краплиною рідини. Нуклони в ядрі, як і молекули в рідині, взаємодіють тільки зі своїми найближчими сусідами. Густина ядра, як і краплини, не залежить від розміру. Поверхневі нуклони односторонньо зв&rsquo;язанні з внутрішніми, і під дією сил поверхневого натягу ядро, як і краплина, має набувати сферичної форми. У збудженому ядрі нуклони коливаються, подібно до молекул у нагрітій краплині. Численні зіткнення можуть привести до того, що який-небудь з нуклонів дістане енергію, достатню для подолання ядерних сил, і вилетить з ядра. Коли заряджена частинка, наприклад протон чи а-частинка, перебуває на відстані, що перевищує радіус дії ядерних сил, то ядро діє на неї просто як позитивно заряджена краплина. Наведений опис називають краплинною моделлю ядра. Краплинна модель ядра дає змогу обчислити радіуси ядер і наочно пояснити деякі їх властивості.</p>
+<p style="word-spacing: 1.1px;">Але чи завжди процес зіткнення ядра з іншим ядром чи частинкою буде супроводжуватись вильотом нуклона? Чи не може атомне ядро поглинути енергію, одержану при зіткненні, і перерозподілити її між нуклонами, що</p>
+<p style="word-spacing: 1.1px;">входять до його складу, змінивши тим самим свою внутрішню енергію? Що відбуватиметься з таким ядром далі?</p>
+<p style="word-spacing: 1.1px;">Відповіді на ці запитання дали досліди з вивчення взаємодії протонів з атомними ядрами, їх результати дуже схожі на результати дослідів Франка і Герца щодо вивчення зіткнення електронів з атомами (&sect; 71). Виявляється, з поступовим збільшенням енергії протонів спочатку спостерігаються тільки пружні зіткнення з атомними ядрами, кінетична енергія не перетворюється в інші види енергії, а лише перерозподіляється між протоном і атомним ядром як єдиною цілою частинкою. Однак, починаючи з деякого значення енергії протона, можуть відбуватись і непружні зіткнення, в яких протон поглинається ядром і повністю віддає йому свою енергію. Ядро кожного ізотопу характеризується строго певним набором * порцій&raquo; енергії, які воно може сприйняти. Пояснити властивості ядра у цьому випадку можна за допомогою оболонковоімоделі. Згідно з цією моделлю нуклони в ядрі не перемішані як завгодно, а, подібно до електронів у атомі, розміщуються зв&rsquo;язаними групами, заповнюючи дозволенні ядерні оболонки.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1022.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таким чином, квантування енергії та ряду інших параметрів є властивістю не лише атомів, а й атомних ядер. Проте між енергетичними діаграмами атомів та атомних ядер є суттєві відмінності. На мал. 293 зображено енергетичну діаграму ядра ізотопу Феруму ijjFe . Зверніть увагу, що енергія, потрібна для переведення атомного ядра у збуджений стан, порядку мегаелек-тронвольт, у той час як для переведення у збуджений стан атома достатньо кількох електронвольт.</p>
+<p style="word-spacing: 1.1px;">Самодовільний перехід атомного ядра із збудженого стану в основний супроводжується випромінюванням гамма квантів. Гамма-кванти є найбільш короткохвильовим видом електромагнітного випромінювання.</p>
+<p style="word-spacing: 1.1px;">Незважаючи на те, що оболонкова модель атома дає змогу пояснити спектри енергетичних станів, вона, як і краплинна модель, не спроможна пояснити всіх властивостей сильної взаємодії, зокрема обмінний характер ядерних сил. Як ми з&rsquo;ясуємо згодом, нуклони взаємодіють між собою через третю частинку, якою вони постійно обмінюються.</p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Які характерні властивості ядерних сил відрізняють їх від інших типів сил -електричних, магнітних, гравітаційних?</p>
+<p style="word-spacing: 1.1px;">2. Не користуючись відповідними таблицями, порівняйте енергії зв&rsquo;язку таких двох ядер:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1023.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Нуклони в ядрі мають кінетичну і потенціальну енергії. Яка за модулем сумарна енергія нуклонів більша? Чому?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Приклади розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">Задача. Розрахувати енергію зв&rsquo;язку ядра атома Дейтерію. Відповідь навести в електрон-вольтах. Використати необхідні довідкові дані з таблиць мас ізотопів.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1024.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв'язання</p>
+<p style="word-spacing: 1.1px;">Енергія зв&rsquo;язку ядра визначається як Е<sub>зв</sub>&nbsp;= Дтс<sup>2</sup>, де Am - різниця суми мас вільних частинок, що входять до складу ядра, і маси ядра (дефект маси ядра); с - швидкість світла у вакуумі.</p>
+<p style="word-spacing: 1.1px;">Для знаходження різниці мас використовуємо із таблиць відомості про маси протона т<sub>рУ</sub>&nbsp;нейтрона т<sub>п</sub>&nbsp;та атома Дейтерію М*<sub>н</sub>. Для знаходження дефекту маси ядра Дейтерію Am необхідно вирахувати з маси атома дейтерію масу електрона, що утворює його оболонку,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1025.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Виконавши розрахунки, отримуємо Am = 0,00239 а. о. м.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1026.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 36</p>
+<p style="word-spacing: 1.1px;">1. Обчислити енергію зв'язку ядра Тритію</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1027.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">2. Визначити енергію зв&rsquo;язку ядра Алюмінію</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1028.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Визначити енергію зв&rsquo;язку, яка припадає на один нуклон у ядрах</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-1029.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Йони двох ізотопів Урану, що мають однакову валентність, рухаються в магнітному полі мас-спектрографа по дугах кіл з радіусами R<sub>x</sub>&nbsp;= 1,224 м і R<sub>2</sub>&nbsp;= 1,232 м. Визначити відношення мас ізотопів. Яка маса т<sub>х</sub>&nbsp;йонів легкого ізотопу (в атомних одиницях маси), якщо маса йонів важкого ізотопу т<sub>2</sub>&nbsp;= 238 а.о.м.?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2558-radoaktivnst.html">Радіоактивність</a></li><li><a href="2327-pravila-radoaktivnogo-zmschennya.html">Правила радіоактивного зміщення</a></li><li><a href="2325-protonno-neytronna-model-yadra-atoma-yadern-sili-skladov-chastinki-atomnogo-yadra-nukloni.html">Протонно-нейтронна модель ядра атома. Ядерні сили  Складові частинки атомно ...</a></li><li><a href="2124-protonno-neytronna-model-yadra-atoma-yadern-sili.html">Протонно-нейтронна модель ядра атома. Ядерні сили</a></li><li><a href="616-suchasna-model-atoma-protonno-neytronna-model-yadra-atoma-yadern-sili-zotopi.html">Сучасна модель атома. Протонно-нейтронна модель ядра атома. Ядерні сили. Із ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

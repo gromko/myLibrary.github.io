@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Автоколивання &raquo; mozok.click</title>
+<meta name="description" content="Отримання незатухаючих коливань. Ця не проста проблема знайшла оригінальне вирішення. В реальному контурі заряджений конденсатор спричинює виникнення лише затухаючих коливань. У кінці кожног" />
+<meta name="keywords" content="коливань, періоду, кожного, кінці, заряд, затухаючих, конденсатора, початком, порівняно, зменшується, виникнення, пластинах, конденсатор, знайшла, проблема, проста, незатухаючих, оригінальне, вирішення, Отримання" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2523-avtokolivannya.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Автоколивання</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2523").Button("#infc2523"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2523" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2523" class="infcont">
+			<ul>
+				<li><i>Переглядів: 1295</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 21:32</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2523'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2523-avtokolivannya.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2523'); return false;">1</a></li>
+		<li><a href="2523-avtokolivannya.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2523'); return false;">2</a></li>
+		<li><a href="2523-avtokolivannya.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2523'); return false;">3</a></li>
+		<li><a href="2523-avtokolivannya.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2523'); return false;">4</a></li>
+		<li><a href="2523-avtokolivannya.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2523'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 21:32</i></a></span>
+	<h3 class="btl"><span id="news-title">Автоколивання</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2523" style="display:inline;"><p style="word-spacing: 1.1px;">Отримання незатухаючих коливань. Ця не проста проблема знайшла оригінальне вирішення. В реальному контурі заряджений конденсатор спричинює виникнення лише затухаючих коливань. У кінці кожного періоду коливань заряд на пластинах конденсатора зменшується порівняно з початком періоду. Зрозуміло, заряд зберігається, але зменшується на однакову за модулем величину позитивний заряд на одній пластині і негативний на другій. У результаті енергія коливань зменшується, оскільки вона пропорційна квадрату заряду,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-675.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Щоб коливання не затухали, потрібно&nbsp;компенсувати втрати енергії за кожний період.</p>
+<p style="word-spacing: 1.1px;">Поповнювати енергію в контурі можна, підзаряджаючи конденсатор. Для цього потрібно періодично вмикати контур у коло джерела постійної напруги. При цьому конденсатор має вмикатися у коло джерела лише в ті моменти часу, коли приєднана до позитивного полюса джерела пластина заряджена позитивно, а та, що приєднана до негативного полюса, - негативно. Тільки за такої умови джерело підзаряджатиме конденсатор, поповнюючи його енергію. Тобто джерело постійної напруги, яке весь час під&rsquo;єднане до конденсатора контуру, не може підтримувати в ньому незатухаючі коливання. Адже половину періоду енергія надходитиме у контур, а в наступну половину періоду повертатиметься до джерела. Незатухаючі коливання встановляться в контурі лише за умови, що джерело вмикатиметься в контур у ті інтервали часу, коли це потрібно. Добре було б, якби контур сам керував надходженням енергії.</p>
+<p style="word-spacing: 1.1px;">Автоколивальні системи. Генератор незатухаючих електромагнітних коливань. Якщо система сама регулює надходження енергії в коливальний контур для компенсації її втрат, то таку систему називають автоколивальною.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Вивчаючи у 10 класі механічні коливання, ми з&rsquo;ясували, що до складу будь-якої автоколивальної системи (мал. 181), має входити: 1 - джерело енергії, 2 - передавальний пристрій (клапан), 3 - коливальна система.</p>
+<p style="word-spacing: 1.1px;">Розглянемо принцип дії генератора на транзисторі. Його складовими частинами є коливальний контур (конденсатор ємністю С і котушка індуктивністю L), джерело енергії, транзистор та котушка зв&rsquo;язку (мал. 182).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-676.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Із схеми видно, що коливальний контур з&rsquo;єднаний послідовно з джерелом постійного струму і з транзистором так, що на емітер подається позитивний заряд, а на колектор -негативний. При цьому перехід емітер-база (емітерний перехід) прямий, а перехід база -колектор (колекторний перехід) виявляється оберненим і струм по колу не проходить.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Щоб у колі контуру виник струм і підзарядив конденсатор під час коливань, потрібно надати базі негативного відносно емітера потенціалу, і саме в ті інтервали часу, в які верхня пластина конденсатора заряджена позитивно, а нижня - негативно. В інтервал часу, коли верхня пластина конденсатора заряджена негативно, а нижня позитивно, струму в колі контуру не повинно бути. У цей час база мусить мати позитивний потенціал відносно емітера. Отже, щоб компенсувати втрати енергії коливань у контурі, напруга на емітерному переході має періодично змінювати знак узгоджено з коливаннями напруги на контурі. Потрібний, як кажуть, зворотний зв'язок.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-677.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Зворотний зв'язок у розглядуваному генераторі індуктивний. До емітерного переходу підведено котушку індуктивністю Ь<sub>зи</sub>, яка індуктивно зв&rsquo;язана з котушкою контуру, що має індуктивність L. Коливання в контурі внаслідок електромагнітної індукції збуджують коливання напруги на кінцях котушки зв&rsquo;язку і тим самим на емітерному переході. Це приводить до того, що струм і, який проходить по контурній котушці, індукує на кінцях котушки зворотного зв&rsquo;язку змінну напругу U<sub>3</sub>&nbsp;(мал. 183, а). Під дією цієї напруги електричне поле емітерного переходу періодично то підсилюється, то послаблюється, а транзистор то відкривається, то запирається.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-678.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">У ті інтервали часу, коли транзистор відкритий, через нього проходять імпульси струму, тривалість яких залежить від режиму роботи транзистора (мал. 183, б). Частота імпульсів струму, що проходить через транзистор, збігається з частотою коливань, які виникають в контурі, і приходять вони в контур у ті моменти, коли конденсатор контуру заряджається. Тому імпульси струму, що проходять через транзистор, підзаряджають конденсатор і поповнюють енергію контуру. На мал. 183, в заштриховані площі пропорційні енергії,</p>
+<p style="word-spacing: 1.1px;">яка надходить в контур за кожен період коливань. Енергія, яка надходить від джерела струму, компенсує втрати енергії у контурі, і коливання не затухають.</p>
+<p style="word-spacing: 1.1px;">Якщо в автогенераторі котушку зворотного зв&rsquo;язку повернути на 180&deg;, то з осцилограми буде видно, що генератор не працює. Це зумовлено тим, що поворот котушки зворотного зв&rsquo;язку на 180&deg; приводить до того, що фаза коливань змінної напруги U<sub>3</sub>&nbsp;на емітерному переході змінилась на л (мал. 184, а) Отже, імпульси струму, що проходять через транзистор, припадають на від&rsquo;ємні півперіоди коливань напруги U<sub>K</sub>&nbsp;на контурі (мал. 184, б). У разі проходження такого імпульсу через контур робота електричного струму буде від&rsquo;ємною. Це означає, що вони не лише не поповнюють енергію контуру, а, навпаки, зменшують її. Тому розрізняють прямий та обернений зворотний зв&rsquo;язок.</p>
+<p style="word-spacing: 1.1px;">Якщо у автогенераторі поступово збільшувати відстань між котушкою зворотного зв&rsquo;язку і контурною котушкою, амплітуда автоколи-вань зменшується. І з досягненням деякої відстані між котушками коливання припиняються. Це означає, що за слабкого зворотного зв&rsquo;язку енергія, що надходить у контур за кожен півперіод, менша за енергію, яка втрачається.</p>
+<p style="word-spacing: 1.1px;">Отже, для зворотного зв&rsquo;язку мають виконуватись певні умови.</p>
+<p style="word-spacing: 1.1px;">По-перше, напруга на емітерному переході повинна змінюватись синфаз-но з напругою на контурі. Це фазова умова самозбудження генератора.</p>
+<p style="word-spacing: 1.1px;">По-друге, зворотний зв'язок має забезпечити надходження у контур такої кількості енергії, яка повністю компенсує необоротні втрати енергії. Це амплітудна умова самозбудження.</p>
+<p style="word-spacing: 1.1px;">За допомогою автоколивальних систем можна одержувати незатухаючі електромагнітні коливання в широкому діапазоні частот. Низькочастотні коливання одержують при обертанні рамок з провідників в однорідних магнітних полях (змінний струм низької частоти), коливання високої частоти добувають за допомогою інших пристроїв, наприклад за допомогою генератора на транзисторі.</p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Чим відрізняються автоколивання від вимушених і вільних коливань?</p>
+<p style="word-spacing: 1.1px;">2. Назвіть основні елементи автоколивальної системи.</p>
+<p style="word-spacing: 1.1px;">3. Яка роль транзистора в генерації автоколивань?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2522-zatuhayuch-elektromagntn-kolivannya.html">Затухаючі електромагнітні коливання</a></li><li><a href="2521-rvnyannya-scho-opisuyut-procesi-v-dealnomu-kolivalnomu-kontur.html">Рівняння, що описують процеси в ідеальному коливальному контурі</a></li><li><a href="2520-otrimannya-vlnih-elektromagntnih-kolivan.html">Отримання вільних електромагнітних коливань</a></li><li><a href="2513-kondensator-u-kol-zmnnogo-strumu.html">Конденсатор у колі змінного струму</a></li><li><a href="2120-elektromagntne-pole-elektromagntn-hvil-shvidkst-poshirennya-dovzhina-chastota-elektromagntnoyi-hvil.html">Електромагнітне поле і електромагнітні хвилі. Швидкість поширення, довжина  ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->
