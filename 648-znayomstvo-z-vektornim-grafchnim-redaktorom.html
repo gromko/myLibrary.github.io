@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Знайомство з векторним графічним редактором &raquo; mozok.click</title>
+<meta name="description" content="Векторні зображення можна створювати в різних програмах, навіть у програмах офісних пакетів, наприклад Microsoft Office. Проте найбільше можливостей надають спеціалізовані векторні графічні" />
+<meta name="keywords" content="програмах, надають, можливостей, найбільше, Проте, спеціалізовані, редактори, графічні, векторні, Office, наприклад, створювати, можна, зображення, різних, навіть, Векторні, пакетів, офісних, Microsoft" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='648-znayomstvo-z-vektornim-grafchnim-redaktorom.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Знайомство з векторним графічним редактором</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb648").Button("#infc648"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb648" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc648" class="infcont">
+			<ul>
+				<li><i>Переглядів: 9033</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 05:49</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-648'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="648-znayomstvo-z-vektornim-grafchnim-redaktorom.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '648'); return false;">1</a></li>
+		<li><a href="648-znayomstvo-z-vektornim-grafchnim-redaktorom.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '648'); return false;">2</a></li>
+		<li><a href="648-znayomstvo-z-vektornim-grafchnim-redaktorom.html#" title="Средне" class="r3-unit" onclick="doRate('3', '648'); return false;">3</a></li>
+		<li><a href="648-znayomstvo-z-vektornim-grafchnim-redaktorom.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '648'); return false;">4</a></li>
+		<li><a href="648-znayomstvo-z-vektornim-grafchnim-redaktorom.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '648'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 05:49</i></a></span>
+	<h3 class="btl"><span id="news-title">Знайомство з векторним графічним редактором</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-648" style="display:inline;"><p>Векторні зображення можна створювати в різних програмах, навіть у програмах офісних пакетів, наприклад Microsoft Office. Проте найбільше&nbsp;можливостей надають спеціалізовані векторні графічні редактори.</p>
+<p style="word-spacing: 1.1px;">Векторний графічний редактор Inkscape</p>
+<p style="word-spacing: 1.1px;">Редактор векторної графіки Inkscape є багатоплатформним, тобто одночасно виходять версії для різних операційних систем (Linux, Windows тощо), і розробляється під ліцензією GNU GPL.</p>
+<p style="word-spacing: 1.1px;">Розглянемо головне вікно векторного графічного редактора Inkscape (рис. 8.1). Зверніть увагу на те, що панелі можуть бути&nbsp;розміщені по-іншому.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-36.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Побудова графічних примітивів</p>
+<p style="word-spacing: 1.1px;">В inkScape&nbsp;можливість використовувати під час побудови малюнка різні об&rsquo;єкти: групи примітивів, растрові зображення тощо. Проте основними об&rsquo;єктами векторного зображення є графічні примітиви.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Більшість кнопок, розміщених на панелі інструментів, призначені для побудови різних графічних примітивів: ліній, прямокутників, спіралей тощо. Якщо клацнути кнопку одного з інструментів, то на панелі&nbsp;параметрів інструментів з&rsquo;являться значення його параметрів. У разі подвійного клацання відкриється вікно для додаткових налаштувань.&nbsp;Розглянемо інструменти Прямокутник, Еліпс, Многокутник і Спіраль.&nbsp;Щоб додати об&rsquo;єкт за допомогою одного з них, потрібно:</p>
+<p style="word-spacing: 1.1px;">1) вибрати інструмент, перемістити вказівник на робоче поле;</p>
+<p style="word-spacing: 1.1px;">2) натиснути ліву кнопку миші і, слідкуючи за формою майбутнього об&rsquo;єкта, здійснити перетягування;</p>
+<p style="word-spacing: 1.1px;">3) відпустити кнопку миші.</p>
+<p style="word-spacing: 1.1px;">Форму і розміри об&rsquo;єкта можна змінити шляхом</p>
+<p style="word-spacing: 1.1px;">перетягування маркерів &mdash; білих квадратиків або кружечків (рис. 8.2). Ознайомимося з дією маркерів та деякими особливостями об&rsquo;єктів:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-37.jpg" alt="" /></p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Інструмент</p>
+</td>
+<td>
+<p>Дія маркерів</p>
+</td>
+<td>
+<p>Приклад</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-38.jpg" alt="" /></td>
+<td>
+<p>Якщо перетягувати круглі маркери (спочатку вони суміщені), отримаємо округлені кути, якщо&nbsp;квадратні &mdash; змінимо розміри</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-39.jpg" alt="" /></td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-40.jpg" alt="" /></td>
+<td>
+<p>Якщо перетягувати круглий маркер так, щоб вказівник був за межами еліпса, &laquo;виріжемо&raquo; сектор, а якщо в середині еліпса &mdash; &laquo;відріжемо&raquo; сегмент.&nbsp;Два інші маркери &mdash; для зміни розмірів</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-41.jpg" alt="" /></td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-42.jpg" alt="" /></td>
+<td>
+<p>Додаткові налаштування дозволяють побудувати многокутники: правильні й неправильні, опуклі&nbsp;й зірчасті тощо.</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-43.jpg" alt="" /></td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-44.jpg" alt="" /></td>
+<td>
+<p>Якщо за допомогою миші обертати два маркери на кінцях спіралі, збільшимо або зменшимо її довжину</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-45.jpg" alt="" /></td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Утримування натиснутими клавіш Ctrl, Shift або Alt дає додаткові можливості під час змінення форми об&rsquo;єктів. Їхню дію описують&nbsp;підказки в рядку стану.</p>
+<p style="word-spacing: 1.1px;">Якщо під час побудови прямокутника (або еліпса) будемо утримувати натиснутою клавішу Ctrl, сторони прямокутника (або осі еліпса) будуть відноситись як цілі числа (наприклад, 1:1, 2:1, 3:1). При відношенні 1:1 отримаємо квадрат (круг).</p>
+<p style="word-spacing: 1.1px;">Перш ніж виконувати певні операції над об&rsquo;єктами, їх слід виділити, скориставшись інструментом Стрілка</p>
+<p style="word-spacing: 1.1px;">Щоб виділити окремий об&rsquo;єкт, на нього слід клацнути. Навколо об&rsquo;єкта з&rsquo;явиться пунктирна прямокутна рамка, а біля неї &mdash; стрілки&nbsp;для змінення розмірів (рис. 8.3; див. нижче).</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Щоб виділити декілька окремих об&rsquo;єктів, їх слід клацнути по черзі, утримуючи натиснутою клавішу Shift.</p>
+<p style="word-spacing: 1.1px;">Щоб виділити декілька об&rsquo;єктів, розміщених поряд, слід:</p>
+<p style="word-spacing: 1.1px;">1) поставити стрілку ліворуч і вище від них;</p>
+<p style="word-spacing: 1.1px;">2) натиснути ліву кнопку миші і, не відпускаючи, перетягнути стрілку&nbsp;вправо і вниз, охопивши об&rsquo;єкти в прямокутник;</p>
+<p style="word-spacing: 1.1px;">3) відпустити кнопку.</p>
+<p style="word-spacing: 1.1px;">У ході роботи буде видно прямокутник, який охоплює виділені об&rsquo;єкти. Над виділеними об&rsquo;єктами можна виконувати певні операції.</p>
+<p style="word-spacing: 1.1px;">Щоб перемістити об&rsquo;єкт, на нього слід навести вказівник й перетягнути мишею.</p>
+<p style="word-spacing: 1.1px;">Для масштабування (змінення розмірів) об&rsquo;єкта треба перетягнути відповідні стрілки (див. рис. 8.3).</p>
+<p style="word-spacing: 1.1px;">Кутовими стрілками змінюють одночасно довжину і ширину, а бічними &mdash; лише один із розмірів.</p>
+<p style="word-spacing: 1.1px;">Об&rsquo;єкти можна обертати та нахиляти.</p>
+<p style="word-spacing: 1.1px;">Якщо клацнути на об&rsquo;єкті &mdash; стрілки змінять вигляд і з&rsquo;явиться хрестик, що позначає центр обертання (рис. 8.4), який залишається нерухомим. Під час перетягування кутових стрілок об&rsquo;єкт буде обертатись.</p>
+<p style="word-spacing: 1.1px;">Центр також можна перетягти в інше місце.</p>
+<p style="word-spacing: 1.1px;">Аналогічно виконується операція нахиляння об&rsquo;єкта. За допомогою стрілок біля сторін прямокутника (рис. 8.5) можна зсовувати одні частини об&rsquo;єкта відносно інших. Центр залишається нерухомим, як і під&nbsp;час обертання.</p>
+<p style="word-spacing: 1.1px;">Кнопки fV;, розташовані на панелі параметрів інструмента Стрілка, дозволяють швидко обертати об&rsquo;єкт на 90&deg; за чи проти ходу годинникової стрілки.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-46.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Відобразити об&rsquo;єкт відносно горизонтальної або вертикальної осі, яка проходить через центр обертання, дозволяють кнопки</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-47.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">розташовані на панелі параметрів інструмента Стрілка.</p>
+<p style="word-spacing: 1.1px;">Штрих та заповнення графічних примітивів</p>
+<p style="word-spacing: 1.1px;">Для змінення кольорів штриха та заповнення внутрішньої області&nbsp;об&rsquo;єкта цей об&rsquo;єкт потрібно виділити і клацнути на панелі команд&nbsp;кнопку Ц- або вибрати команду&nbsp;Об'єкт ^ Заповнення та штрих. Відкриється вікно (рис. 8.6).</p>
+<p style="word-spacing: 1.1px;">1 &mdash; кнопки вибору типу заповнення</p>
+<p style="word-spacing: 1.1px;">2 &mdash; регулятор прозорості кольору</p>
+<p style="word-spacing: 1.1px;">3 &mdash; піпетка для вибору кольору</p>
+<p style="word-spacing: 1.1px;">на зображенні</p>
+<p style="word-spacing: 1.1px;">4 &mdash; регулятор прозорості об'єкта</p>
+<p style="word-spacing: 1.1px;">5 &mdash; кнопки вибору способу заповнення</p>
+<p style="word-spacing: 1.1px;">складних об'єктів</p>
+<p style="word-spacing: 1.1px;">6 &mdash; перемикання режиму вибору кольору</p>
+<p style="word-spacing: 1.1px;">7 &mdash; колесо кольорів</p>
+<p style="word-spacing: 1.1px;">8 &mdash; числовий код кольору</p>
+<p style="word-spacing: 1.1px;">(шістнадцятковий)</p>
+<p style="word-spacing: 1.1px;">9 &mdash; регулятор розмиття об'єкта</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Розглянемо основні елементи керування вікна Заповнення та штрих:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-48.jpg" alt="" /></p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Кнопка</p>
+</td>
+<td>
+<p>Тип заповнення</p>
+</td>
+<td>
+<p>Приклад</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-49.jpg" alt="" /></td>
+<td>
+<p>Заповнення відсутнє, видно лише штрих</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-50.jpg" alt="" /></td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-51.jpg" alt="" /></td>
+<td>
+<p>Суцільне заповнення вибраним кольором з урахуванням прозорості</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-52.jpg" alt="" /></td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-53.jpg" alt="" /></td>
+<td>
+<p>Лінійний градієнт &mdash; плавний перехід від одного кольору до іншого або від зафарбованої ділянки до прозорої</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-54.jpg" alt="" /></td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-55.jpg" alt="" /></td>
+<td>
+<p>Радіальний градієнт &mdash; плавний перехід кольорів від центра до країв фігури</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-56.jpg" alt="" /></td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-57.jpg" alt="" /></td>
+<td>
+<p>Візерунок</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-58.jpg" alt="" /></td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">На рис. 8.6 розглянемо вкладку Заповнення під час вибору кольору для суцільного заповнення з використанням колеса кольорів (7). У цьому&nbsp;режимі бажаний колір можна підібрати на основі колірної моделі HSB.</p>
+<p style="word-spacing: 1.1px;">На вкладці Заповнення можна вибрати тон, клацнувши колесо кольорів, а потім вибрати насиченість і яскравість, клацнувши в трикутнику. Щоб&nbsp;заповнення було напівпрозорим, слід за допомогою регулятора (2) вибрати&nbsp;рівень його прозорості.</p>
+<p style="word-spacing: 1.1px;">На екрані є можливість відразу спостерігати, як змінюються параметри кольору.</p>
+<p style="word-spacing: 1.1px;">На вкладці Колір штриха можна налаштувати колір штриха об&rsquo;єкта (вкладка містить подібні елементи керування).</p>
+<p style="word-spacing: 1.1px;">На вкладці Стиль штриха можна задати товщину та інші параметри штриха (рис. 8.7).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-59.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Масштабування перегляду зображення</p>
+<p style="word-spacing: 1.1px;">Під час роботи з малюнком може виникнути потреба краще роздивитись дрібні деталі малюнка або навпаки &mdash; побачити весь малюнок. Для керування масштабом призначено інструмент Масштаб</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-60.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вибравши його, слід клацнути в потрібному місці на зображенні лівою кнопкою миші &mdash; масштаб буде збільшено. Для зменшення масштабу слід&nbsp;клацнути правою кнопкою миші на вільному місці робочого поля.</p>
+<p style="word-spacing: 1.1px;">Керувати масштабом зручно також кнопками на панелі команд:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-61.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На панелі параметрів інструмента Масштаб доступні додаткові можливості масштабування: масштаб за шириною сторінки, кнопки історії масштабування та ін.</p>
+<p style="word-spacing: 1.1px;">Зміна масштабу жодним чином не впливає на малюнок, а змінює лише його розмір на екрані.</p>
+<p style="word-spacing: 1.1px;">Інструменти для малювання ліній</p>
+<p style="word-spacing: 1.1px;">Більшість малюнків, зокрема, у книжках і комп&rsquo;ютерних іграх, складаються не лише з простих геометричних фігур, про які йшлося раніше, а й із&nbsp;криволінійних елементів складної форми (рис. 8.8).</p>
+<p style="word-spacing: 1.1px;">Панель інструментів містить декілька інструментів для малювання ліній. Розглянемо два з них &mdash;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-62.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-63.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Інструмент Олівець призначено для малювання ліній довільної форми і відрізків.</p>
+<p style="word-spacing: 1.1px;">Щоб намалювати криву лінію, потрібно:</p>
+<p style="word-spacing: 1.1px;">1) вибрати інструмент;</p>
+<p style="word-spacing: 1.1px;">2) натиснути ліву кнопку миші та, не відпускаючи її, рухом вказівника&nbsp;миші малювати лінію;</p>
+<p style="word-spacing: 1.1px;">3) відпустити кнопку миші, щоб закінчити малювання кривої.</p>
+<p style="word-spacing: 1.1px;">Якщо початок і кінець кривої збігаються, вона стає замкненою.</p>
+<p style="word-spacing: 1.1px;">Щоб намалювати відрізок, потрібно вибрати інструмент і послідовно</p>
+<p style="word-spacing: 1.1px;">клацнути мишею в початковій та кінцевій точках.</p>
+<p style="word-spacing: 1.1px;">Інструмент Перо призначено для малювання ламаних ліній і ліній особливого типу &mdash; кривих Безьє, а також побудови на їхній основі складніших об&rsquo;єктів.</p>
+<p style="word-spacing: 1.1px;">На рис. 8.9. наведено об&rsquo;єкт Спіро, а також його контур (червона лінія) &mdash; криву Безьє, на основі якої він побудований.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-64.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вибравши інструмент Перо, для побудови лінії потрібно або послідовно клацати мишею точки в робочому полі &mdash; з&rsquo;являтимуться прямолінійні сегменти, або виконувати перетягування з натиснутою лівою кнопкою&nbsp;миші &mdash; з&rsquo;являтимуться криволінійні сегменти.</p>
+<p style="word-spacing: 1.1px;">Щоб завершити малювання, треба двічі клацнути або, клацнувши початкову точку, зробити контур замкненим.</p>
+<p style="word-spacing: 1.1px;">Форма кривої Безьє визначається положенням чотирьох точок: початкової, кінцевої і двох керувальних (рис. 8.10). Крива повністю вміщується в чотирикутнику з вершинами в цих точках.</p>
+<p style="word-spacing: 1.1px;">Цікаво, що французький учений, математик і інженер П&rsquo;єр Безьє розробив ці криві у 1968 році, проектуючи кузов автомобіля для компанії &laquo;Рено&raquo;</p>
+<p style="word-spacing: 1.1px;">(Франція). Криві Безьє лягли в основу не тільки графічних, а й багатьох інших програм.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-65.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Робота з контурами</p>
+<p style="word-spacing: 1.1px;">Контури, які є основою для побудови ліній і складніших об&rsquo;єктів, складаються із сегментів, сполучених у вузлах.</p>
+<p style="word-spacing: 1.1px;">Будова контуру</p>
+<p style="word-spacing: 1.1px;">Розрізняють прості і складені контури. Простий контур може бути замкненим (рис. 8.11, а) або незамкненим (рис. 8.11, б). У незамкнено-</p>
+<p style="word-spacing: 1.1px;">му контурі два вузли розташовуються на його кінцях, а в кожному з решти&nbsp;вузлів сполучаються по два сегменти.</p>
+<p style="word-spacing: 1.1px;">Контур об&rsquo;єкта також може бути складеним з декількох частин, не сполучених між собою (рис. 8.11, в).</p>
+<p style="word-spacing: 1.1px;">Якщо вибрати інструмент Вузол і клацнути на одній із ліній, побачимо&nbsp;на ній або поруч із нею квадратики,&nbsp;які позначають вузли (вузлові точки).</p>
+<p style="word-spacing: 1.1px;">Частину контуру, що сполучає два суміжні вузли, називають сегментом. Сегменти бувають двох видів: прямолінійні й криволінійні.</p>
+<p style="word-spacing: 1.1px;">Для виконання більшості операцій вузли і сегменти слід виділяти. Щоб виділити вузол, на ньому потрібно клацнути, щоб виділити декілька&nbsp;вузлів &mdash; на них потрібно клацнути, утримуючи клавішу Shift. Щоб вибрати сегмент, треба виділити вузли на його кінцях.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-66.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Змінення форми контуру</p>
+<p style="word-spacing: 1.1px;">Існує декілька способів змінити форму контуру:</p>
+<p style="word-spacing: 1.1px;">якщо перетягнути один або декілька вузлів у інше місце, то зміниться форма прилеглих до них сегментів;</p>
+<p style="word-spacing: 1.1px;">якщо перетягнути будь-яку точку контуру, то зміниться форма сегмента, якому належить ця точка.</p>
+<p style="word-spacing: 1.1px;">Якщо виділити вузол, то біля нього з&rsquo;являться один або два відрізки дотичних до кривої, кожен&nbsp;із керувальною точкою на кінці (круглим маркером). Маркери також з&rsquo;являться у двох сусідніх&nbsp;вузлів (рис. 8.12). Якщо у виділеного вузла маркери не з&rsquo;явилися, то вони з ним суміщені. Маркери можна &laquo;витягти&raquo; мишею, утримуючи клавішу&nbsp;Shift. Перетягуючи маркери, можна довільно змінювати форму відповідних сегментів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-67.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Робота з вузлами</p>
+<p style="word-spacing: 1.1px;">Розрізняють гладкі, симетричні й гострі вузли. Тип вузла можна розпізнати за &laquo;поведінкою&raquo; маркерів його керувальних точок (див. рис. 8.12). У гладкого вузла маркери завжди розміщені на одній прямій із вузлом,&nbsp;у симетричного &mdash; на одній прямій із вузлом і на однакових відстанях від&nbsp;нього, а в гострого вузла обидва маркери можна переміщувати незалежно.</p>
+<p style="word-spacing: 1.1px;">На панелі параметрів інструмента Вузол розміщено кнопки операцій із вузлами. Ознайомимося з ними детальніше.</p>
+<p style="word-spacing: 1.1px;">Щоб змінити тип вузла, його треба виділити й клацнути кнопку:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-68.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&mdash; зробити вузол гострим;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-69.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&mdash; зробити вузол гладким;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-70.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&mdash; зробити вузол симетричним.</p>
+<p style="word-spacing: 1.1px;">Щоб змінити вид сегмента, його треба виділити й клацнути кнопку:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-71.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&mdash; зробити сегмент прямолінійним;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-72.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&mdash; зробити сегмент криволінійним.</p>
+<p style="word-spacing: 1.1px;">Щоб додати нові вузли, слід виділити один або більше сегментів і клацнути кнопку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-73.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Після цього посередині кожного сегмента з&rsquo;явиться новий вузол. Для швидкого додавання вузла в довільній точці контуру&nbsp;достатньо цю точку двічі клацнути.</p>
+<p style="word-spacing: 1.1px;">Щоб вилучити вузли, слід їх виділити й клацнути кнопку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-74.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">або</p>
+<p style="word-spacing: 1.1px;">натиснути клавішу Delete &mdash; вузли зникнуть. Контур залишиться нерозривним (якщо він був таким до цього), форма контуру внаслідок вилучення вузлів може трохи змінитися.</p>
+<p style="word-spacing: 1.1px;">Щоб з&rsquo;єднати два кінцеві вузли контуру, їх треба виділити й клацнути</p>
+<p style="word-spacing: 1.1px;">одну з кнопок:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-75.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&mdash; сегменти викривляться і сполучаться одним вузлом;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-76.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&mdash; між вузлами з&rsquo;явиться новий сегмент.</p>
+<p style="word-spacing: 1.1px;">Якщо треба з&rsquo;єднати контури двох різних об&rsquo;єктів, їх слід попередньо з&rsquo;єднати в один складений контур. Щоб об&rsquo;єднати два або більше контурів в один, об&rsquo;єкти слід виділити й вибрати команду меню Контур</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-77.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Об'єднати (або сполучення клавіш Ctrl + K).</p>
+<p style="word-spacing: 1.1px;">Щоб розірвати контур, можна або вибрати сегмент і вилучити його кнопкою</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-78.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">або виділити вузол і клацнути кнопку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-79.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо утворяться дві частини контуру, то вони утворять складений контур, тобто належатимуть одному об&rsquo;єкту (див. далі).</p>
+<p style="word-spacing: 1.1px;">Зобразимо вітрило човника (див. рис. 8.8). Інструментом Перо клацнемо по черзі у вершинах чотирикутника (рис. 8.13, а). Перший із отриманих вузлів у кінці побудови клацнемо ще раз, щоб контур був&nbsp;замкненим.</p>
+<p style="word-spacing: 1.1px;">Інструментом Вузол виберемо контур та, утримуючи Shift, &mdash; усі чотири його вузли.</p>
+<p style="word-spacing: 1.1px;">Клацнувши кнопку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-80.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">зробимо всі сегменти</p>
+<p style="word-spacing: 1.1px;">криволінійними: з&rsquo;являться маркери керу-вальних точок (рис. 8.13, б).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-81.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Щоб отримати бажану форму контуру, перетягнемо маркери (рис. 8.14, а).</p>
+<p style="word-spacing: 1.1px;">Відкривши кнопкою</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-82.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">вікно Заповнення та штрих, доберемо колір (блакитний),&nbsp;а потім вид заповнення (лінійний градієнт)&nbsp;(рис. 8.14, б).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-83.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Робота з файлами в Inkscape</p>
+<p style="word-spacing: 1.1px;">Як і багато інших графічних редакторів, Inkscape дозволяє зберігати й відкривати для опрацювання файли різних форматів. Проте, якщо&nbsp;робота з малюнком не закінчена, то під час збереження слід вибрати&nbsp;тип файла Файл Inkscape SVG.</p>
+<p style="word-spacing: 1.1px;">Для роботи з документами на панелі команд зібрано кнопки:</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-84.jpg" alt="" /></td>
+<td>
+<p>створити новий документ;</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-85.jpg" alt="" /></td>
+<td>
+<p>надрукувати документ;</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-86.jpg" alt="" /></td>
+<td>
+<p>відкрити наявний документ;</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-87.jpg" alt="" /></td>
+<td>
+<p>зберегти документ.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Щоб записати у файл растрову копію зображення, що опрацьовується, треба:</p>
+<p style="word-spacing: 1.1px;">1) вибрати команду меню Файл ^ Експортувати як зображення PNG;</p>
+<p style="word-spacing: 1.1px;">2) у діалоговому вікні зазначити параметри експорту, ім&rsquo;я файла;</p>
+<p style="word-spacing: 1.1px;">3) натиснути кнопку Експортувати.</p>
+<p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. Назвіть елементи головного вікна Inkscape.</p>
+<p style="word-spacing: 1.1px;">2. Що таке градієнт?</p>
+<p style="word-spacing: 1.1px;">3. Як змінити товщину штриха графічного примітива?</p>
+<p style="word-spacing: 1.1px;">4. Як змінити масштаб зображення на екрані?</p>
+<p style="word-spacing: 1.1px;">5. Як за допомогою інструмента Перо отримати ламану лінію?</p>
+<p style="word-spacing: 1.1px;">6. Які операції виконують інструментом Вузол?</p>
+<p style="word-spacing: 1.1px;">7. Які є типи вузлів контуру?</p>
+<p style="word-spacing: 1.1px;">8. Як додати на контурі новий вузол?</p>
+<p style="word-spacing: 1.1px;">Вправа 8</p>
+<p style="word-spacing: 1.1px;">1. Побудувати зображення, яке складається з графічних примітивів та змінити їхні параметри.</p>
+<p style="word-spacing: 1.1px;">1) Запустіть програму Inkscape. Розгляньте головне вікно програми, знайдіть панелі: інструментів, команд, параметрів&nbsp;інструментів; палітру.</p>
+<p style="word-spacing: 1.1px;">2) Установіть такий масштаб, щоб сторінку було видно повністю.</p>
+<p style="word-spacing: 1.1px;">3) Побудуйте зображення телевізора (рис. 1):</p>
+<p style="word-spacing: 1.1px;">&bull; виберіть інструмент Прямокутник і побудуйте три примітиви: великий (&laquo;корпус&raquo;),&nbsp;менший (&laquo;екран&raquo;) і найменший (&laquo;ніжка&raquo;);</p>
+<p style="word-spacing: 1.1px;">Примітка. Якщо щойно побудованої фігури не видно, можливо, увімкнено білий колір штриха і заповнення або прозорість.</p>
+<p style="word-spacing: 1.1px;">&bull; інструментом Еліпс побудуйте коло в центрі &laquo;екрана&raquo; телевізора і половину еліпса (&laquo;опора&raquo;);</p>
+<p style="word-spacing: 1.1px;">&bull; викличте вікно Заповнення та штрих і змініть заповнення та&nbsp;штрих відповідно до рис. 1;</p>
+<p style="word-spacing: 1.1px;">&bull; додайте на &laquo;екран&raquo; спіраль.</p>
+<p style="word-spacing: 1.1px;">4) Збережіть документ у файлі з іменем Вправа 8_1 у відповідній папці.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-88.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">► 2. Побудувати зображення із використанням ліній довільної форми</p>
+<p style="word-spacing: 1.1px;">та інших графічних примітивів за зразком (рис. 2).</p>
+<p style="word-spacing: 1.1px;">1) Запустіть програму Inkscape. Користуючись інструментом Перо,&nbsp;побудуйте замкнену ламану (рис. 2, а), послідовно клацаючи&nbsp;її вершини.</p>
+<p style="word-spacing: 1.1px;">2) Виберіть інструмент Вузол і клацніть ламану. Зробіть частину вузлів гладкими, виділяючи їх і користуючись кнопкою V&rsquo; щоб</p>
+<p style="word-spacing: 1.1px;">отримати потрібну форму (рис. 2, б). За потреби перетягніть маркери вузлів.</p>
+<p style="word-spacing: 1.1px;">3) Доберіть кольори штриха й заповнення, приблизно як на рис. 2, в.</p>
+<p style="word-spacing: 1.1px;">4) Домалюйте решту елементів зображення&nbsp;(рис. 2, в): рот і ніс &mdash; інструментом Перо;&nbsp;очі &mdash; інструментом Еліпс.</p>
+<p style="word-spacing: 1.1px;">5) Збережіть документ у файлі з іменем Вправа 8_2&nbsp;у відповідній папці.</p>
+<p style="word-spacing: 1.1px;">6) Експортуйте зображення у растровий файл&nbsp;dog.png, установивши ширину 400 пікселів.</p>
+<p style="word-spacing: 1.1px;">Порівняйте обсяги отриманих файлів. Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-89.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 8 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Підручник Інформатика 9 клас Бондаренко читати онлайн (нова програма 2017)</a></li><li><a href="656-grafchn-y-tekstov-obyekti-v-publkacyi.html">Графічні й текстові об'єкти в публікації</a></li><li><a href="650-skladen-vektorn-zobrazhennya.html">Складені векторні зображення</a></li><li><a href="649-robota-z-obyektami-grafchnogo-zobrazhennya.html">Робота з об'єктами графічного зображення</a></li><li><a href="647-osnovn-ponyattya-kompyuternoyi-grafki.html">Основні поняття комп'ютерної графіки</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

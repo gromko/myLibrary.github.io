@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Рух тіла під дією сили тяжіння &raquo; mozok.click</title>
+<meta name="description" content="Траєкторія руху м'яча, кинутого вертикально вгору або вниз,  пряма. Розбігшись, людина стрибає у воду  траєкторією руху людини буде вітка параболи. Ядро, випущене під кутом до горизонту, те" />
+<meta name="keywords" content="параболи, тобто, маємо, тяжіння, відбуваються, тільки, справу, вільним, початкових, умовах, різних, Причина, падінням, відрізняються, частину, горизонту, Розбігшись, людина, пряма, вгору" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Рух тіла під дією сили тяжіння</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb628").Button("#infc628"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb628" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc628" class="infcont">
+			<ul>
+				<li><i>Переглядів: 28020</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 13-09-2017, 05:21</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-628'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '628'); return false;">1</a></li>
+		<li><a href="628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '628'); return false;">2</a></li>
+		<li><a href="628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html#" title="Средне" class="r3-unit" onclick="doRate('3', '628'); return false;">3</a></li>
+		<li><a href="628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '628'); return false;">4</a></li>
+		<li><a href="628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '628'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/13/index.html" ><i>13-09-2017, 05:21</i></a></span>
+	<h3 class="btl"><span id="news-title">Рух тіла під дією сили тяжіння</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-628" style="display:inline;"><p>Траєкторія руху м'яча, кинутого вертикально вгору або вниз, &mdash; пряма. Розбігшись, людина стрибає у воду &mdash; траєкторією руху людини буде вітка параболи. Ядро, випущене під кутом до горизонту, теж опише частину параболи. Рухи всіх цих тіл відбуваються тільки під дією сили тяжіння, тобто маємо справу з вільним падінням.&nbsp;Чому ж ці рухи так відрізняються? Причина &mdash; в різних початкових умовах (рис. 34.1).</p>
+<p style="word-spacing: 1.1px;">Здійснюємо ряд спрощень</p>
+<p style="word-spacing: 1.1px;">Характер реального руху тіла в полі тяжіння Землі є досить складним, і його описування виходить за межі шкільної програми. Тому приймемо низку спрощень:</p>
+<p style="word-spacing: 1.1px;">1) систему відліку, пов&rsquo;язану з точкою на&nbsp;поверхні Землі, вважатимемо інерціальною;</p>
+<p style="word-spacing: 1.1px;">2) розглядатимемо переміщення тіл поблизу поверхні Землі, тобто на невеликій (порівняно з її радіусом) відстані. Тоді кривизною&nbsp;поверхні Землі та зміною прискорення вільного&nbsp;падіння можна знехтувати; інакше кажучи,&nbsp;Землю будемо вважати &laquo;пласкою&raquo;, а прискорення вільного падіння &mdash; незмінним:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-404.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3) опором повітря будемо нехтувати.</p>
+<p style="word-spacing: 1.1px;">Зверніть увагу: якщо прийняти тільки перші два спрощення, отриманий результат&nbsp;буде дуже близьким до реального; останнє ж&nbsp;спрощення не дає серйозної похибки тільки&nbsp;у випадках, коли тіла важкі, невеликі за&nbsp;розмірами, а швидкість їхнього руху досить&nbsp;мала. Саме такі тіла ми розглядатимемо далі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-405.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 34.1. Траєкторія руху тіла під дією сили тяжіння залежить&nbsp;від напрямку швидкості руху&nbsp;тіла: тіло, кинуте вертикально, рухається прямолінійною&nbsp;траєкторією (а); траєкторія&nbsp;руху тіла, кинутого горизонтально (б) або під кутом до&nbsp;горизонту (є), &mdash; парабола</p>
+<p style="word-spacing: 1.1px;">вивчаємо рух тіла, кинутого вертикально</p>
+<p style="word-spacing: 1.1px;">Спостерігаючи за рухом невеликих важких тіл, які кинуті вертикально вниз, вертикально вгору&nbsp;або падають без початкової швидкості, бачимо,&nbsp;що траєкторія руху таких тіл &mdash; відрізки прямої (див. рис. 34.1, а). До того ж ми знаємо, що&nbsp;ці тіла рухаються з незмінним прискоренням.</p>
+<p style="word-spacing: 1.1px;">Рух тіла, кинутого вертикально вгору або вниз, &mdash; це рівноприскорений прямолінійний рух із прискоренням, що дорівнює прискоренню вільного падіння: а=g</p>
+<p style="word-spacing: 1.1px;">Щоб математично описати рух тіла, кинутого вертикально вгору або вниз (вільне падіння тіла), скористаємося формулами залежності швидкості, переміщення та координати від часу для рівноприскореного прямолінійного руху.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Підійдемо до запису формул, які описують вільне падіння, &laquo;технічно&raquo;.</p>
+<p style="word-spacing: 1.1px;">1. Описуючи рух тіла по вертикалі, вектори швидкості, прискорення&nbsp;та переміщення традиційно проектують на вісь OY, тому в рівняннях руху&nbsp;замінимо х на у.</p>
+<p style="word-spacing: 1.1px;">2. Переміщення тіла по вертикалі зазвичай позначають символом h&nbsp;(висота), тому замінимо в на Н.</p>
+<p style="word-spacing: 1.1px;">3. Для всіх тіл, які рухаються тільки під дією сили тяжіння, прискорення дорівнює прискоренню вільного падіння, тому замінимо а на g.</p>
+<p style="word-spacing: 1.1px;">З огляду на зазначені заміни отримаємо рівняння, якими описують рух тіла, що вільно падає:</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1">
+<tbody>
+<tr>
+<td>
+<p>Назва формули</p>
+</td>
+<td>
+<p>Рівноприскорений рух уздовж осі ОХ</p>
+</td>
+<td>
+<p>Вільне падіння уздовж осі ОУ</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Рівняння залежності проекції швидкості від часу</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-406.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-407.jpg" alt="" /></td>
+</tr>
+<tr>
+<td>
+<p>Рівняння залежності проекції переміщення від часу</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-408.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-409.jpg" alt="" /></td>
+</tr>
+<tr>
+<td>
+<p>Формула, яка виражає геометричний зміст переміщення</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-410.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-411.jpg" alt="" /></td>
+</tr>
+<tr>
+<td>
+<p>Формула для розрахунку проекції переміщення, якщо&nbsp;невідомий час руху тіла</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-412.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-413.jpg" alt="" /></td>
+</tr>
+<tr>
+<td>
+<p>Рівняння координати</p>
+</td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-414.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-415.jpg" alt="" /></td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Задача 1. Повітряна куля рівномірно піднімається зі швидкістю 2 м/с. На висоті 7 м від поверхні землі з неї&nbsp;впало невелике важке тіло. Через який інтервал часу це&nbsp;тіло впаде на землю? Якою буде швидкість руху тіла в момент падіння? Падіння тіла вважайте вільним.</p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми. Виконаємо пояснювальний рисунок. Спрямуємо вісь СУ вертикально вниз. Початок координат нехай збігається з положенням тіла в момент початку падіння.</p>
+<p style="word-spacing: 1.1px;">Тіло впало з кулі, що рівномірно піднімалася, тому в момент початку падіння швидкість руху тіла дорівнювала швидкості руху кулі й була напрямлена вертикально&nbsp;вгору.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-416.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-417.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Задача 2. Із точок Л і Б, розташованих на одній вертикалі на відстані 105 м одна від одної (див. рисунок), кидають два&nbsp;тіла з однаковою швидкістю 10 м/с. Тіло 1 кидають із точки Л&nbsp;вертикально вниз, а через 1 с із точки Б кидають вертикально&nbsp;вгору тіло 2. На якій відстані від точки Л тіла зустрінуться?</p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми. Обидва тіла рухаються прямолінійно з прискоренням а = &sect;. У момент зустрічі координати тіл будуть однакові: у<sub>х</sub>&nbsp;= у<sub>2</sub>. Отже, для розв&rsquo;язання задачі слід записати рівняння координати для кожного тіла.</p>
+<p style="word-spacing: 1.1px;">Домовимося, що початок координат збігається з положенням тіла 2 (<sub>02</sub>&nbsp;= 0 , тоді початкова координата тіла 1 &mdash;</p>
+<p style="word-spacing: 1.1px;">105 м (у<sub>01</sub>&nbsp;= 105 м). Час руху тіла 2 на 1 секунду менший від часу руху тіла 1, тобто і<sub>2</sub>&nbsp;= ^ -1 с.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-418.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Пошук математичної моделі, розв&rsquo;язання. Запишемо рівняння координати в загальному вигляді та конкретизуємо його для кожного тіла:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-419.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-420.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-421.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розглядаємо рух тіла, кинутого горизонтально</p>
+<p style="word-spacing: 1.1px;">Якщо за допомогою гумової трубки з наконечником створити струмінь води і спрямувати його горизонтально, побачимо, що траєкторія&nbsp;руху частинок води &mdash; парабола (рис. 34.2). Параболою буде й траєкторія руху м&rsquo;ячика для&nbsp;пінг-понгу, якщо йому надати горизонтальної&nbsp;швидкості, й траєкторія кинутого горизонтально камінця тощо.</p>
+<p style="word-spacing: 1.1px;">Розглянемо рух тіла, кинутого горизонтально, як результат додавання двох рухів (рис. 34.3):</p>
+<p style="word-spacing: 1.1px;">1) рівномірного &mdash; уздовж осі ОХ, оскільки&nbsp;на тіло вздовж цієї осі не діє жодна сила (проекція сили тяжіння на вісь ОХ дорівнює нулю);</p>
+<p style="word-spacing: 1.1px;">2) рівноприскореного (з прискоренням і) &mdash; уздовж осі OY, оскільки уздовж&nbsp;осі ОУ на тіло діє сила тяжіння.</p>
+<p style="word-spacing: 1.1px;">Уздовж осі ОХ тіло рухається рівномірно, тому швидкість v<sub>x</sub>&nbsp;руху тіла є незмінною і дорівнює початковій швидкості v<sub>0</sub>, а дальність І&nbsp;польоту тіла за час t дорівнює добутку початкової швидкості v<sub>0</sub>&nbsp;і часу t руху тіла:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-422.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Уздовж осі ОУ тіло вільно падає, тому швидкість його руху та висоту падіння визначимо за формулами:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-423.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Модуль швидкості руху тіла в довільній точці траєкторії обчислимо, скориставшись</p>
+<p style="word-spacing: 1.1px;">теоремою Піфагора:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-424.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-425.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Задача 3. Із прямовисної скелі заввишки 20 м у море горизонтально кинули камінь. Із якою швидкістю кинули камінь, якщо він упав у воду&nbsp;на відстані 16 м від скелі? Яка швидкість руху каменя в момент падіння&nbsp;в море? Опором повітря знехтуйте.</p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми. Початкова швидкість руху каменя напрямлена горизонтально. Камінь вільно падає. Отже, рух тіла вздовж осі OX &mdash; рівномірний, а вздовж осі OY &mdash; рівноприскорений, без початкової швидкості, з прискоренням І.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-426.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Контрольні запитання</p>
+<p style="word-spacing: 1.1px;">1. Які спрощення ми приймаємо, розв&rsquo;язуючи задачі на рух тіл під дією сили&nbsp;тяжіння? 2. Запишіть рівняння руху тіла під дією сили тяжіння в загальному вигляді. 3. Якою є траєкторія руху тіла, кинутого вертикально? горизонтально? 4. Як для тіла, кинутого горизонтально, визначити дальність польоту?&nbsp;висоту падіння? модуль швидкості руху тіла в будь-якій точці траєкторії?</p>
+<p style="word-spacing: 1.1px;">Вправа № 34</p>
+<p style="word-spacing: 1.1px;">Виконуючи завдання, вважайте, що опір повітря відсутній.</p>
+<p style="word-spacing: 1.1px;">1. Одне тіло кинули вертикально вгору, друге &mdash; вертикально вниз, третє відпустили. Яке тіло рухається з найбільшим прискоренням?</p>
+<p style="word-spacing: 1.1px;">2. Тіло рухається тільки під дією сили тяжіння. Систему координат обрано&nbsp;так, що вісь ОХ напрямлена горизонтально, вісь ОУ &mdash; вертикально вгору.&nbsp;Опишіть, виконавши відповідний рисунок, характер руху тіла, якщо:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-427.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-428.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. М&rsquo;яч кинули з поверхні землі вертикально вгору з початковою швидкістю 20 м/с. Визначте: а) швидкість руху та переміщення м&rsquo;яча через 3 с після початку руху; б) час підйому&nbsp;та максимальну висоту підйому м&rsquo;яча.</p>
+<p style="word-spacing: 1.1px;">4. Із даху будинку на висоті 45 м випущено горизонтально&nbsp;стрілу з початковою швидкістю 20 м/с. Через який інтервал&nbsp;часу стріла впаде на землю? Якими будуть дальність польоту&nbsp;та переміщення стріли?</p>
+<p style="word-spacing: 1.1px;">5. Дві кульки розміщено на одній вертикалі на відстані 10 м&nbsp;одна від одної. Одночасно верхню кульку кидають вертикально вниз із початковою швидкістю 25 м/с, а нижню просто відпускають. Через який час кульки зіткнуться?</p>
+<p style="word-spacing: 1.1px;">6. На рисунку зазначено положення кульки через кожну 0,1 с&nbsp;руху. Визначте прискорення вільного падіння кульки, якщо&nbsp;сторона кожного квадрата сітки &mdash; 5 см.</p>
+<p style="word-spacing: 1.1px;">7. Від бурульки на даху відірвалася краплина. Який шлях подолає краплина за четверту секунду після моменту відриву?</p>
+<p style="word-spacing: 1.1px;">8. Скориставшись даними задачі 2, розглянутої в пункті 2 &sect; 34,&nbsp;визначте шлях, який подолало кожне тіло до зустрічі.</p>
+<p style="word-spacing: 1.1px;">9. Установіть відповідність між силою і формулою для її визначення.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-429.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Експериментальне завдання</p>
+<p style="word-spacing: 1.1px;">Покладіть на край столу невелике важке тіло та штовхніть його. Спробуйте визначити швидкість, надану тілу, скориставшись лише лінійкою. Запишіть,&nbsp;як ви це зробили.</p>
+<p style="word-spacing: 1.1px;">Фізика і техніка в Україні</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-430.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Абрам Федорович Йоффе (1880-1960) &mdash; видатний український радянський фізик, академік, науковий організатор, що увійшов&nbsp;в історію як &laquo;батько радянської фізики&raquo;, &laquo;тато Йоффе&raquo;.</p>
+<p style="word-spacing: 1.1px;">Основні наукові досягнення А. Ф. Йоффе пов'язані з вивченням електричних, фотоелектричних і механічних властивостей кристалів. Він першим висунув гіпотезу про те, що напівпровідники&nbsp;можуть забезпечити ефективне перетворення енергії випромінювання на електричну енергію (за цим принципом сьогодні&nbsp;розвивається сонячна енергетика). Паралельно з Р. Міллікеном&nbsp;учений вперше визначив заряд електрона. Ініціював створення&nbsp;фізико-технічних інститутів, зокрема в Харкові та Дніпрі, створив всесвітньо відому&nbsp;наукову школу.</p>
+<p style="word-spacing: 1.1px;">Під керівництвом А. Ф. Йоффе працювали майбутні Нобелівські лауреати П. Л. Капиця, М. М. Семенов, Л. Д. Ландау, І. Є. Тамм, а також видатні вчені, які зробили значний внесок у світову науку: А. І. Аліханов, Л. А. Арцимович, М. П. Бронштейн, Я. Б. Зель-дович, І. К. Кікоін, Б. П. Константинов, І. В. Курчатов, Ю. Б. Харитон і багато інших.</p>
+<p style="word-spacing: 1.1px;">У 1960 р. ім'я А. Ф. Йоффе присвоєно Фізико-технічному інституту в Ленінграді (зараз Санкт-Петербург), на честь ученого також названо кратер на Місяці, малу планету Сонячної системи 5222, вулицю в Берліні (Німеччина).</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="639-pdruchnik-fzika-9-klas-baryahtar-dovgiy-chitati-onlayn-nova-programa-2017.html">Фізика 9 клас Бар'яхтар, Довгий</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="636-pdsumki-rozdlu-5-ruh-vzayemodya-zakoni-zberezhennya.html">Підсумки розділу 5 «Рух і взаємодія. Закони збереження»</a></li><li><a href="629-ruh-tla-pd-dyeyu-klkoh-sil.html">Рух тіла під дією кількох сил</a></li><li><a href="627-zakon-vsesvtnogo-tyazhnnya-sila-tyazhnnya-priskorennya-vlnogo-padnnya.html">Закон всесвітнього тяжіння. Сила тяжіння. Прискорення вільного падіння</a></li><li><a href="623-peremschennya-pd-chas-rvnopriskorenogo-pryamolnynogo-ruhu-rvnyannya-koordinati.html">Переміщення під час рівноприскореного прямолінійного руху. Рівняння координ ...</a></li><li><a href="622-rvnopriskoreniy-pryamolnyniy-ruh-priskorennya-shvidkst-rvnopriskorenogo-pryamolnynogo-ruhu.html">Рівноприскорений прямолінійний рух. Прискорення. Швидкість рівноприскореног ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

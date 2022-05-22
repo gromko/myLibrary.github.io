@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Візуалізація елементів табличної величини за допомогою графічних примітивів &raquo; mozok.click</title>
+<meta name="description" content="У різних сферах діяльності виникає потреба подавати вихідні дані й результати в графічній формі.Побудова лінійчатої діаграми з використанням автофігур" />
+<meta name="keywords" content="Побудова, формі, лінійчатої, діаграми, автофігур, використанням, графічній, результати, діяльності, сферах, виникає, потреба, вихідні, подавати, різних" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='677-vzualzacya-elementv-tablichnoyi-velichini-za-dopomogoyu-grafchnih-primtivv.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Візуалізація елементів табличної величини за допомогою графічних примітивів</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb677").Button("#infc677"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb677" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc677" class="infcont">
+			<ul>
+				<li><i>Переглядів: 7670</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 06:40</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-677'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="677-vzualzacya-elementv-tablichnoyi-velichini-za-dopomogoyu-grafchnih-primtivv.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '677'); return false;">1</a></li>
+		<li><a href="677-vzualzacya-elementv-tablichnoyi-velichini-za-dopomogoyu-grafchnih-primtivv.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '677'); return false;">2</a></li>
+		<li><a href="677-vzualzacya-elementv-tablichnoyi-velichini-za-dopomogoyu-grafchnih-primtivv.html#" title="Средне" class="r3-unit" onclick="doRate('3', '677'); return false;">3</a></li>
+		<li><a href="677-vzualzacya-elementv-tablichnoyi-velichini-za-dopomogoyu-grafchnih-primtivv.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '677'); return false;">4</a></li>
+		<li><a href="677-vzualzacya-elementv-tablichnoyi-velichini-za-dopomogoyu-grafchnih-primtivv.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '677'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 06:40</i></a></span>
+	<h3 class="btl"><span id="news-title">Візуалізація елементів табличної величини за допомогою графічних примітивів</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-677" style="display:inline;"><p>У різних сферах діяльності виникає потреба подавати вихідні дані й результати в графічній формі.</p>
+<p style="word-spacing: 1.1px;">Побудова лінійчатої діаграми з використанням автофігур</p>
+<p style="word-spacing: 1.1px;">Алгоритм побудови лінійчатої діаграми:</p>
+<p style="word-spacing: 1.1px;">1) створити масив автофігур Shape, розмірність якого дорівнює кількості&nbsp;значень даних у таблиці;</p>
+<p style="word-spacing: 1.1px;">2) задати елементам масиву автофігур значення властивості Width,&nbsp;пропорційні значенням табличної величини.</p>
+<p style="word-spacing: 1.1px;">Відобразити у вигляді лінійчатої діаграми дані таблиці.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-308.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На форму додамо компонент Panel як контейнер для компонентів Image і Shape (рис. 37.1). Розмістимо на панелі компонент Image і 4 компоненти&nbsp;Shape (за кількістю елементів у масиві). Для створення легенди діаграми&nbsp;на форму додамо 4 компоненти Label.</p>
+<p style="word-spacing: 1.1px;">Об&rsquo;єкти Shape належать до типу даних TShape. У розділі опису глобальних змінних опишемо:</p>
+<p style="word-spacing: 1.1px;">var sh: array[1..4] of TShape; // масив типу TShape Тепер можна працювати з автофігурами, звертаючись до них, як до&nbsp;елементів масиву sh[i].</p>
+<p style="word-spacing: 1.1px;">Аналогічно створимо масив типу TLabel для об&rsquo;єктів Label. lb: array[1..N] of TLabel;</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Заповнення масивів відбуватиметься під час створення форми:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-309.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У процедурі обробки події &#111;nclick для кнопки Побудувати діаграму створимо масиви-константи назв річок і довжин річок. Числові значення досить великі, тому значенням властивості Width елементів масиву автофігур&nbsp;присвоїмо значення елементів масиву довжин річок D[i], зменшені в 5 разів:&nbsp;sh[i].Width := D[i] div 5;</p>
+<p style="word-spacing: 1.1px;">Код процедури обробки події &#111;nclick для кнопки Побудувати діаграму може бути таким:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-310.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Виведення тексту на полотно здійснюється за допомогою методу ТехЮиї(х,у,Техї). Вікно програми з діаграмою, побудованою за даними таблиці довжин річок в Україні, зображено на рис. 37.2.</p>
+<p style="word-spacing: 1.1px;">Побудова гістограми з використанням графічних методів</p>
+<p style="word-spacing: 1.1px;">Діаграми можна створювати, програмуючи креслення графічних примітивів (лінія, прямокутник, сектор) графічними методами полотна Canvas. Для побудови стовпців гістограми (стовпчастої діаграми) використаємо&nbsp;графічний метод Canvas.Rectangle(x1,y1,x2,y2).</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Алгоритм побудови гістограми за значеннями елементів масиву Mas[1..N]:</p>
+<p style="word-spacing: 1.1px;">1) побудувати координатні осі;</p>
+<p style="word-spacing: 1.1px;">2) побудувати N прямокутників, розраховуючи координати і-го прямокутника за формулами</p>
+<p style="word-spacing: 1.1px;">x1 = i * S1, y1 = H - Round(Mas[i]), x2 = i * S1 + dS, y2 = yox,</p>
+<p style="word-spacing: 1.1px;">де і &mdash; номер, S1 &mdash; координата x1 першого прямокутника, Н &mdash; висота полотна, dS &mdash; ширина прямокутника, уох &mdash; відстань від верхнього краю полотна до осі Ox.</p>
+<p style="word-spacing: 1.1px;">Побудувати гістограму прибутку підприємства за 4 квартали року на полотні елемента Imagel, яке має розміри 250x150 пікселів (рис. 37.3).</p>
+<p style="word-spacing: 1.1px;">Код процедури побудови гістограми може бути таким:</p>
+<p style="word-spacing: 1.1px;">const Pr: array [1..4] of Integer = (100, 40, 80, 70);</p>
+<p style="word-spacing: 1.1px;">Nazva: array [1..4] of String = ('І kb.','II кв.'/ІІІ кв.'/IV кв.');</p>
+<p style="word-spacing: 1.1px;">var i: Integer;</p>
+<p style="word-spacing: 1.1px;">begin</p>
+<p style="word-spacing: 1.1px;">Labell.Caption := '';</p>
+<p style="word-spacing: 1.1px;">{ встановлюємо колір області побудови гістограми }</p>
+<p style="word-spacing: 1.1px;">Imagel.Canvas.Brush.Color := clWhite;</p>
+<p style="word-spacing: 1.1px;">Imagel .Canvas.FillRect(Imagel.ClientRect);</p>
+<p style="word-spacing: 1.1px;">{ побудова координатних осей }</p>
+<p style="word-spacing: 1.1px;">Imagel .Canvas.Polyline ([Point(5,5),Point(5,140),Point (240,140)]);</p>
+<p style="word-spacing: 1.1px;">Imagel .Canvas.Polyline ([Point (2,8), Point (5,5), Point (9,9)]); Image1.Canvas.Polyline ([Point (235,137), Point (240,140), Point (235,143)]);&nbsp;Нижні сторони прямокутників (стовпців гістограми) розташовані&nbsp;на одному рівні (на осі Оу), тому координата y2 для нижнього кута&nbsp;стовпців дорівнює 140. Визначимо координати для побудови першого&nbsp;стовпця. Нехай координата х1 дорівнює 40 пікселів. Висота полотна&nbsp;елемента керування Image1 дорівнює 150 пікселів, висота першого&nbsp;стовпця становить Pr[1]. Отже, координата y1 верхнього кута першого&nbsp;стовпця дорівнює 150 - Pr[1] (рис. 37.4). Нехай ширина стовпця діаграми дорівнює 30 пікселів, тоді координата х2 першого стовпця становить (40 + 30) пікселів. Для i-го стовпця х1 = i * 40, х2 = i * 40 + 30.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-311.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-312.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-313.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Побудова кругової діаграми</p>
+<p style="word-spacing: 1.1px;">У круговій діаграмі кожному елементу масиву відповідає сектор, градусна міра якого пропорційна величині елемента.</p>
+<p style="word-spacing: 1.1px;">Алгоритм побудови кругової діаграми за значеннями елементів масиву:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-314.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3) побудувати всі сектори діаграми (у результаті сектори утворять повний круг).</p>
+<p style="word-spacing: 1.1px;">Із курсу 8 класу вам відомо, що для побудови сектора еліпса використовується графічний метод СапуаБ.Ріе.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">У 9-А класі навчається 30 учнів. Виконавши тест з інформатики, 7 учнів отримали 10-12 балів, 15 учнів &mdash; 7-9 балів, 6 учнів &mdash; 4-6 балів, решта &mdash; 1-3 бали. Побудувати кругову діаграму успішності учнів&nbsp;за рівнями навчальних досягнень (рис. 37.5).</p>
+<p style="word-spacing: 1.1px;">Значення кількості учнів, які отримали оцінки за чотирма рівнями, занесені до масиву K[1..4] of Integer. Областю побудови діаграми є полотно елемента керування Imagel.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-315.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Побудова графіка</p>
+<p style="word-spacing: 1.1px;">Необхідність у побудові графіка виникає, коли треба показати залежність однієї величини від іншої (графік функції, графік температур). Алгоритм побудови графіка змінення табличної величини:</p>
+<p style="word-spacing: 1.1px;">1) побудувати координатні осі;</p>
+<p style="word-spacing: 1.1px;">2) вивести імена категорій;</p>
+<p style="word-spacing: 1.1px;">3) побудувати відрізки від точки (і - 1, /(і - 1)) до точки (і, /(ї)), де і &mdash; номер, /(і) &mdash; значення і-го елемента в масиві даних.</p>
+<p style="word-spacing: 1.1px;">Користуючись даними прикладу 2, побудувати графік змінення прибутку підприємства за 4 квартали на полотні елемента Ітадеї, ширина і довжина якого по 160 пікселів (рис. 37.7).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-316.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-317.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. Опишіть порядок створення масиву автофігур типу ЇБбаре.</p>
+<p style="word-spacing: 1.1px;">2. Який графічний метод використовують для побудови гістограми;&nbsp;кругової діаграми?</p>
+<p style="word-spacing: 1.1px;">3. Опишіть алгоритм побудови кругової діаграми.</p>
+<p style="word-spacing: 1.1px;">4. Додайте до проекту з практичної роботи 12 процедуру побудови&nbsp;графіка опадів за рік.</p>
+<p style="word-spacing: 1.1px;">Вправа 37</p>
+<p style="word-spacing: 1.1px;">У таблиці наведено дані про обсяг продажів книжкового магазину за місяцями у період із січня по червень. Визначити сумарний обсяг&nbsp;продажів за півріччя, побудувати гістограму і кругову діаграму обсягів продажу за місяцями.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-318.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">1) Створіть новий проект. Змініть значення властивості Caption форми, розмістіть на формі компоненти і налаштуйте їх властивості згідно з рисунком. Компоненти Image призначені для побудови&nbsp;діаграм; компоненти Label &mdash; для оформлення легенди; компонент&nbsp;Edit &mdash; для виведення значення сумарного обсягу продажів.</p>
+<p style="word-spacing: 1.1px;">2) Опишіть глобальні масиви значень, назв категорій, кольорів:&nbsp;const pr: array[1..6] of Real = (11, 17, 18, 32.5, 18.5, 15.5);</p>
+<p style="word-spacing: 1.1px;">nom: array[1..6] of String = ('Січ', 'Лют', 'Бер', 'Квт', 'Трв', 'Чрв');</p>
+<p style="word-spacing: 1.1px;">cl: array[1..6] of TColor = (cIBlue, cIGreen, clYellow, cIRed, cINavy, clAqua);</p>
+<p style="word-spacing: 1.1px;">3) У процедурі обробки події &#111;nclick для кнопки Знайти сумарний&nbsp;обсяг запрограмуйте знаходження суми елементів масиву Pr і виведення значення у поле Edit1.</p>
+<p style="word-spacing: 1.1px;">4) У процедурі обробки події &#111;nclick для кнопки Побудувати гістограму запрограмуйте побудову гістограми за значеннями елементів масиву Pr.</p>
+<p style="word-spacing: 1.1px;">5) У процедурі обробки події &#111;nclick для кнопки Побудувати кругову&nbsp;діаграму запрограмуйте побудову кругової діаграми за значеннями&nbsp;елементів масиву Pr.</p>
+<p style="word-spacing: 1.1px;">6) Перевірте роботу програми. Яку з побудованих діаграм доцільно&nbsp;використовувати для аналізу обсягу продажів за півріччя? Збережіть проект у папці Вправа 37. Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 37 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="678-dvovimrniy-masiv-danih.html">Двовимірний масив даних</a></li><li><a href="676-algoritmi-vporyadkuvannya-elementv-masivu.html">Алгоритми впорядкування елементів масиву</a></li><li><a href="675-vdobrazhennya-danih-u-tablichny-form.html">Відображення даних у табличній формі</a></li><li><a href="673-element-keruvannya-bagatoryadkove-tekstove-pole.html">Елемент керування. Багаторядкове текстове поле</a></li><li><a href="672-odnovimrniy-masiv-danih.html">Одновимірний масив даних</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

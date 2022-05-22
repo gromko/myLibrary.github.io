@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Проектування та розробка презентації &raquo; mozok.click</title>
+<meta name="description" content="ПОВТОРЮЄМОУ попередніх класах ви навчилися працювати з програмою для створення й опрацювання компютерних презентацій  редактором презентацій (PowerPoint із пакета Microsoft Office, Impress і" />
+<meta name="keywords" content="презентацій, слайдів, презентація, діаграми, створення, презентацію, складається, розробляти, екрані, типів, знаєте, додавати, відомо, 'єкти, презентації, пакета, Office, програми, допомогою, компютерна" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='651-proektuvannya-ta-rozrobka-prezentacyi.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Проектування та розробка презентації</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb651").Button("#infc651"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb651" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc651" class="infcont">
+			<ul>
+				<li><i>Переглядів: 4851</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 05:53</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-651'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="651-proektuvannya-ta-rozrobka-prezentacyi.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '651'); return false;">1</a></li>
+		<li><a href="651-proektuvannya-ta-rozrobka-prezentacyi.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '651'); return false;">2</a></li>
+		<li><a href="651-proektuvannya-ta-rozrobka-prezentacyi.html#" title="Средне" class="r3-unit" onclick="doRate('3', '651'); return false;">3</a></li>
+		<li><a href="651-proektuvannya-ta-rozrobka-prezentacyi.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '651'); return false;">4</a></li>
+		<li><a href="651-proektuvannya-ta-rozrobka-prezentacyi.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '651'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 05:53</i></a></span>
+	<h3 class="btl"><span id="news-title">Проектування та розробка презентації</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-651" style="display:inline;"><p>Ви вже працювали з різними електронними документами і знаєте, що презентація є мультимедійним документом. В ній можна об&rsquo;єднувати&nbsp;текст, малюнки, звук, відео, анімацію.</p>
+<p style="word-spacing: 1.1px;">Етапи розробки презентації</p>
+<p style="word-spacing: 1.1px;">Розробка презентації включає кілька етапів. Розглянемо їх докладно.</p>
+<p style="word-spacing: 1.1px;">1. Визначення теми й мети презентації. Слід чітко сформулювати тему&nbsp;й мету презентації, що дозволить визначити цільову аудиторію,&nbsp;зміст і форму подання матеріалу.</p>
+<p style="word-spacing: 1.1px;">2. Добір матеріалу та розподіл за слайдами. Слід розробити сценарій&nbsp;презентації, визначити кількість і структуру слайдів, підготувати&nbsp;потрібні тексти, малюнки, анімацію, відео, звук тощо.</p>
+<p style="word-spacing: 1.1px;">Далі робота продовжується в середовищі редактора презентацій.</p>
+<p style="word-spacing: 1.1px;">3. Вибір стильового оформлення слайдів. Залежно від теми та мети презентації можна використати теми оформлення з колекції PowerPoint&nbsp;або розробити власне оформлення.</p>
+<p style="word-spacing: 1.1px;">4. Розміщення матеріалів на слайдах. Залежно від виду та обсягу інформаційних матеріалів для кожного слайда можна вибрати готову&nbsp;розмітку або налаштувати власну.</p>
+<p style="word-spacing: 1.1px;">5. Додавання анімаційних і/або звукових ефектів. Для надання презентації динамічності та підкреслення ключових моментів змісту&nbsp;можна застосувати звукові та анімаційні ефекти (рух або видозміни&nbsp;об'єктів на екрані, анімована зміна слайдів).</p>
+<p style="word-spacing: 1.1px;">6. Попередній перегляд презентації. Під час попереднього перегляду&nbsp;презентації слід звернути увагу на оформлення слайдів та їх послідовність, завантаженість текстом, налаштувати анімовану зміну&nbsp;слайдів тощо та доопрацювати презентацію у разі потреби.</p>
+<p style="word-spacing: 1.1px;">7. Збереження презентації. Якщо роботу не завершено, для її збереження потрібно вибрати формат файла Презентація PowerPoint (*.pptx).&nbsp;Завершену роботу доцільно зберегти у форматі Демонстрація PowerPoint&nbsp;(*.ppsx). Такі файли відкриваються відразу в режимі перегляду.</p>
+<p style="word-spacing: 1.1px;">8. Демонстрація презентації.</p>
+<p style="word-spacing: 1.1px;">Якщо над створенням презентації працює декілька розробників (наприклад, під час роботи над колективним проектом), то деякі з перелічених етапів можуть відбуватися одночасно.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Вимоги до презентації</p>
+<p style="word-spacing: 1.1px;">Для того щоб презентація відповідала задуму автора і добре сприймалася аудиторією, потрібно дотримуватись певних вимог. Розглянемо їх.</p>
+<p style="word-spacing: 1.1px;">Текстове наповнення має бути простим, лаконічним, особливо якщо презентацію передбачається демонструвати на екрані для великої кількості людей. Їхня увага повинна концентруватися на доповідачі.</p>
+<p style="word-spacing: 1.1px;">Якщо в доповіді наводяться числові дані, то для унаочнення до слайдів бажано додавати діаграми, схеми тощо.</p>
+<p style="word-spacing: 1.1px;">Вміст презентації (текстові, графічні, мультимедійні об&rsquo;єкти слайда) краще структурувати за принципом &laquo;один слайд &mdash; одна ідея&raquo;. При цьому&nbsp;потрібно враховувати відповідність змісту й оформлення, що допомагає&nbsp;унаочнити матеріал.</p>
+<p style="word-spacing: 1.1px;">Використовуючи інформаційні матеріали (зображення, текст, звук, відео тощо) з Інтернету та інших джерел, слід пам&rsquo;ятати&nbsp;про авторське право, робити посилання на автора і джерело.</p>
+<p style="word-spacing: 1.1px;">Доцільний дизайн (колірна схема, розташування і розміри об&rsquo;єктів, вибір шрифтів тощо) надає презентації цілісності. Тло слайдів (однорідне,&nbsp;візерунчасте, малюнок чи фотографія), розташування основних елементів&nbsp;(заголовка, текстових блоків, зображень) не повинні помітно відрізнятися&nbsp;в межах презентації.</p>
+<p style="word-spacing: 1.1px;">Великі текстові фрагменти (від 15 слів) відвертають увагу, а дрібний шрифт (менший за 20 пт) при читанні вимагає додаткових зусиль.</p>
+<p style="word-spacing: 1.1px;">Стильове оформлення слайдів покращує загальне сприйняття презентації аудиторією. Для всіх слайдів зазвичай використовують однакову тему оформлення. Особливе оформлення можуть мати титульний та кінцевий слайди, а також слайди із заголовками окремих розділів.</p>
+<p style="word-spacing: 1.1px;">Щоб привернути увагу до важливої інформації, до окремих слайдів також можна застосувати особливе оформлення.</p>
+<p style="word-spacing: 1.1px;">Анімаційні та звукові ефекти додають динамічності та яскравості. Застосування анімації обумовлено призначенням презентації.</p>
+<p style="word-spacing: 1.1px;">Найчастіше анімацію й звукові ефекти застосовують у презентаціях рекламного або розважального характеру. Для презентацій навчальної або ділової спрямованості достатньо, щоб анімаційні&nbsp;ефекти підкреслювали найважливіші факти; від звукових ефектів при цьому можна відмовитися.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Структура презентації</p>
+<p style="word-spacing: 1.1px;">Розробка структури презентації полягає у визначенні загальної кількості слайдів та орієнтовного наповнення кожного слайда. Слід пам&rsquo;ятати, що слайди не мають бути перевантажені інформацією &mdash; ані текстовою,&nbsp;ані графічною. Для донесення змісту виступу тривалістю 10-15 хвилин&nbsp;та збереження уваги аудиторії достатньо створити 10-15 слайдів.</p>
+<p style="word-spacing: 1.1px;">Кількість слайдів слід звести до мінімальної: наприклад, слайд 1 &mdash; титульний (назва, дані про виконавця); слайди 2-8 &mdash; власне презентація; слайд 9 &mdash; заключний (висновки); слайд 10 &mdash; подяка за увагу.</p>
+<p style="word-spacing: 1.1px;">Можливості середовища редактора презентацій не обмежуються режимами редагування слайдів і сортувальника слайдів, які ви вже використовували. Якщо матеріал між слайдами чітко розподілено на другому етапі, то основу майбутньої&nbsp;презентації можна підготувати в режимі структури (рис. 11.1). Для цього достатньо з клавіатури&nbsp;набрати заголовок слайда та натиснути клавішу Enter, &mdash; одночасно з цим створиться слайд.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-126.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У програмі MS Word ви користувалися інструментами для змінення рівня елемента багаторівневого списку. У режимі структури кнопки керування відступом діють аналогічно:</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-127.jpg" alt="" /></td>
+<td>
+<p>понизити рівень заголовка (заголовок слайда стане елементом списку на попередньому слайді);</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-128.jpg" alt="" /></td>
+<td>
+<p>підвищити рівень заголовка (заголовок другого рівня стане заголовком окремого слайда).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">&mdash;_ V&raquo; &nbsp;&middot;&middot;&middot;</p>
+<p style="word-spacing: 1.1px;">Елементи дизайну презентації</p>
+<p style="word-spacing: 1.1px;">Під час створення презентації особливу увагу слід приділити дизайну та стильовому оформленню слайдів. Саме вони надають презентації індивідуальності та покращують її візуальне сприйняття.</p>
+<p style="word-spacing: 1.1px;">У ході роботи над презентацією можна налаштувати параметри сторінки, колірної схеми, шрифтів, ефектів для фігур і тла. Всі засоби, які дозволяють це зробити, містяться на вкладці Дизайн.</p>
+<p style="word-spacing: 1.1px;">Розробляючи дизайн слайда, слід добирати таке взаємне розташування об&rsquo;єктів та колірну схему, яке дозволяє правильно розставити смислові акценти на слайді.</p>
+<p style="word-spacing: 1.1px;">Для оформлення презентації не варто використовувати багато кольорів (достатньо трьох). Їх гармонійне поєднання сприяє кращому сприйманню матеріалу аудиторією. Зокрема, текст легше&nbsp;сприймається, коли літери і тло відрізняються за&nbsp;тоном і яскравістю (рис. 11.2).</p>
+<p style="word-spacing: 1.1px;">Підбираючи шрифти, потрібно пам&rsquo;ятати, що не всі вони однаково добре читаються, особливо з екрану (рис. 11.3). Не слід використовувати&nbsp;декоративні шрифти зі складною формою літер&nbsp;(вони будуть доречними, наприклад, у презента-ції-фотоальбомі).</p>
+<p style="word-spacing: 1.1px;">Створену презентацію можна оцінити за низкою різних критеріїв (рис. 11.4).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-129.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-130.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. У чому відмінність презентації від текстового документа?</p>
+<p style="word-spacing: 1.1px;">2. Об&rsquo;єкти яких типів може містити презентація?</p>
+<p style="word-spacing: 1.1px;">3. Назвіть етапи розробки презентації.</p>
+<p style="word-spacing: 1.1px;">4. Назвіть основні формати файлів, з якими працює програма&nbsp;PowerPoint 2007. У чому полягає різниця між ними?</p>
+<p style="word-spacing: 1.1px;">5. Яких вимог слід дотримуватися під час створення презентації?</p>
+<p style="word-spacing: 1.1px;">6. Виходячи з яких міркувань слід добирати оформлення слайдів?</p>
+<p style="word-spacing: 1.1px;">7. На що слід зважати, використовуючи зображення з Інтернету?</p>
+<p style="word-spacing: 1.1px;">8. Опишіть процес створення презентації в режимі структури.</p>
+<p style="word-spacing: 1.1px;">9. Як швидко створити слайди, якщо відомі їхні заголовки?</p>
+<p style="word-spacing: 1.1px;">10. Назвіть критерії оцінювання презентації.</p>
+<p style="word-spacing: 1.1px;">Вправа 11</p>
+<p style="word-spacing: 1.1px;">1. Дослідити особливості роботи з презентацією в режимі структури.</p>
+<p style="word-spacing: 1.1px;">1) Запустіть програму PowerPoint та в режимі структури створіть&nbsp;презентацію (наприклад, про музичні або спортивні уподобання). На першому слайді на другому рівні структури введіть&nbsp;назви розділів презентації. За потреби створіть нижчі рівні&nbsp;структури (див. рис. 11.1). Перегляньте отримані слайди.</p>
+<p style="word-spacing: 1.1px;">2) Відшукайте в Інтернеті два-три малюнки, що відповідають&nbsp;темі, і додайте до слайдів.</p>
+<p style="word-spacing: 1.1px;">3) Спробуйте понизити в структурі рівень заголовка одного зі&nbsp;слайдів із малюнком. Зробіть висновок.</p>
+<p style="word-spacing: 1.1px;">4) Збережіть документ у файлі з іменем Вправа 11 у відповідній&nbsp;папці. Завершіть роботу за комп'ютером.</p>
+<p style="word-spacing: 1.1px;">2. Розробити презентацію на тему &laquo;Етапи створення презентації&raquo;.&nbsp;Запропонувати однокласникам оцінити її колірну схему.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 11 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="680-rozvyazuvannya-kompetentnsnih-zadach.html">Розв'язування компетентнісних задач</a></li><li><a href="657-robota-z-kompyuternimi-publkacyami.html">Робота з комп'ютерними публікаціями</a></li><li><a href="654-upravlnnya-pokazom-prezentacyi.html">Управління показом презентації</a></li><li><a href="653-anmacya-vdeo-ta-zvuk-u-prezentacyah.html">Анімація, відео та звук у презентаціях</a></li><li><a href="652-maketi-slaydv-dagrami.html">Макети слайдів. Діаграми</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

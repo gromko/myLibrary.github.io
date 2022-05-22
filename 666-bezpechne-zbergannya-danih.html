@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Безпечне зберігання даних &raquo; mozok.click</title>
+<meta name="description" content="Надійність сучасних засобів зберігання даних обумовлена надзвичайною ефективністю способів передавання й копіювання, що робить розповсюджену інформацію практично незнищенною. Сьогодні триваю" />
+<meta name="keywords" content="даних, Сьогодні, незнищенною, практично, інформацію, тривають, збільшення, носіїв, самих, довговічності, розповсюджену, роботи, робить, обумовлена, зберігання, засобів, сучасних, надзвичайною, ефективністю, копіювання" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='666-bezpechne-zbergannya-danih.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Безпечне зберігання даних</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb666").Button("#infc666"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb666" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc666" class="infcont">
+			<ul>
+				<li><i>Переглядів: 15266</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 06:16</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-666'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="666-bezpechne-zbergannya-danih.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '666'); return false;">1</a></li>
+		<li><a href="666-bezpechne-zbergannya-danih.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '666'); return false;">2</a></li>
+		<li><a href="666-bezpechne-zbergannya-danih.html#" title="Средне" class="r3-unit" onclick="doRate('3', '666'); return false;">3</a></li>
+		<li><a href="666-bezpechne-zbergannya-danih.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '666'); return false;">4</a></li>
+		<li><a href="666-bezpechne-zbergannya-danih.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '666'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 06:16</i></a></span>
+	<h3 class="btl"><span id="news-title">Безпечне зберігання даних</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-666" style="display:inline;"><p>Надійність сучасних засобів зберігання даних обумовлена надзвичайною ефективністю способів передавання й копіювання, що робить розповсюджену інформацію практично незнищенною. Сьогодні тривають роботи щодо збільшення довговічності й самих носіїв даних.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-225.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У 2013 році вчені Інституту проблем реєстрації інформації Національної академії наук України розробили технологію зберігання даних на&nbsp;оптичних сапфірових дисках (рис. 26.1), які здатні зберігати дані впродовж десятків тисяч років.&nbsp;На цю роботу вчених надихнули таблички шумерів, виготовлені із близьких за властивостями&nbsp;матеріалів, які зберігають інформацію ось уже&nbsp;понад 4 тис. років.</p>
+<p style="word-spacing: 1.1px;">Безпечне зберігання даних у комп'ютері</p>
+<p style="word-spacing: 1.1px;">Серед заходів безпеки, яких повинен дотримуватися кожен користувач, перше місце займає його особиста організованість і відповідальне ставлення до зберігання важливих даних у комп&rsquo;ютері.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Захист конфіденційних даних</p>
+<p style="word-spacing: 1.1px;">Якщо ваш персональний комп&rsquo;ютер використовується кількома користувачами, то для захисту конфіденційних даних потрібно зробити власний обліковий запис адміністратора, встановити пароль і зберігати&nbsp;файли у папках, до яких немає доступу зі звичайних облікових записів.</p>
+<p style="word-spacing: 1.1px;">Захистити конфіденційну інформацію можна також шляхом архівування та встановлення пароля на архів. Такий спосіб захисту доцільно використовувати й під час листування.</p>
+<p style="word-spacing: 1.1px;">Захист даних від пошкодження</p>
+<p style="word-spacing: 1.1px;">Для зберігання даних та їх захисту від пошкодження варто розділити жорсткий диск на кілька логічних розділів.</p>
+<p style="word-spacing: 1.1px;">Жорсткий диск зазвичай ділять на кілька дисків (рис. 26.2): С, D та ін. На диску С установлюють операційну систему і програмне забезпечення, а на решті дисків зберігають інші дані.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-226.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Наведемо деякі рекомендації щодо запобігання втраті даних.</p>
+<p style="word-spacing: 1.1px;">Не зберігайте важливі дані на системному диску, робочому столі,&nbsp;у папках власної Бібліотеки (Моя музика, Мої документи тощо), бо системний диск найчастіше підпадає під вплив шкідливих програм.</p>
+<p style="word-spacing: 1.1px;">Зберігайте важливі дані на зовнішніх накопичувачах (оптичні CD-і DVD-диски, окремі жорсткі диски, зовнішні хмарні диски тощо).</p>
+<p style="word-spacing: 1.1px;">Після збереження даних на флеш-носії слід дотримуватися правил його безпечного вилучення. Тоді дані, що не встигли скопіюватися із буфера запису, не втратяться.</p>
+<p style="word-spacing: 1.1px;">Для резервного копіювання файлів і можливості відновлення операційної системи користуйтесь утилітами ОС Windows (див. далі).</p>
+<p style="word-spacing: 1.1px;">Резервне копіювання та відновлення даних</p>
+<p style="word-spacing: 1.1px;">У складі ОС Windows є службова програма для створення резервних копій даних жорсткого диска. Резервне копіювання дозволяє запобігти&nbsp;втраті даних на жорсткому диску через його вихід із ладу внаслідок дії&nbsp;шкідливих програм.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Резервне копіювання</p>
+<p style="word-spacing: 1.1px;">Для резервного копіювання даних слід виконати такі дії.</p>
+<p style="word-spacing: 1.1px;">1. Відкрити вікно Архівація та відновлення даних, виконавши команди:&nbsp;Пуск ^ Всі програми ^ Обслуговування ^ Архівація та відновлення.</p>
+<p style="word-spacing: 1.1px;">2. Вибрати команду Налаштувати резервне копіювання (або Змінити параметри). Вибрати місце збереження резервних копій.</p>
+<p style="word-spacing: 1.1px;">3. У вікні Налаштування архівації зазначити спосіб вибору даних для архівування: Надати вибір Windows або Надати вибір мені ^ кнопка Далі.</p>
+<p style="word-spacing: 1.1px;">4. При ручному способі вибору об&rsquo;єктів для архівування (Надати вибір&nbsp;мені) позначити галочкою файли чи папки, які архівуватимуться, та&nbsp;клацнути кнопку Далі.</p>
+<p style="word-spacing: 1.1px;">5. Установити або скасувати розклад автоматичного створення архівів&nbsp;командою Змінити розклад.</p>
+<p style="word-spacing: 1.1px;">6. Клацнути кнопку Зберегти параметри та запустити архівацію.</p>
+<p style="word-spacing: 1.1px;">Відновлення даних</p>
+<p style="word-spacing: 1.1px;">Для відновлення файлів із резервних копій слід виконати такі дії.</p>
+<p style="word-spacing: 1.1px;">1. Відкрити вікно Архівація та відновлення даних, виконавши команди:&nbsp;Пуск ^ Всі програми ^ Обслуговування ^ Архівація та відновлення.</p>
+<p style="word-spacing: 1.1px;">2. Клацнути послідовно кнопки Відновити мої файли і Огляд файлів.</p>
+<p style="word-spacing: 1.1px;">3. Вибрати відновлювані файли і клацнути кнопку Додати файли.</p>
+<p style="word-spacing: 1.1px;">4. Клацнути кнопку Далі.</p>
+<p style="word-spacing: 1.1px;">5. Обрати місце відновлення файлів: У вихідне місце або В наступне місце&nbsp;(вибравши місце відновлення).</p>
+<p style="word-spacing: 1.1px;">6. Клацнути кнопку Відновити.</p>
+<p style="word-spacing: 1.1px;">Точка відновлення Windows</p>
+<p style="word-spacing: 1.1px;">Спостереження і запам&rsquo;ятовування стану операційної системи та інстальованих програм може відбуватись і в автоматичному режимі &mdash; завдяки створенню так званих точок відновлення.</p>
+<p style="word-spacing: 1.1px;">Точка відновлення Windows (контрольна точка відновлення) &mdash; це збережена інформація про стан операційної системи і встановлених у певний час програм.</p>
+<p style="word-spacing: 1.1px;">Точку відновлення Windows доцільно створювати тоді, коли комп&rsquo;ютер і всі програми працюють у звичному режимі. Операційна система автоматично створює точки відновлення системного диска після встановлення&nbsp;нових програм, зміни налаштувань тощо.</p>
+<p style="word-spacing: 1.1px;">Точку відновлення можна створити й у ручному режимі, виконавши команди: Пуск ^ Панель керування ^ Система і безпека ^ Система ^ Захист&nbsp;системи ^ Далі ^ Створити (рис. 26.3) ^ надати опис точки відновлення ^&nbsp;^ Створити.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-227.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для відновлення видалених файлів можна скористатись функцією контекстного меню диска Відновити попередню версію диска, для якого було ввімкнено захист системи. Далі слід виконати команди:&nbsp;Налаштувати (див. рис. 26.3) ^&nbsp;^ Відновити параметри системи та&nbsp;попередні версії файлів (рис. 26.4).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-228.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Точку відновлення зазвичай застосовують у випадках погіршення роботи комп&rsquo;ютера. Для цього треба виконати такі команди: Пуск ^ Всі&nbsp;програми ^ Стандартні ^ Службові ^ Відновлення системи ^ Далі ^ вибрати&nbsp;точку відновлення ^ Далі ^ Готово.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Безпечне видалення даних</p>
+<p style="word-spacing: 1.1px;">Для видалення файлів і папок із можливістю їх відновлення використовують, як вам відомо, папку Кошик.</p>
+<p style="word-spacing: 1.1px;">А що робити, коли конфіденційну інформацію потрібно видалити без жодної можливості її відновлення, наприклад у разі передавання жорсткого диску в користування іншій особі? Очищення Кошика проблеми не&nbsp;розв&rsquo;язує, бо в більшості випадків видалені файли можна відновити&nbsp;спеціальними програмами.</p>
+<p style="word-spacing: 1.1px;">У такому випадку навіть форматування диска не завжди гарантує остаточне видалення файлів. Для повного стирання даних доцільно використовувати спеціальні програми, наприклад, Eraser, CCleaner, які на&nbsp;місце видалених даних записують нові.</p>
+<p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. У чому полягає надійність сучасних засобів зберігання даних?</p>
+<p style="word-spacing: 1.1px;">2. Назвіть способи безпечного зберігання даних на персональному&nbsp;комп&rsquo;ютері.</p>
+<p style="word-spacing: 1.1px;">3. Як здійснити резервне копіювання даних системного диска?</p>
+<p style="word-spacing: 1.1px;">4. Як відновити дані з резервних копій?</p>
+<p style="word-spacing: 1.1px;">5. Що таке точка відновлення Windows?</p>
+<p style="word-spacing: 1.1px;">6. Як здійснити видалення даних без можливості їх відновлення?&nbsp;Вправа 26</p>
+<p style="word-spacing: 1.1px;">Здійснити архівне копіювання та відновлення даних.</p>
+<p style="word-spacing: 1.1px;">1) Запустіть текстовий процесор і створіть новий документ.</p>
+<p style="word-spacing: 1.1px;">2) Засобами ОС Windows зробіть резервну копію папки, запропонованої вчителем, і збережіть її на диску D.</p>
+<p style="word-spacing: 1.1px;">3) Відновіть зі створеної резервної копії файл, запропонований учителем, збережіть його у папці Документи.</p>
+<p style="word-spacing: 1.1px;">4) Запишіть у документ назви логічних дисків, на які розділено&nbsp;жорсткий диск вашого комп&rsquo;ютера.</p>
+<p style="word-spacing: 1.1px;">5) Визначте, чи увімкнено захист системи для дисків. Зробіть скрін-шот екрана з інформацією про це, збережіть зображення в документі.</p>
+<p style="word-spacing: 1.1px;">6) Збережіть файл документа з іменем Вправа 26 у відповідній папці.&nbsp;Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 26 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">Практична робота 10</p>
+<p style="word-spacing: 1.1px;">Налаштовування параметрів безпеки в середовищі браузера</p>
+<p style="word-spacing: 1.1px;">Завдання: навчитися налаштовувати параметри браузера та поштової скриньки для безпечного листування.</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп&rsquo;ютер, під&rsquo;єднаний до мережі Інтернет, браузер Google Chrome.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтеся правил безпеки.</p>
+<p style="word-spacing: 1.1px;">1. Запустіть браузер Google Chrome.</p>
+<p style="word-spacing: 1.1px;">2. Налаштуйте конфіденційність користування браузером:</p>
+<p style="word-spacing: 1.1px;">1) клацніть на значку&nbsp;у верхньому правому кутку браузера;</p>
+<p style="word-spacing: 1.1px;">2) виберіть команду Налаштування;</p>
+<p style="word-spacing: 1.1px;">3) розгорніть унизу сторінки команду Розширені;</p>
+<p style="word-spacing: 1.1px;">4) зробіть у розділі Конфіденційність і безпека потрібні налаштування, наприклад, очистіть Паролі у вікні Очистити дані веб-перегляду.</p>
+<p style="word-spacing: 1.1px;">3. Перевірте налаштування заборони показу спливаючих вікон: Меню&nbsp;^ Налаштування ^ Розширені ^ Конфіденційність і безпека ^&nbsp;^ Налаштування вмісту ^ Спливаючі вікна (Заблоковано).</p>
+<p style="word-spacing: 1.1px;">4. Активуйте (якщо не активовано) захист від небезпечних сайтів (див. п. 2).</p>
+<p style="word-spacing: 1.1px;">5. Налаштуйте (якщо цього не зроблено) браузер на українську мову інтерфейсу (див. попередні алгоритми налаштувань).</p>
+<p style="word-spacing: 1.1px;">6. Самостійно дослідіть інші налаштування вмісту сторінки браузера.&nbsp;7. Зайдіть на свою поштову скриньку. Додайте нову папку Шкільне&nbsp;для зберігання листів шкільного призначення.</p>
+<p style="word-spacing: 1.1px;">8. Налаштуйте автоматичний підпис ваших листів, наприклад: З повагою, &lt;Прізвище Ім&rsquo;я&gt;.</p>
+<p style="word-spacing: 1.1px;">9. Позначте листи, отримані з невідомих джерел, як спам.</p>
+<p style="word-spacing: 1.1px;">10. З&rsquo;ясуйте, що таке файли cookies і навіщо їх видаляють. Створіть текстовий документ, уведіть відповідь і надішліть учителю. Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: які налаштування безпеки браузера Google Chrome установлені за замовчуванням, а які потрібно налаштовувати додатково.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="682-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="672-odnovimrniy-masiv-danih.html">Одновимірний масив даних</a></li><li><a href="664-zahist-danih-kompyuternih-sistem.html">Захист даних комп’ютерних систем</a></li><li><a href="658-personalne-navchalne-seredovische-ta-distancyna-robota-z-danimi.html">Персональне навчальне середовище та дистанційна робота з даними</a></li><li><a href="644-pdyednannya-ta-obmn-danimi-v-nternet.html">Під'єднання та обмін даними в Інтернеті</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

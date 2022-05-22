@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Створення й опрацювання моделей на прикладах задач із різних предметних галузей. Моделювання фізичних явищ &raquo; mozok.click</title>
+<meta name="description" content="Розглянемо процес побудови моделі та її використання для дослідження на прикладі моделювання руху тіла, кинутого під кутом до горизонту.Задача. На заданій відстані в від гармати (рис. 29.1)" />
+<meta name="keywords" content="гармати, Відомі, заввишки, розташована, нахилу, стіна, початкова, снаряд, стіну, потрапить, снаряда, швидкість, відстані, заданій, використання, дослідження, моделі, побудови, процес, прикладі" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='669-stvorennya-y-opracyuvannya-modeley-na-prikladah-zadach-z-rznih-predmetnih-galuzey-modelyuvannya-fzichnih-yavisch.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Створення й опрацювання моделей на прикладах задач із різних предметних галузей. Моделювання фізичних явищ</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb669").Button("#infc669"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb669" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc669" class="infcont">
+			<ul>
+				<li><i>Переглядів: 3784</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 06:24</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-669'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="669-stvorennya-y-opracyuvannya-modeley-na-prikladah-zadach-z-rznih-predmetnih-galuzey-modelyuvannya-fzichnih-yavisch.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '669'); return false;">1</a></li>
+		<li><a href="669-stvorennya-y-opracyuvannya-modeley-na-prikladah-zadach-z-rznih-predmetnih-galuzey-modelyuvannya-fzichnih-yavisch.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '669'); return false;">2</a></li>
+		<li><a href="669-stvorennya-y-opracyuvannya-modeley-na-prikladah-zadach-z-rznih-predmetnih-galuzey-modelyuvannya-fzichnih-yavisch.html#" title="Средне" class="r3-unit" onclick="doRate('3', '669'); return false;">3</a></li>
+		<li><a href="669-stvorennya-y-opracyuvannya-modeley-na-prikladah-zadach-z-rznih-predmetnih-galuzey-modelyuvannya-fzichnih-yavisch.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '669'); return false;">4</a></li>
+		<li><a href="669-stvorennya-y-opracyuvannya-modeley-na-prikladah-zadach-z-rznih-predmetnih-galuzey-modelyuvannya-fzichnih-yavisch.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '669'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 06:24</i></a></span>
+	<h3 class="btl"><span id="news-title">Створення й опрацювання моделей на прикладах задач із різних предметних галузей. Моделювання фізичних явищ</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-669" style="display:inline;"><p>Розглянемо процес побудови моделі та її використання для дослідження на прикладі моделювання руху тіла, кинутого під кутом до горизонту.</p>
+<p style="word-spacing: 1.1px;">Задача. На заданій відстані в від гармати (рис. 29.1) розташована стіна заввишки h. Відомі кут нахилу гармати а та початкова швидкість&nbsp;руху снаряда v<sub>0</sub>. Чи потрапить снаряд у стіну?</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-242.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Постановка задачі</p>
+<p style="word-spacing: 1.1px;">Знайти висоту снаряда на відстані в від гармати. Опором повітря знехтувати.</p>
+<p style="word-spacing: 1.1px;">Що моделюється? Процес руху об&rsquo;єкта &laquo;снаряд&raquo;.</p>
+<p style="word-spacing: 1.1px;">Якою є мета моделювання? Дослідити рух тіла, кинутого з початковою швидкістю V&nbsp;<sub>0</sub>&nbsp;під кутом а до горизонту, коли опором повітря можна знехтувати.</p>
+<p style="word-spacing: 1.1px;">Що дано? Початкова швидкість (V<sub>0</sub>), кут нахилу гармати (а), відстань до стіни (в).</p>
+<p style="word-spacing: 1.1px;">Що треба знайти? Висоту польоту тіла (ув задані моменти часу (^).</p>
+<p style="word-spacing: 1.1px;">Які є обмеження на дані?</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-243.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Судова інформаційної моделі</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-244.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Розробка методу й алгоритму реалізації комп'ютерної моделі</p>
+<p style="word-spacing: 1.1px;">На цьому етапі розробник може вибрати два варіанти: 1) побудова алгоритму розв&rsquo;язування задачі та його кодування однією з мов програмування;</p>
+<p style="word-spacing: 1.1px;">2) побудова комп&rsquo;ютерної моделі з використанням електронних таблиць або&nbsp;інших програмних засобів.</p>
+<p style="word-spacing: 1.1px;">Якщо розробник вибирає перший варіант (програмування), можна продовжити розробку математичної моделі, додавши до результатів розв&rsquo;язання задачі&nbsp;значення І &mdash; висоти снаряда на відстані&nbsp;в від гармати, яке обчислюють за формулою</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-245.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">з виведенням повідомлень &laquo;Недоліт&raquo;, &laquo;Переліт&raquo;, &laquo;Влучно&raquo; (рис. 29.2).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-246.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розробка методу й алгоритму реалізації комп&rsquo;ютерної моделі</p>
+<p style="word-spacing: 1.1px;">Наведемо приклад реалізації комп&rsquo;ютерної моделі в середовищі програмування Lazarus. Можливий інтерфейс програми наведено на рис. 29.3.</p>
+<p style="word-spacing: 1.1px;">Обчислення результатів реалізовано в процедурі обробки події &#111;nclick для кнопки Обчислити.</p>
+<p>var a: Real; // кут нахилу ствола</p>
+<p>v, s, h, l: Real;</p>
+<p>begin</p>
+<p>v := StrToFloat(Edit1.Text);</p>
+<p>a := StrToFloat(Edit2.Text);</p>
+<p>a := a*Pi/180; // переведення градусів у радіани</p>
+<p>s := StrToFloat(Edit3.Text);</p>
+<p>h := StrToFloat(Edit4.Text);</p>
+<p>l := s*Tan1(a)&ndash;9.8*s*s/(2*v*v*Sqr(Cos(a)));</p>
+<p>Edit5.Text := FormatFloat(Ꞌ0.##Ꞌ,L);</p>
+<p>If l&lt;0 Then Label6.Caption := ꞋНедолiтꞋ</p>
+<p>Else If l&gt;h Then Label6.Caption := ꞋПерелiтꞋ</p>
+<p>Else Label6.Caption := ꞋВлучноꞋ;</p>
+<p>end;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-247.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Проведення комп'ютерного експерименту</p>
+<p style="word-spacing: 1.1px;">Уводячи різні початкові значення, можна визначити діапазон кутів нахилу ствола, при&nbsp;яких снаряд, випущений з гармати, потрапить&nbsp;у стіну (рис. 29.4).</p>
+<p style="word-spacing: 1.1px;">Склавши програму для обчислення координат тіла (х, у) в момент часу t, можна проводити за допомогою комп&rsquo;ютера різні експерименти, наприклад:</p>
+<p style="word-spacing: 1.1px;">&bull; дібрати кут кидання, при якому тіло пролетить найбільшу відстань;</p>
+<p style="word-spacing: 1.1px;">&bull; для заданої швидкості руху дібрати кут,&nbsp;при якому тіло потрапить у задану точку;</p>
+<p style="word-spacing: 1.1px;">&bull; змінюючи значення прискорення руху, порівняти траєкторії польоту тіла на Землі,</p>
+<p style="word-spacing: 1.1px;">Місяці та Юпітері.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-248.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. В аеродинамічній трубі макет літака обдувають потоком повітря.&nbsp;Який процес моделюється? Якою є мета моделювання?</p>
+<p style="word-spacing: 1.1px;">2. Опишіть зміст кожного з етапів комп&rsquo;ютерного моделювання.</p>
+<p style="word-spacing: 1.1px;">3. Від чого залежить правильність результатів, отриманих під час&nbsp;дослідження моделі?</p>
+<p style="word-spacing: 1.1px;">4. Дайте означення математичної моделі розв&rsquo;язування задачі.</p>
+<p style="word-spacing: 1.1px;">5. Побудуйте математичні моделі для розв&rsquo;язування таких задач.</p>
+<p style="word-spacing: 1.1px;">а) На аркуші паперу накреслені окремо квадрат і коло. Сторона&nbsp;квадрата а см, радіус кола &mdash; Ь см. Знайти загальну площу&nbsp;фігур.</p>
+<p style="word-spacing: 1.1px;">б) Прямокутник, довжини сторін а і Ь якого задовольняють умоназивають золотим. Визначити, чи є даний прямокутник золотим.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-249.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><span style="word-spacing: 1.1px; letter-spacing: 0px;">Вправа 29</span></p>
+<p style="word-spacing: 1.1px;">На основі етапів І&mdash;ІІІ комп&rsquo;ютерного моделювання побудувати і дослідити в табличному процесорі Excel комп&rsquo;ютерну модель&nbsp;руху снаряда, випущеного з гармати.</p>
+<p style="word-spacing: 1.1px;">1) Запустіть програму Excel. Побудуйте в Excel комп&rsquo;ютерну модель&nbsp;руху тіла.</p>
+<p style="word-spacing: 1.1px;">Для введення значення початкової швидкості використайте клітинку B1, для введення значення кута &mdash; клітинку B2.</p>
+<p style="word-spacing: 1.1px;">Уведіть у клітинки B5 і C5 формули для обчислення значень х і у: = $B$1*COS($B$2)*A5&nbsp;= $B$1*SIN($B$2)*A5-4,9*A5*A5&nbsp;Уведіть у клітинки A5:A18 значення часу з інтервалом в 1 с.</p>
+<p style="word-spacing: 1.1px;">Скопіюйте формули в діапазони В6:В18 і С6:С18 відповідно.</p>
+<p style="word-spacing: 1.1px;">2) Побудуйте діаграму типу Графік, в якій як&nbsp;категорії використовуються дані з діапазону&nbsp;клітинок B5:B18, а як значення &mdash; дані з діапазону клітинок С5:С18.</p>
+<p style="word-spacing: 1.1px;">3) Випробуйте модель: порівняйте отримані значення координат тіла зі значеннями на рисунку. Чи потрапив снаряд у стіну?</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-250.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4) Зменшуючи інтервал часу, визначте, на якій відстані від гармати&nbsp;снаряд потрапить у землю (у = 0).</p>
+<p style="word-spacing: 1.1px;">5) Зробіть &laquo;пристрілювання&raquo; гармати в ціль, змінюючи кут нахилу&nbsp;ствола (при х = 1000; 0 &lt; у &lt; 6).</p>
+<p style="word-spacing: 1.1px;">6) Визначте діапазон значень кута нахилу ствола, при яких снаряд&nbsp;потрапить у стіну. Збережіть файл з іменем Вправа 29 у відповідній папці. Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 29 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="668-etapi-kompyuternogo-modelyuvannya.html">Етапи комп’ютерного моделювання</a></li><li><a href="636-pdsumki-rozdlu-5-ruh-vzayemodya-zakoni-zberezhennya.html">Підсумки розділу 5 «Рух і взаємодія. Закони збереження»</a></li><li><a href="630-vzayemodya-tl-mpuls-zakon-zberezhennya-mpulsu-storya-ponyattya-mpulsu.html">Взаємодія тіл. Імпульс. Закон збереження імпульсу. Історія поняття імпульсу</a></li><li><a href="628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html">Рух тіла під дією сили тяжіння</a></li><li><a href="622-rvnopriskoreniy-pryamolnyniy-ruh-priskorennya-shvidkst-rvnopriskorenogo-pryamolnynogo-ruhu.html">Рівноприскорений прямолінійний рух. Прискорення. Швидкість рівноприскореног ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

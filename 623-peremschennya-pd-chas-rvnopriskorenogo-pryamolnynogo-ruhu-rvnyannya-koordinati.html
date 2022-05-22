@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Переміщення під час рівноприскореного прямолінійного руху. Рівняння координати &raquo; mozok.click</title>
+<meta name="description" content="Ви, мабуть, бачили по телевізору: на дорозі сталася аварія, і фахівці вимірюють гальмівний шлях. Навіщо? Щоб визначити швидкість руху автомобіля на початку гальмування, а також прискорення в" />
+<meta name="keywords" content="швидкість, гальмування, причини, несправними, дозволену, перевищив, водій, гальма, аварії, автомобілем, порушив, правила, дорожнього, пішохід, наприклад, гаразд, винен, 'ясування, потім, аварія" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='623-peremschennya-pd-chas-rvnopriskorenogo-pryamolnynogo-ruhu-rvnyannya-koordinati.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Переміщення під час рівноприскореного прямолінійного руху. Рівняння координати</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb623").Button("#infc623"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb623" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc623" class="infcont">
+			<ul>
+				<li><i>Переглядів: 28288</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 13-09-2017, 05:13</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-623'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="623-peremschennya-pd-chas-rvnopriskorenogo-pryamolnynogo-ruhu-rvnyannya-koordinati.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '623'); return false;">1</a></li>
+		<li><a href="623-peremschennya-pd-chas-rvnopriskorenogo-pryamolnynogo-ruhu-rvnyannya-koordinati.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '623'); return false;">2</a></li>
+		<li><a href="623-peremschennya-pd-chas-rvnopriskorenogo-pryamolnynogo-ruhu-rvnyannya-koordinati.html#" title="Средне" class="r3-unit" onclick="doRate('3', '623'); return false;">3</a></li>
+		<li><a href="623-peremschennya-pd-chas-rvnopriskorenogo-pryamolnynogo-ruhu-rvnyannya-koordinati.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '623'); return false;">4</a></li>
+		<li><a href="623-peremschennya-pd-chas-rvnopriskorenogo-pryamolnynogo-ruhu-rvnyannya-koordinati.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '623'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/13/index.html" ><i>13-09-2017, 05:13</i></a></span>
+	<h3 class="btl"><span id="news-title">Переміщення під час рівноприскореного прямолінійного руху. Рівняння координати</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-623" style="display:inline;"><p style="word-spacing: 1.1px;">Ви, мабуть, бачили по телевізору: на дорозі сталася аварія, і фахівці вимірюють гальмівний шлях. Навіщо? Щоб визначити швидкість руху автомобіля на початку гальмування, а також прискорення в ході гальмування. Ці дані потім використовують для з'ясування причини аварії: чи то водій перевищив дозволену швидкість, чи то несправними були гальма, чи, може, з автомобілем усе гаразд і винен, наприклад, пішохід,&nbsp;який порушив правила дорожнього руху. Як, знаючи час гальмування й гальмівний&nbsp;шлях, визначити швидкість і прискорення руху тіла, ви довідаєтесь із цього параграфа.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-344.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Дізнаємося про геометричний зміст проекції переміщення</p>
+<p style="word-spacing: 1.1px;">У 7 класі ви дізналися, що для будь-якого руху шлях чисельно дорівнює площі фігури під графіком залежності модуля швидкості руху від&nbsp;часу спостереження. Аналогічна ситуація і з визначенням проекції переміщення (рис. 29.1).</p>
+<p style="word-spacing: 1.1px;">Отримаємо формулу для обчислення проекції переміщення тіла за інтервал часу від t<sub>1</sub>&nbsp;= 0 до t<sub>2</sub>&nbsp;= t. Розглянемо рівноприскорений&nbsp;рух, за якого початкова швидкість і прискорення мають однаковий напрямок із віссю OX.&nbsp;У цьому випадку графік проекції швидкості має&nbsp;вигляд, поданий на рис. 29.2, а проекція переміщення чисельно дорівнює площі трапеції OABC:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-345.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На графіку відрізок OA відповідає проекції початкової швидкості v<sub>0 х</sub>, відрізок BC &mdash; проекції кінцевої швидкості v<sub>x</sub>, а відрізок OC &mdash;&nbsp;інтервалу часу ї. Замінивши зазначені відрізки&nbsp;відповідними фізичними величинами та взявши&nbsp;до уваги, що s<sub>x</sub>&nbsp;= S<sub>OABC</sub>, отримаємо формулу для&nbsp;визначення проекції переміщення:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-346.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Зазначимо, що формула (1) буде справджуватися для будь-якого рівноприскореного прямолінійного руху.</p>
+<p style="word-spacing: 1.1px;">Скориставшись формулою (1), визначте переміщення тіла, графік руху якого подано на рис. 29.1, б, за 2 с і за 4 с після&nbsp;початку відліку часу. Поясніть відповідь.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Записуємо рівняння проекції переміщення</p>
+<p style="word-spacing: 1.1px;">Виключимо змінну и<sub>х</sub>&nbsp;із формули (1). Для цього згадаємо, що за рівноприскореного прямолінійного руху v<sub>x</sub>&nbsp;= v<sub>0</sub>&nbsp;у. + a<sub>x</sub>t. Підставивши&nbsp;вираз для V<sub>х</sub>&nbsp;у формулу (1), отримаємо:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-347.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-348.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Отже, для рівноприскореного прямолінійного руху одержано рівняння проекції переміщення:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-349.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки величини v<sub>0 х</sub>&nbsp;і a<sub>x</sub>&nbsp;не залежать від часу спостереження, залежність s<sub>x</sub>&nbsp;(і) є квадратичною. Наприклад, якщо&nbsp;v<sub>0 х</sub>&nbsp;= 2 м/с, а а<sub>х</sub>&nbsp;= -1 м/с<sup>2</sup>, то рівняння s<sub>x</sub>&nbsp;(і)&nbsp;матиме вигляд: s<sub>x</sub>&nbsp;= 2і - 0,5 і .</p>
+<p style="word-spacing: 1.1px;">Отже, графік проекції переміщення в разі рівноприскореного прямолінійного&nbsp;руху &mdash; парабола (рис. 29.3), вершина якої&nbsp;відповідає точці розвороту:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-350.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">можна одержати ще одну формулу для обчислення проекції переміщення в разі&nbsp;рівноприскореного прямолінійного руху:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-351.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Формулою (3) зручно користуватися, якщо в умові задачі не йдеться про час руху&nbsp;тіла та не потрібно його визначати.</p>
+<p style="word-spacing: 1.1px;">Сподіваємося, що вам нескладно буде вивести формулу (3) самостійно.</p>
+<p style="word-spacing: 1.1px;">Зверніть увагу: в кожній з отриманих формул (1-3) проекції v<sub>x</sub>, v<sub>0 х</sub>&nbsp;і а<sub>х</sub>&nbsp;можуть&nbsp;бути як додатними, так і від&rsquo;ємними &mdash; залежно від того, як напрямлені вектори V, и<sub>0&nbsp;</sub>і а відносно осі ОХ.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Записуємо рівняння координати</p>
+<p style="word-spacing: 1.1px;">Одне з основних завдань механіки полягає у визначенні положення тіла&nbsp;(координат тіла) в будь-який момент часу.&nbsp;Ми розглядаємо прямолінійний рух, тому</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-352.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">досить обрати лише одну вісь координат (наприклад, вісь ОХ), яку слід спрямувати&nbsp;вздовж руху тіла (рис. 29.4). Із рис. 29.4 бачимо, що незалежно від напрямку руху координату х тіла можна визначити за формулою:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-353.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де х<sub>0</sub>&nbsp;&mdash; початкова координата (координата тіла в момент початку спостереження); з<sub>х</sub>&nbsp;&mdash;&nbsp;проекція переміщення.</p>
+<p style="word-spacing: 1.1px;">Для рівноприскореного прямолінійного</p>
+<p style="word-spacing: 1.1px;">руху</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-354.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">тому для такого руху рівняння координати має вигляд:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-355.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Проаналізувавши останнє рівняння, доходимо висновку, що залежність х () є квадратичною, тому графік координати &mdash; парабола (рис. 29.5).</p>
+<p style="word-spacing: 1.1px;">Учимося розв'язувати задачі</p>
+<p style="word-spacing: 1.1px;">Основні етапи розв&rsquo;язування задач на рівноприскорений прямолінійний рух розглянемо на прикладах.</p>
+<p style="word-spacing: 1.1px;">Послідовність дій</p>
+<p style="word-spacing: 1.1px;">1. Уважно прочитайте умову задачі. З'ясуйте, які тіла беруть участь у русі, яким є характер руху тіл, які параметри&nbsp;руху відомі.</p>
+<p style="word-spacing: 1.1px;">2. Запишіть коротку умову&nbsp;задачі. У разі необхідності переведіть значення фізичних&nbsp;величин в одиниці СІ.</p>
+<p style="word-spacing: 1.1px;">3. Виконайте пояснювальний&nbsp;рисунок, на якому позначте&nbsp;вісь координат, напрямки&nbsp;швидкості руху, переміщення, початкової швидкості&nbsp;руху, прискорення.</p>
+<p style="word-spacing: 1.1px;">Приклад розв&rsquo;язування задачі</p>
+<p style="word-spacing: 1.1px;">Задача 1. Після початку гальмування потяг пройшов до зупинки 225 м. Якою&nbsp;була швидкість руху потяга перед початком&nbsp;гальмування? Вважайте, що прискорення&nbsp;потяга є незмінним і дорівнює 0,5 м/с<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-356.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-357.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Задача 2.</p>
+<p style="word-spacing: 1.1px;">1. Уважно прочитайте умову задачі. З'ясуйте, яким є характер руху тіл, які параметри&nbsp;руху відомі.</p>
+<p style="word-spacing: 1.1px;">Прямолінійною ділянкою дороги йде пішохід із незмінною швидкістю 2 м/с.&nbsp;Його наздоганяє мотоцикл, який збільшує&nbsp;швидкість, рухаючись із прискоренням&nbsp;2 м/с<sup>2</sup>. Через який час мотоцикл обжене&nbsp;пішохода, якщо на момент початку відліку&nbsp;часу відстань між ними становила 300 м,&nbsp;а мотоцикл рухався зі швидкістю 22 м/с?&nbsp;Яку відстань подолає мотоцикл за цей час?</p>
+<p style="word-spacing: 1.1px;">2. Запишіть коротку умову&nbsp;задачі. У разі необхідності&nbsp;переведіть значення фізичних&nbsp;величин в одиниці СІ.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-358.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Виконайте рисунок, на&nbsp;якому зазначте вісь координат, положення тіл, напрямки&nbsp;прискорень і швидкостей.</p>
+<p style="word-spacing: 1.1px;">4. Запишіть рівняння координати в загальному вигляді;&nbsp;скориставшись рисунком,&nbsp;конкретизуйте це рівняння&nbsp;для кожного тіла.</p>
+<p style="word-spacing: 1.1px;">5. Урахувавши, що в момент&nbsp;зустрічі (обгону) координати&nbsp;тіл однакові, отримайте квадратне рівняння.</p>
+<p style="word-spacing: 1.1px;">6. Розв'яжіть отримане рівняння та знайдіть час зустрічі&nbsp;тіл.</p>
+<p style="word-spacing: 1.1px;">7. Обчисліть координату тіл&nbsp;у момент зустрічі.</p>
+<p style="word-spacing: 1.1px;">8. Знайдіть шукану величину&nbsp;та проаналізуйте результат.</p>
+<p style="word-spacing: 1.1px;">9. Запишіть відповідь.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-359.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мотоцикл був у точці з координатою х<sub>0 м</sub>&nbsp;= 0, а обігнав пішохода в точці з координатою&nbsp;х<sub>м</sub>&nbsp;= 320 м, отже, мотоцикл подолав відстань 320 м. Пішохід за цей час подолав&nbsp;лише 20 м. Це реальний результат.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-360.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Підбиваємо підсумки</p>
+<p style="word-spacing: 1.1px;">Для рівноприскореного прямолінійного руху тіла:</p>
+<p style="word-spacing: 1.1px;">&bull; проекція переміщення чисельно дорівнює площі фігури під графіком проекції швидкості руху, &mdash; графіком залежності</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-361.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">у цьому полягає геометричний зміст переміщення; &bull; рівняння проекції переміщення має вигляд:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-362.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">це квадратична функція, тому графік залежності в<sub>х</sub>&nbsp;( &mdash; парабола, вершина якої відповідає точці розвороту;</p>
+<p style="word-spacing: 1.1px;">&bull; координату тіла визначають із рівняння</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-363.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">графік коор</p>
+<p style="word-spacing: 1.1px;">динати &mdash; парабола.</p>
+<p style="word-spacing: 1.1px;">Контрольні запитання</p>
+<p style="word-spacing: 1.1px;">1. За допомогою яких формул можна обчислити проекцію переміщення в<sub>х</sub>&nbsp;для&nbsp;рівноприскореного прямолінійного руху? Виведіть ці формули. 2. Доведіть, що&nbsp;графіком залежності переміщення тіла від часу спостереження є парабола.&nbsp;Як напрямлені вітки цієї параболи? Якому моменту руху відповідає вершина&nbsp;параболи? 3. Запишіть рівняння координати для рівноприскореного прямолінійного руху. Назвіть фізичні величини, які пов&rsquo;язує це рівняння.</p>
+<p style="word-spacing: 1.1px;">Вправа № 29</p>
+<p style="word-spacing: 1.1px;">1. Лижник, що рухається зі швидкістю 1 м/с, починає спускатися з гори.&nbsp;Визначте довжину спуску, якщо лижник проїхав його за 10 с. Вважайте,&nbsp;що прискорення лижника було незмінним і дорівнювало 0,5 м/с<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;">2. Пасажирський потяг загальмував, змінивши свою швидкість від 54 км/год&nbsp;до 5 м/с. Визначте відстань, яку пройшов потяг під час гальмування, якщо&nbsp;прискорення потяга було незмінним і дорівнювало 1 м/с<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;">3. Гальмо легкового автомобіля є справним, якщо за швидкості 8 м/с гальмівний шлях автомобіля дорівнює 7,2 м. Визначте час гальмування та прискорення руху автомобіля.</p>
+<p style="word-spacing: 1.1px;">4. Рівняння координат двох тіл, які рухаються вздовж осі ОХ, мають вигляд:&nbsp;х<sub>1</sub>&nbsp;= 8-2і + і<sup>2</sup>; х<sub>2</sub>&nbsp;= -2-5і + 2і<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;">1) Для кожного тіла визначте: а) яким є його рух; б) початкову координату; в) модуль і напрямок початкової швидкості; г) прискорення руху.</p>
+<p style="word-spacing: 1.1px;">2) Знайдіть час і координату зустрічі тіл.</p>
+<p style="word-spacing: 1.1px;">3) Для кожного тіла запишіть рівняння v<sub>x</sub>(t) і s<sub>x</sub>(t), побудуйте графіки проекцій швидкості та переміщення.</p>
+<p style="word-spacing: 1.1px;">5. На рисунку подано графік проекції&nbsp;швидкості руху для деякого тіла. Визначте шлях і переміщення тіла протягом 4 с від початку відліку часу.</p>
+<p style="word-spacing: 1.1px;">Запишіть рівняння координати, якщо в момент часу і = 0 тіло було в точці&nbsp;з координатою -20 м.</p>
+<p style="word-spacing: 1.1px;">6. Два автомобілі почали рух з одного&nbsp;пункту в одному напрямку, причому&nbsp;другий автомобіль виїхав на 20 с пізніше. Обидва автомобілі рухаються рів-ноприскорено з прискоренням 0,4 м/с<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;">Через який інтервал часу після початку руху першого автомобіля відстань між&nbsp;ними буде 240 м?</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-364.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">7. Ескалатор у метро піднімається зі швидкістю 2,5 м/с. Чи може людина&nbsp;на ескалаторі перебувати в стані спокою в системі відліку, пов&rsquo;язаній із&nbsp;Землею? Якщо може, то за яких умов? Чи можна за цих умов рух людини&nbsp;вважати рухом за інерцією? Обґрунтуйте свою відповідь.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="639-pdruchnik-fzika-9-klas-baryahtar-dovgiy-chitati-onlayn-nova-programa-2017.html">Фізика 9 клас Бар'яхтар, Довгий</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="636-pdsumki-rozdlu-5-ruh-vzayemodya-zakoni-zberezhennya.html">Підсумки розділу 5 «Рух і взаємодія. Закони збереження»</a></li><li><a href="629-ruh-tla-pd-dyeyu-klkoh-sil.html">Рух тіла під дією кількох сил</a></li><li><a href="628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html">Рух тіла під дією сили тяжіння</a></li><li><a href="625-drugiy-zakon-nyutona.html">Другий закон Ньютона</a></li><li><a href="622-rvnopriskoreniy-pryamolnyniy-ruh-priskorennya-shvidkst-rvnopriskorenogo-pryamolnynogo-ruhu.html">Рівноприскорений прямолінійний рух. Прискорення. Швидкість рівноприскореног ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

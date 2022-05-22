@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Застосування законів збереження енергії та імпульсу в механічних явищах &raquo; mozok.click</title>
+<meta name="description" content="Розв'язання багатьох практичних задач значно простішає, якщо скористатися законами збереження  законом збереження імпульсу та законом збереження і перетворення енергії, адже ці закони можна" />
+<meta name="keywords" content="збереження, законом, задач, енергії, згадаємо, невідомими, системі, діють, існують, механічної, законів, застосування, декілька, 'яжемо, використовувати, можна, практичних, законами, скористатися, простішає" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='632-zastosuvannya-zakonv-zberezhennya-energyi-ta-mpulsu-v-mehanchnih-yavischah.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Застосування законів збереження енергії та імпульсу в механічних явищах</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb632").Button("#infc632"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb632" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc632" class="infcont">
+			<ul>
+				<li><i>Переглядів: 25916</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 13-09-2017, 05:26</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-632'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="632-zastosuvannya-zakonv-zberezhennya-energyi-ta-mpulsu-v-mehanchnih-yavischah.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '632'); return false;">1</a></li>
+		<li><a href="632-zastosuvannya-zakonv-zberezhennya-energyi-ta-mpulsu-v-mehanchnih-yavischah.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '632'); return false;">2</a></li>
+		<li><a href="632-zastosuvannya-zakonv-zberezhennya-energyi-ta-mpulsu-v-mehanchnih-yavischah.html#" title="Средне" class="r3-unit" onclick="doRate('3', '632'); return false;">3</a></li>
+		<li><a href="632-zastosuvannya-zakonv-zberezhennya-energyi-ta-mpulsu-v-mehanchnih-yavischah.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '632'); return false;">4</a></li>
+		<li><a href="632-zastosuvannya-zakonv-zberezhennya-energyi-ta-mpulsu-v-mehanchnih-yavischah.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '632'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/13/index.html" ><i>13-09-2017, 05:26</i></a></span>
+	<h3 class="btl"><span id="news-title">Застосування законів збереження енергії та імпульсу в механічних явищах</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-632" style="display:inline;"><p><span style="word-spacing: 1.1px; letter-spacing: 0px;">Розв'язання багатьох практичних задач значно простішає, якщо скористатися законами збереження &mdash; законом збереження імпульсу та законом збереження&nbsp;і перетворення енергії, адже ці закони можна використовувати й тоді, коли сили,&nbsp;які діють у системі, є невідомими. Отже, згадаємо, які існують види механічної енергії,&nbsp;та розв'яжемо декілька задач на застосування законів збереження.</span></p>
+<p style="word-spacing: 1.1px;">Згадуємо про механічну енергію</p>
+<p style="word-spacing: 1.1px;">Енергія (від. грецьк. &laquo;діяльність&raquo;) &mdash; це фізична величина, яка є загальною мірою руху та взаємодії всіх видів матерії.</p>
+<p style="word-spacing: 1.1px;">Енергію позначають символом E (або W). Одиниця енергії в СІ &mdash; джоуль:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-478.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У механіці ми маємо справу з механічною енергією.</p>
+<p style="word-spacing: 1.1px;">Механічна енергія &mdash; це фізична величина, яка є мірою руху та взаємодії тіл і характеризує здатність тіл виконувати механічну роботу.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1">
+<tbody>
+<tr>
+<td colspan="3">
+<p>Види механічної енергії</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Кінетична енергія E<sub>h</sub>&nbsp;&mdash;</p>
+<p>енергія, зумовлена рухом тіла</p>
+</td>
+<td colspan="2">
+<p>Потенціальна енергія E<sub>p</sub>&nbsp;&mdash;</p>
+<p>енергія, зумовлена взаємодією тіл або частин тіла</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-479.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-480.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-481.jpg" alt="" /></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Сума кінетичної і потенціальної енергій тіла (системи тіл) &mdash; це повна механічна енергія тіла (системи тіл): E = E<sub>h</sub>&nbsp;+ E<sub>p</sub></p>
+</td>
+</tr>
+</tbody>
+</table></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Вивчаючи механічну енергію в курсі фізики 7 класу, ви дізналися про те, що у випадку, коли система тіл є замкненою, а тіла системи взаємодіють одне з одним тільки силами пружності та силами тяжіння, повна&nbsp;механічна енергія системи не змінюється.</p>
+<p style="word-spacing: 1.1px;">У цьому полягає закон збереження і перетворення механічної енергії, який математично можна записати так:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-482.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де E<sub>k0</sub>&nbsp;+ E<sub>p0</sub>&nbsp;&mdash; повна механічна енергія системи тіл на початку спостереження; E<sub>k</sub>&nbsp;+ E<sub>p</sub>&nbsp;&mdash; повна механічна енергія системи тіл наприкінці спостереження.</p>
+<p style="word-spacing: 1.1px;">Згадуємо алгоритм розв'язування задач на закон збереження механічної енергії</p>
+<p style="word-spacing: 1.1px;">Алгоритм розв&rsquo;язування задач із застосуванням закону збереження механічної енергії</p>
+<p style="word-spacing: 1.1px;">1. Уважно прочитайте умову задачі. З&rsquo;ясуйте, чи є система замкненою,&nbsp;чи можна знехтувати дією сил опору. Запишіть коротку умову задачі.</p>
+<p style="word-spacing: 1.1px;">2. Виконайте пояснювальний рисунок, на якому зазначте нульовий&nbsp;рівень, початковий та кінцевий стан тіла (системи тіл).</p>
+<p style="word-spacing: 1.1px;">3. Запишіть закон збереження і перетворення механічної енергії. Конкретизуйте цей запис, скориставшись даними, наведеними в умові задачі,&nbsp;та відповідними формулами для визначення енергії.</p>
+<p style="word-spacing: 1.1px;">4. Розв&rsquo;яжіть отримане рівняння відносно невідомої величини. Перевірте&nbsp;її одиницю та визначте числове значення.</p>
+<p style="word-spacing: 1.1px;">5. Проаналізуйте результат, запишіть відповідь.</p>
+<p style="word-spacing: 1.1px;">Оскільки закон збереження механічної енергії значно спрощує розв&rsquo;язання багатьох практичних задач, розглянемо алгоритм розв&rsquo;язування подібних задач на конкретному прикладі.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Задача 1. Учасник атракціону з банджі-джампінгу здійснює стрибок з моста (див. рисунок). Якою є жорсткість гумового канату, до якого прив&rsquo;язаний спортсмен, якщо під час падіння шнур розтягнувся від 40 до 100 м? Маса&nbsp;спортсмена 72 кг, початкова швидкість його&nbsp;руху дорівнює нулю. Опором повітря знехтуйте.</p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми. Опором повітря нехтуємо, тому можна вважати систему тіл&nbsp;&laquo;Земля &mdash; людина &mdash; шнур&raquo; замкненою і для&nbsp;розв&rsquo;язання задачі скористатися законом збереження механічної енергії: на початку стрибка&nbsp;спортсмен має потенціальну енергію піднятого&nbsp;тіла, в найнижчій точці ця енергія перетворюється на потенціальну енергію деформованого&nbsp;шнура.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-483.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-484.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Пошук математичної моделі, розв&rsquo;язання Виконаємо рисунок, на якому зазначимо початкове та кінцеве положення спортсмена. За нульовий рівень оберемо&nbsp;найнижче положення спортсмена (шнур розтягнений максимально, швидкість руху спортсмена дорівнює 0). Запишемо&nbsp;закон збереження механічної енергії.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-485.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">розв'язуємо задачу, одночасно застосовуючи закон збереження механічної енергії та закон збереження імпульсу</p>
+<p style="word-spacing: 1.1px;">Чи грали ви в більярд? Спробуємо описати один із випадків зіткнення більярдних куль, а саме пружний центральний удар &mdash; зіткнення, під час якого втрати механічної енергії відсутні, а швидкості руху куль до&nbsp;і після удару напрямлені вздовж прямої, що проходить через центри куль.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Задача 2. Куля, яка рухалася більярдним столом зі швидкістю 5 м/с, зіштовхується з нерухомою кулею такої самої маси (див. рисунок). Визначте&nbsp;швидкості руху куль після зіткнення. Удар вважайте пружним центральним.</p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми. Систему двох куль можна вважати замкненою, удар є пружним,&nbsp;тому втрати механічної енергії відсутні. Отже, для&nbsp;розв&rsquo;язання задачі можна використати і закон збереження механічної енергії, і закон збереження&nbsp;імпульсу. Оберемо за нульовий рівень поверхню&nbsp;столу. У даному випадку потенціальні енергії куль&nbsp;до і після удару дорівнюють нулю, тому повна механічна енергія системи і до, і після удару складається тільки з кінетичних енергій куль.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-486.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-487.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Пошук математичної моделі, розв&rsquo;язання. Виконаємо рисунок, на якому зазначимо положення куль до і після удару.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-488.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запишемо для системи двох куль закон збереження імпульсу і закон збереження механічної енергії, врахувавши, що v<sub>02</sub>&nbsp;= 0 :</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-489.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язавши останню систему, отримаємо: v<sub>1</sub>&nbsp;= 0; v<sub>2</sub>&nbsp;= 5 м/с.</p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;яжіть останню систему рівнянь самостійно.</p>
+<p style="word-spacing: 1.1px;">Аналіз результатів. Бачимо, що кулі &laquo;обмінялися&raquo; швидкостями: куля 1 зупинилась, а куля 2 набула швидкості кулі 1 до зіткнення.</p>
+<p style="word-spacing: 1.1px;">Зазначимо: в разі пружного центрального удару двох тіл однакової маси ці тіла &laquo;обмінюються&raquo; швидкостями незалежно від того, якими були початкові швидкості руху тіл.</p>
+<p style="word-spacing: 1.1px;">Відповідь: v<sub>1</sub>&nbsp;= 0; v<sub>2</sub>&nbsp;= 5 м/с.</p>
+<p style="word-spacing: 1.1px;">розв'язуємо задачу, в якій закон збереження механічної енергії і закон збереження імпульсу слід застосувати по черзі</p>
+<p style="word-spacing: 1.1px;">Якщо вам цікаво, з якою швидкістю вилітає стріла з вашого лука або якою є швидкість руху кулі пневматичної гвинтівки, допоможе простий пристрій &mdash; балістичній маятник &mdash; підвішене на металевих стрижнях важке&nbsp;тіло. З&rsquo;ясуємо, як визначити швидкість руху кулі за допомогою цього пристрою.</p>
+<p style="word-spacing: 1.1px;">Задача 3. Куля масою 0,5 г влучає в підвішений на стрижнях дерев&rsquo;яний брусок масою 300 г і застрягає в ньому. Визначте, з якою швидкістю рухалася куля, якщо після влучення кулі брусок піднявся на висоту&nbsp;1,25 см (див. рисунок).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-490.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми. Під час влучення кулі в брусок останній набуває швидкості. Час взаємодії дуже короткий, тому протягом цього часу&nbsp;можна вважати систему &laquo;куля &mdash; брусок&raquo; замкненою та скористатися законом збереження імпульсу. А от законом збереження механічної енергії&nbsp;скористатися не можна, оскільки присутня сила тертя.</p>
+<p style="word-spacing: 1.1px;">Коли куля вже зупинила рух усередині бруска і він почав відхилятися, то можна знехтувати дією сили опору повітря та скористатися законом збереження механічної енергії для системи &laquo;Земля &mdash; брусок&raquo;. А от імпульс бруска&nbsp;буде зменшуватись, оскільки дія стрижнів уже не компенсує дію Землі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-491.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Пошук математичної моделі, розв&rsquo;язання Запишемо закон збереження імпульсу для положень 1 і 2 (див. рисунок), взявши до уваги,&nbsp;що в положенні 1 брусок перебуває в спокої,&nbsp;а в положенні 2 брусок і куля рухаються разом:&nbsp;mv<sub>0</sub>&nbsp;+ M■ 0 = {пі + M) и .</p>
+<p style="word-spacing: 1.1px;">Спроектуємо одержане рівняння на вісь OX:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-492.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запишемо закон збереження механічної енергії для положень 2 і 3 та конкретизуємо його:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-493.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Підставивши вираз для швидкості (2) у формулу (1), отримаємо формулу для визначення швидкості руху тіла за допомогою балістичного маятника:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-494.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Перевіримо одиницю, знайдемо значення шуканої величини:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-495.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Замість підсумків</p>
+<p style="word-spacing: 1.1px;">Ми розглянули лише декілька прикладів розв&rsquo;язання задач. На перший погляд здається, що й імпульс, і механічна енергія зберігаються не завжди. Що стосується імпульсу &mdash; це не так. Закон збереження імпульсу &mdash; це&nbsp;загальний закон Всесвіту. А ніби &laquo;поява&raquo; імпульсу (див. задачу 1 у &sect; 38) чи&nbsp;його &laquo;зникнення&raquo; (див. задачу 3 у &sect; 38, положення тіл 2 і 3) пояснюються</p>
+<p style="word-spacing: 1.1px;">тим, що Земля теж отримує імпульс. Саме тому, розв&rsquo;язуючи задачі, ми &laquo;шукаємо&raquo; замкнену систему.</p>
+<p style="word-spacing: 1.1px;">А от механічна енергія дійсно зберігається не завжди. Система може отримати додаткову механічну енергію, якщо зовнішні сили виконають додатну роботу (наприклад, ви кинули м&rsquo;яч). Система може втратити частину&nbsp;механічної енергії, якщо зовнішні сили виконають від&rsquo;ємну роботу (наприклад, велосипед зупинився через дію сили тертя). А от повна енергія (сума&nbsp;енергій, яку мають тіла системи та частинки, з яких ці тіла складаються)&nbsp;завжди залишається незмінною. Закон збереження енергії &mdash; це загальний&nbsp;закон Всесвіту.</p>
+<p style="word-spacing: 1.1px;">Вправа № 38</p>
+<p style="word-spacing: 1.1px;">Виконуючи завдання 2-4, опором повітря знехтуйте.</p>
+<p style="word-spacing: 1.1px;">1. Вантаж масою 40 кг скинули з літака. Після того як на висоті 400 м швидкість руху вантажу досягла 20 м/с, він почав рухатися рівномірно. Визначте:&nbsp;1) повну механічну енергію вантажу на висоті 400 м; 2) повну механічну&nbsp;енергію вантажу в момент приземлення; 3) енергію, на яку перетворилася&nbsp;частина механічної енергії вантажу.</p>
+<p style="word-spacing: 1.1px;">2. Кульку кинули горизонтально з висоти 4 м зі швидкістю 8 м/с. Визначте&nbsp;швидкість руху кульки в момент падіння.</p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;яжіть задачу двома способами: 1) розглянувши рух кульки як рух тіла, кинутого горизонтально; 2) скориставшись законом збереження механічної енергії. Який спосіб у даному випадку зручніший?</p>
+<p style="word-spacing: 1.1px;">3. Пластилінова кулька 1 масою 20 г і втричі&nbsp;більша за масою кулька 2 підвішені на нитках. Кульку 1 відхилили від положення&nbsp;рівноваги на висоту 20 см і відпустили.</p>
+<p style="word-spacing: 1.1px;">Кулька 1 зіштовхнулася з кулькою 2 і прилипла до неї (рис. 1). Визначте:</p>
+<p style="word-spacing: 1.1px;">1) швидкість руху кульки 1 до зіткнення;</p>
+<p style="word-spacing: 1.1px;">2) швидкість руху кульок після зіткнення;</p>
+<p style="word-spacing: 1.1px;">3) максимальну висоту, на яку піднімуться&nbsp;кульки після зіткнення.</p>
+<p style="word-spacing: 1.1px;">4. Кулька масою 10 г вилітає з пружинного пістолета, влучає в центр&nbsp;підвішеного на нитках пластилінового бруска масою 30 г і прилипає до нього. На яку висоту підніметься брусок, якщо перед пострілом&nbsp;пружина була стиснута на 4 см, а жорсткість пружини &mdash; 256 Н/м?</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-496.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Експериментальне завдання</p>
+<p style="word-spacing: 1.1px;">&laquo;Балістичний маятник&raquo;. Виготовте балістичний маятник (рис. 2). Для цього виріжте з паперової коробки передню стінку, виліпіть із пластиліну ще одну коробку, яка трохи менша за розміром від паперової,&nbsp;вставте пластилінову коробку в паперову та підвісьте&nbsp;пристрій на нитках так, як показано на рис. 2.&nbsp;Випробуйте пристрій, вимірявши, наприклад, швидкість руху кульки дитячого пружинного пістолета.&nbsp;Для розрахунків скористайтеся формулою, отриманою під час розв&rsquo;язання задачі 3 у &sect; 38.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-497.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">лабораторна робота № 7</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-498.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">тема. Вивчення закону збереження механічної енергії.</p>
+<p style="word-spacing: 1.1px;">Мета: переконатися на досліді, що повна механічна енергія замкненої системи тіл залишається незмінною, якщо в системі діють тільки сили&nbsp;тяжіння та сили пружності.&nbsp;обладнання: штатив із муфтою та лапкою, ди</p>
+<p style="word-spacing: 1.1px;">намометр, набір тягарців, лінійка завдовжки 4050 см, гумовий шнур завдовжки 15 см із покажчиком і петельками на кінцях, олівець, міцна нитка.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-499.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">теоретичні відомості</p>
+<p style="word-spacing: 1.1px;">Для виконання роботи можна використати експериментальну установку, зображену на рис. 1. Попередньо позначивши на лінійці положення&nbsp;покажчика у випадку ненавантаженого шнура&nbsp;(позначка 0), до петлі шнура підвішують тягарець, який потім відтягують униз (стан 1), надаючи шнуру деякого видовження Х]_ (рис. 2).&nbsp;У стані 1 повна механічна енергія системи&nbsp;&laquo;шнур &mdash; тягарець &mdash; Земля&raquo; дорівнює потенціальній енергії розтягненого шнура:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-500.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де F<sub>1</sub>&nbsp;= кх<sub>г</sub>&nbsp;&mdash; модуль сили пружності шнура за його розтягнення на Х]_.</p>
+<p style="word-spacing: 1.1px;">Далі тягарець відпускають і відзначають положення покажчика в той момент, коли тягарець досягне максимальної висоти (стан 2). У цьому стані повна механічна енергія системи дорівнює сумі потенціальної енергії піднятого на висоту h тягарця&nbsp;й потенціальної енергії розтягнутого шнура:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-501.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">вказівки до роботи</p>
+<p style="word-spacing: 1.1px;">підготовка до експерименту</p>
+<p style="word-spacing: 1.1px;">1. Перед тим як розпочати вимірювання, згадайте:</p>
+<p style="word-spacing: 1.1px;">1) вимоги безпеки під час виконання лабораторних робіт;</p>
+<p style="word-spacing: 1.1px;">2) закон збереження повної механічної енергії.</p>
+<p style="word-spacing: 1.1px;">2. Проаналізуйте формули (1) і (2) та поміркуйте, які вимірювання&nbsp;слід зробити, щоб визначити повну механічну енергію системи&nbsp;у стані 1 і стані 2. Складіть план проведення експерименту.</p>
+<p style="word-spacing: 1.1px;">3. Зберіть установку, як показано на рис. 1.</p>
+<p style="word-spacing: 1.1px;">4. Потягнувши за нижню петельку вертикально вниз, випряміть шнур,&nbsp;не натягуючи його. Позначте на лінійці олівцем положення покажчика у випадку ненавантаженого шнура й поставте позначку 0.</p>
+<p style="word-spacing: 1.1px;">Експеримент</p>
+<p style="word-spacing: 1.1px;">Суворо дотримуйтесь інструкції з безпеки (див. форзац підручника).</p>
+<p style="word-spacing: 1.1px;">Результати вимірювань відразу заносьте до таблиці.</p>
+<p style="word-spacing: 1.1px;">1. Визначте за допомогою динамометра вагу Р тягарця.</p>
+<p style="word-spacing: 1.1px;">2. Підвісьте тягарець до петельки. Відтягнувши тягарець униз, позначте&nbsp;на лінійці положення покажчика, біля позначки поставте цифру 1.</p>
+<p style="word-spacing: 1.1px;">3. Відпустіть тягарець. Помітивши положення покажчика в момент,&nbsp;коли тягарець сягнув найбільшої висоти, поставте у відповідному&nbsp;місці позначку 2. Зверніть увагу: якщо позначка 2 розташується&nbsp;вище, ніж позначка 0, дослід необхідно повторити, зменшивши&nbsp;розтягнення шнура та відповідно змінивши положення позначки 1.</p>
+<p style="word-spacing: 1.1px;">4. Виміряйте сили пружності F<sub>1</sub>&nbsp;і F2, які виникають у гумовому шнурі в разі його розтягнення на х<sub>1</sub>&nbsp;і х<sub>2</sub>&nbsp;відповідно. Для цього&nbsp;зніміть тягарець і, зачепивши петлю шнура гачком динамометра,&nbsp;розтягніть шнур спочатку до позначки 1, а потім до позначки 2.</p>
+<p style="word-spacing: 1.1px;">6. Вимірявши відстані між відповідними позначками, визначте видовження х<sub>1</sub>&nbsp;і х<sub>2</sub>&nbsp;гумового шнура, а також максимальну висоту h&nbsp;підйому тягарця (див. рис. 2).</p>
+<p style="word-spacing: 1.1px;">7. Повторіть дії, описані в пунктах 1-6, підвісивши до шнура два&nbsp;тягарці разом.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-502.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">опрацювання результатів експерименту</p>
+<p style="word-spacing: 1.1px;">1. Для кожного досліду визначте:</p>
+<p style="word-spacing: 1.1px;">1) повну механічну енергію системи у стані 1;</p>
+<p style="word-spacing: 1.1px;">2) повну механічну енергію системи у стані 2.</p>
+<p style="word-spacing: 1.1px;">2. Закінчіть заповнення таблиці.</p>
+<p style="word-spacing: 1.1px;">Аналіз результатів експерименту</p>
+<p style="word-spacing: 1.1px;">Проаналізуйте експеримент та його результати. Сформулюйте висновок, у якому: 1) порівняйте одержані вами значення повної механічної енергії системи у стані 1; у стані 2; 2) зазначте причини можливої розбіжності результатів; 3) укажіть фізичні величини, вимірювання яких, на ваш погляд, дало найбільшу похибку.</p>
+<p style="word-spacing: 1.1px;">Завдання &laquo;із зірочкою&raquo;</p>
+<p style="word-spacing: 1.1px;">За формулою</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-503.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">творче завдання</p>
+<p style="word-spacing: 1.1px;">Візьміть невелику кульку на довгій міцній нитці. До нитки прив&rsquo;яжіть гумовий шнур і, тримаючись за кульку, із силою потягніть шнур униз. Виміряйте видовження шнура. Відпустіть кульку. Виміряйте висоту, на яку&nbsp;піднялась кулька. Визначте жорсткість шнура та обчисліть цю висоту теоретично. Порівняйте результат обчислення з результатом експерименту.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="639-pdruchnik-fzika-9-klas-baryahtar-dovgiy-chitati-onlayn-nova-programa-2017.html">Фізика 9 клас Бар'яхтар, Довгий</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="638-shpargalka-z-fziki-za-9-klas.html">Шпаргалка з фізики за 9 клас</a></li><li><a href="636-pdsumki-rozdlu-5-ruh-vzayemodya-zakoni-zberezhennya.html">Підсумки розділу 5 «Рух і взаємодія. Закони збереження»</a></li><li><a href="633-fundamentaln-vzayemodyi-v-prirod-mezh-zastosuvannya-fzichnih-zakonv-teory-fundamentalniy-harakter-zakonv-zberezhennya.html">Фундаментальні взаємодії в природі. Межі застосування фізичних законів і те ...</a></li><li><a href="630-vzayemodya-tl-mpuls-zakon-zberezhennya-mpulsu-storya-ponyattya-mpulsu.html">Взаємодія тіл. Імпульс. Закон збереження імпульсу. Історія поняття імпульсу</a></li><li><a href="622-rvnopriskoreniy-pryamolnyniy-ruh-priskorennya-shvidkst-rvnopriskorenogo-pryamolnynogo-ruhu.html">Рівноприскорений прямолінійний рух. Прискорення. Швидкість рівноприскореног ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

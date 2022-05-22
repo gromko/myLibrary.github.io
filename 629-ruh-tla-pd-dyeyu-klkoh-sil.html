@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Рух тіла під дією кількох сил &raquo; mozok.click</title>
+<meta name="description" content="Вивчаючи цей параграф, ви ознайомитеся з основними етапами розв'язання задач із динаміки, розглянете приклади розв'язання деяких ключових задач. Матеріал параграфа слід ретельно опрацювати" />
+<meta name="keywords" content="'язання, задач, будете, задачами, подібними, опрацювати, зустрічатися, вивчення, подальшого, всього, фізики, ретельно, курсу, Матеріал, етапами, основними, ознайомитеся, параграф, динаміки, розглянете" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='629-ruh-tla-pd-dyeyu-klkoh-sil.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Рух тіла під дією кількох сил</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb629").Button("#infc629"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb629" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc629" class="infcont">
+			<ul>
+				<li><i>Переглядів: 15725</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 13-09-2017, 05:22</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-629'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="629-ruh-tla-pd-dyeyu-klkoh-sil.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '629'); return false;">1</a></li>
+		<li><a href="629-ruh-tla-pd-dyeyu-klkoh-sil.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '629'); return false;">2</a></li>
+		<li><a href="629-ruh-tla-pd-dyeyu-klkoh-sil.html#" title="Средне" class="r3-unit" onclick="doRate('3', '629'); return false;">3</a></li>
+		<li><a href="629-ruh-tla-pd-dyeyu-klkoh-sil.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '629'); return false;">4</a></li>
+		<li><a href="629-ruh-tla-pd-dyeyu-klkoh-sil.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '629'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/13/index.html" ><i>13-09-2017, 05:22</i></a></span>
+	<h3 class="btl"><span id="news-title">Рух тіла під дією кількох сил</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-629" style="display:inline;"><p>Вивчаючи цей параграф, ви ознайомитеся з основними етапами розв'язання задач із динаміки, розглянете приклади розв'язання деяких ключових задач. Матеріал параграфа слід ретельно опрацювати, адже з подібними задачами ви будете зустрічатися&nbsp;в ході вивчення всього подальшого курсу фізики.</p>
+<p style="word-spacing: 1.1px;">Згадуємо сили</p>
+<p style="word-spacing: 1.1px;">З огляду на тему параграфа перш за все слід згадати означення деяких сил, з якими ви ознайомилися в курсі механіки 7 класу, формули для їх&nbsp;визначення, а також напрямок їхньої дії.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1">
+<tbody>
+<tr>
+<td>
+<p>Сила тяжіння</p>
+</td>
+<td>
+<p>Сила тертя</p>
+</td>
+<td>
+<p>Сила пружності</p>
+</td>
+<td>
+<p>Сила Архімеда</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-431.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-432.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-433.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-434.jpg" alt="" /></td>
+</tr>
+<tr>
+<td>
+<p>сила, з якою Земля притягує&nbsp;до себе тіла,&nbsp;що перебувають&nbsp;на її поверхні&nbsp;або поблизу неї</p>
+</td>
+<td>
+<p>сила, яка виникає&nbsp;внаслідок&nbsp;ковзання одного&nbsp;тіла по поверхні&nbsp;іншого</p>
+</td>
+<td>
+<p>сила, яка виникає під час&nbsp;деформації тіла</p>
+</td>
+<td>
+<p>виштовхувальна сила, яка діє&nbsp;на тіло,&nbsp;занурене&nbsp;в рідину або газ</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-435.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-436.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-437.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-438.jpg" alt="" /></td>
+</tr>
+<tr>
+<td>
+<p>напрямлена вертикально вниз і прикладена&nbsp;до центра&nbsp;тяжіння тіла</p>
+</td>
+<td>
+<p>напрямлена проти руху тіла&nbsp;і діє вздовж&nbsp;поверхні дотику&nbsp;тіл</p>
+</td>
+<td>
+<p>напрямлена протилежно видовженню і діє&nbsp;вздовж шнура&nbsp;або пружини</p>
+</td>
+<td>
+<p>напрямлена вертикально вгору і прикладена до&nbsp;центра зануреної&nbsp;частини тіла</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-439.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-440.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-441.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-442.jpg" alt="" /></td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Учимося розв'язувати задачі</p>
+<p style="word-spacing: 1.1px;">Алгоритм розв&rsquo;язування задач із динаміки</p>
+<p style="word-spacing: 1.1px;">1. Уважно прочитайте умову задачі. З&rsquo;ясуйте, які сили діють на тіло, яким&nbsp;є характер його руху (рухається це тіло з прискоренням чи рівномірно&nbsp;прямолінійно).</p>
+<p style="word-spacing: 1.1px;">2. Запишіть коротку умову задачі. У разі необхідності переведіть значення&nbsp;фізичних величин в одиниці СІ.</p>
+<p style="word-spacing: 1.1px;">3. Виконайте пояснювальний рисунок, на якому зазначте сили, що діють&nbsp;на тіло, і напрямок прискорення руху тіла.</p>
+<p style="word-spacing: 1.1px;">4. Виберіть інерціальну систему відліку. Осі координат бажано спрямувати так, щоб якнайбільше сил було напрямлено вздовж цих осей (це&nbsp;не змінить результату розв&rsquo;язання, але значно його спростить).</p>
+<p style="word-spacing: 1.1px;">5. Запишіть рівняння другого закону Ньютона у векторному вигляді та&nbsp;в проекціях на осі координат. Запишіть формули для обчислення сил.&nbsp;Одержавши систему рівнянь, розв&rsquo;яжіть її відносно невідомої величини.&nbsp;Якщо в задачі є додаткові умови, використайте їх.</p>
+<p style="word-spacing: 1.1px;">6. Перевірте одиницю та знайдіть числове значення шуканої величини.&nbsp;Проаналізуйте результат, запишіть відповідь.</p>
+<p style="word-spacing: 1.1px;">Під час розв&rsquo;язування задач систему відліку будемо пов&rsquo;язувати з точкою, нерухомою відносно поверхні Землі (тобто тіло рухається, а осі координат залишаються нерухомими); тіло вважатимемо матеріальною точкою, тому всі сили будемо зображати прикладеними до однієї точки.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Задача 1. Дерев&rsquo;яний брусок масою 200 г рівномірно тягнуть горизонтальною поверхнею за допомогою пружини жорсткістю 40 Н/м. Визначте видовження пружини, якщо коефіцієнт тертя ковзання 0,25.</p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми. Щоб визначити видовження пружини, слід знати силу пружності, яку знайдемо, скориставшись другим законом Ньютона. Слід урахувати, що&nbsp;брусок тягнуть рівномірно, тому прискорення&nbsp;його руху дорівнює нулю.</p>
+<p style="word-spacing: 1.1px;">Виконаємо пояснювальний рисунок, на якому зобразимо сили, що діють на тіло,&nbsp;і напрямки осей координат.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-443.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-444.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Задача 2. Обчисліть гальмівний шлях і час гальмування автомобіля, якщо він рухався прямою горизонтальною ділянкою дороги й перед початком гальмування мав швидкість 54 км/год. Коефіцієнт тертя ковзання гуми&nbsp;по бетону &mdash; 0,75.</p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми. Щоб визначити гальмівний шлях і час гальмування автомобіля, необхідно знати прискорення його руху. Прискорення&nbsp;знайдемо, скориставшись другим законом Ньютона.</p>
+<p style="word-spacing: 1.1px;">Виконаємо пояснювальний рисунок, на якому зазначимо сили, що діють на автомобіль, напрямки&nbsp;осей координат, початкової швидкості, переміщення&nbsp;та прискорення (автомобіль зупиняється, тому кінцева швидкість його руху дорівнює нулю, а напрямок прискорення протилежний напрямку руху).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-445.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-446.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Аналіз результатів. Отримано реальний результат, адже гальмівний шлях автомобіля дійсно досить великий. Пам&rsquo;ятайте про це і ніколи не порушуйте правил дорожнього руху!</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-447.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Задача 3. Людина масою 70 кг зайшла в ліфт. Ліфт починає рух із прискоренням 0,2 м/с<sup>2</sup>, напрямленим угору, а потім піднімається з незмінною швидкістю. На скільки змінюється вага людини під час цього руху?</p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми Вага тіла &mdash; це сила, яка діє на&nbsp;опору &mdash; ліфт. Виявити всі сили, які&nbsp;діють на ліфт, досить складно. Але за&nbsp;третім законом Ньютона P = N (з якою&nbsp;силою тіло діє на опору, з такою самою силою опора діє на тіло).</p>
+<p style="word-spacing: 1.1px;">Отже, нам слід визначити силу нормальної реакції опори, яка діє на людину під час кожного виду руху ліфта.</p>
+<p style="word-spacing: 1.1px;">Виконаємо пояснювальні рисунки, на яких зазначимо сили, що діють на людину, напрямок прискорення і напрямок осі OY.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-448.jpg" alt="" /></p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1">
+<tbody>
+<tr>
+<td rowspan="2"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-449.jpg" alt="" /></td>
+<td>
+<p>Пошук математичної моделі, розв&rsquo;язання</p>
+<p>Запишемо другий закон Ньютона для кожного випадку</p>
+<p>та знайдемо проекції сил і прискорення на вісь OY.</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-450.jpg" alt="" /></td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Задача 4. Автомобіль масою 4 т рухається на гору, сповільнюючи свій рух. Визначте силу тяги автомобіля, якщо ухил гори становить 0,02, а коефіцієнт опору рухові дорівнює 0,04. Прискорення автомобіля 0,15 м/с<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;">Зверніть увагу! Ухил &mdash; синус кута а нахилу полотна дороги до горизонту. Якщо ухил є малим (меншим від 0,1), то cos а ~ 1. Коефіцієнт опору рухові m враховує всі види тертя: тертя кочення, ковзання в осях тощо.&nbsp;Сила опору напрямлена протилежно руху тіла й обчислюється за формулою&nbsp;F<sub>оп</sub>=mN, де N &mdash; сила нормальної реакції опори.</p>
+<p style="word-spacing: 1.1px;">Аналіз фізичної проблеми. На тіло діють чотири сили: сила тяжіння mg, сила N нормальної реакції опори, сила тяги Р<sub>тяги</sub>&nbsp;та сила</p>
+<p style="word-spacing: 1.1px;"><sup>оп</sup>&deg;ру&nbsp;<sup>F</sup>on .</p>
+<p style="word-spacing: 1.1px;">Тіло зменшує свою швидкість, тому прискорення руху тіла напрямлене протилежно напрямку його руху.</p>
+<p style="word-spacing: 1.1px;">Виконаємо пояснювальний рисунок, зазначивши на ньому сили, що діють на тіло, напрямок прискорення руху тіла та напрямки&nbsp;осей координат.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-451.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-452.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Замість підсумків</p>
+<p style="word-spacing: 1.1px;">Ви ознайомились із розв&rsquo;язуванням деяких задач на рух тіл під дією кількох сил. Звичайно, розглянути в межах підручника всі типи таких&nbsp;задач неможливо, та й не потрібно. Головне &mdash; у вас є алгоритм розв&rsquo;язання&nbsp;й приклади роботи з цим алгоритмом. Решта &mdash; за вами.</p>
+<p style="word-spacing: 1.1px;">Отже, розв&rsquo;язуючи будь-яку задачу з динаміки, спочатку виконайте пояснювальний рисунок, зазначте сили, запишіть рівняння другого закону&nbsp;Ньютона, виберіть систему відліку, знайдіть проекції. Звичайно, слід знати,&nbsp;як напрямлені сили, коли вони виникають і за якими формулами визначаються. А далі, навіть якщо ви відразу не бачите всього ходу розв&rsquo;язання&nbsp;задачі, &mdash; нічого страшного. Ви обов&rsquo;язково знайдете якусь величину, знання&nbsp;якої допоможе вам побачити подальший хід розв&rsquo;язання. Можна навіть сказати так: &laquo;Якщо не знаєш, як розв&rsquo;язувати задачу, то почни її розв&rsquo;язувати&raquo;.&nbsp;Не потрібно боятися зробити хибний крок. Той не перемагає, хто не вміє&nbsp;програвати. Навчитися розв&rsquo;язувати задачі з фізики може кожен, потрібно&nbsp;тільки їх розв&rsquo;язувати!</p>
+<p style="word-spacing: 1.1px;">Вправа № 35</p>
+<p style="word-spacing: 1.1px;">1. Під час старту космічний корабель рухається вертикально вгору з прискоренням 40 м/с<sup>2</sup>. Із якою силою космонавт масою 70 кг тисне на крісло?</p>
+<p style="word-spacing: 1.1px;">2. Дерев&rsquo;яний брусок рівномірно тягнуть горизонтальною поверхнею, прикладаючи силу 1 Н. Визначте коефіцієнт тертя ковзання, якщо маса бруска&nbsp;дорівнює 200 г.</p>
+<p style="word-spacing: 1.1px;">3. Тіло масою 300 г, підвішене на пружині, опускають униз із прискоренням&nbsp;2 м/с<sup>2</sup>. Визначте жорсткість пружини, якщо її видовження становило 5 см.</p>
+<p style="word-spacing: 1.1px;">4. Вантаж масою 10 кг і об&rsquo;ємом 1 дм<sup>3</sup>&nbsp;витягають із води за допомогою мотузки. Визначте силу натягу мотузки, якщо вантаж рухається з прискоренням 2 м/с<sup>2</sup>. Опором води знехтуйте.</p>
+<p style="word-spacing: 1.1px;">5. Лижник масою 60 кг зупинився через 40 с після закінчення спуску.&nbsp;Визначте силу тертя, що діяла на лижника, і коефіцієнт тертя ковзання,&nbsp;якщо швидкість руху лижника наприкінці спуску становила 10 м/с.</p>
+<p style="word-spacing: 1.1px;">6. Автомобіль масою 3 т рухається з гори, розвиваючи силу тяги 3000 Н.&nbsp;Визначте, з яким прискоренням рухається автомобіль, якщо коефіцієнт&nbsp;опору рухові дорівнює 0,04, а ухил становить 0,03.</p>
+<p style="word-spacing: 1.1px;">7. Тіло масою m<sub>1</sub>&nbsp;= 1 кг ковзає горизонтальною поверхнею під дією тягаря масою m<sub>2</sub>&nbsp;= 250 г (див. рисунок).</p>
+<p style="word-spacing: 1.1px;">Дана система тіл рухається з прискоренням 1,5 м/с<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;">Визначте коефіцієнт тертя між тілом і поверхнею.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/fizyka-9-bariahtar-dovgiy/fizyka-9-bariahtar-dovgiy-453.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="639-pdruchnik-fzika-9-klas-baryahtar-dovgiy-chitati-onlayn-nova-programa-2017.html">Фізика 9 клас Бар'яхтар, Довгий</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="636-pdsumki-rozdlu-5-ruh-vzayemodya-zakoni-zberezhennya.html">Підсумки розділу 5 «Рух і взаємодія. Закони збереження»</a></li><li><a href="628-ruh-tla-pd-dyeyu-sili-tyazhnnya.html">Рух тіла під дією сили тяжіння</a></li><li><a href="625-drugiy-zakon-nyutona.html">Другий закон Ньютона</a></li><li><a href="623-peremschennya-pd-chas-rvnopriskorenogo-pryamolnynogo-ruhu-rvnyannya-koordinati.html">Переміщення під час рівноприскореного прямолінійного руху. Рівняння координ ...</a></li><li><a href="622-rvnopriskoreniy-pryamolnyniy-ruh-priskorennya-shvidkst-rvnopriskorenogo-pryamolnynogo-ruhu.html">Рівноприскорений прямолінійний рух. Прискорення. Швидкість рівноприскореног ...</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

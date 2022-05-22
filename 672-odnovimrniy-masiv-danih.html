@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Одновимірний масив даних &raquo; mozok.click</title>
+<meta name="description" content="Існує багато прикладних задач, розвязування яких вимагає опрацювання великої кількості однотипних даних, наприклад зберігання й аналіз значень температури повітря протягом року. Для зберіган" />
+<meta name="keywords" content="даних, зберігання, однотипних, опрацювання, структурований, повітря, масив, температури, такий, протягом, зручно, значень, сукупності, використовувати, наприклад, задач, прикладних, багато, розвязування, вимагає" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='672-odnovimrniy-masiv-danih.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Одновимірний масив даних</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb672").Button("#infc672"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb672" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc672" class="infcont">
+			<ul>
+				<li><i>Переглядів: 11702</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 06:29</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-672'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="672-odnovimrniy-masiv-danih.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '672'); return false;">1</a></li>
+		<li><a href="672-odnovimrniy-masiv-danih.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '672'); return false;">2</a></li>
+		<li><a href="672-odnovimrniy-masiv-danih.html#" title="Средне" class="r3-unit" onclick="doRate('3', '672'); return false;">3</a></li>
+		<li><a href="672-odnovimrniy-masiv-danih.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '672'); return false;">4</a></li>
+		<li><a href="672-odnovimrniy-masiv-danih.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '672'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 06:29</i></a></span>
+	<h3 class="btl"><span id="news-title">Одновимірний масив даних</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-672" style="display:inline;"><p>Існує багато прикладних задач, розв&rsquo;язування яких вимагає опрацювання великої кількості однотипних даних, наприклад зберігання й аналіз значень температури повітря протягом року. Для зберігання&nbsp;й опрацювання сукупності однотипних даних зручно використовувати&nbsp;такий структурований тип даних, як масив.</p>
+<p style="word-spacing: 1.1px;">Поняття одновимірного масиву</p>
+<p style="word-spacing: 1.1px;">Масив &mdash; це сукупність однотипних елементів, що мають спільне ім&rsquo;я. Тип елементів називають базовим типом масиву. Кожний&nbsp;елемент масиву визначається його індексом. Кількість елементів&nbsp;масиву визначає його розмір.</p>
+<p style="word-spacing: 1.1px;">Розрізняють статичні й динамічні масиви. Ми будемо розглядати статичні масиви, розміри яких є фіксованими, тобто не змінюються в ході виконання програми.</p>
+<p style="word-spacing: 1.1px;">Одновимірний масив &mdash; це масив, доступ до елементів якого визначається за допомогою одного індекса.</p>
+<p style="word-spacing: 1.1px;">Для зберігання значень середньодобової температури повітря, отриманих протягом року, замість створення окремих змінних ґ1, t2, ..., t365 можна створити один масив з іменем t. Спільне ім&rsquo;я t означає,&nbsp;що ці дані належать до одного масиву, а розрізнити їх можна за індексом (номером): ї[1], ї[2], ..., ї[365] (див. таблицю).</p>
+<p style="word-spacing: 1.1px;">Середньодобова температура повітря протягом року</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-271.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У таблиці значень середньодобової температури ї[1] = -10, ї[365] = -9.6.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Опис змінних типу одновимірний масив</p>
+<p style="word-spacing: 1.1px;">Описати змінну типу одновимірний масив можна двома способами:</p>
+<p style="word-spacing: 1.1px;">1) описати змінну типу масив, не вводячи нового типу:</p>
+<p style="word-spacing: 1.1px;">var &lt;список змінних&gt;: аггау[діапазон індексів] of &lt;тип елементів&gt;;</p>
+<p style="word-spacing: 1.1px;">2) у розділі type програмного коду описати новий тип даних, і в розділі&nbsp;var описати змінну цього типу:</p>
+<p style="word-spacing: 1.1px;">type &lt;ім'я типу&gt; = аггау[діапазон індексів] of &lt;тип елементів&gt;; var &lt;список змінних&gt;: &lt;ім'я типу&gt;;</p>
+<p style="word-spacing: 1.1px;">Кількість елементів описаного таким чином масиву визначається під час його опису й надалі в програмі не змінюється.</p>
+<p style="word-spacing: 1.1px;">Описати масив Numbers із 10 цілих чисел: type mas = array[1..10] of Integer;&nbsp;var Numbers: mas;</p>
+<p style="word-spacing: 1.1px;">або</p>
+<p style="word-spacing: 1.1px;">var Numbers: array[1..10] of Integer;</p>
+<p style="word-spacing: 1.1px;">Нумерація елементів масиву не обов&rsquo;язково повинна починатися з одиниці.</p>
+<p style="word-spacing: 1.1px;">Описати масив Numbers із 10 символів, нумерація яких починається з -5: var Numbers: array[-5..4] of Char;</p>
+<p style="word-spacing: 1.1px;">Звернення до елемента масиву за індексом, що виходить за межі діапазону, зазначеного в описі, є неприпустимим.</p>
+<p style="word-spacing: 1.1px;">Проаналізувати зміст повідомлення (рис. 32.1), отриманого під час компіляції програми, в якій робиться спроба виведення значення&nbsp;елемента масиву з неіснуючим індексом.&nbsp;var Numbers: array[1..10] of Integer;&nbsp;begin Edit1.Text := IntToStr(Numbers[20]);</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-272.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Задавання значень елементів масиву</p>
+<p style="word-spacing: 1.1px;">Розглянемо різні способи заповнення масиву. У середовищі програмування Lazarus можна безпосередньо присвоїти один масив іншому.</p>
+<p style="word-spacing: 1.1px;">Присвоїти масиву Numbersl значення масиву Numbers2 того самого типу:</p>
+<p style="word-spacing: 1.1px;">var Numbersl, Numbers2: array[1..3] of Integer; begin Numbersl := Numbers2;</p>
+<p style="word-spacing: 1.1px;">Після виконання такої операції одразу всі елементи масиву Numbersl отримають значення відповідних їм за індексами елементів масиву&nbsp;Numbers2.</p>
+<p style="word-spacing: 1.1px;">Присвоїти масиву Numbers значення масиву CNumbers того самого типу: type mas = array[1..5] of Integer;&nbsp;const CNumbers: mas = (2, 5, 1, 4, 2);&nbsp;var Numbers: mas;&nbsp;begin</p>
+<p style="word-spacing: 1.1px;">Numbers := CNumbers;</p>
+<p style="word-spacing: 1.1px;">Звернення до окремого елемента масиву здійснюється за його індексом. Присвоїти значення певним елементам масиву.</p>
+<p style="word-spacing: 1.1px;">Нехай масив А: array[1..4] of Integer заповнено числами (1, 2, 3, 4), а масив В: array[1..3] of Integer &mdash; числами (5, 6, 7). Після виконання&nbsp;операторів присвоєння</p>
+<p style="word-spacing: 1.1px;">A[3] := 5; B[2] := A[1] + B[3];</p>
+<p style="word-spacing: 1.1px;">масив А містить елементи (1, 2, 5, 4), а масив В &mdash; елементи (5, 8, 7).</p>
+<p style="word-spacing: 1.1px;">Опрацювання масивів виконується поеле-ментно. Для послідовного опрацювання елементів масиву необхідно організувати цикл, в тілі якого&nbsp;виконуються дії над поточним елементом масиву.</p>
+<p style="word-spacing: 1.1px;">Блок-схему опрацювання елементів масиву з використанням циклу For наведено на рис. 32.2.</p>
+<p style="word-spacing: 1.1px;">Заповнити масив А[1..5] випадковими цілими числами з проміжку [0; 99]:</p>
+<p style="word-spacing: 1.1px;">Randomize;</p>
+<p style="word-spacing: 1.1px;">For і := 1 to 5 do А[і] := Random(100);</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-273.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Введення значень елементів масиву з клавіатури</p>
+<p style="word-spacing: 1.1px;">Як для введення, так і для виведення значень елементів масиву необхідно організувати цикл поелементного опрацювання масиву.</p>
+<p style="word-spacing: 1.1px;">^ Увести чи вивести масив як єдине ціле не можна.</p>
+<p style="word-spacing: 1.1px;">Увести значення елементів масиву цілих чисел із клавіатури за допомогою функції InputBox (рис. 32.3):&nbsp;var i: Integer;</p>
+<p style="word-spacing: 1.1px;">Numbers: array[1..10] of Integer; begin</p>
+<p style="word-spacing: 1.1px;">For i := 1 to 10 do</p>
+<p style="word-spacing: 1.1px;">Numbers[i] := Б^ТоІп^Іпр^Вох('Уведіть значення елемента', 'Numbers[' + IntToStr(i) + ']:', '0'));</p>
+<p style="word-spacing: 1.1px;">end;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-274.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Виведення значень елементів масиву</p>
+<p style="word-spacing: 1.1px;">Одним зі способів виведення елементів одновимірного масиву є додавання значень у поле списку ListBox. Список ListBox є масивом рядків типу String, доступ до яких надає властивість Items цього компонента.</p>
+<p style="word-spacing: 1.1px;">Вивести в поле списку ListBox1 значення елементів масиву дійсних чисел із 4 знаками після коми (рис. 32.4): var i: Integer;</p>
+<p style="word-spacing: 1.1px;">Numbers: array[1..5] of Real; begin</p>
+<p style="word-spacing: 1.1px;">For i := 1 to 5 do</p>
+<p style="word-spacing: 1.1px;">ListBox1 .Items. Add(FormatFloat('#.####', Numbers[i])); end;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-275.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. Дайте означення масиву як структурованого типу даних.</p>
+<p style="word-spacing: 1.1px;">2. Опишіть масиви: а) А з трьох дійсних чисел; б) В з десяти символів.</p>
+<p style="word-spacing: 1.1px;">3. Як організувати заповнення масиву випадковими числами?</p>
+<p style="word-spacing: 1.1px;">4. Запишіть оператор присвоєння, який виконує таку дію: а) першому елементу масиву С присвоїти значення суми третього і п&rsquo;ятого&nbsp;елементів; б) шостому елементу масиву С присвоїти значення подвоєного добутку першого і другого елементів.</p>
+<p style="word-spacing: 1.1px;">5. Як увести значення елементів масиву з клавіатури?</p>
+<p style="word-spacing: 1.1px;">6. Створіть програму для заповнення масиву МишЬег$[1..10] числами 1,&nbsp;4, 9, ..., 100 і виведення значень елементів масиву в поле іібїВох.</p>
+<p style="word-spacing: 1.1px;">Вправа 32</p>
+<p style="word-spacing: 1.1px;">Дано послідовність із N цілих чисел N &lt; 100). Визначити кількість парних чисел, які мають парні індекси.</p>
+<p style="word-spacing: 1.1px;">1) Створіть новий проект. Змініть значення властивості Caption форми,&nbsp;розмістіть на формі компоненти Edit, Button, Label, ListBox і налаштуйте їхні властивості згідно з рисунком.</p>
+<p style="word-spacing: 1.1px;">2) Для зберігання елементів використаємо масив. Оскільки кількість&nbsp;елементів послідовності N &lt; 100, опишіть масив:</p>
+<p style="word-spacing: 1.1px;">Posl: array[1..100] of Integer;</p>
+<p style="word-spacing: 1.1px;">Опишіть глобальні змінні: N &mdash; кількість елементів послідовності; K &mdash; шукана кількість парних чисел, що мають парні індекси;&nbsp;і &mdash; індекс поточного елемента масиву.</p>
+<p style="word-spacing: 1.1px;">3) Створіть процедуру обробки події &#111;nclick для&nbsp;кнопки Заповнити масив. Запишіть оператори&nbsp;для введення значення N і заповнення масиву випадковими числами:</p>
+<p style="word-spacing: 1.1px;">N := StrTolnt(Editl.Text);</p>
+<p style="word-spacing: 1.1px;">Randomize;</p>
+<p style="word-spacing: 1.1px;">ListBoxl.Clear; // очищення поля списку</p>
+<p style="word-spacing: 1.1px;">For і := 1 to N do begin Posl[i] := Random(20);</p>
+<p style="word-spacing: 1.1px;">ListBoxl.Items. Add(IntToStr(Posl[i])); end;</p>
+<p style="word-spacing: 1.1px;">4) Створіть процедуру обробки події &#111;nclick для кнопки Обчислити К.&nbsp;У циклі перебираємо елементи масиву Posl; якщо Posl[i] відповідає&nbsp;умові, збільшуємо значення K на 1:</p>
+<p style="word-spacing: 1.1px;">K := 0;</p>
+<p style="word-spacing: 1.1px;">For i := 1 to N do</p>
+<p style="word-spacing: 1.1px;">If (Posl[i] Mod 2 = 0) and (i Mod 2 = 0) Then K := K + 1;</p>
+<p style="word-spacing: 1.1px;">Edit2.Text := IntToStr(K);</p>
+<p style="word-spacing: 1.1px;">Перевірте роботу програми для різних значень N. Поясніть результати роботи програми, наведені на рисунку.</p>
+<p style="word-spacing: 1.1px;">5) Змініть програмний код так, щоб після клацання командної кнопки Обчислити К до списку ListBox1 виводилися значення тих елементів масиву, які мають непарні індекси (Posl[1], Posl[3], Posl[5], ...).</p>
+<p style="word-spacing: 1.1px;">6) Збережіть проект у папці Вправа 32. Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-276.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 32 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="683-opracyuvannya-elementv-masivu.html">Опрацювання елементів масиву</a></li><li><a href="678-dvovimrniy-masiv-danih.html">Двовимірний масив даних</a></li><li><a href="676-algoritmi-vporyadkuvannya-elementv-masivu.html">Алгоритми впорядкування елементів масиву</a></li><li><a href="675-vdobrazhennya-danih-u-tablichny-form.html">Відображення даних у табличній формі</a></li><li><a href="674-algoritmi-opracyuvannya-tablichnih-velichin.html">Алгоритми опрацювання табличних величин</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

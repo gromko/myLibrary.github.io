@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Етапи комп’ютерного моделювання &raquo; mozok.click</title>
+<meta name="description" content="Удосконалення обчислювальної техніки відкрило перед моделюванням величезні перспективи для дослідження процесів і явищ навколишнього світу.Інструментом компютерного моделювання є програмне з" />
+<meta name="keywords" content="моделювання, графічні, компютерного, редактори, універсального, текстові, спеціалізоване, призначення, призначене, імітаційні, моделі, створюють, наочності, певного, підвищення, забезпечення, програмне, моделюванням, величезні, перед" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='668-etapi-kompyuternogo-modelyuvannya.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Етапи комп’ютерного моделювання</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb668").Button("#infc668"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb668" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc668" class="infcont">
+			<ul>
+				<li><i>Переглядів: 42171</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 06:21</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-668'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="668-etapi-kompyuternogo-modelyuvannya.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '668'); return false;">1</a></li>
+		<li><a href="668-etapi-kompyuternogo-modelyuvannya.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '668'); return false;">2</a></li>
+		<li><a href="668-etapi-kompyuternogo-modelyuvannya.html#" title="Средне" class="r3-unit" onclick="doRate('3', '668'); return false;">3</a></li>
+		<li><a href="668-etapi-kompyuternogo-modelyuvannya.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '668'); return false;">4</a></li>
+		<li><a href="668-etapi-kompyuternogo-modelyuvannya.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '668'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 06:21</i></a></span>
+	<h3 class="btl"><span id="news-title">Етапи комп’ютерного моделювання</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-668" style="display:inline;"><p>Удосконалення обчислювальної техніки відкрило перед моделюванням величезні перспективи для дослідження процесів і явищ навколишнього світу.</p>
+<p style="word-spacing: 1.1px;">Інструментом комп&rsquo;ютерного моделювання є програмне забезпечення як універсального призначення (текстові та графічні редактори), так і спеціалізоване, призначене лише для певного виду моделювання. Під&nbsp;час комп&rsquo;ютерного моделювання для підвищення наочності створюють&nbsp;графічні та імітаційні моделі.</p>
+<p style="word-spacing: 1.1px;">Основні етапи комп&rsquo;ютерного моделювання</p>
+<p style="word-spacing: 1.1px;">Дослідження процесів і явищ шляхом комп&rsquo;ютерного моделювання включає етапи, наведені в таблиці.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Назва етапу</p>
+</td>
+<td>
+<p>Зміст дій</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>І. Постановка задачі та її аналіз</p>
+</td>
+<td>
+<p>1. З'ясувати мету моделювання.</p>
+<p>2. Визначити початкові дані, які потрібні для створення&nbsp;моделі, та обмеження на ці дані.</p>
+<p>3. Уточнити, які результати потрібно отримати.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ІІ. Побудова інформаційної моделі</p>
+</td>
+<td>
+<p>1. Визначити параметри моделі, суттєві для даної задачі.</p>
+<p>2. Описати залежність між параметрами моделі у вигляді&nbsp;математичних співвідношень.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ІІІ. Розробка методу й алгоритму реалізації&nbsp;комп'ютерної моделі</p>
+</td>
+<td>
+<p>1. Дібрати або розробити метод розв'язування задачі.</p>
+<p>2. Скласти алгоритм отримання результатів за вибраним&nbsp;методом.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IV. Розробка</p>
+<p>комп'ютерної моделі</p>
+</td>
+<td>
+<p>1. Вибрати засоби програмної реалізації алгоритму на комп'ютері.</p>
+<p>2. Створити комп'ютерну модель.</p>
+<p>3. Перевірити правильність створеної комп'ютерної моделі.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>V. Проведення комп'ютерного&nbsp;експерименту</p>
+</td>
+<td>
+<p>1. Розробити план дослідження.</p>
+<p>2. Провести експеримент на базі створеної комп'ютерної моделі.</p>
+<p>3. Проаналізувати отримані результати.</p>
+<p>4. Зробити висновки щодо властивостей прототипу моделі.</p>
+</td>
+</tr>
+</tbody>
+</table></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><strong>I&nbsp;етап. Постановка задачі та її аналіз</strong></p>
+<p style="word-spacing: 1.1px;">Важливим моментом на цьому етапі є визначення мети моделювання. Від вибраної мети залежить, які характеристики досліджуваного об&rsquo;єкта</p>
+<p style="word-spacing: 1.1px;">вважати суттєвими, а якими можна знехтувати. Відповідно до поставленої мети має бути дібраний інструментарій, визначені методи розв&rsquo;язування&nbsp;задачі та форми відображення результатів.</p>
+<p style="word-spacing: 1.1px;">Постановка задачі вимагає уважного аналізу її формулювання з метою чіткого виділення початкових даних і необхідних результатів; при цьому встановлюються обмеження на допустимі значення величин, застосованих у задачі:</p>
+<p style="word-spacing: 1.1px;">&bull; Що дано (які дані є в умові задачі)?</p>
+<p style="word-spacing: 1.1px;">&bull; Що треба знайти (які дані мають бути отримані)?</p>
+<p style="word-spacing: 1.1px;">&bull; Які є обмеження на дані (які дані допустимі)?</p>
+<p style="word-spacing: 1.1px;">Дослідити, як змінюється швидкість автомобіля під час рівнопри-скореного руху через задані інтервали часу.</p>
+<p style="word-spacing: 1.1px;">Що моделюється? Процес руху об&rsquo;єкта &laquo;автомобіль&raquo;.</p>
+<p style="word-spacing: 1.1px;">Якою є мета моделювання? Дослідити процес рівноприскореного руху. Що дано? Початкова швидкість (v<sub>0</sub>), прискорення руху (а), максимальна швидкість руху (Vmax), яку розвиває автомобіль, інтервали&nbsp;зміни часу dt.</p>
+<p style="word-spacing: 1.1px;">Що треба знайти? Значення швидкості руху (о) в задані моменти часу ^).</p>
+<p style="word-spacing: 1.1px;">Які є обмеження на дані?&nbsp;0 &lt; vі &lt; vmax.</p>
+<p style="word-spacing: 1.1px;"><strong>II етап. Побудова інформаційної моделі</strong></p>
+<p style="word-spacing: 1.1px;">На цьому етапі визначаються параметри моделі, суттєві для даної задачі, та математичні співвідношення між ними.</p>
+<p style="word-spacing: 1.1px;">Інформаційна модель задачі про рух автомобіля:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-235.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Іноді доцільно доповнити інформаційну модель об&rsquo;єкта схемою, кресленням, формулами, якщо це сприятиме кращому розумінню задачі.</p>
+<p style="word-spacing: 1.1px;">Задача про рух автомобіля стає більш зрозумілою, якщо навести рисунок&nbsp;із зазначенням уведених позначень&nbsp;(рис. 28.1).</p>
+<p style="word-spacing: 1.1px;">Для задач, у яких потрібно розрахувати значення параметрів об&rsquo;єкта, необхідно скласти математичну модель.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-236.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Математична модель руху автомобіля має вигляд:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-237.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;"><strong>III етап. Розробка методу й алгоритму реалізації комп&rsquo;ютерної моделі</strong></p>
+<p style="word-spacing: 1.1px;">Для розрахункової задачі необхідно вибрати метод її розв&rsquo;язування, що визначає послідовність арифметичних і логічних операцій. Метод &mdash;&nbsp;це певний спосіб розв&rsquo;язування задачі в межах побудованої моделі.</p>
+<p style="word-spacing: 1.1px;">Вибір методу зумовлений аналізом початкових даних задачі. Наприклад, ви вибираєте метод визначення невідомих елементів прямокутного трикутника залежно від того, величини яких елементів задано в умові&nbsp;задачі.</p>
+<p style="word-spacing: 1.1px;">У прикладних задачах знаходження точного розв&rsquo;язку зазвичай є неможливим або занадто складним. Для таких задач розроблено методи&nbsp;наближених обчислень значень функцій, коренів&nbsp;рівнянь тощо.</p>
+<p style="word-spacing: 1.1px;">Алгоритм &mdash; це послідовність вказівок виконання дій, спрямована на розв&rsquo;язання задачі.</p>
+<p style="word-spacing: 1.1px;">Алгоритм розв&rsquo;язування задачі складається відповідно до вибраного методу.</p>
+<p style="word-spacing: 1.1px;">Блок-схему алгоритму розв&rsquo;язування задачі про рух автомобіля наведено на рис. 28.2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-238.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>IV етап. Розробка комп&rsquo;ютерної моделі</strong></p>
+<p style="word-spacing: 1.1px;">Будувати і досліджувати моделі можна за допомогою різних програм. Кожне програмне середовище має свій інструментарій і дозволяє працювати з певними видами інформаційних моделей. Ту саму задачу можна&nbsp;розв&rsquo;язувати, використовуючи різні середовища.</p>
+<p style="word-spacing: 1.1px;">У середовищі програмування можна створити програму для реалізації математичної моделі. Також, використовуючи графічні засоби мови,&nbsp;можна створити графічну або імітаційну модель.</p>
+<p style="word-spacing: 1.1px;">Для створення інформаційної моделі у словесному вигляді може бути використаний текстовий процесор. Для розрахункових задач зручно використовувати середовище електронних таблиць.</p>
+<p style="word-spacing: 1.1px;">У середовищі табличного процесора модель можна подати у вигляді таблиці, яка містить три області: початкові дані (стовпці А-С), проміжні розрахунки (стовпець Р) і результати (стовпець Е) (рис. 28.3).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-239.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;"><strong>V етап. Проведення комп&rsquo;ютерного експерименту</strong></p>
+<p style="word-spacing: 1.1px;">План дослідження повинен чітко відображати послідовність роботи з моделлю. Після створення моделі потрібно здійснити перевірку правильності моделі за допомогою тестів і виправити виявлені помилки. Тест &mdash;&nbsp;це набір спеціально дібраних початкових даних і очікуваних результатів.&nbsp;Тестування полягає в порівнянні результатів тестового прикладу з результатами, отриманими після виконання розрахунків для створеної моделі.</p>
+<p style="word-spacing: 1.1px;">Якщо результати розрахунків не збігаються з результатами тестового прикладу, це означає, що на попередніх етапах були допущені помилки:&nbsp;неправильна постановка задачі, неврахування важливих властивостей&nbsp;прототипу в ході побудови інформаційної моделі, невдалий вибір методу&nbsp;або неправильний алгоритм розв&rsquo;язування задачі. Повернення до попередніх етапів моделювання і коригування моделі повторюється доти, доки&nbsp;не будуть отримані успішні результати тестування.</p>
+<p style="word-spacing: 1.1px;">Після успішного тестування моделі можна переходити безпосередньо до проведення дослідження. Експеримент повинен супроводжуватися аналізом результатів для прийняття рішення.</p>
+<p style="word-spacing: 1.1px;">На основі аналізу результатів експерименту можна зробити висновки щодо властивостей прототипу моделі, прийняти рішення про керування&nbsp;прототипом.</p>
+<p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. Назвіть переваги комп&rsquo;ютерного моделювання.</p>
+<p style="word-spacing: 1.1px;">2. Назвіть відомі вам інструменти комп&rsquo;ютерного моделювання.</p>
+<p style="word-spacing: 1.1px;">3. Опишіть зміст основних етапів комп&rsquo;ютерного моделювання.</p>
+<p style="word-spacing: 1.1px;">4. Розв&rsquo;яжіть задачу: &laquo;На яку висоту можна піднятися по драбині&nbsp;завдовжки І, якщо нижній її кінець розташований на відстані b&nbsp;від стіни?&raquo;. Який метод ви виберете для розв&rsquo;язування цієї задачі?</p>
+<p style="word-spacing: 1.1px;">Вправа 28</p>
+<p style="word-spacing: 1.1px;">На основі етапів І&mdash;ІІІ комп&rsquo;ютерного моделювання побудувати і дослідити в табличному процесорі Excel комп&rsquo;ютерну модель&nbsp;руху автомобіля.</p>
+<p style="word-spacing: 1.1px;">1) Запустіть програму Excel. Для введення значення початкової&nbsp;швидкості використаємо клітинку B1, для введення значення прискорення руху &mdash; клітинку B2 (рис. 1).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-240.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Уведіть у клітинки В5 і С5 формули для обчислення значень швидкості руху і пройденого шляху через час Р.</p>
+<p style="word-spacing: 1.1px;">= $В$1+$В$2*А5 = $В$1*А5+$В$2*А5*А5/2</p>
+<p style="word-spacing: 1.1px;">Уведіть у клітинки А5:А7 значення часу з інтервалом в 1 с. Скопіюйте формули в діапазони В6:В7 і С6:С7 відповідно.</p>
+<p style="word-spacing: 1.1px;">2) Уведіть у клітинку Р5 формулу для переведення значення швидкості руху в км/год. Скопіюйте формулу в діапазон Р6:Р7.&nbsp;Установіть умовне форматування даних у діапазоні Р5:й7 так, щоб&nbsp;значення швидкості руху, більші за допустиму максимальну&nbsp;швидкість руху, відображалися червоним кольором.</p>
+<p style="word-spacing: 1.1px;">3) Побудуйте діаграму типу Графік, в якій&nbsp;як категорії використовуються дані&nbsp;з діапазону клітинок А5:А7, а як значення &mdash; дані з діапазону клітинок В5:В7.</p>
+<p style="word-spacing: 1.1px;">4) Випробуйте модель: порівняйте отримані значення параметрів руху автомобіля зі значеннями на рис. 2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-241.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5) Проведіть комп&rsquo;ютерний експеримент: визначте, на якій секунді&nbsp;автомобіль досягає максимальної швидкості руху; внесіть такі&nbsp;зміни до початкових значень моделі, щоб обчислити час, потрібний&nbsp;автомобілю для гальмування до повної зупинки.</p>
+<p style="word-spacing: 1.1px;">6) Збережіть файл з іменем Вправа 28 у відповідній папці. Завершіть&nbsp;роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 28 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Підручник Інформатика 9 клас Бондаренко читати онлайн (нова програма 2017)</a></li><li><a href="680-rozvyazuvannya-kompetentnsnih-zadach.html">Розв'язування компетентнісних задач</a></li><li><a href="671-karti-znan.html">Карти знань</a></li><li><a href="669-stvorennya-y-opracyuvannya-modeley-na-prikladah-zadach-z-rznih-predmetnih-galuzey-modelyuvannya-fzichnih-yavisch.html">Створення й опрацювання моделей на прикладах задач із різних предметних гал ...</a></li><li><a href="667-kompyuterne-modelyuvannya-obyektv-procesv-nformacyn-model.html">Комп’ютерне моделювання об’єктів і процесів. Інформаційні моделі</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Елемент керування. Багаторядкове текстове поле &raquo; mozok.click</title>
+<meta name="description" content="Ознайомимось із властивостями компонента Memo, які дозволяють працювати з масивами рядків.Властивості компонента Memo" />
+<meta name="keywords" content="компонента, рядків, Властивості, масивами, дозволяють, властивостями, Ознайомимось, працювати" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='673-element-keruvannya-bagatoryadkove-tekstove-pole.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Елемент керування. Багаторядкове текстове поле</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb673").Button("#infc673"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb673" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc673" class="infcont">
+			<ul>
+				<li><i>Переглядів: 12650</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 06:31</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-673'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="673-element-keruvannya-bagatoryadkove-tekstove-pole.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '673'); return false;">1</a></li>
+		<li><a href="673-element-keruvannya-bagatoryadkove-tekstove-pole.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '673'); return false;">2</a></li>
+		<li><a href="673-element-keruvannya-bagatoryadkove-tekstove-pole.html#" title="Средне" class="r3-unit" onclick="doRate('3', '673'); return false;">3</a></li>
+		<li><a href="673-element-keruvannya-bagatoryadkove-tekstove-pole.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '673'); return false;">4</a></li>
+		<li><a href="673-element-keruvannya-bagatoryadkove-tekstove-pole.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '673'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 06:31</i></a></span>
+	<h3 class="btl"><span id="news-title">Елемент керування. Багаторядкове текстове поле</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-673" style="display:inline;"><p>Компонент Memo</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-277.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">є вікном редагування багаторядкового тексту. Ви вже працювали з властивістю Text компонента Memo, яка дозволяє отримати доступ до тексту як до цілого:</p>
+<p style="word-spacing: 1.1px;">Memol.Text := 'Це текстовий рядок у вікні редагування';</p>
+<p style="word-spacing: 1.1px;">Ознайомимось із властивостями компонента Memo, які дозволяють працювати з масивами рядків.</p>
+<p style="word-spacing: 1.1px;">Властивості компонента Memo</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Назва</p>
+</td>
+<td>
+<p>Призначення</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lines</p>
+</td>
+<td>
+<p>Містить список наявних елементів</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lines.Count</p>
+</td>
+<td>
+<p>Визначає кількість елементів у списку Lines. Елементи мають номери від 0 до Lines.Count - 1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ScrollBars</p>
+</td>
+<td>
+<p>Визначає наявність смуг прокручування</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Текст у полі Memo розміщується по рядках. Рядки в списку Memo утворюють масив Lines типу TString.</p>
+<p style="word-spacing: 1.1px;">Щоб увести в поле Memo рядки в режимі розробки, потрібно:</p>
+<p style="word-spacing: 1.1px;">1) виділити на формі елемент керування&nbsp;Memo (рис. 33.1);</p>
+<p style="word-spacing: 1.1px;">2) у вікні Інспектор об'єктів клацнути кнопку</p>
+<p style="word-spacing: 1.1px;">праворуч від властивості Lines;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-278.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3) у вікні Редактор рядків увести рядки&nbsp;(рис. 33.2);</p>
+<p style="word-spacing: 1.1px;">4) клацнути кнопку ОК.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Після клацання кнопки ОК вміст вікна відобразиться в полі Memo.</p>
+<p style="word-spacing: 1.1px;">Тепер до i-го рядка можна звернутися за його індексом Memo1.Lines[i].</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-279.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У вікні Редактор рядків можна впорядкувати рядки за зростанням або спаданням (рис. 33.3, а). Результат упорядкування рядків за зростанням&nbsp;наведено на рис. 33.3, б.</p>
+<p style="word-spacing: 1.1px;">Упорядкування елементів списку Memol.Lines відбувається у лексикографічному порядку, оскільки вони мають тип String.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-280.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Додавання рядків під час виконання програми</p>
+<p style="word-spacing: 1.1px;">Додавати елементи до списку Memol.Lines можна в ході виконання програми. Значення кожного елемента списку слід уводити в окремому&nbsp;рядку поля Memo і після введення кожного рядка натискати клавішу Enter.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">На етапі розробки інтерфейсу за допомогою Редактора рядків до поля Memol додано 4 рядки (рис. 33.4, а). У процедурі обробки події &#111;nclick для кнопки у поле Editi виводиться значення властивості Memol.Lines.Count. Якщо в ході виконання програми в поле Memol&nbsp;з клаватури додати новий рядок, значення властивості Memol.Lines.Count&nbsp;збільшиться на одиницю (рис. 33.4, б).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-281.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Значення Ьіпєб[і] доступні як для читання, так і для запису. Тому текст у полі Мето можна редагувати не тільки за допомогою клавіатури, а й програмним способом.</p>
+<p style="word-spacing: 1.1px;">Задати значення нульовому елементу масиву МетоІ.ипеБ (рис. 33.5):</p>
+<p style="word-spacing: 1.1px;">Мето1.ипе$[0] := 'Перший рядок';</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-282.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Методи компонента Memo</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Назва</p>
+</td>
+<td>
+<p>Виклик методу</p>
+</td>
+<td>
+<p>Призначення</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Add()</p>
+</td>
+<td>
+<p>Memo1 .Lines.Add(Text)</p>
+</td>
+<td>
+<p>Додавання нового рядка Text у кінець списку</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Insert()</p>
+</td>
+<td>
+<p>Memo1.Lines.Insert(N, Text)</p>
+</td>
+<td>
+<p>Вставка рядка Text перед рядком з індексом N</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Delete()</p>
+</td>
+<td>
+<p>Memo1 .Lines.Delete(N)</p>
+</td>
+<td>
+<p>Вилучення рядка з індексом N</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Clear</p>
+</td>
+<td>
+<p>Memo1.Clear</p>
+</td>
+<td>
+<p>Очищення вмісту поля Memo</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Додати елементи до масиву Memol.Lines:</p>
+<p style="word-spacing: 1.1px;">Memo1.Lines.Add(^e буде останній рядок');</p>
+<p style="word-spacing: 1.1px;">Memo1.Lines.Insert(2, 'Цей рядок буде третім'); // Відлік від нуля!</p>
+<p style="word-spacing: 1.1px;">Вилучити рядок з індексом і:</p>
+<p style="word-spacing: 1.1px;">Memol.Lines.Delete(i);</p>
+<p style="word-spacing: 1.1px;">Вивести значення елементів масиву words до поля Memol. var words: array[1..5] of String; i: Integer;&nbsp;begin {...}</p>
+<p style="word-spacing: 1.1px;">Memol.Clear;</p>
+<p style="word-spacing: 1.1px;">For i := 1 to 5 do</p>
+<p style="word-spacing: 1.1px;">Memol.Lines. Add(words[i]);</p>
+<p style="word-spacing: 1.1px;">end;</p>
+<p style="word-spacing: 1.1px;">Знайти суму цілих чисел, які вводяться з клавіатури у поле Memo. Кількість чисел не перевищує 100 (рис. 33.6).</p>
+<p style="word-spacing: 1.1px;">var Posl: array[1..100] of Integer; { масив для збереження чисел }</p>
+<p style="word-spacing: 1.1px;">N, i, Sum: Integer; begin</p>
+<p style="word-spacing: 1.1px;">N := Memol.Lines.Count; // кількість рядків { знаходження суми }</p>
+<p style="word-spacing: 1.1px;">For i := 1 to N do Posl[i] := StrToInt(Memo1.Lines[i - 1]); Sum := 0;</p>
+<p style="word-spacing: 1.1px;">For i :=1 to N do Sum := Sum + Posl[i];</p>
+<p style="word-spacing: 1.1px;">Edit1.Text := IntToStr(Sum); end;</p>
+<p style="word-spacing: 1.1px;">Знайти рядок '32' в масиві Memo1.Lines (рис. 33.7): var i: Integer;&nbsp;begin</p>
+<p style="word-spacing: 1.1px;">For i := 0 to Memo1.Lines.Count - 1 do begin</p>
+<p style="word-spacing: 1.1px;">If Memo1.Lines[i] = '32' Then Edit1.Text := 'Знайдено в рядку ' + IntToStr(i);&nbsp;end;</p>
+<p style="word-spacing: 1.1px;">end;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-283.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таким чином, компонент Memo є зручним інструментом для введення і виведення значень елементів одновимірного масиву.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. Яка властивість компонента Memo містить список наявних елементів?</p>
+<p style="word-spacing: 1.1px;">2. Як визначити кількість елементів у списку Memol. Lines?</p>
+<p style="word-spacing: 1.1px;">3. Як запрограмувати додавання елемента в кінець списку поля&nbsp;Memol?</p>
+<p style="word-spacing: 1.1px;">4. Як запрограмувати вставляння елемента перед п&rsquo;ятим рядком&nbsp;у списку поля Memol?</p>
+<p style="word-spacing: 1.1px;">5. Запишіть оператор, призначений для виведення п&rsquo;ятого рядка зі&nbsp;списку Memol у текстове поле Editi.</p>
+<p style="word-spacing: 1.1px;">6. Складіть програму для розв&rsquo;язання задачі: &laquo;Масив Numbers[1..10]&nbsp;заповнити випадковими цілими числами в межах від 1 до 100&nbsp;і вивести значення елементів масиву в поле Memol. Визначити,&nbsp;в якому рядку списку Memol знаходиться елемент, що дорівнює&nbsp;цілому числу К (значення К уводиться в поле Editi).&raquo;</p>
+<p style="word-spacing: 1.1px;">Вправа 33</p>
+<p style="word-spacing: 1.1px;">Створити програму-перекладач з української мови на англійську.</p>
+<p style="word-spacing: 1.1px;">1) Створіть новий проект. Змініть значення властивості Caption форми і розмістіть на формі два компоненти Memo згідно з рисунком. Властивості ScrollBars елементів Memol, Memo2 надайте&nbsp;значення ssVertical для появи вертикальних смуг прокручування.&nbsp;За допомогою Редактора рядків масив Memol.Lines заповніть українськими словами, масив Memo2.Lines &mdash; їхніми англійськими&nbsp;відповідниками.</p>
+<p style="word-spacing: 1.1px;">Розмістіть на формі компоненти Label, Button, Edit і налаштуйте їхні властивості згідно з рисунком.</p>
+<p style="word-spacing: 1.1px;">2) Опишіть глобальні змінні для збереження масивів слів:&nbsp;var Forml: TForml;</p>
+<p style="word-spacing: 1.1px;">Eng_words, Ukr_words: array[0..100] of String;</p>
+<p style="word-spacing: 1.1px;"><span style="word-spacing: 1.1px; letter-spacing: 0px;">3) Створіть процедуру обробки події &#111;nclick для кнопки Заповнити масиви слів. Запишіть оператори для заповнення масивів&nbsp;</span>Ukr_words і Eng_words масивами</p>
+<p style="word-spacing: 1.1px;">Memo1.Lines і Memo2.Lines:</p>
+<p style="word-spacing: 1.1px;">var i: Integer;</p>
+<p style="word-spacing: 1.1px;">begin</p>
+<p style="word-spacing: 1.1px;">For i := 0 to Memo1.Lines.Count &ndash; 1 do</p>
+<p style="word-spacing: 1.1px;">begin</p>
+<p style="word-spacing: 1.1px;">Ukr_words[i] := Memo1.Lines[i];</p>
+<p style="word-spacing: 1.1px;">Eng_words[i] := Memo2.Lines[i];</p>
+<p style="word-spacing: 1.1px;">end;</p>
+<p style="word-spacing: 1.1px;">end;</p>
+<p style="word-spacing: 1.1px;">4) Створіть процедуру обробки події &#111;nclick для кнопки Перекласти&nbsp;англійською. Запишіть оператори для перекладу українського слова на англійську мову:</p>
+<p style="word-spacing: 1.1px;">var i: Integer; S: String;</p>
+<p style="word-spacing: 1.1px;">begin</p>
+<p style="word-spacing: 1.1px;">S := Edit1.Text; // вводимо слово, яке бажаємо перекласти</p>
+<p style="word-spacing: 1.1px;">i := &ndash;1;</p>
+<p style="word-spacing: 1.1px;">Repeat i := i + 1; // збільшуємо індекс елемента</p>
+<p style="word-spacing: 1.1px;">Until Ukr_words[i] = S; // поки не знайдемо слово S</p>
+<p style="word-spacing: 1.1px;">Edit2.Text := Eng_words[i]; { виводимо елемент із масиву англійських</p>
+<p style="word-spacing: 1.1px;">слів із таким індексом, як у слова S у масиві українських слів }</p>
+<p style="word-spacing: 1.1px;">end;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-284.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5) Створіть процедуру обробки події Onйick для кнопки Перекласти&nbsp;українською.</p>
+<p style="word-spacing: 1.1px;">6) Перевірте роботу програми. Збережіть проект у папці Вправа 33.&nbsp;Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 33 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="679-opracyuvannya-dvovimrnih-masivv-danih.html">Опрацювання двовимірних масивів даних</a></li><li><a href="678-dvovimrniy-masiv-danih.html">Двовимірний масив даних</a></li><li><a href="675-vdobrazhennya-danih-u-tablichny-form.html">Відображення даних у табличній формі</a></li><li><a href="674-algoritmi-opracyuvannya-tablichnih-velichin.html">Алгоритми опрацювання табличних величин</a></li><li><a href="672-odnovimrniy-masiv-danih.html">Одновимірний масив даних</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

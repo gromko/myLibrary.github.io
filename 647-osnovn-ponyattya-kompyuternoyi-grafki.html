@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Основні поняття комп'ютерної графіки &raquo; mozok.click</title>
+<meta name="description" content="ПОВТОРЮЄМОМабуть, ви любите читати ілюстровані книжки, дивитися анімаційні фільми, грати в компютерні ігри. Сьогодні їх створюють із використанням компютера.Компютерною графікою зазвичай наз" />
+<meta name="keywords" content="зображень, називають, створення, редакторі, графікою, зображення, графічному, інструменти, використовували, побудови, малюнки, опрацювання, фрагменти, 'єктами, вилучати, також, створювати, операції, нескладні, обертати" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='647-osnovn-ponyattya-kompyuternoyi-grafki.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Основні поняття комп'ютерної графіки</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb647").Button("#infc647"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb647" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc647" class="infcont">
+			<ul>
+				<li><i>Переглядів: 12179</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 05:47</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-647'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="647-osnovn-ponyattya-kompyuternoyi-grafki.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '647'); return false;">1</a></li>
+		<li><a href="647-osnovn-ponyattya-kompyuternoyi-grafki.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '647'); return false;">2</a></li>
+		<li><a href="647-osnovn-ponyattya-kompyuternoyi-grafki.html#" title="Средне" class="r3-unit" onclick="doRate('3', '647'); return false;">3</a></li>
+		<li><a href="647-osnovn-ponyattya-kompyuternoyi-grafki.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '647'); return false;">4</a></li>
+		<li><a href="647-osnovn-ponyattya-kompyuternoyi-grafki.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '647'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 05:47</i></a></span>
+	<h3 class="btl"><span id="news-title">Основні поняття комп'ютерної графіки</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-647" style="display:inline;"><p>Із розвитком інформаційних технологій комп&rsquo;ютерна графіка набула поширення в усьому світі. Сьогодні вона застосовується в різних сферах&nbsp;людської діяльності: на виробництві, в науці, медицині, рекламі, поліграфії та ін. Зокрема, вам добре відомі здобутки комп&rsquo;ютерної графіки&nbsp;у створенні спецефектів у кінострічках, комп&rsquo;ютерних іграх тощо.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерна графіка &mdash; це розділ інформатики, в якому вивчаються методи створення й опрацювання зображень за допомогою комп&rsquo;ютера.</p>
+<p style="word-spacing: 1.1px;">Ви знаєте, що дані, які опрацьовує комп&rsquo;ютер, кодують за допомогою чисел. Як же закодувати зображення?</p>
+<p style="word-spacing: 1.1px;">Розглянемо два способи кодування зображення: растровий і векторний, які визначають особливості растрової й векторної графіки.</p>
+<p style="word-spacing: 1.1px;">Растрові зображення</p>
+<p style="word-spacing: 1.1px;">Придивившись до зображення на екрані монітора, можна помітити, що воно складається з окремих крапок, які називають пікселями (від англ. picture&nbsp;element &mdash; елемент малюнка). Піксель є найменшим&nbsp;елементом зображення.</p>
+<p style="word-spacing: 1.1px;">Якщо на аркуші в клітинку намалюємо квітку, зафарбовуючи певним кольором окремі клітинки, то&nbsp;отримаємо зображення, як наведено на рис. 7.1.</p>
+<p style="word-spacing: 1.1px;">Растрове зображення &mdash; це зображення, що являє собою набір пікселів, кожний із яких має певний колір.</p>
+<p style="word-spacing: 1.1px;">Растрове зображення нагадує таблицю з пікселів. Розміри растрового зображення зазвичай задають як кількість пікселів по горизонталі та&nbsp;вертикалі, наприклад: 100 х 100, 1200 х 800.</p>
+<p style="word-spacing: 1.1px;">Щоб закодувати двоколірне (наприклад, чорно-біле) зображення, достатньо колір кожного пікселя позначити числами 0 (перший&nbsp;колір) і 1 (другий колір).</p>
+<p style="word-spacing: 1.1px;">Отже, для кодування кольору пікселя двоколірного зображення достатньо 1 біта. Про таке зображення говорять, що воно має глибину кольору 1 біт.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-25.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Глибина кольору &mdash; це кількість бітів, які використовуються для кодування певного кольору пікселя растрового зображення.</p>
+<p style="word-spacing: 1.1px;">Розглянемо зображення будинку, яке складається з пікселів восьми кольорів (рис. 7.2). Для кодування&nbsp;восьми кольорів достатньо чисел від 0 до 7, які можна&nbsp;подати двійковими послідовностями довжиною 3 біти.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Отже, глибина кольору такого зображення 3 біти.</p>
+<p style="word-spacing: 1.1px;">Побудуємо таблицю десяткових і двійкових кодів цих кольорів:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-26.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-27.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тепер є можливість зображення будинку закодувати послідовністю чисел &mdash; кодами кольорів пікселів, переліченими зліва направо рядок&nbsp;за рядком: 7, 7, 7, 7, 7, 3, 3, 7, 7, 7 і т. д. Для правильного відтворення закодованого зображення необхідно також знати його розміри,&nbsp;наприклад 35 рядків по 32 клітинки. Таким чином, довжина двійкового коду цього зображення становитиме: 35 х 32 х 3 = 3360 (бітів) або&nbsp;3360 : 8 = 420 (байтів).</p>
+<p style="word-spacing: 1.1px;">За глибини кольору 8 бітів (або 1 байт) можна закодувати 2<sup>8</sup>&nbsp;= 256 різних кольорів, а за глибини кольору 16 бітів (або 2 байти) &mdash; 2<sup>16</sup>, що&nbsp;дорівнює 65 536 кольорам. Проте для досягнення фотографічної якості&nbsp;потрібна більша глибина кольору &mdash; 24 біти (2<sup>24</sup>&nbsp;= 16 777 216 кольорів).</p>
+<p style="word-spacing: 1.1px;">Отже, у файлі растрового зображення зберігаються розміри зображення та коди кольорів усіх його пікселів.</p>
+<p style="word-spacing: 1.1px;">Зі збільшенням числа кольорів глибина кольору зростає, що за однакової кількості пікселів зображення приводить до збільшення обсягу файла.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Властивості растрових зображень</p>
+<p style="word-spacing: 1.1px;">До основних властивостей растрового зображення належать роздільність, кількість пікселів по горизонталі й вертикалі (розміри), кількість можливих кольорів.</p>
+<p style="word-spacing: 1.1px;">Роздільність зображення &mdash; величина, що показує, скільки пікселів зображення розміщується на одиниці довжини.</p>
+<p style="word-spacing: 1.1px;">Роздільність зображення вимірюють здебільшого у крапках на дюйм (dpi &mdash; dots per inch). За однакових геометричних розмірів зображення&nbsp;його якість залежить від роздільності. Адже чим більше пікселів припадає на одиницю довжини, тим більше окремих деталей можна зобразити.&nbsp;Оскільки поняття роздільності вживають щодо різних об&rsquo;єктів, слід розрізняти роздільність цифрового зображення, роздільність монітора, роздільну здатність принтера.</p>
+<p style="word-spacing: 1.1px;">Чим вищі вимоги до якості зображення, тим більшою має бути роздільність за однакових геометричних розмірів зображення.</p>
+<p style="word-spacing: 1.1px;">Розглянемо зображення однакових геометричних розмірів, які мають різну роздільність: 96,</p>
+<p style="word-spacing: 1.1px;">48, 24 пікселів на дюйм (рис. 7.3). Як бачимо, чим більше пікселів припадає на одиницю довжини, тим вищою є якість зображення.</p>
+<p style="word-spacing: 1.1px;">Для роботи з растровими зображеннями розроблено багато програм, які відрізняються набором засобів для редагування малюнків. Для початківців &mdash; Paint, KolourPaint; для професіоналів &mdash; Adobe Photoshop, GIMP та ін.</p>
+<p style="word-spacing: 1.1px;">Растрові зображення мають як переваги, так і недоліки (рис. 7.4).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-28.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На рис. 7.5 проілюстровано, як у растровому графічному редакторі погіршилась якість зображення кільця (а) після послідовного&nbsp;зменшення (б) і збільшення (в) у 10 разів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-29.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Векторні зображення та їхні властивості</p>
+<p style="word-spacing: 1.1px;">Якщо растрова графіка описує зображення за допомогою пікселів, то у векторній графіці базовим елементом є лінія.</p>
+<p style="word-spacing: 1.1px;">Векторне зображення &mdash; це зображення, що складається з графічних примітивів &mdash; геометричних об&rsquo;єктів (ліній, кіл, кривих тощо), які описуються математичними рівняннями.</p>
+<p style="word-spacing: 1.1px;">У файлі з векторним зображенням зберігаються дані про примітиви, необхідні для їх відтворення. Завдяки такій формі зберігання графічних&nbsp;даних файли мають порівняно невеликий обсяг, а окремі примітиви й зображення в цілому легко піддаються масштабуванню, зміні форми тощо.</p>
+<p style="word-spacing: 1.1px;">Під час кодування векторного зображення для кожного примітиву описують (рис. 7.6):</p>
+<p style="word-spacing: 1.1px;">1 &mdash; контур &mdash; лінію, що визначає його форму.</p>
+<p style="word-spacing: 1.1px;">Контур стає видимим тільки під час його редагування (див. про контур далі);</p>
+<p style="word-spacing: 1.1px;">2 &mdash; вигляд лінії (штрих), якою обведено контур;</p>
+<p style="word-spacing: 1.1px;">3 &mdash; заливку (заповнення) внутрішніх ділянок&nbsp;контуру.</p>
+<p style="word-spacing: 1.1px;">Зображення будинку складається з п&rsquo;яти прямокутників, трикутника і півкруга (рис. 7.7). Опишемо властивості одного з об&rsquo;єктів &mdash; дверей: контур об&rsquo;єкта &mdash; прямокутний; ширина об&rsquo;єкта &mdash; 0,68 см, висота об&rsquo;єкта &mdash; 1,05 см; колір&nbsp;штриха &mdash; 2, товщина штриха &mdash; 0,8 мм; заповнення (колір) &mdash; 4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-30.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для роботи з векторними зображеннями призначено такі програми, як Inkscape, CorelDRAW, Adobe Illustrator та ін.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Властивості векторних зображень</p>
+<p style="word-spacing: 1.1px;">Розмір файла з векторним зображенням перш за все залежить від кількості окремих об&rsquo;єктів, із яких це зображення утворено.</p>
+<p style="word-spacing: 1.1px;">Основна перевага векторної графіки полягає у можливості довільно масштабувати й обертати зображення без втрати якості.</p>
+<p style="word-spacing: 1.1px;">Під час формування векторного зображення замість суцільних кольорів можна використовувати градієнти, тобто плавні переходи від одного кольору до іншого. Реалістичності зображенням також додає розмивання&nbsp;окремих елементів, імітація тіні тощо.</p>
+<p style="word-spacing: 1.1px;">Порівняємо особливості растрового й векторного зображень (рис. 7.8).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-31.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Колірні моделі</p>
+<p style="word-spacing: 1.1px;">Кольорове зображення на екрані монітора або телевізора формується шляхом змішування трьох основних кольорів: червоного, зеленого й синього. Світло таких кольорів випромінюють, наприклад, зернятка люмінофору,&nbsp;з яких складається речовина, що світиться, створюючи зображення. Якщо&nbsp;розміщені поряд зернятка не світяться, то бачимо чорний колір, а якщо&nbsp;світяться на повну яскравість &mdash; білий. Змінюючи яскравість окремих зерняток, отримуємо інші кольори.</p>
+<p style="word-spacing: 1.1px;">У комп&rsquo;ютерній графіці є різні способи розкладання кольорів на основі певних властивостей кольору або, як кажуть, різні колірні моделі.</p>
+<p style="word-spacing: 1.1px;">Колірна модель &mdash; система кодування кольорів, яка використовується для зберігання, виведення на екран та друку зображення.</p>
+<p style="word-spacing: 1.1px;">Розглянемо три найпоширеніші колірні моделі RGB, CMYK і HSB та принципи кодування кольору в них.</p>
+<p style="word-spacing: 1.1px;">У моделі RGB кольори отримують змішуванням трьох базових кольорів (рис. 7.9): червоного (англ. Red),&nbsp;зеленого (Green) і синього (Blue).</p>
+<p style="word-spacing: 1.1px;">Яскравість кожного з базових кольорів кодується цілим числом у межах від 0 (колір відсутній) до</p>
+<p style="word-spacing: 1.1px;">255 (яскравість найбільша). Таким чином, отримуємо</p>
+<p style="word-spacing: 1.1px;">256 х 256 х 256 = 16 777 216 різних кольорів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-32.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У моделі CMYK колір отримують змішуванням чотирьох складових: блакитної (Cyan), пурпурової (Magenta), жовтої (Yellow) і чорної (blacK).</p>
+<p style="word-spacing: 1.1px;">Вміст кожної зі складових кодується числом від 0 до 100. При цьому нульове значення всіх складових&nbsp;дає білий колір, а значення 100 &mdash; чорний. Ця модель&nbsp;застосовується для підготовки зображень до кольорового друку. Перші три складові утворено вилученням із білого кольору базових кольорів моделі RGB:&nbsp;блакитний = білий - червоний, пурпуровий = білий - зелений,&nbsp;жовтий = білий - синій (рис. 7.10).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-33.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Раніше для друку застосовували модель CMY і, відповідно, блакитне, пурпурове і жовте чорнило. Під час друку чорний колір і відтінки сірого отримували змішуванням цих чорнил у рівних частинах. Отримати чистий чорний колір таким чином не можна, і його додали окремо.&nbsp;У моделі HSB цілими числами кодуються такі&nbsp;характеристики кольору: відтінок (колірний тон) (Hue),&nbsp;насиченість (Saturation) та яскравість (Brightness)</p>
+<p style="word-spacing: 1.1px;">(рис. 7.11). У цій моделі будь-який колір фактично отримують додаванням до колірного тону певного відсотка білого та чорного кольорів. Вважається, що ця&nbsp;колірна модель ґрунтується на особливостях сприйняття кольору людиною.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-34.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Формати файлів растрових і векторних зображень</p>
+<p style="word-spacing: 1.1px;">Як ви вже знаєте, формат файла &mdash; це набір правил запису даних у ньому. Формат графічного файла визначає спосіб кодування даних зображення (растровий або векторний), а також алгоритм їхнього стиснення. Стиснення&nbsp;найчастіше застосовується до растрових зображень, оскільки вони мають&nbsp;порівняно великий обсяг даних.</p>
+<p style="word-spacing: 1.1px;">Розглянемо деякі формати графічних файлів.</p>
+<p style="word-spacing: 1.1px;">BMP &mdash; формат застосовують для збереження растрових зображень без стиснення, тому файли здебільшого мають великий обсяг. Він дає змогу&nbsp;використовувати глибину кольору до 64 бітів.</p>
+<p style="word-spacing: 1.1px;">PNG &mdash; формат застосовують для збереження растрових зображень зі стисненням без втрати якості. Його палітра підтримує від 256 до 2<sup>48</sup>&nbsp;(глибина кольору 48 бітів) кольорів, а також прозорість. Колір зображення&nbsp;в цьому форматі відтворюється однаково на будь-якому комп&rsquo;ютері.</p>
+<p style="word-spacing: 1.1px;">JPG &mdash; формат застосовують для збереження растрових зображень зі стисненням за рахунок втрати їхньої якості: менший файл &mdash; нижча якість.</p>
+<p style="word-spacing: 1.1px;">Після збереження початковий вигляд зображення відтворити неможливо. Завдяки порівняно малим розмірам файлів формат застосовують для зберігання цифрових фотографій, для зображень на веб-сторінках тощо.</p>
+<p style="word-spacing: 1.1px;">GIF &mdash; формат використовують переважно для стиснення растрових зображень, які містять здебільшого одноколірні ділянки (логотипи, написи, схеми). Підтримує палітру всього з 256 вибраних кольорів, проте&nbsp;дозволяє зберігати прозорість окремих ділянок зображення й анімацію.</p>
+<p style="word-spacing: 1.1px;">SVG &mdash; формат використовується багатьма програмами, зокрема й векторним графічним редактором Inkscape. Файл може містити графічні примітиви, растрові малюнки, текст, анімацію, інтерактивні елементи.</p>
+<p style="word-spacing: 1.1px;">CGM, WMF, EPS підтримують векторну і растрову графіку.</p>
+<p style="word-spacing: 1.1px;">Популярні програми для роботи з векторною графікою мають власні формати: CDR &mdash; програма CorelDRAW, AI &mdash; програма Adobe Illustrator.</p>
+<p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. У чому полягає кодування растрового зображення?</p>
+<p style="word-spacing: 1.1px;">2. Які переваги й недоліки растрового зображення?</p>
+<p style="word-spacing: 1.1px;">3. Поясніть сутність кодування векторного зображення.</p>
+<p style="word-spacing: 1.1px;">4. Які переваги й недоліки векторного зображення?</p>
+<p style="word-spacing: 1.1px;">5. Опишіть особливості розглянутих колірних моделей.</p>
+<p style="word-spacing: 1.1px;">6. Що описують для кожного примітиву під час кодування векторного зображення?</p>
+<p style="word-spacing: 1.1px;">7. Назвіть найпоширеніші формати растрових зображень.</p>
+<p style="word-spacing: 1.1px;">Вправа 7</p>
+<p style="word-spacing: 1.1px;">1. Скільки байтів потрібно для зберігання растрового зображення&nbsp;розмірами 200 х 100 пікселів, якщо колір кодується 4 бітами?</p>
+<p style="word-spacing: 1.1px;">2. Скільки байтів потрібно для двійкового кодування 16-колірного&nbsp;растрового зображення розмірами 200 х 150 пікселів?</p>
+<p style="word-spacing: 1.1px;">3. Ярлик на робочому столі &mdash; це растрове зображення розмірами&nbsp;30 х 20 пікселів. Скільки байтів потрібно для його двійкового кодування, якщо це зображення виконано у палітрі з 256 кольорів?</p>
+<p style="word-spacing: 1.1px;">4. Визначте двійковий код, за допомогою якого зберігається інформація&nbsp;про фрагмент растрового зображення&nbsp;з 6 пікселів за глибини кольору 3 біти.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-35.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 7 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="682-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="670-modelyuvannya-nteryeru.html">Моделювання інтер'єру</a></li><li><a href="663-rozmtka-tablic-zasobami-movi-html.html">Розмітка таблиць засобами мови HTML</a></li><li><a href="662-malyunki-ta-gperposilannya-na-veb-stornc.html">Малюнки та гіперпосилання на веб-сторінці</a></li><li><a href="609-pobudova-zobrazhen-u-lnzah-deyak-optichn-pristroyi-formula-tonkoyi-lnzi.html">Побудова зображень у лінзах. Деякі оптичні пристрої. Формула тонкої лінзи</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

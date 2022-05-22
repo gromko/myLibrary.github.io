@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Управління показом презентації &raquo; mozok.click</title>
+<meta name="description" content="Для більш гнучкого керування показом презентації слайди групують, створюючи довільні покази.Довільний показ  це іменована послідовність слайдів презентації, призначених для показу. Один слай" />
+<meta name="keywords" content="презентації, показу, призначених, слайдів, послідовність, слайд, одночасно, показів, довільних, декілька, іменована, входити, показ, слайди, показом, керування, гнучкого, групують, створюючи, Довільний" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='654-upravlnnya-pokazom-prezentacyi.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Управління показом презентації</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb654").Button("#infc654"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb654" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc654" class="infcont">
+			<ul>
+				<li><i>Переглядів: 7907</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 05:57</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-654'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="654-upravlnnya-pokazom-prezentacyi.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '654'); return false;">1</a></li>
+		<li><a href="654-upravlnnya-pokazom-prezentacyi.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '654'); return false;">2</a></li>
+		<li><a href="654-upravlnnya-pokazom-prezentacyi.html#" title="Средне" class="r3-unit" onclick="doRate('3', '654'); return false;">3</a></li>
+		<li><a href="654-upravlnnya-pokazom-prezentacyi.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '654'); return false;">4</a></li>
+		<li><a href="654-upravlnnya-pokazom-prezentacyi.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '654'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 05:57</i></a></span>
+	<h3 class="btl"><span id="news-title">Управління показом презентації</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-654" style="display:inline;"><p>Нескладні презентації зазвичай мають лінійну структуру, за якої слайди демонструються в порядку їх розміщення у файлі у звичайному&nbsp;режимі чи в режимі сортувальника слайдів.</p>
+<p style="word-spacing: 1.1px;">Довільні покази слайдів</p>
+<p style="word-spacing: 1.1px;">Для більш гнучкого керування показом презентації слайди групують, створюючи довільні покази.</p>
+<p style="word-spacing: 1.1px;">Довільний показ &mdash; це іменована послідовність слайдів презентації, призначених для показу. Один слайд може входити одночасно в декілька довільних показів.</p>
+<p style="word-spacing: 1.1px;">У презентації для захисту проекту, наприклад із біології, можна створити довільні покази &laquo;Тварини&raquo;, &laquo;Дерева&raquo;, &laquo;Хвойні&raquo;, &laquo;Листяні&raquo; тощо.</p>
+<p style="word-spacing: 1.1px;">Довільні покази формують тоді, коли слайди презентації вже готові.</p>
+<p style="word-spacing: 1.1px;">Щоб створити новий довільний показ, потрібно:</p>
+<p style="word-spacing: 1.1px;">1) на вкладці Показ слайдів у групі Розпочати показ слайдів клацнути кнопку&nbsp;Настроюваний показ слайдів і вибрати&nbsp;команду Довільний показ;</p>
+<p style="word-spacing: 1.1px;">2) у діалоговому вікні Довільний показ&nbsp;(рис. 14.1) клацнути кнопку Створити;</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-159.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3) у вікні Визначення вибіркового показу (рис. 14.2) вибрати назву довільного показу та сформувати список слайдів, які до нього увійдуть.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-160.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">При клацанні кнопки Додати назва слайда додається до списку вибраних слайдів, при клацанні кнопки Видалити &mdash; вилучається зі списку.</p>
+<p style="word-spacing: 1.1px;">Для змінення послідовності слайдів у створюваному довільному показі призначено кнопки</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-161.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Використання гіперпосилань</p>
+<p style="word-spacing: 1.1px;">Як і на веб-сторінках, гіперпосилання в програмі PowerPoint дозволяють під час перегляду презентації переходити до певного слайда, веб-сторінки тощо.</p>
+<p style="word-spacing: 1.1px;">Гіперпосилання можна додати як до текстового, так і до графічного об'єктів.</p>
+<p style="word-spacing: 1.1px;">Для створення гіперпосилання потрібно:</p>
+<p style="word-spacing: 1.1px;">1) виділити потрібний об'єкт;</p>
+<p style="word-spacing: 1.1px;">2) вибрати на вкладці Вставлення в групі Посилання&nbsp;команду Гіперпосилання (рис. 14.3);</p>
+<p style="word-spacing: 1.1px;">3) у вікні Додавання гіперпосилання (рис. 14.4) у списку Зв'язати з вибрати, з чим буде пов'язане гіпер-посилання;</p>
+<p style="word-spacing: 1.1px;">4) клацнути кнопку ОК.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-162.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для додавання посилання для переходу на певний слайд (довільний показ) потрібно:</p>
+<p style="word-spacing: 1.1px;">1) у вікні Додавання гіперпосилання (рис. 14.4) вибрати варіант місцем&nbsp;у документі;</p>
+<p style="word-spacing: 1.1px;">2) вибрати назву слайда або довільного показу, який відкриватиметься&nbsp;при клацанні посилання.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-163.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">У випадку коли потрібно, щоб після довільного показу перегляд презентації продовжився зі слайда, на якому клацнули гіперпосилання, слід установити прапорець Показати та повернутися.</p>
+<p style="word-spacing: 1.1px;">Щоб змінити або видалити посилання, потрібно:</p>
+<p style="word-spacing: 1.1px;">1) виділити об&rsquo;єкт із посиланням (або встановити курсор у відповідному&nbsp;місці тексту);</p>
+<p style="word-spacing: 1.1px;">2) вибрати команду Гіперпосилання;</p>
+<p style="word-spacing: 1.1px;">3) у вікні Зміна гіперпросилання зробити потрібні налаштування або&nbsp;клацнути кнопку Видалити посилання;</p>
+<p style="word-spacing: 1.1px;">4) клацнути кнопку ОК.</p>
+<p style="word-spacing: 1.1px;">Елементи управління в презентації</p>
+<p style="word-spacing: 1.1px;">Окрім гіперпосилання, з текстовим або графічним об&rsquo;єктом можна пов&rsquo;язати певну дію, яка виконуватиметься при клацанні на об&rsquo;єкті або&nbsp;наведенні вказівника миші. Для цього слід виділити об&rsquo;єкт і вибрати на&nbsp;вкладці Вставлення в групі Посилання команду Дія (див. рис. 14.3).</p>
+<p style="word-spacing: 1.1px;">У вікні Настроювання дії потрібно вибрати одну зі вкладок: Після клацання мишею або При наведенні вказівника миші. Далі слід налаштувати дію, вибравши її зі списку Перейти за гіперпосиланням або призначивши запуск&nbsp;певної програми, встановленої на комп&rsquo;ютері.</p>
+<p style="word-spacing: 1.1px;">Серед фігур, які можна додати на слайд, є так звані кнопки дій (рис. 14.5), розміщені на вкладці Вставлення в групі Зображення. Як і гі-</p>
+<p style="word-spacing: 1.1px;">перпосилання, кнопки дій дозволяють переходити по слайдах і виконують певну дію. Так, кнопка</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-164.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">(У кінець) призначена для переходу до перегляду</p>
+<p style="word-spacing: 1.1px;">останнього слайда, кнопка</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-165.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">(Звук) &mdash; для початку відтворення звуку.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-166.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Варіанти показу презентації</p>
+<p style="word-spacing: 1.1px;">Плануючи розробку презентації, слід ураховувати, як буде здійснюватися керування її показом.</p>
+<p style="word-spacing: 1.1px;">Існує кілька способів показу презентації:</p>
+<p style="word-spacing: 1.1px;">&bull; керований доповідачем (повноекранний) &mdash; слайди змінює доповідач,&nbsp;користуючись мишею, пультом дистанційного керування або так званим поданням доповідача, зображеним на екрані іншого монітора;</p>
+<p style="word-spacing: 1.1px;">&bull; керований користувачем (віконний) &mdash; слайди виводяться у вікні, користувач змінює їх за допомогою смуги прокручування;</p>
+<p style="word-spacing: 1.1px;">&bull; автоматичний &mdash; змінення слайдів відбувається через певні проміжки&nbsp;часу, задані під час розробки.</p>
+<p style="word-spacing: 1.1px;">Розробник презентації має вибрати один із перелічених способів, уточнити додаткові параметри у вікні, яке відкривається командою Показ слайдів ^ Настроювання показу слайдів.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Друк презентації</p>
+<p style="word-spacing: 1.1px;">Залежно від потреби презентацію можна демонструвати на екрані або роздрукувати. У вікні Параметри сторінки можна вибрати один із типових&nbsp;розмірів екрана чи один зі стандартних форматів паперу відповідно.</p>
+<p style="word-spacing: 1.1px;">Щоб роздрукувати презентацію, потрібно у вікні Друк зі списку режимів вибрати потрібний (рис. 14.6): Слайди &mdash; друкується по одному&nbsp;слайду на сторінці; Видачі &mdash; один або більше слайдів на сторінці із&nbsp;датою і номером сторінки; Нотатки &mdash; один слайд на сторінці й додані&nbsp;до нього нотатки; Структура &mdash; структура презентації у вигляді багаторівневого списку.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-167.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. Як створити довільний показ?</p>
+<p style="word-spacing: 1.1px;">2. Що таке гіперпосилання?</p>
+<p style="word-spacing: 1.1px;">3. До яких елементів презентації можна додати гіперпосилання?</p>
+<p style="word-spacing: 1.1px;">4. Як додати до малюнка гіперпосилання?</p>
+<p style="word-spacing: 1.1px;">5. Що таке кнопки дій?</p>
+<p style="word-spacing: 1.1px;">6. Які є варіанти показу презентації?</p>
+<p style="word-spacing: 1.1px;">Вправа 14</p>
+<p style="word-spacing: 1.1px;">Сформувати до слайдів презентації довільні покази, додати гіпер-посилання.</p>
+<p style="word-spacing: 1.1px;">1) Запустіть програму PowerPoint, відкрийте файл з іменем Вправа 13.&nbsp;У режимі структури на першому слайді створіть список із переліком категорій слайдів. Наприклад, якщо презентація з біології:&nbsp;&laquo;Тварини&raquo;, &laquo;Свійські тварини&raquo;, &laquo;Дикі тварини&raquo;, &laquo;Дерева&raquo; тощо.</p>
+<p style="word-spacing: 1.1px;">2) Додайте довільні покази, що відповідають цим категоріям.</p>
+<p style="word-spacing: 1.1px;">3) На першому слайді зробіть гіперпосилання, призначені для&nbsp;перегляду довільних показів із поверненням на перший слайд.</p>
+<p style="word-spacing: 1.1px;">4) На кожен зі слайдів, окрім першого, додайте кнопку дії для&nbsp;повернення на перший слайд. Перегляньте презентацію.</p>
+<p style="word-spacing: 1.1px;">5) Збережіть документ у файлі з іменем Вправа 14 у відповідній&nbsp;папці. Завершіть роботу за комп'ютером.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 14 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">Практична робота 4</p>
+<p style="word-spacing: 1.1px;">Проектування та розробка презентацій за визначеними критеріями. Елементи&nbsp;керування презентаціями</p>
+<p style="word-spacing: 1.1px;">Завдання: створити презентацію &laquo;Фізичні величини: довідник&raquo; із використанням елементів керування.</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер зі встановленим редактором презентацій PowerPoint, текстовим процесором.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтеся правил безпеки.</p>
+<p style="word-spacing: 1.1px;">1. Підготуйте довідковий матеріал про фізичні величини, які вивчались у різних розділах курсу фізики 7-9 класів (по дві величини з розділів &laquo;Механічні явища&raquo;, &laquo;Теплові явища&raquo;, &laquo;Електричні&nbsp;явища&raquo;).</p>
+<p style="word-spacing: 1.1px;">2. Запустіть текстовий процесор і створіть таблицю за зразком:</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Розділ</p>
+</td>
+<td>
+<p>Назва</p>
+<p>величини</p>
+</td>
+<td>
+<p>Позна</p>
+<p>чення</p>
+</td>
+<td>
+<p>Оди</p>
+<p>ниця</p>
+</td>
+<td>
+<p>Означення</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Механіка</p>
+</td>
+<td>
+<p>Швидкість рівномірного руху</p>
+</td>
+<td>
+<p>v</p>
+</td>
+<td>
+<p>м/c</p>
+</td>
+<td>
+<p>Відношення пройденого шляху і, який пройшло тіло, до часу t,&nbsp;за який цей шлях було пройдено</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">3. Запустіть програму PowerPoint, застосуйте до презентації тему&nbsp;оформлення на власний розсуд. На першому (титульному) слайді&nbsp;введіть заголовок &laquo;Фізичні величини&raquo;, підзаголовок &laquo;довідник&raquo;,&nbsp;додайте дані про розробника презентації: ваші прізвище, ім'я,&nbsp;клас.</p>
+<p style="word-spacing: 1.1px;">4. Створіть другий слайд, додайте заголовок &laquo;Зміст&raquo; і створіть список розділів, за якими створюється довідник.</p>
+<p style="word-spacing: 1.1px;">5. Створіть третій слайд, додайте відомості про одну з фізичних величин: уведіть заголовок слайда &mdash; назву фізичної&nbsp;величини; розмістіть решту даних про неї на власний розсуд,&nbsp;раціонально використовуючи площу слайда; передбачте місце&nbsp;для малюнка.</p>
+<p style="word-spacing: 1.1px;">6. У режимі структури введіть список із п'яти фізичних величин.</p>
+<p style="word-spacing: 1.1px;">7. На отриманих слайдах розмістіть дані про ці фізичні величини.</p>
+<p style="word-spacing: 1.1px;">8. Для слайдів кожного розділу встановіть іншу тему оформлення.</p>
+<p style="word-spacing: 1.1px;">9. Створіть довільні покази зі слайдів кожного розділу.</p>
+<p style="word-spacing: 1.1px;">10. Додайте до елементів списку гіперпосилання на відповідні довільні покази. Передбачте повернення після довільного показу на&nbsp;слайд зі змістом.</p>
+<p style="word-spacing: 1.1px;">11. На слайди, що містять дані про фізичні величини, додайте кнопки дій для переходів на слайд зі змістом.</p>
+<p style="word-spacing: 1.1px;">12. Для кожної величини відшукайте малюнок, який, на вашу думку, її ілюструє, і додайте на відповідний слайд. Збережіть документ у файлі з іменем Практична робота 4 у відповідній папці.&nbsp;Завершіть роботу за комп'ютером.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: які переваги надає використання довільних показів, гіперпосилань та елементів керування переглядом.</p>
+<p style="word-spacing: 1.1px;">Практична робота 5</p>
+<p style="word-spacing: 1.1px;">Розробка презентацій з елементами анімації, відеокліпами, звуковими ефектами&nbsp;та мовним супроводом</p>
+<p style="word-spacing: 1.1px;">Завдання: створити презентацію з мультимедійним вмістом. Обладнання: комп'ютер зі встановленим редактором презентацій&nbsp;PowerPoint, навушники, мікрофон.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтеся правил безпеки. Завдання 1. Створити презентацію на тему &laquo;Принципи кодування векторного зображення&raquo; із застосуванням анімаційних і звукових ефектів.</p>
+<p style="word-spacing: 1.1px;">1. Запустіть програму PowerPoint, уведіть заголовок &laquo;Векторне кодування&raquo;, додайте об&rsquo;єкт WordArt із вашим прізвищем та ім&rsquo;ям.</p>
+<p style="word-spacing: 1.1px;">2. Додайте до об'єктів слайда такі анімаційні ефекти, щоб при клацанні мишею заголовок зміщувався вгору, а об'єкт WordArt одночасно зменшувався і розташовувався в нижньому правому куті.</p>
+<p style="word-spacing: 1.1px;">Підказка. До об&rsquo;єкта WordArt слід додати два анімаційні ефекти: для переміщення шляхом та змінення розміру (із групи ефектів Виділення).</p>
+<p style="word-spacing: 1.1px;">3. Додайте до одного з анімаційних ефектів звуковий ефект на власний розсуд.</p>
+<p style="word-spacing: 1.1px;">4. За текстом підручника підготуйте повідомлення за темою презентації та додайте на слайд.</p>
+<p style="word-spacing: 1.1px;">5. Налаштуйте анімаційні ефекти об&rsquo;єктів на власний розсуд.</p>
+<p style="word-spacing: 1.1px;">6. Знайдіть в Інтернеті малюнки, що ілюструють тему презентації,&nbsp;та додайте їх на слайд.</p>
+<p style="word-spacing: 1.1px;">7. Перегляньте презентацію, доопрацюйте в разі потреби. Збережіть&nbsp;документ у файлі з іменем Практична робота 5_1 у відповідній&nbsp;папці.</p>
+<p style="word-spacing: 1.1px;">Завдання 2. Створити презентацію на тему &laquo;Мої музичні вподобання&raquo; про творчість улюбленого виконавця (виконавиці) або музичного гурту.</p>
+<p style="word-spacing: 1.1px;">1. На першому (титульному) слайді зазначте ім&rsquo;я виконавця (назву&nbsp;гурту) і додайте фотографію, введіть дані про розробника презентації: ваші прізвище, ім&rsquo;я, клас.</p>
+<p style="word-spacing: 1.1px;">2. Налаштуйте анімаційні ефекти на власний розсуд.</p>
+<p style="word-spacing: 1.1px;">3. Додайте звуковий фрагмент (10 с) із пісні обраного виконавця&nbsp;(гурту). Забезпечте автоматичне відтворення фрагмента до моменту переходу на наступний слайд.</p>
+<p style="word-spacing: 1.1px;">4. На другому слайді розмістіть текстове повідомлення про творчість&nbsp;виконавця (гурту) і додайте мовний супровід, під&rsquo;єднавши мікрофон і записавши особисто прочитаний текст.</p>
+<p style="word-spacing: 1.1px;">5. На третьому слайді розмістіть відеокліп виконавця (гурту).</p>
+<p style="word-spacing: 1.1px;">6. Перегляньте презентацію, доопрацюйте в разі потреби. Збережіть&nbsp;документ у файлі з іменем Практична робота 5_2 у відповідній&nbsp;папці. Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: для чого використовують анімаційні та звукові ефекти; мультимедійний вміст яких видів можна додати до презентації.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="673-element-keruvannya-bagatoryadkove-tekstove-pole.html">Елемент керування. Багаторядкове текстове поле</a></li><li><a href="659-napovnennya-personalnogo-navchalnogo-seredovischa.html">Наповнення персонального навчального середовища</a></li><li><a href="653-anmacya-vdeo-ta-zvuk-u-prezentacyah.html">Анімація, відео та звук у презентаціях</a></li><li><a href="652-maketi-slaydv-dagrami.html">Макети слайдів. Діаграми</a></li><li><a href="651-proektuvannya-ta-rozrobka-prezentacyi.html">Проектування та розробка презентації</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

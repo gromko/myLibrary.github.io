@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Поняття комп'ютерної публікації &raquo; mozok.click</title>
+<meta name="description" content="ПОВТОРЮЄМОПрограми для роботи з текстом мають різні можливості. У текстових редакторів (наприклад, Блокнот) можливості мінімальні: розмір і шрифт символів задаються для всього документа, пра" />
+<meta name="keywords" content="можливості, документа, текстових, основні, абзац, текстового, форматування, основними, Office, документ, Назвіть, символ, властивості, обєкти, обєктів, містити, наприклад, текстом, мають, редакторів" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='655-ponyattya-kompyuternoyi-publkacyi.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Поняття комп'ютерної публікації</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb655").Button("#infc655"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb655" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc655" class="infcont">
+			<ul>
+				<li><i>Переглядів: 4705</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 05:59</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-655'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="655-ponyattya-kompyuternoyi-publkacyi.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '655'); return false;">1</a></li>
+		<li><a href="655-ponyattya-kompyuternoyi-publkacyi.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '655'); return false;">2</a></li>
+		<li><a href="655-ponyattya-kompyuternoyi-publkacyi.html#" title="Средне" class="r3-unit" onclick="doRate('3', '655'); return false;">3</a></li>
+		<li><a href="655-ponyattya-kompyuternoyi-publkacyi.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '655'); return false;">4</a></li>
+		<li><a href="655-ponyattya-kompyuternoyi-publkacyi.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '655'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 05:59</i></a></span>
+	<h3 class="btl"><span id="news-title">Поняття комп'ютерної публікації</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-655" style="display:inline;"><p style="word-spacing: 1.1px;">Програми для створення публікацій</p>
+<p style="word-spacing: 1.1px;">Ви вмієте створювати вітальні листівки, запрошення, оголошення тощо за допомогою текстового процесора чи графічного редактора. Для&nbsp;створення публікацій зі складною структурою існують спеціальні програмні засоби &mdash; видавничі системи.</p>
+<p style="word-spacing: 1.1px;">Публікація (від лат. риЬІіко &mdash; проголошувати публічно) &mdash; це документ, який містить текстові та/або графічні матеріали, призначений для оприлюднення шляхом друку або поширення в електронному вигляді.</p>
+<p style="word-spacing: 1.1px;">Види публікацій</p>
+<p style="word-spacing: 1.1px;">Поняття публікації охоплює дуже широкий спектр різноманітних документів, які, залежно від способу зберігання, бувають друкованими&nbsp;або електронними (розповсюджуються за допомогою електронних носіїв або мережі Інтернет).</p>
+<p style="word-spacing: 1.1px;">Комп'ютерна публікація &mdash; публікація, підготовлена з використанням комп&rsquo;ютера.</p>
+<p style="word-spacing: 1.1px;">Розглянемо деякі види публікацій.</p>
+<p style="word-spacing: 1.1px;">Газета &mdash; періодичне видання, розміщене на одному або більше аркушах, яке містить текстові&nbsp;матеріали (статті), можливо, з ілюстраціями. Сторінки газети не скріплюють, а складають удвоє.</p>
+<p style="word-spacing: 1.1px;">Журнал &mdash; періодичне багатосторінкове видання, сторінки якого скріплено між собою. В більшості випадків розмір сторінки журналу менший, ніж у газети, а якість паперу і друку вища.</p>
+<p style="word-spacing: 1.1px;">Книга &mdash; неперіодичне видання обсягом більше ніж 48 сторінок, скріплених між собою.</p>
+<p style="word-spacing: 1.1px;">Брошура &mdash; неперіодичне видання обсягом до 48 сторінок, скріплених між собою.</p>
+<p style="word-spacing: 1.1px;">Буклет &mdash; видання, що має вигляд аркуша, складеного декілька разів. У такому вигляді зручно подавати короткі відомості під час презентації&nbsp;установи, проекту тощо.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-168.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Візитівка &mdash; картка невеликого розміру з паперу, картону, пластику, яка містить персональні відомості про людину, установу тощо.</p>
+<p style="word-spacing: 1.1px;">Інформаційний бюлетень &mdash; здебільшого односторінкове видання, призначене для оперативного інформування читача з певного&nbsp;актуального питання. Його зручно оприлюднювати на стендах.</p>
+<p style="word-spacing: 1.1px;">Плакат &mdash; публікація з однієї сторінки порівняно великого розміру, розрахована на розглядання з доволі великої відстані.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-169.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Структура та основні складові публікації</p>
+<p style="word-spacing: 1.1px;">Кожний вид публікації має свої особливості, проте можна виділити&nbsp;структурні складові, властиві публікаціям різних видів.</p>
+<p style="word-spacing: 1.1px;">Розглянемо типову структуру публікації (рис. 15.1).</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Зазвичай і друкована публікація, й електронна публікація мають однакові основні складові. Як бачимо, публікація складається з окремих блоків: текстових і графічних. Текстовий&nbsp;блок може містити одну або більше&nbsp;колонок тексту. Блок заголовка може&nbsp;бути як текстовим, так і графічним.</p>
+<p style="word-spacing: 1.1px;">Залежно від виду публікації окремі складові можуть мати певні&nbsp;відмінності або взагалі бути відсутніми.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-170.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Програми для створення публікацій</p>
+<p style="word-spacing: 1.1px;">Нескладну публікацію можна підготувати за допомогою текстового процесора. Але зручніше користуватися видавничими системами.</p>
+<p style="word-spacing: 1.1px;">Видавнича система &mdash; це програма, яка надає користувачу зручні засоби для розробки багатосторінкових публікацій зі складним макетом.</p>
+<p style="word-spacing: 1.1px;">Засобами видавничої системи можна виконати:</p>
+<p style="word-spacing: 1.1px;">&bull; загальне оформлення (дизайн) &mdash; підбір колірної схеми, тла тощо;</p>
+<p style="word-spacing: 1.1px;">&bull; верстку &mdash; розміщення на сторінках у певному порядку текстових&nbsp;та графічних матеріалів;</p>
+<p style="word-spacing: 1.1px;">&bull; підгонку &mdash; уточнення розташування та розмірів окремих елементів,&nbsp;усунення недоліків розміщення тексту (короткий рядок в кінці абзацу, нестача або надлишок рядків для відведеного місця тощо);</p>
+<p style="word-spacing: 1.1px;">&bull; коректуру &mdash; виправлення помилок у тексті;</p>
+<p style="word-spacing: 1.1px;">&bull; експорт &mdash; переведення готового документа у формат, придатний для&nbsp;подальшого друку (здебільшого PDF).</p>
+<p style="word-spacing: 1.1px;">Розглянемо процес створення публікації та місце в ньому видавничої системи (рис. 15.2).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-171.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">До відомих видавничих систем належать власницькі програми Adobe InDesign, QuarkXpress, MicrosoftOffice&nbsp;Publisher, програма Scribus, що належить до вільного&nbsp;програмного забезпечення. Перші дві програми є самостійними, орієнтованими на використання фахівцями.&nbsp;Publisher є складовою частиною деяких версій офісного&nbsp;пакета Microsoft Office і має інтерфейс користувача, подібний до інтерфейсу текстового процесора Word.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-172.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Ознайомлення з видавничою системою Scribus</p>
+<p style="word-spacing: 1.1px;">Видавнича система Scribus належить до вільного програмного забезпечення і виходить під ліцензією GNU GPL. Програма випускається одночасно для різних операційних систем і може бути завантажена з сайта sourceforge.net/projects/scribus.</p>
+<p style="word-spacing: 1.1px;">Запустити програму Scribus можна за допомогою стандартних засобів операційної системи, вибравши команду з головного меню або двічі клацнувши ярлик програми. З&rsquo;явиться вікно&nbsp;з чотирма вкладками: Новий документ, Новий з шаблона, Відкрити&nbsp;наявний документ, Відкрити недавній документ.</p>
+<p style="word-spacing: 1.1px;">На вкладці Новий документ можна ввести основні параметри документа, який буде створено (рис. 15.3).</p>
+<p style="word-spacing: 1.1px;">&bull; Розміри та орієнтація сторінки &mdash; за замовчуванням це формат А4,&nbsp;вертикальне розташування.</p>
+<p style="word-spacing: 1.1px;">У списку Одиниця вимірювання слід вибрати одну з одиниць для введення розміру сторінки, полів тощо. У видавничій справі&nbsp;широко використовують одиницю вимірювання пункт (пт):&nbsp;1 пт = 1/72"&raquo;0,3528 мм.</p>
+<p style="word-spacing: 1.1px;">&bull; Варіант макета &mdash; вибір типу документа залежить від того, яку публікацію треба створити (Односторінковий, Двосторінковий тощо).</p>
+<p style="word-spacing: 1.1px;">&bull; Розмітка полів &mdash; пов&rsquo;язана з варіантом макета. В односторінковому&nbsp;макеті поля на всіх сторінках документа будуть однаковими, у двосто-рінковому &mdash; вертикальні поля на сторінках із парними і непарними&nbsp;номерами будуть &laquo;дзеркальними&raquo;.</p>
+<p style="word-spacing: 1.1px;">&bull; Розташування першої сторінки &mdash; для макетів, відмінних від односторінкового, слід вибрати: Права сторінка чи Ліва сторінка.</p>
+<p style="word-spacing: 1.1px;">&bull; Випуски &mdash; додатковий простір на краях аркуша, призначений для&nbsp;того щоб готовий документ (наприклад, брошуру) можна було обрізати; задається у вибраних одиницях.</p>
+<p style="word-spacing: 1.1px;">&bull; Число сторінок у публікації.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-173.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-174.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У вікні Новий документ також можна встановити прапорець Автоматичні текстові&nbsp;рамки, щоб задати число колонок у текстовій рамці (див. далі) і ширину проміжків&nbsp;між колонками.</p>
+<p style="word-spacing: 1.1px;">На вкладці Новий з шаблона слід вибрати шаблон (заготовку для створення публікацій, див. далі), на основі якого буде створено документ (рис. 15.4).</p>
+<p style="word-spacing: 1.1px;">Для спрощення пошуку шаблони упорядковано за категоріями: Брошури, Візитні картки, Інформаційні бюлетні тощо. Після встановлення нових шаблонів, наприклад з Інтернету, перелік категорій може розширитися.</p>
+<p style="word-spacing: 1.1px;">Вкладки Відкрити наявний документ і Відкрити недавній документ відповідно дозволяють відшукати документ на дисках комп&rsquo;ютера або вибрати зі списку один із документів, із яким нещодавно працювали.</p>
+<p style="word-spacing: 1.1px;">Після налаштування всіх параметрів документа та підтвердження вибору натисканням кнопки Гаразд з&rsquo;явиться головне вікно програми Scribus (рис. 15.5). Розглянемо його детальніше.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-175.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Залежно від зробленого користувачем вибору в робочому полі з&rsquo;явиться порожня сторінка або публікація (на рис. 15.5 &mdash; на основі шаблону Newsletter Wavestyle із категорії Інформаційні бюлетені).</p>
+<p style="word-spacing: 1.1px;">Якщо вікно Новий документ було закрите без підтвердження вибору, то для створення документа слід вибрати команду меню Файл ^ Новий або Новий з шаблона.</p>
+<p style="word-spacing: 1.1px;">Під головним меню розміщено панелі інструментів Файл, Зміни, Засоби і Засоби PDF. Їх можна перемістити в інше місце вікна, перетягнувши мишею за дві вертикальні риски на лівому краї панелі. Кнопку миші потрібно відпустити, коли вказівник наблизиться до потрібної межі вікна.</p>
+<p style="word-spacing: 1.1px;">У рядку стану розташовано елементи керування: для змінення масштабу перегляду</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-176.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">та переходу на потрібну сторінку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-177.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Швидко змасштабувати зображення дозволяє кнопка</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-178.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">що містить-</p>
+<p style="word-spacing: 1.1px;">ся на панелі інструментів Засоби. Клацнувши її, можна перетягуванням</p>
+<p style="word-spacing: 1.1px;">на зображенні вибрати ділянку для збільшення масштабу, а клацанням правої кнопки миші зменшувати масштаб.</p>
+<p style="word-spacing: 1.1px;">Шаблони публікацій</p>
+<p style="word-spacing: 1.1px;">Як і текстовий процесор, видавнича система дозволяє використовувати шаблони. Завдяки цьому значно прискорюється підготовка публікації.</p>
+<p style="word-spacing: 1.1px;">Шаблон &mdash; це файл публікації, який слугує основою для створення інших публікацій.</p>
+<p style="word-spacing: 1.1px;">Разом із програмою Scribus постачається деяка кількість готових шаблонів публікацій різних видів: візитівок, буклетів, бюлетенів тощо.</p>
+<p style="word-spacing: 1.1px;">Для створення власного шаблону публікації потрібно:</p>
+<p style="word-spacing: 1.1px;">1) підготувати документ (дібрати матеріали, налаштувати параметри);</p>
+<p style="word-spacing: 1.1px;">2) вибрати команду меню Файл ^ Записати як шаблон;</p>
+<p style="word-spacing: 1.1px;">3) після цього з&rsquo;явиться вікно Виберіть теку, а в ньому &mdash; папка для шаблонів, автоматично створена під час встановлення програми. Зберігати шаблони саме в цю папку дуже зручно: під час створення нового&nbsp;документа вони будуть доступні на вкладці Новий шаблон;</p>
+<p style="word-spacing: 1.1px;">4) у вікні Записати як шаблон слід ввести ім&rsquo;я файла та інші дані про створюваний шаблон (категорію, короткий опис, ім&rsquo;я автора, електронну&nbsp;адресу тощо) і підтвердити вибір &mdash; після цього новий шаблон можна&nbsp;буде вибрати у списку шаблонів для створення документів.</p>
+<p style="word-spacing: 1.1px;">Текстові рамки</p>
+<p style="word-spacing: 1.1px;">На відміну від текстового процесора, у програмі Scribus текст вводиться тільки в текстові поля, обмежені текстовими рамками (подібні до написів&nbsp;у текстовому процесорі). Як ви знаєте, при створенні публікації на кожну&nbsp;сторінку можна додати текстову рамку з потрібного кількістю колонок.</p>
+<p style="word-spacing: 1.1px;">Щоб створити текстову рамку, слід клацнути кнопку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-179.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">на панелі</p>
+<p style="word-spacing: 1.1px;">Засоби, а потім перетягуванням на сторінці встановити рамку.</p>
+<p style="word-spacing: 1.1px;">Якщо замість перетягування клацнути на сторінці, то з&rsquo;явиться вікно для введення розмірів рамки. Введені у цьому вікні значення можна запам&rsquo;ятати, встановивши відповідний прапорець,&nbsp;і таким чином спростити побудову однакових рамок.</p>
+<p style="word-spacing: 1.1px;">Щоб змінити розташування текстової рамки, слід перетягнути її мишею, а щоб змінити розміри рамки &mdash; перетягнути маркери на її сторонах.</p>
+<p style="word-spacing: 1.1px;">Перед тим як увести текст у рамку, її потрібно двічі клацнути, а потім, завершивши введення й редагування тексту,&nbsp;клацнути поза її межами.</p>
+<p style="word-spacing: 1.1px;">Властивості текстової рамки та введених символів можна змінити у вікні Властивості (рис. 15.6) &mdash; воно відкривається за командою з контекстного меню&nbsp;об&rsquo;єкта або клавішею F2. Якщо у вікні&nbsp;клацнути кнопку з назвою розділу Текст,&nbsp;то розкриється панель Текст, на якій&nbsp;можна змінити відповідні властивості.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-180.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розмітка сторінки</p>
+<p style="word-spacing: 1.1px;">Для розмічання сторінки (впорядкування розміщення тексту, зображень тощо) використовують напрямні лінії та сітку.</p>
+<p style="word-spacing: 1.1px;">Використання напрямних</p>
+<p style="word-spacing: 1.1px;">Напрямні лінії допомагають вирівняти об&rsquo;єкти на сторінці. Щоб додати напрямну на сторінку, можна навести вказівник на одну з лінійок і перетягнути її в потрібне місце. Якщо ж напрямна більше не потрібна,&nbsp;то її слід перетягти за межі сторінки.</p>
+<p style="word-spacing: 1.1px;">Автоматично додати потрібну кількість напрямних, розташованих у заданих місцях, дозволяє діалогове вікно, що відкривається за командою меню Сторінка ^ Керування напрямними.</p>
+<p style="word-spacing: 1.1px;">Щоб приховати напрямні або знову зробити їх видимими, слід вибрати команду меню Перегляд ^ Показати напрямні.</p>
+<p style="word-spacing: 1.1px;">Увімкнути й вимкнути дію напрямних можна за допомогою команди Сторінка ^ Прилипання до напрямних.</p>
+<p style="word-spacing: 1.1px;">Використання сітки</p>
+<p style="word-spacing: 1.1px;">Як і в багатьох інших програмах, у Scribus є можливість вирівнювати об&rsquo;єкти за допомогою сітки. Щоб зробити сітку видимою або приховати її,&nbsp;слід вибрати команду меню Перегляд ^ Показати сітку. Увімкнути й вимкнути дію сітки можна за допомогою команди Сторінка ^ Прилипання до сітки.</p>
+<p style="word-spacing: 1.1px;">Детально налаштувати сітку й напрямні можна у вікні налаштувань програми (команда Файл ^ Налаштування) у розділі Розмітка.</p>
+<p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. Що називають комп&rsquo;ютерною публікацією?</p>
+<p style="word-spacing: 1.1px;">2. Опишіть особливості брошури; візитівки; буклета.</p>
+<p style="word-spacing: 1.1px;">3. Опишіть структуру та основні складові публікації.</p>
+<p style="word-spacing: 1.1px;">4. Які параметри публікації потрібно задати, створюючи публікацію?</p>
+<p style="word-spacing: 1.1px;">5. Що таке шаблон публікації?</p>
+<p style="word-spacing: 1.1px;">6. Поясніть призначення текстових рамок; напрямних ліній.</p>
+<p style="word-spacing: 1.1px;">Вправа 15</p>
+<p style="word-spacing: 1.1px;">Створити інформаційний бюлетень &laquo;Розклад уроків&raquo;.</p>
+<p style="word-spacing: 1.1px;">1) Запустіть програму Scribus. Створіть новий документ з параметрами: макет &mdash; Односторінковий, розмір &mdash; А4, поля шириною по&nbsp;40 пт, без автоматичних текстових рамок.</p>
+<p style="word-spacing: 1.1px;">2) Виберіть команду меню Сторінка у вікні&nbsp;Керування напрямними і встановіть:</p>
+<p style="word-spacing: 1.1px;">&bull; на вкладці Одиничні &mdash; вертикальні напрямні на відстані 30, 90, 120 і 180 мм;</p>
+<p style="word-spacing: 1.1px;">&bull; на вкладці Стовпці/Рядки &mdash; три горизонтальні напрямні з відліком координат відносно полів. Закрийте вікно.</p>
+<p style="word-spacing: 1.1px;">3) Клацніть кнопку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-181.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">а потім у робочому полі додайте текстову рамку шириною&nbsp;60 мм і висотою 10 мм. Уведіть у цю рамку слово ПОНЕДІЛОК і задайте властивості</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-182.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">символів: розмір &mdash; 20 пт, колір &mdash; синій, накреслення &mdash; напівжирне. Створіть такі самі текстові рамки з назвами інших днів тижня.</p>
+<p style="word-spacing: 1.1px;">4) Додайте текстову рамку з заголовком &laquo;Розклад уроків&raquo;.</p>
+<p style="word-spacing: 1.1px;">5) Під кожною назвою додайте текстову рамку для введення списку&nbsp;уроків, правильно розташуйте їх відносно інших рамок. Уведіть&nbsp;у рамку відповідні списки уроків для кожного дня тижня. Збережіть публікацію у файлі з іменем Вправа 15 у відповідній папці.</p>
+<p style="word-spacing: 1.1px;">6) Змініть розташування текстових рамок. Збережіть публікацію&nbsp;у файлі з іменем Вправа 15_2 у відповідній папці. Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 15 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Підручник Інформатика 9 клас Бондаренко читати онлайн (нова програма 2017)</a></li><li><a href="682-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="681-vikonannya-navchalnih-proektv.html">Виконання навчальних проектів</a></li><li><a href="660-stvorennya-saytv-veb-stornki-sayti.html">Створення сайтів. Веб-сторінки і сайти</a></li><li><a href="657-robota-z-kompyuternimi-publkacyami.html">Робота з комп'ютерними публікаціями</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

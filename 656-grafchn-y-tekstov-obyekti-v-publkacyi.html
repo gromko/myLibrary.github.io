@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Графічні й текстові об'єкти в публікації &raquo; mozok.click</title>
+<meta name="description" content="Ви вже навчилися додавати на сторінку текстові рамки і вводити й форматувати написи. Існують також інші типи обєктів, які можуть використовуватись у публікаціях." />
+<meta name="keywords" content="також, Існують, обєктів, можуть, публікаціях, використовуватись, написи, форматувати, сторінку, додавати, текстові, рамки, вводити, навчилися" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='656-grafchn-y-tekstov-obyekti-v-publkacyi.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Графічні й текстові об'єкти в публікації</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb656").Button("#infc656"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb656" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc656" class="infcont">
+			<ul>
+				<li><i>Переглядів: 2636</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 14-09-2017, 06:00</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-656'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="656-grafchn-y-tekstov-obyekti-v-publkacyi.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '656'); return false;">1</a></li>
+		<li><a href="656-grafchn-y-tekstov-obyekti-v-publkacyi.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '656'); return false;">2</a></li>
+		<li><a href="656-grafchn-y-tekstov-obyekti-v-publkacyi.html#" title="Средне" class="r3-unit" onclick="doRate('3', '656'); return false;">3</a></li>
+		<li><a href="656-grafchn-y-tekstov-obyekti-v-publkacyi.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '656'); return false;">4</a></li>
+		<li><a href="656-grafchn-y-tekstov-obyekti-v-publkacyi.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '656'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/14/index.html" ><i>14-09-2017, 06:00</i></a></span>
+	<h3 class="btl"><span id="news-title">Графічні й текстові об'єкти в публікації</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-656" style="display:inline;"><p>Ви вже навчилися додавати на сторінку текстові рамки і вводити й форматувати написи. Існують також інші типи об&rsquo;єктів, які можуть&nbsp;використовуватись у публікаціях.</p>
+<p style="word-spacing: 1.1px;">Типи об'єктів</p>
+<p style="word-spacing: 1.1px;">Окрім текстової рамки, на сторінку публікації можна також додати такі об&rsquo;єкти: рамку зображення, рамку візуалізації, таблицю, геометричну фігуру, багатокутник,&nbsp;відрізок, криву Безьє та довільну лінію.</p>
+<p style="word-spacing: 1.1px;">Для додавання об&rsquo;єкта в публікацію слід вибрати потрібну команду меню Вставка (рис. 16.1), або натиснути клавішу, яка&nbsp;зазначена в меню поруч із командою, або&nbsp;клацнути відповідну кнопку на панелі&nbsp;Засоби.</p>
+<p style="word-spacing: 1.1px;">Кожен доданий об&rsquo;єкт має такі властивості: координати за осями X і У; розміри (висота і ширина); кут повороту.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-183.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Координатами об&rsquo;єкта вважаються координати лівого верхнього кута його рамки. Початок координат знаходиться у лівому верхньому куті&nbsp;сторінки.</p>
+<p style="word-spacing: 1.1px;">Щоб змінити властивості об&rsquo;єкта, потрібно ввести значення у відповідні поля у вікні Властивості у розділі X, Y, Z. Як і для текстових рамок, ці властивості також можна змінити за допомогою миші: координати &mdash;&nbsp;переміщенням рамки об&rsquo;єкта; розміри &mdash; перетягуванням маркерів на її&nbsp;сторонах; кут повороту &mdash; якщо клацнути кнопку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-184.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">на панелі засобів,</p>
+<p style="word-spacing: 1.1px;">то під час перетягування маркерів об&rsquo;єкт буде обертатися відносно опорної точки, вибраної у вікні Властивості.</p>
+<p style="word-spacing: 1.1px;">Змінити перекриття об&rsquo;єктів можна за допомогою кнопок групи Рівень, розміщених у нижньому лівому куті панелі:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-185.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Робота з текстовими об'єктами</p>
+<p style="word-spacing: 1.1px;">Ви, напевне, помічали, що багато статей на сторінках журналів чи газет займають декілька колонок, між якими містяться ілюстрації; починаються на одній сторінці, а закінчуються на інших.</p>
+<p style="word-spacing: 1.1px;">Зв&rsquo;язування текстових рамок</p>
+<p style="word-spacing: 1.1px;">Якщо текст не вміщається в текстову рамку (рис. 16.2) &mdash; про це свідчитиме позначка (2) в її правому нижньому куті,&mdash; він може перетікати в іншу&nbsp;рамку. Для цього текстові рамки потрібно зв&rsquo;язати.</p>
+<p style="word-spacing: 1.1px;">Для встановлення зв&rsquo;язку між текстовими рамками потрібно:</p>
+<p style="word-spacing: 1.1px;">1) виділити рамку (1), в якій починається текст;</p>
+<p style="word-spacing: 1.1px;">2) вибрати команду меню Об'єкт ^ Зв'язати текстові рамки &mdash; вказівник змінить вигляд (3);</p>
+<p style="word-spacing: 1.1px;">3) клацнути другу текстову рамку (4).</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Текст, який не вмістився в першій рамці,&nbsp;перетече в другу. І навпаки, при вилученні частини тексту з першої рамки, місце, що вивільнилося, заповнюватиметься текстом із другої рамки. Так само перетікання тексту відбуватиметься в разі змінення розмірів рамок.</p>
+<p style="word-spacing: 1.1px;">Текстові &laquo;ланцюжки&raquo; можна продовжити (рис. 16.3): із другою рамкою зв&rsquo;язати третю,&nbsp;з третьою &mdash; четверту і т. д.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-186.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для того щоб у складному макеті побачити, як зв&rsquo;язані між собою текстові рамки, слід вибрати команду меню Перегляд ^ Показати текстові ланцюжки. Між рамками з&rsquo;являться стрілки, які показують напрямок перетікання тексту.</p>
+<p style="word-spacing: 1.1px;">Автоматичне створення рамок</p>
+<p style="word-spacing: 1.1px;">Рамки можна додати одночасно на всі сторінки публікації. Для автоматичного створення рамок потрібно вибрати команду Вставка ^ Рамки. На вкладках вікна, що з&rsquo;явиться, слід налаштувати значення таких властивостей:</p>
+<p style="word-spacing: 1.1px;">&bull; Тип &mdash; вибрати текстову рамку чи рамку зображення;</p>
+<p style="word-spacing: 1.1px;">&bull; Розташування &mdash; визначити, на яких сторінках і як розмістити рамки;</p>
+<p style="word-spacing: 1.1px;">&bull; Розмір &mdash; вибрати один із варіантів або ввести значення ширини і висоти;</p>
+<p style="word-spacing: 1.1px;">&bull; Параметри &mdash; ввести число колонок та ширину проміжків між ними,&nbsp;зазначити необхідність зв&rsquo;язування рамок. Також можна вибрати документ, який буде вміщено у створені рамки.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Таблиці</p>
+<p style="word-spacing: 1.1px;">Для додавання таблиці потрібно:</p>
+<p style="word-spacing: 1.1px;">1) вибрати команду Вставити таблицю;</p>
+<p style="word-spacing: 1.1px;">2) з натиснутою лівою кнопкою миші виділити область для таблиці;</p>
+<p style="word-spacing: 1.1px;">3) у вікні Вставити таблицю ввести число рядків і стовпців.</p>
+<p style="word-spacing: 1.1px;">Після введення даних на сторінку буде додано таблицю.</p>
+<p style="word-spacing: 1.1px;">У програмі Scribus до версії 1.4.6 таблиця являє собою згруповані текстові рамки. Для редагування вмісту клітинок їх слід розгрупувати,&nbsp;вибравши відповідну команду контекстного меню. Опрацювавши потрібні&nbsp;клітинки, їх всі потрібно виділити і знову згрупувати.</p>
+<p style="word-spacing: 1.1px;">Робота з графічними об'єктами</p>
+<p style="word-spacing: 1.1px;">Під час роботи з публікацією можна використовувати графічні об&rsquo;єкти: рамки зображення, рамки візуалізації тощо.</p>
+<p style="word-spacing: 1.1px;">Рамка зображення</p>
+<p style="word-spacing: 1.1px;">Після того як рамку зображення буде додано на сторінку публікації, область, обмежена цією рамкою, буде перекреслена хрест навхрест. Це&nbsp;означає, що вона не містить зображення.</p>
+<p style="word-spacing: 1.1px;">Для додавання в рамку зображення з файла потрібно:</p>
+<p style="word-spacing: 1.1px;">1) двічі клацнути рамку;</p>
+<p style="word-spacing: 1.1px;">2) у вікні вибору файла знайти потрібний файл;</p>
+<p style="word-spacing: 1.1px;">3) підтвердити вибір &mdash; зображення з&rsquo;явиться в рамці.</p>
+<p style="word-spacing: 1.1px;">Додане зображення може виглядати по-різному &mdash; залежно від режиму масш-табування, який встановлюють у вікні&nbsp;Властивості в розділі Зображення (рис. 16.4).</p>
+<p style="word-spacing: 1.1px;">Розрізняють вільне масштабування та масштабування за розмірами рамки.</p>
+<p style="word-spacing: 1.1px;">Під час вільного масштабування зображення спочатку виводиться відповідно до його роздільної здатності, тому&nbsp;може виявитися, що видно лише його&nbsp;частину (рис. 16.5, а). Якщо зображення&nbsp;занадто велике, щоб побачити його повністю, слід змінити розміри рамки або&nbsp;масштаб за осями X і Y.</p>
+<p style="word-spacing: 1.1px;">Під час масштабування за розмірами рамки зображення буде видно повністю.&nbsp;Але воно може спотворитися через непропорційне масштабування (рис. 16.5, б).&nbsp;Щоб цього уникнути, потрібно встановити прапорець Пропорційно (рис. 16.5, в).</p>
+<p style="word-spacing: 1.1px;">Під час перетягування рамка змінюватиме розташування на сторінці разом із зображенням. Якщо ж двічі клацнути&nbsp;зображення, то можна його перемістити&nbsp;відносно рамки, а лічильники показуватимуть поточні значення масштабу і відносних координат.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-187.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рамки візуалізації</p>
+<p style="word-spacing: 1.1px;">Рамки візуалізації використовують для розміщення на сторінці об&rsquo;єктів, створених за допомогою додаткового програмного забезпечення&nbsp;(подібно до того, як ви здійснювали додавання об&rsquo;єктів на слайд шляхом&nbsp;вбудовування, див. &sect; 13). Завдяки цьому виникає можливість отримувати найрізноманітніші зображення: математичні формули, графіки&nbsp;функцій, нотні записи тощо.</p>
+<p style="word-spacing: 1.1px;">Геометричні фігури</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-188.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Scribus має багато спільного з побудовою графічних примітивів у векторному редакторі, проте є й деякі особливості:</p>
+<p style="word-spacing: 1.1px;">&bull; при побудові фігура отримує прямокутну рамку, яка стає видимою&nbsp;лише під час редагування. Рамка використовується для масштабу-вання об&rsquo;єктів та налаштування обтікання об&rsquo;єкта текстом за рамкою;</p>
+<p style="word-spacing: 1.1px;">&bull; форми вибирають зі списку, який розкривається кнопкою</p>
+<p style="word-spacing: 1.1px;">&bull; форму багатокутника налаштовують у діалоговому вікні, яке відкривається подвійним клацанням на об&rsquo;єкті;</p>
+<p style="word-spacing: 1.1px;">&bull; побудову кривої Безьє завершують натисканням клавіші Esc.</p>
+<p style="word-spacing: 1.1px;">Обтікання об'єктів текстом</p>
+<p style="word-spacing: 1.1px;">Якщо доданий об&rsquo;єкт закриває частину тексту, слід для нього налаштувати обтікання текстом. Для цього у вікні Властивості в розділі Форма слід вибрати спосіб&nbsp;обтікання текстом (рис. 16.6).</p>
+<p style="word-spacing: 1.1px;">Розглянемо ці способи:</p>
+<p style="word-spacing: 1.1px;">&bull; За формою в рамці (рис. 16.7, а) &mdash;&nbsp;текст обтікає об&rsquo;єкт за його видимою&nbsp;формою;</p>
+<p style="word-spacing: 1.1px;">&bull; За обмежувальною рамкою (рис. 16.7, б) &mdash;&nbsp;як вам вже відомо, кожен об&rsquo;єкт має&nbsp;прямокутну рамку, і саме за нею&nbsp;в цьому випадку виконується обтікання;</p>
+<p style="word-spacing: 1.1px;">&bull; За лінією контуру (рис. 16.7, в) &mdash; подібно до об&rsquo;єктів векторного зображення&nbsp;кожен об&rsquo;єкт публікації має контур.&nbsp;Але тут від його форми залежить не&nbsp;вигляд об&rsquo;єкта, а обтікання текстом.</p>
+<p style="word-spacing: 1.1px;">Щоб змінити форму контуру, потрібно двічі клацнути об&rsquo;єкт &mdash; відкриється вікно Вузли з відповідними засобами. Якщо в ньому встановити прапорець Редагувати&nbsp;лінію контуру, то вузли контуру стануть доступними для змінення. До редагування&nbsp;контуру також можна перейти клацанням&nbsp;кнопки Змінити у вікні Властивості.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-189.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На рис. 16.7, в, через напівпрозору заливку трикутника видно, що за такого способу обтікання об&rsquo;єкт може закривати частину тексту.</p>
+<p style="word-spacing: 1.1px;">За лінією обрізки зображення &mdash; цей спосіб подібний до попереднього, але замість контуру для обтікання використовується так звана лінія&nbsp;обрізки зображення (вона зберігається у графічному файлі разом із&nbsp;зображенням). Така можливість є у форматах файлів JPG, TIFF тощо.</p>
+<p style="word-spacing: 1.1px;">Питання для самоперевірки</p>
+<p style="word-spacing: 1.1px;">1. Об&rsquo;єкти яких видів можна додавати в публікацію?</p>
+<p style="word-spacing: 1.1px;">2. Як побачити, які текстові рамки зв&rsquo;язані між собою?</p>
+<p style="word-spacing: 1.1px;">3. Як додати об&rsquo;єкт на сторінку публікації?</p>
+<p style="word-spacing: 1.1px;">4. Для чого призначено рамки візуалізації?</p>
+<p style="word-spacing: 1.1px;">5. Які геометричні фігури можна додавати на сторінку?</p>
+<p style="word-spacing: 1.1px;">6. В яких випадках налаштовують обтікання об&rsquo;єкта текстом?</p>
+<p style="word-spacing: 1.1px;">7. Які є способи обтікання об&rsquo;єкта текстом?</p>
+<p style="word-spacing: 1.1px;">8. Як виконати редагування контуру об&rsquo;єкта?</p>
+<p style="word-spacing: 1.1px;">Вправа 16</p>
+<p style="word-spacing: 1.1px;">Доповнити інформаційний бюлетень &laquo;Розклад уроків&raquo; графічним зображенням.</p>
+<p style="word-spacing: 1.1px;">1) Завантажте програму Scribus. Відкрийте файл з іменем Вправа 15.</p>
+<p style="word-spacing: 1.1px;">2) Додайте до публікації тло. Для цього:</p>
+<p style="word-spacing: 1.1px;">&bull; додайте на сторінку рамку зображення;</p>
+<p style="word-spacing: 1.1px;">&bull; вставте в цю рамку зображення,&nbsp;запропоноване вчителем або підготовлене власноруч;</p>
+<p style="word-spacing: 1.1px;">&bull; установіть розміри рамки зображення за розмірами набірного поля;</p>
+<p style="word-spacing: 1.1px;">&bull; перемістіть зображення на задній&nbsp;план (рис. 1).</p>
+<p style="word-spacing: 1.1px;">3) Для оформлення заголовка та назв&nbsp;днів тижня додайте об&rsquo;єкти з групи&nbsp;Форми (рис. 2).</p>
+<p style="word-spacing: 1.1px;">Примітка. Щоб літери краще вирізнялись на тлі, їх можна обвести</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-190.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">тонкою лінією. Для цього виділіть фрагмент тексту, у вікні Властивості&nbsp;в розділі Текст у групі Колір і ефекти</p>
+<p style="word-spacing: 1.1px;">клацніть кнопку Обведення списку виберіть колір лінії (рис. 3).</p>
+<p style="word-spacing: 1.1px;">4) Додайте на сторінку векторне зображення, скориставшись командою меню Файл ^ Імпортувати ^ Отримати векторний малюнок.</p>
+<p style="word-spacing: 1.1px;">5) Обговоріть результат роботи з однокласниками.</p>
+<p style="word-spacing: 1.1px;">6) Збережіть публікацію як шаблон у файлі з іменем Вправа 16 у відповідній папці. Завершіть роботу за комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне тестування</p>
+<p style="word-spacing: 1.1px;">Виконайте тестове завдання 16 із автоматичною перевіркою на сайті &laquo;Інтерактивне навчання&raquo;.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/inf-9-bondarenko/inf-9-bondarenko-191.jpg" alt="" />&nbsp;</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em style="word-spacing: 1.1px; letter-spacing: 0px;"><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="684-pdruchnik-nformatika-9-klas-bondarenko-chitati-onlayn-nova-programa-2017.html">Інформатика 9 клас Бондаренко</a></span></em></p>
+<p><em style="word-spacing: 1.1px; letter-spacing: 0px;">&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="663-rozmtka-tablic-zasobami-movi-html.html">Розмітка таблиць засобами мови HTML</a></li><li><a href="657-robota-z-kompyuternimi-publkacyami.html">Робота з комп'ютерними публікаціями</a></li><li><a href="655-ponyattya-kompyuternoyi-publkacyi.html">Поняття комп'ютерної публікації</a></li><li><a href="652-maketi-slaydv-dagrami.html">Макети слайдів. Діаграми</a></li><li><a href="650-skladen-vektorn-zobrazhennya.html">Складені векторні зображення</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->
