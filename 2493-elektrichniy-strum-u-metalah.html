@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Електричний струм у металах &raquo; mozok.click</title>
+<meta name="description" content="Класична та квантова теорії провідності металів. Численні експерименти з електрики, виконані різними вченими у ХІХ-ХХ ст., дали багатий матеріал для створення науково обґрунтованої теорії ел" />
+<meta name="keywords" content="металів, теорії, провідності, фізиком, Друде, німецьким, ІІаулем, основи, електро, розвинуті, закладені, Лоренцем, називають, теорією, Лоренца, інколи, теорію, Гендріком, електронної, нідерландським" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2493-elektrichniy-strum-u-metalah.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Електричний струм у металах</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2493").Button("#infc2493"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2493" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2493" class="infcont">
+			<ul>
+				<li><i>Переглядів: 14358</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 19:13</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2493'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2493-elektrichniy-strum-u-metalah.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2493'); return false;">1</a></li>
+		<li><a href="2493-elektrichniy-strum-u-metalah.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2493'); return false;">2</a></li>
+		<li><a href="2493-elektrichniy-strum-u-metalah.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2493'); return false;">3</a></li>
+		<li><a href="2493-elektrichniy-strum-u-metalah.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2493'); return false;">4</a></li>
+		<li><a href="2493-elektrichniy-strum-u-metalah.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2493'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 19:13</i></a></span>
+	<h3 class="btl"><span id="news-title">Електричний струм у металах</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2493" style="display:inline;"><p style="word-spacing: 1.1px;">Класична та квантова теорії провідності металів. Численні експерименти з електрики, виконані різними вченими у ХІХ-ХХ ст., дали багатий матеріал для створення науково обґрунтованої теорії електричної провідності металів. Вона дістала назву класичної електронної теорії електро провідності металів. Її основи були закладені німецьким фізиком ІІаулем Друде і розвинуті нідерландським фізиком Гендріком Лоренцем, тому цю теорію інколи називають теорією Друде-Лоренца.</p>
+<p style="word-spacing: 1.1px;">Класична електронна теорія спирається на кілька фундаментальних припущень, а саме:</p>
+<p style="word-spacing: 1.1px;">Усі метали мають кристалічну будову.</p>
+<p style="word-spacing: 1.1px;">Простір між вузлами кристалічної ґратки заповнений електронним газом. Так називають сукупність вільних електронів (електронів провідності), що втратили зв&rsquo;язки з атомами, яким вони належали.</p>
+<p style="word-spacing: 1.1px;">У середньому кожен атом металу втрачає один електрон. Іншимисловами, концентрація електронів провідності в металах дорівнює кількості атомів в одиниці об&rsquo;єму металу, п<sub>е</sub>&nbsp;-п<sub>а</sub>&nbsp;.</p>
+<p style="word-spacing: 1.1px;">До електронного газу в металах застосовні всі закони молекулярно-кінетичної теорії, тобто електронний газ розглядається як ідеальний газ.</p>
+<p style="word-spacing: 1.1px;">Рух вільних електронів у металі підпорядковується класичним законами механіки.</p>
+<p style="word-spacing: 1.1px;">Під час зіткнень електронів з йонами електрони повністю передають їм свою кінетичну енергію.</p>
+<p style="word-spacing: 1.1px;">Незважаючи на те, що деякі припущення спотворюють дійсну картину електропровідності металів, на підставі цієї теорії все-таки вдалося пояснити основні закони проходження електричного струму у металах.</p>
+<p style="word-spacing: 1.1px;">Утруднення класичної електронної теорії були подолані у квантовій теорії провідності твердих тіл. Багато працювали над створенням цієї теорії німецький фізик А. Зоммерфельд (1868-1951) та радянський учений Я. І. Френкель (1894-1952). Оскільки із поняттями квантової фізики ми детальніше ознайомимось у кінці нашого курсу, зараз обмежимось лише деякими положеннями квантової теорії провідності металів. У квантовій теорії, на відмінну від класичної, вважають, що:</p>
+<p style="word-spacing: 1.1px;">енергія електронів змінюється певними порціями, тобто електрони можуть мати лише певні &laquo;дозволені&raquo; значення енергій;</p>
+<p style="word-spacing: 1.1px;">середня кінетична енергія електронного газу з наближенням до абсолютного нуля не залежить від температури;</p>
+<p style="word-spacing: 1.1px;">рух електронів у твердому тілі не є рухом частинок у звичайному, класичному розумінні, а являє собою поширення електронних хвиль.</p>
+<p style="word-spacing: 1.1px;">Квантова теорія провідності точніше описує явище електропровідності твердих тіл, проте й вона є наближеною.</p>
+<p style="word-spacing: 1.1px;">Пояснення електропровідності металів на основі класичної електронної теорії провідності. Спираючись на основні положення класичної електронної теорії розглянемо закономірності електричного струму у металах.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Як йони кристалічної ґратки, так і електрони беруть участь у тепловому русі. Йони здійснюють теплові коливання поблизу положень рівноваги - вузлів кристалічної ґратки. Вільні електрони рухаються хаотично і під час свого руху стикаються з йонами ґратки. В результаті таких зіткнень встановлюється термодинамічна рівновага між електронним газом та йонами ґратки. Згідно з класичною теорією Друде-Лоренца можна оцінити середню швидкість теплового руху електронів за формулами молекулярно-кінетичної теорії. При кімнатній температурі вона виявляється приблизно рівною 10<sup>5</sup>&nbsp;м/с. У зовнішньому електричному полі в металевому провіднику окрім теплового руху електронів виникає їх упорядкований рух. Оцінимо швидкість впорядкованого руху електронів у металевому провіднику, скориставшись прийомом, який ми використовували для виведення основного рівняння молекулярно-кінетичної теорії газів.</p>
+<p style="word-spacing: 1.1px;">За час At через поперечний переріз провідника S пройдуть всі електрони, які містяться в об&rsquo;ємі</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-250.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">середня швидкість упорядкованого</p>
+<p style="word-spacing: 1.1px;">руху електронів.</p>
+<p style="word-spacing: 1.1px;">Кількість електронів N у виділеному об&rsquo;ємі можна визначити через їх концентрацію п,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-251.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Підставивши значення об&rsquo;єму У, отримаємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-252.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо за час At через поперечний переріз провідника площею S проходить N електронів, то загальний заряд, які вони переносять</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-253.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки сила струму визначається формулою</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-254.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Звід</p>
+<p style="word-spacing: 1.1px;">ки середня швидкість впорядкованого руху електронів</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-255.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оцінимо величину швидкості впорядкованого руху електронів для мідного провідника з площею перерізу 1 мм<sup>2</sup>, по якому проходить струм силою</p>
+<p style="word-spacing: 1.1px;">1 А. Врахуємо, що л<sub>е</sub>&nbsp;= л<sub>а</sub>&nbsp;і для міді концентрація атомів становить величину порядку 10<sup>29</sup>&nbsp;м~<sup>3</sup>.</p>
+<p style="word-spacing: 1.1px;">Підставляючи значення вказаних величин, отримуємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-256.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Як видно з розрахунків, швидкість упорядкованого руху електронів майже в 10<sup>9</sup>&nbsp;разів менша за швидкість їх теплового (хаотичного) руху. Але з практики відомо, що всі електроприлади, ввімкненні у коло, починають працювати одночасно відразу після замикання кола, на якій би далекій відстані від перемикача вони не перебували. Звідси випливає, що швидкість поширення електричного струму в провіднику і швидкість впорядкованого руху електронів в ньому це не одне і те саме!</p>
+<p style="word-spacing: 1.1px;">Класична теорія провідності металів механізм проходження електричного струму у металевих провідниках пояснює таким чином. За відсутності електричного поля у провіднику електрони беруть участь у тепловому (хаотичному) русі. В разі створення на кінцях провідника різниці потенціалів на електрони діє електрична сила Р = еЕ, що надає їм прискорення, яке вони швидко втрачають через зіткнення з йонами кристалічної ґратки. У результаті встановлюється деяка середня швидкість впорядкованого руху електронів - и називають середньою швидкістю дрейфу. Як відомо, тепловий рух електронів не припиняється ніколи, тому електрони з величезними швидкостями рухаються в усіх напрямках, і на фоні цього хаотичного руху відбувається повільний &laquo;дрейф&raquo; у напрямку електричного поля. Швидкість же поширення електричного поля в провіднику (як і швидкість поширення будь-якого електромагнітного випромінювання) становить близько 300 000 км/с. Отже, кожен вільний електрон металу починає &laquo;дрейф&raquo;, відчувши дію електричного поля, практично в мить замикання кола.</p>
+<p style="word-spacing: 1.1px;">Класична теорія провідності пояснює також механізм виникнення електричного опору металевих провідників. Опір металів зумовлений взаємодією електронів, що рухаються в провіднику, з йонами кристалічної ґратки. В процесі взаємодії електрони втрачають частину енергії, яку вони отримують в електричному полі. Ця енергія перетворюється у внутрішню енергію. Відповідно, під час проходження по металевому провіднику електричного струму він нагрівається. З підвищенням температури розмах коливань йо-нів зростає, і частішими стають співудари електронів з йонами. Тому можна стверджувати, що опір металів повинен залежати від температури.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Залежність опору металів від температури. Досліджуючи явище проходження електричного струму через металеві провідники в курсі фізики основної школи, ми встановили залежність опору металевого провідника від його лінійних розмірів та роду металу. Ця залежність описується рівнянням</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-257.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">довжина провідника (м), S - площа його поперечного пе</p>
+<p style="word-spacing: 1.1px;">рерізу (м<sup>2</sup>), р - питомий опір металу ( Ом &bull; м<sup>2</sup>&nbsp;/м ).</p>
+<p style="word-spacing: 1.1px;">З дослідів (мал. 61) відомо, що опір металів лінійно збільшується з підвищенням температури, а саме: R = R<sub>0</sub>( 1 + аAT), де R<sub>0</sub>&nbsp;- опір провідника при Т<sub>0</sub>&nbsp;= 273 К (0&deg; С), R - опір при температурі Г, AT - різниця температур, а -температурний коефіцієнт опору.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-258.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 61. Дослід, що демонструє залежність опору провідника від температури (1 - металічна спіраль, 2 - батарея гальванічних елементів, 3 - амперметр)</p>
+<p style="word-spacing: 1.1px;">У процесі нагрівання провідника ефекти від збільшення його довжини і площі перерізу взаємно компенсуються, тому опір в основному змінюється внаслідок зміни питомого опору. Залежність питомого опору металу від температури можна записати формулою р = р<sub>0</sub>(1 + аДГ). Зміна питомого опору речовини характеризується сталою для цієї речовини величиною - температурним коефіцієнтом опору а. Він дорівнює відносній зміні питомого</p>
+<p style="word-spacing: 1.1px;">опору провідника при його нагріванні на 1К,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-259.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">питомий</p>
+<p style="word-spacing: 1.1px;">опір при температурі Т<sub>0</sub>&nbsp;= 273 К (0&deg; С), а р - питомий опір при температурі Т.</p>
+<p style="word-spacing: 1.1px;">Для чистих металів температурні коефіцієнти опору відрізняються мало і приблизно дорівнюють 0,004 К \ Температурні коефіцієнти опору сплавів значно менші, ніж у чистих металів. Існують спеціальні сплави, опір яких майже не змінюється із зміною температури. Такими сплавами є константан, манганін. Температурний коефіцієнт опору у манганіну майже в 400 разів менший, ніж у міді. Властивості цих матеріалів використовуються для виготовлення точних електровимірювальних приладів та еталонів опору.</p>
+<p style="word-spacing: 1.1px;">У вимірювальних системах та системах автоматизації для вимірювання температури використовують термометри опору, що дозволяють вимірювати температуру з точністю до тисячних часток градуса. Термометр опору складається з платинової спіралі, намотаної на керамічний каркас. Спіраль вміщують у середовище, температуру якого треба виміряти. Знаючи опір спіралі при 0&deg; С (Я<sub>0</sub>) та вимірюючи опір спіралі (R) у середовищі, за допомогою формули обчислюють температуру середовища. Термометрами опору можна вимірювати як дуже низькі, так і досить високі температури, які не можна виміряти, скориставшись рідинним термометром.</p>
+<p style="word-spacing: 1.1px;">Надпровідність. У 1911 р. голландський фізик Гейке Камерлінг-Оннес вперше виявив зникнення електричного опору у ртуті після її охолодження до температури, нижчої за 4,12 К. У 1913 р. цей ефект було виявлено у білого олова (за температури 3,69 К) та свинцю (7,26 К). Так, наприклад, протягом трьох років зберігалось надпровідне свинцеве кільце зі струмом без джерела живлення в посудині Дьюара<sup>1</sup>&nbsp;з рідким гелієм.</p>
+<p style="word-spacing: 1.1px;"><sup>1</sup>&nbsp;Дьюарівська посудина (термос) - ємність, стінки якої мають високу теплоізоляційну здатність. Посудина Дьюара була винайдена шотландським фізиком та хіміком сером Джеймсом Дюаром у 1892 р. Перші дьюарівські посудини для комерційного використання були випущені у!904 р., коли була заснована німецька компанія &laquo;Термос&raquo; (нім. Thermos GmbH).</p>
+<p style="word-spacing: 1.1px;">За цей час най-</p>
+<p style="word-spacing: 1.1px;">чутливіші прилади не виявили будь-якого зменшення значення струму в кільці. Дане явище отримало назву надпровідності.</p>
+<p style="word-spacing: 1.1px;">Надпровідність - властивість деяких провідників стрибкоподібно зменшувати свій електричний опір до нуля за умови охолодження нижче певної критичної температури.</p>
+<p style="word-spacing: 1.1px;">Речовини у надпровідному стані мають надзвичайно цікаві властивості. Про одну з них ми вже сказали - у кільцевому провіднику у надпровідному стані сила струму може не змінюватись як завгодно довго без підтримки від джерела струму.</p>
+<p style="word-spacing: 1.1px;">Другою важливою особливістю надпровідників є неможливість створення всередині речовини в надпровідному стані магнітного поля. Зовнішнє магнітне поле не проникає всередину надпровідників. І третя особливість надпровідників - надпровідний стан руйнується у магнітному полі.</p>
+<p style="word-spacing: 1.1px;">За класичною теорією електропровідності надпровідний стан пояснити не вдається. Це змогла зробити лише квантова теорія надпровідності, яку розробили у 1957 р. американські вчені Джон Бардін, Леон Купер та Джон Роберт ІІІриффер, за що у 1972 р. одержали Нобелівську премію з фізики. Сприяло цьому і явище, відкрите у 1933 р. німецьким фізиком В. Мейсснером. Якщо циліндричний зразок помістити в поздовжнє магнітне поле і охолодити нижче за критичну температуру, то він повністю виштовхує з себе магнітний потік. Ефект Мейсснера (ефект левітації), як назвали це явище, був важливим відкриттям, оскільки завдяки цьому фізикам стало зрозуміло, що надпровідність - квантово-механічне явище. Якби надпровідність полягала лише в зникненні електричного опору, її можна було б намагатися пояснити законами класичної фізики.</p>
+<p style="word-spacing: 1.1px;">Дослідження надпровідності триває і досі. У 2003 р. Нобелівська премія з фізики була присуджена В. Л. Гінсбургу, О. О. Абрикосову, Е. Дж. Легге-ту за роботи з теорії надпровідності і надтекучості.</p>
+<p style="word-spacing: 1.1px;">Надпровідники знаходять широке практичне використання. Виділяють три великі області використання надпровідників:</p>
+<p style="word-spacing: 1.1px;">різні матеріали: плівкові провідники, надпровідні магніти та ін. (мал. 62); мікротехніка: мікрохвильові пристрої, надчутливі системи виявлення магнітних полів, цифрова електроніка, штучні біологічні системи;</p>
+<p style="word-spacing: 1.1px;">макротехніка: силові кабелі, електричні системи і мережі, генератори і двигуни, транспорт на магнітній подушці (мал. 63).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-260.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Чим зумовлена провідність металів? Якими дослідами це доведено?</p>
+<p style="word-spacing: 1.1px;">2. Як рухаються електрони провідності в металічному провіднику, коли в ньому а) немає електричного поля; 6) створене електричне поле?</p>
+<p style="word-spacing: 1.1px;">3. Чому на всіх ділянках електричного кола прилади починають діяти майже миттєво, незважаючи на малу швидкість дрейфу електронів?</p>
+<p style="word-spacing: 1.1px;">4. Що таке температурний коефіцієнт опору?</p>
+<p style="word-spacing: 1.1px;">5. Коли через спіраль електричної лампочки протікає більший електричний струм, в момент вмикання чи коли вона починає світитись?</p>
+<p style="word-spacing: 1.1px;">6. В чому полягає явище надпровідності металів; які ефекти підтверджують його існування?</p>
+<p style="word-spacing: 1.1px;">Приклади розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">Задача. Опір виготовленої з мідної дротини обмотки електромагніту Я, = 200 Ом при t<sub>x</sub>&nbsp;= 20&deg; С. Визначити силу струму, що проходить по обмотці при температурі t<sub>2</sub>&nbsp;= 135&deg; С, якщо електромагніт підключено до джерела постійного струму, ЕРС якого &pound; = 200 В, а внутрішній опір г = 10 Ом. Температурний коефіцієнт опору міді а = 4,3 &bull; 10~<sup>3</sup>&nbsp;К</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-261.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв'язання</p>
+<p style="word-spacing: 1.1px;">Силу струму в обмотці визначаємо за законом Ома для повного кола,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-262.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Опір Я<sub>0</sub>&nbsp;при t<sub>0</sub>&nbsp;= 0&deg; С визначимо через відомий опір Я, при</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-263.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тоді</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-264.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Після підстановки числових значень знаходимо І - 0,74 А. Відповідь: 0,74 А.</p>
+<p style="word-spacing: 1.1px;">Вправа 10</p>
+<p style="word-spacing: 1.1px;">1. Опір 100-ватної електролампи, що працює під напругою 120 В, у розжареному стані у 10 разів більший, ніж у холодному. Визначити її опір у холодному стані (при t<sub>l</sub>&nbsp;= 20 &deg;С) і середній температурний коефіцієнт опору, якщо температура розжарювання нитки t<sub>2</sub>&nbsp;= 2000 &deg;С.</p>
+<p style="word-spacing: 1.1px;">2. Якої довжини треба взяти нікеліновий провідник діаметром 0,5 мм, щоб виготовити нагрівальний прилад, який має опір 48 Ом при температурі 800 &deg;С. Температурний коефіцієнт опору нікеліну а = 2,1-10&nbsp;<sup>1</sup>&nbsp;К \ а його питомий опір р = 0,42 &bull; 10&nbsp;<sup>6</sup>&nbsp;Ом &bull; м.</p>
+<p style="word-spacing: 1.1px;">3. Мідний та графітовий стержні однакової товщини з&rsquo;єднані послідовно. За якого співвідношення їх довжин опір цієї системи не буде залежати від температури?</p>
+<p style="word-spacing: 1.1px;">4. На скільки відрізняється опір лінії електропередачі взимку і літом, якщо вона виготовлена із залізного дроту перерізом S. Температура змінюється від -t до t. Довжина дроту при 0 &deg;С дорівнює 1<sub>0</sub>. Як зміниться відповідь, якщо врахувати лінійне розширення дроту під час нагрівання?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2552-osnovn-polozhennya-kvantovoyi-mehanki.html">Основні положення квантової механіки</a></li><li><a href="2543-gpoteza-kvantv-planka.html">Гіпотеза квантів Планка</a></li><li><a href="2510-energya-magntnogo-polya-strumu.html">Енергія магнітного поля струму</a></li><li><a href="2499-elektrichniy-strum-u-gazah.html">Електричний струм у газах</a></li><li><a href="2494-termoelektrichn-yavischa.html">Термоелектричні явища</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

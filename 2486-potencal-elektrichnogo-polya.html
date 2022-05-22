@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Потенціал електричного поля &raquo; mozok.click</title>
+<meta name="description" content="Потенціал. Еквіпотенціальні поверхні. У механіці взаємодію тіл характеризують силою або потенціальною енергією. Електричне поле, що здійснює взаємодію між електрично зарядженими тілами, тако" />
+<meta name="keywords" content="взаємодію, характеризують, силова, електричного, Напруженість, двома, величинами, характеристика, введемо, потенціал, характеристику, енергетичну, також, Тепер, зарядженими, силою, механіці, поверхні, Еквіпотенціальні, потенціальною" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2486-potencal-elektrichnogo-polya.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Потенціал електричного поля</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2486").Button("#infc2486"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2486" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2486" class="infcont">
+			<ul>
+				<li><i>Переглядів: 15798</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 19:00</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2486'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2486-potencal-elektrichnogo-polya.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2486'); return false;">1</a></li>
+		<li><a href="2486-potencal-elektrichnogo-polya.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2486'); return false;">2</a></li>
+		<li><a href="2486-potencal-elektrichnogo-polya.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2486'); return false;">3</a></li>
+		<li><a href="2486-potencal-elektrichnogo-polya.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2486'); return false;">4</a></li>
+		<li><a href="2486-potencal-elektrichnogo-polya.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2486'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 19:00</i></a></span>
+	<h3 class="btl"><span id="news-title">Потенціал електричного поля</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2486" style="display:inline;"><p>Потенціал. Еквіпотенціальні поверхні. У механіці взаємодію тіл характеризують силою або потенціальною енергією. Електричне поле, що здійснює взаємодію між електрично зарядженими тілами, також характеризують двома величинами. Напруженість електричного поля - це силова характеристика. Тепер введемо енергетичну характеристику -потенціал. За допомогою цієї величини можна буде порівнювати між собою будь-які точки електричного поля. Отже, потенціал як характеристика поля не повинен залежати від значення заряду, що міститься в цих точках. Розділимо обидві частини формули A-W<sub style="word-spacing: 1.1px; letter-spacing: 0px;">x</sub>&nbsp;- W<sub style="word-spacing: 1.1px; letter-spacing: 0px;">2</sub>&nbsp;на заряд q.</p>
+<p style="word-spacing: 1.1px;">Отримаємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-82.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">не залежить від значення&nbsp;заряду і приймається за енергетичну характеристику, яку називають потенціалом поля в даній точці. Позначають потенціал літерою</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-83.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Потенціал електричного поля (р - скалярна енергетична характеристика поля, що визначається відношенням потенціальної енергії W позитивного</p>
+<p style="word-spacing: 1.1px;">заряду q в даній точці поля до величини цього заряду,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-84.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Одиниця потенціалу - вольт,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-85.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Подібно до потенціальної енергії значення потенціалу в даній точці залежить від вибору нульового рівня для відліку потенціалу. Найчастіше у електродинаміці за нульовий рівень беруть потенціал точки, що лежить у нескінченності, а у електротехніці - на поверхні Землі.</p>
+<p style="word-spacing: 1.1px;">Із введенням потенціалу формулу для визначення роботи по переміщенню заряду між точками 1 і 2 можна записати у вигляді</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-86.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки під час переміщення позитивного заряду у напрямку вектора напруженості електричне поле виконує позитивну роботу</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-87.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">то&nbsp;потенціал (pj більший за потенціал ф<sub style="word-spacing: 1.1px; letter-spacing: 0px;">2</sub>. Таким чином, напруженість електричного поля напрямлена у бік зменшення потенціалу.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p>Якщо заряд переміщати із певної точки поля у нескінченність, робота</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-88.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таким чином, величина потенціалу ф певної точки поля визначається роботою, яку виконує електричне поле, переміщуючи одиничний позитивний заряд із цієї точки на нескінченність,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-89.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо електричне поле створюється точковим зарядом &lt;7, то у точці, що лежить на відстані г від нього, потенціал обчислюють за формулою</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-90.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">За цією формулою розраховують і потенціал поля, зарядженої кулі. У цьому разі г - це відстань від центра кулі до вибраної точки поля. Із формули також видно, що на однакових відстанях від точкового заряду, що створює поле, потенціал однаковий. Усі ці точки лежать на поверхні сфери, описаної радіусом г навколо точкового заряду. Таку сферу називають еквіпотенціальною поверхнею.</p>
+<p style="word-spacing: 1.1px;">Еквіпотенціальні поверхні - геометричне місце точок в електричному полі, які мають однаковий потенціал (мал. 21). Еквіпотенціальні поверхні використовують для наочного зображення електричних полів.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-91.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 21.</p>
+<p style="word-spacing: 1.1px;">Еквіпотенціальні поверхні електричних полів, створених точковими зарядами різних знаків</p>
+<p style="word-spacing: 1.1px;">Силові лінії завжди перпендикулярні до еквіпотенціальних поверхонь. Це означає, що робота сил поля з переміщення заряду по еквіпотенціальній поверхні дорівнює нулю.</p>
+<p style="word-spacing: 1.1px;">У разі накладання електричних полів, створених кількома зарядами, потенціал електричного поля дорівнює алгебраїчній сумі потенціалів полів, створених окремими зарядами, &lt;р = ф! + &lt;р<sub>2</sub>&nbsp;+ ... . Еквіпотенціальні поверхні таких систем мають складну форму. Наприклад, для системи із двох однакових за значенням однойменних зарядів еквіпотенціальні поверхні мають вигляд, зображений на мал. 22,а. Еквіпотенціальні поверхні однорідного поля є площинами (мал. 22,6).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-92.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Різниця потенціалів. Практичне значення має не сам потенціал у точці, а зміна (різниця) потенціалу &lt;pj - ср<sub>2</sub>, яка не залежить від вибору нульового рівня відліку потенціалу. Різницю потенціалів ф! - ф<sub>2</sub>&nbsp;ще називають напругою і позначають латинською літерою U. Тоді формула для роботи по переміщенню заряду набуває вигляду</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-93.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Напруга U - це фізична величина, яка визначається роботою електричного поля по переміщенню одиничного позитивного</p>
+<p style="word-spacing: 1.1px;">заряду між двома точками поля,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-94.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Одиниця різниці потенціалів (напруги), як і потенціалу, - вольт,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-95.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки робота сил поля по переміщенню заряду залежить лише від різниці потенціалів, то в разі переміщення заряду з однієї еквіпотенціальної поверхні на другу (потенціали яких відповідно ф! та ф<sub>2</sub>) виконана полем робота не залежить від траєкторії цього руху.</p>
+<p style="word-spacing: 1.1px;">Зв&rsquo;язок напруженості електричного поля з напругою. Із формул А = Eqd та А = qU можна встановити зв'язок між напруженістю та напругою електричного поля, а саме Ed = U. Із цієї формули випливає:</p>
+<p style="word-spacing: 1.1px;">чим менше змінюється потенціал на відстані d, тим меншою є напруженість електричного поля;</p>
+<p style="word-spacing: 1.1px;">якщо потенціал не змінюється, то напруженість дорівнює нулю; напруженість електричного поля напрямлена в бік зменшення потенціалу.</p>
+<p style="word-spacing: 1.1px;">Оскільки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-96.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">то саме з цієї формули і виводиться ще одна одиниця напруженості - вольт на метр,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-97.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Що називають потенціалом електричного поля? Яка формула відображає зміст цього поняття?</p>
+<p style="word-spacing: 1.1px;">2. Що називають різницею потенціалів між двома точками поля? Яка формула відображає зміст цього поняття?</p>
+<p style="word-spacing: 1.1px;">3. Які поверхні називають еквіпотенціальними?</p>
+<p style="word-spacing: 1.1px;">4. Яка формула задає зв&rsquo;язок між напруженістю і різницею потенціалів в однорідному електричному полі?</p>
+<p style="word-spacing: 1.1px;">5. Порівняти роботи, виконані полем під час переміщення заряду з точки А в точки В, С і D (мал. 23).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-98.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">6. Проаналізуйте формули законів всесвітнього тяжіння і Кулона, які подібні за формою, хоча й описують явища різної природи, та з&rsquo;ясуйте:</p>
+<p style="word-spacing: 1.1px;">а) Яка фізична величина в законі всесвітнього тяжіння є аналогом заряду в законі електростатики Кулона?</p>
+<p style="word-spacing: 1.1px;">б) Яка величина у полі тяжіння відіграє роль, подібну до напруженості електричного поля? Запишіть формулу для обчислення цієї величини.</p>
+<p style="word-spacing: 1.1px;">в) Який вигляд має формула потенціалу ф гравітаційного поля, якщо потенціал</p>
+<p style="word-spacing: 1.1px;">електричного поля</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-99.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Загальні рекомендації до розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язуючи задачі, треба враховувати, що негативно заряджені точкові тіла, залишені самі на себе, в електричному полі рухаються від точок з меншим потенціалом до точок, де потенціал більший. Позитивно заряджені тіла рухаються у зворотному напрямку. Особливо слід пам&rsquo;ятати найважливішу властивість електричного поля - незалежність роботи сил від траєкторії руху. Робота сил, що діють на заряджене тіло з боку поля, виражається через різницю потенціальних енергій або різницю потенціалів.</p>
+<p style="word-spacing: 1.1px;">В основі розв&rsquo;язання задач на розрахунок складних електричних полів, тобто задач на визначення напруженості й потенціалу таких полів у деякій точці простору, лежить принцип накладання (суперпозиції) полів:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-100.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклади розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">у</p>
+<p style="word-spacing: 1.1px;">Задача 1. Електричне поле створене точковим зарядом 5-10 Кл, вміщеним у середовище з діелектричною проникністю є = 2. Визначити різницю електричних потенціалів точок, віддалених від заряду відповідно на 5 см і 0,2 м. Яка робота ви-</p>
+<p style="word-spacing: 1.1px;">п</p>
+<p style="word-spacing: 1.1px;">конується по переміщенню електричного заряду 0,3*10 ' Кл між цими точками?</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-101.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв'язання</p>
+<p style="word-spacing: 1.1px;">Використовуючи формулу ф = q/(4m<sub>0</sub>er)<sub>t</sub>&nbsp;визначимо різницю електричних потенціалів точок електричного поля</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-102.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Роботу по переміщенню заряду в електричному полі визначимо за формулою A = q<sub>0</sub>U.</p>
+<p style="word-spacing: 1.1px;">Підставляючи числові значення, отримуємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-103.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Задача 2. З 60 маленьких сферичних крапель ртуті, радіуси яких 0,1 мм,</p>
+<p style="word-spacing: 1.1px;">-12 &mdash;12 20 штук мають заряди q<sub>l</sub>&nbsp;- 1,2-10 Кл, а 40 штук - q<sub>2</sub>&nbsp;= -0,8-10 Кл кожна. Визначити потенціал великої краплі, яка утворюється після злиття в одну всіх маленьких крапель.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-104.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язання</p>
+<p style="word-spacing: 1.1px;">Потенціал великої сферичної краплі</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-105.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де Q - її заряд, R - радіус.</p>
+<p style="word-spacing: 1.1px;">У процесі зливання крапель виконується закон збереження електричного заряду:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-106.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Об&rsquo;єм утвореної краплини становить</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-107.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тоді</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-108.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Після підстановки числових значень отримуємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-109.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 5</p>
+<p style="word-spacing: 1.1px;">1. На відстані 5 см від поверхні кулі потенціал електричного поля дорівнює 1,2 кВ, а на відстані 10 см він дорівнює 900 В. Визначити радіус кулі, її заряд і потенціал.</p>
+<p style="word-spacing: 1.1px;">2. Сто однакових заряджених крапельок, зливаючись, утворюють одну. Яким буде потенціал утвореної краплі, якщо потенціал кожної крапельки дорівнює З В?</p>
+<p style="word-spacing: 1.1px;">3. Точки А і В лежать на відстані 10 см одна від одної і розташовані в однорідному полі, напруженість якого 60 кВ/м. Визначити різницю потенціалів між цими точками. Розглянути випадки, коли точки Аі В лежать: а) на одній лінії напруженості; б) на прямій, перпендикулярній до лінії напруженості; в) на прямій, напрямленій під кутом 45&deg; до лінії напруженості.</p>
+<p style="word-spacing: 1.1px;">4. Визначити напругу між точками А і В (мал. 24), якщо \АВ\ = 8 см, а = 30&deg; і напруженість поля становить 50 кВ/м.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-110.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Яку швидкість набуває електрон, прискорюючись у полі з різницею потенціалів 200 В?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Для додаткового читання</p>
+<p style="word-spacing: 1.1px;">Вимірювання елементарного електричного заряду</p>
+<p style="word-spacing: 1.1px;">Дослід Йоффе-Міллікена. Перші точні досліди з метою вимірювання заряду електрона виконав у 1906-1916 рр. американський фізик Р. Міллікен (1863-1953). Незалежно від нього аналогічні досліди провів радянський вчений А. Ф. Йоффе (1880-1960).</p>
+<p style="word-spacing: 1.1px;">Міллікен вимірював електричний заряд окремих дрібних крапель олії, Йоффе - заряд маленьких порошинок цинку і крапельок ртуті. Дослідникам потрібно було виміряти силу приблизно у 10~<sup>и</sup>&nbsp;Н, яка діє на частинку речовини масою близько 10&nbsp;<sup>12</sup>&nbsp;г.</p>
+<p style="word-spacing: 1.1px;">Робоча зона установки Міллікена (мал. 25) - це дві паралельні пластини З, між якими створювалось однорідне електричне поле. У це поле за допомогою розпилювача 1 впорскували крапельки олії (олія має низький тиск насиченої пари, тому випаровуванням крапельок під час досліду можна знехтувати). Робоча зона встановлена всередині захисного кожуха 2 - щоб температура і тиск повітря залишались сталими. Під час розпилювання олії крапельки електризувались і рухались під впливом сили тяжіння, електричного поля та інших сил. За рухом крапельок можна було спостерігати в мікроскоп 4 через спеціальне віконце.</p>
+<p style="word-spacing: 1.1px;">Спочатку виміряли швидкість v<sub>0</sub>&nbsp;рівномірного падіння краплі під дією сили тяжіння pVg, виштовхувальної сили р<sub>0</sub>Vg і сили опору повітря F<sub>oa</sub>&nbsp;= bu<sub>0</sub>&nbsp;(тут р - густина олії, р<sub>0</sub>&nbsp;- густина повітря, V - об&rsquo;єм краплини, b - коефіцієнт опору, який залежить від радіуса краплі і в&rsquo;язкості повітря). Рівняння руху у цьому випадку таке: рVg - р<sub>0</sub>Vg - bv<sub>0</sub>&nbsp;= 0. Потім створювали електричне поле між пластинами, яке змушувало крапельку підніматись вгору, і вимірювати швидкість усталеного руху v у цьому випадку,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-111.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Із системи рівнянь визначали</p>
+<p style="word-spacing: 1.1px;">величину заряду крапельки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-112.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-113.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Коли на крапельки олії подіяли рентгенівським промінням 5, то спостерігали стрибкоподібну зміну швидкості руху крапельки в електричному</p>
+<p style="word-spacing: 1.1px;">полі. Це свідчило про те, що заряд крапельки під впливом рентгенівського проміння змінювався стрибкоподібно. Рентгенівське проміння виривало з крапельки окремі електрони. Діставши ряд послідовних значень заряду крапельки q<sub>0</sub>, q<sub>v</sub>&nbsp;q<sub>2</sub>,..Р. Міллікен встановив, що і самі значення заряду крапельки, і їх послідовні різниці є цілими кратними деякого елементарного заряду е, тобто q<sub>t</sub>&nbsp;= n<sub>t</sub>e<sub>9</sub>&nbsp;де п<sub>і</sub>&nbsp;- завжди ціле число.</p>
+<p style="word-spacing: 1.1px;">У результаті численних дослідів Р. Міллікен визначив значення заряду електрона? =1,610&nbsp;<sup>19</sup>&nbsp;Кл.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2490-elektrichniy-strum.html">Електричний струм</a></li><li><a href="2489-energya-elektrichnogo-polya.html">Енергія електричного поля</a></li><li><a href="2485-robota-po-peremschennyu-zaryadu-v-elektrichnomu-pol.html">Робота по переміщенню заряду в електричному полі</a></li><li><a href="2482-elektrichne-pole-zaryadzhenih-poverhon.html">Електричне поле заряджених поверхонь</a></li><li><a href="2481-elektrichne-pole.html">Електричне поле</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

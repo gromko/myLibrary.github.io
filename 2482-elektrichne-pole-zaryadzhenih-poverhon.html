@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Електричне поле заряджених поверхонь &raquo; mozok.click</title>
+<meta name="description" content="Потік напруженості електричного поля. Теорема Остроградського-Гаусса. Розглянемо поле точкового позитивного заряду. Кількість силових ліній N можна зобразити довільно, оскільки поле існує у " />
+<meta name="keywords" content="заряду, навколо, простору, точках, оскільки, існує, Оточимо, уявно, точковим, зарядом, збігається, центр, заряд, сферами, довільно, зобразити, Остроградського, Гаусса, Теорема, електричного" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2482-elektrichne-pole-zaryadzhenih-poverhon.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Електричне поле заряджених поверхонь</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2482").Button("#infc2482"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2482" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2482" class="infcont">
+			<ul>
+				<li><i>Переглядів: 12460</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 18:52</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2482'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2482-elektrichne-pole-zaryadzhenih-poverhon.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2482'); return false;">1</a></li>
+		<li><a href="2482-elektrichne-pole-zaryadzhenih-poverhon.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2482'); return false;">2</a></li>
+		<li><a href="2482-elektrichne-pole-zaryadzhenih-poverhon.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2482'); return false;">3</a></li>
+		<li><a href="2482-elektrichne-pole-zaryadzhenih-poverhon.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2482'); return false;">4</a></li>
+		<li><a href="2482-elektrichne-pole-zaryadzhenih-poverhon.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2482'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 18:52</i></a></span>
+	<h3 class="btl"><span id="news-title">Електричне поле заряджених поверхонь</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2482" style="display:inline;"><p>Потік напруженості електричного поля. Теорема Остроградського-Гаусса. Розглянемо поле точкового позитивного заряду. Кількість силових ліній N можна зобразити довільно, оскільки поле існує у всіх точках простору навколо заряду. Оточимо уявно заряд сферами, центр яких збігається з точковим зарядом (мал. 7). Як видно, кількість ліній напруженості, що перетинають першу і другу сфери, однакова. Яку б кількість сфер ми не провели, кількість ліній напруженості, що їх перетинають, залишається однаковою.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-31.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Модуль напруженості поля, створюваного точковим зарядом q, у довільній точці сфери радіусом г</p>
+<p style="word-spacing: 1.1px;">становить</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-32.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Перепишемо цю формулу у такому вигляді:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-33.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">отже, дана формула набуває вигляду</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-34.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Оскільки площа сфери збільшується, як квадрат радіуса, а напруженість поля в точках на сфері зменшується, як квадрат радіуса, добуток ES залишається однаковим для всіх сфер.</p>
+<p style="word-spacing: 1.1px;">Раніше ми встановили, що однаковою для всіх сфер буде кількість ліній напруженості, що їх перетинають, N. Отже, з точністю до деякої сталої</p>
+<p style="word-spacing: 1.1px;">можна прирівняти:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-35.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Як видно, кількість ліній напруженості, що виходять із точкового заряду, пропорційна величині цього заряду.</p>
+<p style="word-spacing: 1.1px;">У розглянутому нами випадку поверхня сфери площею S, всередині якої знаходиться точковий заряд, є замкнутою поверхнею, перпендикулярною</p>
+<p style="word-spacing: 1.1px;">до ліній напруженості. Для цього випадку ми й отримали</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-36.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Такий самий результат можна отримати і</p>
+<p style="word-spacing: 1.1px;">для довільної системи зарядів: якщо оточити довільну систему зарядів замкнутою поверхнею (не обов&rsquo;язково сферою), то кількість силових ліній, що перетинають цю поверхню, визначається сумарним зарядом системи,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-37.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Це твердження називають теоремою Остроградського-Гаусса.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-38.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Сукупність ліній напруженості, що перетинають площину, перпендикулярну до ліній напруженості і площа якої S, називають потоком вектора напруженості, N = ES.</p>
+<p style="word-spacing: 1.1px;">Якщо поверхня не перпендикулярна до напрямку вектора напруженості електричного поля, то формула записується так: N = EScosa, де а - кут між напрямком вектора напруженості Е і нормаллю п до поверхні (мал. 8).</p>
+<p style="word-spacing: 1.1px;">Використовуючи поняття потоку вектора напруженості, теорему Остро-градського-Гаусса формулюють так:</p>
+<p style="word-spacing: 1.1px;">Потік вектора напруженості електричного поля через довільну замкнену поверхню дорівнює</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-39.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">алгебраїчна сума зарядів, що</p>
+<p style="word-spacing: 1.1px;">перебувають усередині цієї поверхні.</p>
+<p style="word-spacing: 1.1px;">Приклади застосування теореми Остроградського-Гаусса. Теорема Остроградського-Гаусса полегшує знаходження значень вектора &pound;, коли площу поверхні, що охоплює заряд, легко обчислити за формулами геометрії.</p>
+<p style="word-spacing: 1.1px;">Наприклад, обчислимо напруженість поля, створюваного рівномірно зарядженою сферою. Але перед цим введемо поняття густини електричного заряду.</p>
+<p style="word-spacing: 1.1px;">Густина електричного заряду - фізична величина, що характеризує розподіл електричного заряду в просторі.</p>
+<p style="word-spacing: 1.1px;">Користуються поняттями:</p>
+<p style="word-spacing: 1.1px;">лінійної густини т, якщо електричний заряд q розподілений уздовж лінії довжиною</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-40.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">поверхневої густини а, якщо заряд q розподілений по поверхні площею</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-41.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">об'ємної густини р, якщо електричний заряд q розподілений по всьому об&rsquo;єму</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-42.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо на поверхні сфери радіусом R(мал. 9) рівномірно розподілено заряд q, то поверхнева густина заряду дорівнює</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-43.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Розглянемо всередині сфери будь-яку точку А на відстані г від її центра, тобто точку, для якої r&lt;R. Із центра О проведемо допоміжну поверхню теж у вигляді сфери радіусом г і за теоремою Остроградського-Гаусса обчислимо потік вектора напруженості N крізь</p>
+<p style="word-spacing: 1.1px;">цю поверхню,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-44.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-45.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки всередині допоміжної поверхні радіусом г електрич-</p>
+<p style="word-spacing: 1.1px;">них зарядів немає, q = 0, то і напруженість поля</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-46.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">також дорівнює</p>
+<p style="word-spacing: 1.1px;">нулю.</p>
+<p style="word-spacing: 1.1px;">Отже, всередині зарядженої провідної сфери (чи іншого провідника будь-якої форми, на якому електричний заряд завжди розміщується тільки на поверхні) електричного поля немає.</p>
+<p style="word-spacing: 1.1px;">Обчислимо напруженість для точок, які містяться біля самої поверхні сфери, тобто для яких можна вважати, що r = R. Тоді за теоремою Остроградського-Гаусса</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-47.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-48.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">то</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-49.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для точок, що значно віддалені від поверхні зарядженої сфери (точка В на мал. 9), маємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-50.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">За допомогою теореми Остроградського-Гаусса можна обчислити напруженість електричного поля довільних заряджених тіл. У таблиці наведено формули для визначення напруженості електричного поля у деяких практично цікавих випадках.</p>
+<p style="word-spacing: 1.1px;">Рівномірно</p>
+<p style="word-spacing: 1.1px;">заряджена</p>
+<p style="word-spacing: 1.1px;">нескінченна</p>
+<p style="word-spacing: 1.1px;">площина</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-51.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Диск</p>
+<p style="word-spacing: 1.1px;">радіусом R</p>
+<p style="word-spacing: 1.1px;">Напруженість поля в точці, що лежить на перпендикулярі, проведеному із центра диска, на відстані г від нього</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-52.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Дві рівномірно різнойменно заряджені нескінченні пластини</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-53.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Електричне поле зосереджене між пластинами, в просторі поза пластинами Е = 0.</p>
+<p style="word-spacing: 1.1px;">Нескінченно довга заряджена нитка</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-54.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">тут т - лінійна густина заряду, г - відстань від нитки.</p>
+<p style="word-spacing: 1.1px;">Заряджена нитка визначеної довжини</p>
+<p style="word-spacing: 1.1px;">Напруженість поля в точці, що лежить на перпендикулярі, проведеному із середини, нитки на відстані г від нитки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-55.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-56.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">тут 0 - кут між напрямком нормалі до нитки та радіус-вектором, проведеним із точки до кінця нитки.</p>
+<p style="word-spacing: 1.1px;">Однорідно заряджена куля радіусом R</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-57.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для r &gt; R напруженість Е визначається формулою напруженості точкового заря-ДУ</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-58.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Що називають потоком напруженості електричного поля?</p>
+<p style="word-spacing: 1.1px;">2. У чому суть теореми Остроградського-Гаусса?</p>
+<p style="word-spacing: 1.1px;">3. За якою формулою визначається напруженість рівномірно зарядженої нескінченної площини?</p>
+<p style="word-spacing: 1.1px;">4. Чим відрізняють картини силових ліній полів між двома парами точкових зарядів q і -q та 2q і -q? Намалюйте їх.</p>
+<p style="word-spacing: 1.1px;">Приклади розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">Задача. На суцільній металевій сфері радіусом R = 20 см рівномірно розподілений заряд з поверхневою густиною а = 10&nbsp;<sup>9</sup>&nbsp;Кл/м<sup>2</sup>. Визначити напруженість електричного поля у точках: на відстані г<sub>1</sub>&nbsp;= 16 см від центра сфери, на поверхні сфери та на відстані г<sub>2</sub>&nbsp;= 36 см від центра сфери. Побудувати графіки залежності Е = &pound;(г).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-59.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв'язання</p>
+<p style="word-spacing: 1.1px;">Всередині сфери напруженість поля дорівнює нулю, отже, &pound;, = 0 (для г- г&nbsp;<sub>1</sub>).</p>
+<p style="word-spacing: 1.1px;">Заряджена сфера створює навколо себе поле, напруженість якого визначається за формулою точкового заряду.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-60.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа З</p>
+<p style="word-spacing: 1.1px;">1. Металевій кулі радіусом 24 см надано заряд 6,26 нКл. Визначити напруженість електричного поля в центрі кулі, на відстані від центра, що дорівнює половині радіуса, і на відстані 24 см від поверхні кулі.</p>
+<p style="word-spacing: 1.1px;">2. Побудуйте графіки залежності напруженості електричного поля від відстані Е = f(r) для точкового заряду і для зарядженої провідної кулі радіусом R.</p>
+<p style="word-spacing: 1.1px;">3. Чому дорівнює напруженість Е поля в центрі рівномірно зарядженого дротяного кільця?</p>
+<p style="word-spacing: 1.1px;">4. З якою силою електричне поле зарядженої нескінченної площини діє на одиницю довжини зарядженої нескінченно довгої нитки, що розташована у цьому полі? Лінійна густина заряду на нитці 3 мкКл/м, а поверхнева густина заряду на площині 20 мкКл/м<sup>2</sup>.</p>
+<p style="word-spacing: 1.1px;">5. Показати, що електричне поле, яке створене ниткою скінченної довжини, в граничних випадках переходить в електричне поле: а) нескінченно довгої зарядженої нитки; б) точкового заряду.</p>
+<p style="word-spacing: 1.1px;">6. Необхідно визначити напруженість електричного поля в точці А, що розташована на відстані г = 5 см від зарядженого диска вздовж нормалі, встановленої в його центрі. При якому граничному значенні радіуса і? диска поле в точці А не буде відрізнятись більше, ніж на 2% від поля нескінченної площини? Яка напруженість поля в точці А, якщо радіус диска дорівнює R = 10г? У скільки разів напруженість, обчислена у цьому випадку, відрізняється від напруженості поля нескінченної площини?</p>
+<p style="word-spacing: 1.1px;">7. Мильна бульбашка, що висить на кінці тонкої трубочки, стягується під дією сил поверхневого натягу. Чи можна утримати бульбашку від повного стягування, якщо надати їй великого електричного заряду? Якщо так, то бульбашка якого діаметра залишиться? (При цьому слід враховувати, що у полі напруженістю 3 МВ/м настає пробій повітря).</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2490-elektrichniy-strum.html">Електричний струм</a></li><li><a href="2486-potencal-elektrichnogo-polya.html">Потенціал електричного поля</a></li><li><a href="2485-robota-po-peremschennyu-zaryadu-v-elektrichnomu-pol.html">Робота по переміщенню заряду в електричному полі</a></li><li><a href="2483-provdniki-ta-delektriki-v-elektrichnomu-pol.html">Провідники та діелектрики в електричному полі</a></li><li><a href="2481-elektrichne-pole.html">Електричне поле</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

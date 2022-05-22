@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Електрорушійна сила. Закон Ома для повного кола &raquo; mozok.click</title>
+<meta name="description" content="Енергетична характеристика джерела струму. Як ми уже з\'ясували, для тривалого існування електричного струму в колі потрібне джерело, в якому постійно відбувається розділення електричних зар" />
+<meta name="keywords" content="струму, джерело, потенціалом, потенціалів, постійного, різниця, стала, підтримується, полюс, найнижчим, негативний, позитивний, високим, результаті, полюси, електричних, тривалого, існування, 'ясували, джерела" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2491-elektrorushyna-sila-zakon-oma-dlya-povnogo-kola.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Електрорушійна сила. Закон Ома для повного кола</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2491").Button("#infc2491"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2491" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2491" class="infcont">
+			<ul>
+				<li><i>Переглядів: 8071</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 19:07</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2491'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2491-elektrorushyna-sila-zakon-oma-dlya-povnogo-kola.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2491'); return false;">1</a></li>
+		<li><a href="2491-elektrorushyna-sila-zakon-oma-dlya-povnogo-kola.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2491'); return false;">2</a></li>
+		<li><a href="2491-elektrorushyna-sila-zakon-oma-dlya-povnogo-kola.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2491'); return false;">3</a></li>
+		<li><a href="2491-elektrorushyna-sila-zakon-oma-dlya-povnogo-kola.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2491'); return false;">4</a></li>
+		<li><a href="2491-elektrorushyna-sila-zakon-oma-dlya-povnogo-kola.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2491'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 19:07</i></a></span>
+	<h3 class="btl"><span id="news-title">Електрорушійна сила. Закон Ома для повного кола</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2491" style="display:inline;"><p>Енергетична характеристика джерела струму. Як ми уже з'ясували, для тривалого існування електричного струму в колі потрібне джерело, в якому постійно відбувається розділення електричних зарядів, у результаті чого підтримується стала різниця потенціалів. Будь-яке джерело постійного струму має два полюси: полюс із високим потенціалом - позитивний - і з найнижчим потенціалом - негативний.</p>
+<p style="word-spacing: 1.1px;">Під&rsquo;єднаємо до полюсів джерела провідник (мал. 34). Під дією сил електричного поля позитивно заряджені частинки рухаються у напрямку від позитивного полюса джерела до негативного. Але замкнути коло, перемістивши електричні заряди із точки В у точку А, сили електричного поля не</p>
+<p style="word-spacing: 1.1px;">можуть, оскільки діють на них у протилежний бік. Тому всередині джерела крім електричних сил діють ще й сторонні сили, що переміщують позитивні заряди від негативного полюса батареї до позитивного і протидіють електричним силам, які прагнуть вирівняти потенціали на полюсах. Завдяки цьому заряди циркулюють по замкненому колу, створюючи струм.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-163.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На переміщення зарядів із точки В у точку А затрачається відповідна робота А,.<sub>т</sub>, яку виконують сторонні сили. Чим більший заряд переміщується, тим більша затрачається робота. Іншими словами, А<sub>ст</sub>&nbsp;- q або, переходячи до знака рівності,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-164.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">постійний коефіцієнт пропорційності, що характеризує відповідне джерело і називається електрорушійною силою джерела<sup style="word-spacing: 1.1px; letter-spacing: 0px;">1</sup>&nbsp;(скорочено ЕРС).</p>
+<p style="word-spacing: 1.1px;">Електрорушійна сила в - це фізична величина, що характеризує енергію сторонніх сил джерела струму й вимірюється роботою сторонніх сил (тобто сил неелектростатичного походження), виконаною при переміщенні</p>
+<p style="word-spacing: 1.1px;">одиничного позитивного електричного заряду,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-165.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Одиниця електрорушійної сили - вольт,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-166.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">У результаті розділення всередині джерела позитивних і негативних зарядів джерело набуває запасу потенціальної енергії, яка витрачається на виконання роботи з переміщення зарядів по всьому колу. Тепер можемо сказати: ту частину замкненого кола, в якій заряди рухаються під дією електростатичної різниці потенціалів називають зовнішньою<sub>у</sub>&nbsp;а ту, в якій носії заряду рухаються під дією сторонніх сил, - внутрішньою. Полюси джерела струму розділяють внутрішню і зовнішню ділянки кола.</p>
+<p style="word-spacing: 1.1px;">Сторонні сили забезпечують розділення різнойменно заряджених частинок в джерелі (у внутрішньому колі) і підтримують певну різницю, потенціалів на полюсах, тим самим зумовлюючи рух зарядів у зовнішньому колі. Отже, робота сторонніх сил дорівнює сумі робіт, що виконуються по переміщенню заряду на внутрішній і зовнішній ділянках кола, А<sub>СГ</sub>=А<sub>ВВ</sub>&nbsp;+ А<sub>зовн</sub>.</p>
+<p style="word-spacing: 1.1px;">Роботу, виконувану сторонніми силами по переміщенню заряду на зовнішній ділянці кола (так само, як і енергію, що виділяється в провіднику у вигляді тепла під час проходження струму), обчислюють за формулою Аювп&nbsp;<sup>=</sup>&nbsp;QUзови* Д<sup>е</sup>&nbsp;^зовн &ldquo; спад напруги на зовнішній ділянці кола.</p>
+<p style="word-spacing: 1.1px;">Відповідно робота сторонніх сил по переміщенню заряду на внутрішній ділянці кола А<sub>вн</sub>&nbsp;= qU<sub>Bny</sub>&nbsp;де U<sub>an</sub>&nbsp;- спад напруги на внутрішній ділянці кола.</p>
+<p style="word-spacing: 1.1px;">Таким чином,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-167.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Закон Ома для повного кола. Джерело струму, як і будь-який провідник, має певний опір, котрий називають внутрішнім опором джерела і позначають г на відміну від опору зовнішнього кола R. Як відомо з курсу 9 класу, згідно із законом Ома для ділянки кола сила струму І у ділянці кола, прямо пропорційна прикладеній напрузі U і обернено пропорційна опорові</p>
+<p style="word-spacing: 1.1px;">R цієї ділянки,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-168.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Формулу закону Ома записують і в такому вигляді:</p>
+<p style="word-spacing: 1.1px;">U = IR<sub>y</sub>&nbsp;де добуток IR називають спадом напруги на даній ділянці кола. Якщо ділянка не містить джерела струму, то поняття напруги і спаду напруги збігаються.</p>
+<p style="word-spacing: 1.1px;">Згідно із законом Ома для зовнішньої і внутрішньої ділянок кола, можна записати U<sub>BH</sub>&nbsp;= /г, U<sub>3QBH</sub>&nbsp;= IR. Тоді S-IR + Іг<sub>у</sub>&nbsp;сума спадів напруг на зовнішній і внутрішній ділянках кола дорівнює ЕРС джерела.</p>
+<p style="word-spacing: 1.1px;"><sup>1</sup>&nbsp;Термін &laquo;електрорушійна сила&raquo; виник до того, як були з&rsquo;ясовані процеси, що відбуваються в електричному колі. Як видно з означення, мова йде про енергетичну характеристику джерела, а не про силову.</p>
+<p style="word-spacing: 1.1px;">Співвідношення записане у вигляді</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-169.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">називають законом Ома для повного кола: сила струму у замкненому електричному колі прямо пропорційна електрорушійній силі джерела струму і обернено пропорційна повному опору кола.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Отже, сила струму в колі залежить від трьох величин, дві з яких (ЕРС і внутрішній опір) характеризують джерело, а третя залежить від самого кола. Якщо користуватись певним джерелом електричної енергії, то &pound; і г можна вважати сталими величинами. Якщо змінювати опір зовнішнього кола, то відповідно змінюватиметься сила струму І в колі і спад напруги IR на зовнішній ділянці кола. Зі збільшенням опору зовнішнього кола сила струму зменшується, напруга ж зростає. Якщо Я = &deg;&deg;(коло розімкнене), то І =0, спад напруги всередині джерела відсутній, а напруга на полюсах джерела дорівнює його ЕРС. На цьому ґрунтується наближене вимірювання ЕРС джерела. Вольтметр приєднують до полюсів джерела при розімкнено-му зовнішньому колі. При цьому вольтметр показує спад напруги IR на самому собі. А оскільки опір вольтметра зазвичай дуже великий, тобто R^&gt;r , U = IR~g . Чим більший опір вольтметра порівняно з внутрішнім опором джерела струму, тим точніше виміряне значення ЕРС.</p>
+<p style="word-spacing: 1.1px;">Коротке замикання. Зі зменшенням опору зовнішнього кола, R&mdash;&gt;0,</p>
+<p style="word-spacing: 1.1px;">сила струму набуває максимального значення</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-170.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Цей випадок називають коротким замиканням.</p>
+<p style="word-spacing: 1.1px;">Для джерел, де порівняно малий внутрішній опір (наприклад, у свинцевих акумуляторах г ~ 0,1 + 0,001 Ом), сила струму короткого замикання може досягти дуже великих значень. Провідники можуть розплавитись, а саме джерело вийти з ладу. Особливо небезпечні короткі замикання в освітлювальних мережах, які живляться від трансформаторних підстанцій, ЕРС яких вимірюється сотнями вольтів. Сила струму короткого замикання в них може досягти кількох тисяч амперів.</p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Чи може тривалий час існувати електричний струм у колі, якщо на рухливі носії заряду діють тільки кулонівські сили?</p>
+<p style="word-spacing: 1.1px;">2. У чому полягає фізична суть поняття електрорушійної сили джерела струму? Що вона характеризує?</p>
+<p style="word-spacing: 1.1px;">3. З яких частин складається замкнене коло?</p>
+<p style="word-spacing: 1.1px;">4. Що таке струм короткого замикання?</p>
+<p style="word-spacing: 1.1px;">Приклади розв'язування задач</p>
+<p style="word-spacing: 1.1px;">Задача. До якої напруги зарядяться конденсатори Cj та С<sub>2</sub>, підключені до джерела, якщо його ЕРС 2,2 В, внутрішній опір 0,4 Ом? Параметри резисторів та конденсаторів такі: Я| = 3 Ом, R<sub>2</sub>&nbsp;= 1 Ом, R<sub>3</sub>&nbsp;= 5 Ом; С<sub>х</sub>&nbsp;= 2 мкФ, С<sub>2</sub>&nbsp;= 3 мкФ (мал. 35).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-171.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-172.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язання</p>
+<p style="word-spacing: 1.1px;">Оскільки ділянкою з конденсаторами постійний струм не проходить, то для обводу KLNM можна записати</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-173.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Напруга на резисторі Я., становить</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-174.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Така ж напруга буде і між точками X та У ділянки, що містить конденсатори. Оскільки конденсатори з&rsquo;єднані послідовно, то обидва вони мають однаковий заряд &lt;/.</p>
+<p style="word-spacing: 1.1px;">Напруги на цих конденсаторах</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-175.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Для напруги між точками X та У можна записати</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-176.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">звідки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-177.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Підставивши у рівності (2) значення q та U<sub>3</sub>&nbsp;з рівностей (1) та (3), отримуємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-178.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Як видно, від величини опору Я<sub>2</sub>&nbsp;значення U<sub>i</sub>&nbsp;та U<sub>2</sub>&nbsp;не залежать.</p>
+<p style="word-spacing: 1.1px;">Після підстановки числових значень отримуємо U<sub>x</sub>&nbsp;= 0,78 В; U<sub>2</sub>&nbsp;= 0,52 В. Відповідь: 0,78 В; 0,52 В.</p>
+<p style="word-spacing: 1.1px;">Вправа 8</p>
+<p style="word-spacing: 1.1px;">1. Для визначення ЕРС і внутрішнього опору джерела струму склали коло за схемою, зображеною на мал. 36. За деякого положення ковзного контакте реостата амперметр показав 0,5 А, а вольтметр &mdash; 4 В. Коли контакт перемістили трохи вліво, амперметр показав 0,9 А, а вольтметр - 3,6 В. Обчислити ЕРС і внутрішній опір джерела.</p>
+<p style="word-spacing: 1.1px;">2. Лампочки, опори яких дорівнюють 3 та 12 Ом, по черзі приєднували до деякого джерела струму, і вони споживали однакову потужність. Визначити внутрішній опір джерела і ККД кола в кожному випадку. (Вказівка: ККД</p>
+<p style="word-spacing: 1.1px;">кола дорівнює</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-179.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-180.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">3. Визначити заряд на обкладках конденсатора (мал. 37), якщо ЕРС джерела &pound;, його внутрішній опір г. Опори резисторів Я, та /?<sub>2</sub>&nbsp;відомі. Ємність конденсатора С.</p>
+<p style="word-spacing: 1.1px;">4. Вважаючи відомими величини, вказані на схемі (мал. 38), визначити заряд на конденсаторі. Як зміниться величина заряду, якщо Я, та Я<sub>2</sub>&nbsp;вимкнути?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2507-elektrorushyna-sila-ndukcyi.html">Електрорушійна сила індукції</a></li><li><a href="2490-elektrichniy-strum.html">Електричний струм</a></li><li><a href="2486-potencal-elektrichnogo-polya.html">Потенціал електричного поля</a></li><li><a href="2485-robota-po-peremschennyu-zaryadu-v-elektrichnomu-pol.html">Робота по переміщенню заряду в електричному полі</a></li><li><a href="2105-dya-magntnogo-polya-na-provdnik-z-strumom-sila-ampera.html">Дія магнітного поля на провідник зі струмом. Сила Ампера</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

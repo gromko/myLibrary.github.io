@@ -1,0 +1,610 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Розгалужені кола. Правила Кірхгофа &raquo; mozok.click</title>
+<meta name="description" content="Правила Кірхгофа. Розглянемо електричне коло постійного струму, в якому є точки зєднання декількох провідників (наприклад точки а і d на мал. 39). Ці точки називають вузлами, або точками роз" />
+<meta name="keywords" content="точки, називають, точками, вузлами, розгалуження, Відповідно, розгалуженими, вигляду, такого, електричні, наприклад, провідників, електричне, Розглянемо, Кірхгофа, постійного, струму, декількох, зєднання, якому" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='2492-rozgaluzhen-kola-pravila-krhgofa.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="fizyka/index.html">Фізика</a> &raquo; Розгалужені кола. Правила Кірхгофа</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb2492").Button("#infc2492"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb2492" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc2492" class="infcont">
+			<ul>
+				<li><i>Переглядів: 15307</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 12-02-2018, 19:12</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-2492'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="2492-rozgaluzhen-kola-pravila-krhgofa.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '2492'); return false;">1</a></li>
+		<li><a href="2492-rozgaluzhen-kola-pravila-krhgofa.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '2492'); return false;">2</a></li>
+		<li><a href="2492-rozgaluzhen-kola-pravila-krhgofa.html#" title="Средне" class="r3-unit" onclick="doRate('3', '2492'); return false;">3</a></li>
+		<li><a href="2492-rozgaluzhen-kola-pravila-krhgofa.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '2492'); return false;">4</a></li>
+		<li><a href="2492-rozgaluzhen-kola-pravila-krhgofa.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '2492'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2018/02/12/index.html" ><i>12-02-2018, 19:12</i></a></span>
+	<h3 class="btl"><span id="news-title">Розгалужені кола. Правила Кірхгофа</span></h3>
+	<p class="argcat"><i>Категорія: <a href="fizyka/index.html">Фізика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-2492" style="display:inline;"><p>Правила Кірхгофа. Розглянемо електричне коло постійного струму, в якому є точки з&rsquo;єднання декількох провідників (наприклад точки а і d на мал. 39). Ці точки називають вузлами, або точками розгалуження. Відповідно електричні кола такого вигляду називають розгалуженими.</p>
+<p style="word-spacing: 1.1px;">Стосовно складних розгалужених кіл застосовують правила Кірхгофа, сформульовані у 1847 р. Густавом-Робертом Кірхгофом. Це два положення, які дають змогу обчислювати струми, напруги і ЕРС ділянок складних розгалужених кіл постійного струму.</p>
+<p style="word-spacing: 1.1px;">Перше правило випливає з закону збереження електричного заряду і називається правилом вузлів:</p>
+<p style="word-spacing: 1.1px;">Алгебраїчна сума струмів І<sub>к</sub>, що сходяться в будь-якій точці розгалуження (вузлі), дорівнює нулю,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-181.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">кількість провідників, що сходяться&nbsp;в точці розгалуження.</p>
+<p style="word-spacing: 1.1px;">При цьому додатними вважаються струми, що прямують до точки розгалуження, від&rsquo;ємними - струми, що виходять з неї.</p>
+<p style="word-spacing: 1.1px;">Друге правило називають правилом контурів. Будь-яке складне розгалужене коло можна поділити на прості (що не мають розгалужень). Наприклад, у колі на мал. 39 є два простих кола (їх називають контурами): cdab, defa.</p>
+<p style="word-spacing: 1.1px;">Друге правило Кірхгофа:</p>
+<p style="word-spacing: 1.1px;">У будь-якому довільно вибраному замкненому контурі алгебраїчна сума добутків сил струмів І<sub>к</sub>&nbsp;на опори R<sub>k</sub>&nbsp;відповідних ділянок контуру (сума спадів напруги) дорівнює алгебраїчній сумі ЕРС у цьому контурі,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-182.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-183.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Щоб скласти рівняння, скориставшись другим правилом, треба, по-перше, у складному електричному колі виділити довільні замкнуті контури, по-друге, умовно вибрати певний напрям обходу контуру (за годинниковою стрілкою або проти годинникової стрілки). При цьому струм вважають додатним, якщо його напрям збігається з вибраним напрямом обходу контуру; додатни-</p>
+<p style="word-spacing: 1.1px;">ми вважають також ті ЕРС, що підвищують потенціал, у напрямі обходу контуру, тобто коли напрям обходу збігається з переходом від від&rsquo;ємного полюса джерела струму до додатного, в супротивному випадку ЕРС цього джерела буде від&rsquo;ємною.</p>
+<p style="word-spacing: 1.1px;">Наприклад, для кола, зображеного на мал. 39, система рівнянь для визначення трьох невідомих струмів Ij, 1<sub>2</sub>&nbsp;і І<sub>3</sub>&nbsp;має такий вигляд:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-184.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Послідовне і паралельне з&rsquo;єднання провідників. З курсу фізики 9 класу нам відомі співвідношення між струмами і напругами на ділянках кола з послідовним (мал. 40) і паралельним (мал. 41) з&rsquo;єднанням провідників. Пригадаємо їх.</p>
+<p style="word-spacing: 1.1px;">Для послідовного з&rsquo;єднання провідників виконуються такі співвідношення:</p>
+<p style="word-spacing: 1.1px;">1) сила струму в усіх провідниках однакова, 1-І j = /<sub>2</sub>;</p>
+<p style="word-spacing: 1.1px;">2) напруга на всьому з&rsquo;єднанні дорівнює сумі спадів напруг на кожному провіднику,</p>
+<p style="word-spacing: 1.1px;">U = U<sub>x</sub>&nbsp;+ U<sub>2</sub>;</p>
+<p style="word-spacing: 1.1px;">3) напруга на кожному провіднику прямо пропорційна його опору,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-185.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4) загальний опір з'єднання дорівнює сумі опорів кожного провідника, R = R<sub>t</sub>+ R<sub>z</sub></p>
+<p style="word-spacing: 1.1px;">У випадку з&rsquo;єднання N провідників їх загальний опір</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-186.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-187.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 40. Послідовне з&rsquo;єднання провідників</p>
+<p style="word-spacing: 1.1px;">Для паралельного з'єднання провідників виконуються такі співвідношення:</p>
+<p style="word-spacing: 1.1px;">1) спади напруг на окремих провідниках і на всьому з'єднанні однакові, t/ = {/, + U<sub>2</sub>\</p>
+<p style="word-spacing: 1.1px;">2) сила струму до розгалуження дорівнює сумі струмів у кожному провіднику,</p>
+<p style="word-spacing: 1.1px;">3) сила струму в окремому провіднику обернено пропорційна його опору,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-188.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4) величина, обернена до загального опору з'єднання, дорівнює сумі обернених величин опорів кожного провідника,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-189.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У випадку з&rsquo;єднання N провідників</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-190.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-191.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Дані співвідношення легко отримуються із правил Кірхгофа. Можете самостійно їх довести.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-192.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Послідовне і паралельне з&rsquo;єднання джерел струму. На практиці однакові джерела струму з&rsquo;єднують у батарею.</p>
+<p style="word-spacing: 1.1px;">У разі послідовного з'єднання джерел струму у батарею позитивний полюс попереднього джерела з&rsquo;єднують з негативним полюсом наступного (мал. 42). ЕРС батареї дорівнює алгебраїчній сумі ЕРС елементів,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-193.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Закон Ома для всього кола з послідовним з&rsquo;єднанням однакових елементів має вигляд</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-194.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де п - кількість елементів, 8&mdash; ЕРС одного елемента, г - внутрішній опір одного елемента.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">У разі паралельного з'єднання джерел струму у батарею всі їх позитивні полюси приєднують до однієї клеми, а негативні - до другої (мал. 43).</p>
+<p style="word-spacing: 1.1px;">У цьому випадку заряди, які проходять через один елемент живлення, не потрапляють в інші, тобто ЕРС батареї дорівнює ЕРС одного елемента. Закон Ома для кола з однаковими паралельно з&rsquo;єднаними елементами має вигляд</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-195.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">де т - кількість елементів,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-196.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">одного елемента, г - внутрішній опір одного елемента.</p>
+<p style="word-spacing: 1.1px;">Мішане з'єднання елементів зображено на мал. 44.</p>
+<p style="word-spacing: 1.1px;">Закон Ома для кола у цьому випадку має вигляд</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-197.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-198.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Дайте відповіді на запитання</p>
+<p style="word-spacing: 1.1px;">1. Що називають вузлами розгалуженого електричного кола?</p>
+<p style="word-spacing: 1.1px;">2. На яких законах ґрунтується перше правило Кірхгофа?</p>
+<p style="word-spacing: 1.1px;">3. Що таке спад напруги на ділянці кола?</p>
+<p style="word-spacing: 1.1px;">4. Які значення ЕРС в контурах вважають додатними, а які - від&rsquo;ємними?</p>
+<p style="word-spacing: 1.1px;">5. Якщо в ході розв&rsquo;язування задачі отримано від'ємне значення сили струму, то що це означає?</p>
+<p style="word-spacing: 1.1px;">6. Як визначається ЕРС батареї однакових послідовно з'єднаних джерел струму?</p>
+<p style="word-spacing: 1.1px;">Загальні рекомендації до розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">Розв'язування задач на обчислення опорів складних з&rsquo;єднань провідників треба починати з аналізу схеми і відшукання в ній якихось двох або більше провідників, з&rsquo;єднаних один з одним послідовно чи паралельно. Якщо в схемі вдалося відшукати ділянку з такими провідниками, то її замінюють одним провідником, опір якого еквівалентний цим кільком і може бути легко підрахований за простою формулою. У результаті дістають простішу схему. Повторюють цей прийом доти, поки не залишиться лише один провідник, опір якого еквівалентний опору всього кола. Хід такого спрощення показано на мал. 45. Після визначення еквівалентного опору можна визначити силу струму в нерозгалуженій частині кола, якщо задано напругу, підведену до схеми.</p>
+<p style="word-spacing: 1.1px;">Часто в задачах треба визначити розподіли струмів в окремих вітках і напруг на ділянках кола. Для цього потрібно розгорнути найпростішу (останню) схему мал. 45 у вихідну і, переходячи в зворотному напрямі від однієї схеми до іншої, визначити за законами послідовного і паралельного з'єднань розподіли струмів між вітками і напруг на ділянках і окремих елементах кола.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-199.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Мал. 45. Обчислення загального опору складного з'єднання шляхом послідовних спрощень</p>
+<p style="word-spacing: 1.1px;">Якщо у складній схемі не вдається виявити ні послідовно, ні паралельно з'єднаних провідників, для знаходження загального опору кола можна скористатися двома властивостями електричного кола: 1) У будь-якому колі точки, що мають однакові потенціали, можна сполучити у вузол або роз'єднати. Від цього не зміняться опір всього кола і сила струму в окремих ділянках, оскільки струм між точками з однаковими потенціалами не проходить, проте такі зміни схеми часто істотно спрощують розрахунки. 2) Робота по переміщенню одиничного заряду з однієї точки однорідного кола в іншу не залежить від опору провідників, по яких переміщаються носії заряду, а визначається лише різницею потенціалів між цими точками. Який би не було вибрано шлях переміщення носіїв заряду по однорідному колу, алгебраїчна сума спадів напруги на окремих ділянках цього кола дорівнює різниці потенціалів між початковою і кінцевою точка-</p>
+<p style="word-spacing: 1.1px;">ми,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-200.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">сили струму і опори окремих ділянок кола. Але це твердження правильне лише тоді, коли на носи заряду діють тільки електричні сили і на ділянці немає джерел електрорушійної сили.</p>
+<p style="word-spacing: 1.1px;">Відшукання точок з однаковими потенціалами полегшується встановленням властивостей симетрії схеми. Симетричними називають схеми, в яких можна провести вісь (площину) симетрії, що ділить схему на дві частини. Одна з цих частин є дзеркальним відображенням другої. В схемах, що мають вісь або площину симетрії, завжди є точки з однаковими потенціалами.</p>
+<p style="word-spacing: 1.1px;">Якщо схема симетрична відносно осі (площини), проведеної через точки, до яких підведено напругу (поздовжня площина симетрії), то точки з однаковими потенціалами лежать на кінцях симетричних провідників, оскільки через них проходять однакові струми. Якщо ж схема симетрична відносно осі (площини), перпендикулярної до лінії, на якій лежать точки, до яких підведено напругу, тобто схема має поперечну вісь (площину) симетрії, то однаковий потенціал мають всі точки, які лежать на перетині цієї осі (площини) з провідниками. Це випливає з того, що робота електричних сил по переміщенню заряджених частинок не залежить від траєкторії руху.</p>
+<p style="word-spacing: 1.1px;">Відшукавши на схемі точки з однаковими потенціалами, треба сполучити їх (якщо вони були роз&rsquo;єднані) або роз&rsquo;єднати (якщо точки були сполучені), після чого дістаємо еквівалентну схему, яка складається з послідовно і паралельно з'єднаних провідників.</p>
+<p style="word-spacing: 1.1px;">Наприклад, необхідно визначити опір ділянки кола між точками А і Е на мал. 46, а (опори провідників однакові). У ділянці кола не можна визначити елементи з послідовним чи паралельним з&rsquo;єднанням, але схема має вісь симетрії, причому її вхід і вихід лежать на цій осі. Внаслідок цього симетричні відносно цієї осі точки (8 і Н), (D і F), (С, КІМ) мають однакові потенціали. З&rsquo;єднавши точки з однаковими потенціалами, одержимо схему, еквівалентну вихідній (мал. 46, б).</p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язуючи задачі на закони постійного струму в складних електричних колах, важливо правильно враховувати співвідношення між знаками електрорушійних сил, що діють в колі, та напрямками струмів. Якщо ЕРС створює струм того ж напрямку, що й струм, який проходить по колу, то її беруть із знаком плюс. Якщо ж джерело ЕРС увімкнуто так, що струм від цього джерела протилежний до напрямку струму у зовнішньому колі, то у формулі перед значенням цієї ЕРС треба ставити знак мінус.</p>
+<p style="word-spacing: 1.1px;">Слід розрізняти поняття напруги та спаду напруги. Напруга відрізняється від спаду напруги на тих ділянках кола, де діють сторонні сили. У цьому випадку до роботи сил електричного поля додається робота сторонніх сил з відповідним знаком.</p>
+<p style="word-spacing: 1.1px;">Таким чином, залежно від умови задачі закон Ома можна записати в трьох різних формах:</p>
+<p style="word-spacing: 1.1px;">а) Для ділянки кола, яка не містить джерела ЕРС, різниця потенціалів на кінцях ділянки U = IR.</p>
+<p style="word-spacing: 1.1px;">б) Для ділянки кола, яка містить джерело ЕРС,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-201.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">потенціал кінця ділянки з боку позитивного полюса батареї, а &lt;р - з боку негативного: R - опір ділянки, І - сила струму, причому такого напрямку, що всередині джерела він тече від &laquo;-&raquo; до &laquo; + &raquo;. Якщо ж струм тече в протилежному напрямку, то формула набуває вигляду</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-202.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">в) Для замкненого кола</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-203.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">- опори зовнішньої та внутрішньої ділянок замкненого кола.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-204.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У процесі проведення розрахунку параметрів складних кіл, коли в колах немає точок з однаковими потенціалами, що дало б змогу спростити коло, і особливо у випадку, коли в колах є кілька з&rsquo;єднаних між собою джерел струму, користуються законами Кірхгофа та методами суперпозиції, вузлових потенціалів, контурних струмів, переходом від трикутника з п провідників до еквівалентної зірки з п провідників тощо.</p>
+<p style="word-spacing: 1.1px;">Метод суперпозиції попитає в тому, що сила струму в будь-якій вітці визначається алгебра-</p>
+<p style="word-spacing: 1.1px;">їчною сумою сил струмів, створюваних у цій вітці кожним джерелом окремо, так, ніби це джерело е єдиним у цьому колі. Розв'язання задачі зводиться до того, щоб визначити сили струму від кожного джерела окремо і потім визначити їх алгебраїчну суму.</p>
+<p style="word-spacing: 1.1px;">Суть методу вузлових потенціалів полягає в тому, що один вузол можна &laquo;заземлити&raquo;. від цього розподіл струмів у вітках не зміниться. Тоді кількість вузлів, потенціали яких необхідно визначити зменшується на одиницю, оскільки потенціал одного вузла вже відомий і дорівнює нулю. Якщо кількість вузлів в електричному колі дорівнює к, то необхідно скласти (к - 1) рівняння за формулою закону Ома для ділянки кола (тобто виразити всі сили струмів у колі через вузлові потенціали). До одержаних рівнянь приписати рівняння першого закону Кірхгофа для вузлів і розв'язати отриману систему відносно невідомих.</p>
+<p style="word-spacing: 1.1px;">Для визначення сил струмів у складних колах з кількома вузловими точками і ЕРС застосовують метод контурних струмів, який дає можливість скоротити кількість розв&rsquo;язуваних рівнянь. Припускають, що у вітці, яка входить до складу двох суміжних контурів, проходять два контурні струми, з яких один є струмом одного з суміжних контурів, а другий - другого. Справжній струм в розглядуваній вітці визначається як сума або різниця цих двох струмів залежно від їх відносного напрямку.</p>
+<p style="word-spacing: 1.1px;">Якщо в складному колі опори R<sub>x</sub>, R<sub>2</sub>&nbsp;\ R<sub>3</sub>&nbsp;утворюють замкнутий трикутник (мал. 47, а), то для визначення еквівалентного опору можна застосувати метод переходу від трикутника до еквівалентної зірки. Задача зводиться до заміни опорів R<sub>x</sub>, R<sub>2</sub>&nbsp;і R<sub>3</sub>&nbsp;між вузловими точками a, b і с еквівалентними опорами R<sub>a</sub>, R<sub>h</sub>&nbsp;і R<sub>r</sub>, з'єднаними зіркою (мал. 47, б), причому</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-205.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Іноді до спрощення складної схеми веде заміна з&rsquo;єднання опорів у вигляді зірки еквівалентним трикутником опорів. У такому випадку</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-206.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв'язуючи задачі на визначення потужності струму особливу увагу слід приділяти правильному вибору вихідної формули для розрахунку потужності. Повну потужність струму розраховують за формулою Р = IU. Потужність струму, яка затрачається лише на теплову дію струму, обчислюють за формулою Р - I<sup>2</sup>R. Якщо ж мова йде про потужність струму, яка виділяється на ділянці кола, то треба скористатися формулою</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-207.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Нарешті, потужність, яку розвиває джерело електричної енергії, визначають</p>
+<p style="word-spacing: 1.1px;">за формулою Р = &pound;/.</p>
+<p style="word-spacing: 1.1px;">В кожному з цих випадків потрібно з&rsquo;ясувати, які з величин задано в умові задачі, які треба визначити, і підібрати відповідне співвідношення для розрахунків. Під час розв&rsquo;язування задач на обчислення потужності, яка виділяється у зовнішньому колі, часто буває доцільно скористатися тим, що ця потужність буде максимальною тоді, коли зовнішній опір кола дорівнює внутрішньому опору джерела.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-208.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Основною розрахунковою формулою розв&rsquo;язування задач на теплову дію струму є формула закону Джоуля-Ленца. Але тут також важливо спочатку з&rsquo;ясувати, якою з формул закону Джоуля-Ленца зручніше скористатися. Якщо ділянка кола не містить джерел струму, то кількість теплоти, яка виділяється на цій ділянці, можна обчислювати за формулами</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-209.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">дає змогу обчислювати кількість теплоти, яка виділяється струмом на будь-якій ділянці кола, незалежно від процесів, що відбуваються в ній. Іншими словами, перші дві формули визначають кількість теплоти, яка виділяється в колі за умови, що вся енергія струму перетворюється у внутрішню енергію, якщо ж за рахунок енергії струму виконується механічна робота або відбуваються хімічні процеси, то кількість виділеної в колі теплоти обчислюється тільки за формулою Q = ҐШ.</p>
+<p style="word-spacing: 1.1px;">Приклади розв&rsquo;язування задач</p>
+<p style="word-spacing: 1.1px;">Задача 1. У схемі, наведеній на мал. 48, a, R<sub>x</sub>&nbsp;=3 Ом, R<sub>2</sub>&nbsp;= 9 Ом, R<sub>:i</sub>&nbsp;= R<sub>4</sub>&nbsp;= 6 Ом, Я<sub>5</sub>&nbsp;= 4 Ом, #<sub>6</sub>&nbsp;= б Ом. Визначити загальний опір цього кола.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-210.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язання</p>
+<p style="word-spacing: 1.1px;">Зобразимо схему трохи інакше (мал. 48, б).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-211.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тепер</p>
+<p style="word-spacing: 1.1px;">обчислення опору кола зводиться до знаходження опору паралельного і послідовного з&rsquo;єднання провідників і не становить труднощів:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-212.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Задача 2. Визначити сили струмів в резисторах Я, Я<sub>2</sub>&nbsp;Я<sub>3</sub>&nbsp;(мал. 49, а), якщо і?! = 16 Ом, R<sub>2</sub>&nbsp;= 12 Ом, Я<sub>3</sub>&nbsp;= 10 Ом,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-213.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-214.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язання</p>
+<p style="word-spacing: 1.1px;">Скориставшись методом суперпозиції, вважатимемо, шо ЕРС другої батареї дорівнює нулю, і визначимо розподіл струмів, зумовлений першою батареєю (мал. 49, б).</p>
+<p style="word-spacing: 1.1px;">Замінимо опори Я<sub>2</sub>, Я<sub>3</sub>&nbsp;та г<sub>2</sub>&nbsp;еквівалентним опором</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-215.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Напруга між точками с і d дорівнює</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-216.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тепер вважатимемо, що ЕРС першої батареї дорівнює нулю і аналогічно визначимо розподіл струмів, зумовлений другою батареєю (мал. 49, в).</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-217.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Задача 3. В електричному колі (мал. 50) Я, =4 Ом, Я<sub>2</sub>&nbsp;= 1 Ом, Я<sub>л</sub>&nbsp;=2 Ом, R. =3 Ом,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-218.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Обчислити силу струму, що проходить у кожній вітці.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-219.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-220.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язання</p>
+<p style="word-spacing: 1.1px;">Скористаємось методом вузлових потенціалів.</p>
+<p style="word-spacing: 1.1px;">Позначимо потенціали вузлів цього кола через</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-221.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">та (р<sub>4</sub>. Потенціал однієї з точок кола завжди можна вважати таким, що дорівнює нулю. Тоді, оскільки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-222.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">можна</p>
+<p style="word-spacing: 1.1px;">вважати, що</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-223.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Потенціали ф<sub>2</sub>таф<sub>3</sub>&nbsp;не відомі.</p>
+<p style="word-spacing: 1.1px;">Виразимо всі сили струмів у колі через вузлові потенціали:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-224.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">За законом Кірхгофа для сил струмів, можна записати</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-225.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Підставивши у ці співвідношення числові значення відомих величин, отримуємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-226.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язавши цю систему з двох рівнянь, дістанемо значення невідомих потенціалів:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-227.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Підставивши ці значення в рівності, які виражають сили струмів через вузлові потенціали, отримаємо /<sub>12</sub>&nbsp;= 2,7 А, 1<sub>2л</sub>&nbsp;- 4,2 А, /<sub>13</sub>&nbsp;= 3,9 А, /<sub>34</sub>&nbsp;= 2,4 А та /<sub>23</sub>&nbsp;= -1,5 А.</p>
+<p style="word-spacing: 1.1px;">Сила струму /<sub>23</sub>&nbsp;від&rsquo;ємна, це означає, що вона напрямлена не від вузла 2 до вузла З, як ми припустили, складаючи рівняння, а у протилежному напрямку.</p>
+<p style="word-spacing: 1.1px;">Відповідь: 2,7 А; 4,2 А; 3,9 А; 2,4 А; -1,5 А.</p>
+<p style="word-spacing: 1.1px;">Задача 4. ЕРС акумулятора &pound;, а внутрішній опір г. Визначити а) різницю потенціалів U на клемах акумулятора, якщо на зовнішньому опорі (мал. 51) виділяється потужність Р (пояснити неоднозначність відповіді); б) залежність ККД акумулятора і корисної потужності Р від зовнішнього опору R. Накреслити графіки залежності r\(R) та Р(Я). Визначити максимальне значення Р<sub>шах</sub>&nbsp;і встановити, для якого R воно досягається.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-228.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-229.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Розв&rsquo;язання</p>
+<p style="word-spacing: 1.1px;">а) На зовнішньому опорі R виділяється потужність</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-230.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тобто</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-231.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розв&rsquo;язавши квадратне рівняння, отримуємо</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-232.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Два значення U пояснюються тим, що та сама потужність Р може виділятись на різних зовнішніх опорах (Д, чи R<sub>2</sub>) при відповідних силах струму (/<sub>t</sub>&nbsp;та /<sub>2</sub>).</p>
+<p style="word-spacing: 1.1px;">б) ККД визначається за формулою</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-233.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">тобто</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-234.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Графік залежності rj(K) наведено на мал. 52, а.</p>
+<p style="word-spacing: 1.1px;">Корисна потужність</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-235.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-236.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">формула для корисної потужності набуває вигляду</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-237.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Графік залежності Р (R) зображено на мал. 52, б.</p>
+<p style="word-spacing: 1.1px;">Максимальне значення Р<sub>тах</sub>&nbsp;можна визначити двома способами:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-238.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">І спосіб. Дослідимо на мінімум функцію</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-239.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Оскільки</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-240.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">і мінімум до</p>
+<p style="word-spacing: 1.1px;">сягається, очевидно, при Я = г. Отже,</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-241.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">II спосіб. Корисна потужність</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-242.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">З цього виразу вид</p>
+<p style="word-spacing: 1.1px;">но, що Р максимальне, коли</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-243.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">тобто коли</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-244.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">При цьому</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-245.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-246.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Відповідь:</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-247.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вправа 9</p>
+<p style="word-spacing: 1.1px;">1. Визначити загальний опір ділянки кола, у кожному з випадків, зображених на мал. 53. Опір коленого провідника R = 1 Ом.</p>
+<p style="word-spacing: 1.1px;">2. Що покаже амперметр у схемі (мал. 54), якщо Я, = Д,=Д<sub>3</sub>&nbsp;= ЮОм,Я<sub>3</sub>&nbsp;= 150м, Є= ЗО В. Опором амперметра знехтувати.</p>
+<p style="word-spacing: 1.1px;">3. Визначити силу струму І в колі (мал. 55), якщо у кожного елемента ЕРС 2,2 В, а внутрішній опір 20 мОм. Я, = Я<sub>2</sub>&nbsp;= 2 Ом, flg = 6 Ом, Я<sub>4</sub>&nbsp;= 4 Ом та Я<sub>3</sub>&nbsp;= 0,9 Ом.</p>
+<p style="word-spacing: 1.1px;">4. Визначити струми у ділянках кола (мал. 56), якщо = 27 В, &pound;<sub>2</sub>&nbsp;= ЗО В, Я, = ЗО мОм, Я<sub>2</sub>&nbsp;= 50 мОм, Я, = Я<sub>2</sub>&nbsp;= Я<sub>5</sub>&nbsp;= 8 Ом, Я<sub>:1</sub>&nbsp;= 1,97 Ом, Я<sub>4</sub>&nbsp;= 2,95 Ом, Я<sub>в</sub>&nbsp;= 12 Ом, Я<sub>7</sub>= 1,2 Ом.</p>
+<p style="word-spacing: 1.1px;">5. У колі, зображеному на мал. 57, &pound;, = 2 В, Є<sub>г</sub>&nbsp;= 1 В, г, = 1 Ом, г<sub>г</sub>&nbsp;= 0,5 Ом, Я = 0,5 Ом. Визначити розподіл струмів.</p>
+<p style="word-spacing: 1.1px;">6. У колі, зображеному на мал. 58, Я, = 4 Ом, Я<sub>2</sub>= 10 Ом, Я<sub>3</sub>&nbsp;= 40Ом, Я<sub>4</sub>&nbsp;= 200м. До кола прикладена напруга U = 60 В. Через ділянку опором R., проходить струм 4 А. Визначити опір Я<sub>5</sub>.</p>
+<p style="word-spacing: 1.1px;">7. У схемі, зображеній на мал. 59, = 2 В, &pound;<sub>г</sub>&nbsp;- 2,4 В, Я, = 50 Ом, Я<sub>2</sub>&nbsp;= 10 Ом,</p>
+<p style="word-spacing: 1.1px;">Я<sub>3</sub>&nbsp;- 15 Ом. Визначити силу струму для кожної ділянки кола. Внутрішнім опором джерел струму знехтувати.</p>
+<p style="word-spacing: 1.1px;">8. У схемі (мал. 60) визначити всі сили струмів, якщо Є = 1,5 В, г = 0,1 Ом, Я, = 1 Ом, Д<sub>2</sub>&nbsp;= 1,6 Ом, Я<sub>3</sub>&nbsp;= Я<sub>8</sub>&nbsp;= 2 Ом, Я<sub>4</sub>&nbsp;= 1,2 Ом.</p>
+<p style="word-spacing: 1.1px;">9. До батареї, ЕРС якої 50 В та внутрішній опір 5 Ом, під&rsquo;єднано зовнішнє навантаження, яке дає можливість змінювати струм у колі від 0 до 10 А послідовно через 1 А. Побудувати графіки залежності сили струму від: а) потужності струму, що виділяється джерелом на зовнішньому навантаженні; б) потужності, що споживається джерелом; в) повної потужності; г) ККД джерела.</p>
+<p style="word-spacing: 1.1px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-248.jpg" alt="" /><img style="display: block; margin-left: auto; margin-right: auto;" src="uploads/11-fizika-zasekina-2011/11-fizika-zasekina-2008-249.jpg" alt="" /></p>
+<p>&nbsp;</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="2517-rezonans-u-kol-zmnnogo-strumu.html">Резонанс у колі змінного струму</a></li><li><a href="2515-elektrichno-kolo-zmnnogo-strumu-z-aktivnim-ta-reaktivnim-navantazhennyami.html">Електричне коло змінного струму із активним та реактивним навантаженнями</a></li><li><a href="2512-aktivniy-opr-u-kol-zmnnogo-strumu.html">Активний опір у колі змінного струму</a></li><li><a href="2500-tehnchne-vikoristannya-samostynogo-gazovogo-rozryadu-ta-plazmi.html">Технічне використання самостійного газового розряду та плазми</a></li><li><a href="2491-elektrorushyna-sila-zakon-oma-dlya-povnogo-kola.html">Електрорушійна сила. Закон Ома для повного кола</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->
