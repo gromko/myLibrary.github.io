@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Комп'ютерний словник &raquo; mozok.click</title>
+<meta name="description" content="База даних  сховище організованої сукупності даних різного типу, які відображають стан обєктів певної предметної галузі та звязки між ними.Вербальна модель  опис обєкта, процесу, явища приро" />
+<meta name="keywords" content="масив, даних, Відкритий, мовою, природною, явища, розділі, якого, вказується, елементів, індексів, діапазону, оголошується, процесу, обєкта, різного, відображають, сукупності, організованої, сховище" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='760-kompyuterniy-slovnik.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Комп'ютерний словник</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb760").Button("#infc760"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb760" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc760" class="infcont">
+			<ul>
+				<li><i>Переглядів: 730</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 11:01</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-760'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="760-kompyuterniy-slovnik.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '760'); return false;">1</a></li>
+		<li><a href="760-kompyuterniy-slovnik.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '760'); return false;">2</a></li>
+		<li><a href="760-kompyuterniy-slovnik.html#" title="Средне" class="r3-unit" onclick="doRate('3', '760'); return false;">3</a></li>
+		<li><a href="760-kompyuterniy-slovnik.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '760'); return false;">4</a></li>
+		<li><a href="760-kompyuterniy-slovnik.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '760'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 11:01</i></a></span>
+	<h3 class="btl"><span id="news-title">Комп'ютерний словник</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-760" style="display:inline;"><p>База даних &mdash; сховище організованої сукупності даних різного типу, які відображають стан об&rsquo;єктів певної предметної галузі та зв&rsquo;язки&nbsp;між ними.</p>
+<p style="word-spacing: 1.1px;">Вербальна модель &mdash; опис об&rsquo;єкта, процесу, явища природною мовою.</p>
+<p style="word-spacing: 1.1px;">Відкритий масив &mdash; масив, у розділі var або type якого оголошується масив без діапазону&nbsp;індексів, вказується лише тип елементів.</p>
+<p style="word-spacing: 1.1px;">Головна діагональ &mdash; діагональ масиву, що з&rsquo;єднує лівий верхній елемент із правим нижнім.</p>
+<p style="word-spacing: 1.1px;">Двійковий пошук &mdash; пошук даних у впорядкованому масиві.</p>
+<p style="word-spacing: 1.1px;">Двовимірний масив &mdash; структура даних одного типу, що складається з фіксованої кількості&nbsp;рядків і стовпців.</p>
+<p style="word-spacing: 1.1px;">Допоміжний алгоритм &mdash; алгоритм, який може неодноразово використовуватися в основному&nbsp;алгоритмі.</p>
+<p style="word-spacing: 1.1px;">Експрес-сканування &mdash; швидке сканування, за допомогою якого сканується оперативна&nbsp;пам&rsquo;ять і системні файли.</p>
+<p style="word-spacing: 1.1px;">Електронний документообіг (обіг електронних документів) &mdash; сукупність процесів створення, опрацювання, відправлення, передавання,&nbsp;одержання, зберігання, використання та знищення електронних документів, які виконуються із застосуванням перевірки цілісності,&nbsp;а в разі необхідності &mdash; з підтвердженням&nbsp;факту одержання таких документів.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Запит &mdash; об&rsquo;єкт бази даних, призначений для вибору з таблиці необхідних даних і подання&nbsp;їх користувачу в зручній формі.</p>
+<p style="word-spacing: 1.1px;">Запит із параметрами &mdash; запит, у процесі виконання якого потрібно ввести деякі дані.</p>
+<p style="word-spacing: 1.1px;">Запит на змінення &mdash; запит, за допомогою якого вносяться зміни в таблиці.</p>
+<p style="word-spacing: 1.1px;">Звіт &mdash; об&rsquo;єкт бази даних, призначений для виведення даних у зручному для користувача&nbsp;вигляді.</p>
+<p style="word-spacing: 1.1px;">Інформатика &mdash; галузь людської діяльності, пов&rsquo;язана з процесами опрацювання інформації за допомогою комп&rsquo;ютера та середовища їх&nbsp;застосування.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерна безпека &mdash; стан захищеності систем опрацювання й зберігання даних, за якого забезпечується конфіденційність, доступність і цілісність даних</p>
+<p style="word-spacing: 1.1px;">Інформаційна культура &mdash; елемент загальної культури людини, що є характеристикою особистості, яка проявляється в умінні цілеспрямовано працювати з інформацією, опануванні&nbsp;нових засобів інформаційно-комунікаційних&nbsp;технологій, дотриманні морально-етичних&nbsp;норм під час створення й використання інформаційних матеріалів.</p>
+<p style="word-spacing: 1.1px;">Інформаційна модель &mdash; вербальний, графічний, математичний, табличний тощо опис об&rsquo;єкта.</p>
+<p style="word-spacing: 1.1px;">Інформаційна система &mdash; програмно-апаратний комплекс для зберігання даних, виконання&nbsp;над ними операцій, обумовлених специфікою&nbsp;предметної галузі, забезпечення зручного графічного інтерфейсу для доступу до необхідних&nbsp;даних та їх опрацювання.</p>
+<p style="word-spacing: 1.1px;">Інформаційні процеси &mdash; процеси, пов&rsquo;язані з пошуком, збиранням, збереженням, опрацюванням, передаванням, відображенням&nbsp;і захистом інформації.</p>
+<p style="word-spacing: 1.1px;">Інформаційна технологія &mdash; сукупність методів і способів пошуку, збирання, накопичення, зберігання й опрацювання інформації на основі засобів обчислювальної і комунікаційної техніки.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Ключ таблиці &mdash; стовпець (або кілька стовпців), який однозначно ідентифікує рядки.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне моделювання &mdash; процес реалізації інформаційних моделей на комп&rsquo;ютері.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерний вірус &mdash; шкідлива програма, що здатна до самокопіювання та вбудовування в код інших програм, системні ділянки&nbsp;пам&rsquo;яті чи завантажувальні сектори, а також&nbsp;поширення своїх копій різними каналами&nbsp;зв&rsquo;язку.</p>
+<p style="word-spacing: 1.1px;">Лінійний пошук &mdash; пошук даних у масиві, заснований на прямому переборі елементів&nbsp;масиву.</p>
+<p style="word-spacing: 1.1px;">Масив &mdash; структурований тип даних, елементи якого мають один тип.</p>
+<p style="word-spacing: 1.1px;">Математична модель &mdash; система математичних рівнянь, формул, числових множин, які описують деякі властивості об&rsquo;єкта, процесу або&nbsp;явища.</p>
+<p style="word-spacing: 1.1px;">Метод вибору &mdash; метод упорядкування елементів масиву, заснований на пошуку максимального (мінімального) елемента й зміні місця його розташування.</p>
+<p style="word-spacing: 1.1px;">Моделювання &mdash; процес створення моделі.</p>
+<p style="word-spacing: 1.1px;">Модель &mdash; сукупність найважливіших властивостей об&rsquo;єкта, процесу, явища, яка визначається метою її створення і може мати різні форми вираження.</p>
+<p style="word-spacing: 1.1px;">Модель даних &mdash; спосіб об&rsquo;єднання даних у структури.</p>
+<p style="word-spacing: 1.1px;">Параметри підпрограми &mdash; дані, що передаються у підпрограму для опрацювання.</p>
+<p style="word-spacing: 1.1px;">Підпрограма &mdash; логічно завершений фрагмент програми з присвоєним іменем, до якого можна звертатися неодноразово.</p>
+<p style="word-spacing: 1.1px;">Побічна діагональ &mdash; діагональ масиву, що з&rsquo;єднує правий верхній елемент із лівим нижнім.</p>
+<p style="word-spacing: 1.1px;">Редактор StringGrid &mdash; вікно для уведення елементів двовимірного масиву.</p>
+<p style="word-spacing: 1.1px;">Рядок &mdash; набір символів певної довжини.</p>
+<p style="word-spacing: 1.1px;">Символ &mdash; цифра, буква або інший знак клавіатури.</p>
+<p style="word-spacing: 1.1px;">Синхронізація даних &mdash; процес перевірки та реалізації ідентичності вибраних даних на&nbsp;різних пристроях.</p>
+<p style="word-spacing: 1.1px;">Стандартна підпрограма &mdash; підпрограма, вбудована у мову програмування.</p>
+<p style="word-spacing: 1.1px;">Таблиця &mdash; об&rsquo;єкт бази даних, у якому зберігаються дані різного типу.</p>
+<p style="word-spacing: 1.1px;">Фактичні параметри &mdash; змінні, що вказані в операторі виклику підпрограми.</p>
+<p style="word-spacing: 1.1px;">Фільтрування даних &mdash; вибір із таблиці записів, які містять задані значення в обраних полях.</p>
+<p style="word-spacing: 1.1px;">Форма &mdash; об&rsquo;єкт бази даних, за допомогою якого можна вводити й змінювати дані у таблицях.</p>
+<p style="word-spacing: 1.1px;">Формальні параметри &mdash; змінні, вказані у заголовку підпрограми.</p>
+<p style="word-spacing: 1.1px;">Шкідлива програма &mdash; спеціально розроблена програми для пошкодження та знищення файлів, даних, програмного забезпечення, викрадення особистих даних користувача.</p>
+<p style="word-spacing: 1.1px;">avast! &mdash; антивірусна програма, що забезпечує високий ступінь захисту комп&rsquo;ютера від вірусів та інших шкідливих програм.</p>
+<p style="word-spacing: 1.1px;">chr (x) &mdash; функція повернення символу, код якого дорівнює х.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">ColCount &mdash; кількість стовпців компонента TStringGrid.</p>
+<p style="word-spacing: 1.1px;">consat (S1, S2) &mdash; функція об&rsquo;єднання рядків S1 і S2.</p>
+<p style="word-spacing: 1.1px;">copy (S, n, m) &mdash; функція копіювання m символів рядка S, починаючи з символу n.</p>
+<p style="word-spacing: 1.1px;">delete (S, n, m) &mdash; функція вилучення з рядка S m символів, починаючи з позиції n.</p>
+<p style="word-spacing: 1.1px;">InputBox() &mdash; функція, що застосовується для циклічного уведення елементів масиву.</p>
+<p style="word-spacing: 1.1px;">insert (S1, S2, n) &mdash; функція вставлення в рядок S2 рядка S1, починаючи з позиції n.</p>
+<p style="word-spacing: 1.1px;">length (S) &mdash; функція визначення довжини рядка.</p>
+<p style="word-spacing: 1.1px;">ord (c) &mdash; функція повернення коду символу с.</p>
+<p style="word-spacing: 1.1px;">pos (S1, S2) &mdash; функція визначення номера позиції, з якої починається входження рядка S2 у рядок S1 .</p>
+<p style="word-spacing: 1.1px;">RowCount &mdash; кількість рядків компонента TStringGrid.</p>
+<p style="word-spacing: 1.1px;">RSS &mdash; множина XML-форматів, яку використовують для публікації та постачання інформації, що часто оновлюється.</p>
+<p style="word-spacing: 1.1px;">ShowMessage() &mdash; функція, що застосовується для циклічного виведення елементів масиву.</p>
+<p style="word-spacing: 1.1px;">TStringGrid &mdash; компонент, що використовується для введення/виведення двовимірних масивів.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="756-dvovimrn-masivi.html">Двовимірні масиви</a></li><li><a href="682-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="679-opracyuvannya-dvovimrnih-masivv-danih.html">Опрацювання двовимірних масивів даних</a></li><li><a href="678-dvovimrniy-masiv-danih.html">Двовимірний масив даних</a></li><li><a href="672-odnovimrniy-masiv-danih.html">Одновимірний масив даних</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

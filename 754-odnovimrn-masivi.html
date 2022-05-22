@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Одновимірні масиви &raquo; mozok.click</title>
+<meta name="description" content="Пригадайте, що називають середовищем програмування; які основні функції воно повинно виконувати? Яке середовище програмування ви використовували у 5-7 класах; у 8 класі? Які недоліки, на ваш" />
+<meta name="keywords" content="програмування, класі, класах, недоліки, думку, мають, використовували, середовища, виконувати, середовищем, називають, основні, функції, Пригадайте, повинно, середовище" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='754-odnovimrn-masivi.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Одновимірні масиви</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb754").Button("#infc754"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb754" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc754" class="infcont">
+			<ul>
+				<li><i>Переглядів: 18861</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 10:46</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-754'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="754-odnovimrn-masivi.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '754'); return false;">1</a></li>
+		<li><a href="754-odnovimrn-masivi.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '754'); return false;">2</a></li>
+		<li><a href="754-odnovimrn-masivi.html#" title="Средне" class="r3-unit" onclick="doRate('3', '754'); return false;">3</a></li>
+		<li><a href="754-odnovimrn-masivi.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '754'); return false;">4</a></li>
+		<li><a href="754-odnovimrn-masivi.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '754'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 10:46</i></a></span>
+	<h3 class="btl"><span id="news-title">Одновимірні масиви</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-754" style="display:inline;"><p><strong>9.1. Основи роботи у середовищі Lazarus&nbsp;(повторення)</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте, що називають середовищем програмування; які основні функції воно повинно виконувати? Яке середовище&nbsp;програмування ви використовували у 5-7 класах; у 8 класі?&nbsp;Які недоліки, на вашу думку, мають ці середовища?</p>
+<p style="word-spacing: 1.1px;">Загальні відомості про середовище Lazarus</p>
+<p style="word-spacing: 1.1px;">Lazarus &mdash; це вільне інтегроване середовище візуального програмування мовою Free Pascal. У середовищі Lazarus реалізовані елементи об&rsquo;єктно-орієнтованого програмування&nbsp;(ООП). Середовище функціонує під управлінням ОС Windows&nbsp;і Linux. Воно забезпечує розробку програм як у консольному,&nbsp;так і у візуальному режимах. Методика розробки програм&nbsp;у консольному режимі принципово не відрізняється від методики створення програм у середовищі Free Pascal. Тому далі&nbsp;основна увага буде приділятися візуальному режиму.</p>
+<p style="word-spacing: 1.1px;">Початковий вигляд вікон середовища Lazarus зображено на рис. 1.</p>
+<p style="word-spacing: 1.1px;">ООП &mdash; це методика розробки програм, в основі якої є поняття об'єкт, метод і клас. Основна&nbsp;ідея ООП полягає в об'єднанні&nbsp;даних, з якими працює програмний код, і процедур їх&nbsp;опрацювання в єдине ціле.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-223.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;">Головне вікно Lazarus (рис. 2) складається з трьох частин: головного меню (Файл, Правка та ін.), панелі інструментів (ліворуч під головним меню) і палітри компонентів на вкладках&nbsp;Standard, Additional та ін.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-224.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-225.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Головне вікно відкрите протягом усього періоду роботи середовища. Призначення окремих пунктів головного меню&nbsp;(Файл, Правка, Пошук, Вигляд та ін.) аналогічне призначенню&nbsp;однойменних пунктів інших прикладних програм, зокрема&nbsp;стандартного редактора тексту. На панелі інструментів розташовані кнопки команд, що часто використовуються. Вони&nbsp;дублюють деякі команди головного меню. Назви цих кнопок&nbsp;з&rsquo;являються після встановлення на них вказівника миші.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-226.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Кнопки цієї панелі призначені в основному для зручності і прискорення роботи користувача.</p>
+<p style="word-spacing: 1.1px;">На палітрі компонентів розташована значна кількість компонентів, які користувач може розміщувати на формі в процесі створення інтерфейсу майбутньої програми. Ці компоненти згруповані за функціональним призначенням. За замовчуванням відкриваються компоненти групи Standart (див. рис. 2). Найчастіше з цієї групи застосовують такі компоненти:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-227.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Можна скористатися також компонентами групи Additional та ін. Для розкриття&nbsp;компонентів інших груп необхідно клацнути назву відповідної групи.</p>
+<p style="word-spacing: 1.1px;">Компонент, перенесений на форму, є об'єктом. Кожний об'єкт має властивості і методи. Властивості визначають&nbsp;зовнішній вигляд об'єкта (ім'я, розміри, колір та ін.). Метод визначає поведінку об'єкта, наприклад, як він буде&nbsp;реагувати на клацання кнопки миші або зміну його розміру. Для налаштування властивостей об'єктів використовують Інспектор об'єктів. Значення деяких властивостей&nbsp;можуть змінюватися також програмно.</p>
+<p style="word-spacing: 1.1px;">Перенесення компонента на форму виконується клацанням&nbsp;кнопки миші цього компонента, потім клацанням цієї кнопки&nbsp;у тому місці форми, де передбачається його розмістити. Для&nbsp;відмовлення від перенесення&nbsp;на форму вибраного компонента слід клацнути кнопку зі</p>
+<p style="word-spacing: 1.1px;">стрілкою&nbsp;розташовану на вкладці ліворуч.</p>
+<p style="word-spacing: 1.1px;">Вікно інспектора об&rsquo;єктів призначене для надання компонентам, розташованим на формі, необхідних характеристик (параметрів), наприклад кольору, розміру та ін. Вікно містить&nbsp;вкладки Властивості і Події. У лівому стовпці розташовані назви властивостей або подій, а в правому &mdash; значення властивостей або імена обробників подій. Для вибору властивості&nbsp;або події необхідно клацнути кнопкою миші на необхідному&nbsp;рядку, після чого можна вибрати або ввести її значення.</p>
+<p style="word-spacing: 1.1px;">Кожний об'єкт має ім'я і властивості. Поведінка об'єкта і його взаємодія з іншими об'єктами&nbsp;описується за допомогою методів, які фактично є аналогами підпрограм процедурних&nbsp;мов програмування. Клас &mdash; це&nbsp;сукупність змінних і методів їх&nbsp;опрацювання. Часто говорять,&nbsp;що клас &mdash; це шаблон об'єкта,&nbsp;а об'єкт &mdash; це екземпляр класу.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-228.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Швейцарський інженер і дослідник світу програмування. Автор і один з розробників мови програмування Паскаль. Ніклаус&nbsp;Вірт є одним з найавторитетніших у світі вчених в області&nbsp;комп'ютерних наук, його книга&nbsp;&laquo;Алгоритми + структури даних = програми&raquo; вважається&nbsp;одним із класичних підручників&nbsp;зі структурного програмування.</p>
+<p style="word-spacing: 1.1px;">Властивості поділяються на прості та складні. Прості властивості мають лише одне значення, а складні &mdash; декілька значень. Наприклад, властивість Caption (Заголовок) визначається рядком символів, а властивість Font (Шрифт) &mdash;&nbsp;це набір шрифтів, із яких можна вибрати один конкретний&nbsp;шрифт. Ліворуч від назви складних властивостей розташований трикутник. Якщо клацнути світлий трикутник (після цього він набуде темного кольору), то відкриється список&nbsp;його значень. Клацання на темному трикутнику приведе до&nbsp;згортання списку. Біля простих властивостей трикутника&nbsp;немає.</p>
+<p style="word-spacing: 1.1px;">Для активації будь-якої властивості необхідно клацнути на ній кнопкою миші. Після активації властивості в кінці&nbsp;рядка може з&rsquo;явитися кнопка з трьома точками і кнопка зі&nbsp;стрілкою вниз. Після клацання кнопки з трьома точками відкриється діалогове вікно для вибору відповідних значень. Наприклад, після активації властивості Color відкриється вікно&nbsp;Колір. Активація кнопки трикутника приведе до розкриття&nbsp;списку можливих значень цієї властивості.</p>
+<p style="word-spacing: 1.1px;">У верхній частині вікна інспектора об&rsquo;єктів міститься список імен усіх компонентів, розташованих у даний момент на формі. Після клацання мишею імені компонента у цьому&nbsp;списку виконується активація відповідного компонента на&nbsp;формі. Налаштування вікна інспектора об&rsquo;єктів здійснюється&nbsp;за допомогою його контекстного меню.</p>
+<p style="word-spacing: 1.1px;">У першому стовпці вкладки Події відображається ім'я події, а в другому &mdash; ім'я підпрограми&nbsp;для ї ї опрацювання (ім'я опра-цьовувача події).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-229.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Вікно редактора тексту (див. рис. 2) призначено для введення і редагування програмного коду. Фактично у редакторі тексту міститься структура (шаблон) майбутньої програми, що полегшує роботу програміста.</p>
+<p style="word-spacing: 1.1px;">Ключові слова виділяються напівжирним шрифтом, знаки пунктуації &mdash; червоним кольором, коментарі &mdash;&nbsp;синім, а помилки &mdash; коричневим.</p>
+<p style="word-spacing: 1.1px;">Вікно форми, або конструктор форми, призначено для створення інтерфейсу майбутньої програми, яку розробляє&nbsp;користувач. На початку роботи воно містить лише заголовок&nbsp;і кнопки управління вікном форми (див. рис. 1). Потім користувач наповнює її необхідними компонентами.</p>
+<p style="word-spacing: 1.1px;">За замовчуванням на передньому плані міститься вікно редактора тексту, яке закриває форму. Активувати вікно можна за допомогою клавіші F12 або команди Вигляд ^ Перемкнути&nbsp;форму/модуль.</p>
+<p style="word-spacing: 1.1px;">Для створення інтерфейсу на формі розміщують необхідні компоненти і встановлюють їхні властивості. Після розміщення на формі будь-якого компонента у вікні редактора тексту автоматично генерується відповідний програмний код.&nbsp;Користувач повинен доповнити його необхідними командами для реалізації відповідного алгоритму. Усі файли, з яких&nbsp;складається програмний код, називають проектом.</p>
+<p style="word-spacing: 1.1px;">Програми у середовищі Lazarus розробляють у три етапи (рис. 3).</p>
+<p style="word-spacing: 1.1px;">&laquo;Гарний токар працює у декілька разів краще, ніж середній, а гарний програміст коштує у 10000 разів більше, ніж звичайний&raquo;.</p>
+<p style="word-spacing: 1.1px;">Вілл Гей тс</p>
+<p style="word-spacing: 1.1px;">Для створення інтерфейсу майбутньої програми у середовищі Lazarus використовують форму, а для введення і редагування програмного коду &mdash; вікно редактора. Після&nbsp;розміщення компонента на форму автоматично змінюється&nbsp;програмний код у вікні редактора тексту. Найчастіше використовують компоненти групи Standard, у якій містяться&nbsp;стандартні елементи інтерфейсу. Такими компонентами, зокрема, є: TButton (командна кнопка), TLabel (поле для розміщення однорядкових написів), TMemo (багаторядковий текстовий редактор) та ін.</p>
+<p style="word-spacing: 1.1px;">Форма та інші об'єкти реагують на події. Перелік подій міститься в інспекторі об'єктів на вкладці Події. Найчастіше застосовується подія &#111;nclick. Програміст розробляє код, який відповідно реагує на ту чи іншу подію.&nbsp;Такий код називають обробником події.</p>
+<p style="word-spacing: 1.1px;">Програма у середовищі Lazarus є проектом. Проект об&rsquo;єднує декілька файлів, із яких створюється єдиний файл,&nbsp;що виконується. У результаті компіляції з файлів проекту&nbsp;створюється єдиний файл, що виконується, з розширенням&nbsp;exe. Ім&rsquo;я файла збігається з іменем проекту. Користувач розробляє програмний модуль, усі інші додаються до проекту&nbsp;автоматично. Заголовок модуля починається ключовим словом unit, за яким слідує ім&rsquo;я модуля і крапка з комою. Розділ опису починається ключовим словом interface. Тут описуються компоненти програмного коду: типи, класи, процедури&nbsp;і функції. Розділ implementation (див. рис. 1) містить програмний код опрацювання даних, який розробляє користувач.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які вікна має середовище Lazarus?</p>
+<p style="word-spacing: 1.1px;">За допомогою яких команд виконується компіляція і запуск програми?</p>
+<p style="word-spacing: 1.1px;">Для чого призначено вікно редактора тексту?</p>
+<p style="word-spacing: 1.1px;">Для чого призначена панель інструментів головного вікна?</p>
+<p style="word-spacing: 1.1px;">Як встановлюються події для об'єктів, розташованих на формі?</p>
+<p style="word-spacing: 1.1px;">Для чого призначено вікно інспектора об'єктів?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Запустіть середовище Lazarus. Відкрийте вікно форми. Змініть розміри і місце розташування вікна форми.</p>
+<p style="word-spacing: 1.1px;">Розмістіть на формі компоненти: TLabel,</p>
+<p style="word-spacing: 1.1px;">TEdit, TMemo, TListBox, TButton. Для кожного з них установіть необхідні властивості за власним бажанням.</p>
+<p style="word-spacing: 1.1px;">На формі з іменем Моя робота розмістіть два компоненти TLabel, компонент TEdit</p>
+<p style="word-spacing: 1.1px;">і компонент TButton. Установіть раціональні, на ваш погляд, їхні розміри. Самостійно визначте і встановіть для них необхідні властивості.</p>
+<p style="word-spacing: 1.1px;">На формі з іменем Спільна робота розмістіть компоненти: TPopupMenu, TCheckBox, TMemo. Експериментальним шляхом спробуйте визначити їх функціональне призначення.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>9.2. Поняття типів користувача і масиву</strong></p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-230.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Пригадайте, які типи даних ви вивчали у 8 класі. Чому, на вашу думку, не можна в мовах програмування обмежитися&nbsp;лише простими типами даних?</p>
+<p style="word-spacing: 1.1px;">У 8 класі ви вивчали базові типи даних середовища Lazarus. Нагадаємо, що базовими є прості (скалярні) типи. Існують&nbsp;п&rsquo;ять стандартних простих типів: цілі, дійсні, символьні, булів-ські й тип дата-час. Простим типом є також перелічуваний&nbsp;тип, але він оголошується користувачем (приклади 1, 2). Складені типи будуються з простих за певними правилами. Серед&nbsp;складених (структурованих) найчастіше застосовуються масиви, формування яких засновано на використанні інших типів.</p>
+<p style="word-spacing: 1.1px;">Незважаючи на те що середовище Lazarus має потужну структуру стандартних (вбудованих у мову) типів даних, воно&nbsp;надає також можливість створення нових типів, які називають користувацькими. Структура їх оголошення така:&nbsp;type &lt;новий тип даних&gt;=&lt;визначення типу&gt;;&nbsp;var &lt;список змінних: новий тип даних&gt;;</p>
+<p style="word-spacing: 1.1px;">Масив &mdash; це структурований тип даних, елементи якого мають один тип, наприклад integer, char та ін.</p>
+<p style="word-spacing: 1.1px;">Структура масиву може бути одновимірною (лінійною), двовимірною (табличною) та багатовимірною. Загальну структуру одновимірного масиву можна позначити так:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-231.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Місце елемента у масиві, тобто його порядковий номер, називають індексом. Індекс записують у квадратних дужках, наприклад запис x[i] означає і-й елемент масиву. Так, числа 105, 11, 173 , 35, 40 можна розглядати одновимірним масивом цілих&nbsp;чисел, у якому п&rsquo;ять елементів. У прикладі 3 видно, що першим елементом масиву є монітор, другим &mdash; миша.</p>
+<p style="word-spacing: 1.1px;">Перш ніж опрацьовувати масив, його потрібно оголосити. Оголошення можна зробити такими способами.</p>
+<p style="word-spacing: 1.1px;">&bull; У розділі змінних. Структура оголошення одновимірного масиву в цьому розділі така:</p>
+<p style="word-spacing: 1.1px;">var &lt;ім'я_змінної&gt;: array [n1..n2] of &lt;тип елементів масиву&gt;;</p>
+<p style="word-spacing: 1.1px;">Тут array &mdash; ключове слово, яке вказує, що змінна є масивом; у квадратних дужках визначається діапазон індексів: n1 &mdash; індекс першого елемента масиву; n2 &mdash; індекс останнього елемента&nbsp;масиву. Після слова of вказується тип елементів масиву (приклад 4).</p>
+<p style="word-spacing: 1.1px;">Масив також може бути оголошений за такою структурою: var &lt;ім'я змінної&gt;: array [n1..n2] of &lt;тип елементів&gt;=&nbsp;(значення елементів);</p>
+<p style="word-spacing: 1.1px;">Наприклад:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-232.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для одночасного опрацювання декількох типів даних у багатьох&nbsp;мовах програмування, в тому числі&nbsp;у мові Free Pascal, застосовується&nbsp;спеціальний тип, який називають&nbsp;записом. Формат опису змінної&nbsp;типу запис такий:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-233.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У розділі типів. Структура оголошення масиву така:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-234.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Із наведеної структури видно, що після оголошення типу оголошується ім&rsquo;я масиву.</p>
+<p style="word-spacing: 1.1px;">Наприклад, type mas4=array [0..5] of real; var s: mas4;</p>
+<p style="word-spacing: 1.1px;">У полі const. Оголошення масиву має таку структуру:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-235.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Наприклад, const mas5=array [1..4] of integer=(33, 54, 2, 32);</p>
+<p style="word-spacing: 1.1px;">Індексами елементів масивів можуть бути дані будь-якого типу, в тому числі вирази, але найчастіше ними є цілі числа. Якщо індексом є змінна, то її необхідно оголосити константою.</p>
+<p style="word-spacing: 1.1px;">Наприклад, const n=7; var a: array [1..n] of integer;</p>
+<p style="word-spacing: 1.1px;">Будь-якому елементу масиву можна присвоїти певне значення за допомогою оператора присвоювання. Наприклад, mas[4]:=5; &mdash; четвертому елементу одновимірного масиву mas&nbsp;присвоєно значення 5.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Наведіть визначення масиву.</p>
+<p style="word-spacing: 1.1px;">Які існують структури масивів?</p>
+<p style="word-spacing: 1.1px;">Назвіть способи оголошення масивів.</p>
+<p style="word-spacing: 1.1px;">Як здійснюється звернення до елементів масиву?</p>
+<p style="word-spacing: 1.1px;">Яким може бути тип індексу елемента масиву?</p>
+<p style="word-spacing: 1.1px;">Наведіть загальну структуру одновимірного масиву.</p>
+<p style="word-spacing: 1.1px;">Як оголошується одновимірний масив у розділі оголошення змінних?</p>
+<p style="word-spacing: 1.1px;">За якою структурою оголошуються масиви в розділі типів?</p>
+<p style="word-spacing: 1.1px;">Наведіть приклад оголошення одновимірного масиву в розділі const.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Оголосіть у розділі змінних масив рядкового типу з елементами: файл, біт, папка, дані.</p>
+<p style="word-spacing: 1.1px;">Оголосіть у розділі типів масив чисел: 2, 6,</p>
+<p style="word-spacing: 1.1px;">2.1, 40, 7.</p>
+<p style="word-spacing: 1.1px;">Оголосіть у полі const масив: процесор, пам'ять, плата, символ.</p>
+<p style="word-spacing: 1.1px;">І Визначте значення елементів a[1] і a[3] в результаті оголошення масиву:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-236.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-237.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">9.3. Введення і виведення значень елементів масиву</p>
+<p style="word-spacing: 1.1px;">Наведіть означення масиву. Які існують способи оголошення масиву? Чи можна під час оголошення масиву присвоїти елементам масиву необхідні значення? Які, на ваш погляд, компоненти можна використовувати для введення даних у масиві?</p>
+<p style="word-spacing: 1.1px;">Елементи масиву можуть набувати значень різними способами: присвоюватися під час оголошення масиву, вводитися з клавіатури, присвоюватися під час виконання програми.&nbsp;Способи і методи введення і виведення елементів масиву для&nbsp;консольних і візуальних додатків відрізняються.</p>
+<p style="word-spacing: 1.1px;">У візуальних додатках середовища Lazarus для формування масивів, уведення значень його елементів із клавіатури, а також виведення елементів найчастіше застосовуються багаторядкові текстові поля TMemo і TListBox, а також функції InputBox( ) і ShowMessage( ). Можуть застосовуватися також&nbsp;і однорядкові текстові поля TEdit і TLabel. Розглянемо створення, введення і виведення елементів одновимірних масивів на&nbsp;конкретних прикладах.</p>
+<p style="word-spacing: 1.1px;">&bull; Використання компонента TMemo для введення і компонента TListBox для виведення значень елементів однови-мірного масиву.</p>
+<p style="word-spacing: 1.1px;">Програміст пише у середньому 10-12 рядків програмного коду, які потрапляють у кінцевий продукт.</p>
+<p style="word-spacing: 1.1px;">Приклад 1. Розмістимо на формі компоненти: TMemo, TListBox і TEdit. Надамо відповідним властивостям цих компонентів значень згідно&nbsp;з рис. 1. Уведемо з клавіатури 10 назв найбільших річок України: Дніпро, Десна, Дністер,&nbsp;Сіверський Донець, Псел, Західний Буг, Горинь,&nbsp;Прут, Прип'ять, Сейм. Для цього активуємо&nbsp;об&rsquo;єкт Метої, в інспекторі об&rsquo;єктів виділимо&nbsp;властивість Lines і клацнемо в цьому рядку&nbsp;кнопку з трьома крапками. Відкриється вікно&nbsp;редактора рядків, у яке введемо назви десяти&nbsp;перелічених річок. Після натискання кнопки&nbsp;ОК відкриється вікно форми (рис. 1).</p>
+<p style="word-spacing: 1.1px;">Встановимо також значення ssVertical (вертикальна смуга прокручування) для властивості</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-238.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 2. Код для введення і виведення масиву з використанням компонентів TMemo і TListBox</p>
+<p style="word-spacing: 1.1px;">ScrollBars об&rsquo;єкта Метої. Активуємо об&rsquo;єкт Editl, виберемо для нього подію &#111;nclick і введемо код, зображений на рис. 2.</p>
+<p style="word-spacing: 1.1px;">Після успішної компіляції програми виконуємо її. Результат виконання зображено на рис. 3. За допомогою смуг прокручування&nbsp;можна переглянути всі назви річок.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-239.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Формування масиву випадковими числами і виведення їх у текстові поля TListBox і TMemo.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. Генеруються 12 випадкових чисел з діапазону від 0 до 6. Із цих чисел формується масив, значення елементів якого виводяться в поле об&rsquo;єкта ListBoxI, а в поле об&rsquo;єкта Метої виводяться всі елементи цього масиву,&nbsp;крім елементів, значення яких дорівнюють 6.&nbsp;Код, що реалізує це завдання, зображено на&nbsp;рис. 4. На формі розміщено об&rsquo;єкти Метої,&nbsp;ListBoxI, Labell, Label2 і Buttonl.</p>
+<p style="word-spacing: 1.1px;">Нагадаємо, щоб при кожному запуску програми генерувалися різні випадкові числа,</p>
+<p style="word-spacing: 1.1px;">на початку програми встановлено оператор Randomize. Без цього оператора кожного разу&nbsp;будуть генеруватися однакові числа.</p>
+<p style="word-spacing: 1.1px;">На рис. 5 зображено один із можливих результатів виконання програми.</p>
+<p style="word-spacing: 1.1px;">Зверніть увагу на те, що в поле об&rsquo;єкта Метої виведені всі елементи масиву, крім елементів зі значенням 6.</p>
+<p style="word-spacing: 1.1px;">Властивостям компонентів надано значень, які забезпечують їх зовнішній вигляд, зображений на рис. 5.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-240.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 4. Код створення і виведення масиву випадкових чисел</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-241.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 5. Результати виведення масиву випадкових чисел</p>
+<p style="word-spacing: 1.1px;">Формування масиву на основі обчислених значень і виведення їх у декілька колонок текстового поля TListBox.</p>
+<p style="word-spacing: 1.1px;">Приклад 3. Створимо масив, значеннями елементів якого є висота вільного падіння&nbsp;тіла після кожної із дванадцяти секунд (висоту обчислюють за формулою</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-242.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для</p>
+<p style="word-spacing: 1.1px;">того щоб значення елементів масиву виводилися колонками, властивості Columns об&rsquo;єкта</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-243.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 6. Код створення і виведення масиву значень висоти вільного падіння тіла</p>
+<p style="word-spacing: 1.1px;">ListBoxI надамо значення 2. Код реалізації цього завдання наведено на рис. 6.</p>
+<p style="word-spacing: 1.1px;">На формі розміщено об&rsquo;єкти ListBoxI, Labell, Buttonl. їхнім властивостям надано значень,&nbsp;щоб зовнішній вигляд компонента був орієнтовно таким, як зображено на рис. 7.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-244.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 4. Варіант коду формування масиву Після успішної компіляції програми і її цілих чисел у процесі його оголошення і виве- виконання отримаємо результат, зображений&nbsp;дення в поле об&rsquo;єкта Метої подано на рис. 8. на рис. 9.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-245.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 8. Код формування масиву в процесі його оголошення і виведення в поле об'єкта Метої</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-246.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 9. Масив цілих чисел, виведений у поле об'єкта Метої</p>
+<p style="word-spacing: 1.1px;">Уведення елементів масиву за допомогою функції InputBoxQ і виведення за допомогою функції ShowMessageO.</p>
+<p style="word-spacing: 1.1px;">Приклад 5. На рис. 10 зображено код із використанням функції InputBoxO для циклічного введення елементів масиву рядкового типу і функції ShowMessageO для виведення елементів цього масиву.</p>
+<p style="word-spacing: 1.1px;">У процесі введення даних із клавіатури зручно застосовувати функцію InputBoxO, яка&nbsp;має таку структуру: InputBox (заголовок, підказка,&nbsp;рядок за замовчуванням), де: заголовок &mdash; це заголовок вікна (1) (рис. 11), яке висвітлюється&nbsp;на формі під час виконання функції; підказка &mdash; підказка для користувача (2) (рис. 11);&nbsp;рядок за замовчуванням &mdash; рядок для введення&nbsp;значення елемента масиву (3) (рис. 11). Якщо&nbsp;клацнути кнопку ОК, то елементу буде присвоєно введене значення (на рис. 12 це слово</p>
+<p style="word-spacing: 1.1px;">алгоритм). Якщо натиснути кнопку Cancel, то функція повертає значення рядка за замовчуванням.</p>
+<p style="word-spacing: 1.1px;">Під час виконання функції InputBoxO виводиться вікно (див. рис. 11), програма призупиняє виконання, у рядок слід увести значення певного елемента масиву, клацнути кнопку ОК і ввести значення наступного елемента. Після завершення введення всіх елементів виконання програми продовжується.</p>
+<p style="word-spacing: 1.1px;">Функція ShowMessageO виводить на форму вікно із заданим текстом.</p>
+<p style="word-spacing: 1.1px;">У вікно, зображене на рис. 12, виведено перший елемент масиву. Після кожного клацання кнопки ОК виводиться черговий елемент до завершення виведення всіх елементів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-247.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 10. Код уведення й виведення масиву за допомогою функцій InputBoxO і ShowMessageO відповідно</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-248.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 12. Вікно функції ShowMessageO для виведення значень елементів масиву</p>
+<p style="word-spacing: 1.1px;">&bull; Уведення й виведення елементів масиву в консольних програмах.</p>
+<p style="word-spacing: 1.1px;">Уведення значень елементів масиву в консольних програмах здійснюється за допомогою клавіатури. Для цього використовують оператори readln або read і оператори циклу. Спочатку вводиться значення першого елемента, потім &mdash;&nbsp;другого, третього і т. д. Виведення значень елементів масиву&nbsp;виконується за допомогою операторів write і writeln.</p>
+<p style="word-spacing: 1.1px;">Приклад 6. На рис. 13 наведено код, за допомогою якого елементи одновимірного масиву (дійсні числа) вводяться за допомогою клавіатури, а потім виводяться на екран. Масив&nbsp;складається із 6 чисел.</p>
+<p style="word-spacing: 1.1px;">Якщо з клавіатури будуть уведені числа: 12, 13.2, 3, 40.5, 5, 6.7, то на екран буде виведено результат виконання програми (рис. 14).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-249.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 13. Код уведення одновимірного масиву за допомогою клавіатури</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-250.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 14. Результат виконання програми</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які компоненти застосовують для введення і виведення масивів?</p>
+<p style="word-spacing: 1.1px;">За допомогою яких операторів уводять елементи масиву в консольних додатках?</p>
+<p style="word-spacing: 1.1px;">За допомогою яких операторів виводять елементи масиву в консольних додатках?</p>
+<p style="word-spacing: 1.1px;">Які функції застосовують для введення і виведення даних у масив?</p>
+<p style="word-spacing: 1.1px;">Поясніть використання функції ShowMessage(). Поясніть порядок використання функції&nbsp;InputBox().</p>
+<p style="word-spacing: 1.1px;">Як можуть формуватися масиви?</p>
+<p style="word-spacing: 1.1px;">Поясніть методику використання компонента TMemo для введення даних.</p>
+<p style="word-spacing: 1.1px;">Поясніть методику використання компонента TListBox для виведення даних.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Розробіть консольну програму для введення і виведення масиву, що містить слова: змінна, масив, дані, параметри, рекурсія.</p>
+<p style="word-spacing: 1.1px;">Розробіть консольну програму формування масиву 10 цілих випадкових чисел з діапазону від 0 до 100.</p>
+<p style="word-spacing: 1.1px;">Розробіть код для введення і виведення за допомогою компонента TMemo масиву, що&nbsp;містить 5 дійсних чисел.</p>
+<p style="word-spacing: 1.1px;">Розробіть код із використанням компонента TListBox для формування і виведення масиву 10 випадкових чисел з діапазону від 0&nbsp;до 20.</p>
+<p style="word-spacing: 1.1px;">Розробіть код із використанням функцій InputBox(), ShowMessage() і компонента&nbsp;TListBox для введення і виведення масиву&nbsp;цілих чисел.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>9.4. Класичні алгоритми опрацювання числових&nbsp;одновимірних масивів</strong></p>
+<p style="word-spacing: 1.1px;">Класичними є алгоритми знаходження загальної суми значень елементів числового масиву, суми та кількості значень його елементів, що задовольняють певні умови. Для масивів&nbsp;із будь-якими типами даних класичними є також алгоритми&nbsp;пошуку елементів, що задовольняють задані умови, та алгоритми впорядкування елементів масивів.</p>
+<p style="word-spacing: 1.1px;">9.4.1. Знаходження суми і кількості заданих елементів масиву</p>
+<p style="word-spacing: 1.1px;">Назвіть компоненти і функції, які можна використовувати для введення даних у масив і виведення даних із нього. Яким із&nbsp;них ви надаєте перевагу і чому? Які, на ваш погляд, операції&nbsp;можна виконувати над значеннями елементів масиву?</p>
+<p style="word-spacing: 1.1px;">Числові масиви &mdash; це масиви, значеннями елементів яких є цілі або дійсні числа.</p>
+<p style="word-spacing: 1.1px;">&bull; Знаходження загальної суми значень елементів масиву.</p>
+<p style="word-spacing: 1.1px;">Нехай дано одновимірний масив цілих або дійсних чисел а[1], а[2], ..., а[л]. Обчислити суму значень елементів цього масиву можна методом послідовного накопичення. Сутність цього методу полягає в тому, що до початку додавання початкове&nbsp;значення суми вважається таким, що дорівнює нулю, тобто&nbsp;s=0. Потім до цього значення додається значення першого&nbsp;елемента масиву: s=s+a[1]. До отриманої суми додається значення другого елемента масиву: s=s+a[2] і так далі до останнього елемента (приклад 1).</p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм знаходження суми значень елементів масиву, що задовольняють певну умову.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-251.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Блок-схема алгоритму обчислення суми елементів&nbsp;одновимірного масиву з виведенням поточних значень суми</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-252.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Блок-схему алгоритму обчислення подано на рис. 1.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. Варіант коду обчислення суми значень елементів масиву цілих чисел</p>
+<p style="word-spacing: 1.1px;">із використанням компонента TEdit зображено на рис. 2. Для об&rsquo;єкта Editl обрано подію &#111;nclick.</p>
+<p style="word-spacing: 1.1px;">Після успішної компіляції і виконання програми отримаємо результат, зображений&nbsp;рис. 3.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-253.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 2. Код обчислення суми значень елементів масиву</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-254.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&bull; Знаходження кількості елементів, що дорівнюють значенню заданого.</p>
+<p style="word-spacing: 1.1px;">Нехай у масиві a[1], a[2], a[3], ..., a[n] потрібно визначити кількість елементів, значення яких дорівнюють с. Сутність&nbsp;алгоритму полягає у послідовному порівнянні всіх елементів&nbsp;масиву, починаючи з першого елемента, із заданим значенням. Якщо значення елемента масиву дорівнює заданому, то&nbsp;показник кількості збільшується на одиницю.</p>
+<p style="word-spacing: 1.1px;">Алгоритм знаходження кількості заданих елементів у масиві може бути таким:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-255.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Як бачимо, змінній m, у якій підраховується кількість елементів, спочатку присвоюється значення нуль. Потім порівнюється значення елемента a[1] зі значенням с. Якщо їхні&nbsp;значення збігаються, то значення змінної m збільшується на&nbsp;одиницю, інакше її значення не змінюється. На наступному кроці порівнюється значення елемента a[2] зі значенням с&nbsp;і виконуються дії, аналогічні тим, що виконувалися на попередньому кроці. Потім порівнюється значення елемента a[3]&nbsp;і так далі до a[n]. Блок-схему алгоритму подано на рис. 4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-256.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 4. Блок-схема алгоритму знаходження кількості елементів,&nbsp;що дорівнюють значенню заданого</p>
+<p style="word-spacing: 1.1px;">Приклад 3. На рис. 5 зображено код, за допомогою якого створюється масив із 40&nbsp;цілих випадкових чисел з діапазону від 0&nbsp;до 6. Значення кожного елемента масиву&nbsp;виводиться в поле об&rsquo;єкта Метої й одразу&nbsp;порівнюється з цифрою 4. Якщо значення&nbsp;елемента дорівнює 4, то значення змінної т&nbsp;збільшується на одиницю. Після виконання</p>
+<p style="word-spacing: 1.1px;">40 циклів значення змінної т виводиться у поле об&rsquo;єкта Labell. Для цього об&rsquo;єкта обрано подію On Click.</p>
+<p style="word-spacing: 1.1px;">На рис. 6 зображено можливий результат виконання програми. У полі об&rsquo;єкта Метої&nbsp;є повзунок, за допомогою якого можна переглянути, у якому порядку генерувалися всі&nbsp;випадкові числа.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-257.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 5. Код обчислення кількості цифр 4, що містяться у масиві</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-258.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 6. Результат обчислення кількості цифр у масиві</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-259.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 7. Блок-схема алгоритму</p>
+<p style="word-spacing: 1.1px;">створення нового масиву</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Назвіть класичні алгоритми опрацювання одновимірних масивів.</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність алгоритму обчислення суми значень елементів одновимірного масиву.</p>
+<p style="word-spacing: 1.1px;">Накресліть блок-схему алгоритму обчислення кількості елементів масиву, значення яких дорівнюють заданому. Накресліть блок-схему алгоритму обчислення в одновимір-ному масиві кількості елементів, значення яких дорівнюють&nbsp;заданому.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Дано масив чисел: 71, 2, 7, 12, 4, 5, 17, 10. Розробіть програму обчислення суми чисел масиву, більших за 8.</p>
+<p style="word-spacing: 1.1px;">Дано масив чисел: 66, 3, 12, 7, 9, 22, 44, 15. Розробіть програму обчислення кількості чисел, менших від 22.</p>
+<p style="word-spacing: 1.1px;">На рис. 7 наведено блок-схему алгоритму створення нового масиву s із елементів заданого масиву а. Розробіть програму&nbsp;реалізації цього алгоритму.</p>
+<p style="word-spacing: 1.1px;">9.4.2. Пошук даних у масиві</p>
+<p style="word-spacing: 1.1px;">У повсякденному житті часто доводиться здійснювати пошук необхідного об'єкта серед багатьох із них. Чи можна&nbsp;такі процеси подати у вигляді загального алгоритму?</p>
+<p style="word-spacing: 1.1px;">У масивах часто доводиться здійснювати пошук елемента, значення якого збігається із заданим. Існують різні методи&nbsp;пошуку потрібних елементів у масиві, всі вони базуються на&nbsp;переборі елементів масиву. Перебір може бути повний (прямий), за яким перевіряються всі елементи масиву, і неповний&nbsp;(скорочений). Нижче описано сутність двох найпростіших методів пошуку даних у масиві: лінійний і двійковий.</p>
+<p style="word-spacing: 1.1px;">&bull; Лінійний пошук даних.</p>
+<p style="word-spacing: 1.1px;">Л інійний пошук базується на прямому переборі елементів масиву.</p>
+<p style="word-spacing: 1.1px;">Нехай дано масив a[1], a[2], ..., a[n] і значення с (ключ). Потрібно визначити, чи є у цьому масиві елемент, значення&nbsp;якого збігається зі значенням с.</p>
+<p style="word-spacing: 1.1px;">Сутність лінійного пошуку така. Спочатку с порівнюється з a[1]. Якщо вони збігаються, робиться висновок, що елемент&nbsp;знайдено на першій позиції масиву, і на цьому пошук завершується. Інакше с порівнюється з a[2] і робиться аналогічний&nbsp;висновок, потім &mdash; з a[3] і так далі до a[n].</p>
+<p style="word-spacing: 1.1px;">Блок-схему алгоритму подано на рис. 1.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-260.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Блок-схема алгоритму лінійного пошуку в одновимірному масиві, де і &mdash; лічильник кількості переглянутих елементів; n &mdash; загальна кількість елементів у масиві</p>
+<p style="word-spacing: 1.1px;">, Приклад 1. Визначити, чи є у масиві з 10 випадкових цілих чисел з діапазону від 0 до 6 число 5. Тобто достатньо знайти номер першої&nbsp;позиції, на якій розміщено такий елемент.&nbsp;Програмний код подано на рис. 2. У програмі&nbsp;використано об&rsquo;єкти: ListBoxI &mdash; для виведення елементів масиву, Labell &mdash; для виведення</p>
+<p style="word-spacing: 1.1px;">повідомлення про наявність ключа, Label2 &mdash; для виведення повідомлення про номер позиції, на якій розташовано ключ. Якщо ключа немає, виводиться нульова позиція. Для&nbsp;об&rsquo;єкта Labell обрано подію &#111;nclick.</p>
+<p style="word-spacing: 1.1px;">На рис. З зображено один із результатів виконання програми.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-261.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 2. Код реалізаціїлінійного пошуку заданого значення у масиві</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-262.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розглянутий метод лінійного пошуку є найпростішим. Але його програмна реалізація потребує більшого часу, оскільки&nbsp;в ньому не враховуються закономірності розташування елементів масиву. Якщо значення елементів масиву є впорядкованими за певною ознакою, пошук можна організувати раціональніше &mdash; методом двійкового пошуку даних.</p>
+<p style="word-spacing: 1.1px;">&bull; Двійковий пошук даних.</p>
+<p style="word-spacing: 1.1px;">Д війковий пошук можна застосовувати лише до впорядкованих масивів.</p>
+<p style="word-spacing: 1.1px;">Нехай дано масив a[1], a[2], ..., a[n], елементи якого впорядковані за зростанням їхніх значень. Потрібно визначити, чи є в цьому масиві елемент, значення якого збігається зі значенням с.</p>
+<p style="word-spacing: 1.1px;">Сутність цього методу така. На кожному кроці масив ділиться навпіл та визначає, в якій із частин може міститися шуканий елемент, інша частина не розглядається. У процесі&nbsp;пошуку значення лівої і правої меж масиву будуть постійно&nbsp;змінюватися.</p>
+<p style="word-spacing: 1.1px;">Позначимо поточне значення лівої межі масиву змінною І, а значення правої межі &mdash; змінною p (початкові значення&nbsp;змінних: І = 1 і p = n). Спочатку в цьому масиві обирають елемент, розташований у середині масиву, &mdash; a[i]. Значення індексу середнього елемента можна визначити за формулою&nbsp;i=[(l+p)/2] (квадратними дужками позначена ціла частина числа). Значення середнього елемента порівнюють із ключовим&nbsp;значенням с. Якщо c=a[i], елемент знайдено. Якщо c &lt; a[i], то&nbsp;далі для пошуку обирають частину масиву, розташовану ліворуч від a[i], у протилежному випадку &mdash; частину масиву,&nbsp;розташовану праворуч від a[i]. Для обраної частини процес&nbsp;повторюють (приклад 2).</p>
+<p style="word-spacing: 1.1px;">Блок-схему алгоритму подано на рис. 4.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. Нехай дано масив цілих чисел: 2, 5, 8, 9, 13,&nbsp;15, 20, 21 і ключове значення с = 15. У масиві міститься&nbsp;8 елементів. Номер середнього&nbsp;елемента дорівнює 4, тому що&nbsp;[(1+8)/2]=4. Оскільки а[4]&lt;15,&nbsp;далі пошук будемо проводити&nbsp;в частині масиву, що складається з елементів: 13, 15, 20,&nbsp;21. У цьому масиві номером&nbsp;середнього елемента є число&nbsp;[(5+8)/2]=6. Значення шостого&nbsp;елемента дорівнює 15 і збігається зі значенням с. На цьому виконання алгоритму завершується.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-263.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 4. Блок-схема алгоритму двійкового пошуку в масиві</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-264.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Ада Августа Лавлейс розробила перші програми для аналітичної машини Беббіджа, заклавши тим самим теоретичні основи програмування. Саме&nbsp;вона вперше ввела поняття&nbsp;циклу операції. У наші дні Ада&nbsp;Лавлейс по праву називають&nbsp;першим програмістом у світі.</p>
+<p style="word-spacing: 1.1px;">Як бачимо, у блоці 3 змінній l надається початковий номер лівої межі масиву (він дорівнює 1), а змінній p &mdash; початковий&nbsp;номер правої межі (він дорівнює n). У блоці 4 обчислюється&nbsp;середній індекс розглядуваної ділянки масиву і його значення присвоюється змінній і.</p>
+<p style="word-spacing: 1.1px;">У блоці 5 ключове значення c порівнюється зі значенням елемента, розташованого посередині поточної ділянки. Якщо ці значення збігаються, ключ знайдено, виводиться індекс і елемента масиву із ключовим значенням с (блок 10) і робота алгоритму завершується (блок 12). Але&nbsp;якщо згадані значення різні, керування передається блоку&nbsp;6, де перевіряється, чи більше значення c за значення середнього елемента a[i]. Якщо c &gt; a[i], шуканий елемент розташований праворуч від a[i] і значення правої межі не змінюється, а значенням лівої межі стає величина i+1 (блок 7).&nbsp;Якщо ж c &lt; a[i], то пошук ключового значення треба вести ліворуч від a[i]. У цьому випадку значення лівої межі не змінюється, а значенням правої межі стає величина i-1 (блок 8).</p>
+<p style="word-spacing: 1.1px;">Алгоритм припиняє роботу у двох випадках: коли виконується умова c=a[i] і коли значення лівої межі перевищує значення правої (блок 9). Настання другого випадку означає, що всі необхідні перевірки виконані, а ключового значення в заданому масиві не знайдено.</p>
+<p style="word-spacing: 1.1px;">М етод двійкового пошуку значно швидший за метод лінійного пошуку. Проте, як уже згадувалося, двійковий пошук можна застосовувати лише до впорядкованих масивів.</p>
+<p style="word-spacing: 1.1px;">Приклад 3. На рис. 5 подано код програми, що реалізує алгоритм двійкового пошуку.</p>
+<p style="word-spacing: 1.1px;">Результаті виконання коду зображено на рис. 6.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-265.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 5. Код реалізації двійкового пошуку даних у масиві</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-266.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 6. Результат виконання коду двійкового пошуку даних</p>
+<p style="word-spacing: 1.1px;">&bull; Пошук мінімального і максимального елементів.</p>
+<p style="word-spacing: 1.1px;">Розглянемо сутність алгоритму пошуку мінімального елемента в масиві (пошук максимального елемента принципово не відрізняється від пошуку мінімального). Спочатку мінімальним вважається елемент, розташований на першій позиції.&nbsp;Його значення порівнюється зі значенням другого елемента.&nbsp;Якщо значення другого елемента менше від першого, то далі&nbsp;меншим вважається другий елемент. Потім значення меншого&nbsp;елемента порівнюється зі значенням третього елемента і так&nbsp;далі до останнього елемента. У результаті буде знайдено найменший елемент. Отже, алгоритм пошуку мінімального (максимального) елемента є циклічним алгоритмом (приклади 5, 6).</p>
+<p style="word-spacing: 1.1px;">Приклад 5. Розглянемо покро-кове виконання алгоритму пошуку мінімального елемента в масиві 37, 15, 41, 7, 21.&nbsp;min:=37;</p>
+<p style="word-spacing: 1.1px;">1- й цикл: 15&lt;37? Так &mdash; min:=15</p>
+<p style="word-spacing: 1.1px;">2- й цикл: 41&lt;15? Ні</p>
+<p style="word-spacing: 1.1px;">3- й цикл: 7&lt;15? Так &mdash; min:=7</p>
+<p style="word-spacing: 1.1px;">4- й цикл: 21 &lt;7? Ні.</p>
+<p style="word-spacing: 1.1px;">Результат: min=7</p>
+<p style="word-spacing: 1.1px;">Приклад 6. На рис. 7 наведено код пошуку мінімального і максимального елементів у одно-вимірному масиві.</p>
+<p style="word-spacing: 1.1px;">Результат виконання коду зображено на рис. 8.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-267.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 7. Код пошуку мінімального і максимального елементів масиву</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-268.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 8. Результат пошуку мінімального і максимального чисел</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які існують найпростіші методи пошуку даних у масивах?</p>
+<p style="word-spacing: 1.1px;">У чому полягає перевага двійкового пошуку над лінійним?</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність двійкового методу пошуку даних у масиві.</p>
+<p style="word-spacing: 1.1px;">Накресліть блок-схеми: алгоритму лінійного пошуку даних; двійкового пошуку даних.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Опишіть динамику процесу пошуку числа 17 у масиві: 53, 21, 7, 40, 17, 4, 35.</p>
+<p style="word-spacing: 1.1px;">У довільному порядку вводяться назви 5 обласних центрів України. Розробіть алгоритм і програму визначення: чи є в цьому переліку місто Суми.</p>
+<p style="word-spacing: 1.1px;">Опишіть динаміку процесу пошуку мінімального і максимального чисел у масиві: 77, 65,</p>
+<p style="word-spacing: 1.1px;">7, 21, 13, 40, 88, 51, 57.</p>
+<p style="word-spacing: 1.1px;">Генерується 10 цілих випадкових чисел у діапазоні від 0 до 15. Розробіть алгоритм&nbsp;і програму пошуку мінімального і максимального з цих чисел. Масив випадкових&nbsp;чисел виведіть у поле об'єкта ListBoxl.&nbsp;Розробіть програму визначення третьої за&nbsp;довжиною річки України.</p>
+<p style="word-spacing: 1.1px;">9.5. Упорядкування елементів масиву</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність лінійного і двійкового алгоритмів пошуку даних у масиві. У чому їх переваги й недоліки? Сформулюйте&nbsp;сутність алгоритму пошуку максимального елемента. За&nbsp;якими правилами, на вашу думку, можна впорядкувати за&nbsp;зростанням 4 цілі числа?</p>
+<p style="word-spacing: 1.1px;">Упорядкувати масив означає розмістити його елементи за зростанням або спадання їхніх значень. Існує багато методів упорядкування одновимірного масиву. Далі розглянемо&nbsp;лише найпростіші методи, які широко використовують для&nbsp;розв&rsquo;язування різноманітних задач. Такими методами є метод&nbsp;сортування вибором, метод сортування обміном і метод вставки. На основі цих методів побудовані інші, більш складні,&nbsp;методи впорядкування масивів.</p>
+<p style="word-spacing: 1.1px;">&bull; Упорядкування масиву методом вибору.</p>
+<p style="word-spacing: 1.1px;">Нехай дано масив a[1], a[2], ..., a[n], який необхідно впорядкувати за зростанням його елементів. Сутність методу вибору така. Відшукують елемент із максимальним значенням і міняють його місцем з останнім елементом масиву. Після цього&nbsp;останній елемент із подальшого розгляду виключають, а для&nbsp;перших (n-1) елементів процедуру повторюють. Тобто аналізується масив a[1], a[2], ..., a[n-1], у якому також відшукують максимальний елемент. Цей елемент міняють місцями з елементом&nbsp;a[n-1]. Подібні дії виконують у масиві a[1], a[2], ..., a[n-2], потім &mdash;&nbsp;у масиві a[1], a[2], ..., a[n-3] тощо. Отже, на кожному циклі алгоритму значення правої межі масиву зменшується на одиницю.&nbsp;Цей індекс будемо зберігати у змінній р. У табл. 1 наведено&nbsp;динаміку процесу впорядкування масиву 15, 12, 17, 8, 14, 6.</p>
+<p style="word-spacing: 1.1px;">Загальне значення слова &laquo;сортування&raquo; &mdash; це розподіл елементів на групи за деякою ознакою,&nbsp;наприклад розподіл яблук по&nbsp;сортах за їх якістю, листів &mdash; за&nbsp;поштовими індексами, банок із&nbsp;фарбами &mdash; за кольором тощо.&nbsp;Проте у програмуванні під сортуванням розуміють упорядкування елементів (за деякою&nbsp;характеристикою), наприклад&nbsp;шикування учнів за зростом на&nbsp;уроці фізкультури, розташуван-н я слів у словнику в алфавітному порядку, упорядкування&nbsp;точок площини за зростанням&nbsp;координати х тощо.</p>
+<p style="word-spacing: 1.1px;">Таблиця 1. УПОРЯДКУВАННЯ МАСИВУ МЕТОДОМ ВИБОРУ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-269.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Із таблиці видно, що перестановка елементів виконується після повного завершення поточного циклу перегляду масиву.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-270.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Перестановка елементів &mdash; це обмін значеннями між двома змінними, між змінною з максимальним значенням і змінною, розташованою на останній справа позиції невпорядко-ваної частини масиву. Для виконання перестановки потрібна&nbsp;третя змінна, у якій тимчасово зберігатиметься значення однієї з двох змінних, значення яких необхідно поміняти місцями. Для перестановки в алгоритмі будемо використовувати змінну z (рис. 1). Перестановка значень елементів масиву&nbsp;деякою мірою нагадує процес переливання рідини з першої&nbsp;посудини в другу і з другої у першу. Для цього рідину переливають із першої посудини у третю, із другої у першу,&nbsp;а з третьої &mdash; у другу.</p>
+<p style="word-spacing: 1.1px;">Блок-схему алгоритму подано на рис. 2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-271.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 2. Блок-схема алгоритму впорядкування масиву методом вибору</p>
+<p style="word-spacing: 1.1px;">Початкове значення правої межі масиву (значення змінної р) дорівнює значенню змінної n. Змінна m містить індекс поточного елемента з максимальним значенням, а змінна і&nbsp;містить індекс елемента, що переглядається у даний момент.&nbsp;Оскільки перший елемент завжди спочатку вважається найбільшим, то у блоці 4 змінна m набуває значення 1, а змінна і &mdash; значення 2.</p>
+<p style="word-spacing: 1.1px;">У блоці 5 перевіряється: чи більше значення поточного елемента a[i] за значення поточного найбільшого елемента a[m]. Якщо a[i]&gt;a[m], то індекс поточного максимального елемента у блоці 6 набуває нового значення. Індекс поточного&nbsp;елемента масиву збільшується на одиницю у блоці 7. Якщо&nbsp;цей індекс менший або дорівнює правій межі (блок 8), то пошук максимального елемента триває далі. Якщо ж i &gt; p, то це&nbsp;означає, що всю невпорядковану ділянку масиву переглянуто&nbsp;і в блоці 9 елемент із максимальним значенням міняють місцями з останнім. У блоці 10 значення правої межі ділянки,&nbsp;що переглядається, зменшується на одиницю. Ознакою завершення процесу виконання алгоритму є той факт, що індекс&nbsp;правої межі дорівнює одиниці (блок 11).</p>
+<p style="word-spacing: 1.1px;">Метод сортування вибором є</p>
+<p style="word-spacing: 1.1px;">досить простим. Проте він най-повільніший, оскільки в ньому не враховується те, що в заданому масиві деякі з елементів&nbsp;можуть бути вже впорядкованими. Навіть якщо масив буде&nbsp;повністю впорядкованим, кількість операцій в алгоритмі не&nbsp;зменшиться.</p>
+<p style="word-spacing: 1.1px;">Приклад 1. Програмний код реалізації алгоритму впорядкування масиву методом вибору подано на рис. 3. У цьому коді масив</p>
+<p style="word-spacing: 1.1px;">формується із 10 випадкових чисел у діапазоні від 0 до ЗО. На рис. 4 зображено один із можливих результатів виконання програмного коду.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-272.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Програмний код упорядкування масиву методом вибору</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-273.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&bull; Упорядкування масиву методом обміну.</p>
+<p style="word-spacing: 1.1px;">Сутність упорядкування масиву за зростанням значень його елементів методом обміну така. Масив a[1], a[2], ..., a[n]&nbsp;переглядається зліва направо. Спочатку порівнюються елементи a[1] і a[2], потім &mdash; a[2] і a[3], a[3] і a[4], a[4] і a[5] і так&nbsp;далі до елементів a[n-1] і a[n]. Кожного разу, коли попередній&nbsp;елемент більший за наступний, значення елементів міняються місцями. Зрозуміло, що після повного завершення першого&nbsp;перегляду всього масиву на останній позиції буде міститися&nbsp;елемент із максимальним значенням. Після цього елемент a[n]&nbsp;з подальшого розгляду виключається, переглядається масив&nbsp;a[1], a[2], ..., a[n-1] і з його елементами виконуються аналогічні&nbsp;дії, в результаті чого на позицію n - 1 буде переміщено другий&nbsp;за величиною елемент.</p>
+<p style="word-spacing: 1.1px;">Процедура повторюється для масиву a[1], a[2], ..., a[n - 2], потім &mdash; для масиву a[1], a[2], ..., a[n - 3] і т. д. З описаного&nbsp;випливає, що сортування масиву завершується після повного впорядкування всіх елементів масиву. Ознакою того, що&nbsp;масив упорядкований, є те, що після завершення його перегляду жодної перестановки елементів не було.</p>
+<p style="word-spacing: 1.1px;">Для свідомого розуміння сутності сортування масиву методом прямого вибору розглянемо динаміку впорядкування на конкретному прикладі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-274.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У 1959 році Дональд Шелл запропонував удосконалення алгоритму прямих вставок. Його ідея &mdash; порівнювати елементи,&nbsp;розташовані на певній відстані&nbsp;один від одного, і покроково&nbsp;зменшувати цю відстань.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. Дано масив 41, 52, 58, 70, 66, який потрібно впорядкувати за зростанням&nbsp;значень елементів. У цьому масиві 3 перші&nbsp;елементи впорядковано. Для того щоб масив</p>
+<p style="word-spacing: 1.1px;">був повністю впорядкований, потрібно поміняти місцями четвертий і п&rsquo;ятий елементи. Для цього виконуються дії, наведені у табл. 2.</p>
+<p style="word-spacing: 1.1px;">Таблиця 2. ПРОЦЕС УПОРЯДКУВАННЯ МАСИВУ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-275.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Коментар: під час першого виконання зовнішнього циклу відбулась перестановка елементів маси- І ву, після його завершення змінна у набула значення false. Тому починається другий зовнішній цикл, І&nbsp;а змінна у набуває значення true</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-276.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Коментар: після другого виконання зовнішнього циклу жодної перестановки не відбулося, тобто змінна у має значення true. Масив упорядкований, робота алгоритму завершена</p>
+<p style="word-spacing: 1.1px;">Метод сортування обміном у середньому діє швидше за&nbsp;метод сортування вибором,&nbsp;оскільки в ньому враховується можливість упорядкування масиву до того, як його&nbsp;буде переглянуто максимальну кількість разів.</p>
+<p style="word-spacing: 1.1px;">Із табл. 2 видно, що після першого зовнішнього циклу масив є впорядкованим. Але змінна у має значення false, тому виконується другий зовнішній цикл. Після його завершення&nbsp;жодної перестановки елементів не було, тому процес упорядкування завершується. Звернемо особливу увагу на те, що на&nbsp;початку будь-якого зовнішнього циклу ця змінна набуває значення true. Після того як у внутрішньому циклі відбувається&nbsp;хоча б одна перестановка елементів, змінна у набуває значення false і до кінця цього циклу не змінюється.</p>
+<p style="word-spacing: 1.1px;">На основі аналізу процесу впорядкування наведеного вище масиву розробимо алгоритм упорядкування методом обміну.&nbsp;В алгоритмі використано такі позначення: p &mdash; індекс правої&nbsp;межі поточної ділянки масиву; у &mdash; ознака наявності перестановки: на початку кожного зовнішнього циклу вона набуває значення true. Якщо після завершення зовнішнього циклу&nbsp;змінна у має значення true, це означає, що перестановок під&nbsp;час останнього перегляду не було, якщо y=false, то відбулася&nbsp;принаймні одна перестановка; і &mdash; індекс поточного елемента&nbsp;масиву; z &mdash; змінна, призначена для тимчасового зберігання&nbsp;значення елемента масиву під час перестановки елементів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-277.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 3. Програму, що реалізує алгоритм сортування методом обміну, подано на рис. 5.&nbsp;У цьому коді масив формується з десяти</p>
+<p style="word-spacing: 1.1px;">випадкових чисел з діапазону від 0 до 50. На рис. 6 зображено один із можливих результатів виконання програмного коду.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-278.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 5. Програмний код упорядкування масиву методом обміну</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-279.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&bull; Упорядкування масиву методом вставки.</p>
+<p style="word-spacing: 1.1px;">Метод сортування вставкою також є простим у реалізації. За швидкістю впорядкування він особливо ефективний для&nbsp;масивів невеликого розміру і для частково впорядкованих&nbsp;масивів.</p>
+<p style="word-spacing: 1.1px;">Сутність цього методу така. Спочатку впорядковуються два перші елементи масиву. Потім на кожному наступному кроці&nbsp;береться наступний за порядком елемент і вставляється в уже&nbsp;впорядковану частину так, щоб ліворуч від нього всі елементи були не більшими, а сусідній правий &mdash; не меншим від&nbsp;нього. Якщо ця умова не виконується, береться наступний за&nbsp;порядком елемент і виконуються аналогічні дії (приклад 4).</p>
+<p style="word-spacing: 1.1px;">Зазначимо, що в цьому параграфі розглянуто лише найпростіші методи впорядкування даних. Існують й інші, більш досконалі та складні методи, спрямовані насамперед на підвищення швидкості сортування.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-280.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які переваги й недоліки мають методи впорядкування масиву вибором і обміном?</p>
+<p style="word-spacing: 1.1px;">Як здійснюється перестановка двох елементів масиву?</p>
+<p style="word-spacing: 1.1px;">Який вигляд матиме масив 21, 40, 5, 13, 18 після завершення першого зовнішнього&nbsp;циклу впорядкування масиву методом вибору?</p>
+<p style="word-spacing: 1.1px;">Розробіть програму впорядкування назв районів свого міста (області) за алфавітом. Поясніть сутність алгоритму впорядкування&nbsp;масиву методом вибору.</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність алгоритму впорядкування масиву методом обміну.</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність алгоритму впорядкування масиву методом вставки.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Відомі прізвища і зріст 8 учнів вашого класу.</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм і програму виведення на екран прізвищ учнів у порядку зменшення їх зросту. Використайте метод вибору.</p>
+<p style="word-spacing: 1.1px;">Знайдіть в Інтернеті назви 7 найбільших за площею областей України. Розробіть алгоритм</p>
+<p style="word-spacing: 1.1px;">і програму впорядкування назв областей у порядку зменшення їхніх площ. Використайте метод вибору.</p>
+<p style="word-spacing: 1.1px;">Опишіть у вигляді таблиці впорядкування масиву чисел 33, 60, 7, 12, 80, 41 у порядку&nbsp;їх зменшення. Використайте метод вибору;&nbsp;метод вставки.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Варіант</p>
+</td>
+<td>
+<p>Завдання</p>
+</td>
+<td>
+<p>Початкові дані</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>N учнів класу виконують стрибки у довжину. Розробіть алгоритм і програму для визначення того, скільки учнів стрибнули далі за&nbsp;встановлений норматив с.</p>
+</td>
+<td>
+<p>N = 6</p>
+<p>4.7; 3.8; 3.3; 3.6; 3.1; 3.9; c = 3.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Відомі результати змагань чемпіонату світу з жіночого біатлону. Розробіть алгоритм і програму визначення того, чи входить команда України у 6 кращих команд і, якщо є, яке місце вона посідає.</p>
+</td>
+<td>
+<p>Норвегія, Німеччина, Україна, Росія, Франція,&nbsp;Швеція</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Виберіть один із варіантів завдань за вказівкою вчителя або самостійно. (У разі успішного виконання одного варіанта, виконайте іншій.)</p>
+<p style="word-spacing: 1.1px;">Проаналізуйте умову задачі, побудуйте інформаційну модель.</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм і реалізуйте його в середовищі програмування.</p>
+<p style="word-spacing: 1.1px;">Перевірте роботу програми із різними початковими даними.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму із зазначеними в таблиці початковими даними. Проаналізуйте отриманий результат.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: які компоненти доцільно використовувати для обчислення кількості заданих елементів у масиві.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 18</p>
+<p style="word-spacing: 1.1px;">Тема. Класичні алгоритми для роботи з масивами та їх реалізація у вигляді програм. Завдання: розробити алгоритм і програму для реалізації одного із завдань, наведених&nbsp;у таблиці.</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер із встановленою програмою &mdash; середовищем програмування. Таблиця. ЗАВДАННЯ ДЛЯ ВИКОНАННЯ ПРАКТИЧНОЇ РОБОТИ № 18</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Варіант</p>
+</td>
+<td>
+<p>Завдання</p>
+</td>
+<td>
+<p>Початкові дані</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Дано масив з N цілих додатних чисел. Розробіть алгоритм і програму визначення, наскільки максимальне число більше за мінімальне.</p>
+</td>
+<td>
+<p>N = 7;</p>
+<p>105, 34, 160, 31, 28, 60, 70</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Знайдіть в Інтернеті прізвища космонавтів України. Розробіть алгоритм і програму впорядкування їхніх прізвищ в алфавітному порядку.</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Виберіть один із варіантів завдань за вказівкою вчителя або самостійно. (У разі успішного виконання одного варіанта, виконайте іншій.)</p>
+<p style="word-spacing: 1.1px;">Проаналізуйте умову задачі, побудуйте інформаційну модель.</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм і реалізуйте його в середовищі програмування.</p>
+<p style="word-spacing: 1.1px;">Перевірте роботу програми із різними початковими даними, дібраними самостійно.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму із зазначеними в таблиці початковими даними. Проаналізуйте отриманий результат.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: які методи сортування і пошуку доцільно використовувати в цій роботі.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="759-stvorennya-ta-rozrobka-navchalnih-proektv.html">Створення та розробка навчальних проектів</a></li><li><a href="757-dopomzhn-algoritmi.html">Допоміжні алгоритми</a></li><li><a href="756-dvovimrn-masivi.html">Двовимірні масиви</a></li><li><a href="755-simvoln-ta-ryadkov-velichini.html">Символьні та рядкові величини</a></li><li><a href="680-rozvyazuvannya-kompetentnsnih-zadach.html">Розв'язування компетентнісних задач</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

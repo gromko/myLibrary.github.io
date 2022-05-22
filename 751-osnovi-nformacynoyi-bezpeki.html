@@ -1,0 +1,646 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Основи інформаційної безпеки &raquo; mozok.click</title>
+<meta name="description" content="Морально-етичні і правові засоби захисту данихРозвиток інформаційних технологій суттєво впливає на всі сторони життя сучасної людини. Які ви знаєте способи для захисту даних у комп'ютері?Ко" />
+<meta name="keywords" content="даних, захисту, покупки, електронні, гроші, здійснює, мандрує, сайтів, використовує, сторінками, програми, тобто, інформація, захищена, контролем, знаходиться, компютер, впевненим, доступ, прикладні" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='751-osnovi-nformacynoyi-bezpeki.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Основи інформаційної безпеки</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb751").Button("#infc751"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb751" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc751" class="infcont">
+			<ul>
+				<li><i>Переглядів: 12663</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 10:39</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-751'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="751-osnovi-nformacynoyi-bezpeki.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '751'); return false;">1</a></li>
+		<li><a href="751-osnovi-nformacynoyi-bezpeki.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '751'); return false;">2</a></li>
+		<li><a href="751-osnovi-nformacynoyi-bezpeki.html#" title="Средне" class="r3-unit" onclick="doRate('3', '751'); return false;">3</a></li>
+		<li><a href="751-osnovi-nformacynoyi-bezpeki.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '751'); return false;">4</a></li>
+		<li><a href="751-osnovi-nformacynoyi-bezpeki.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '751'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 10:39</i></a></span>
+	<h3 class="btl"><span id="news-title">Основи інформаційної безпеки</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-751" style="display:inline;"><p style="word-spacing: 1.1px;"><strong>6.1. Класифікація загроз інформаційній безпеці.</strong></p>
+<p style="word-spacing: 1.1px;">Морально-етичні і правові засоби захисту даних</p>
+<p style="word-spacing: 1.1px;">Розвиток інформаційних технологій суттєво впливає на всі сторони життя сучасної людини. Які ви знаєте способи для&nbsp;захисту даних у комп'ютері?</p>
+<p style="word-spacing: 1.1px;">Коли користувач вмикає комп&rsquo;ютер і мандрує сторінками сайтів, здійснює покупки за електронні гроші чи використовує прикладні програми, то хоче бути впевненим, що доступ&nbsp;до його даних знаходиться під його контролем (рис. 1), тобто&nbsp;що інформація захищена.</p>
+<p style="word-spacing: 1.1px;">Інформаційна безпека &mdash; це стан захищеності систем опрацювання й зберігання даних, при якому забезпечено конфіденційність, доступність і цілісність даних,&nbsp;або комплекс заходів, спрямованих на забезпечення&nbsp;захищеності даних від несанкціонованого доступу,&nbsp;використання, оприлюднення, руйнування, внесення&nbsp;змін, ознайомлення, перевірки, запису чи знищення.</p>
+<p style="word-spacing: 1.1px;">Розглянемо принципи, на яких базується інформаційна безпека (рис. 2).</p>
+<p style="word-spacing: 1.1px;">Цілісність означає, що в ході передавання й зберігання інформація зберігає зміст і структуру; створювати, знищувати або змінювати дані має право лише власник.</p>
+<p style="word-spacing: 1.1px;">Конфіденційність означає, що доступ до конкретної інформації мають лише особи, коло яких узгоджено з власником.</p>
+<p style="word-spacing: 1.1px;">Доступність означає здатність забезпечувати своєчасний і безперешкодний доступ повноправних користувачів до необхідної інформації.</p>
+<p style="word-spacing: 1.1px;">Достовірність означає неможливість викривлення чи спотворення інформації.</p>
+<p style="word-spacing: 1.1px;">Як ми вже з&rsquo;ясували, під час користування Інтернетом часто виникають загрози інформаційній безпеці. Загрози можуть мати як природний, так і штучний характер. А вони,&nbsp;у свою чергу, можуть бути або випадковими, або навмисними. Загрози пошкодження даних можна класифікувати за&nbsp;чинниками, що їх спричиняють. Слід зазначити, що серед&nbsp;усіх загроз найбільший відсоток за масштабом і ступенем&nbsp;пошкодження даних припадає на людський чинник. Тож&nbsp;насамперед зазвичай розглядають захист від дій, які може&nbsp;спричинити людина.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-175.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-176.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Існують як неписані морально-етичні норми, так і оформлені в деякий статут, як, наприклад,&nbsp;Кодекс професійної поведінки&nbsp;членів Асоціації користувачів&nbsp;комп'ютерів СІІІА.</p>
+<p style="word-spacing: 1.1px;">В Україні створено Державну службу спеціального зв'язку та&nbsp;захисту інформації України &mdash;&nbsp;державний орган спеціального&nbsp;призначення, який опікується&nbsp;питаннями забезпечення формування і реалізації державної&nbsp;політики у сферах захисту державних інформаційно-телекомунікаційних систем, криптографічного й технічного захисту інформації, використання&nbsp;і захисту державних електронних інформаційних ресурсів.</p>
+<p style="word-spacing: 1.1px;">В Україні захист інформації забезпечується низкою законів: &laquo;Про інформацію&raquo;, &laquo;Про захист&nbsp;інформації в інформаційно-телекомунікаційних системах&raquo;,&nbsp;&laquo;Про державну таємницю&raquo;,&nbsp;&laquo;Про захист персональних&nbsp;даних&raquo;, &laquo;Про основні засади&nbsp;розвитку інформаційного суспільства в Україні на 20072015 роки&raquo;.</p>
+<p style="word-spacing: 1.1px;">Ознайомимося з видами загроз інформаційній безпеці (рис. 3) та розглянемо їхні особливості.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-177.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Види загроз інформаційній безпеці</p>
+<p style="word-spacing: 1.1px;">У сучасному суспільстві кожна людина має вільний доступ до інформації. Разом із тим важливо, щоб із розвитком інформаційних технологій забезпечувалося дотримання прав&nbsp;людини стосовно захисту авторських прав, інтелектуальної&nbsp;власності та безпеки.</p>
+<p style="word-spacing: 1.1px;">Інформаційна етика розглядає проблеми власності, доступу, безпеки й спільності інформації. У світі складаються певні морально-етичні норми поведінки користувачів, наприклад, не втручатися в роботу інших користувачів мереж;&nbsp;не використовувати файли, не призначені для вільного використання; не використовувати комп&rsquo;ютер для розповсюдження неправдивої інформації та ін. Ці норми здебільшого&nbsp;не є обов&rsquo;язковими і не затверджені в законодавчому порядку.&nbsp;Але їх невиконання часто призводить до падіння авторитету&nbsp;та престижу людини, групи осіб, організації або країни.</p>
+<p style="word-spacing: 1.1px;">Правові засоби захисту &mdash; чинні закони, укази та інші нормативні акти, які регламентують правила користування інформацією і відповідальність за їх порушення,&nbsp;захищають авторські права програмістів та регулюють&nbsp;інші питання використання інформаційних технологій.</p>
+<p style="word-spacing: 1.1px;">Сьогодні в усіх розвинених країнах світу та багатьох міжнародних об&rsquo;єднаннях ухвалено спеціальні закони щодо&nbsp;комп&rsquo;ютерних злочинів, і вони постійно доповнюються. Загальною тенденцією є підвищення жорсткості кримінальних&nbsp;законів щодо осіб, які скоїли комп&rsquo;ютерні злочини.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Яку інформацію називають конфіденційною? Що таке інформаційна безпека?</p>
+<p style="word-spacing: 1.1px;">Як шкідливі програми можуть потрапляти в комп'ютер?</p>
+<p style="word-spacing: 1.1px;">Які основні складові має інформаційна безпека? Назвіть основні джерела загроз інформаційній безпеці.</p>
+<p style="word-spacing: 1.1px;">Назвіть нормативно-правові документи у сфері інформаційної безпеки.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><strong>6.2. Захист даних. Шкідливі програми, їх типи,&nbsp;принципи дії і боротьба з ними</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте, які інформаційні процеси ви знаєте.</p>
+<p style="word-spacing: 1.1px;">Захист даних у комп&rsquo;ютері є однією з найважливіших проблем сьогодення. Він передбачає як заходи щодо закриття даних від доступу до них сторонніх осіб (несанкціонованого доступу), так і збереження цілісності (структури і вмісту) даних у комп&rsquo;ютері.</p>
+<p style="word-spacing: 1.1px;">Захист даних (англ. Data protection) &mdash; сукупність методів і засобів, які забезпечують цілісність, конфіденційність і доступність даних в умовах впливу загроз природного або штучного характеру, реалізація яких&nbsp;може призвести до завдання шкоди власникам і користувачам інформації.</p>
+<p style="word-spacing: 1.1px;">Пошкодження або руйнування даних може статися в результаті неправильної роботи апаратного чи програмного забезпечення. Так, фізичне пошкодження жорсткого диска&nbsp;може призвести до повної втрати даних або їх частини.</p>
+<p style="word-spacing: 1.1px;">Порушення цілісності даних (зміна або вилучення окремих файлів, зміна структури файлів на диску тощо) часто спричиняється роботою некоректно написаних програм. Та найчастіше справжньою причиною збою в роботі комп&rsquo;ютера є програми, спеціально написані для заподіяння шкоди даним.</p>
+<p style="word-spacing: 1.1px;">Шкідлива програма &mdash; це спеціально розроблена програма для пошкодження і знищення файлів даних і програмного забезпечення, викрадення особистих даних і коштів користувача.</p>
+<p style="word-spacing: 1.1px;">Розрізняють три типи шкідливих програм: комп&rsquo;ютерні віруси, шпигунські програми, хакерські утиліти (див. таблицю). Таблиця. ТИПИ ШКІДЛИВИХ ПРОГРАМ</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td colspan="2">
+<p>Шкідливі програми Опис дії</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Комп'ютерні віруси</p>
+</td>
+<td>
+<p>Шкідливі програми, що здатні до самокопіювання та вбудовування в код інших програм, системні ділянки пам'яті чи завантажувальні сектори, а також до поширення своїх копій різними каналами зв'язку.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Шпигунські</p>
+<p>програми</p>
+</td>
+<td>
+<p>Потрапляють зазвичай через мережу. Не самовідтворюються, тому їх не можна назвати вірусами. Їхнє призначення &mdash; слідкувати за діями, що виконуються на комп'ютері: відправляти на сайт хакерів установлені коди, паролі входження&nbsp;у платіжні системи, розсилати рекламні листи за рахунок користувача. Ці програми також можуть порушувати нормальну роботу комп'ютера. До них належать троянські коні (трояни) і хробаки</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Хакерські</p>
+<p>утиліти</p>
+</td>
+<td>
+<p>Завдають шкоди з віддалених комп'ютерів. Не є ані троянськими платформами, ані вірусами; не можуть заподіяти шкоди локальним пристроям, на які встановлені. Можуть слугувати програмами для автоматизації формування вірусів, троянських програм і хробаків. Це програмні бібліотеки, утиліти, які приховують&nbsp;код &laquo;хворих&raquo; файлів від перевірки антивірусом (шифрувальники файлів)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Вважають, що ідею створення комп'ютерних вірусів &laquo;підкинув&raquo;&nbsp;письменник-фантаст Т. Райн&nbsp;у 1977 році в СІ1ІА, він описав епідемію, яка за короткий&nbsp;час вразила 7000 комп'ютерів.&nbsp;А спричинив її вірус. Передаючись від одного комп'ютера&nbsp;до іншого, він убудовувався&nbsp;в ОС і виводив комп'ютери&nbsp;з-під контролю людини.</p>
+<p style="word-spacing: 1.1px;">Шляхи потрапляння шкідливих</p>
+<p style="word-spacing: 1.1px;">програм у комп'ютер:</p>
+<p style="word-spacing: 1.1px;">&bull; під виглядом ігрових та інших&nbsp;програм, завантажених з мережі Інтернет</p>
+<p style="word-spacing: 1.1px;">&bull; під час перегляду веб-сторінок;</p>
+<p style="word-spacing: 1.1px;">&bull; електронною поштою</p>
+<p style="word-spacing: 1.1px;">&bull; у процесі копіювання файлів&nbsp;з носіїв, які до цього використовувалися на заражених&nbsp;комп'ютерах</p>
+<p style="word-spacing: 1.1px;">Троянська програма SURPRISE (&laquo;Сюрприз&raquo;) була написана мовою Бейсик і видаляла вміст&nbsp;поточного диска, а потім виводила на екран повідомлення&nbsp;&laquo;Surprise!&raquo;.</p>
+<p style="word-spacing: 1.1px;">Унаслідок дії троянської програми, написаної в 1989 році американським студентом Робер-том Морісом і запущеної ним в Інтернет, були заражені і виведені з ладу тисячі комп'ютерів,&nbsp;у тому числі ті, що належать Міністерству оборони СІНА. Автор&nbsp;програми був засуджений до&nbsp;трьох місяців в'язниці і штрафу&nbsp;в 270 тис. доларів.</p>
+<p style="word-spacing: 1.1px;">Правила профілактики зараження комп'ютера&nbsp;шкідливими програмами&nbsp;і збереження даних</p>
+<p style="word-spacing: 1.1px;">&bull; Користуйтеся паролями.</p>
+<p style="word-spacing: 1.1px;">&bull; Не користуйтеся піратськими копіями програмного забезпечення.</p>
+<p style="word-spacing: 1.1px;">&bull; Регулярно оновлюйте програмне забезпечення.</p>
+<p style="word-spacing: 1.1px;">&bull; Не запускайте на виконання&nbsp;невідомі програми.</p>
+<p style="word-spacing: 1.1px;">&bull; Не відкривайте файли, не&nbsp;перевірені на наявність вірусів.</p>
+<p style="word-spacing: 1.1px;">&bull; Встановлюйте програму захисту від вірусів, що постійно оновлює свою базу знань.</p>
+<p style="word-spacing: 1.1px;">Розглянемо особливості деяких відомих комп&rsquo;ютерних вірусів.</p>
+<p style="word-spacing: 1.1px;">Файлові віруси &mdash; під час поширення своїх копій обов&rsquo;язково змінюють вміст виконуваних файлів. У більшості випадків вміст файлів, атакованих вірусом, повністю або&nbsp;частково втрачається.</p>
+<p style="word-spacing: 1.1px;">Скриптові віруси &mdash; вимагають наявності однієї зі скрип-тових мов (j&#097;vascript, VBScript) для самостійного проникнення в неінфіковані скрипти. Віруси цього типу вражають або вихідний код програми, або її компоненти (OBJ-, LIB-, DCU-файли), а також VCL- і ActiveX-компоненти.</p>
+<p style="word-spacing: 1.1px;">Стелс-віруси &mdash; повністю або частково приховують присутність у системі шляхом перехоплення запитів операційної системи на читання/записування додаткової інформації про&nbsp;заражені об&rsquo;єкти (завантажувальні сектори, елементи файлової системи, пам&rsquo;ять тощо).</p>
+<p style="word-spacing: 1.1px;">Завантажувальні віруси &mdash; розміщуються у виконуваних файлах (exe, com, sys, dll) операційної системи й активізуються під час завантаження. Вони часто розміщуються у файлах&nbsp;документів, у яких застосовуються макроси. Тому руйнують&nbsp;не лише додатки, але й файли.</p>
+<p style="word-spacing: 1.1px;">Бекдор, backdoor (від англ. Back door &mdash; чорний хід, задні двері) &mdash; дефект алгоритму, який навмисно вбудовується&nbsp;в нього розробником і дозволяє отримати таємний доступ&nbsp;до даних або віддаленого управління комп&rsquo;ютером.</p>
+<p style="word-spacing: 1.1px;">Дропер (англ. Dropper &mdash; бомбоскидач) &mdash; сімейство шкідливих програм (зазвичай трояни), скерованих на несанкціоноване та приховане від користувача встановлення на комп&rsquo;ютер інших шкідливих програм, які містяться в самому тілі дропера або завантажуються мережею.</p>
+<p style="word-spacing: 1.1px;">Закладка (програмна закладка) &mdash; приховано впроваджена в захищену систему програма або навмисно змінений фрагмент програми, що дозволяє здійснити несанкціонований доступ до ресурсів системи на основі зміни властивостей системи&nbsp;захисту. Часто виконує роль перехоплювача паролів, трафіку,&nbsp;а також провідника для комп&rsquo;ютерних вірусів. Закладку неможливо виявити за допомогою стандартних антивірусних засобів &mdash; тільки спеціальними тестовими програмами.</p>
+<p style="word-spacing: 1.1px;">У світі розроблено велику кількість антивірусних програм, і надати перевагу тій чи іншій досить важко. Проте для&nbsp;ОС Windows 10 існує безкоштовний убудований антивірус&nbsp;Windows Defender (Захисник Windows) компанії Microsoft.</p>
+<p style="word-spacing: 1.1px;">Програма Захисник Windows установлюється за замовчуванням. Вікно цієї програми на відкритій вкладці На початок зображено на рис. 1. Якщо на комп&rsquo;ютері не було встановлено антивірусної програми, то під час установлення програми Захисник Windows з&rsquo;явиться повідомлення про потребу в перевірці. На вкладці Оновити надається можливість оновлення&nbsp;антивірусних баз програми. Вкладка Журнал дозволяє переглянути потенційно небезпечні об&rsquo;єкти і взаємодіяти з ними.&nbsp;За допомогою кнопки Настройки можна вмикати і вимикати&nbsp;деякі можливості програми Windows Defenger.</p>
+<p style="word-spacing: 1.1px;">Щоб перевірити окрему папку або файл за допомогою програми Захисник Windows, потрібно у файловому провіднику відкрити контекстне меню папки (файла), виконати&nbsp;команду Перевірка з використанням Windows Defender.</p>
+<p style="word-spacing: 1.1px;">За допомогою програми можна здійснити як повну перевірку програм і даних, розташованих у комп&rsquo;ютері, так і перевірку окремих частин, наприклад, диска, папки тощо&nbsp;(експрес-сканування).</p>
+<p style="word-spacing: 1.1px;">Після виконання перевірки зазначеної папки відкриється вікно з результатами перевірки, можливий варіант якого&nbsp;зображено на рис. 2.</p>
+<p style="word-spacing: 1.1px;">До популярних комерційних антивірусних програм належать ESET NOD 32, BitDefender,&nbsp;Kaspersky Internet Security&nbsp;тощо. Майже не поступаються&nbsp;їм за ефективністю безкоштовні програми: 360 Total Security,&nbsp;Panda Free Antivirus, Avast Free&nbsp;Antivirus, Avira Free Antivirus та ін.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-178.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Щоб вимкнути або увімкнути програму Захисник Windows потрібно виконати команду Пуск ^ Налаштування ^&nbsp;^ Оновлення та захист, вибрати пункт Захисник Windows&nbsp;і увімкнути або вимкнути параметр Захист у реальному часі.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Що розуміють під захистом даних?</p>
+<p style="word-spacing: 1.1px;">Які є типи шкідливих програм?</p>
+<p style="word-spacing: 1.1px;">Наведіть приклади комп'ютерних вірусів.</p>
+<p style="word-spacing: 1.1px;">Чим відрізняються віруси від шпигунських програм?</p>
+<p style="word-spacing: 1.1px;">Яких правил слід дотримуватися для забезпечення комп'ютерної безпеки?</p>
+<p style="word-spacing: 1.1px;">Чим відрізняється експрес-сканування від повного сканування?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Виконайте за допомогою програми Захисник Windows сканування двох будь-яких непорожніх папок або файлів, розташованих на вашому комп'ютері. Проаналізуйте&nbsp;отримані результати.</p>
+<p style="word-spacing: 1.1px;">Виконайте за допомогою антивірусної програми експрес-сканування жорсткого диска до повного його завершення. Скільки часу&nbsp;виконувалося сканування? Проаналізуйте&nbsp;його результати.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>6.3. Загрози при роботі в Інтернеті. Засоби браузера,&nbsp;призначені для гарантування безпеки</strong></p>
+<p style="word-spacing: 1.1px;">Чи може зараження комп'ютера шкідливими програмами статися під час роботи в Інтернеті?</p>
+<p style="word-spacing: 1.1px;">Активування більшості шкідливих програм вимагає безпосередньої участі користувача. Загальновідомо, що коли на незнайомому сайті пропонують щось завантажити, то слід&nbsp;негайно відмовитися. Деякі зловмисники цілеспрямовано полюють на приватну інформацію користувача (банківські реквізити, електронне листування та ін.), деякі намагаються&nbsp;отримати віддалений доступ до персональних пристроїв &mdash;&nbsp;комп&rsquo;ютерів, планшетів або мобільних телефонів.</p>
+<p style="word-spacing: 1.1px;">Розглянемо засоби браузерів, призначені для захисту інформації користувача, на прикладі найбільш потужного і популярного браузера Google Chrome.</p>
+<p style="word-spacing: 1.1px;">У Google Chrome передбачено захист акаунта Gmail від потенційно небезпечних листів, які можуть містити шкідливі програми та попередження в разі спроби завантажити файл,&nbsp;у якому під виглядом рінгтона або PDF-документа поширюється небезпечний код.</p>
+<p style="word-spacing: 1.1px;">У Google Chrome використовуються додаткові модулі (пла-гіни), які дозволяють користувачу переглядати мультимедійні файли або відео. Встановлені плагіни також можуть використовуватися зловмисниками для злому комп&rsquo;ютера. Тому Google Chrome, виявивши застарілий плагін із вразливою&nbsp;системою безпеки, пропонує користувачу виконати оновлення.&nbsp;І блокує плагін, поки користувач цього не зробить. Якщо користувач спробує відкрити небезпечний сайт, Google Chrome&nbsp;попередить про це.</p>
+<p style="word-spacing: 1.1px;">Небезпечними вважаються сайти, підозрювані у фішингу або поширенні спаму, що є окремими видами комп&rsquo;ютерних загроз.</p>
+<p style="word-spacing: 1.1px;">Розглянемо особливості фішингу і спаму та засоби захисту від них.</p>
+<p style="word-spacing: 1.1px;">Через інтерфейс браузера шкідливі програми можуть потрапляти до комп'ютера з різних плагінів типу Flash, Java&nbsp;і QuickTime. Тому необхідно&nbsp;оновлювати не тільки сам бра-узер, а й усі зазначені компоненти.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-179.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Google виявляє веб-сторінки, які можуть завдати шкоди.&nbsp;Щодня знаходить і позначає&nbsp;понад 10 тис. небезпечних сайтів, виводить попередження&nbsp;для 14 млн результатів пошуку&nbsp;Google і 300 тис. завантажень.</p>
+<p style="word-spacing: 1.1px;">Спам &mdash; рекламні та інші повідомлення (наприклад, про нові послуги, варіанти відпочинку, дешеві товари тощо), які&nbsp;надходять на поштову скриньку осіб, які не давали дозвіл&nbsp;на їх отримання. Окремі спам-повідомлення можуть нести&nbsp;комп&rsquo;ютерні віруси. Ніколи не слід відповідати на спам-листи&nbsp;та переходити за посиланнями, які в них містяться.</p>
+<p style="word-spacing: 1.1px;">Фішинг &mdash; масове розсилання електронних листів від імені популярних брендів із метою отримання доступу до логіна і пароля користувача, банківських рахунків та інших персональних даних.</p>
+<p style="word-spacing: 1.1px;">У листах може міститися посилання на сайт, який зовнішньо майже не відрізняється від справжнього. Після відкриття проблемної веб-сторінки шахраї намагаються в різний спосіб&nbsp;примусити користувача увести логін і пароль.</p>
+<p style="word-spacing: 1.1px;">З метою підвищення надійності захисту від фішингу виробники основних браузерів домовилися про застосування</p>
+<p style="word-spacing: 1.1px;">однакових способів інформування користувачів про перехід на підозрілий сайт. Ознайомимося з поділом підозрілих сайтів.</p>
+<p style="word-spacing: 1.1px;">&bull; Підроблені сайти &mdash; метою таких сайтів є фішинг та інші&nbsp;види соціальної інженерії. Вони обманом намагаються&nbsp;отримати доступ до особистих даних і паролів користувачів.</p>
+<p style="word-spacing: 1.1px;">&bull; Небезпечні сайти &mdash; мета таких сайтів полягає в установленні на пристрій користувача шкідливого або небажаного програмного забезпечення, яке може порушити&nbsp;роботу системи і викликати неполадки в мережі.</p>
+<p style="word-spacing: 1.1px;">Зараз у мережі Інтернет існує немало підозрілих сайтів. Посилання на такі ресурси можуть поширюватися в різний&nbsp;спосіб, наприклад електронною поштою.</p>
+<p style="word-spacing: 1.1px;">Щоб забезпечити безпечний перегляд, браузери складають список сайтів, які підозрюються у фішингу та поширенні&nbsp;шкідливих програм. Вони аналізують усі веб-сторінки і попереджають користувача, якщо сайт становить загрозу.</p>
+<p style="word-spacing: 1.1px;">Зверніть увагу на адресу певного сайта. Для передавання гіпертекстових даних мережею Інтернет часто використовується протокол HTTP (Hyper Text Transfer Protocol). Але з&rsquo;єднанням за цим протоколом не є захищеним.</p>
+<p style="word-spacing: 1.1px;">Існує також HTTS (Hypertext Transport Protocol Secure) &mdash; протокол зашифрованого під&rsquo;єднання, який забезпечує більш&nbsp;ефективний захист даних. У деяких браузерах поряд із позначенням протоколу https:// відображається значок замка (див.&nbsp;рисунок). Це означає, що з&rsquo;єднання є захищеним і більш безпечним.</p>
+<p style="word-spacing: 1.1px;">Однак досвід користування деякими ресурсами свідчить, що це не завжди так. Зображення замка, який є на сторінках таких ресурсів, можна вважати простою картинкою. Це&nbsp;означає, що в сайта відсутній сертифікат справжності, не підтримується і SSL-з&rsquo;єднання.</p>
+<p style="word-spacing: 1.1px;">SSL (англ. Secure Sockets Layer &mdash; рівень захищених соке-тів) &mdash; криптографічний протокол, який гарантує встановлення безпечного з&rsquo;єднання між клієнтом і сервером.</p>
+<p style="word-spacing: 1.1px;">SSL-сертифікат &mdash; це сертифікат безпеки; цифровий спосіб ідентифікації, який підтверджено Центром сертифікації. У сертифікаті міститься ідентифікаційна інформація, період&nbsp;дії, публічний ключ, серійний номер і цифрові підписи.</p>
+<p style="word-spacing: 1.1px;">Сучасні браузери мають вбудовану систему безпеки, підтверджену сертифікатами, отриманими в спеціальних центрах. Система браузера вважатиме сертифікат справжнім, якщо центр сертифікації, який його видав, є в переліку надійних закладів.</p>
+<p style="word-spacing: 1.1px;">Якщо з&rsquo;єднання, яке потребує введення конфіденційної інформації, є незахищеним, то слід скористатися іншим ресурсом.</p>
+<p style="word-spacing: 1.1px;">Захищеним є сайт, який використовує для обміну даними протоколи захищеного зв'язку.&nbsp;Підтримка захищених каналів&nbsp;зв'язку потрібна насамперед&nbsp;сайтам, які працюють із персональною інформацією користувачів (сайти банків, урядових&nbsp;установ тощо).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-180.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Технологія SSL забезпечує кращий захист і збереження конфіденційності інформації, на відміну від незашифрованого&nbsp;веб-з'єднання.</p>
+<p style="word-spacing: 1.1px;">Протокол забезпечує конфіденційність обміну даними між клієнтом і сервером, які використовують TCP/IP.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які існують типи шкідливих програм?</p>
+<p style="word-spacing: 1.1px;">Чим відрізняються віруси від шпигунських програм?</p>
+<p style="word-spacing: 1.1px;">Які сайти вважаються підозрілими? Опишіть їх.</p>
+<p style="word-spacing: 1.1px;">Що таке протокол зашифрованого під'єднан-ня? Чому і де він використовується?</p>
+<p style="word-spacing: 1.1px;">Практична робота № 13</p>
+<p style="word-spacing: 1.1px;">Тема. Налаштовування параметрів безпеки в середовищі браузера.</p>
+<p style="word-spacing: 1.1px;">Завдання: налаштувати параметри безпеки в середовищі браузера Google Chrome. Обладнання: комп'ютер зі встановленим браузером Google Chrome.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Відкрийте браузер Google Chrome. Відкрийте меню Налаштування.</p>
+<p style="word-spacing: 1.1px;">Виконайте команду Показати розширені налаштування.</p>
+<p style="word-spacing: 1.1px;">Налаштуйте послугу Захистіть себе та свій пристрій від небезпечних сайтів.</p>
+<p style="word-spacing: 1.1px;">Виберіть команду Від'єднатися від облікового запису Google, оскільки синхронізація акаунта з браузером означає, що особисті дані користувача зберігаються&nbsp;на серверах Google.</p>
+<p style="word-spacing: 1.1px;">Натиснувши кнопку Розширені налаштування синхронізації, виберіть команду Шифрувати синхронізовані дані за допомогою власної парольної фрази.</p>
+<p style="word-spacing: 1.1px;">Налаштуйте вміст. Для цього під рядком Конфіденційність (див. рисунок) натисніть&nbsp;кнопку Налаштування вмісту та виберіть&nbsp;команду Блокувати файли cookie. Це забезпечить видалення ваших cookie після закриття браузера, і рекламодавці не зможуть відстежувати вас, використовуючи&nbsp;cookie третіх сторонніх сайтів.</p>
+<p style="word-spacing: 1.1px;">Примітка. Куки (Cookie&mdash; печиво) &mdash; невеликий текстовий файл (набір даних), який сервер відвідуваного сайта записує в браузер користувача. У файлі зберігається інформація про ім&rsquo;я та пароль, індивідуальні&nbsp;налаштування та вподобання користувача,</p>
+<p style="word-spacing: 1.1px;">статистику відвідування. Щоразу при відвідуванні сайта браузер надсилає серверу такий файл для ідентифікації користувача.&nbsp;Саме завдяки кукам користувач на власному комп&rsquo;ютері відразу потрапляє у свій&nbsp;обліковий запис, авторизація відбувається&nbsp;автоматично. З точки зору безпеки є деякі&nbsp;недоліки: стороння людина може відвідувати форуми та сайти під іменем власника&nbsp;комп&rsquo;ютера, за куками можна відслідковувати, які сайти і коли було відвідано.</p>
+<p style="word-spacing: 1.1px;">Виберіть опцію Забороняти всім сайтам запускати j&#097;vascript для захисту.</p>
+<p style="word-spacing: 1.1px;">Виберіть опцію Заборонити всім сайтам відображати спливаючі вікна.</p>
+<p style="word-spacing: 1.1px;">Виберіть опцію Заборонити всім сайтам від-стежувати ваше фізичне місцезнаходження.</p>
+<p style="word-spacing: 1.1px;">Налаштуйте автозаповнення. Для цього зніміть прапорець із команди Увімкнути&nbsp;автозаповнення. Це допоможе збереженню&nbsp;браузером ваших логінів, паролів та іншої конфіденційної інформації, введених&nbsp;у форми веб-сайтів.</p>
+<p style="word-spacing: 1.1px;">Збережіть налаштування Google.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновки: як налаштовувати параметри безпеки в середовищі браузера Google Chrome.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-181.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>6.4. Безпечне зберігання та видалення даних.&nbsp;Резервне копіювання та відновлення даних</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте, що таке файлова система.</p>
+<p style="word-spacing: 1.1px;">Працюючи за комп&rsquo;ютером, користувач впевнений, що всі опрацьовувані дані надійно зберігаються і ніщо не завадить&nbsp;продовжувати з ними працювати. Проте досить часто виникають проблеми з доступом до даних. Наприклад, після оновлення програм або встановлення нових пристроїв не завантажується ОС, з&rsquo;являються сторонні повідомлення, зникають&nbsp;файли тощо. Щоб уникнути подібного, слід дотримуватися&nbsp;правил безпечного зберігання даних.</p>
+<p style="word-spacing: 1.1px;">Насамперед слід розділити жорсткий диск на декілька розділів (логічних дисків) з тим, щоб на одному (системному) зберігати програмне забезпечення й системні дані, на інших &mdash; решту. Навіть на власному комп&rsquo;ютері краще створити кілька облікових записів, дотримуючись певних правил.</p>
+<p style="word-spacing: 1.1px;">Виходячи з того, що однією з основних причин втрати даних (після ненавмисного видалення) є наслідки дій шкідливих програм, дуже важливо використовувати антивірус.</p>
+<p style="word-spacing: 1.1px;">Ще одним важливим правилом безпечного зберігання даних є створення резервних копій (див. рисунок). Відмова апаратної&nbsp;частини (жорсткий диск), вірусна атака чи неуважність самого користувача (випадкове видалення інформації) можуть призвести до втрати важливих даних.</p>
+<p style="word-spacing: 1.1px;">Резервне копіювання даних &mdash; це створення копій важливої інформації, що є на комп'ютері, для її збереження в інших сховищах даних (флеш-накопичувач,&nbsp;жорсткий диск, DVD-диск, хмарний сервіс тощо).</p>
+<p style="word-spacing: 1.1px;">Резервне копіювання можна виконувати за допомогою спеціальних утиліт, які забезпечують створення компактних архівів. Наприклад, одною з таких утиліт є Microsoft Backup, що входить до комплекту Windows. Щоб скористатися нею,&nbsp;на Панелі керування потрібно вибрати відповідне посилання.</p>
+<p style="word-spacing: 1.1px;">Однією з альтернатив резервного копіювання, наприклад, під час роботи з великими проектами (науковими роботами,&nbsp;масштабними кресленнями тощо), може служити створення&nbsp;контрольних точок відновлення системи.</p>
+<p style="word-spacing: 1.1px;">Правила створення кількох</p>
+<p style="word-spacing: 1.1px;">облікових записів</p>
+<p style="word-spacing: 1.1px;">&bull; Лише один з облікових записів повинен мати права&nbsp;адміністратора &mdash; права&nbsp;встановлювати та видаляти&nbsp;програмне забезпечення.</p>
+<p style="word-spacing: 1.1px;">&bull; Теки, що містять програмне&nbsp;забезпечення, мають бути&nbsp;доступними для читання&nbsp;усіх користувачів, окрім адміністратора, з можливим&nbsp;виключенням для папок із&nbsp;налаштуваннями програми.</p>
+<p style="word-spacing: 1.1px;">&bull; Кожний обліковий запис повинен мати папку з повним&nbsp;доступом лише для цього&nbsp;облікового запису та адміністратора.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-182.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Точка відновлення &mdash; це подання збереженого стану системних файлів комп'ютера.</p>
+<p style="word-spacing: 1.1px;">У разі непередбачуваної ситуації, наприклад дій шкідливого програмного забезпечення, можна &laquo;відкотитися&raquo; до стану системи з усіма параметрами й файлами на період збереження.&nbsp;Для цього не обов&rsquo;язково встановлювати додаткове програмне</p>
+<p style="word-spacing: 1.1px;">Acronis True Image &mdash; лідер серед програм для резервного копіювання. Вона дозволяє&nbsp;зберігати файли і папки, розділи диска повністю або робити образ розділу з ОС, програмами і конфігурацією. Ці дії&nbsp;можна налаштувати на автоматичне і періодичне виконання.&nbsp;Якщо ОС пошкоджено, можна&nbsp;завантажити програму з флеш-накопичувача (або іншого носія)&nbsp;й відновити резервну копію.</p>
+<p style="word-spacing: 1.1px;">забезпечення. Сучасні операційні системи вже мають таку функцію як вбудовану, що дозволить не втратити повністю&nbsp;всю інформацію. Однак все, що було змінено, навіть за умови&nbsp;збереження після створення контрольної точки, буде втрачено. Це найголовніший недолік такого способу страхування.&nbsp;Проте неповне відтворення краще, ніж повна втрата даних.</p>
+<p style="word-spacing: 1.1px;">Для роботи з утилітою Відновлення системи необхідно зберегти відкриті файли та закрити всі програми; клацнути кнопку Пуск, у головному меню вибрати Програми ^ Стандартні ^ Системні інструменти (Службові) ^ Відновлення системи або&nbsp;вибрати відповідну дію на Панелі керування.</p>
+<p style="word-spacing: 1.1px;">Програми, що стали причиною збоїв, слід видалити за допомогою утиліти Програми та засоби, яку запускають із Панелі керування.</p>
+<p style="word-spacing: 1.1px;">Під час інсталювання дані про програму додаються до системних файлів, реєстру ОС.&nbsp;Окремі компоненти програм&nbsp;можуть копіюватися до інших&nbsp;системних папок. Тому щоб видалити інстальовані програми,&nbsp;недостатньо просто видалити&nbsp;файли програми.</p>
+<p style="word-spacing: 1.1px;">Пригадайте, як встановити програму на комп'ютер.</p>
+<p style="word-spacing: 1.1px;">У разі видалення дані фізично залишаються на накопи-чувачі, проте у файловій системі більше не відображаються. Місце на носії, де містяться ці дані, позначається як вільне&nbsp;для запису нових даних. Якщо в даний розділ або логічний&nbsp;диск записати дані, може статися часткове або повне заміщення даних, позначених як видалені. Це стосується текстових, графічних та мультимедійних даних.</p>
+<p style="word-spacing: 1.1px;">П росте видалення папки з назвою програми з системного диска є некоректним і може призвести до збоїв у роботі&nbsp;операційної системи та накопичення непотрібних файлів.</p>
+<p style="word-spacing: 1.1px;">Вибір режиму видалення (деінсталяції) запускає спеціальну програму, яка коректно видаляє всі компоненти програми.</p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм видалення встановлених програм.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td><img src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-183.jpg" alt="" /></td>
+<td>
+<p>Виконайте команду Пуск ^ Параметри ^ Система ^ Застосунки та можливості.</p>
+</td>
+</tr>
+<tr>
+<td><img src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-184.jpg" alt="" /></td>
+<td>
+<p>У вікні, що з'явилося, виберіть зі списку інстальованих програм потрібну.</p>
+</td>
+</tr>
+<tr>
+<td><img src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-185.jpg" alt="" /></td>
+<td>
+<p>Натисніть на кнопку Видалити.</p>
+</td>
+</tr>
+<tr>
+<td><img src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-186.jpg" alt="" /></td>
+<td>
+<p>Підтвердьте бажання видалити програму вибором кнопки Продовжити.</p>
+</td>
+</tr>
+<tr>
+<td><img src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-187.jpg" alt="" /></td>
+<td>
+<p>Дотримуйтесь вказівок програми деінсталяції.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Назвіть правила безпечного зберігання даних. Коли операційна система потребує відновлення?&nbsp;Що таке точка відновлення?</p>
+<p style="word-spacing: 1.1px;">Яка мета резервного копіювання?</p>
+<p style="word-spacing: 1.1px;">Як коректно видалити програму, встановлену на комп'ютері?</p>
+<p style="word-spacing: 1.1px;">Чи можна відновити дані, переміщені в папку Кошик, після очищення цієї папки?</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="760-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="664-zahist-danih-kompyuternih-sistem.html">Захист даних комп’ютерних систем</a></li><li><a href="642-nformacyn-tehnologyi.html">Інформаційні технології</a></li><li><a href="641-nformacyn-sistemi.html">Інформаційні системи</a></li><li><a href="389-bezpeka-yak-potreba-lyudini-vidi-y-rvn-zagroz-zahodi-bezpeki.html">Безпека як потреба людини. Види й рівні загроз. Заходи безпеки</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

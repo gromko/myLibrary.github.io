@@ -1,0 +1,1139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Бази даних &raquo; mozok.click</title>
+<meta name="description" content="Чи доводилося вам раніше працювати з будь-якими базами даних? Чи можна підручник з інформатики назвати базою даних?Нині важко уявити роботу великого супермаркету, системи резервування й прод" />
+<meta name="keywords" content="даних, банку, морського, авіаквитків, продажу, системи, резервування, порту, готельного, систем, основою, інформаційних, використання, комплексу, супермаркету, великого, базами, можна, якими, працювати" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='734-bazi-danih.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Бази даних</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb734").Button("#infc734"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb734" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc734" class="infcont">
+			<ul>
+				<li><i>Переглядів: 10117</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 10:06</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-734'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="734-bazi-danih.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '734'); return false;">1</a></li>
+		<li><a href="734-bazi-danih.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '734'); return false;">2</a></li>
+		<li><a href="734-bazi-danih.html#" title="Средне" class="r3-unit" onclick="doRate('3', '734'); return false;">3</a></li>
+		<li><a href="734-bazi-danih.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '734'); return false;">4</a></li>
+		<li><a href="734-bazi-danih.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '734'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 10:06</i></a></span>
+	<h3 class="btl"><span id="news-title">Бази даних</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-734" style="display:inline;"><p><strong>4.1. Поняття бази даних.&nbsp;Реляційна модель даних</strong></p>
+<p style="word-spacing: 1.1px;">Чи доводилося вам раніше працювати з будь-якими базами даних? Чи можна підручник з інформатики назвати базою даних?</p>
+<p style="word-spacing: 1.1px;">Нині важко уявити роботу великого супермаркету, системи резервування й продажу авіаквитків, банку, морського порту,&nbsp;готельного комплексу тощо без використання інформаційних&nbsp;систем, основою яких є бази даних.</p>
+<p style="word-spacing: 1.1px;">База даних &mdash; це сховище організованої сукупності даних різного типу, які відображують стан об'єктів певної предметної галузі та зв'язки між ними.</p>
+<p style="word-spacing: 1.1px;">Предметною галуззю називають сферу застосування конкретної БД, наприклад школа, банк, фірма, поліклініка, районний відділ освіти тощо.</p>
+<p style="word-spacing: 1.1px;">Об&rsquo;єктом предметної галузі є те, про кого або про що зберігаються дані в БД, наприклад учні, книжки, футболісти, класи школи тощо.</p>
+<p style="word-spacing: 1.1px;">Кожен об&rsquo;єкт характеризується сукупністю властивостей (атрибутів). Так, властивостями об&rsquo;єкта УЧЕНЬ можуть бути&nbsp;прізвище, ім&rsquo;я, домашня адреса, дата народження, зріст.</p>
+<p style="word-spacing: 1.1px;">Далі об&rsquo;єкти записуватимемо великими літерами, а в дужках зазначатимемо їхні властивості. Наприклад, об&rsquo;єкт УЧИТЕЛЬ можна позначити так: УЧИТЕЛЬ (прізвище, ім&rsquo;я, по батькові, рік народження, предмет), а об&rsquo;єкт БОРОШНО так: БОРОШНО (назва, виробник, сорт, вага, ціна).</p>
+<p style="word-spacing: 1.1px;">Кожна властивість об&rsquo;єкта має сукупність значень &mdash; неподільних елементів даних. Так, властивість сорт об&rsquo;єкта БОРОШНО може мати такі значення: вищий, перший, другий, а властивість предмет об&rsquo;єкта УЧИТЕЛЬ &mdash; математика, історія, хімія та інші. Повний набір елементів даних про об&rsquo;єкт називають екземпляром об&rsquo;єкта. Наприклад,&nbsp;екземпляром об&rsquo;єкта УЧЕНЬ є: (Котенко, Іван, Петрович,&nbsp;2017, 9 клас).</p>
+<p style="word-spacing: 1.1px;">Сукупність властивостей об&rsquo;єкта та їхніх значень є даними конкретної БД. Дані можуть бути різних типів: числові, символьні та ін. Властивості та їхні значення мають між собою&nbsp;зв&rsquo;язки. Так, властивість прізвище учня пов&rsquo;язана з конкретним</p>
+<p style="word-spacing: 1.1px;">Вперше термін database (база даних) з'явився на початку&nbsp;60-х років XX ст. і був уведений у вжиток на симпозіумах,&nbsp;організованих фірмою System&nbsp;Development Corporation (СІІІА)&nbsp;у 1964 і 1965 роках. Широкого&nbsp;розповсюдження в сучасному&nbsp;розумінні цей термін набув&nbsp;у 1970-ті роки.</p>
+<p style="word-spacing: 1.1px;">В Ісландії створена БД, яка містить інформацію про родинні зв'язки усіх ісландців,&nbsp;починаючи з XVIII ст.</p>
+<p style="word-spacing: 1.1px;">Кожна предметна галузь містить багато об'єктів, між якими існують певні зв'язки. Приміром, якщо предметною галуззю є школа, то її об'єктами можуть бути класи, вчителі,&nbsp;учні, предмети, між якими існують зв'язки. Так, учителі викладають певні предмети, учні навчаються в конкретних класах.</p>
+<p style="word-spacing: 1.1px;">прізвищем. Звідси випливає, що дані, які зберігаються в базі, мають певну логічну структуру, тобто описуються деякою моделлю подання даних, або просто моделлю даних.</p>
+<p style="word-spacing: 1.1px;">Способи відображення зв&rsquo;язків між даними, тобто моделі даних, можуть бути різними. Класичними є такі моделі даних: ієрархічна, мережева та реляційна (рис. 1).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-65.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-66.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Отже, модель даних визначає, яким способом відбувається об&rsquo;єднання даних у структурі, встановлює обмеження на значення даних і можливі операції над ними. Найпоширенішою зараз є реляційна модель даних. Активно розвиваються&nbsp;об&rsquo;єктно-реляційна й об&rsquo;єктно-орієнтована моделі даних, які&nbsp;ґрунтуються на класичних.</p>
+<p style="word-spacing: 1.1px;">За характером даних БД поділяють на дві основні групи: документальні й фактографічні (рис. 2). Далі розглядатимемо&nbsp;в основному фактографічні БД.</p>
+<p style="word-spacing: 1.1px;">Реляційна модель &mdash; це фактографічна БД, що є набором взаємопов&rsquo;язаних таблиць.</p>
+<p style="word-spacing: 1.1px;">Найпростіша БД містить одну таблицю, а складні &mdash; декілька десятків і навіть сотні таблиць. Розглянемо основні поняття реляційних БД на прикладі таблиці УЧНІ (табл. 1).</p>
+<p style="word-spacing: 1.1px;">Таблиця 1. УЧНІ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-67.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У таблиці наведено деякі дані про учнів, а саме: порядковий номер, прізвище, дата народження, зріст і домашня адреса.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-68.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Основними елементами таблиці є поле (стовпець) і запис (рядок) (рис. 3).</p>
+<p style="word-spacing: 1.1px;">Поле має ім&rsquo;я (наприклад, Зріст) і певне значення (наприклад, прізвище Топов А. І.).</p>
+<p style="word-spacing: 1.1px;">Дані в одному полі можуть бути тільки одного типу. Наприклад, у полі Прізвище тип даних символьний, а в полі Дата народження &mdash; тип дата.</p>
+<p style="word-spacing: 1.1px;">Запис &mdash; це множина значень усіх полів таблиці, на перехресті яких він знаходиться.</p>
+<p style="word-spacing: 1.1px;">Не кожна таблиця може бути об&rsquo;єктом БД. Для того щоб таблиця була об&rsquo;єктом БД, вона повинна відповідати таким&nbsp;основним вимогам:</p>
+<p style="word-spacing: 1.1px;">&bull; У таблиці не може бути однакових записів, вони повинні&nbsp;відрізнятися значенням хоча б одного поля.</p>
+<p style="word-spacing: 1.1px;">&bull; Імена полів у таблиці повинні бути різними. Одне поле&nbsp;не може об&rsquo;єднувати два і більше імен.</p>
+<p style="word-spacing: 1.1px;">&bull; Таблиця повинна мати ключ.</p>
+<p style="word-spacing: 1.1px;">Зазвичай у таблиці є унікальне поле або кілька полів, які однозначно ідентифікують записи. Такі поля називають&nbsp;ключем (ключовим полем). Він використовується для&nbsp;швидкого пошуку і зв&rsquo;язування даних із різних таблиць.&nbsp;Ключ, який містить тільки одне поле, називають простим,&nbsp;а ключ, який містить декілька полів, &mdash; складним (рис. 4).</p>
+<p style="word-spacing: 1.1px;">Зважаючи на те, що в одній таблиці може бути декілька ключів, тільки один із них можна визнати первинним. Найкраще первинним ключем вибрати простий ключ (бажано,&nbsp;щоб він мав цілочисловий тип). У цьому випадку операції&nbsp;з опрацювання даних будуть виконуватися швидше.</p>
+<p style="word-spacing: 1.1px;">У таблиці часто використовується поле, яке називається лічильником. Лічильник використовується для того, щоб&nbsp;зробити кожний запис унікальним. Крім того, лічильник&nbsp;забезпечує нумерацію записів.</p>
+<p style="word-spacing: 1.1px;">Реляційна БД може містити лише одну таблицю, але реально вона складається із сукупності взаємопов&rsquo;язаних між собою таблиць. Зазвичай уміст таблиць формується за функціональною ознакою. Це спрощує модифікацію БД і має інші&nbsp;переваги. Наприклад, у БД підприємства оптової торгівлі&nbsp;в одній таблиці можуть зберігатися дані про замовників товару, у другій &mdash; про співробітників підприємства, у третій &mdash;&nbsp;про відвантажені протягом доби товари тощо.</p>
+<p style="word-spacing: 1.1px;">Зв'язки можуть існувати між двома, трьома й більшою кількістю таблиць. Але найчастіше вони встановлюються&nbsp;між двома таблицями.</p>
+<p style="word-spacing: 1.1px;">Для встановлення зв&rsquo;язків між двома таблицями одну з них вибирають основною (батьківською), а другу &mdash; допоміжною&nbsp;(дочірньою). В основній таблиці вибирають первинний ключ,</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-69.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">а в допоміжній &mdash; спеціальне поле (або сукупність полів) для забезпечення зв&rsquo;язку між таблицями, яке називається зовнішнім ключем (рис. 5).</p>
+<p style="word-spacing: 1.1px;">Зовнішній ключ повинен однозначно визначати поле основної таблиці, на яку він посилається. У ньому не має бути даних, відсутніх у первинному ключі, інакше посилання буде некоректним. Розглянемо приклад.</p>
+<p style="word-spacing: 1.1px;">Приклад. Нехай у БД вступних іспитів до інституту є дві таблиці: АБІТУРІЄНТИ (табл. 2) і РЕЗУЛЬТАТИ (табл. 3).</p>
+<p style="word-spacing: 1.1px;">Таблиця 2. АБІТУРІЄНТИ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-70.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У табл. 2 АБІТУРІЄНТИ первинним ключем є поле з іменем Код абітурієнта. У табл. 3 РЕЗУЛЬТАТИ це поле не є унікальним, тому&nbsp;що результати в ньому дублюються (той самий&nbsp;абітурієнт здає іспити з декількох предметів).&nbsp;Але це поле є зовнішнім ключем, і за його&nbsp;даними можна встановити зв&rsquo;язок із табл. 2.&nbsp;Отже, зв&rsquo;язок між цими двома таблицями</p>
+<p style="word-spacing: 1.1px;">встановлюється за допомогою поля Код абітурієнта. Якщо потрібно дізнатись прізвище й домашній телефон абітурієнта, який отримав із математики 56 балів, а з фізики &mdash; 52 бали,&nbsp;то слід із табл. 3 РЕЗУЛЬТАТИ вибрати його&nbsp;код (024) і за значенням цього коду знайти&nbsp;в табл. 2 АБІТУРІЄНТИ прізвище Сидоров Є. М., телефон 30-240.</p>
+<p style="word-spacing: 1.1px;">Як бачимо, зв&rsquo;язки дозволяють отримати дані з декількох таблиць (див. рис. 5).</p>
+<p style="word-spacing: 1.1px;">З в'язки між таблицями забезпечують захист даних і автоматичну зміну даних у декількох таблицях, якщо сталися зміни в одній таблиці.</p>
+<p style="word-spacing: 1.1px;">Наприклад, припустимо, що зв&rsquo;язок між табл. 2 і 3 не встановлено. З якоїсь причини із табл. 2 видалено запис із прізвищем Сидоров Є. М., а в табл. 3 всі дані збереглися (рис. 6). Тоді невідомо, кому належать результати іспитів із математики й фізики абітурієнта, що має код 024. Вважається, що&nbsp;у цьому випадку трапилося порушення цілісності даних.</p>
+<p style="word-spacing: 1.1px;">Залежно від того, у якому співвідношенні перебувають ключові поля з полями зв&rsquo;язку, між двома таблицями можуть&nbsp;існувати чотири види зв&rsquo;язку (рис. 7).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-71.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-72.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Невід&rsquo;ємною складовою БД є система, що забезпечує весь цикл робіт від її створення до отримання даних, яка має назву&nbsp;система управління базами даних (СУБД).</p>
+<p style="word-spacing: 1.1px;">Основними функціями СУБД є створення бази даних, опрацювання даних за відповідними алгоритмами, пошук потрібних даних, забезпечення цілісності даних, захист даних&nbsp;і забезпечення їх таємниці.</p>
+<p style="word-spacing: 1.1px;">) Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">На які основні групи поділяють БД?</p>
+<p style="word-spacing: 1.1px;">Які класичні моделі даних існують?</p>
+<p style="word-spacing: 1.1px;">Яке поле називають ключовим?</p>
+<p style="word-spacing: 1.1px;">Для чого використовують зовнішній ключ? Наведіть означення бази даних.</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність реляційної моделі даних.</p>
+<p style="word-spacing: 1.1px;">Яким основним вимогам повинні відповідати таблиці баз даних?</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність об'єкта предметної галузі.</p>
+<p style="word-spacing: 1.1px;">Які основні функції виконує система управління базами даних?</p>
+<p style="word-spacing: 1.1px;">Які типи зв'язків існують між таблицями баз даних?</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><strong>4.2. Загальні відомості про систему&nbsp;Access 2016</strong></p>
+<p style="word-spacing: 1.1px;">Які чинники, на вашу думку, сприяли бурхливому розвитку баз даних в останні декілька десятиліть?</p>
+<p style="word-spacing: 1.1px;">Історія розвитку баз даних і систем управління ними складається з кількох етапів. За цей час розроблено багато СУБД, наприклад Dbase, FoxPro, Оracle 8.4, MS SQL Server 7.0, SQL&nbsp;Base, MS Access 7 та ін. Всі вони по-різному працюють з різними об&rsquo;єктами і мають різні функціональні можливості. Та&nbsp;попри все, більшість із них спирається на єдиний комплекс&nbsp;основних понять. Це дає нам можливість розглянути одну&nbsp;систему й узагальнити її поняття, прийоми й методи на весь&nbsp;клас СУБД. Далі розглядатимемо одну з найпоширеніших&nbsp;сьогодні СУБД &mdash; Access 2016.</p>
+<p style="word-spacing: 1.1px;">Access 2016 входить до пакета Microsoft Office та призначена для створення й роботи з реляційними БД. Ця&nbsp;система працює з такими об&rsquo;єктами, як таблиці, запити,&nbsp;форми, звіти (рис. 1). Усі об&rsquo;єкти найчастіше зберігаються&nbsp;в одному файлі. Однак інколи таблиці зберігаються в одному&nbsp;файлі, а інші об&rsquo;єкти &mdash; в іншому файлі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-73.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запуск системи Access можна здійснити стандартними способами, що передбачені в ОС Windows. Після запуску&nbsp;системи на екрані монітора з&rsquo;явиться її стартове вікно (рис. 2).&nbsp;Із цього вікна починається робота вже з існуючою БД або&nbsp;створення нової (рис. 3).</p>
+<p style="word-spacing: 1.1px;">У лівій області вікна відображено імена БД, з якими користувач працював останнім часом. У правій області вікна розташовано шаблони різноманітних БД, які можна наповнити власними даними, що суттєво прискорює створення БД. Скориставшись полем пошуку, можна викликати&nbsp;нові шаблони.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-74.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Серед шаблонів в Access є Пуста база даних, яка слугує для створення нової БД. У подальшому ми будемо використовувати&nbsp;саме цей спосіб.</p>
+<p style="word-spacing: 1.1px;">Ознайомимося з алгоритмом створення нової порожньої БД.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p>Клацнути поле Пуста база даних. Відкриється вікно, зображене на рис. 4.</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-75.jpg" alt="" /></td>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-76.jpg" alt="" /></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p>Рис. 4. Вікно для створення нової бази даних</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-77.jpg" alt="" /></td>
+<td>
+<p>У рядок Ім'я файлу ввести ім'я файла майбутньої БД, наприклад osvita, натиснути кнопку Знайти розташування для бази даних, що розташована праворуч від цього рядка.</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-78.jpg" alt="" /></td>
+<td>
+<p>У вікні, що відкриється, вибрати місце збереження файла БД, наприклад диск F:, натиснути кнопку ОК, а потім &mdash; кнопку Створити.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">У результаті цих дій файл БД osvita буде зареєстровано у кореневому каталозі диска F:, а на екрані з&rsquo;явиться вікно&nbsp;для створення таблиці 1. Після цього можна приступити до&nbsp;створення таблиць БД або закрити систему Access.</p>
+<p style="word-spacing: 1.1px;">Тепер розглянемо початкове вікно відкритої БД на вкладці Поля (рис. 5).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-79.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Основним об&rsquo;єктом вікна є стрічка, на якій розташовано команди й інструменти Access 2016. У верхній частині стрічки розміщено вкладки, зокрема Файл, Основне, Створення, Зовнішні дані, Знаряддя бази даних. Зміст команд та елементів керування, які відображаються на стрічці, залежить від того,&nbsp;яка в даний момент відкрита вкладка. Усі команди й елементи керування згруповані в розділах, назви яких виведені&nbsp;у нижній частині стрічки.</p>
+<p style="word-spacing: 1.1px;">У нашому випадку (див. рис. 5) на стрічці розташовано розділи Подання, Додавання й видалення, Властивості та інші,&nbsp;а над ними містяться відповідні кнопки команд. Якщо відкрити вкладку Створення, то будуть виведені інші розділи&nbsp;й відповідні команди.</p>
+<p style="word-spacing: 1.1px;">Стисло ознайомимося з призначенням вкладок.</p>
+<p style="word-spacing: 1.1px;">Вкладка Основне містить команди й елементи керування, які найчастіше виконуються в процесі роботи з БД. Це команди для роботи з буфером обміну, форматування тексту,&nbsp;сортування й фільтрування даних тощо.</p>
+<p style="word-spacing: 1.1px;">За допомогою команд вкладки Створення створюють таблиці, запити, форми, звіти й макроси, за допомогою команд вкладки Зовнішні дані здійснюють експортування, імпортування й збирання даних.</p>
+<p style="word-spacing: 1.1px;">Вкладка Знаряддя бази даних містить в основному команди, що стосуються адміністрування БД (команди аналізу й переміщення даних між програмами та ін.).</p>
+<p style="word-spacing: 1.1px;">У лівій області екрана вміщено Усі об'єкти Access &mdash; панель переходів, на якій можуть відображатися назви всіх створених об&rsquo;єктів. За допомогою цієї панелі можна здійснювати&nbsp;перехід між об&rsquo;єктами БД, змінювати параметри області переходів.</p>
+<p style="word-spacing: 1.1px;">Праворуч від панелі переходів є область редагування, у якій можуть одночасно відображатися таблиці, запити та&nbsp;інші об&rsquo;єкти. Щоб закрити БД, слід скористатися командою&nbsp;Закрити базу даних у меню швидкого доступу.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-80.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Як запустити систему Access 2016?</p>
+<p style="word-spacing: 1.1px;">Назвіть основні об'єкти системи Access 2016. Які є способи створення файлів бази даних?</p>
+<p style="word-spacing: 1.1px;">Яке призначення вкладок стрічки початкового вікна системи Access 2016?</p>
+<p style="word-spacing: 1.1px;">Поясніть порядок створення файлів бази даних.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">І Запустіть систему Access 2016. Створіть на жорсткому диску файл БД з іменем Mybasa.&nbsp;Переконайтеся, що файл зареєстровано.</p>
+<p style="word-spacing: 1.1px;">) Проаналізуйте призначення об'єктів початкового вікна БД, відкриваючи різні вкладки.</p>
+<p style="word-spacing: 1.1px;">Відкрийте та проаналізуйте призначення команд кнопки Настроїти панель швидкого доступу.</p>
+<p style="word-spacing: 1.1px;">Відкрийте і проаналізуйте вміст вкладки Основне.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p><strong style="word-spacing: 1.1px; letter-spacing: 0px;">4.3. Таблиці</strong></p>
+<p style="word-spacing: 1.1px;">Приступаючи до розробки БД, необхідно ретельно виконати її проектування. Проектування передбачає детальний аналіз поставленого завдання, визначення вимог до документів, які потрібно отримати. Особливу увагу слід приділити визначенню кількості таблиць, структурі кожної з них, зв&rsquo;язкам&nbsp;між ними.</p>
+<p style="word-spacing: 1.1px;">4.3.1. Створення структури таблиць</p>
+<p style="word-spacing: 1.1px;">Які основні складові, на вашу думку, повинна містити база даних? Наведіть приклади найпростіших баз даних.</p>
+<p style="word-spacing: 1.1px;">У середовищі Access існує кілька способів створення таблиць (рис. 1). Найбільш потужним і універсальним способом створення таблиць є режим конструктора, який розглянемо&nbsp;нижче.</p>
+<p style="word-spacing: 1.1px;">Порядок і методику створення таблиць розглянемо на такому прикладі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-81.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад. Нехай БД торговельної корпорації з назвою corporation містить дві таблиці &mdash; ФІРМИ і ПРАЦІВНИКИ&nbsp;(табл. 1 і 2 відповідно).</p>
+<p style="word-spacing: 1.1px;">Основною вважатимемо табл. 1, а табл. 2 &mdash; допоміжною.</p>
+<p style="word-spacing: 1.1px;">Таблиця 1. ФІРМИ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-82.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таблиця 2. ПРАЦІВНИКИ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-83.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Створити структуру таблиці означає визначити й увести в комп&rsquo;ютер назви й типи її полів, а також властивості&nbsp;типів. У середовищі Access 2016 використовують типи даних,&nbsp;перелік яких наведено на рис. 2.</p>
+<p style="word-spacing: 1.1px;">Кожний із цих типів даних має власний набір властивостей. Окремі властивості є унікальними, тобто містяться тільки&nbsp;в одному конкретному типі даних. Але переважна їх&nbsp;більшість &mdash; загальні, тобто містяться у різних типах даних.&nbsp;Далі будемо використовувати в основному такі типи даних:&nbsp;Короткий текст, Довгий текст, Число, Дата й час.</p>
+<p style="word-spacing: 1.1px;">Тип Короткий текст &mdash; це послідовність символів довжиною від 0 до 255, а тип Довгий текст &mdash; це послідовність символів до 65 536. У полі типу Число зберігаються числа.&nbsp;Розмір і конкретний тип чисел визначаються значенням властивості Розмір поля. У полях типу Дата й час зберігаються&nbsp;дати й час різних форматів.</p>
+<p style="word-spacing: 1.1px;">Для більш зручної роботи у ході введення структури табл. 1 і 2 доцільно створити на папері додаткові таблиці&nbsp;(табл. З і 4) з іменами полів, типом даних та їх описом. Назви полів залишимо ті самі, тип даних і властивості полів&nbsp;виберемо з урахуванням можливостей системи Access 2016.</p>
+<p style="word-spacing: 1.1px;">Таблиця 3. Структура таблиці ФІРМИ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-84.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-85.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таблиця 4. Структура таблиці ПРАЦІВНИКИ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-86.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Тепер перейдемо безпосередньо до створення структур таблиць у режимі конструктора,&nbsp;користуючись нашими табл. 1-4.</p>
+<p style="word-spacing: 1.1px;">1. Завантажимо систему Access і відкриємо&nbsp;БД corporation, для чого в області Останні&nbsp;натиснемо клавішу миші на імені БД.</p>
+<p style="word-spacing: 1.1px;">2. У вікні, що відкриється, активізуємо&nbsp;вкладку Створення.</p>
+<p style="word-spacing: 1.1px;">Відкриється вікно зі стрічкою (рис. 3).</p>
+<p style="word-spacing: 1.1px;">3. На цій стрічці натиснемо кнопку Конструктор таблиць.</p>
+<p style="word-spacing: 1.1px;">У результаті до БД додасться порожня таблиця (рис. 4).</p>
+<p style="word-spacing: 1.1px;">Слід звернути увагу на те, що вміст стрічки змінився. Тепер на екрані відкрито вкладку Конструктор (рис. 5).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-87.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Стрічка з активованою вкладкою Створення</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-88.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 4. Порожня таблиця в режимі конструктора</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-89.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 5. Стрічка з активованою вкладкою Конструктор</p>
+<p style="word-spacing: 1.1px;">4. Введемо імена полів. їхнє введення здійснюється стандартним способом: потрібно встановити курсор миші в необхідну&nbsp;клітинку таблиці й за допомогою клавіатури ввести певні імена.</p>
+<p style="word-spacing: 1.1px;">Типи полів краще вводити шляхом вибору їх зі списку типів (див. рис. 1).</p>
+<p style="word-spacing: 1.1px;">Щоб відкрити цей список, необхідно у певній клітинці поля Тип даних клацнути кнопку миші на кнопці Прапорець&nbsp;і вибрати необхідний тип. Опис полів не&nbsp;обов&rsquo;язковий. Його використовують для&nbsp;вказування призначення поля й допустимих його значень.</p>
+<p style="word-spacing: 1.1px;">5. Уведемо всі дані з табл. З Структура таблиці ФІРМИ у таблицю з іменем ФІРМИ і збережемо її. Для цього слід на панелі швидкого доступу натиснути кнопку</p>
+<p style="word-spacing: 1.1px;">Зберегти або клавіші Ctrl + S, увести ім&rsquo;я таблиці й натиснути кнопку ОК.</p>
+<p style="word-spacing: 1.1px;">На екран буде виведено попередження (рис. 6).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-90.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">6. Натискання кнопки Так у цьому вікні приведе до створення первинного ключа типу&nbsp;Лічильник. На цьому етапі не обов&rsquo;язково&nbsp;встановлювати первинний ключ, тому&nbsp;натиснемо кнопку Ні. Таблиця буде</p>
+<p style="word-spacing: 1.1px;">збережена, а її ім&rsquo;я з&rsquo;явиться в області переходів. Закриємо табл. 1 ФІРМИ, для&nbsp;чого відкриємо її контекстне меню та виконаємо команду Закрити. Аналогічно створимо структуру табл. 2 ПРАЦІВНИКИ.</p>
+<p style="word-spacing: 1.1px;">Створену структуру таблиці можна модифікувати, виконавши певні операції (рис. 7). Виконання цих операцій відбувається аналогічно операціям у ОC Windows.</p>
+<p style="word-spacing: 1.1px;">Для вилучення поля таблиці в режимі конструктора слід відкрити контекстне меню цього поля й виконати команду&nbsp;Видалити рядки. Якщо поле, яке вилучають, містить дані, то&nbsp;буде видано попередження про те, що дані цього поля будуть&nbsp;втрачені. Якщо після вилучення поля з&rsquo;ясується, що це вилучення було помилковим, слід натиснути кнопку Скасувати&nbsp;на панелі швидкого доступу. Поле буде повернуто в таблицю.&nbsp;Однак, якщо після вилучення поля були виконані будь-які&nbsp;операції, відновити поле буде неможливо.</p>
+<p style="word-spacing: 1.1px;">Поля, які є первинним або зовнішнім ключем, вилучити неможливо доти, поки не буде вилучено зв'язок між таблицями.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-91.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які способи створення таблиць існують у системі Access?</p>
+<p style="word-spacing: 1.1px;">Назвіть основні типи даних у системі Access.</p>
+<p style="word-spacing: 1.1px;">Як установити типи полів?</p>
+<p style="word-spacing: 1.1px;">Як встановити властивості полів?</p>
+<p style="word-spacing: 1.1px;">Які операції можна виконувати над створеними структурами таблиць?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Створіть на папері таблицю МОЇ ДРУЗІ з полями Номер, Прізвище, Ім'я, Телефон, День народження й Адреса.</p>
+<p style="word-spacing: 1.1px;">Розробіть на папері структуру таблиці з типами її полів і властивостями.</p>
+<p style="word-spacing: 1.1px;">Самостійно на папері заповніть таблицю даними шістьох своїх друзів.</p>
+<p style="word-spacing: 1.1px;">4.3.2. Ключові поля. Зв'язування таблиць</p>
+<p style="word-spacing: 1.1px;">Пригадаємо, які основні дії необхідно виконати в процесі створення структури таблиці. Які операції можна виконувати в таблиці? Чи можна виконати ці операції, якщо&nbsp;БД містить не одну таблицю?</p>
+<p style="word-spacing: 1.1px;">Згадаємо, що ключове поле (ключ) &mdash; це поле таблиці, значення якого не повторюється в жодному іншому записі.</p>
+<p style="word-spacing: 1.1px;">Для створення первинного ключа слід відкрити таблицю в режимі конструктора, виділити поле, яке використовується як первинний ключ, і натиснути кнопку Ключове поле, що&nbsp;знаходиться в розділі Знаряддя вкладки Конструктор.</p>
+<p style="word-spacing: 1.1px;">Створити первинний ключ можна також за допомогою контекстного меню певного поля. Скориставшись цим способом, у табл. 1 ФІРМИ визначимо як первинний ключ поле&nbsp;Фірма. Поряд із назвою цього поля з&rsquo;явиться малюнок ключа&nbsp;(рис. 8). Збережемо таблицю ФІРМИ.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-92.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-93.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для створення первинного ключа типу Лічильник у відкритій таблиці в режимі конструктора необхідно додати до таблиці поле, надати йому тип Лічильник (Автонумерація),&nbsp;виділити його й натиснути кнопку Ключове поле. Крім того,&nbsp;первинний ключ для поля цього типу може бути встановлений і в тому разі, якщо під час створення таблиці взагалі&nbsp;ключ не визначено.</p>
+<p style="word-spacing: 1.1px;">Розглянемо тепер алгоритм установлення зв&rsquo;язків між таблицями на прикладі таблиць ФІРМИ і ПРАЦІВНИКИ.</p>
+<p style="word-spacing: 1.1px;">1. Відкриваємо БД corporation, потім вкладку Знаряддя бази&nbsp;даних та натискаємо кнопку Зв'язки.</p>
+<p style="word-spacing: 1.1px;">Відкриється вікно Відображення таблиці.</p>
+<p style="word-spacing: 1.1px;">Якщо останнього вікна немає, слід натиснути кнопку Відобразити таблицю, повинно з&rsquo;явитися вікно (рис. 9).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-94.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">2. У схему даних додаються таблиці, які&nbsp;необхідно зв&rsquo;язати. Для цього у відкритому вікні Відображення таблиці виділяємо імена таблиць, що зв&rsquo;язуються.</p>
+<p style="word-spacing: 1.1px;">3. Натискаємо кнопку Додати й закриваємо&nbsp;вікно Відображення таблиці.</p>
+<p style="word-spacing: 1.1px;">4. Установлюємо курсор на первинному ключі головної таблиці (ФІРМИ), натискаємо</p>
+<p style="word-spacing: 1.1px;">кнопку миші і, не відпускаючи, переміщаємо в поле зовнішнього ключа (Фірми) таблиці ПРАЦІВНИКИ.</p>
+<p style="word-spacing: 1.1px;">5. Відпускаємо кнопку миші. У результаті відкриється вікно Редагування зв'язків&nbsp;(рис. 10).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-95.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">6. Для зручності в подальшій роботі слід&nbsp;увімкнути прапорець Забезпечення цілісності даних. Після цього стануть доступними Каскадне оновлення пов'язаних полів&nbsp;і Каскадне видалення пов'язаних записів.&nbsp;Вмикаємо останній прапорець.</p>
+<p style="word-spacing: 1.1px;">Сутність каскадного оновлення пов&rsquo;язаних записів: за будь-якої зміни значення первинного ключа запису в основній таблиці&nbsp;автоматично оновиться значення відповідного поля у всіх зв&rsquo;язаних таблицях.</p>
+<p style="word-spacing: 1.1px;">Сутність каскадного видалення пов&rsquo;язаних записів: під час видалення будь-якого запису з головної таблиці автоматично</p>
+<p style="word-spacing: 1.1px;">видаляються зв&rsquo;язані записи й у зв&rsquo;язаної таблиці.</p>
+<p style="word-spacing: 1.1px;">Таким чином, каскадне оновлення і каскадне видалення прискорюють роботу з БД і сприяють підвищенню надійності&nbsp;її функціонування.</p>
+<p style="word-spacing: 1.1px;">7. У вікні Редагування зв'язків натискаємо кнопку Створити, в результаті чого у вікні Зв'язки з&rsquo;явиться лінія зв&rsquo;язку між&nbsp;певними полями таблиць. За описаною&nbsp;методикою слід встановити зв&rsquo;язок між&nbsp;таблицями ФІРМИ і ПРАЦІВНИКИ. Якщо&nbsp;все буде виконано правильно, з&rsquo;явиться&nbsp;схема, зображена на рис. 11.</p>
+<p style="word-spacing: 1.1px;">Далі слід виконати команду Зберегти.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-96.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">8. Повертаємося ще раз до вікна Редагування зв'язків (якщо в даний час його немає на&nbsp;екрані, слід натиснути кнопку Змінити зв'язки&nbsp;в області Знаряддя на вкладці Конструктор).</p>
+<p style="word-spacing: 1.1px;">Натискаємо у цьому вікні кнопку Тип об'єднання... У результаті з&rsquo;являється вікно&nbsp;Параметри об'єднання (рис. 12).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-97.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">9. За замовчуванням встановлюється перший тип об&rsquo;єднання. Як правило, розробники БД користуються цим типом</p>
+<p style="word-spacing: 1.1px;">об&rsquo;єднання. Далі потрібно натиснути у цьому вікні кнопку ОК і закрити вікно&nbsp;Редагування зв'язків.</p>
+<p style="word-spacing: 1.1px;">Для скасування зв&rsquo;язку між таблицями необхідно відкрити контекстне меню лінії зв&rsquo;язку й виконати команду Видалити.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Як створити первинний ключ?</p>
+<p style="word-spacing: 1.1px;">Як створити первинний ключ типу Лічильник?</p>
+<p style="word-spacing: 1.1px;">Як можна скасувати зв'язок між таблицями? Поясніть порядок установлення зв'язків між&nbsp;таблицями.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Створіть таблицю УСПІХИ ДРУЗІВ із полями Прізвище, Навчання, Спорт, Музика.</p>
+<p style="word-spacing: 1.1px;">Створіть ключове поле в таблиці МОЇ ДРУЗІ.</p>
+<p style="word-spacing: 1.1px;">Заповніть таблицю УСПІХИ ДРУЗІВ необхідними даними.</p>
+<p style="word-spacing: 1.1px;">Виконайте зв'язування таблиць МОЇ ДРУЗІ та УСПІХИ ДРУЗІВ.</p>
+<p style="word-spacing: 1.1px;">4.3.3. Введення даних у таблицю</p>
+<p style="word-spacing: 1.1px;">До цього часу ми створювали лише структури таблиць. Яким повинен бути, на вашу думку, наступний крок&nbsp;створення БД?</p>
+<p style="word-spacing: 1.1px;">Після задання структури й імені таблиці можна вводити дані. Розглянемо алгоритм введення даних у таблицю на&nbsp;прикладі таблиці ФІРМИ.</p>
+<p style="word-spacing: 1.1px;">1. Відкриємо таблицю ФІРМИ в режимі&nbsp;таблиці. Для цього встановимо курсор&nbsp;в області переходів на її імені й двічі</p>
+<p style="word-spacing: 1.1px;">натиснемо кнопку миші. Також можна скористатися контекстним меню.</p>
+<p style="word-spacing: 1.1px;">2. Введемо дані першого запису таблиці&nbsp;ФІРМИ в рядок, позначений зірочкою.&nbsp;Щойно будуть уведені дані в запис,&nbsp;курсор переміститься на наступний&nbsp;запис, що визначає готовність наступного&nbsp;рядка до введення нового запису.</p>
+<p style="word-spacing: 1.1px;">Слід пам&rsquo;ятати, що вводити в поля можна тільки ті типи даних, які співпадають із визначеним типом поля.</p>
+<p style="word-spacing: 1.1px;">3. Вводимо всі записи таблиці ФІРМИ і отримуємо вміст таблиці (рис. 13). Зберігаємо&nbsp;таблицю.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-98.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якщо в таблиці є поле типу Лічильник, воно формується автоматично. У випадках, якщо на екрані не вміщаються всі записи, слід скористатися вертикальною&nbsp;смугою прокручування, а якщо не вміщуються поля &mdash;&nbsp;горизонтальною смугою прокручування.</p>
+<p style="word-spacing: 1.1px;">За замовчуванням записи виводяться на екран відсортованими в порядку значення первинного ключа,&nbsp;а поля &mdash; у послідовності, визначеній структурою таблиці.&nbsp;У режимі таблиці можна змінювати деякі параметри&nbsp;виведення даних, наприклад розмір шрифту, ширину&nbsp;стовпців, висоту рядків.</p>
+<p style="word-spacing: 1.1px;">Для здійснення навігації по записах у нижній частині вікна таблиці розміщені кнопки навігації, призначені для переміщення курсору в перший, сусідній або останній запис. Навігацію в таблиці можна також здійснювати за допомогою&nbsp;миші, смуг прокручування, сполучення деяких клавіш.</p>
+<p style="word-spacing: 1.1px;">Для додавання нового запису в таблицю треба натиснути кнопку Створити запис на панелі навігації й увести дані.</p>
+<p style="word-spacing: 1.1px;">У процесі введення даних автоматично перевіряються такі типи даних: числові, грошові,&nbsp;дати й часу, логічні. На вкладці&nbsp;Основне у групі Форматування тексту розташовані елементи, за допомогою яких можна&nbsp;змінити розмір шрифту тексту&nbsp;та інші його параметри.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">У якому порядку виводяться записи таблиці після її створення?</p>
+<p style="word-spacing: 1.1px;">Як можна здійснити навігацію по записах у таблиці?</p>
+<p style="word-spacing: 1.1px;">Поясніть порядок введення даних у таблицю. Як додати новий запис у таблицю?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Уведіть і збережіть дані таблиці МОЇ ДРУЗІ.</p>
+<p style="word-spacing: 1.1px;">Уведіть і збережіть дані таблиці УСПІХИ ДРУЗІВ.</p>
+<p style="word-spacing: 1.1px;">4.3.4. Пошук, заміна і фільтрування даних у таблицях</p>
+<p style="word-spacing: 1.1px;">Нехай створена таблиця УЧНІ вашого класу. Які дані ви б хотіли отримати з цієї таблиці? Що для цього слід зробити?</p>
+<p style="word-spacing: 1.1px;">Потрібний запис у таблиці можна знайти за значенням будь-якого його поля або за фрагментом його значення. Розглянемо алгоритм здійснення пошуку запису в таблиці на&nbsp;прикладі табл. 2 ПРАЦІВНИКИ.</p>
+<p style="word-spacing: 1.1px;">1. У відкритій таблиці ПРАЦІВНИКИ в режимі таблиці виділяємо поле, за значенням&nbsp;якого треба шукати запис (наприклад,&nbsp;поле Прізвище), і натискаємо кнопку Знайти в розділі Пошук.</p>
+<p style="word-spacing: 1.1px;">Відкриється вікно Пошук і заміна (рис. 14).</p>
+<p style="word-spacing: 1.1px;">2. У поле Знайти вікна Пошук і заміна вводимо потрібне значення, наприклад Сороко Я. М., і натискаємо кнопку Знайти далі.</p>
+<p style="word-spacing: 1.1px;">У результаті курсор встановиться на записі з цим іменем.</p>
+<p style="word-spacing: 1.1px;">У полі Зіставити можна вибрати одне зі значень, що зменшує необхідність використання метасимволів:</p>
+<p style="word-spacing: 1.1px;">&bull; будь-яку частину поля (зразок може знаходитися всередині поля, наприклад зразок ере буде знайдено в запису з прізвищем Мерез Ф. Б.);</p>
+<p style="word-spacing: 1.1px;">&bull; усе поле (зразок без метасимволів повинен збігатися з усім значенням поля);</p>
+<p style="word-spacing: 1.1px;">&bull; початок поля (будуть знайдені тільки ті&nbsp;поля, які починаються зі зразка).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-99.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Записи з таблиці можна копіювати, вирізати до буфера обміну й потім за допомогою кнопки Вставити, яка знаходиться в розділі Буфер обміну, вставляти в іншу таблицю, а також у документи Word і Excel.</p>
+<p style="word-spacing: 1.1px;">Для вилучення запису з таблиці необхідно його позначити й натиснути клавішу Del або кнопку Видалити та в меню, що&nbsp;відкриється, виконати команду Видалити запис. Відкриється&nbsp;вікно, де потрібно підтвердити вилучення.</p>
+<p style="word-spacing: 1.1px;">Слід пам'ятати, що у зв'язаних таблицях із встановленим прапорцем Забезпечення цілісності даних видалити запис не завжди вдається.</p>
+<p style="word-spacing: 1.1px;">Записи в таблиці можна також сортувати й фільтрувати.</p>
+<p style="word-spacing: 1.1px;">Сортування записів &mdash; це їх впорядкування за значеннями одного або кількох полів.</p>
+<p style="word-spacing: 1.1px;">Інколи виникає потреба приховати деякі поля. Тоді слід виділити певні поля й виконати у групі Записи команду Додатково -&raquo; Приховати поля. Для&nbsp;відновлення прихованих полів&nbsp;потрібно у цьому ж розділі виконати команду Додатково -&raquo;&nbsp;-&raquo; Відобразити поля й увімкнути прапорець імені відповідного поля.</p>
+<p style="word-spacing: 1.1px;">Розглянемо різні способи сортування записів (рис. 15).</p>
+<p style="word-spacing: 1.1px;">Для сортування за значенням одного поля слід виділити це поле і натиснути кнопку За зростанням (А ^ Я) або За спаданням (Я ^ А). Можна також скористатися контекстним&nbsp;меню поля.</p>
+<p style="word-spacing: 1.1px;">Для сортування за значенням декількох полів треба виділити ці поля й скористатися одним із вказаних способів.</p>
+<p style="word-spacing: 1.1px;">У першу чергу сортування записів виконується за значенням лівого поля. Якщо в ньому є поля, які збігаються, то певні записи сортуються за значенням наступного поля. Наприклад, після сортування записів у порядку спадання значень у полі Прізвище таблиці ПРАЦІВНИКИ отримуємо розміщення записів, зображене на рис. 16.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-100.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-101.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-102.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">БД можуть містити тисячі записів. Щоб відшукати потрібні дані, слід скористатися фільтром. Наприклад, якщо здійснити фільтрацію записів у таблиці ПРАЦІВНИКИ за значенням&nbsp;більше або дорівнює 22 в полі Стаж, то будуть відібрані записи&nbsp;з прізвищами Ахтирко В. В. і Зоря І. І.</p>
+<p style="word-spacing: 1.1px;">Фільтрування записів &mdash; це відбір із таблиці записів, які містять задане значення в обраних полях.</p>
+<p style="word-spacing: 1.1px;">Розглянемо способи фільтрування записів (рис. 17).</p>
+<p style="word-spacing: 1.1px;">Для фільтрування за виділенням слід відібрати записи на основі значень поточного поля. Для цього спочатку треба впорядкувати записи за значенням поля, яке задано у фільтрації, встановити курсор на тому значенні поля, за яким буде&nbsp;виконуватися фільтрування, та виконати команду Виділення&nbsp;в групі Сортування й фільтр.</p>
+<p style="word-spacing: 1.1px;">Приклад. Відфільтрувати записи таблиці ПРАЦІВНИКИ за значенням аналітик поля Посада.</p>
+<p style="word-spacing: 1.1px;">1. Після впорядкування записів за значенням поля Посада встановлюємо курсор&nbsp;на назві аналітик і виконуємо команду&nbsp;Виділення у групі Сортування й фільтр. Відкриється меню з умовами: дорівнює аналітик; не дорівнює аналітик; містить&nbsp;аналітик; не містить аналітик.</p>
+<p style="word-spacing: 1.1px;">2. Виконаємо першу умову. Отримаємо запис, у полі Посада якого є назва аналітик, тобто записи з прізвищами Ахтирко В. В. і Грач П. О.</p>
+<p style="word-spacing: 1.1px;">У нижній частині таблиці праворуч від кнопки навігації висвітиться напис Відфільтровано (або Не відфільтровано), що означає, що&nbsp;записи відфільтровані (або не відфільтровані).&nbsp;За допомогою кнопки Видалити фільтр у групі Сортування й фільтр можна вимкнути або</p>
+<p style="word-spacing: 1.1px;">увімкнути фільтр. До відфільтрованих даних можна застосувати ще кілька фільтрів.</p>
+<p style="word-spacing: 1.1px;">3. Відфільтруємо записи в таблиці ПРАЦІВНИКИ за значенням вища поля Освіта.&nbsp;Отримаємо результат (рис. 18).</p>
+<p style="word-spacing: 1.1px;">4. У фільтрах за формою можна вводити критерії в поля таблиці. Для цього&nbsp;у відкритій таблиці в розділі Сортування&nbsp;й фільтр необхідно відкрити меню кнопки&nbsp;Параметри розширеного фільтра і виконати&nbsp;команду Розширений фільтр -&raquo; Сортування... Відкриється перелік полів таблиці,</p>
+<p style="word-spacing: 1.1px;">а в нижній частині вікна &mdash; таблиця конструктора.</p>
+<p style="word-spacing: 1.1px;">5. У запис Поле першого поля перенесемо&nbsp;ім&rsquo;я поля, за яким будемо виконувати&nbsp;фільтрування.</p>
+<p style="word-spacing: 1.1px;">6. У запис Критерії введемо потрібний критерій і в групі Сортування й фільтр натиснемо кнопку Застосувати фільтр.</p>
+<p style="word-spacing: 1.1px;">За описаною методикою для таблиці ПРАЦІВНИКИ виконаємо фільтрування за полем Стаж із критерієм &gt; 15.</p>
+<p style="word-spacing: 1.1px;">Отримаємо результат, як показано на рис. 19.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-103.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<ol>
+<li>Які операції можна виконувати над записами таблиці?</li>
+<li>Як вилучити запис із таблиці?</li>
+<li>Поясніть порядок сортування записів у таблиці.</li>
+<li>Поясніть порядок пошуку даних у таблиці. Які операції виконують над таблицями?</li>
+<li>Як можна приховати поля таблиці? Поясніть порядок фільтрування записів.</li>
+</ol>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<ul>
+<li>Виконайте пошук необхідних записів у таблиці МОЇ ДРУЗІ.</li>
+<li>Виконайте редагування даних у таблиці УСПІХИ ДРУЗІВ.</li>
+<li>Виконайте сортування записів у таблиці МОЇ ДРУЗІ за значенням різних полів.</li>
+<li>Виконайте фільтрування записів у таблиці МОЇ ДРУЗІ за різними значеннями даних&nbsp;двох-трьох полів.</li>
+</ul> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>4.4. Запити</strong></p>
+<p style="word-spacing: 1.1px;">Таблиця є основним об'єктом бази даних. Але існують й інші об'єкти, наприклад запити. Чому не можна обмежитися&nbsp;тільки таблицями?</p>
+<p style="word-spacing: 1.1px;">Основне призначення запиту &mdash; вибір із таблиць необхідних даних і подання їх користувачеві у зручній формі. Створений запит можна зберегти з певним іменем і потім неодноразово виконувати. Якщо між першим і другим запусками запиту змінилися дані в таблицях, то в процесі другого його&nbsp;виконання будуть використовуватися оновлені дані.</p>
+<p style="word-spacing: 1.1px;">Запити не містять даних. Під час кожного нового виконання запиту формуються необхідні дані з тих таблиць, на основі яких його створено.</p>
+<p style="word-spacing: 1.1px;">Для БД Access можна створити кілька типів запитів (рис. 1). Кожний із них може бути виконаний самостійно у будь-який час. Але найчастіше запити виконуються&nbsp;як складова форм і звітів.</p>
+<p style="word-spacing: 1.1px;">Запити класифікують за кількома ознаками:</p>
+<p style="word-spacing: 1.1px;">&bull; кількістю використаних таблиць (однотабличні й багато-табличні);</p>
+<p style="word-spacing: 1.1px;">&bull; складністю функцій, які виконує запит (прості й складні) (рис. 2);</p>
+<p style="word-spacing: 1.1px;">&bull; призначенням (вибірки даних і заміни даних);</p>
+<p style="word-spacing: 1.1px;">&bull; способом вибірки й опрацювання даних (із параметрами,&nbsp;з обчисленнями тощо).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-104.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4.4.1. Запити на вибірку даних</p>
+<p style="word-spacing: 1.1px;">Відомо, що деякі дані можна отримати безпосередньо з таблиць. Але зазвичай для цього використовуються&nbsp;запити. Які вони надають переваги?</p>
+<p style="word-spacing: 1.1px;">Запити, які забезпечують вибір необхідних даних із таблиць, називають запитами на вибірку. Такий тип запитів часто використовують у формах і звітах та є найпростішим.</p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм створення запиту на вибірку даних для однієї таблиці та приклади.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-105.jpg" alt="" /></td>
+<td>
+<p>Відкрити БД, активувати вкладку Створення й у розділі Запити натиснути кнопку Макет запиту, який фактично є конструктором запиту.</p>
+<p>У результаті відкриється вікно запиту й вікно Відображення таблиці, у якому містяться імена всіх таблиць цієї бази.</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-106.jpg" alt="" /></td>
+<td>
+<p>Вибрати у цьому вікні необхідну таблицю. У результаті відкриється перелік полів цієї таблиці.</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-107.jpg" alt="" /></td>
+<td>
+<p>Створити на основі вмісту таблиці потрібний запит.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Приклад 1. Створити запит з іменем запиті, за допомогою якого з таблиці ПРАЦІВНИКИ виводяться дані про співробітників зі стажем&nbsp;понад 15 років. Результуючий набір записів&nbsp;повинен мати поля: Справа, Прізвище, Народження, Стаж і Фірма.</p>
+<p style="word-spacing: 1.1px;">1. Для створення запиту відкриваємо БД&nbsp;corporation і виконуємо команду Створення -&raquo; Макет запиту. Відкриється вікно Відображення таблиці, у якому містяться&nbsp;назви всіх таблиць БД. Вибираємо таблицю ПРАЦІВНИКИ, для чого встановлюємо курсор на імені таблиці й натискаємо&nbsp;кнопку Додати. Закриваємо вікно Відображення таблиці. На екрані залишиться&nbsp;вікно, зображене на рис. 3.</p>
+<p style="word-spacing: 1.1px;">2. У записі Поле таблиці конструктора запитів послідовно розміщуємо вказані імена</p>
+<p style="word-spacing: 1.1px;">полів таблиці ПРАЦІВНИКИ. Для цього достатньо двічі натиснути кнопку миші на імені певного поля цієї таблиці.</p>
+<p style="word-spacing: 1.1px;">3. У запис Критерії поля Стаж вводимо вираз&nbsp;&laquo;&gt; 15&raquo;. Для збереження запиту на панелі швидкого доступу натискаємо кнопку&nbsp;Зберегти. У вікні, що відкриється, вводимо ім&rsquo;я запиті і натискаємо кнопку ОК.&nbsp;Ім&rsquo;я цього запиту з&rsquo;явиться в області переходів.</p>
+<p style="word-spacing: 1.1px;">4. Виконуємо запит. Для цього на смузі&nbsp;в групі Результати натискаємо кнопку&nbsp;Запуск!.</p>
+<p style="word-spacing: 1.1px;">Отримуємо результат, наведений на рис. 4.</p>
+<p style="word-spacing: 1.1px;">5. Щоб закрити запиті, відкриваємо контекстне меню запиту й виконуємо команду&nbsp;Закрити.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-108.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">М етодика створення запиту для декількох таблиць багато в чому схожа на методику створення запиту для однієї&nbsp;таблиці. Однак слід враховувати, що таблиці обов'язково&nbsp;повинні мати між собою зв'язок.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. Створити запит2, за допомогою якого в результуючу множину включаються&nbsp;прізвища диспетчерів із полями Фірма і Телефон&nbsp;таблиці ФІРМИ й дані полів Прізвище і Посада&nbsp;таблиці ПРАЦІВНИКИ. Записи треба упорядкувати в алфавітному порядку прізвищ працівників.</p>
+<p style="word-spacing: 1.1px;">1. На вкладці Створення в групі Запити виконуємо команду Макет запиту і додаємо&nbsp;у вікно конструктора запиту вказані таблиці. Після цього вікно Відображення таблиці слід закрити.</p>
+<p style="word-spacing: 1.1px;">2. У запис Поле таблиці конструктора запиту переносимо імена полів Фірма і Телефон таблиці ФІРМИ і поля Прізвище і Посада таблиці ПРАЦІВНИКИ.</p>
+<p style="word-spacing: 1.1px;">3. У запис Критерії поля Посада вводимо&nbsp;назву диспетчер, а в запису Сортування&nbsp;поля Прізвище встановлюємо значення За&nbsp;зростанням.</p>
+<p style="word-spacing: 1.1px;">4. Зберігаємо запит з іменем запит2 і виконуємо його. На екрані повинні з&rsquo;явитися&nbsp;записи, наведені на рис. 5.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-109.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Створений запит можна перейменовувати, редагувати.</p>
+<p style="word-spacing: 1.1px;">У процесі редагування можна виконувати такі дії:</p>
+<p style="word-spacing: 1.1px;">&bull; додавати поля у запит із таблиці;</p>
+<p style="word-spacing: 1.1px;">&bull; видаляти поля;</p>
+<p style="word-spacing: 1.1px;">&bull; додавати нові поля;</p>
+<p style="word-spacing: 1.1px;">&bull; змінювати розмір поля;</p>
+<p style="word-spacing: 1.1px;">&bull; змінювати послідовність розміщення полів;</p>
+<p style="word-spacing: 1.1px;">&bull; змінювати критерії відбору записів, порядку їх сортування й порядку виведення (невиведення) полів;</p>
+<p style="word-spacing: 1.1px;">&bull; перейменовувати поля запиту.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-110.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які основні функції виконують запити?</p>
+<p style="word-spacing: 1.1px;">Назвіть основні типи запитів системи Access.</p>
+<p style="word-spacing: 1.1px;">Поясніть порядок створення запиту для однієї таблиці.</p>
+<p style="word-spacing: 1.1px;">Поясніть особливості створення запиту для кількох таблиць.</p>
+<p style="word-spacing: 1.1px;">Для чого призначені запити на вибірку даних?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Створіть запит з іменем запитЮІ, за допомогою якого з таблиці МОЇ ДРУЗІ можна вибрати записи з однаковими іменами учнів.</p>
+<p style="word-spacing: 1.1px;">Запит повинен містити поля Прізвище, Дата народження й Адреса.</p>
+<p style="word-spacing: 1.1px;">Створіть запит з іменем запит102, за допомогою якого з таблиці УСПІХИ ДРУЗІВ</p>
+<p style="word-spacing: 1.1px;">можна вибрати записи з однаковими успіхами учнів у спорті. Запит повинен містити поля Прізвище і Спорт.</p>
+<p style="word-spacing: 1.1px;">Самостійно додайте у запит102 нові поля. Змініть порядок їх розташування та здійсніть інші види редагування. Відновіть початковий вміст запиту.</p>
+<p style="word-spacing: 1.1px;">4.4.2. Запити з параметрами і з полями, що обчислюються</p>
+<p style="word-spacing: 1.1px;">Часто виникає потреба отримати з таблиць узагальнені дані, наприклад кількість учнів класу, що мешкають&nbsp;на вул. Лісова. Саме такі типи запитів розглядаються нижче.</p>
+<p style="word-spacing: 1.1px;">Запит із параметрами &mdash; це запит, у процесі виконання якого пропонується ввести деякі дані, наприклад умову, яку потрібно вставити в поле. Їх ще називають запитами зі змінними критеріями.</p>
+<p style="word-spacing: 1.1px;">За запитами із параметрами на початку їх виконання на екран видаються повідомлення про необхідність введення нового критерію (виразу). Методика створення запиту такого&nbsp;типу несуттєво відрізняється від методики створення звичайного запиту.</p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм створення запитів із параметрами на прикладі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-111.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 1. Розробити запит з іменем запитЗ, за яким із БД corporation вибиратимуться прізвища працівників за спеціальністю диспетчер із фірм, у яких кількість працівників більше 400 осіб і менше&nbsp;800 осіб. Результуючі записи повинні складатися з поля Фірма таблиці ФІРМИ і полів&nbsp;Прізвище і Посада таблиці ПРАЦІВНИКИ.</p>
+<p style="word-spacing: 1.1px;">На початку виконання запиту необхідно в запис Критерії поля Посада таблиці ПРАЦІВНИКИ увести назву посади (диспетчер), а в цей же запис поля Працівники таблиці&nbsp;ФІРМИ &mdash; вираз, на основі якого вибираються&nbsp;певні записи.</p>
+<p style="word-spacing: 1.1px;">1. Відкриваємо на екрані порожній бланк&nbsp;запиту.</p>
+<p style="word-spacing: 1.1px;">2. Із таблиці ФІРМИ переносимо в таблицю&nbsp;конструктора поля Фірма і Працівники&nbsp;(для останнього поля &mdash; зняти прапорець&nbsp;Відображення), а з таблиці ПРАЦІВНИКИ &mdash;&nbsp;поля Прізвище і Посада.</p>
+<p style="word-spacing: 1.1px;">3. У клітинку на перетині запису Критерії&nbsp;і поля Працівники вводимо вираз: &gt;[Біль-ше?] AND &lt;[Менше?], а на перетині</p>
+<p style="word-spacing: 1.1px;">цього запису і поля Посада &mdash; такий текст [Назва посади?].</p>
+<p style="word-spacing: 1.1px;">4. Зберігаємо й виконуємо запитЗ. На екрані&nbsp;з&rsquo;явиться вікно Введіть значення параметра&nbsp;(рис. 6).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-112.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">5. Вводимо значення критерію (400) і натискаємо кнопку ОК. Система запросить&nbsp;увести значення Менше. Вводимо 800,&nbsp;потім &mdash; назву посади диспетчер і натискаємо кнопку ОК. У результаті на екрані&nbsp;з&rsquo;являться дані про працівника Носко М. Г.&nbsp;Якщо ще раз запустити запитЗ й увести,&nbsp;наприклад, 300, 800 і слово диспетчер, то&nbsp;на екрані з&rsquo;являться дані про працівників Вараву А. А., Зорю І. І. і Носка М. Г.</p>
+<p style="word-spacing: 1.1px;">Запити, за допомогою яких у результуючий набір записів виводяться не тільки поля таблиць, але й поля, у яких&nbsp;містяться обчислювальні значення на основі даних полів, називають запитами з полями, що обчислюються.</p>
+<p style="word-spacing: 1.1px;">Наприклад, на основі даних таблиці ПРАЦІВНИКИ можна підрахувати коефіцієнт доплати до зарплати, який залежить від стажу й кількості годин робочого тижня. Припусимо, що&nbsp;посадовий оклад працівника визначається&nbsp;на основі 36-годинного робочого тижня, а за&nbsp;кожну додаткову годину нараховується один&nbsp;відсоток від зарплати, тобто відсоток доплати обчислюється за виразом (Тиждень - 36),&nbsp;де Тиждень &mdash; це кількість реальних робочих&nbsp;годин на тиждень. Крім того, нараховується</p>
+<p style="word-spacing: 1.1px;">коефіцієнт надбавок до зарплати за стаж: за кожний рік після 5-річного стажу зарплата&nbsp;збільшується на один відсоток, тобто цей коефіцієнт обчислюється за формулою: (Стаж-5).</p>
+<p style="word-spacing: 1.1px;">Отже, сумарний коефіцієнт надбавки можна підрахувати за формулою:</p>
+<p style="word-spacing: 1.1px;">Відсоток = (Стаж - 5) + (Тиждень - 36).</p>
+<p style="word-spacing: 1.1px;">Так, для працівника Носка М. Г. відсоток надбавки до зарплати дорівнює:</p>
+<p style="word-spacing: 1.1px;">(15 - 5) + (42 - 36) = 16 %.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. На основі таблиці ПРАЦІВНИКИ створити запит з іменем запит4, за яким будуть&nbsp;виводитися всі записи таблиці з полями Прізвище, Стаж, Тиждень і Відсоток (значення поля Відсоток обчислюється за виразом, наведеним вище).</p>
+<p style="word-spacing: 1.1px;">Правила створення запиту такого типу принципово не відрізняються від правил створення запитів, описаних у прикладі 1.</p>
+<p style="word-spacing: 1.1px;">1. У таблицю конструктора запитів у запис&nbsp;Поле переносимо імена полів Прізвище,&nbsp;Стаж і Тиждень таблиці ПРАЦІВНИКИ,&nbsp;а в наступне поле вводимо вираз:</p>
+<p style="word-spacing: 1.1px;">Відсоток: ([Стаж] - 5) + ([Тиждень] - 36).</p>
+<p style="word-spacing: 1.1px;">Імена полів, які входять у вираз, наводяться у квадратних дужках.</p>
+<p style="word-spacing: 1.1px;">2. Установлюємо в записі Сортування поля&nbsp;Прізвище значення За зростанням для&nbsp;того, щоб прізвища виводилися в алфавітному порядку.</p>
+<p style="word-spacing: 1.1px;">3. Зберігаємо запит з іменем запит4. Після&nbsp;виконання запиту має з&rsquo;явитися результат, зображений на рис. 7. Закриваємо&nbsp;запит4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-113.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У системі Access є вбудовані функції, що дають змогу узагальнити дані деяких полів. Такими функціями, зокрема, є: Count (Кількість), Sum (Сума), Avg (Середнє), Max/&nbsp;Min (максимум/мінімум). Запити з використанням таких&nbsp;функцій можна створювати за допомогою конструктора&nbsp;різними способами.</p>
+<p style="word-spacing: 1.1px;">Розглянемо приклад створення запиту з функціями з використанням кнопки Підсумки, яка розташована на вкладці Конструктор у групі Відобразити або приховати.</p>
+<p style="word-spacing: 1.1px;">Приклад 3. Створити запит з іменем запит5, за яким у таблиці ПРАЦІВНИКИ серед працівників зі стажем понад 5 років і тривалістю робочого тижня більше 36 годин відшукується&nbsp;найстарший рік (народження) працівника.</p>
+<p style="word-spacing: 1.1px;">1. Звичайним способом відкриваємо&nbsp;порожній бланк запиту для таблиці&nbsp;ПРАЦІВНИКИ (для цього слід активізувати&nbsp;вкладку Створити, натиснути кнопку Макет&nbsp;запиту, виділити таблицю ПРАЦІВНИКИ, виконати команду Додати і натиснути кнопку Закрити).</p>
+<p style="word-spacing: 1.1px;">2. У запис Поле таблиці конструктора запитів&nbsp;переносимо поля Стаж і Тиждень і знімаємо&nbsp;для них прапорець у записі Відображення.&nbsp;Натискаємо кнопку Підсумки в групі Відображення або приховання.</p>
+<p style="word-spacing: 1.1px;">У результаті в таблиці конструктора запиту з&rsquo;явиться новий запис Підсумок. У цьому записі для поля Стаж потрібно встановити значення Вираз, у запис Критерії ввести: &gt; 5,&nbsp;а у полі Тиждень також встановити значення&nbsp;Вираз (для цього клацнути це поле, натиснути кнопку трикутника й у списку, що розкриється, вибирати Вираз) і ввести в запис&nbsp;Критерії: &gt; 36.</p>
+<p style="word-spacing: 1.1px;">3. У наступному полі запису Поле вводимо: &nbsp;Найстарший рік-:([Народження]),</p>
+<p style="word-spacing: 1.1px;">а в запису Підсумок цього поля вибираємо функцію Міп і встановлюємо прапорець&nbsp;Відображення (рис. 8).</p>
+<p style="word-spacing: 1.1px;">4. Зберігаємо й виконуємо запитб. Результат виконання запиту наведено на&nbsp;рис. 9.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-114.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які запити називають запитами з параметрами?</p>
+<p style="word-spacing: 1.1px;">Які запити називають запитами з полями, що обчислюються?</p>
+<p style="word-spacing: 1.1px;">Поясніть порядок створення запиту з параметрами.</p>
+<p style="word-spacing: 1.1px;">Які функції використовуються для узагальнення значень полів?</p>
+<p style="word-spacing: 1.1px;">Поясніть порядок створення запитів із функціями.</p>
+<p style="word-spacing: 1.1px;">Наведіть приклад запиту з полями, що обчислюються.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Створіть запит з іменем запитЮЗ, за допомогою якого можна вибрати прізвища учнів, які мають середній бал успішності&nbsp;навчання більше 9. Результуючі записи повинні містити поля Прізвище і Навчання&nbsp;таблиці УСПІХИ ДРУЗІВ і поле Телефон таблиці МОЇ ДРУЗІ.</p>
+<p style="word-spacing: 1.1px;">Створіть запит з іменем запит104, за допомогою якого з БД Mybaza можна відшукати наймолодшого серед учнів, який має середній бал успішності більше 9.</p>
+<p style="word-spacing: 1.1px;">4.4.3. Запити на змінення</p>
+<p style="word-spacing: 1.1px;">Чи можна, наприклад, з двох таблиць отримати нову таблицю? Як, на вашу думку, це можна зробити?</p>
+<p style="word-spacing: 1.1px;">Запит на змінення &mdash; це запит, за допомогою якого в таблиці вносяться зміни.</p>
+<p style="word-spacing: 1.1px;">Існують різні типи запитів на змінення: запити на створення таблиці, вилучення записів, оновлення записів і додавання нових записів.</p>
+<p style="word-spacing: 1.1px;">Розглянемо лише запит на створення таблиці. Запити на змінення на панелі переходу відображаються знаком оклику. Такі запити необхідно використовувати обережно, щоб не&nbsp;втратити дані в таблицях.</p>
+<p style="word-spacing: 1.1px;">За запитом на створення таблиці вибираються дані з однієї або кількох таблиць і з них формується нова таблиця. Ця таблиця може бути розміщена як у поточній, так і в іншій БД,&nbsp;ім&rsquo;я якої вказується в процесі створення запиту цього типу.&nbsp;Нова таблиця не має зв&rsquo;язку з тими таблицями, з яких вона&nbsp;створена. Тому дані в ній автоматично не оновлюються в разі&nbsp;зміни в таблицях-джерелах.</p>
+<p style="word-spacing: 1.1px;">Порядок створення запиту на змінення даних у таблиці суттєво не відрізняється від розглянутих раніше. Принципова&nbsp;різниця полягає в тому, що&nbsp;в групі Тип запиту натискають&nbsp;кнопку Тип запиту: оновлення. Правила створення запитів&nbsp;на вилучення також принципово не відрізняються від правил&nbsp;створення інших запитів на&nbsp;змінення.</p>
+<p style="word-spacing: 1.1px;">Приклад. Розробити запит з іменем запитб, за яким на основі даних таблиць ФІРМИ і ПРАЦІВНИКИ створюється нова таблиця з іменем&nbsp;ДОДАТКОВА, у якій містяться особисті номери&nbsp;й прізвища працівників тих фірм, де кількість працівників перевищує 500.</p>
+<p style="word-spacing: 1.1px;">1. У режимі конструктора створюємо запит&nbsp;на вибірку. У таблицю конструктора запиту з таблиці ФІРМИ переносимо поле&nbsp;Працівники, а з таблиці ПРАЦВНИКИ &mdash;&nbsp;поля Справа і Прізвище. У запис Критерії&nbsp;поля Працівники вводимо умову &gt; 500&nbsp;і знімаємо прапорець Відображення цього&nbsp;поля.</p>
+<p style="word-spacing: 1.1px;">2. Виконуємо створений запит і переконуємося, що формується правильний результат. У режимі Конструктор перетворюємо&nbsp;запит на вибірку в запит на створення&nbsp;таблиці. Для цього на вкладці Конструктор у групі Тип запиту слід натиснути&nbsp;кнопку Створення таблиці. З&rsquo;явиться вікно&nbsp;Створити таблицю.</p>
+<p style="word-spacing: 1.1px;">3. У поле Ім&rsquo;я таблиці вводимо ім&rsquo;я таблиці ДОДАТКОВА й вмикаємо перемикач&nbsp;Поточна база даних, оскільки таблиця&nbsp;надалі буде збережена у відкритій базі&nbsp;corporation (рис. 10). Для збереження виконаних налаштувань таблиці слід натиснути кнопку ОК.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-115.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">4. Зберігаємо запит з іменем запитб.</p>
+<p style="word-spacing: 1.1px;">5. Виконуємо створений запит.</p>
+<p style="word-spacing: 1.1px;">З&rsquo;явиться вікно, зображене на рис. 11.</p>
+<p style="word-spacing: 1.1px;">6. Для збереження таблиці в поточній БД&nbsp;натискаємо кнопку Так. В області переходів з&rsquo;явиться ім&rsquo;я таблиці ДОДАТКОВА.</p>
+<p style="word-spacing: 1.1px;">7. Закриваємо запитб, викликаємо таблицю ДОДАТКОВА і переконуємося, що вона&nbsp;сформована правильно.</p>
+<p style="word-spacing: 1.1px;">Вміст цієї таблиці зображено на рис. 12.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-116.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які функції виконують запити на змінення?</p>
+<p style="word-spacing: 1.1px;">У якій базі даних можна розмістити нову створену таблицю?</p>
+<p style="word-spacing: 1.1px;">Чому в новій створеній таблиці не можна автоматично оновлювати дані?</p>
+<p style="word-spacing: 1.1px;">Поясніть алгоритм створення запиту для створення нової таблиці.</p>
+<p style="word-spacing: 1.1px;">Поясніть особливості створення запиту на додавання.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Створіть запит з іменем запитЮБ, за яким на основі таблиць МОЇ ДРУЗІ й УСПІХИ&nbsp;ДРУЗІВ створюється нова таблиця з іменем&nbsp;НОВА1, у якій містяться поля Прізвище,</p>
+<p style="word-spacing: 1.1px;">Ім'я, Телефон, Навчання тих учнів, які займаються музикою.</p>
+<p style="word-spacing: 1.1px;">Створіть запит з іменем запит106, за яким на основі таблиць МОЇ ДРУЗІ й УСПІХИ&nbsp;ДРУЗІВ створюється нова таблиця з іменем&nbsp;НОВА2, у якій містяться поля Прізвища,&nbsp;Адреса і Телефон тих учнів, які займаються&nbsp;спортом і мають середній бал успішності не&nbsp;менше 10.</p>
+<p style="word-spacing: 1.1px;"><strong>4.5. Форми</strong></p>
+<p style="word-spacing: 1.1px;">Форма &mdash; це об&rsquo;єкт бази даних, який використовується як для введення даних у таблицю, так і для їх виведення. Найчастіше форми для введення даних розробляються для таблиць, а джерелом даних форм для виведення є запити.</p>
+<p style="word-spacing: 1.1px;">4.5.1. Засоби створення форм та елементи їх керування</p>
+<p style="word-spacing: 1.1px;">Запит є досить потужним об'єктом опрацювання даних у БД. Чому, на вашу думку, в Access 2016 використовуються&nbsp;ще й форми?</p>
+<p style="word-spacing: 1.1px;">У системі Access 2016 є різні засоби для створення форм, які містяться у групі Форми вкладки Створення (рис. 1).</p>
+<p style="word-spacing: 1.1px;">Найпотужнішим засобом для створення форм є конструктор форми, решта &mdash; прості засоби. Вони забезпечують створення&nbsp;форми фактично одним натисненням відповідної кнопки.</p>
+<p style="word-spacing: 1.1px;">Розглянемо створення форм за допомогою двох простих засобів: Форма і Розділена форма.</p>
+<p style="word-spacing: 1.1px;">&bull; Засіб Форма. За допомогою цього засобу можна створити форму на основі таблиці або запиту.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-117.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 1. Створити форму з іменем фор-</p>
+<p style="word-spacing: 1.1px;">маї для таблиці ФІРМИ.</p>
+<p style="word-spacing: 1.1px;">1. Виберемо таблицю ФІРМИ (клацнувши&nbsp;це ім&rsquo;я на панелі Усі об'єкти).</p>
+<p style="word-spacing: 1.1px;">2. На вкладці Створення у групі Форми&nbsp;натиснемо кнопку Форма. У результаті форма набуде вигляду, наведеного&nbsp;на рис. 2.</p>
+<p style="word-spacing: 1.1px;">Як бачимо, на формі виведено перший запис таблиці ФІРМИ, тобто фірми&nbsp;12, а під нею &mdash; усі записи таблиці&nbsp;ПРАЦІВНИКИ з прізвищами працівників,&nbsp;які працюють на цій фірмі. Це обумовлено тим, що між вказаними таблицями встановлено зв&rsquo;язок.</p>
+<p style="word-spacing: 1.1px;">3. Збережемо форму з іменем формаї. Для&nbsp;цього можна скористатися командою&nbsp;Зберегти контекстного меню цієї форми.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-118.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&bull; Засіб Розділена форма. Цей засіб знаходиться у меню кнопки Додаткові форми. За його допомогою можна створювати форму також на основі таблиці або запиту, виділеного (або відкритого) на панелі переходів. За цим засобом одночасно подаються всі записи таблиці або запиту,&nbsp;а також один запис, який є виділеним.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-119.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 2. Створити і зберегти форму з іменем форма2 для запиту2 за допомогою засобу Розділена форма. Результат виконання форми для запиту подано на&nbsp;рис. 3.</p>
+<p style="word-spacing: 1.1px;">Можна виділити будь-який запис, розташований у нижній частині форми, і редагувати його в її верхній частині.</p>
+<p style="word-spacing: 1.1px;">У системі Access 2016 є великий арсенал елементів керування їхніх властивостей для налаштування форм і оформлення їх зовнішнього вигляду. Для виведення складу елементів керування формою слід відкрити форму в режимі конструктора і натиснути кнопку Елементи керування. Відкриється склад елементів (рис. 4).</p>
+<p style="word-spacing: 1.1px;">Назва елементів з&rsquo;являється після встановлення на них вказівника миші. У табл. 1 наведено призначення деяких&nbsp;елементів керування, які застосовуються найчастіше.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-120.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таблиця 1. ЕЛЕМЕНТИ КЕРУВАННЯ ФОРМИ ТА ЇХ ПРИЗНАЧЕННЯ</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Тип</p>
+</td>
+<td>
+<p>Призначення</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Текстове поле</p>
+</td>
+<td>
+<p>Виводить дані на екран і дозволяє вводити і редагувати дані з клавіатури</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Підпис</p>
+</td>
+<td>
+<p>Виводить текст на екран</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Кнопка</p>
+</td>
+<td>
+<p>Натискання на малюнку призводить до виконання певної команди (наприклад, виконується макрос)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Прямокутник</p>
+</td>
+<td>
+<p>Зазвичай використовується для виділення елементів керування</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Лінія</p>
+</td>
+<td>
+<p>Пряма лінія певного кольору й товщини. Використовується для розмежування частин форми</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Прапорець</p>
+</td>
+<td>
+<p>Елемент керування з двома станами (включений або знятий)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Перемикач</p>
+</td>
+<td>
+<p>Має два стани. Відрізняється від прапорця тим, що в групі може бути встановлений тільки один прапорець</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Щоб додати елемент керування на форму можна, наприклад, у режимі конструктора клацнути необхідний елемент, а потім встановити курсор у потрібне місце форми і натиснути кнопку миші.</p>
+<p style="word-spacing: 1.1px;">Вікно властивостей має п&rsquo;ять вкладок: Формат, Дані, Подія, Інші, Усі.</p>
+<p style="word-spacing: 1.1px;">Вкладка Усі містить повний набір параметрів елемента керування, а інші вкладки &mdash; скорочений перелік. Ці самі&nbsp;елементи керування використовуються й у звітах.</p>
+<p style="word-spacing: 1.1px;">Кожний елемент керування має власний набір властивостей.&nbsp;Для виведення на екран його&nbsp;треба виділити й натиснути&nbsp;кнопку Аркуш властивостей.&nbsp;Але цей набір рідко використовується в повному обсязі.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Для чого призначені форми?</p>
+<p style="word-spacing: 1.1px;">На основі яких об'єктів створюються форми?</p>
+<p style="word-spacing: 1.1px;">Які способи створення форм існують?</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність засобу Форма.</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність засобу Розділити форму. Назвіть основні елементи керування&nbsp;формою.</p>
+<p style="word-spacing: 1.1px;">Як викликати Аркуш властивостей елементів керування формою?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Створіть форму з іменем форма101 для таблиці МОЇ ДРУЗІ за допомогою засобу&nbsp;Форма.</p>
+<p style="word-spacing: 1.1px;">Створіть форму з іменем форма102 для таблиці УСПІХИ ДРУЗІВ за допомогою засобу Розділена форма.</p>
+<p style="word-spacing: 1.1px;">4.5.2. Створення форм за допомогою конструктора форм</p>
+<p style="word-spacing: 1.1px;">У чому полягають, на вашу думку, переваги і недоліки засобів Форма і Розділена форма?</p>
+<p style="word-spacing: 1.1px;">Розглянемо способи створення форми за допомогою конструктора форм на прикладі.</p>
+<p style="word-spacing: 1.1px;">Приклад. Створити для бази даних corporation форму з іменем формаЗ на основі таблиці ФІРМИ з полями: Фірма, Адреса,&nbsp;Телефон, Директор. Перед першими трьома полями розмістити текст Адреса фірм, а перед&nbsp;останнім &mdash; Керівник.</p>
+<p style="word-spacing: 1.1px;">1. Виділяємо в області переходів таблицю&nbsp;ФІРМИ, активізуємо вкладку Створення&nbsp;й У групі Форми виконуємо команду&nbsp;Конструктор форм. На екрані з&rsquo;явиться порожня форма, а також відкриється вкладка Конструктор. Для налаштування конфігурації й зовнішнього вигляду форми слід&nbsp;відкрити її контекстне меню (клацанням&nbsp;правої кнопки миші усередині поля форми), зміст якого зображено на рис. 5.</p>
+<p style="word-spacing: 1.1px;">2. Розміщуємо на формі колонтитули та&nbsp;знімаємо сітку, для чого виконуємо команди Сітка і Колонтитули. Вибираємо на&nbsp;смузі елемент керування Підпис і в області верхнього колонтитула вводимо назву ФІРМИ МІСТА, після чого натискаємо клавішу Enter. Стандартним способом&nbsp;можна змінити місце розташування поля&nbsp;заголовка форми.</p>
+<p style="word-spacing: 1.1px;">3. Аналогічно вводимо у верхню частину області Подробиці текст Адреса фірм. Якщо&nbsp;на екрані відсутнє поле Список полів, слід&nbsp;виконати команду Додавання наявних полів у групі Знаряддя. Має відкритися поле&nbsp;Список полів, у якому треба виконати команду Відображати всі таблиці. Ліворуч від&nbsp;назви таблиці ФІРМИ вмикається перемикач з ознакою (+). Відкриється список полів цієї таблиці.</p>
+<p style="word-spacing: 1.1px;">4. Переміщуємо назву поля Фірма в те місце&nbsp;області даних, куди необхідно помістити це&nbsp;поле. У результаті на формі з&rsquo;явиться група&nbsp;з двох пов&rsquo;язаних елементів &mdash; власне поле&nbsp;введення і підпис для нього. Аналогічно&nbsp;переміщуємо у бланк форми поля Адреса&nbsp;і Телефон і розміщуємо їх одне під одним.</p>
+<p style="word-spacing: 1.1px;">5. За аналогією під назвами трьох перших&nbsp;полів за допомогою елемента Підпис розміщуємо ще одне поле, у яке вводимо&nbsp;текст Керівник. Нижче від цього поля&nbsp;розміщуємо поле Директор. Елементи на&nbsp;формі можна розмістити, наприклад,&nbsp;так, як показано на рис. 6. Після цього&nbsp;можна закрити вікно Список полів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-121.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">6. Зберігаємо створену форму з іменем фор-маЗ. Назва форми з&rsquo;явиться в області переходів.</p>
+<p style="word-spacing: 1.1px;">Зовнішній вигляд створеної форми можна змінювати. Наприклад, щоб змінити колір&nbsp;заголовка форми, потрібно відкрити контекстне меню заголовка форми, встановити курсор на команді Колір заливки/фону. Відкриється вікно кольорів, у якому можна вибрати&nbsp;необхідний колір. Аналогічно можна змінити колір інших областей форми, а також колір тексту й фону надписів Адреси фірм і Керівник.</p>
+<p style="word-spacing: 1.1px;">7. Після виконаних налаштувань зберігаємо&nbsp;форму, закриваємо її, а потім знову відкриваємо в режимі форми. Результат зазначених дій показано на рис. 7.</p>
+<p style="word-spacing: 1.1px;">У наведеному прикладі форма виведена з одним (першим) записом. За допомогою кнопок навігації, розміщених у нижній частині&nbsp;форми, можна перейти до будь-якого запису.&nbsp;Результат зазначених дій показано на рис. 8.</p>
+<p style="word-spacing: 1.1px;">Зазначимо, що правила створення форми в режимі конструктора на основі запиту практично нічим не відрізняються від правил&nbsp;її створення на основі таблиць.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-122.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Форму бажано проектувати так, щоб потім не потрібно було вносити зміни до її структури. У процесі модифікації&nbsp;форми можна виконувати такі дії: змінювати параметри відображення форми; змінювати властивості форми; додавати&nbsp;нові елементи керування; змінювати властивості елементів&nbsp;керування; видаляти елементи керування.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Як можна змінити колір фону й тексту на формі?</p>
+<p style="word-spacing: 1.1px;">Які основні дії можна виконати за допомогою контекстного меню форми?</p>
+<p style="word-spacing: 1.1px;">Як викликати у вікні форми список полів таблиці?</p>
+<p style="word-spacing: 1.1px;">Які основні операції можна виконати в процесі модифікації форми?</p>
+<p style="word-spacing: 1.1px;">Поясніть порядок створення форми за допомогою конструктора форм.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">За допомогою конструктора форм створіть на основі таблиці МОЇ ДРУЗІ форму з іменем&nbsp;форма103 з полями Прізвище, Ім'я, День народження, Телефон, Адреса. Перед першими трьома полями розмістіть текст Основні&nbsp;дані, а перед рештою &mdash; Контакти.</p>
+<p style="word-spacing: 1.1px;">Використайте елементи керування Access 2016 для зміни зовнішнього вигляду фор-ми103, надавши формі привабливого зовнішнього вигляду.</p>
+<p style="word-spacing: 1.1px;">4.5.3. Використання форм для введення й редагування даних</p>
+<p style="word-spacing: 1.1px;">Форми забезпечують наочне і якісне відображення даних. Але їх застосовують ще й для введення даних. Яка необхідність&nbsp;у цьому?</p>
+<p style="word-spacing: 1.1px;">Форма є зручним засобом відображення даних, які зберігаються в таблицях або формуються запитами. Водночас форму зручно використовувати для введення й редагування даних.&nbsp;Розглянемо на прикладах способи введення, редагування й видалення даних.</p>
+<p style="word-spacing: 1.1px;">&bull; Уведення нових записів</p>
+<p style="word-spacing: 1.1px;">Уведені у форму нові записи будуть автоматично додані до таблиці, на базі якої створено форму.</p>
+<p style="word-spacing: 1.1px;">Приклад 1. Відкрити формуі в режимі форми й увести в бланк цієї форми такі дані: Фірма &mdash; 15; Адреса &mdash; вул. Лісова, 55; Директор &mdash; Івасько І. І.; Телефон &mdash; 313-222; Працівники &mdash; 500; Провізори &mdash; 12.</p>
+<p style="word-spacing: 1.1px;">1. Відкриваємо формуі на панелі навігації.</p>
+<p style="word-spacing: 1.1px;">2. Натискаємо кнопку Створити запис і вводимо перелічені раніше дані нового&nbsp;запису.</p>
+<p style="word-spacing: 1.1px;">3. Зберігаємо форму, закриваємо її, відкриваємо таблицю ФІРМИ. Результат додавання даних наведено на рис. 9.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-123.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 2.</p>
+<p style="word-spacing: 1.1px;">1. Відкриваємо формуі в режимі форми.</p>
+<p style="word-spacing: 1.1px;">2. Знаходимо запис із прізвищем Івасько І. І. Уводимо в поле Адреса нову&nbsp;адресу: Подільська, 7.</p>
+<p style="word-spacing: 1.1px;">3. Зберігаємо й закриваємо&nbsp;форму. Після цього відкриваємо таблицю ФІРМИ&nbsp;і переконуємося, що зміни внесено.</p>
+<p style="word-spacing: 1.1px;">&bull; Редагування записів</p>
+<p style="word-spacing: 1.1px;">Для редагування записів у таблиці за допомогою форми відкриваємо її в режимі форми, знаходимо цей запис у формі&nbsp;та вносимо зміни в поля даних. Пошук запису можна здійснити за допомогою кнопок на панелі навігації.</p>
+<p style="word-spacing: 1.1px;">&bull; Видалення записів</p>
+<p style="word-spacing: 1.1px;">Слід враховувати, що для зв&rsquo;язаних таблиць видалити запис не завжди можливо. Якщо, наприклад, запис не має підлеглих записів у зв&rsquo;язаних таблицях або дозволено каскадне вилучення записів, то видалення можливе. У такому випадку&nbsp;відкриваємо вікно, у якому подано текст із проханням підтвердити вилучення. Для підтвердження вилучення натискаємо кнопку Так, інакше буде виведено повідомлення про&nbsp;неможливість вилучення. У такому випадку спочатку треба&nbsp;вилучити з інших таблиць усі записи, які пов&rsquo;язані з даним&nbsp;записом. Можна також на час видалення записів спочатку&nbsp;вилучити зв&rsquo;язки між таблицями, а після вилучення їх відновити.</p>
+<p style="word-spacing: 1.1px;">Загальний порядок видалення записів із таблиці за допомогою форми такий: слід знайти у формі запис, який потрібно видалити, у групі Записи вкладки Основне відкрити меню кнопки Видалити і виконати команду Видалити запис.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. Видалити за допомогою формні з таблиці ФІРМИ запис, де є прізвище Івасько І. І.</p>
+<p style="word-spacing: 1.1px;">1. Відкриваємо формуі в режимі форми,&nbsp;знаходимо запис із прізвищем Івасько І. І.</p>
+<p style="word-spacing: 1.1px;">2. У групі Записи встановлюємо курсор на&nbsp;трикутнику, розташованому біля кнопки&nbsp;Видалити.</p>
+<p style="word-spacing: 1.1px;">3. Натискаємо кнопку миші й у меню, що&nbsp;відкриється, виконуємо команду Видалити запис. У результаті на екрані з&rsquo;явиться&nbsp;вікно, у якому потрібно ввести підтвердження на видалення поточного запису.</p>
+<p style="word-spacing: 1.1px;">4. Для збереження форми зі змінами натискаємо кнопку Зберегти, закриваємо&nbsp;формуі, відкриваємо таблицю ФІРМИ і переконуємося, що запис дійсно вилучено.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Як видалити записи за допомогою форм?</p>
+<p style="word-spacing: 1.1px;">Як здійснити редагування записів за допомогою форм?</p>
+<p style="word-spacing: 1.1px;">Обгрунтуйте, чому форми доцільно використовувати для введення даних.</p>
+<p style="word-spacing: 1.1px;">У якому режимі необхідно відкрити форму для редагування записів?</p>
+<p style="word-spacing: 1.1px;">Як додати нові записи за допомогою форм?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Додайте в таблицю МОЇ ДРУЗІ новий запис за допомогою форми101. Видаліть цей запис. Переконайтеся в правильному виконанні операції.</p>
+<p style="word-spacing: 1.1px;">Виконайте в таблиці МОЇ ДРУЗІ редагування записів за допомогою форми101. Відновіть&nbsp;первинний вміст таблиці МОЇ ДРУЗІ.</p>
+<p style="word-spacing: 1.1px;"><strong>4.6. Звіти</strong></p>
+<p style="word-spacing: 1.1px;">Звіт є специфічним об'єктом системи Access 2016. Які дії можуть виконуватися за допомогою звітів?</p>
+<p style="word-spacing: 1.1px;">Звіт &mdash; це об'єкт бази даних, призначений для виведення даних у зручному для користувача вигляді.</p>
+<p style="word-spacing: 1.1px;">На початку створення звіту необхідно чітко визначити структуру й зовнішній вигляд документа, який необхідно&nbsp;отримати. Бажано його структуру подати на папері.</p>
+<p style="word-spacing: 1.1px;">Для кожної БД може бути створено кілька звітів різної форми і з різними даними. Наприклад, один звіт може бути&nbsp;створено для бухгалтерії, інший &mdash; для відділу кадрів тощо.&nbsp;Засоби для створення звітів розміщені в групі Звіти вкладки&nbsp;Створити (рис. 1).</p>
+<p style="word-spacing: 1.1px;">Найпростішим є засіб Звіт. За його допомогою звіт створюється автоматично, фактично натисненням однієї кнопки. Але отриманий у цьому випадку звіт містить усі поля однієї&nbsp;таблиці. Якщо необхідно вибрати дані з кількох таблиць, то&nbsp;для цього потрібно розробити відповідний запит.</p>
+<p style="word-spacing: 1.1px;">Найпотужнішим засобом для створення звіту є Конструктор звітів. Розглянемо методику створення звіту в режимі конструктора на прикладі.</p>
+<p style="word-spacing: 1.1px;">Джерелом даних для звіту є таблиці або записи, отримані в результаті виконання запиту. До звіту можна включати малюнки, діаграми, таблиці,&nbsp;у ньому можна обчислювати&nbsp;відповідні значення для згрупованих записів (наприклад, за&nbsp;професією тощо).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-124.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад. Створити звіт на базі таблиць ФІРМИ і ПРАЦІВНИКИ. З таблиці ПРАЦІВНИКИ включити у звіт поля Прізвище, Посада&nbsp;і Стаж, а з таблиці ФІРМИ &mdash; поля Фірми&nbsp;і Директор. Згрупувати записи за значенням</p>
+<p style="word-spacing: 1.1px;">поля Посада і впорядкувати їх за збільшенням стажу. У результаті виконання звіту необхідно отримати орієнтовно такий результат, як наведено на рис. 2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-125.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 2. Орієнтовний результат виконання звіту для таблиць ФІРМИ і ПРАЦІВНИКИ</p>
+<p style="word-spacing: 1.1px;">1. Вибираємо назви таблиць ФІРМИ і ПРАЦІВНИКИ. Активуємо вкладку Створення&nbsp;і в групі Звіти натискаємо кнопку Конструктор звітів. На екрані з&rsquo;явиться порожній бланк звіту, а на смузі відкриється вкладка Конструктор.</p>
+<p style="word-spacing: 1.1px;">2. Уводимо заголовок звіту. Для цього&nbsp;натискаємо кнопку Підпис у групі Елементи керування, встановлюємо курсор&nbsp;в область Верхній колонтитул сторінки&nbsp;і клацаємо кнопку миші. З&rsquo;явиться&nbsp;текстове поле, у яке потрібно ввести текст заголовка звіту, наприклад&nbsp;ПРАЦІВНИКИ ФІРМ ЗА ПОСАДАМИ,&nbsp;і натиснути клавішу Enter. Далі натискаємо кнопку Додавання наявних полів&nbsp;у групі Знаряддя і кнопку Відображати&nbsp;всі таблиці.</p>
+<p style="word-spacing: 1.1px;">3. Перетягуємо з вікна Список полів у розділ&nbsp;Подробиці поля Прізвище, Посада, Стаж таблиці ПРАЦІВНИКИ і поля Фірми і Директор&nbsp;таблиці ФІРМИ. Під час перетягування&nbsp;кожного поля з&rsquo;являються два зв&rsquo;язаних&nbsp;поля: ліворуч &mdash; назва поля, а праворуч &mdash; поле для виведення даних. Кожне&nbsp;ліве поле можна вилучити, для чого достатньо вибрати його й натиснути клавішу Delete.</p>
+<p style="word-spacing: 1.1px;">4. Згруповуємо записи, які будуть включені&nbsp;до звіту за посадою, тобто за значенням</p>
+<p style="word-spacing: 1.1px;">поля Посада. Для цього на вкладці Конструктор натискаємо кнопку Групування та сортування, що міститься в групі Групування та підсумки...</p>
+<p style="word-spacing: 1.1px;">У результаті в нижній частині екрана з&rsquo;явиться область Групування, сортування&nbsp;і підсумок, у якій слід виконати команду Додати групу. Висвітяться всі імена&nbsp;вибраних полів.</p>
+<p style="word-spacing: 1.1px;">Вибираємо поле Посада, за яким виконується групування записів. У результаті в області звіту з&rsquo;явиться нова область Верхній колонтитул. У цю область перетягуємо поле Посада, натискаємо кнопку&nbsp;Підпис і ліворуч від цього поля вводимо&nbsp;текст Фахівці за посадами, після чого натискаємо клавішу Enter.</p>
+<p style="word-spacing: 1.1px;">5. Установлюємо сортування згрупованих&nbsp;записів за значенням поля Стаж, для чого&nbsp;спочатку натискаємо кнопку Додати сортування, а потім &mdash; поле Стаж. Виконані&nbsp;налаштування відобразяться у вікні, поданому на рис. 3.</p>
+<p style="word-spacing: 1.1px;">6. Закриваємо область Групування, сортування&nbsp;й підсумок. Остаточний вміст звіту, створеного в режимі конструктора, який відповідає поставленим умовам, подано на&nbsp;рис. 4.</p>
+<p style="word-spacing: 1.1px;">7. Збережемо звіт2, виконаємо його в режимі Подання звіту і переконаємося, що видається вміст (див. рис. 2).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-126.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">До звіту можна додати ще деякі елементи керування, розмістити елементи по-іншому, виділити окремі елементи керування іншим шрифтом, кольором, товщиною&nbsp;ліній тощо. Усі ці операції принципово не відрізняються&nbsp;від аналогічних дій, що виконувалися в процесі розробки форм.</p>
+<p style="word-spacing: 1.1px;">Можна також підрахувати кількість записів у кожній групі й у звіті в цілому. Для цього в режимі розмітки&nbsp;на вкладці Конструктор у групі Групування та підсумки потрібно відкрити меню кнопки Підсумки й виконати команду Кількість записів. Приклад такого звіту наведено на&nbsp;рис. 5.</p>
+<p style="word-spacing: 1.1px;">Щоб модифікувати звіти, можна виконати такі операції:</p>
+<p style="word-spacing: 1.1px;">&bull; змінити параметри звіту</p>
+<p style="word-spacing: 1.1px;">&bull; вибрати новий стиль форматування звіту</p>
+<p style="word-spacing: 1.1px;">&bull; додати нові елементи керування</p>
+<p style="word-spacing: 1.1px;">&bull; змінити властивості елементів керування</p>
+<p style="word-spacing: 1.1px;">&bull; вилучити елементи керування</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-127.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Щоб надати звіту більш естетичного вигляду, можна змінити колір елементів керування або використати стандартні&nbsp;стилі оформлення звітів. Для&nbsp;цього потрібно відкрити звіт&nbsp;у режимі розмітки, на вкладці Формат розгорнути меню&nbsp;кнопки Форматування елементів керування й вибрати бажаний колір заливки&nbsp;фігур, контур фігури, а в групі&nbsp;Шрифт &mdash; шрифт тексту.</p>
+<p style="word-spacing: 1.1px;">До звіту можна додати ще деякі елементи керування, розмістити елементи по-іншому, виділити окремі елементи керування іншим шрифтом, кольором, товщиною ліній тощо. Усі ці операції принципово не відрізняються від аналогічних дій,&nbsp;що виконувалися в процесі розробки форм.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Як виконати групування й сортування записів у звіті?</p>
+<p style="word-spacing: 1.1px;">Як підрахувати записи в групах звіту?</p>
+<p style="word-spacing: 1.1px;">Поясніть порядок створення звіту за допомогою конструктора звітів.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">І У режимі конструктора створіть звітЮІ для таблиць МОЇ ДРУЗІ і УСПІХИ ДРУЗІВ. Із таблиці МОЇ ДРУЗІ включіть у звіт поля Прізвище й Адреса, а з таблиці УСПІХИ ДРУЗІВ &mdash; поля Навчання й Музика.</p>
+<p style="word-spacing: 1.1px;">Використайте елементи керування системи Access 2016 для самостійного налаштування&nbsp;зовнішнього вигляду звітуЮІ.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 7</p>
+<p style="word-spacing: 1.1px;">Тема. Робота з готовою базою даних. Введення і редагування даних.</p>
+<p style="word-spacing: 1.1px;">Завдання: відкрити готову базу даних, ввести та відредагувати дані за наведеним планом;</p>
+<p style="word-spacing: 1.1px;">створити нову базу даних, установити зв'язок між таблицями, ввести та відредагувати дані.</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер зі встановленою програмою система управління базами даних; готова база даних.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">1 Запустіть програму Access. Відкрийте готову БД corporation і виконайте в ній такі дії.</p>
+<p style="word-spacing: 1.1px;">1) Видаліть із таблиці ПРАЦІВНИКИ два будь-які записи.</p>
+<p style="word-spacing: 1.1px;">2) Уведіть у таблицю новий запис і відредагуйте його.</p>
+<p style="word-spacing: 1.1px;">3) Виконайте створені раніше запити, звіти&nbsp;й форми та переконайтеся в правильності&nbsp;отриманих результатів.</p>
+<p style="word-spacing: 1.1px;">4) Відновіть попередній зміст таблиці ПРАЦІВНИКИ й переконайтеся в правильності виконання інших об&rsquo;єктів цієї БД.</p>
+<p style="word-spacing: 1.1px;">Створіть нову БД за таким планом. Створіть БД з іменем nova з таблицями&nbsp;АВТОРИ і КНИГИ та збережіть її в кореневому каталозі диска D:.</p>
+<p style="word-spacing: 1.1px;">Установіть зв&rsquo;язок між таблицями. Перевірте правильність введених даних&nbsp;у таблицях і наявність зв&rsquo;язку між таблицями.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновки: які трудовитрати на розроблення об&rsquo;єктів бази даних; як&nbsp;створити нову базу даних, установити&nbsp;зв&rsquo;язок між таблицями, ввести та відредагувати дані.</p>
+<p style="word-spacing: 1.1px;">Таблиця АВТОРИ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-128.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таблиця КНИГИ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-129.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Практична робота № 8</p>
+<p style="word-spacing: 1.1px;">Тема. Пошук даних у базі даних. Використання запитів і фільтрів.</p>
+<p style="word-spacing: 1.1px;">Завдання: здійснити в БД пошук даних за зазначеними умовами.</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер зі встановленою програмою система управління базами даних; база даних, створена на попередньому уроці.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Запустіть програму Access. Відкрийте створену БД nova.</p>
+<p style="word-spacing: 1.1px;">Знайдіть у таблиці КНИГИ всі записи, що містять книги з роком видання після&nbsp;2000 року, ціна яких перевищує 75.</p>
+<p style="word-spacing: 1.1px;">Знайдіть у таблиці АВТОРИ всі записи з авторами, які є доцентами та професорами.</p>
+<p style="word-spacing: 1.1px;">Упорядкуйте записи таблиці КНИГИ за значенням полів Рік і Автор. Відкрийте&nbsp;цю таблицю в режимі таблиці й переконайтеся, що записи впорядковано правильно.</p>
+<p style="word-spacing: 1.1px;">Із таблиці КНИГИ виберіть книжки з інформатики й фізики, видані після&nbsp;2005 року.</p>
+<p style="word-spacing: 1.1px;">Упорядкуйте записи таблиці АВТОРИ за значеннями полів Прізвище і Видання. Переконайтеся, що впорядкування виконано правильно.</p>
+<p style="word-spacing: 1.1px;">Перейменуйте таблицю КНИГИ в таблицю ВИДАННЯ. Після цього відновіть попереднє ім&rsquo;я таблиці.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновки: яка ефективність фільтрів і запитів для пошуку даних; яким із них ви надаєте перевагу.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 9</p>
+<p style="word-spacing: 1.1px;">Тема. Запити та їх використання.</p>
+<p style="word-spacing: 1.1px;">Завдання: створити запити для знаходження в БД даних за певними критеріями відбору. Обладнання: комп'ютер зі встановленою програмою система управління базами даних; база&nbsp;даних, створена на попередньому уроці.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Запустіть програму Access. Відкрийте БД nova і створіть запит на основі таблиці&nbsp;КНИГИ з полями Назва, Автор, Рік і Реалізовано, за допомогою якого виводяться дані&nbsp;про книжки, що мають реалізацію понад&nbsp;2000 примірників. Збережіть запит з іменем запит200 і виконайте його. Проаналізуйте результат і закрийте запит.</p>
+<p style="word-spacing: 1.1px;">Створіть запит на основі таблиці КНИГИ, за допомогою якого здійснюється пошук</p>
+<p style="word-spacing: 1.1px;">книг з інформатики автора Беха Н. А. Збережіть запит з іменем запит201 і виконайте його. Перевірте результат і закрийте запит.</p>
+<p style="word-spacing: 1.1px;">Відкрийте запит200 в режимі конструктора й додайте до нього поле Тираж. Збережіть цей запит з іменем запит202.&nbsp;Виконайте його і перевірте результат.</p>
+<p style="word-spacing: 1.1px;">Створіть запит, за яким виводяться дані про книги з фізики й механіки. Створіть</p>
+<p style="word-spacing: 1.1px;">запит на основі таблиць АВТОРИ і КНИГИ. До запиту включіть поля Назва і Автор таблиці КНИГИ і поля Посада і Стаж таблиці АВТОРИ. Упорядкуйте записи&nbsp;в алфавітному порядку прізвищ авторів.&nbsp;Збережіть запит з іменем запит203, виконайте його і перевірте результат. Закрийте запит.</p>
+<p style="word-spacing: 1.1px;">Створіть запит, за допомогою якого підраховується загальний тираж і загальна</p>
+<p style="word-spacing: 1.1px;">реалізація книг із назвами &laquo;Фізика&raquo; і &laquo;Механіка&raquo;. Збережіть запит з іменем&nbsp;запит204 і виконайте його.</p>
+<p style="word-spacing: 1.1px;">Самостійно сформулюйте і створіть завдання для розроблення запиту для таблиці АВТОРИ і КНИГИ.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновки: яка ефективність за</p>
+<p style="word-spacing: 1.1px;">питів різних типів; яким з них ви надаєте перевагу.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 10</p>
+<p style="word-spacing: 1.1px;">Тема. Створення звітів.</p>
+<p style="word-spacing: 1.1px;">Завдання: створити звіти для аналізу даних в БД за певними умовами.</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер зі встановленою програмою система управління базами даних; база даних, створена на попередніх уроках.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Запустіть програму Access. Створіть на основі запиту200 звіт. Згрупуйте записи за&nbsp;значенням поля Автор. Записи в кожній групі упорядкуйте за значенням поля Рік. Підрахуйте для кожного автора загальну кількість реалізованих книжок. Виконайте звіт&nbsp;і переконайтеся в правильному результаті.</p>
+<p style="word-spacing: 1.1px;">Модифікуйте звіт, створений у п. 1.</p>
+<p style="word-spacing: 1.1px;">Згрупуйте записи не за значенням поля Автор, а за назвами книг. Підрахуйте&nbsp;кількість книг кожного автора та загальну кількість реалізованих книг усіх&nbsp;авторів.</p>
+<p style="word-spacing: 1.1px;">Збережіть звіт, виконайте його і перевірте результат.</p>
+<p style="word-spacing: 1.1px;">За допомогою конструктора звітів створіть звіт на основі запиту203. Згрупуйте</p>
+<p style="word-spacing: 1.1px;">записи за значенням поля Посада. Підрахуйте кількість книжок, виданих кожним автором. Уведіть назву звіту й назву кожної групи. Збережіть звіт, виконайте&nbsp;його і перевірте результат.</p>
+<p style="word-spacing: 1.1px;">Модифікуйте звіт. Установіть нові елементи, виберіть їхні властивості й стиль оформлення. Надайте звіту естетичного&nbsp;вигляду. Переконайтеся, що він дійсно&nbsp;має привабливий вигляд. Видаліть додані елементи й закрийте звіт.</p>
+<p style="word-spacing: 1.1px;">Самостійно сформулюйте завдання для розроблення звіту на основі заииту203.&nbsp;Створіть і виконайте цей звіт.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновки: яка доцільність і ефективність використання звітів.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="678-dvovimrniy-masiv-danih.html">Двовимірний масив даних</a></li><li><a href="675-vdobrazhennya-danih-u-tablichny-form.html">Відображення даних у табличній формі</a></li><li><a href="672-odnovimrniy-masiv-danih.html">Одновимірний масив даних</a></li><li><a href="668-etapi-kompyuternogo-modelyuvannya.html">Етапи комп’ютерного моделювання</a></li><li><a href="644-pdyednannya-ta-obmn-danimi-v-nternet.html">Під'єднання та обмін даними в Інтернеті</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

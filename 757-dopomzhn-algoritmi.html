@@ -1,0 +1,831 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Допоміжні алгоритми &raquo; mozok.click</title>
+<meta name="description" content="Пригадайте, які функції, вбудовані у мову, ви вже використовували у програмах. Які переваги має використання таких функцій? Чи може, на вашу думку, користувач сам розробити необхідну функцію" />
+<meta name="keywords" content="алгоритм, якого, можна, розроблений, заздалегідь, Допоміжний, звертатися, неодноразово, конкретної, задачі, 'язування, процесі, основного, алгоритму, відсутня, самій, переваги, використання, програмах, використовували" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='757-dopomzhn-algoritmi.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Допоміжні алгоритми</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb757").Button("#infc757"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb757" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc757" class="infcont">
+			<ul>
+				<li><i>Переглядів: 8134</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 10:53</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-757'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="757-dopomzhn-algoritmi.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '757'); return false;">1</a></li>
+		<li><a href="757-dopomzhn-algoritmi.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '757'); return false;">2</a></li>
+		<li><a href="757-dopomzhn-algoritmi.html#" title="Средне" class="r3-unit" onclick="doRate('3', '757'); return false;">3</a></li>
+		<li><a href="757-dopomzhn-algoritmi.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '757'); return false;">4</a></li>
+		<li><a href="757-dopomzhn-algoritmi.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '757'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 10:53</i></a></span>
+	<h3 class="btl"><span id="news-title">Допоміжні алгоритми</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-757" style="display:inline;"><p><strong>12.1. Загальні відомості про допоміжні алгоритми і підпрограми</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте, які функції, вбудовані у мову, ви вже використовували у програмах. Які переваги має використання таких функцій? Чи може, на вашу думку, користувач сам&nbsp;розробити необхідну функцію, якщо у самій мові вона&nbsp;відсутня?</p>
+<p style="word-spacing: 1.1px;">Допоміжний алгоритм &mdash; це заздалегідь розроблений алгоритм, до якого можна звертатися неодноразово&nbsp;з основного алгоритму в процесі розв'язування конкретної задачі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-353.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Прикладом допоміжного алгоритму є алгоритм обчислення середньої заробітної плати працівників фірми, який використовується в алгоритмі оцінки ефективності її функціонування.&nbsp;Допоміжним може бути алгоритм пошуку мінімального числа&nbsp;в одновимірному масиві у процесі розробки алгоритму пошуку&nbsp;мінімального числа у двовимірному масиві.</p>
+<p style="word-spacing: 1.1px;">У мовах програмування допоміжні алгоритми реалізуються за допомогою підпрограм.</p>
+<p style="word-spacing: 1.1px;">Із підпрограмами ви вже зустрічалися раніше у процесі розробки програм обчислення значень арифметичних та інших виразів, не акцентуючи увагу саме на цьому терміні.&nbsp;Наприклад, використовувалися функції обчислення кореня&nbsp;квадратного &mdash; sqrt(x), абсолютного значення виразу abs(x) та&nbsp;ін. Функції можуть використовуватися в одній програмі багаторазово у різних місцях цієї програми. Перелічені та інші&nbsp;функції і є підпрограмами. Але вони вбудовані в саму мову&nbsp;програмування і тому їх називають стандартними підпрограмами. Для їх використання достатньо вказати ім&rsquo;я функції&nbsp;і значення аргументу.</p>
+<p style="word-spacing: 1.1px;">Крім стандартних підпрограм сучасні мови програмування надають можливість програмісту самому створювати підпрограми. Головні переваги використання підпрограм наведено&nbsp;на рис. 1.</p>
+<p style="word-spacing: 1.1px;">Сутність використання підпрограм продемонстровано на рис. 2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-354.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 2. Організація звернення до підпрограм</p>
+<p style="word-spacing: 1.1px;">Підпрограми користувача обов'язково слід описати у розділі опису, дотримуючись встановленого синтаксису. Опис містить заголовок підпрограми&nbsp;і тіло підпрограми. У заголовку оголошується ім'я підпрограми й у круглих дужках параметри (якщо вони є).</p>
+<p style="word-spacing: 1.1px;">Тіло підпрограми слідує безпосередньо за її заголовком. Під час звернення до підпрограм&nbsp;їм передаються конкретні дані&nbsp;для опрацювання.</p>
+<p style="word-spacing: 1.1px;">Результат обчислення підпрограмою повертається в основну програму.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-355.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Катерина Логвинівна Ющенко написала перші програми для&nbsp;першої ЕОМ, створеної у НАН&nbsp;України під керівництвом&nbsp;С. О. Лебедєва. За 40 років&nbsp;роботи в Інституті кібернетики ім. В. М. Глушкова НАН&nbsp;України нею створена широковідома в Україні і за кордоном наукова школа теоретичного програмування.</p>
+<p style="word-spacing: 1.1px;">Із рис. 2 видно, що основна програма містить оператори s1-s10. Перший раз звернення до підпрограми здійснюється&nbsp;з оператора s2. Після завершення виконання підпрограми&nbsp;управління передається оператору основної програми, розташованому безпосередньо за оператором s2, тобто оператору s3.&nbsp;Другий раз звернення до підпрограми здійснюється з оператора s9, а повертається управління до оператора s10 основної&nbsp;програми. З основної програми можна неодноразово звертатися до багатьох підпрограм.</p>
+<p style="word-spacing: 1.1px;">Отже, підпрограма &mdash; це логічно завершений фрагмент програми з наданим іменем, який має строго визначене призначення і до якого можна неодноразово звертатися з основної програми.</p>
+<p style="word-spacing: 1.1px;">У кожній мові програмування існують свої правила розробки підпрограм користувача, звернення до них, отримання результатів, виходу з підпрограм і повернення в основну програму.</p>
+<p style="word-spacing: 1.1px;">Одна підпрограма може містити опис інших підпрограм. Це означає, що з однієї підпрограми можна звертатися до декількох інших підпрограм.</p>
+<p style="word-spacing: 1.1px;">Змінні, константи й типи даних, які використовуються у підпрограмі, можуть бути оголошені як в основній&nbsp;програмі, так і в підпрограмі. Якщо вони оголошені&nbsp;в основній програмі, то доступні у будь-якій підпрограмі і їх називають глобальними. Змінні, константи й типи,&nbsp;оголошені у підпрограмі, доступні лише цій підпрограмі&nbsp;і їх називають локальними.</p>
+<p style="word-spacing: 1.1px;">Кожна змінна, константа й тип обов&rsquo;язково повинні бути оголошені до моменту їх використання. Областю їх дії є та&nbsp;підпрограма, у якій вони оголошені. У програмі можуть використовуватися глобальні та локальні змінні з однаковими&nbsp;іменами. У цьому випадку вони сприймаються як різні змінні. Однак для запобігання плутанині краще цього уникати.</p>
+<p style="word-spacing: 1.1px;">У підпрограмах розрізняють формальні та фактичні параметри. Змінні, вказані&nbsp;в заголовку підпрограми, називають формальними параметрами, або просто параметрами. Змінні, які вказані&nbsp;в операторі виклику підпрограми, називають фактичними параметрами, або аргументами.</p>
+<p style="word-spacing: 1.1px;">Передавання аргументів формальним параметрам здійснюється у процесі виклику підпрограми. Наприклад, у підпрограмі обчислення квадратного кореня &mdash; sqrt(x) змінна x &mdash; це формальний параметр. Після виклику цієї підпрограми змінна х набуде конкретного значення, наприклад 23,&nbsp;тобто воно є аргументом, з якого слід обчислити квадратний&nbsp;корінь.</p>
+<p style="word-spacing: 1.1px;">Формальних параметрів у підпрограмі може бути декілька. Однак їхня кількість, тип і порядок розміщення повинні однозначно відповідати кількості, типам і порядку розміщення аргументів. Якщо ця вимога не виконується, транслятор&nbsp;повідомить про наявність синтаксичної помилки.</p>
+<p style="word-spacing: 1.1px;">У середовищі Lazarus існують два різновиди підпрограм: процедури і функції. Принципова відмінність між ними полягає в тому, що результатом виконання підпрограми-функ-ції завжди є один результат-значення, а результатом виконання підпрограми-процедури можуть бути декілька значень,&nbsp;одне значення або жодного. В основній програмі процедури&nbsp;і функції оголошуються між розділом оголошення змінних та&nbsp;операторною частиною.</p>
+<p style="word-spacing: 1.1px;">Структура процедур і функцій аналогічна структурі програми. Як і основна програма, вони мають складатися із заголовка й операторів, розміщених між ключовими словами begin і end. Цю групу операторів називають тілом процедури (функції). Процедура (функція) завершується словом end,&nbsp;після якого ставиться символ крапки з комою.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Що називають допоміжним алгоритмом?</p>
+<p style="word-spacing: 1.1px;">Які переваги дає використання підпрограм?</p>
+<p style="word-spacing: 1.1px;">Які змінні називають глобальними й локальними?</p>
+<p style="word-spacing: 1.1px;">Поясніть область дії локальних і глобальних змінних.</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність формальних і фактичних параметрів.</p>
+<p style="word-spacing: 1.1px;">Які різновиди підпрограм існують у середовищі Lazarus?</p>
+<p style="word-spacing: 1.1px;">Яка основна відмінність підпрограм-функцій від підпрограм-процедур?</p>
+<p style="word-spacing: 1.1px;">Наведіть означення підпрограми.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Основна програма займає 5 Кбайтів пам'яті, а підпрограма &mdash; 0,75 Кбайта. Із різних&nbsp;місць основної програми здійснюється&nbsp;звернення до підпрограми 6 разів. Визначте, на скільки орієнтовно більше пам'яті&nbsp;займала б ця програма за умови відсутності підпрограми.</p>
+<p style="word-spacing: 1.1px;">Розроблено програму, яка займає 4 Кбай-ти пам'яті. Потім виникла необхідність у цій програмі тричі обчислити квадрат числа&nbsp;і двічі &mdash; модуль числа. Який орієнтовно&nbsp;обсяг пам'яті буде займати така програма,&nbsp;якщо кожного разу обчислювати ці значення безпосередньо у цій програмі?</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><strong>12.2. Процедури</strong></p>
+<p style="word-spacing: 1.1px;">Що називають допоміжним алгоритмом і підпрограмою? Поясніть загальний принцип звернення до підпрограм. Які&nbsp;змінні називають глобальними й локальними? Поясніть&nbsp;сутність формальних і фактичних параметрів. Які різновиди&nbsp;підпрограм існують у середовищі Lazarus?</p>
+<p style="word-spacing: 1.1px;">Загальна структура опису процедури має такий вигляд:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-356.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У структурі опису процедури обов'язковими є ключове слово procedure, ім'я процедури, ключові слова begin,&nbsp;end і тіло процедури. Інші&nbsp;складові використовуються за&nbsp;необхідності. Найчастіше процедура оголошується у розділі опису основної програми&nbsp;або іншої процедури.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-357.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Список формальних параметрів &mdash; це перелік імен змінних і їхніх типів у заголовку процедури. Імена параметрів відокремлюються одне від одного комами, а перед іменем&nbsp;типу ставиться символ двокрапки. Параметри можуть мати&nbsp;будь-який тип, у тому числі й структурований. Якщо декілька параметрів мають однаковий тип, його можна вказати для всієї групи параметрів. У цьому випадку групи параметрів різних типів відділяються одна від одної символом&nbsp;крапки з комою.</p>
+<p style="word-spacing: 1.1px;">Із синтаксису заголовка видно, що процедура може і не мати формальних параметрів. У такому разі в заголовку вказується лише її ім&rsquo;я. Подібні процедури називають процедурами без параметрів. Процедури, які мають список формальних параметрів, називають процедурами з параметрами.</p>
+<p style="word-spacing: 1.1px;">В оголошенні можуть використовуватися і var-параметри.</p>
+<p style="word-spacing: 1.1px;">Службове слово var перед змінними у списку формальних параметрів свідчить про те, що ці змінні можуть набувати&nbsp;нові значення в процесі роботи підпрограми. Їх називають&nbsp;параметрами-змінними, а змінні без службового слова var &mdash;&nbsp;параметрами-значеннями (приклад 2).</p>
+<p style="word-spacing: 1.1px;">Для звернення до процедури використовується оператор виклику такої структури:</p>
+<p style="word-spacing: 1.1px;">ім'я процедури [(список фактичних параметрів)];</p>
+<p style="word-spacing: 1.1px;">Фактичні параметри у списку фактичних параметрів відокремлюються один від одного комою. Якщо в описі процедури формальні параметри відсутні, то в разі її виклику фактичні параметри також повинні бути відсутні.</p>
+<p style="word-spacing: 1.1px;">Нагадаємо, що між формальними і фактичними параметрами має бути повна відповідність. Це означає, що кількість формальних і фактичних параметрів, а також послідовність</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-358.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">їх розміщення повинні бути однаковими, а тип кожного фактичного параметра має збігатися з типом відповідного&nbsp;формального параметра. Як фактичні параметри можуть бути&nbsp;використані константи або вирази.</p>
+<p style="word-spacing: 1.1px;">У середовищі Lazarus допускається будь-який рівень вкладеності процедур і функцій. Так, процедура, оголошена&nbsp;в основній програмі, може містити оголошення внутрішніх&nbsp;процедур або функцій, які, у свою чергу, теж можуть містити оголошення підпрограм і т. д. Область дії імен, описаних&nbsp;у процедурі або функції, поширюється на всі вкладені процедури чи функції.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. Обчислити об&rsquo;єми двох циліндрів за відомими радіусами (г) і висотами (Л) за умови, що r, h &mdash; цілі числа. Об&rsquo;єм циліндра збережемо у змінній V.</p>
+<p style="word-spacing: 1.1px;">Алгоритм обчислення об&rsquo;єма циліндрів з використанням допоміжного алгоритму&nbsp;може бути таким.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-359.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для реалізації алгоритму розмістимо на формі 4 компоненти TEdit, 2 компоненти TLabel&nbsp;і компонент TButton. Встановимо такі значення властивості Text: об&rsquo;єкта Editl &mdash; 2, об&rsquo;єкта&nbsp;Edit2 &mdash; 3, об&rsquo;єкта Edit3 &mdash; 4, об&rsquo;єкта Edit4 &mdash;&nbsp;5. Об&rsquo;єкти Labell і Label2 використаємо для&nbsp;виведення результатів обчислення об&rsquo;ємів&nbsp;циліндрів. Для об&rsquo;єкта Buttonl обираємо подію &#111;nclick. Для обчислення об&rsquo;єму циліндра</p>
+<p style="word-spacing: 1.1px;">використаємо процедуру obem і глобальні змінні. Результат обчислення об&rsquo;єму циліндра&nbsp;надається змінній V. Звернення до процедури&nbsp;здійснюється з основної програми двічі. Варіант програмного коду реалізації алгоритму&nbsp;зображено на рис. 1.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми подано на рис. 2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-360.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Програмний код з процедурою без параметрів</p>
+<p style="word-spacing: 1.1px;">На рис. З зображено ще один варіант програмного коду реалізації того самого алгоритму. У цьому варіанті процедура obem міститься за межами обробника події об&rsquo;єкта Buttonl.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-361.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Разом із тим, вона розміщена вище за те місце програмного коду, де здійснено звернення до цієї процедури.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-362.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Програма з процедурою без параметрів за межами обробника подій</p>
+<p style="word-spacing: 1.1px;">Процедури без параметрів мають недолік, який полягає в тому, що кожного разу перед зверненням до процедури&nbsp;необхідно виконати певну кількість операторів присвоювання. Ці оператори надають змінним, які використовуються&nbsp;у процедурі, певних значень. Для того щоб не виконувати&nbsp;згадані присвоювання, необхідно застосувати процедуру&nbsp;з параметрами. Структуру процедури з параметрами було&nbsp;наведено вище.</p>
+<p style="word-spacing: 1.1px;">Як параметри-змінні у підпрограму слід передавати ті величини, що мають модифікуватися в операторах підпрограми, а як параметри-значення &mdash; ті величини, яким у підпрограмі не присвоюється жодних значень.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-363.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Приклад 3. Розробити програму обчислення об&rsquo;єму двох циліндрів за відомими висотою і радіусом основи з використанням&nbsp;процедури з параметрами. До процедури обчислення об&rsquo;єму циліндра величину v (шуканий об&rsquo;єм) передамо як параметр-змінну,&nbsp;а величини г і h (радіус і висоту циліндра) &mdash; як параметри-значення.</p>
+<p style="word-spacing: 1.1px;">Варіант програми обчислення об&rsquo;єму циліндра зображено на рис. 4.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми подано на рис. 5.</p>
+<p style="word-spacing: 1.1px;">На рис. 6 наведено програму, яка реалізує ту саму функцію, що й попередня програма,&nbsp;процедура з параметрами міститься за межами обробника подій.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-364.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 4. Програма з процедурою з параметрами усередині обробника подій</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-365.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-366.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 6. Програма з процедурою з параметрами за межами обробника подій</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Яка інформація міститься в заголовку процедури?</p>
+<p style="word-spacing: 1.1px;">Які різновиди формальних параметрів використовуються у процедурах?</p>
+<p style="word-spacing: 1.1px;">Як здійснюється виклик процедур?</p>
+<p style="word-spacing: 1.1px;">Які компоненти є обов'язковими в описі процедури?</p>
+<p style="word-spacing: 1.1px;">Наведіть правила запису формальних параметрів процедури.</p>
+<p style="word-spacing: 1.1px;">Наведіть загальну структуру опису процедури.</p>
+<p style="word-spacing: 1.1px;">Яка різниця між параметрами-змінним і па-раметрами-значеннями?</p>
+<p style="word-spacing: 1.1px;">Як пов'язані формальні і практичні параметри процедури?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм із використанням допоміжного алгоритму обчислення повної поверхні двох діжок із відомими радіусами&nbsp;і висотами. Реалізуйте алгоритм із використанням процедури без параметрів.</p>
+<p style="word-spacing: 1.1px;">Складіть програму з використанням підпрограми, яка визначала б день тижня за його номером (1 &mdash; понеділок, 2 &mdash; вівторок і т. д.).</p>
+<p style="word-spacing: 1.1px;">У банк поклали s грн під k % річних. Розробіть алгоритм і програму обчислення накопиченої суми через n років. У програмі використайте дві процедури без параметрів. За допомогою першої процедури вводяться вихідні дані, а за допомогою другої &mdash; обчислюється і виводиться накопичена сума.</p>
+<p style="word-spacing: 1.1px;">12.3. Функції</p>
+<p style="word-spacing: 1.1px;">У структурі опису функції обов'язковими є ключове слово function, ім'я функції, ключові слова begin, end і тіло&nbsp;функції. Інші складові використовуються за необхідності.&nbsp;Найчастіше функція оголошується у розділі опису основної програми або іншої підпрограми.</p>
+<p style="word-spacing: 1.1px;">Загальний опис функції складається із заголовка функції, розділу опису, тіла функції і має таку структуру:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-367.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-368.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-369.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розглянемо приклади використання функцій у програмах.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. Розробити алгоритм і програму обчислення значення виразу</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-370.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">для двох пар значень змінних а і Ь з використанням підпрограми-функції.</p>
+<p style="word-spacing: 1.1px;">Алгоритм розв&rsquo;язування цієї задачі можна подати так.</p>
+<p style="word-spacing: 1.1px;">Яку загальну структуру має процедура? Які складові цієї структури є обов'язковими? Поясніть сутність термінів&nbsp;&laquo;параметри-змінні&raquo; та &laquo;параметри-значення&raquo;. Як здійснюється звернення до процедур?</p>
+<p style="word-spacing: 1.1px;">Як і в процедурі, обов&rsquo;язковим тут є заголовок і тіло функції. Заголовок починається службовим словом function&nbsp;(приклад 1). Список формальних параметрів функції відповідає списку формальних параметрів процедури. Він містить&nbsp;імена формальних параметрів і їхні типи. Тип результату &mdash;&nbsp;це тип значення, що повертає функція. Повертатися можуть&nbsp;скалярні значення цілого, дійсного, логічного, символьного&nbsp;і посилального типів.</p>
+<p style="word-spacing: 1.1px;">У тілі функції має міститися хоча б один оператор присвоювання, у лівій частині якого вказується ім&rsquo;я даної функції. Так результат виконання функції повертається у програму,&nbsp;з якої цю функцію було викликано. Наприклад:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-371.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-372.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для реалізації алгоритму на формі розміщено об&rsquo;єкти, наведені у таблиці.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-373.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-374.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Програмний код із функцією</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-375.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 2. Результати виконання програми з двома зверненнями до функції</p>
+<p style="word-spacing: 1.1px;">У тілі функції може бути оператор, який присвоює значення, що повертається, стандартній змінній Result. Цю змінну оголошувати не потрібно, вона вже є в кожній функції. Змінній Result можна присвоювати значення вказаного у заголовку&nbsp;типу.</p>
+<p style="word-spacing: 1.1px;">Приклад 3. Відомі значення довжини трьох лінійних відрізків: х, у і г. Потрібно розробити алгоритм і програму визначення: чи можуть дані відрізки бути сторонами трикутника. Якщо можуть, обчислити площу трикутника з цими сторонами.</p>
+<p style="word-spacing: 1.1px;">Для розв&rsquo;язання цієї задачі розробимо основний алгоритм і два допоміжні: у першому</p>
+<p style="word-spacing: 1.1px;">допоміжному алгоритмі будемо визначати умову можливості існування трикутника,&nbsp;а у другому &mdash; обчислювати площу трикутника. Фактичні довжини відрізків позначимо&nbsp;змінними а, Ь, с, а формальні &mdash; відповідно&nbsp;ЗМІННИМИ X, у І 2.</p>
+<p style="word-spacing: 1.1px;">Алгоритм розв&rsquo;язування задачі можна подати так.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-376.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для реалізації алгоритму розмістимо на формі компонент TEdit, 7 компонентів TLabel&nbsp;і компонент TButton. Об&rsquo;єкт Editl призначений&nbsp;для виведення повідомлення Сторони трикутника, об&rsquo;єкт Labell &mdash; для виведення повідомлення х=, об&rsquo;єкт Label2 &mdash; для виведення повідомлення у=, об&rsquo;єкт Label3 &mdash; для виведення&nbsp;повідомлення z=, об&rsquo;єкт Label4 &mdash; для введення</p>
+<p style="word-spacing: 1.1px;">значення змінної а, об&rsquo;єкт Label5 &mdash; для введення значення змінної Ь, об&rsquo;єкт Label6 &mdash; для введення значення змінної с, об&rsquo;єкт Label7 &mdash;&nbsp;для виведення результату, об&rsquo;єкт Buttonl &mdash;&nbsp;для надання події &#111;nclick.</p>
+<p style="word-spacing: 1.1px;">Програму реалізації алгоритму подано на рис. 3. Результат виконання програми зображено на рис. 4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-377.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Програмний код із двома функціями</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-378.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Інколи процедури або функції здійснюють взаємне звернення одна до одної. У такому випадку використовується випереджальний опис (приклад 4).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-379.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Сутність випереджального опису полягає в тому, що використовувана підпрограма&nbsp;може бути описана тільки&nbsp;заголовком, одразу за яким&nbsp;записується стандартна директива forward. Опис тексту&nbsp;такої програми може бути&nbsp;у будь-якому місці розділу&nbsp;описів без повторення списку&nbsp;формальних параметрів.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Для чого використовується змінна Result?</p>
+<p style="word-spacing: 1.1px;">Яку структуру має заголовок функції?</p>
+<p style="word-spacing: 1.1px;">Як повертається результат функції у програму, що його викликала?</p>
+<p style="word-spacing: 1.1px;">Які компоненти в описі функції є обов'язковими?</p>
+<p style="word-spacing: 1.1px;">Наведіть загальну структуру опису функції. Наведіть приклад опису функції.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-380.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Дано дві групи цілих чисел: al, a2, a3 і Ь1, b2, Ь3. Розробіть алгоритм і програму визначення мінімального числа у кожній групі,</p>
+<p style="word-spacing: 1.1px;">використовуючи підпрограму визначення мінімального числа з двох.</p>
+<p style="word-spacing: 1.1px;">Відомі довжини всіх сторін трьох трикутників. Розробіть алгоритм обчислення загальної площі трикутників із використанням допоміжного&nbsp;алгоритму. Розробіть програму реалізації алгоритму з використанням функції.</p>
+<p style="word-spacing: 1.1px;">12.4. Використання масивів як формальних&nbsp;параметрів підпрограм</p>
+<p style="word-spacing: 1.1px;">У чому полягає принципова різниця в описі процедури і функції? Поясніть, як результат виконання функції&nbsp;повертається в основну програму. Досі як формальні&nbsp;параметри підпрограм розглядалися змінні скалярних типів.&nbsp;Чи можуть, на вашу думку, ними бути інші типи даних?</p>
+<p style="word-spacing: 1.1px;">У підпрограмах формальними параметрами можуть бути не тільки змінні, але й одновимірні масиви. Масиви можуть&nbsp;бути звичайними, але частіше використовуються так звані&nbsp;відкриті масиви.</p>
+<p style="word-spacing: 1.1px;">Відкритими називають масиви, які оголошуються у розділах var або type без діапазону індексів, вказується лише тип елементів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-381.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Профільний IT-ресурс DOU.UA провів у 2017 році опитування&nbsp;щодо популярності мов програмування, в якому взяли&nbsp;участь 8 тисяч спеціалістів, із&nbsp;яких 90 % проживає в Україні.&nbsp;Найпопулярнішими виявилися&nbsp;такі мови: Java, j&#097;vascript, С#,&nbsp;РНР, Python, C++.</p>
+<p style="word-spacing: 1.1px;">Відкриті масиви оголошуються за такою структурою: var &lt;ім'я масиву&gt;: array of &lt;тип&gt;; (приклад 1).</p>
+<p style="word-spacing: 1.1px;">Оскільки після оголошення відкритого масиву його розмір невідомий, то для нього не можна виділити пам&rsquo;ять. Тому&nbsp;й використовувати такий масив на цьому етапі не можна.</p>
+<p style="word-spacing: 1.1px;">Розмір відкритих масивів можна задавати і змінювати під час виконання програми.</p>
+<p style="word-spacing: 1.1px;">Виділення пам&rsquo;яті масиву здійснюється за допомогою функції SetLength, яка має таку структуру:</p>
+<p style="word-spacing: 1.1px;">SetLength (&lt;ім'я відкритого масиву&gt;, &lt;розмір масиву&gt;); Звільнення пам&rsquo;яті, виділеної для відкритого масиву, здійснюється за допомогою команди:</p>
+<p style="word-spacing: 1.1px;">&lt;ім'я відкритого масиву&gt;:=пф</p>
+<p style="word-spacing: 1.1px;">Отже, відкритий масив є не статичним (для статичного масиву виділяється пам&rsquo;ять на весь час виконання програми), а фактично динамічним. Для нього виділяється пам&rsquo;ять після&nbsp;визначення розмірності масиву, а звільнити її можна в будь-який час після опрацювання елементів масиву.</p>
+<p style="word-spacing: 1.1px;">Нумерація елементів відкритого масиву завжди починається з нуля. За допомогою функції high можна визначити індекс останнього елемента масиву (high=Length&mdash;1).</p>
+<p style="word-spacing: 1.1px;">Перший індекс відкритого масиву дорівнює нулю, а останній можна отримати за допомогою стандартної функції: high &lt;ім'я відкритого масиву&gt;;</p>
+<p style="word-spacing: 1.1px;">Параметром функції high є ім&rsquo;я відкритого масиву, а результатом &mdash; індексний номер останнього елемента масиву.</p>
+<p style="word-spacing: 1.1px;">Наприклад, якщо виділено пам&rsquo;ять для 100 елементів відкритого масиву, то функція high поверне число 99 (оскільки індексація починається з 0, і, відповідно, індекс останнього&nbsp;елемента масиву дорівнюватиме 99).</p>
+<p style="word-spacing: 1.1px;">Відкриті масиви найчастіше використовуються як параметри підпрограм (процедур або функцій). Разом із тим їх можна використовувати й у звичайних програмах.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-382.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 2. Розробити програму обчислення суми значень елементів одновимірного відкритого масиву.</p>
+<p style="word-spacing: 1.1px;">На формі розміщено такі об&rsquo;єкти: Labell, властивість Caption якого має значення Довжина масиву; Label2, властивість Caption якого має значення Значення елементів масиву;&nbsp;Label3 призначений для виведення результату;</p>
+<p style="word-spacing: 1.1px;">ListBoxI &mdash; для виведення значень елементів створеного масиву; Buttonl &mdash; для встановлення події &#111;nclick. Програму обчислення суми значень елементів масиву подано на рис. 1. Масив формується випадковими&nbsp;числами.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми зображено на рис. 2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-383.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Програма з відкритим масивом</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-384.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Як уже зазначалося, відкриті масиви зазвичай використовують для передавання у підпрограму масивів різних розмірів. Це дозволяє за допомогою тієї самої програми опрацьовувати масиви довільної довжини. Без використання відкритих масивів довелось би для кожного масиву іншої довжини розробляти власну програму.</p>
+<p style="word-spacing: 1.1px;">Найчастіше у підпрограмах як формальні параметри використовують стандартні типи даних (integer, char та ін.). Але можна використовувати і нестандартні типи даних.&nbsp;У такому разі їх необхідно оголосити раніше оголошення&nbsp;підпрограм. Тип масиву оголошується за такою структурою:</p>
+<p style="word-spacing: 1.1px;">type &lt;тип масиву&gt;=аггау [список індексів] of &lt;тип елементів&gt;;</p>
+<p style="word-spacing: 1.1px;">Наприклад:</p>
+<p style="word-spacing: 1.1px;">type skan = array [1..8] of byte;</p>
+<p style="word-spacing: 1.1px;">Опис підпрограми, наприклад процедури, у якій як параметр використовується відкритий масив, має такий вигляд:</p>
+<p style="word-spacing: 1.1px;">procedure &lt;ім'я процедури&gt; &lt;ім'я масиву&gt;: &lt;тип масиву&gt;;</p>
+<p style="word-spacing: 1.1px;">Наприклад:</p>
+<p style="word-spacing: 1.1px;">procedure proc_1 (vas_3: skan);</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-385.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Джеймс Гослінг, автор мови програмування Java, творець&nbsp;віконної системи NeWS, Gos-lingEmacs, один із розробників&nbsp;StarSeve. Наразі входить в команду відомого українського&nbsp;стартапа Jelastic як незалежний директор.</p>
+<p style="word-spacing: 1.1px;">Приклад 4. На рис. З наведено програму, в якій оголошено два масиви: masl і mas2.&nbsp;Формальними параметрами процедури ргос&nbsp;є відкритий масив mas типу integer. Звернення до процедури з основної програми здійснюється двічі. Перший раз формальним параметрам процедури передаються значення&nbsp;масиву masl завдовжки 5, а у процесі другого&nbsp;звернення передаються значення масиву mas2&nbsp;завдовжки 4. Під час першого звернення до&nbsp;процедури обчислюється кількість елементів&nbsp;масиву masl, що дорівнює 4, а під час другого</p>
+<p style="word-spacing: 1.1px;">звернення &mdash; кількість елементів масиву mas2, що також дорівнює 4. Отже, за допомогою однієї процедури опрацьовуються два різні за&nbsp;довжиною і змістом масиви, але їхні типи&nbsp;збігаються з типом відкритого масиву процедури. На формі розташовано об&rsquo;єкти Labell&nbsp;і Label2, за допомогою їхніх властивостей&nbsp;Caption здійснюється виведення результатів&nbsp;звернення до процедури. Для об&rsquo;єкта Buttonl&nbsp;обрано подію &#111;nclick.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми зображено на рис. 4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-386.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Програма з процедурою, формальним параметром якої є масив</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-387.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які масиви називають відкритими?</p>
+<p style="word-spacing: 1.1px;">Для чого призначена функція SetLength?</p>
+<p style="word-spacing: 1.1px;">Як можна звільнити пам'ять, виділену під відкритий масив?</p>
+<p style="word-spacing: 1.1px;">За якою структурою оголошуються відкриті масиви?</p>
+<p style="word-spacing: 1.1px;">Наведіть приклад оголошення відкритого масиву.</p>
+<p style="word-spacing: 1.1px;">Як можна визначити максимальний індекс масиву?</p>
+<p style="word-spacing: 1.1px;">Як викликається процедура, у якій параметрами є відкриті масиви?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Розробіть програму для визначення різниці суми значень парних елементів одновимір-ного числового масиву і суми значень його&nbsp;непарних елементів. Використайте функцію,&nbsp;формальними параметрами якої є відкритий&nbsp;масив.</p>
+<p style="word-spacing: 1.1px;">Розробіть програму пошуку мінімального числа у відкритому масиві. Кількість елементів масиву вводиться у процесі виконання</p>
+<p style="word-spacing: 1.1px;">програми. Масив формується випадковими цілими числами з діапазону від 0 до 75.&nbsp;Розробіть програму з використанням процедури, формальним параметром якої є відкритий масив. За допомогою процедури обчислюється сума значень елементів трьох&nbsp;масивів різної розмірності. Елементи всіх&nbsp;трьох масивів набувають значень під час&nbsp;оголошень масивів.</p>
+<p style="word-spacing: 1.1px;">12.5. Поняття рекурсії. Рекурсивні алгоритми</p>
+<p style="word-spacing: 1.1px;">У всіх розглянутих раніше прикладах підпрограми викликалися з основної програми. А чи можуть, на ваш погляд, підпрограми викликати самі себе?</p>
+<p style="word-spacing: 1.1px;">У програмуванні інколи використовують рекурсивні підпрограми. Виклик може виконуватися неодноразово. Рекурсивними підпрограмами можуть бути як процедури, так і функції.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-388.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Макс Левчін (нар. 1975 р. в м. Києві) є автором багатьох&nbsp;стартапів, співзасновником та&nbsp;головним інженером PayPal,&nbsp;віце-президентом з розробки&nbsp;в компанії Google.</p>
+<p style="word-spacing: 1.1px;">Рекурсивною називають підпрограму, яка викликає сама себе.</p>
+<p style="word-spacing: 1.1px;">Реалізація рекурсивних підпрограм заснована на структурі даних, що називається стеком. Важливо усвідомити, що в процесі кожного звернення до рекурсивної підпрограми для&nbsp;неї у стеці значень виділяється окремий фрагмент пам&rsquo;яті.&nbsp;Фрагментом (або блоком) є певна кількість комірок пам&rsquo;яті.&nbsp;У процесі першого звернення до підпрограми у вершину стека&nbsp;записується адреса команди основної програми, до якої потрібно повернутися після завершення всіх викликів рекурсивної&nbsp;підпрограми. У наступні блоки стека записуються значення&nbsp;фактичних параметрів процедури і дії, які потрібно виконати.</p>
+<p style="word-spacing: 1.1px;">Зазначимо, що рекурсивні обчислення в багатьох випадках є неефективними і тому часто замінюються рекурентними обчисленнями. Метод рекурентного обчислення потребує меншого обсягу пам&rsquo;яті й реалізується швидше за рекурсивний. Для свідомого розуміння такого висновку розглянемо&nbsp;детальніше сутність рекурентного і рекурсивного обчислень.</p>
+<p style="word-spacing: 1.1px;">Нагадаємо, що рекурентне обчислення значення математичного виразу на кожному кроці здійснюється через його значення на попередньому кроці. Наприклад, алгоритм обчислення значення виразу y=x<sup>n</sup>&nbsp;можна подати так.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-389.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Отже, після того як вираз i&lt;=n із кроку 6 набуде значення false, виконання алгоритму завершується і змінна y буде містити результат обчислення. Для рекурсивного обчислення&nbsp;значення x<sup>n</sup>&nbsp;(n &mdash; додатне ціле, x &mdash; може бути дійсне) потрібно обчислити значення x<sup>n-1</sup>, оскільки x<sup>n</sup>=x<sup>n-1</sup>&nbsp;&bull; x. У свою&nbsp;чергу, для обчислення x<sup>n-1</sup>&nbsp;потрібно обчислити x<sup>n-2</sup>, оскільки</p>
+<p style="word-spacing: 1.1px;">x<sup>n-1</sup>&nbsp;= x<sup>n-2</sup>&nbsp;&bull; x і т. д. Процес обчислення слід припинити після обчислення x<sup>0</sup>, оскільки воно має значення 1. Але результат&nbsp;ще не отримано, отримано лише опорне значення функції.&nbsp;Для отримання кінцевого значення функції потрібно реалізувати зворотний процес обчислення, що міститься у стеку.&nbsp;Пояснимо сутність і необхідність цього процесу на прикладі&nbsp;обчислення значення виразу x<sup>n</sup>. Рекурсивна функція його обчислення має такий зміст:</p>
+<p style="word-spacing: 1.1px;">function st (x, n:integer): integer;</p>
+<p style="word-spacing: 1.1px;">begin</p>
+<p style="word-spacing: 1.1px;">if n=0 then st:=1 else st:=st(x, n-1)*x;</p>
+<p style="word-spacing: 1.1px;">end;</p>
+<p style="word-spacing: 1.1px;">Ця рекурсивна підпрограма виконується у такій послідовності.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-390.jpg" alt="" /></td>
+<td>
+<p>Перший раз вона викликається з основної програми, наприклад, за допомогою команди z=st(2, 3); (отже, x = 2 і n = 3). У результаті цього виклику в стеку виділяється перший блок пам'яті (вершина стека) й управління передається умовному оператору.</p>
+<p>Нагадаємо, що у вершину стека записується адреса команди основної пам'яті, до якої слід повернутися після всіх звернень до процедури.&nbsp;Оскільки на цьому етапі вираз n = 0 набуває значення false, то виконується&nbsp;гілка else. Тут у виразі st:=st(x, n-1)*x робиться спроба обчислити значення&nbsp;st(2,2), тобто в дійсності виконується звернення до самої функції st з новими значеннями параметрів. Тому обчислення переривається.</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-391.jpg" alt="" /></td>
+<td>
+<p>Викликається другий раз функція st, але вже з параметрами st(2, 2). У стеку також виділяється наступний блок пам'яті, а в умовному операторі виконується гілка else і робиться спроба обчислити значення функції st з параметрами st(2, 1).</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-392.jpg" alt="" /></td>
+<td>
+<p>Третій раз викликається функція st з параметрами st(2, 1). У стеку також виділяється блок пам'яті і знову виконується гілка else з параметрами st(2, 0).</p>
+</td>
+</tr>
+<tr>
+<td><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-393.jpg" alt="" /></td>
+<td>
+<p>Четвертий раз виклик виконується з параметрами st(2, 0). У стеку виділяється четвертий блок пам'яті, але виконується гілка then, а функція st набуває значення 1. У результаті функція st рекурсивно більше не викликається і здійснюється повернення в основну програму, яка викликала цю підпрограму.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">У процесі повернення до основної програми виконуються такі дії. Зі стека вибирається опорне значення st(2, 0)=1, оскільки у стеку реалізується принцип &laquo;останній прийшов &mdash;&nbsp;перший вийшов&raquo;. На наступному кроці обчислюється значення st(2, 1)=1*2, потім &mdash; st(2, 2)=2*2, нарешті &mdash; st(2, 3)=2*4=8. Це&nbsp;значення передається змінній z в основну програму.</p>
+<p style="word-spacing: 1.1px;">Динаміку описаного процесу &laquo;заглиблення&raquo; і виходу зі стека для описаної функції наведено в таблиці.</p>
+<p style="word-spacing: 1.1px;">Таблиця. ДИНАМІКА ВИКОНАННЯ РЕКУРСІЇ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-394.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Класичним варіантом рекурсивної функції є обчислення факторіала заданого числа n, яке виконується за формулою&nbsp;n! = n&bull; (n - 1)!, якщо n &gt; 0 і n! = 1, якщо n=0. Програму обчислення факторіала з використанням рекурсивної функції зображено на рис. 1.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми наведено на рис. 2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-395.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Програма обчислення факторіала</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-396.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад. Дано два цілі додатні числа. Потрібно розробити програму для обчислення найбільшого спільного дільника з використанням рекурсивної функції.</p>
+<p style="word-spacing: 1.1px;">Програму знаходження найбільшого спільного дільника двох цілих чисел без використання рекурсивних підпрограм ми вже розглядали раніше. Розв&rsquo;язання цієї задачі</p>
+<p style="word-spacing: 1.1px;">ґрунтується на використанні алгоритму Ев-кліда. Програму реалізації цього алгоритму з використанням рекурсивної функції наведено на рис. 3. Функція має ім&rsquo;я evk, а числа,&nbsp;для яких обчислюється найбільший спільний&nbsp;дільник, позначені змінними п і т.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми зображено на рис. 4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-397.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Програмний код обчислення найбільшого спільного дільника</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-398.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Отже, рекурсія є складним процесом, який вимагає додаткової пам&rsquo;яті та часу її реалізації. Тому частіше використовується рекурентне обчислення. Однак без рекурсії інколи обійтися досить важко, оскільки без неї алгоритм має заплутану логіку.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Що називають рекурсією у програмуванні?</p>
+<p style="word-spacing: 1.1px;">З якою метою у тілі рекурсії передбачається умовний оператор?</p>
+<p style="word-spacing: 1.1px;">На якій структурі даних ґрунтується реалізація рекурсивних підпрограм?</p>
+<p style="word-spacing: 1.1px;">Які недоліки має рекурсивне обчислення?</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність &laquo;заглиблення&raquo; й виходу зі стека у процесі реалізації рекурсії.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Розробіть рекурсивну функцію для обчислення n перших членів заданої геометричної прогресії.</p>
+<p style="word-spacing: 1.1px;">Дано десяткове натуральне число а. Розробіть рекурсивну функцію обчислення кількості цифр у цьому числі.</p>
+<p style="word-spacing: 1.1px;">Розробіть програму з використанням рекурсивної функції для визначення мінімального елемента одновимірного числового масиву.</p>
+<p style="word-spacing: 1.1px;">Розробіть програму пошуку мінімального елемента того самого масиву, який ви використовували для п. 3, без використання&nbsp;рекурсивної функції. Порівняйте розроблені програми і визначте, якій із них слід надати перевагу і чому.</p>
+<p style="word-spacing: 1.1px;">Розробіть програму з використанням рекурсивної функції обчислення добутку значень елементів одновимірного числового масиву.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Практична робота № 23</p>
+<p style="word-spacing: 1.1px;">Тема. Розробка алгоритмів з використанням допоміжних алгоритмів користувача та їх реалізація у вигляді програм.</p>
+<p style="word-spacing: 1.1px;">Завдання: для кожного із завдань, наведених у таблиці, розробити алгоритм із використанням допоміжного алгоритму і програму реалізації алгоритму у візуальному режимі середовища Lazarus.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-399.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер із встановленою програмою &mdash; середовищем програмування.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки. Виберіть один із варіантів завдань самостійно або за вказівкою вчителя. (У разі&nbsp;успішного виконання одного варіанта,&nbsp;виконайте інший.)</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм розв&rsquo;язування завдання.</p>
+<p style="word-spacing: 1.1px;">Розробіть програмний код реалізації алгоритму.</p>
+<p style="word-spacing: 1.1px;">Уведіть код програми в комп&rsquo;ютер і ви-правте всі синтаксичні помилки.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму для заданих початкових даних і доведіть, що програма функціонує правильно.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму для інших початкових даних і переконайтеся, що отримано правильний результат.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: чи існують такі значення початкових даних, для яких розроблена програма не працює.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 24</p>
+<p style="word-spacing: 1.1px;">Тема. Розробка алгоритмів з використанням масивів як формальних параметрів і реалізація у вигляді програм.</p>
+<p style="word-spacing: 1.1px;">Завдання: для кожного із завдань, наведених у таблиці, розробити алгоритм і програму його реалізації з використанням підпрограми, у якій формальними параметрами є масиви.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Варіант</p>
+</td>
+<td>
+<p>Завдання</p>
+</td>
+<td>
+<p>Початкові дані</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Дано масив цілих чисел a[1], a[2], ..., a[n]. Знайдіть у ньому кількість додатних і кількість від'ємних чисел.</p>
+</td>
+<td>
+<p>43, -5, 0, 21, 23, -321, -66, 7, -59</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>На змаганнях у стрибках у воду з вишки спортсмена оцінюють 7 суддів. Максимальна і мінімальна оцінки не враховуються. Якщо максимальних або мінімальних оцінок декілька, не враховується по одній оцінці. Знайдіть середній бал виступу спортсмена.</p>
+</td>
+<td>
+<p>9.5, 9.4, 9.5, 9.2, 9.5, 9.3, 9.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>Дано рядок символів. Знайдіть номери, на яких розташований символ s.</p>
+</td>
+<td>
+<p>subscription</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер із встановленою програмою &mdash; середовищем програмування.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Виберіть один із варіантів завдань самостійно або за вказівкою вчителя. (У разі успішного виконання одного варіанта,&nbsp;виконайте інший.) Уважно проаналізуйте сутність завдання і тип даних.</p>
+<p style="word-spacing: 1.1px;">Розробіть у вигляді блок-схеми або у словесній формі алгоритм розв&rsquo;язування завдання.</p>
+<p style="word-spacing: 1.1px;">Визначте необхідні компоненти та їхні властивості, розмістіть їх на формі&nbsp;й розробіть програмний код реалізації&nbsp;алгоритму.</p>
+<p style="word-spacing: 1.1px;">Уведіть код програми в комп&rsquo;ютер. Спробуйте виконати компіляцію програми. Виправте всі синтаксичні помилки.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму для заданих початкових даних і доведіть, що програма функціонує правильно.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму для інших початкових даних і переконайтеся, що отримано правильний результат.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: чим принципово відрізняється опрацювання двовимірних масивів від одновимірних.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 25</p>
+<p style="word-spacing: 1.1px;">Тема. Розробка рекурсивних алгоритмів та їх реалізація у вигляді програм.</p>
+<p style="word-spacing: 1.1px;">Завдання: для кожного із завдань, наведених у таблиці, розробити рекурсивний алгоритм і програму його реалізації.</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Варіант</p>
+</td>
+<td>
+<p>Завдання</p>
+</td>
+<td>
+<p>Початкові дані</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>1</p>
+</td>
+<td>
+<p>Дано рядок, який містить n символів. Розміс-</p>
+</td>
+<td>
+<p>n=7</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>тіть символи у зворотному порядку.</p>
+</td>
+<td>
+<p>рядок: abcdefg</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>2</p>
+</td>
+<td>
+<p>Дано n-розрядне ціле число. Розмістіть цифри</p>
+</td>
+<td>
+<p>n=6</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>числа у зворотному порядку.</p>
+</td>
+<td>
+<p>654321</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>У першому квадраті розташовано два прямокутники, сторони яких паралельні осям координат. Відомі координати вершин прямокутників. Визначте загальну площу обох прямокутників.</p>
+</td>
+<td>
+<p>Вершини першого квадрата: x1 =20, y1 =120, x2=120, y2=120,&nbsp;x3=120, y3=40, x4=20, y4=40&nbsp;Вершини другого квадрата:&nbsp;x1 =10, y1 =90, x2=100, y2=90,&nbsp;x3=100, y3=10, x4=10, y4=10</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер із встановленою програмою &mdash; середовищем програмування.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Виберіть один із варіантів завдань самостійно або за вказівкою вчителя. (У разі успішного виконання одного варіанта,&nbsp;виконайте інший.)</p>
+<p style="word-spacing: 1.1px;">Проаналізуйте умову завдання. Визначте загальний порядок розв&rsquo;язання.</p>
+<p style="word-spacing: 1.1px;">Розробіть у словесній формі алгоритм розв&rsquo;язування завдання.</p>
+<p style="word-spacing: 1.1px;">Розробіть програмний код реалізації алгоритму.</p>
+<p style="word-spacing: 1.1px;">Уведіть програму в комп&rsquo;ютер. Виконайте компіляцію програми і виправте синтаксичні помилки.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму для будь-яких початкових даних. Переконайтеся, що програма функціонує правильно.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму для початкових даних, наведених у таблиці. Доведіть, що результат є правильним.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: чи можна було виконати завдання за допомогою рекурентного обчислення.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="760-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="759-stvorennya-ta-rozrobka-navchalnih-proektv.html">Створення та розробка навчальних проектів</a></li><li><a href="756-dvovimrn-masivi.html">Двовимірні масиви</a></li><li><a href="755-simvoln-ta-ryadkov-velichini.html">Символьні та рядкові величини</a></li><li><a href="754-odnovimrn-masivi.html">Одновимірні масиви</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

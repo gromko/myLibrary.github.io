@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Інформаційні технології у суспільстві &raquo; mozok.click</title>
+<meta name="description" content="Пригадайте означення понять інформація, дані. Назвіть сфери використання комп'ютерів.Сьогодні важко уявити роботу з великими обсягами даних без компютера. Його винайдення за лічені десятилі" />
+<meta name="keywords" content="життя, способи, діяльності, визначило, людства, змінило, сферах, десятиліття, виробничого, наукового, напряму, інформатики, нового, зародженню, суспільного, сприяло, лічені, винайдення, сфери, використання" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='731-nformacyn-tehnologyi-u-susplstv.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Інформаційні технології у суспільстві</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb731").Button("#infc731"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb731" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc731" class="infcont">
+			<ul>
+				<li><i>Переглядів: 19358</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 09:58</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-731'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="731-nformacyn-tehnologyi-u-susplstv.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '731'); return false;">1</a></li>
+		<li><a href="731-nformacyn-tehnologyi-u-susplstv.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '731'); return false;">2</a></li>
+		<li><a href="731-nformacyn-tehnologyi-u-susplstv.html#" title="Средне" class="r3-unit" onclick="doRate('3', '731'); return false;">3</a></li>
+		<li><a href="731-nformacyn-tehnologyi-u-susplstv.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '731'); return false;">4</a></li>
+		<li><a href="731-nformacyn-tehnologyi-u-susplstv.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '731'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 09:58</i></a></span>
+	<h3 class="btl"><span id="news-title">Інформаційні технології у суспільстві</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-731" style="display:inline;"><p style="word-spacing: 1.1px;"><strong>1.1. Інформатика та її вплив на розвиток&nbsp;суспільства</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте означення понять &laquo;інформація&raquo;, &laquo;дані&raquo;. Назвіть сфери використання комп'ютерів.</p>
+<p style="word-spacing: 1.1px;">Сьогодні важко уявити роботу з великими обсягами даних без комп&rsquo;ютера. Його винайдення за лічені десятиліття змінило життя людства, визначило нові способи діяльності в усіх&nbsp;сферах виробничого й суспільного життя. Все це сприяло зародженню нового наукового напряму &mdash; інформатики.</p>
+<p style="word-spacing: 1.1px;">Інформатика як наука сформувалася лише у другій половині ХХ ст., та вже стала необхідною складовою освіти сучасної людини. Нині існує чимало означень інформатики,&nbsp;що обумовлено багатогранністю її функцій, форм і методів.&nbsp;У широкому сенсі інформатика являє собою поєднання різних галузей науки, техніки, виробництва.</p>
+<p style="word-spacing: 1.1px;">Як фундаментальна наука інформатика вивчає структуру і загальні властивості інформації, методи й засоби інформаційних процесів. Вона охоплює багато наукових напрямів.</p>
+<p style="word-spacing: 1.1px;">Як прикладна дисципліна інформатика вивчає закономірності в процесах накопичення, опрацювання й розповсюдження інформації, моделює об&rsquo;єкти (процеси та явища) в різних галузях людської діяльності, розв&rsquo;язує наукові проблеми створення й упровадження комп&rsquo;ютерних засобів.</p>
+<p style="word-spacing: 1.1px;">Як галузь людської діяльності інформатика пов&rsquo;язана з процесами опрацювання інформації за допомогою комп&rsquo;ютера в різних сферах його застосування (рис. 1).</p>
+<p style="word-spacing: 1.1px;">Головна функція інформатики полягає в розробці методів і засобів опрацювання даних та їхньому використанні в різних галузях людської діяльності.</p>
+<p style="word-spacing: 1.1px;">Основні завдання інформатики спрямовані на:</p>
+<p style="word-spacing: 1.1px;">&bull; дослідження інформаційних процесів;</p>
+<p style="word-spacing: 1.1px;">&bull; розробку засобів комп&rsquo;ютерної техніки й створення новітніх технологій опрацювання даних;</p>
+<p style="word-spacing: 1.1px;">&bull; вирішення наукових та інженерних проблем щодо ефективного використання апаратно-програмного забезпечення у всіх галузях людської діяльності.</p>
+<p style="word-spacing: 1.1px;">Сучасне розуміння інформатики тісно пов&rsquo;язане з поняттям інформаційної технології (ІТ), а також інформатизації. Інформатика є теоретичною базою для розвитку та становлення ІТ.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-1.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Існують традиційні матеріальні види ресурсів, такі як нафта, газ та інші корисні копалини. Сьогодні ж одним із&nbsp;найголовніших ресурсів суспільства є інформація. Процес&nbsp;опрацювання інформації за аналогією з обробкою матеріальних ресурсів також називають технологією.</p>
+<p style="word-spacing: 1.1px;">Інформаційні технології &mdash; це сукупність методів пошуку, збирання, накопичення, зберігання та опрацювання даних за допомогою засобів обчислювальної&nbsp;й комунікаційної техніки.</p>
+<p style="word-spacing: 1.1px;">Класифікують ІТ за різними ознаками. Найбільш розповсюдженими є такі:</p>
+<p style="word-spacing: 1.1px;">&bull; за сферою застосування: наука, виробництво, освіта, тощо;</p>
+<p style="word-spacing: 1.1px;">&bull; за функціональними можливостями: &nbsp;інструментальні</p>
+<p style="word-spacing: 1.1px;">(розробка інших технологій та їх обслуговування), прикладні (розв&rsquo;язання задач певної предметної галузі), комунікативні (зв&rsquo;язок, комунікації та спілкування);</p>
+<p style="word-spacing: 1.1px;">&bull; за способом взаємодії з користувачем: ІТ з командним&nbsp;рядком, із інтерфейсами WIMP (забезпечує діалог користувача з комп&rsquo;ютером за допомогою графічних образів &mdash;&nbsp;меню, вікон та ін.) і SILK (наближений до звичайної&nbsp;форми спілкування людини з комп&rsquo;ютером; знаходиться&nbsp;на стадії експериментальних досліджень) та ін.</p>
+<p style="word-spacing: 1.1px;">ІТ увійшли в сучасне життя настільки, що застосування комп&rsquo;ютера стало буденною справою. Вони впливають не лише на характер і темпи розвитку наукових і промислових&nbsp;галузей, а й на соціальну сферу, взаємовідносини між людьми та суспільство в цілому.</p>
+<p style="word-spacing: 1.1px;">Створення глобального інформаційного простору сприяє ефективній інформаційній взаємодії людей, їх доступу до інформаційних ресурсів та різноманітних даних з електронних&nbsp;джерел усього світу (рис. 2).</p>
+<p style="word-spacing: 1.1px;">Таким чином, інформатизація суспільства &mdash; це глобальний соціальний процес, особливість якого полягає в домінуванні такого виду діяльності у сфері суспільного виробництва, як збирання, накопичення, опрацювання, зберігання, передавання й використання даних.</p>
+<p style="word-spacing: 1.1px;">Термін &laquo;інформаційна технологія&raquo; з'явився наприкінці XX ст. завдяки бурхливому розвитку персональних комп'ютерів&nbsp;і мереж. До їх появи основними засобами для роботи з повідомленнями були папір, олівець, фарба, книга, телефон,&nbsp;телеграф тощо.</p>
+<p style="word-spacing: 1.1px;">Країнами з розвиненою інформаційною індустрією є Швеція, Норвегія, США, Німеччина, Японія. Наша країна &mdash; на шляху&nbsp;до інформаційного суспільства.&nbsp;Сьогодні за числом програмістів, які одержали сертифікати&nbsp;у сфері ІТ, Україна посідає четверте місце у світі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-2.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">У чому полягають головна функція та завдання інформатики?</p>
+<p style="word-spacing: 1.1px;">Чому інформатику відносять до різних галузей: науки, техніки, виробництва?</p>
+<p style="word-spacing: 1.1px;">Що означає поняття &laquo;інформаційні технології&raquo;?</p>
+<p style="word-spacing: 1.1px;">За якими ознаками класифікують інформаційні технології?</p>
+<p style="word-spacing: 1.1px;">Поясніть, чому у світі зростає кількість працівників, зайнятих в інформаційній сфері. Чи сформувалося в нашій країні інформаційне суспільство? Відповідь обґрунтуйте.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><strong>1.2. Інформаційні процеси та інформаційні системи</strong></p>
+<p style="word-spacing: 1.1px;">Поясніть, що таке інформація. Наведіть приклади пристроїв для передавання повідомлень. У якому вигляді, на вашу думку,&nbsp;відбувається передавання повідомлень каналами зв'язку?</p>
+<p style="word-spacing: 1.1px;">Протягом останніх десятиліть інформаційні процеси &mdash; процеси пошуку, зберігання, передавання та опрацювання&nbsp;інформації &mdash; здійснюються в основному засобами обчислювальної техніки й комп&rsquo;ютерних мереж.</p>
+<p style="word-spacing: 1.1px;">Пошук і збирання. Значну роль у цьому відіграють інформаційні пошукові системи (рис. 1), які дозволяють миттєво отримати будь-яку інформацію з електронних джерел усього&nbsp;світу. Особливою популярністю користується нині пошукова&nbsp;система Google.</p>
+<p style="word-spacing: 1.1px;">Зберігання й накопичення. Дуже тривалий час знання передавалися в усній формі (у переказах, народних піснях&nbsp;тощо), потім &mdash; за допомогою матеріальних носіїв інформації&nbsp;(наскельних малюнків, глиняних дощечок, папіруса тощо).&nbsp;Окремо слід виділити книжки &mdash; книгодрукування мало величезний вплив на розвиток цивілізації. Сьогодні інформацію&nbsp;зберігають не тільки на паперових, але й на електронних носіях (рис. 2) &mdash; оптичних і магнітних дисках, картках пам&rsquo;яті&nbsp;тощо; її накопичують в Інтернеті, який уже відіграє роль&nbsp;глобального носія інформації.</p>
+<p style="word-spacing: 1.1px;">Передавання й поширення. Сучасні засоби передавання й поширення інформації фактично почали розвиватися з середини XIX ст., коли для цього на практиці стали застосовувати електричні сигнали. Величезний вплив на їх розвиток мав&nbsp;телеграфний апарат Морзе, за допомогою якого з 1844 року&nbsp;розпочалося трансатлантичне передавання телеграм. Потім&nbsp;з&rsquo;явилися радіо, телебачення, інші засоби зв&rsquo;язку; особливу&nbsp;роль у розвитку засобів передавання й поширення повідомлень відіграв супутниковий зв&rsquo;язок (рис. 3), без якого нині&nbsp;неможливо уявити функціонування Інтернету.</p>
+<p style="word-spacing: 1.1px;">Для передавання будь-яке повідомлення кодується &mdash; перетворюється з початкового вигляду до вигляду, придатного для передавання каналами зв&rsquo;язку, після отримання приймачем&nbsp;сигнал декодується &mdash; перетворюється до початкового вигляду, зрозумілого й доступного людині.</p>
+<p style="word-spacing: 1.1px;">Опрацювання. У широкому розумінні опрацювання даних &mdash; це процес їх перетворення з одного вигляду в інший. Для опрацювання даних розроблено різноманітні програмні&nbsp;засоби. Під час роботи з даними важливого значення набуває захист інформації &mdash; комплекс правових, організаційних&nbsp;і технічних заходів, спрямованих на зберігання інформації,&nbsp;запобігання випадковим і навмисним пошкодженням, несанкціонованому доступу.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-3.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-4.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для захисту даних у комп&rsquo;ютері від випадкових загроз (збій напруги, помилка в роботі апаратних засобів тощо)&nbsp;створюють резервні копії файлів, а для тривалого їх зберігання &mdash; архіви.</p>
+<p style="word-spacing: 1.1px;">Якщо комп&rsquo;ютерна система має вихід у мережу Інтернет, дані слід захищати від намагань зловмисників і шахраїв&nbsp;отримати доступ до приватної інформації, наприклад паролів. Програми та дані потрібно захищати також від зараження комп&rsquo;ютерними вірусами. Для цього існує низка програмних засобів (Захисник Windows, Зілля, Avast! та ін.), які під&nbsp;час вмикання комп&rsquo;ютера здійснюють автоматичну перевірку&nbsp;наявності шкідливих програм та їх видалення.</p>
+<p style="word-spacing: 1.1px;">Що означає поняття &laquo;хакер&raquo;? Шляхом пошуку в Інтернеті дослідіть питання про найвідоміші у світі хакерські атаки.</p>
+<p style="word-spacing: 1.1px;">Інформаційні процеси досліджують шляхом їх моделювання на основі засобів математичної логіки, алгебраїчних та інших методів. Для цього широко застосовують принцип&nbsp;&laquo;чорного ящика&raquo;, за яким досліджують вихідні дані як реакцію на зміну вхідних. Процес моделювання інформаційних процесів дозволяє отримати найголовніші їх характеристики, наприклад надійність, швидкість реалізації.</p>
+<p style="word-spacing: 1.1px;">Удосконалення методів і засобів інформаційних процесів із часом вплинули на розвиток інформаційних технологій (ІТ).</p>
+<p style="word-spacing: 1.1px;">Історія розвитку ІТ налічує кілька етапів.</p>
+<p style="word-spacing: 1.1px;">&bull; Писемність &mdash; фактично з її появою починається розвиток процесів зберігання, накопичення й передавання знань&nbsp;від одного покоління до іншого.</p>
+<p style="word-spacing: 1.1px;">&bull; Книгодрукування &mdash; розпочалося у XV ст. та сприяло&nbsp;стрімкому поширенню знань.</p>
+<p style="word-spacing: 1.1px;">&bull; Електричні засоби зв&rsquo;язку &mdash; поява наприкінці XIX ст.&nbsp;телеграфа, телефона, радіо сприяла миттєвому передаванню&nbsp;повідомлень на велику відстань. Із першої половини XX ст.&nbsp;розпочалася ера телебачення.</p>
+<p style="word-spacing: 1.1px;">&bull; Засоби обчислювальної техніки &mdash; їх поява принципово прискорила й змінила методологію опрацювання інформації.</p>
+<p style="word-spacing: 1.1px;">&bull; Всесвітня мережа Інтернет &mdash; докорінно змінилися&nbsp;методи пошуку інформації, суттєво підвищилася швидкість&nbsp;і ефективність передавання великих обсягів даних на необмежені відстані (рис. 4).</p>
+<p style="word-spacing: 1.1px;">Інформаційні процеси відбуваються в інформаційних системах (ІС). Навколо нас існує безліч різних ІС, наприклад, комп&rsquo;ютер (технічна ІС), людина (біологічна ІС), суспільство&nbsp;(соціальна ІС) тощо.</p>
+<p style="word-spacing: 1.1px;">Склад і функції ІС значною мірою визначаються тією предметною галуззю, у якій використовується система, а також завданнями, які необхідно розв&rsquo;язувати за її допомогою.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-5.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Деякі вчені, аналізуючи ІТ, які використовуються в Інтернеті,&nbsp;порівнюють його з нейронною&nbsp;мережею та обговорюють питання про виникнення і розвиток нейронної мережі планети&nbsp;і становлення планетарного&nbsp;розуму.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-6.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">ПІД технічною інформаційною системою будемо розуміти програмно-апаратний комплекс для зберігання даних, виконання над ними операцій, обумовлених&nbsp;специфікою предметної галузі, забезпечення зручного інтерфейсу для доступу до необхідних даних та їх&nbsp;опрацювання.</p>
+<p style="word-spacing: 1.1px;">Обов&rsquo;язковими складовими апаратного забезпечення ІС є комп&rsquo;ютер і засоби комунікації, а складові програмного&nbsp;забезпечення ІС залежать від функцій, які вона виконує.&nbsp;У більшості застосовуються операційні системи, СУБД, бра-узери (рис. 6).</p>
+<p style="word-spacing: 1.1px;">Класифікують ІС за різними ознаками. До основних можна віднести такі:</p>
+<p style="word-spacing: 1.1px;">&bull; за структурою даних, якими оперують ІС: фактографічні&nbsp;(структуровані дані, наприклад особисті відомості людини &mdash; ПІБ, адреса тощо, склад комп&rsquo;ютера) та документальні (наприклад, наказ, стаття, закон);</p>
+<p style="word-spacing: 1.1px;">&bull; за сферою застосування: економіка, освіта, медицина тощо;</p>
+<p style="word-spacing: 1.1px;">&bull; за призначенням у професійній діяльності: обчислювальні, пошуково-довідкові, управління персоналом тощо;</p>
+<p style="word-spacing: 1.1px;">&bull; за рівнем автоматизації: ручні, автоматизовані, автоматичні.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-7.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Поясніть поняття та сутність інформаційних процесів.</p>
+<p style="word-spacing: 1.1px;">Які етапи розвитку інформаційних технологій ви знаєте?</p>
+<p style="word-spacing: 1.1px;">Які основні переваги мають сучасні інформаційні системи?</p>
+<p style="word-spacing: 1.1px;">Наведіть приклади галузей, у яких використовують інформаційні системи.</p>
+<p style="word-spacing: 1.1px;">За якими основними ознаками класифікують інформаційні системи?</p>
+<p style="word-spacing: 1.1px;">Які загальні риси мають інформаційні системи?</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>1.3. Поняття інформаційної культури&nbsp;й інтелектуальної власності</strong></p>
+<p style="word-spacing: 1.1px;">Поясніть, що означають поняття &laquo;культура&raquo;, &laquo;культура мовлення&raquo;, &laquo;художня культура&raquo;. Як розвиток інформаційних&nbsp;технологій вплинув на розвиток людини, на її культуру?</p>
+<p style="word-spacing: 1.1px;">Інформатизація суспільства впливає на всі сфери життєдіяльності людини, на розвиток її загальної культури, збагачує її новою складовою &mdash; інформаційною культурою.</p>
+<p style="word-spacing: 1.1px;">Інформаційна культура як елемент загальної культури людини є характеристикою особистості, яка проявляється в умінні цілеспрямованої роботи з інформацією, знанні нових засобів інформаційно-комунікаційних технологій, морально-етичних норм під час створення й використання інформаційних матеріалів.</p>
+<p style="word-spacing: 1.1px;">Інформаційна культура визначає здатність і вміння людини жити й працювати в інформаційному суспільстві.</p>
+<p style="word-spacing: 1.1px;">Р івень сформованості інформаційної культури залежить від інформаційної грамотності людини &mdash; певного&nbsp;рівня знань щодо можливостей інформаційних і комунікаційних технологій та вміння їх використовувати&nbsp;в процесі роботи з інформацією для розв'язування різноманітних задач у своїй життєдіяльності.</p>
+<p style="word-spacing: 1.1px;">Інформаційна грамотність, інформаційна культура людини впливають на її навчання, роботу, на успішне життя в інформаційному суспільстві (рис. 1). Сьогодні велику роль відіграє інформаційна компетентність, яку також називають ІКТ-компетентністю (від ІКТ &mdash; інформаційно-комунікаційні&nbsp;технології). У широкому розумінні &mdash; це обізнаність у світі&nbsp;інформації, знання сучасних засобів її опрацювання (рис. 2).</p>
+<p style="word-spacing: 1.1px;">І КТ-компетентність &mdash; це здатність особи самостійно шукати, аналізувати, опрацьовувати та передавати інформацію за допомогою ІКТ та доцільно використовувати її у своїй життєдіяльності.</p>
+<p style="word-spacing: 1.1px;">ІКТ-компетентність учнів складають:</p>
+<p style="word-spacing: 1.1px;">&bull; уміння доцільно використовувати ІКТ в навчанні та повсякденному житті;</p>
+<p style="word-spacing: 1.1px;">&bull; уміння розробляти інформаційні моделі, реалізовувати&nbsp;їх за допомогою ІКТ, досліджувати, аналізувати отримані результати й робити висновки;</p>
+<p style="word-spacing: 1.1px;">&bull; практичні навички володіння ІКТ;</p>
+<p style="word-spacing: 1.1px;">&bull; знання основних правил і дотримання етичних норм&nbsp;у процесі використання ІКТ та участі в публічних дискусіях, соціальних мережах тощо.</p>
+<p style="word-spacing: 1.1px;">Слово &laquo;культура&raquo; (від латин, со/о, соїеге &mdash; вирощувати, доглядати, обробляти; culturare &mdash;&nbsp;вирощений, доведений до досконалості) спочатку стосувалося землеробства. Згодом&nbsp;стало вживатись у ширшому&nbsp;значенні &mdash; стосовно духовно-практичної діяльності людини.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-8.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Якими засобами ви користуєтеся під час підготовки реферату або виконання завдання, самостійного опанування&nbsp;навчального матеріалу? Чи звертались ви до сайта&nbsp;&laquo;Вікіпедія&raquo;, сайтів електронних бібліотек?</p>
+<p style="word-spacing: 1.1px;">Для самостійного отримання знань із певного навчального предмета можна користуватися спеціально розробленими програмними засобами навчального призначення (освітніми електронними ресурсами) (рис. 3). Від традиційних їх відрізняє наявність зручних у використанні засобів унаочнення навчального матеріалу. Навчальні матеріали подаються на електронних&nbsp;носіях у вигляді текстових, графічних, звукових і відеоданих&nbsp;та їх комбінацій, що сприяє підвищенню інтересу до навчання.</p>
+<p style="word-spacing: 1.1px;">Освітні електронні ресурси є у вищих та загальноосвітніх навчальних закладах. Їх мають бібліотеки, наприклад Національна бібліотека України імені В. І. Вернадського&nbsp;(nbuv.gov.ua) (рис. 4), Державна наукова педагогічна бібліотека України імені В. О. Сухомлинського (bnpb.gov.ua), а також&nbsp;освітні установи, видавництва тощо.</p>
+<p style="word-spacing: 1.1px;">Програмний навчальний засіб, як і будь-яке програмне забезпечення, розробляється автором або авторським колективом. Автор має право інтелектуальної власності на розроблений ним програмний засіб так само, як і автор літературного чи художнього твору.</p>
+<p style="word-spacing: 1.1px;">Право інтелектуальної власності &mdash; це право особи на результат своєї інтелектуальної або творчої діяльності.</p>
+<p style="word-spacing: 1.1px;">Власність називають інтелектуальною, якщо вона є результатом роботи інтелектуальної та творчої діяльності особи або кількох осіб (наприклад, запатентовані винаходи, літературні,&nbsp;художні та наукові твори, фотографії, фільми, картини тощо).</p>
+<p style="word-spacing: 1.1px;">Право інтелектуальної власності становлять немайнові та (або) майнові права. Особисті немайнові права інтелектуальної власності (наприклад, право на визначення особи творцем об&rsquo;єкту власності) не залежать від майнових прав.</p>
+<p style="word-spacing: 1.1px;">Авторське право &mdash; це право інтелектуальної власності на літературний, художній або інший твір, до яких належать і комп'ютерні програми.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерні програми, захищені авторським правом, мають ліцензію &mdash; правовий документ, який визначає порядок використання й розповсюдження програмного засобу.&nbsp;Ліцензія не тільки захищає авторські права, а й гарантує&nbsp;клієнтам безпечність та правильність функціонування програмного засобу. Користувачу, який має ліцензію, надається&nbsp;право отримувати технічну підтримку з боку розробника або&nbsp;офіційних розповсюджувачів програмного продукту.</p>
+<p style="word-spacing: 1.1px;">Авторське право і суміжні права представлено в Законі України &laquo;Про авторське право і суміжні права&raquo;. Закон ґрунтується&nbsp;на міжнародних нормах, враховує сучасні тенденції правового регулювання як традиційних, так і нових об&rsquo;єктів авторського&nbsp;права &mdash; наприклад, комп&rsquo;ютерних програм, баз даних.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-9.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-10.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;">У навчальному процесі можна використовувати фрагменти матеріалу без згоди автора. Якщо мета використання не містить комерційної складової, можна цитувати, використовувати як ілюстрацію, наприклад у рефератах тощо, але з&nbsp;обов&rsquo;язковим посиланням на автора і джерело.</p>
+<p style="word-spacing: 1.1px;">Програмне забезпечення, яке копіюється без дозволу власника, є &laquo;піратським&raquo;. Проблема&nbsp;захисту програм та авторських&nbsp;прав їх розробників у всьому&nbsp;світі надзвичайно актуальна.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Поясніть поняття інформаційної культури особистості.</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність інтелектуальної власності.</p>
+<p style="word-spacing: 1.1px;">Від чого залежить формування інформаційної культури особистості?</p>
+<p style="word-spacing: 1.1px;">Як ви розумієте ІКТ-компетентність учня? Назвіть шляхи використання інформаційних технологій в освіті.</p>
+<p style="word-spacing: 1.1px;">Що спричинило виникнення права інтелектуальної власності?</p>
+<p style="word-spacing: 1.1px;">Практична робота № 1</p>
+<p style="word-spacing: 1.1px;">Тема. Освітні інформаційні ресурси й системи.</p>
+<p style="word-spacing: 1.1px;">Завдання: ознайомитися з освітніми інформаційними ресурсами, навчитися користуватися пошуковими системами.</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер, під'єднаний до мережі Інтернет.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Визначте, чи є на форумі інформатиків України (informatic.org.ua) посилання на&nbsp;сайт вашої школи (Головна ^ Корисні&nbsp;сайти ^ Сайти шкіл).</p>
+<p style="word-spacing: 1.1px;">Визначте, які освітні інформаційні ресурси знаходяться на сайті вашої школи або іншому за вказівкою вчителя. Ознайомтеся з навчальними мультфільмами на сайті форуму (Головна ^&nbsp;^ Допомога користувачам ^ Навчальні&nbsp;мультфільми).</p>
+<p style="word-spacing: 1.1px;">На сайті Інституту модернізації змісту освіти МОН України (imzo.gov.ua) ознайомтеся з переліком електронних версій підручників (Освіта ^ Середня освіта&nbsp;і підручники ^ Електронні версії підручників). Чи є серед них такі, якими користуєтеся ви?</p>
+<p style="word-spacing: 1.1px;">Ознайомтеся з переліком олімпіад та конкурсів на сайті &laquo;Острів знань&raquo;&nbsp;(ostriv.in.ua): &nbsp;На головну ^ Школа ^</p>
+<p style="word-spacing: 1.1px;">^ Для розумників ^ Олімпіади та конкурси. Про які з них ви щойно довідалися?</p>
+<p style="word-spacing: 1.1px;">На сайті &laquo;Розумники&raquo; (rozumniki.net) перегляньте перелік електронних підручників з інформатики для 9 класу. На сайті e-pidruchnyky.net ознайомтеся з переліком навчальної літератури з інформатики. Знайдіть електронну версію посібника &laquo;Операційні системи&raquo; та ознайомтеся зі змістом.</p>
+<p style="word-spacing: 1.1px;">Відвідайте сайт &laquo;Інтерактивне навчання&raquo; (interactive.ranok.com.ua). Виконайте пошук електронних версій підручників&nbsp;та навчальних посібників з інформатики для 9 класу, підручників з інших&nbsp;предметів.</p>
+<p style="word-spacing: 1.1px;">За допомогою пошукової системи Google виконайте пошук кількох дистанційних&nbsp;курсів (наприклад, із навчання програмування, іноземної мови). Які з них вас&nbsp;зацікавили?</p>
+<p style="word-spacing: 1.1px;">Повідомте вчителя про результати роботи.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновки: які є освітні інформаційні ресурси, як знаходити навчальну інформацію в Інтернеті.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника <a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p style="word-spacing: 1.1px;">&nbsp;</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="760-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="682-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="642-nformacyn-tehnologyi.html">Інформаційні технології</a></li><li><a href="641-nformacyn-sistemi.html">Інформаційні системи</a></li><li><a href="640-etapi-stanovlennya-nformacynih-tehnology.html">Етапи становлення інформаційних технологій</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

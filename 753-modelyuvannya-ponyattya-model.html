@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Моделювання. Поняття моделі &raquo; mozok.click</title>
+<meta name="description" content="Пригадайте, якими моделями ви користувалися в кабінетах фізики і географії. Чи доводилося вам самостійно розробляти моделі? Які основні дії при цьому ви виконували?Модель (від латин. modulus" />
+<meta name="keywords" content="оригіналу, створений, 'єкта, штучно, зразок, латин, modulus, допомогою, досліджувати, властивості, вивчати, можна, якого, Модель, виконували, кабінетах, фізики, користувалися, моделями, якими" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='753-modelyuvannya-ponyattya-model.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Моделювання. Поняття моделі</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb753").Button("#infc753"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb753" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc753" class="infcont">
+			<ul>
+				<li><i>Переглядів: 9879</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 10:44</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-753'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="753-modelyuvannya-ponyattya-model.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '753'); return false;">1</a></li>
+		<li><a href="753-modelyuvannya-ponyattya-model.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '753'); return false;">2</a></li>
+		<li><a href="753-modelyuvannya-ponyattya-model.html#" title="Средне" class="r3-unit" onclick="doRate('3', '753'); return false;">3</a></li>
+		<li><a href="753-modelyuvannya-ponyattya-model.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '753'); return false;">4</a></li>
+		<li><a href="753-modelyuvannya-ponyattya-model.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '753'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 10:44</i></a></span>
+	<h3 class="btl"><span id="news-title">Моделювання. Поняття моделі</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-753" style="display:inline;"><p><strong>8.1. Поняття моделі та моделювання</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте, якими моделями ви користувалися в кабінетах фізики і географії. Чи доводилося вам самостійно розробляти&nbsp;моделі? Які основні дії при цьому ви виконували?</p>
+<p style="word-spacing: 1.1px;">Модель (від латин. modulus &mdash; міра, зразок) &mdash; це штучно створений об'єкт для об'єкта-оригіналу, за допомогою якого можна вивчати і досліджувати властивості оригіналу.</p>
+<p style="word-spacing: 1.1px;">Модель може бути створена у вигляді фізичного пристрою, схеми, фотографії, словесного опису, математичних формул&nbsp;тощо. Наприклад, для визначення маршруту поїздки в метро&nbsp;достатньо мати схему розташування станцій метрополітену,&nbsp;яка є його моделлю. Для початкового ознайомлення з архітектурою Києво-Печерської лаври не обов&rsquo;язково їхати до самої лаври, це можна зробити за допомогою фотографій, схем,&nbsp;макетів тощо, які також є моделями лаври. Площу земельної&nbsp;ділянки фермерського господарства не обов&rsquo;язково вимірювати за допомогою, наприклад, рулетки безпосередньо на полі,&nbsp;її можна обчислити за допомогою відповідних математичних&nbsp;формул. Людина, яка знає музичні ноти, може мати уявлення про симфонію № 9 Людвіга ван Бетховена, не чуючи саму&nbsp;симфонію, а шляхом ознайомлення з відповідними нотами.&nbsp;Учень отримує перше уявлення про земну кулю за допомогою&nbsp;глобуса (рис. 1, а-в).</p>
+<p style="word-spacing: 1.1px;">Моделі особливо корисні, коли досліджуваний об'єкт має великі (Сонячна система) або малі розміри (атом),&nbsp;коли процес протікає досить швидко (ракетний двигун)&nbsp;або повільно (плавлення металу), коли оригінал коштує&nbsp;досить дорого (запуск ракети) або в реальному часі реальний об'єкт не існує (певна модель автомобіля).</p>
+<p style="word-spacing: 1.1px;">П очатковий варіант моделі для будь-якого об'єкта завжди виникає у свідомості людини. Потім модель&nbsp;може поступово змінюватися, удосконалюватися і набувати різних форм. Наприклад, архітектор спочатку&nbsp;створює модель будинку у своїй свідомості, потім він&nbsp;робить ескіз будинку на папері. Далі може бути створений макет і проект будинку. При цьому на всіх етапах один вид моделі доповнює інші й впливає на їх&nbsp;удосконалення.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-205.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-206.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Часто ми навіть не уявляємо, що наше життя пов&rsquo;язане з розробкою, вивченням, дослідженням та аналізом моделей.&nbsp;У повсякденні ми не згадуємо, що наша діяльність часто здійснюється завдяки створеній у нашій свідомості моделі. У кращому випадку ми говоримо, що діємо згідно з розробленим&nbsp;планом, який фактично і є одним із видів моделі. Наприклад,&nbsp;виконуючи кидок баскетбольного м&rsquo;яча в кошик із деякої точки майданчика, ми свідомо обираємо кут, напрям і силу його&nbsp;кидка саме тому, що попередньо створили модель цієї дії.</p>
+<p style="word-spacing: 1.1px;">Будь-який об&rsquo;єкт може мати модель. Об&rsquo;єктом є цілісна частина навколишнього світу. Об&rsquo;єктами є не лише предмети&nbsp;та явища матеріального світу, але й поняття, які створюють&nbsp;і використовують люди під час спілкування, наприклад суспільство, освіта, економіка.</p>
+<p style="word-spacing: 1.1px;">Модель завжди розробляють із конкретною метою. Наприклад, перш ніж побудувати літак, конструктор розробляє декілька його моделей, кожну з яких досліджують у конкретних умовах. Ці результати враховують у процесі конструювання реального літака. На початку забудови, наприклад, мікрорайону міста архітектори розробляють його макет, тобто модель, до якої після цього вносяться необхідні зміни. Отже,&nbsp;завдяки створеним моделям вивчають і досліджують реальні&nbsp;об&rsquo;єкти, а на основі даних, отриманих у процесі дослідження&nbsp;моделі, можна детальніше пізнати сутність оригіналу, тобто&nbsp;реально існуючого об&rsquo;єкта або того, що розробляється. Основні цілі створення моделі наведено на рис. 2.</p>
+<p style="word-spacing: 1.1px;">Кожен об&rsquo;єкт має ім&rsquo;я (назву) і характеризується певними параметрами. Наприклад, море має максимальну глибину,&nbsp;площу, температуру води тощо. Футболіст має певний зріст,&nbsp;масу, йому притаманні певні професійні якості.</p>
+<p style="word-spacing: 1.1px;">Серед багатьох параметрів об&rsquo;єкта є головні, які визначають його найсуттєвіші властивості. Наприклад, для комп&rsquo;ютера&nbsp;такими параметрами є тактова частота процесора, ємність&nbsp;оперативної пам&rsquo;яті, довжина діагоналі та роздільна здатність&nbsp;монітора, ємність вінчестера. Кількість головних параметрів&nbsp;міститься у межах від одиниць до кількох десятків. Чим&nbsp;більше параметрів об&rsquo;єкта відомо, тим точніше його характеристика. Але не завжди відомі всі параметри об&rsquo;єкта. Для визначення деяких із них потрібен тривалий час і певні умови.&nbsp;Наприклад, багато параметрів об&rsquo;єкта Місяць були визначені&nbsp;лише після спеціальних досліджень.</p>
+<p style="word-spacing: 1.1px;">Кожний об&rsquo;єкт існує в певних умовах. Наприклад, метал у твердому стані перебуває лише за певної температури; риба&nbsp;не може існувати без води, людина &mdash; без повітря.</p>
+<p style="word-spacing: 1.1px;">Над об&rsquo;єктами можуть виконуватися певні дії, або сам об&rsquo;єкт може виконувати їх. Наприклад, людина може спати, грати в баскетбол, писати, читати, керувати автомобілем&nbsp;тощо. Літак може стояти на землі, летіти горизонтально,&nbsp;йти на посадку тощо. Отже, об&rsquo;єкт &mdash; це частина довкілля,&nbsp;що може розглядатися як єдине ціле. Об&rsquo;єкт характеризується назвою, параметрами і діями, які над ним можна виконати.</p>
+<p style="word-spacing: 1.1px;">М одель може розроблятися не тільки для матеріальних об'єктів, але й для процесів і явищ.</p>
+<p style="word-spacing: 1.1px;">Моделі процесів можуть розроблятися для матеріальних об&rsquo;єктів, наприклад модель плавлення металу в доменній&nbsp;печі, модель ковзання вантажу з похилої поверхні, модель&nbsp;розповсюдження морської хвилі, а також моделі для суспільних, економічних та інших процесів. Приміром, існують моделі економічного розвитку підприємства, галузі, держави,&nbsp;модель розвитку суспільства протягом певного періоду тощо.&nbsp;На рис. 3 зображена модель ліній магнітного поля.</p>
+<p style="word-spacing: 1.1px;">Приклади моделей явищ: модель землетрусу, яка дозволяє оцінити його наслідки і визначити технічні вимоги до будівництва споруд; модель руху циклонів, яка дозволяє зробити&nbsp;прогноз погоди на певний період; модель цунамі (рис. 4), що&nbsp;дозволить попередити населення про загрозу.</p>
+<p style="word-spacing: 1.1px;">Кожен об&rsquo;єкт, процес або явище можуть мати декілька різних моделей. Конкретний тип моделі визначається не тільки метою її створення, але й засобами, які для цього використовуються. Наприклад, модель земної кулі може бути виготовлена у вигляді глобуса, створеного за допомогою картону,&nbsp;клею і фарби. Вона може також бути створена на екрані монітора комп&rsquo;ютера за допомогою графічного редактора.</p>
+<p style="word-spacing: 1.1px;">З описаного слідує, що поняття моделі досить велике за обсягом. Воно охоплює майже всі сторони людської діяльності, тому однозначного тлумачення цього терміна не існує.&nbsp;Далі будемо дотримуватися такого визначення моделі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-207.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-208.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Модель &mdash; це сукупність найважливіших властивостей об'єкта, процесу, явища, яка визначається метою її створення і може мати різні форми вираження. Процес&nbsp;створення моделі називають моделюванням. Основне&nbsp;завдання моделювання &mdash; вибір найбільш адекватної до&nbsp;оригіналу моделі і перенесення результатів його дослідження на оригінал.</p>
+<p style="word-spacing: 1.1px;">Відзначимо, що оригінал завжди складніший за будь-яку свою модель. Модель розробляється з конкретною метою і визначає не всі, а лише ті властивості оригіналу, які відповідають меті створення моделі. Разом із тим модель відображає&nbsp;найсуттєвіші сторони оригіналу з точки зору мети моделювання. Дослідження моделі слугує засобом для отримання&nbsp;знань про оригінал.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Наведіть приклади моделей.</p>
+<p style="word-spacing: 1.1px;">Які моделі вам доводилося розробляти?</p>
+<p style="word-spacing: 1.1px;">З якою метою розробляють моделі?</p>
+<p style="word-spacing: 1.1px;">Що називають моделюванням?</p>
+<p style="word-spacing: 1.1px;">Чи завжди модель відображує реальний стан об'єкта?</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність терміна &laquo;модель&raquo;.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><strong>8.2. Класифікація моделей</strong></p>
+<p style="word-spacing: 1.1px;">Відомо, що модель може бути описана словесно, подана у вигляді схеми, приладу тощо. Поміркуйте, за якими&nbsp;ознаками можна класифікувати моделі.</p>
+<p style="word-spacing: 1.1px;">Моделі класифікують за багатьма ознаками (рис. 1).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-209.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">За способом подання моделі поділяють на дві основні групи: матеріальні (фізичні) і нематеріальні (інформаційні). Матеріальні &mdash; це реально існуючі моделі, тобто ті, які можна побачити й доторкнутися до них. Приклади матеріальних моделей: іграшка автомобіля, шкільний фізичний прилад для&nbsp;демонстрації взаємодії електромагнітних полів, макет гідроелектростанції, лялька, макет космічного корабля. Матеріальні моделі можуть бути носіями хімічних, геометричних, фізичних та інших властивостей реального об&rsquo;єкта, процесу, явища.</p>
+<p style="word-spacing: 1.1px;">Інформаційна модель &mdash; це вербальний, графічний, математичний, табличний тощо опис об'єкта.</p>
+<p style="word-spacing: 1.1px;">Вербальною моделлю об&rsquo;єкта називають його опис природною мовою. Приклади вербальної моделі: правила дорожнього руху, алгоритм пошуку мінімального елемента в одновимірно-му масиві, рецепт виготовлення соку.</p>
+<p style="word-spacing: 1.1px;">Графічні моделі призначені для наочного подання об&rsquo;єктів, процесів, явищ. Приклади графічних моделей: карта місцевості (рис. 2), схема електричного кола, креслення геометричних фігур (рис. 3).</p>
+<p style="word-spacing: 1.1px;">Математична модель &mdash; це система математичних рівнянь, формул (рис. 4), числових множин, які описують деякі властивості реального об'єкта, процесу або явища. Багато задач із фізики, біології, хімії розв'язують за&nbsp;допомогою рівнянь і нерівностей.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-210.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Математичні моделі особливо корисні під час дослідження будівельних споруд, в аерокосмічній промисловості тощо.</p>
+<p style="word-spacing: 1.1px;">За допомогою математичної моделі підприємства можна прогнозувати його фінансовий стан. Для побудови математичної моделі підприємства потрібно описати його найважливіші&nbsp;параметри, структуру та особливості поведінки.</p>
+<p style="word-spacing: 1.1px;">Серед інформаційних моделей розрізняють також знакові моделі, які створюють за допомогою спеціальних знаків: дорожніх (рис. 5), музичних, мовних та ін. Вербальні й знакові моделі завжди доповнюють одна одну.</p>
+<p style="word-spacing: 1.1px;">Вибір конкретного типу моделі суттєво впливає на те, який вигляд матиме об&rsquo;єкт, що створюється, і якою буде його поведінка за реальних умов. Для всебічного оцінювання реального об&rsquo;єкта й визначення його структури бажано водночас&nbsp;користуватися кількома моделями. Кращою є та модель, яка&nbsp;найточніше відображає реальний об&rsquo;єкт.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">За призначенням моделі поділяють на науково-дослідницькі, імітаційні, навчальні, ігрові та ін. Науково-дослідницькі моделі створюють з метою дослідження об&rsquo;єкта, процесу, явища в певних умовах. Наприклад, існують моделі нервової&nbsp;клітини, дослідження яких допомагає створювати й удосконалювати теорію її збудження. Імітаційні моделі розробляють в основному для дослідницьких цілей. Наприклад, на&nbsp;комп&rsquo;ютері може бути реалізована модель функціонування&nbsp;електронних схем окремих пристроїв, алгоритмів із метою&nbsp;визначення правильності їх розробки, надійності та якості.</p>
+<p style="word-spacing: 1.1px;">До навчальних моделей відносять наочні прилади, плакати, схеми, тренажерні системи та ін. Особливо широко використовують ці моделі в медицині (рис. 6), космонавтиці (макети орбітальних станцій), біології (макети рослин).</p>
+<p style="word-spacing: 1.1px;">До ігрових моделей належать спортивні, економічні та інші ігри, в ході яких &laquo;програються&raquo; різноманітні ситуації і визначається стратегія дій у певних умовах.</p>
+<p style="word-spacing: 1.1px;">За станом розрізняють статичні й динамічні моделі. Статична модель фіксує стан об&rsquo;єкта, процесу, явища на певний момент часу. Наприклад, стан дорожнього руху в годину пік,&nbsp;покази приладів літака в момент відриву від злітної смуги.</p>
+<p style="word-spacing: 1.1px;">Динамічна модель відображає поведінку об&rsquo;єкта протягом певного часу. Наприклад, основні покази приладів літака через кожну секунду під час зльоту. Динамічні моделі можуть&nbsp;досліджуватися в реальному масштабі часу, а також у скорочений чи збільшений період часу. Наприклад, процес плавлення металу, який реально здійснюється протягом декількох&nbsp;годин, можна змоделювати протягом десяти хвилин.</p>
+<p style="word-spacing: 1.1px;">Відомо, що Миколай Коперник (1473-1543) побудував геліоцентричну модель Всесвіту, відповідно до якої планети рухаються&nbsp;навколо Сонця певними орбітами. Перед появою цієї моделі&nbsp;існувала інша, у якій припускалося, що планети і Сонце рухаються навколо Землі. Зараз учені користуються більш точною&nbsp;моделлю Сонячної системи, яка&nbsp;дає змогу обчислювати маси&nbsp;і закони руху планет.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-211.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які типи моделей застосовують на практиці?</p>
+<p style="word-spacing: 1.1px;">Яку модель називають математичною?</p>
+<p style="word-spacing: 1.1px;">За якою моделлю доцільно досліджувати об'єкт?</p>
+<p style="word-spacing: 1.1px;">За якими ознаками класифікують моделі?</p>
+<p style="word-spacing: 1.1px;">8.3. Комп'ютерне моделювання</p>
+<p style="word-spacing: 1.1px;">Які моделі, на вашу думку, доцільно реалізувати на комп'ютері? Наведіть приклади моделей, які вам уже&nbsp;доводилося реалізовувати на комп'ютері.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне моделювання &mdash; це процес реалізації інформаційних моделей на комп'ютері. Для реалізації&nbsp;інформаційних моделей можуть застосовуватися системи програмування, електронні таблиці, математичні&nbsp;пакети, системи управління базами даних, графічні редактори та інші програмні засоби.</p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерне моделювання &mdash; це один з ефективних методів наукового пізнання і вивчення систем. Комп&rsquo;ютерні моделі просто і зручно досліджувати. Вони забезпечують проведення&nbsp;обчислювальних експериментів, які у звичайних умовах реалізувати неможливо або досить складно. Основні переваги&nbsp;комп&rsquo;ютерного моделювання подано на рис. 1.</p>
+<p style="word-spacing: 1.1px;">Порядок реалізації інформаційної моделі на комп&rsquo;ютері складається з таких основних етапів: постановка завдання,&nbsp;розробка інформаційної моделі, вибір інструментального програмного засобу для реалізації моделі, безпосередня реалізація моделі, аналіз отриманих результатів і прийняття відповідного рішення.</p>
+<p style="word-spacing: 1.1px;">Системи комп&rsquo;ютерного моделювання застосовують у різних сферах (рис. 2).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-212.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Комп&rsquo;ютерне моделювання особливо інтенсивно застосовують для випадкових процесів. Випадкові процеси зустрічаються в нашому житті досить часто. Хоча не можна дати точну й однозначну відповідь на результат конкретної події&nbsp;або процесу, існують деякі їх закономірності, вивчення та дослідження яких допомагає людині прийняти правильне рішення в певних умовах або визначити стратегію поведінки.&nbsp;Дослідження закономірностей випадкових процесів у техніці сприяє підвищенню її надійності, поліпшенню параметрів апаратури, зменшенню матеріальних витрат тощо. Дослідження випадкових процесів на залізничному транспорті</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-213.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">сприяє підвищенню безпеки і надійності руху, у медицині &mdash; попереджує розповсюдження епідемій, в іграх &mdash; підвищує&nbsp;ймовірність виграшу. Вивчення і дослідження випадкових&nbsp;процесів у сучасних умовах здійснюється, як правило, за допомогою комп&rsquo;ютера.</p>
+<p style="word-spacing: 1.1px;">Комп'ютерне моделювання широко застосовується в різних наукових галузях, зокрема для моделювання хімічних, фізичних, біологічних та інших процесів.</p>
+<p style="word-spacing: 1.1px;">Приклад 1. Хлорид натрію розчиняється у воді. Необхідно визначити, яку масу хлориду натрію і води потрібно взяти для виготовлення необхідної кількості розчину певної&nbsp;концентрації.</p>
+<p style="word-spacing: 1.1px;">Відомо, що хімічна формула хлорида натрію NaCl, а води &mdash; Н<sub>2</sub>0. Нехай т &mdash; маса необхідного розчину, т<sub>1</sub>&nbsp;&mdash; маса NaCl, т<sub>2</sub>&nbsp;&mdash;&nbsp;маса Н<sub>2</sub>0, р &mdash; відсоток концентрації розчину.</p>
+<p style="word-spacing: 1.1px;">Будемо вважати, що маса розчину визначається в кілограмах (кг). З умови завдання маємо: в 100 кг розчину повинно міститися&nbsp;р (кг) NaCl, а в розчині масою т (кг) &mdash; т<sub>1</sub>&nbsp;(кг)</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-214.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">В останні десятиріччя комп&rsquo;ютерне моделювання ефективно використовується для розв&rsquo;язування економічних задач.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. У банк поклали суму грошей s під к відсотків річних. Потрібно розробити модель розрахунку накопиченої суми (з округленням до другого знака після коми) за кожний із п років. Процес розв&rsquo;язування цієї задачі вручну наведено в таблиці.</p>
+<p style="word-spacing: 1.1px;">На основі аналізу дій, наведених у таблиці, можна розробити її математичну модель, яка&nbsp;подається системою формул:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-215.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Таблиця. ПРОЦЕС ОБЧИСЛЕННЯ ПРИБУТКУ ЗА БАНКІВСЬКИМ ВКЛАДОМ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-216.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Кубик, на гранях якого містяться цифри від 1 до 6, кидають доти, доки сума цифр стане більше 50. Розробіть програму визначення кількості кидань кубика.</p>
+<p style="word-spacing: 1.1px;">У банк поклали 500 грн на 4 роки під 12,5 % річних. Розробіть програму визначення прибутку.</p>
+<p style="word-spacing: 1.1px;">8.4. Використання програмних засобів&nbsp;для комп'ютерного моделювання</p>
+<p style="word-spacing: 1.1px;">Якими програмними засобами, на вашу думку, доцільно користуватися для обчислення об'єму кулі; побудови піраміди;&nbsp;пошуку кількості учнів, які народилися у квітні?</p>
+<p style="word-spacing: 1.1px;">Раніше вже зазначалося, що для комп&rsquo;ютерного моделювання можуть використовуватися різноманітні програмні засоби. Найчастіше для цього застосовують системи програмування, графічні редактори, електронні таблиці й системи&nbsp;управління базами даних.</p>
+<p style="word-spacing: 1.1px;">Розглянемо приклади використання деяких із цих засобів.</p>
+<p style="word-spacing: 1.1px;">Приклад 1. Інвестор може вкласти в модернізацію виробництва різну суму гривень на десять років. Для поточної модернізації достатньо вкласти 1 млн грн. У цьому випадку прибуток складатиме щорічно 15 % від вкладеної суми через 3 роки. Для часткової модернізації&nbsp;потрібно вкласти 2 млн грн. Прибуток почне&nbsp;надходити щорічно через 4 роки у розмірі&nbsp;18 % від вкладеної суми. Для капітальної модернізації виробництва потрібно вкласти 3 млн&nbsp;грн. У цьому випадку прибуток почне надходити щорічно через 7 років у розмірі 19 % від&nbsp;вкладеної суми. Потрібно розробити модель,&nbsp;за допомогою якої можна визначити найпри-вабливіший для інвестора варіант.</p>
+<p style="word-spacing: 1.1px;">Позначимо змінною К<sub>{</sub>&nbsp;кількість років, через які інвестор почне отримувати прибуток для г-го варіанта, де і = 1, 2, 3, змінною S<sub>j</sub>&nbsp;&mdash;&nbsp;суму інвестиції для г-го варіанта, N<sub>t</sub>&nbsp;&mdash; кількість відсотків для г-го варіанта інвестиції,</p>
+<p style="word-spacing: 1.1px;">змінною Р<sub>;</sub>&nbsp;&mdash; прибуток після 10 років. Тоді математичну модель цього процесу можна записати так: P<sub>t</sub>&nbsp;- S<sub>t</sub>&nbsp;■ N<sub>t</sub>&nbsp;(10 - K<sub>t</sub>) для г = 1, 2, 3.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Розмістимо на формі середовища Lasarus 4 компоненти ТМето, компонент TLabel і компонент TButton. У поле об&rsquo;єкта Метої введемо можливі суми інвестицій, у поле об&rsquo;єкта&nbsp;Мето2 &mdash; відсотки прибутків, а у поле об&rsquo;єкта МетоЗ &mdash; кількість років, через які почне&nbsp;повертатися прибуток. Об&rsquo;єкт Мето4 використаємо для виведення сумарного прибутку за&nbsp;кожним варіантом через 10 років. В об&rsquo;єкт&nbsp;Label! введемо повідомлення Результати варіантів інвестиції. Для об&rsquo;єкта Buttonl встановимо&nbsp;подію &#111;nclick. Обробник події зображено на&nbsp;рис. 1.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми наведено на рис. 2. Як бачимо, найкращій результат через&nbsp;10 років досягається в процесі часткової модернізації виробництва.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-217.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 2. Відомі харчові властивості п&rsquo;ятьох видів продуктів: вівсяна каша на молоці, картопля смажена, телятина тушкована,&nbsp;суп овочевий і вінегрет. Потрібно розробити&nbsp;комп&rsquo;ютерну модель, за допомогою якої визначається загальний вміст білків, жирів, вуглеводів і калорійність для цих видів продуктів.&nbsp;Систематизуємо ці дані у таблиці (у розрахунку на 100 г продукту).</p>
+<p style="word-spacing: 1.1px;">Таблиця. ВМІСТ І КАЛОРІЙНІСТЬ ХАРЧОВИХ ПРОДУКТІВ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-218.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Модель визначення загального вмісту основним компонентів харчових продуктів і калорійності найдоцільніше реалізувати за допомогою електронної таблиці MS Excel. На рис. З зображено вміст розробленої електронної таблиці й обчислено загальний вміст білків, жирів,&nbsp;вуглеводів і калорій у цих видах продуктів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-219.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 3. Протягом двох днів постачальники Костирко, Липко і Личко доставили у магазин необхідну кількість фруктів (у кг) за домовленою ціною, які магазин реалізує на 35 % дорожче. Необхідно розробити модель, за допомогою якої визначаються: а) дані про фрукти, ціна яких дорівнює або більша ніж 14 грн&nbsp;за кг; б) сума (у грн), отримана від реалізації&nbsp;фруктів, доставлених постачальником Липко.</p>
+<p style="word-spacing: 1.1px;">Для розробки моделі доцільно скористатися системою управління базами даних, наприклад&nbsp;системою Access 2016. Створимо таблицю з іменем Фрукти, вміст якої зображено на рис. 4.</p>
+<p style="word-spacing: 1.1px;">Для визначення даних про фрукти, ціна яких дорівнює або більше ніж 14 грн за кг,</p>
+<p style="word-spacing: 1.1px;">упорядкуємо вміст таблиці у порядку зростання цін, після цього встановимо курсор у стовпці Маса на значенні 14 і виконаємо&nbsp;команду Виділення у групі Сортування і фільтр.&nbsp;Отримаємо результат, зображений на рис. 5.</p>
+<p style="word-spacing: 1.1px;">Для отримання суми від реалізації фруктів, доставлених постачальником Липко, розробимо запит з іменем Запит2 з полями, що обчислюються. У запиті залишимо поля Назва і Постачальник, а також введемо поле Сума&nbsp;такого вмісту:</p>
+<p style="word-spacing: 1.1px;">Сума: [Маса]*([Ціна]+[Ціна]*0,35).</p>
+<p style="word-spacing: 1.1px;">У результаті виконання створеного запиту отримаємо результат, зображений на рис. 6.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-220.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">На похилій площині, розташованій під кутом а до горизонталі, розміщено брусок масою m (рис. 7). Розробіть комп'ютерну&nbsp;модель визначення умови, за якої брусок&nbsp;буде нерухомий, якщо сила тертя відсутня.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-221.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розробіть і дослідіть комп'ютерну модель рівноприскореного руху об'єкта.</p>
+<p style="word-spacing: 1.1px;">Обґрунтуйте програмний засіб для обчислення кількості і вартості шпалер для обклеювання кімнати розмірами 4х3,5х2,5 м. Ширина рулонів 55 см, довжина &mdash; 10 м.</p>
+<p style="word-spacing: 1.1px;">У графічному редакторі створіть схему вашого кабінету інформатики.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 16</p>
+<p style="word-spacing: 1.1px;">Тема. Створення, опрацювання і дослідження інформаційних моделей.</p>
+<p style="word-spacing: 1.1px;">Завдання: побудувати інформаційну модель для аналізу ВВП і земельних ресурсів на одну людину в п'яти країнах світу за даними таблиці.</p>
+<p style="word-spacing: 1.1px;">Таблиця. ОСНОВНІ ПОКАЗНИКИ КРАЇН СВІТУ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-222.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер із встановленими програмами: табличним процесором, середовищем програмування.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Виберіть програмний засіб для визначення ВВП, що припадає на одну людину в кожній країні.</p>
+<p style="word-spacing: 1.1px;">Розробіть модель для визначення ВВП, що припадає на кожну людину. Результат бажано отримати у вигляді діаграми.</p>
+<p style="word-spacing: 1.1px;">Виберіть програмний засіб для визначення кількості гектарів, які припадають на кожну людину в цих країнах.</p>
+<p style="word-spacing: 1.1px;">Розробіть модель на основі вибраного програмного засобу для визначення кількості гектарів. Результат бажано отримати у вигляді таблиці.</p>
+<p style="word-spacing: 1.1px;">Дізнайтеся про середній вік життя людини у цих країнах. Розробіть модель, за допомогою якої результат подається у вигляді стовпчастої діаграми.</p>
+<p style="word-spacing: 1.1px;">Для даних, наведених у таблиці, самостійно сформулюйте завдання для розробки моделі та реалізуйте її за допомогою вибраного програмного засобу.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: від чого залежить вибір конкретного програмного засобу для моделювання.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="760-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="671-karti-znan.html">Карти знань</a></li><li><a href="669-stvorennya-y-opracyuvannya-modeley-na-prikladah-zadach-z-rznih-predmetnih-galuzey-modelyuvannya-fzichnih-yavisch.html">Створення й опрацювання моделей на прикладах задач із різних предметних гал ...</a></li><li><a href="668-etapi-kompyuternogo-modelyuvannya.html">Етапи комп’ютерного моделювання</a></li><li><a href="667-kompyuterne-modelyuvannya-obyektv-procesv-nformacyn-model.html">Комп’ютерне моделювання об’єктів і процесів. Інформаційні моделі</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Символьні та рядкові величини &raquo; mozok.click</title>
+<meta name="description" content="Пригадайте, за допомогою яких кодів подаються символи в комп'ютері. Чи можуть символи бути значеннями елементів масиву? Що, на ваш погляд, називають рядком у мовах програмування?Символ  це" />
+<meta name="keywords" content="символи, символ, двійковий, унікальний, Кожний, інший, клавіатури, кодування, найчастіше, ASCII, Unicode, таблиці, кодові, літера, застосовують, символів, Символ, можуть, значеннями, 'ютері" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='755-simvoln-ta-ryadkov-velichini.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Символьні та рядкові величини</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb755").Button("#infc755"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb755" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc755" class="infcont">
+			<ul>
+				<li><i>Переглядів: 8829</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 10:49</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-755'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="755-simvoln-ta-ryadkov-velichini.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '755'); return false;">1</a></li>
+		<li><a href="755-simvoln-ta-ryadkov-velichini.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '755'); return false;">2</a></li>
+		<li><a href="755-simvoln-ta-ryadkov-velichini.html#" title="Средне" class="r3-unit" onclick="doRate('3', '755'); return false;">3</a></li>
+		<li><a href="755-simvoln-ta-ryadkov-velichini.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '755'); return false;">4</a></li>
+		<li><a href="755-simvoln-ta-ryadkov-velichini.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '755'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 10:49</i></a></span>
+	<h3 class="btl"><span id="news-title">Символьні та рядкові величини</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-755" style="display:inline;"><p><strong>10.1. Загальні відомості про символьні та рядкові&nbsp;величини</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте, за допомогою яких кодів подаються символи в комп'ютері. Чи можуть символи бути значеннями&nbsp;елементів масиву? Що, на ваш погляд, називають рядком&nbsp;у мовах програмування?</p>
+<p style="word-spacing: 1.1px;">Символ &mdash; це цифра, літера або інший знак клавіатури. Кожний символ має свій унікальний двійковий код. Нині для&nbsp;кодування символів найчастіше застосовують кодові таблиці&nbsp;ASCII і Unicode. Латинські літери розташовані у першій половині таблиці ASCII. Їхні коди збігаються з кодами цих літер&nbsp;у таблиці Unicode і є обов&rsquo;язковими для всіх країн світу. Для&nbsp;кодування національних символів використовується друга половина таблиці ASCII (коди від 128 до 256), а також таблиця Unicode, у якій кожний символ кодується двома байтами.</p>
+<p style="word-spacing: 1.1px;">Для роботи із символами у середовищі Lazarus використовується тип даних char. Символьні змінні оголошуються в розділі оголошення змінних, наприклад var z, a_1: char.</p>
+<p style="word-spacing: 1.1px;">Рядок &mdash; це набір символів. Кількість символів у рядку називають його довжиною. Основним типом для роботи з рядками є тип даних string. Порядок оголошення&nbsp;рядкових змінних принципово не відрізняється від порядку оголошення інших типів даних, наприклад var&nbsp;bas, b_1: string;.</p>
+<p style="word-spacing: 1.1px;">Робота із символами кодової таблиці Unicode у середовищі&nbsp;Lazarus реалізована не повною&nbsp;мірою. Приміром, функція визначення кількості національних&nbsp;символів у рядку насправді визначає кількість байтів, які займає рядок. Тобто в процесі&nbsp;визначення кількості символів&nbsp;у рядку результат буде збільшено вдвічі. Тому далі в процесі&nbsp;опрацювання рядків і символів&nbsp;будемо використовувати переважно латинські літери.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-281.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рядкові й символьні константи беруться в одинарні лапки, наприклад 'а', 'Символ' '21'. Значення символьним і рядковим&nbsp;змінним присвоюються за допомогою оператора присвоювання, наприклад a_1:='K; bJI&mdash;'Інформатика'. Довжина символьного&nbsp;рядка може бути обмежена. У цьому випадку під час оголошення змінної у квадратних дужках вказується максимальна&nbsp;кількість символів, які може містити ця змінна, наприклад&nbsp;var str1: string [25]; (змінна str1 може містити до 25 символів).&nbsp;Якщо довжина змінних типу string під час їх оголошення не&nbsp;вказана, максимальна кількість символів може сягати 255.</p>
+<p style="word-spacing: 1.1px;">Однією з основних операцій над рядковими даними є їх об'єднання. Ця операція позначається символом &laquo;+&raquo;&nbsp;(приклад 1).</p>
+<p style="word-spacing: 1.1px;">Рядок фактично є масивом символів, з якого можна отримати будь-який символ, вказавши його номер у квадратних дужках (приклад 2).</p>
+<p style="word-spacing: 1.1px;">Приклад 3. Два учні грають у таку гру. Один учень каже: &laquo;Назви четверту літеру&nbsp;у назві найулюбленішої в усьому світі спортивної гри&raquo;. Другий учень називає відповідну</p>
+<p style="word-spacing: 1.1px;">літеру. У будь-якому випадку повідомляється про правильність відповіді, а також загадане&nbsp;слово &mdash; футбол. На рис. 1 наведено код моделювання цієї гри у консольному режимі.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-282.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Програма моделювання гри учнів</p>
+<p style="word-spacing: 1.1px;">Приклад 4. Розробити програму, за допомогою якої з літер слова facilities створюється слово file. Для цього необхідно зі слова facilities&nbsp;вибрати першу, четверту, п&rsquo;яту і дев&rsquo;яту літери</p>
+<p style="word-spacing: 1.1px;">і виконати над ними операцію об&rsquo;єднання. Код реалізації цього завдання наведено на рис. 2.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програмного коду подано на рис. 3.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-283.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 2. Програмний код створення слова із літер іншого слова</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-284.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Яку назву має тип даних для роботи із символами?</p>
+<p style="word-spacing: 1.1px;">Яку назву має тип даних для роботи з рядками?</p>
+<p style="word-spacing: 1.1px;">Наведіть приклад оголошення рядкових змінних.</p>
+<p style="word-spacing: 1.1px;">Як присвоюються змінним символьні й рядкові константи?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Розробіть програму, за допомогою якої слова Динамо, Шахтар і 2 : 2&nbsp;об'єднуються в одну конструкцію Динамо &mdash; Шахтар 2:2.</p>
+<p style="word-spacing: 1.1px;">Розробіть програму для виведення на екран другої і восьмої літер у слові calculate.</p>
+<p style="word-spacing: 1.1px;">Розробіть програму, за допомогою якої з літер слова vertorization створюється слово var.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><strong>10.2. Функції опрацювання рядків і символів</strong></p>
+<p style="word-spacing: 1.1px;">Поясніть правило запису рядкових і символьних констант. Яку операцію над рядками ви вже знаєте? Які ще операції над&nbsp;рядками вам можуть знадобитися?</p>
+<p style="word-spacing: 1.1px;">Середовище Lazarus має спеціальні функції для роботи з рядками і символами, основні з яких наведено у таблиці.</p>
+<p style="word-spacing: 1.1px;">Таблиця. ОСНОВНІ ФУНКЦІЇ ОПРАЦЮВАННЯ РЯДКІВ І СИМВОЛІВ</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-285.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Нині більшість програм створюється командами. Але тільки один програміст відповідає за її архітектуру, інші &mdash; лише&nbsp;кодери.</p>
+<p style="word-spacing: 1.1px;">Рядкові змінні, константи і вирази можна порівнювати за допомогою операцій =, &lt;, &lt;=, &gt;, &gt;=, &lt;&gt;. У процесі порівняння рядків послідовно здійснюється порівнювання символів&nbsp;зліва направо. Рядки вважаються рівними, якщо вони мають однакову довжину й усі символи в них однакові. Меншим вважається той рядок, у якого менший код першого незбіжного символу. Наприклад, істинними є співвідношення:&nbsp;'масив'&lt;'маска', 'рядками'&lt;'рядок'. Якщо один рядок повністю збігається з початком іншого, то більшим буде довший рядок.&nbsp;Наприклад, істинними є співвідношення: 'стовп'&lt;'стовпець',&nbsp;'багаторядковий'&gt;'багато'.</p>
+<p style="word-spacing: 1.1px;">Нижче розглянемо приклади використання функцій опрацювання даних рядкового і символьного типів.</p>
+<p style="word-spacing: 1.1px;">&bull; Функція length (S).</p>
+<p style="word-spacing: 1.1px;">Ця функція визначає довжину рядка S.</p>
+<p style="word-spacing: 1.1px;">Приклад 1. Два слова вводять в поля об&rsquo;єктів Edit! і Edit2. Властивість Text об&rsquo;єкта Edit! набуває значення amplification, а властивість Text&nbsp;об&rsquo;єкта Edit2 &mdash; значення access. Потрібно визначити, наскільки перше слово довше за друге. Результат вивести у поле об&rsquo;єкта Edit3.</p>
+<p style="word-spacing: 1.1px;">Код реалізації цього завдання зображено на рис. 1.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програмного коду подано на рис. 2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-286.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Програмний код визначення різниці довжин слів</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-287.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Функція concat (S1, S2, ...).</p>
+<p style="word-spacing: 1.1px;">Ця функція об&rsquo;єднує декілька рядків в один.</p>
+<p style="word-spacing: 1.1px;">Приклад 2. Розробити код, за допомогою якого зі слів події, Код, OnCreate, опрацювання створюється речення: Код опрацювання події&nbsp;OnCreate.</p>
+<p style="word-spacing: 1.1px;">Будемо вважати, що кожне слово окремо зберігається в полях об&rsquo;єктів: слово події &mdash; у полі об&rsquo;єкта Label!; слово Код &mdash; у полі</p>
+<p style="word-spacing: 1.1px;">об&rsquo;єкта Label2; слово OnCreate &mdash; у полі об&rsquo;єкта Label3; слово опрацювання &mdash; у полі об&rsquo;єкта Label4. Код створення речення подано на&nbsp;рис. 3.</p>
+<p style="word-spacing: 1.1px;">Результат виконання коду зображено на рис. 4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-288.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Код створення речення з окремих слів</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-289.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Функція copy (S, n, m). Ця функція призначена для копі</p>
+<p style="word-spacing: 1.1px;">ювання m символів із рядка S, починаючи із символу n.</p>
+<p style="word-spacing: 1.1px;">Приклад 3. У поле об&rsquo;єкта Labell уводиться рядок. Потрібно скопіювати з нього m символів, починаючи із символу п, і присвоїти їх&nbsp;властивості Text об&rsquo;єкта Edit!. На рис. 5 наведено програмний код реалізації цього завдання.&nbsp;До початку розробки коду властивості Caption</p>
+<p style="word-spacing: 1.1px;">об&rsquo;єкта Labell присвоюється речення 'application binary interface<sup>1</sup>, у якому виділяються 6 символів, починаючи з позиції 13.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програмного коду зображено на рис. 6.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-290.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 5. Програмний код копіювання символів із рядка</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-291.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Функція delete (S, n, m). За допомогою цієї функції з рядка S вилучається m символів, починаючи з позиції n. Після вилучення результат залишається у рядку S.</p>
+<p style="word-spacing: 1.1px;">Приклад 4. Вилучити слово аІТор з оголошення type TAIign = (alNone, аІТор, alBottom, а I Left). Вміст цього оголошення будемо зберігати у полі об&rsquo;єкта Labell, а результат після</p>
+<p style="word-spacing: 1.1px;">вилучення слова &mdash; у полі об&rsquo;єкта Label2. Код реалізації цього завдання зображено на рис. 7.</p>
+<p style="word-spacing: 1.1px;">На рис. 8 подано результат виконання цього програмного коду.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-292.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 7. Програмний код вилучення слова з рядка</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-293.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Функція insert (S1, S2, n). Ця функція забезпечує встав</p>
+<p style="word-spacing: 1.1px;">лення рядка S1 у рядок S2, починаючи з позиції п.</p>
+<p style="word-spacing: 1.1px;">Приклад 5. У текст Actions speak louder вставити слова than words так, щоб було створено речення: Actions speak lounder than words.</p>
+<p style="word-spacing: 1.1px;">Для розв&rsquo;язування завдання використаємо 6 компонентів TEdit і компонент TButton. До&nbsp;розробки програмного коду надамо властивості Text об&rsquo;єкта Edit! значення Текст до вставлення, властивості Text об&rsquo;єкта Edit2 &mdash; значення&nbsp;Actions speak louder, властивості Text об&rsquo;єкта</p>
+<p style="word-spacing: 1.1px;">Edit3 &mdash; значення Текст, що вставляється, властивості Text об&rsquo;єкта Edit4 &mdash; значення than words, властивості Text об&rsquo;єкта Edit5 &mdash; значення Текст&nbsp;після вставлення. Програмний код реалізації&nbsp;сформульованого завдання подано на рис. 9.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програмного коду зображено на рис. 10.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-294.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 9. Програмний код вставлення слів у речення</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-295.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Функція pos (S1, S2). Ця функція визначає номер позиції, починаючи з якої текст S2 входить до тексту S1.</p>
+<p style="word-spacing: 1.1px;">Приклад 6. Розробити код, за допомогою якого у реченні The Dnipro's plunging shore відшукується номер позиції, починаючи з якої&nbsp;міститься слово plunging.</p>
+<p style="word-spacing: 1.1px;">Для розробки програмного коду використаємо 5 компонентів TLabel і компонент TButton. На початку розробки програмного коду надамо властивості Caption об&rsquo;єкта Labell значення Текст, у якому відшукується інший текст,</p>
+<p style="word-spacing: 1.1px;">і властивості Caption об&rsquo;єкта Label3 &mdash; значення Текст, що відшукується. Властивості Caption об&rsquo;єкта Label2 надамо значення The Dnipro's&nbsp;plunging shore, а властивості Caption об&rsquo;єкта&nbsp;Label4 &mdash; значення plunging. Програмний код&nbsp;реалізації поставленого завдання зображено&nbsp;на рис. 11.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програмного коду подано на рис. 12.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-296.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 11. Програмний код визначення позиції, з якої починається текст</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-297.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Функція chr (x). Ця функія повертає символ, код якого дорівнює х.</p>
+<p style="word-spacing: 1.1px;">Функція ord (c). Ця функція повертає код символу с.</p>
+<p style="word-spacing: 1.1px;">Приклад 7. Розробити програмний код для визначення коду будь-якого латинського символу і визначення символу за відомим його&nbsp;кодом.</p>
+<p style="word-spacing: 1.1px;">Розмістимо на формі 2 компоненти TEdit і компонент TButton. Властивості Text об&rsquo;єкта&nbsp;Editl у програмі присвоїмо значення коду</p>
+<p style="word-spacing: 1.1px;">англійського символу а. Властивості Text компонента Edit2 присвоїмо символ, код якого дорівнює 97. Для об&rsquo;єкта Buttonl встановимо подію &#111;nclick. Програмний код реалізації цього завдання подано на рис. 13.</p>
+<p style="word-spacing: 1.1px;">Результат виконання цього коду зображено на рис. 14.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-298.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 13. Програмний код визначення символу й коду символу</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-299.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Для чого призначена функція chr (х)?</p>
+<p style="word-spacing: 1.1px;">Поясніть призначення аргументів функції copy (S, n, m)?</p>
+<p style="word-spacing: 1.1px;">Яке призначення функції concat (SI, S2,...)?</p>
+<p style="word-spacing: 1.1px;">Які дії виконує функція insert (SI, S2, n)?</p>
+<p style="word-spacing: 1.1px;">Поясніть порядок виконання функції delete (S, n, m).</p>
+<p style="word-spacing: 1.1px;">Наведіть приклад використання функції ord (c).</p>
+<p style="word-spacing: 1.1px;">Наведіть приклад використання функції copy (S, n, m).</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Розробіть код обчислення кількості символів у рядку, не враховуючи символ пробілу. Перевірте роботу програми на&nbsp;прикладі рядка: memory expansion card.</p>
+<p style="word-spacing: 1.1px;">І Розробіть код, за допомогою якого після третього символу рядка вставляються два інші символи. Вставте, наприклад,&nbsp;символи or після третього символу рядка infmation system.</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм і код, за допомогою якого з рядка вилучаються всі слова, у яких є задана&nbsp;літера. Перевірте роботу програми на прикладі&nbsp;вилучення з рядка multiple document interface&nbsp;слів, у яких є літера о.</p>
+<p style="word-spacing: 1.1px;">Розробіть код, за допомогою якого із окремо введених у довільному порядку слів створюється речення: Алгоритм упорядкування рядків.</p>
+<p style="word-spacing: 1.1px;">Назвіть основні функції опрацювання рядків і символів. Як ви вважаєте, чи достатньо цих функцій для&nbsp;всебічного їх опрацювання? Якщо ні, то які ще операції&nbsp;необхідно виконувати над рядками? Наведіть конкретні&nbsp;приклади.</p>
+<p style="word-spacing: 1.1px;">Над рядками можуть виконуватися різноманітні операції. Як правило, для цього застосовуються описані вище функції,&nbsp;а інколи й інші засоби.</p>
+<p style="word-spacing: 1.1px;">До розповсюджених алгоритмів опрацювання символів можна віднести пошук заданого символу в рядку, пошук заданого підрядка, упорядкування елементів рядкової величини та ін. Слід також враховувати, що в реальних алгоритмах&nbsp;опрацювання рядків зазвичай використовується не одна окрема функція, а певна комбінація цих функцій.</p>
+<p style="word-spacing: 1.1px;">&bull; Пошук заданого символу в рядку.</p>
+<p style="word-spacing: 1.1px;">Найпростіше здійснити пошук символу в рядку можна за допомогою функції pos (S1, S2). Якщо після виконання цієї&nbsp;функції її значення дорівнює нулю, це означає, що символ&nbsp;у рядку відсутній. Приклад використання функції pos (S1, S2)&nbsp;для пошуку символу в рядку вже розглядався в попередньому параграфі. Можливий і такий варіант пошуку.</p>
+<p style="word-spacing: 1.1px;">Рядок &mdash; це фактично масив символів. Кожний символ можна розглядати як елемент цього масиву. Це означає, що&nbsp;пошук заданого символу в рядку принципово не відрізняється, наприклад, від пошуку заданого числа в числовому&nbsp;масиві.</p>
+<p style="word-spacing: 1.1px;">Нижче наведено в словесній формі алгоритм пошуку символу в рядку (де n &mdash; довжина рядка).</p>
+<p style="word-spacing: 1.1px;">У світі існує близько 8500 мов програмування, але кількість&nbsp;мов, на яких пишуть програми&nbsp;професійні програмісти, не перевищує 10.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-300.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>10.3. Класичні алгоритми опрацювання рядків</strong></p>
+<p style="word-spacing: 1.1px;">Приклад 1. Прослідкуйте динаміку виконання алгоритму на прикладі пошуку в рядку East or West &mdash; home is best символу w. На рис. 1&nbsp;зображено програмний код пошуку символу&nbsp;в рядку. У властивості Caption об&rsquo;єкта Labell зберігається текст: East or West &mdash; home is best. Властивість Caption об&rsquo;єкта Label2 використовується</p>
+<p style="word-spacing: 1.1px;">для виведення результату. Зверніть увагу на те, що пошук символу в тексті завершується&nbsp;одразу після знайдення потрібного символу&nbsp;(у даному випадку символу w) або після аналізу всіх символів тексту.</p>
+<p style="word-spacing: 1.1px;">На рис. 2 подано результат пошуку символу w у наведеному вище рядку.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-301.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Програмний код пошуку заданого символу в рядку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-302.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Пошук заданого підрядка.</p>
+<p style="word-spacing: 1.1px;">Пошук заданого підрядка в рядку можна виконати різними способами. Найпростіший із них &mdash; використання функції pos (S1, S2), яка фактично для цього і призначена.&nbsp;Результатом виконання цієї функції є номер позиції, починаючи з якої міститься підрядок у рядку. Якщо значення&nbsp;функції дорівнює нулю, то це свідчить про відсутність під-рядка в рядку.</p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм пошуку заданого підрядка.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-303.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 2. На рис. З зображено програмний код пошуку підрядка в рядку. На формі розташовано такі об&rsquo;єкти: Edit!, Edit2, Labell,&nbsp;Label2, Label3 і Buttonl. До розробки програмного коду властивості Text об&rsquo;єкта Edit! надано значення Рядок, у якому відшукується підря-док, властивості Text об&rsquo;єкта Edit2 &mdash; значення&nbsp;Підрядок, що відшукується, властивості Caption</p>
+<p style="word-spacing: 1.1px;">об&rsquo;єкта Labell &mdash; значення Every country has its customs і властивості Caption об&rsquo;єкта Label2 &mdash;&nbsp;значення country has. Нагадаємо, що у випадку&nbsp;відсутності підрядка в рядку функція pos набуває нульового значення.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програмного коду подано на рис. 4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-304.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Програмний код пошуку підрядка в рядку</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-305.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Упорядкування символів у рядку.</p>
+<p style="word-spacing: 1.1px;">Раніше вже зазначалося, що в середовищі Lazarus існують деякі проблеми з використанням функцій опрацювання рядків і символів національних алфавітів. Тому будемо використовувати в основному латинські символи, для кодування&nbsp;яких застосовується перша половина кодової таблиці ASCII&nbsp;(символи з кодом від 0 до 127). Латинські символи (так само&nbsp;як і національні символи) кодуються в алфавітному порядку&nbsp;за зростанням (рис. 5). Це означає, що, наприклад, символ а&nbsp;має менший код, ніж символ b, а символ b &mdash; менший код,&nbsp;ніж символ с. Тому впорядкування символів рядка в алфавітному порядку не викликає труднощів, оскільки воно зводиться до простого порівняння їхніх кодів.</p>
+<p style="word-spacing: 1.1px;">Оскільки рядок фактично є масивом символів, а кожний символ &mdash; двійковим числом, то алгоритм упорядкування&nbsp;символів у рядку принципово не відрізняється від розглянутих вище алгоритмів упорядкування чисел у числовому&nbsp;масиві.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-306.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Приклад 3. На рис. 6 зображено код упорядкування символів у рядку методом вибору. На формі розташовано об&rsquo;єкти: Editl, Edit2, Label!, Label2, Buttonl. Властивості Text&nbsp;об&rsquo;єкта Editl присвоєно значення Рядок до упорядкування символів, властивості Text об&rsquo;єкта&nbsp;Edit2 &mdash; значення Рядок після упорядкування&nbsp;символів, властивості Caption об&rsquo;єкта Label! &mdash;&nbsp;значення copyleft media text. Виведення рядка</p>
+<p style="word-spacing: 1.1px;">з упорядкованими символами здійснюється за допомогою властивості Caption об&rsquo;єкта La be 12.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програмного коду подано на рис. 7. Зверніть увагу на те, що у рядку впорядкованих символів відсутні пробіли. Насправді вони є і розташовані на початку&nbsp;цього рядка, тому що код пробілу має найменше значення серед усіх латинських символів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-307.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 6. Код упорядкування символів у рядку методом вибору</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-308.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Визначте, яке значення набуде змінна n після виконання фрагмента коду:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-309.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Сформулюйте алгоритм пошуку символу в рядку.</p>
+<p style="word-spacing: 1.1px;">У чому полягає сутність алгоритму визначення кількості слів у рядку?</p>
+<p style="word-spacing: 1.1px;">Сформулюйте сутність алгоритму виділення слів у рядку.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм заміни у рядку одного символу іншим заданим символом.</p>
+<p style="word-spacing: 1.1px;">Наприклад, у рядку game замініть літеру g літерою n.</p>
+<p style="word-spacing: 1.1px;">Задано послідовність латинських символів. Упорядкуйте їх в алфавітному порядку. Якщо в послідовності цих символів є символ f, після нього вставте два пробіли.</p>
+<p style="word-spacing: 1.1px;">Рядок містить назви українських міст, записані англійськими літерами. Розробіть алгоритм і програмний код їх упорядкування за алфавітом. Перевірте роботу програми на прикладі назв міст:&nbsp;Poltava, Sumy, Chernivtsi, Uzhhorod, Kyiv, Ternopil.&nbsp;Розробіть код упорядкування в алфавітному&nbsp;порядку назв п'яти найбільших країн світу за&nbsp;кількістю населення.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 19</p>
+<p style="word-spacing: 1.1px;">Тема. Розробка алгоритмів з обробкою символьних та рядкових величин, їх реалізація у вигляді програм.</p>
+<p style="word-spacing: 1.1px;">Завдання: розробити алгоритм і програму для реалізації одного із завдань варіантів 1-3.</p>
+<p style="word-spacing: 1.1px;">Варіант 1. Чотири латинські літери розташовані в алфавітному порядку: d, e, m, o. Отримайте з них слово modem.</p>
+<p style="word-spacing: 1.1px;">Варіант 2. Виправте помилки в рядку: Current localtime inUkraine так, щоб отримати рядок: Current local time in Ukraine.</p>
+<p style="word-spacing: 1.1px;">Варіант 3. Вставте у рядок A little is a dangerous thing слово knowledge після слова little.</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер із встановленою програмою &mdash; середовищем програмування.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Виберіть один із варіантів завдань за вказівкою вчителя або самостійно. (У разі успішного виконання одного варіанта, виконайте іншій на власний розсуд.)</p>
+<p style="word-spacing: 1.1px;">Проаналізуйте умову задачі.</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм і реалізуйте його в середовищі програмування.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму. Проаналізуйте отриманий результат.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: які функції опрацювання рядків і символів доцільно застосовувати у цій роботі.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 20</p>
+<p style="word-spacing: 1.1px;">Тема. Класичні алгоритми для роботи з рядками та їх реалізація у вигляді програм.</p>
+<p style="word-spacing: 1.1px;">Завдання: розробити алгоритм і програму для реалізації одного із завдань варіантів 1-3.</p>
+<p style="word-spacing: 1.1px;">Варіант 1. На скільки символів відрізняється найдовше слово від найкоротшого у заданому рядку, наприклад у такому: We live in Ukraine?</p>
+<p style="word-spacing: 1.1px;">Варіант 2. Упорядкуйте слова рядка в алфавітному порядку. Проаналізуйте порядок виконання алгоритму на прикладі такого рядка: resistor, library, raster, host, double.</p>
+<p style="word-spacing: 1.1px;">Варіант 3. Вилучте з рядка всі слова, які починаються з літери b, наприклад з рядка: macro, bit, sampler, bar, save, basic&nbsp;Обладнання: комп'ютер із встановленою програмою &mdash; середовищем програмування.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Виберіть один із варіантів завдань за вказівкою вчителя або самостійно. (У разі успішного виконання одного варіанта, виконайте іншій на власний розсуд.)</p>
+<p style="word-spacing: 1.1px;">Проаналізуйте умову задачі.</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм і реалізуйте його у середовищі програмування.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму. Проаналізуйте отриманий результат.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: які компоненти доцільно використовувати у цій роботі.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="760-kompyuterniy-slovnik.html">Комп'ютерний словник</a></li><li><a href="757-dopomzhn-algoritmi.html">Допоміжні алгоритми</a></li><li><a href="756-dvovimrn-masivi.html">Двовимірні масиви</a></li><li><a href="754-odnovimrn-masivi.html">Одновимірні масиви</a></li><li><a href="672-odnovimrniy-masiv-danih.html">Одновимірний масив даних</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

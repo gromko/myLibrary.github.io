@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Створення персонального навчального середовища &raquo; mozok.click</title>
+<meta name="description" content="Пригадайте, які послуги надає мережа Інтернет. Як зберегти файл, створений удома, для перегляду та редагування в класі?Завдяки розвитку інформаційних технологій мережа Інтернет і сучасні моб" />
+<meta name="keywords" content="Інтернет, мережа, мобільні, сучасні, інформаційних, пристрої, технологій, стають, доступними, більш, розвитку, звязку, класі, зберегти, надає, послуги, створений, удома, Пригадайте, редагування" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='752-stvorennya-personalnogo-navchalnogo-seredovischa.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Створення персонального навчального середовища</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb752").Button("#infc752"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb752" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc752" class="infcont">
+			<ul>
+				<li><i>Переглядів: 9096</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 10:42</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-752'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="752-stvorennya-personalnogo-navchalnogo-seredovischa.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '752'); return false;">1</a></li>
+		<li><a href="752-stvorennya-personalnogo-navchalnogo-seredovischa.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '752'); return false;">2</a></li>
+		<li><a href="752-stvorennya-personalnogo-navchalnogo-seredovischa.html#" title="Средне" class="r3-unit" onclick="doRate('3', '752'); return false;">3</a></li>
+		<li><a href="752-stvorennya-personalnogo-navchalnogo-seredovischa.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '752'); return false;">4</a></li>
+		<li><a href="752-stvorennya-personalnogo-navchalnogo-seredovischa.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '752'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 10:42</i></a></span>
+	<h3 class="btl"><span id="news-title">Створення персонального навчального середовища</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-752" style="display:inline;"><p><strong>7.1. Поняття персонального навчального середовища.&nbsp;Використання інтернет-середовищ для створення&nbsp;та публікації документів</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте, які послуги надає мережа Інтернет. Як зберегти файл, створений удома, для перегляду та редагування в класі?</p>
+<p style="word-spacing: 1.1px;">Завдяки розвитку інформаційних технологій мережа Інтернет і сучасні мобільні пристрої зв&rsquo;язку стають усе більш доступними.</p>
+<p style="word-spacing: 1.1px;">І нтернет містить сервіси для створення, спільного редагування та обміну документами, створення віртуальних навчальних груп, має засоби для забезпечення аудіовізуальної комунікації, наприклад для проведення інтернет-конференцій і мережевих семінарів (вебінарів).</p>
+<p style="word-spacing: 1.1px;">Спільна навчальна діяльність за допомогою Інтернету здійснюється за двома напрямками: з використанням систем управління навчанням (LMS &mdash; Learning Menegement System)&nbsp;та в персональному навчальному середовищі (PLE &mdash; Personal&nbsp;Learning Environments) (ПНС).</p>
+<p style="word-spacing: 1.1px;">Якщо дистанційні курси предметно-орієнтовані (зорієнтовані на вивчення одного курсу, циклу курсів), то персональне навчальне середовище (ПНС) зорієнтоване на особу, яка навчається.</p>
+<p style="word-spacing: 1.1px;">LMS &mdash; система управління навчальною діяльністю, яка використовується для розробки, управління та поширення навчальних онлайн-матеріалів із&nbsp;забезпеченням спільного доступу. Серед її можливостей:&nbsp;виконання індивідуальних завдань, проектів для організації&nbsp;сумісної роботи в малих групах тощо.</p>
+<p style="word-spacing: 1.1px;">Прикладом LMS є дистанційні курси, розроблені з використанням таких ресурсів, як MOODLE, Black Board, Learning&nbsp;Space тощо.</p>
+<p style="word-spacing: 1.1px;">Одним із перших великих центрів дистанційного навчання стала Хан-Академія&nbsp;(https://buki.com.ua/videos/).&nbsp;Поштовхом до створення стали&nbsp;відеоуроки її автора Салмана&nbsp;Хана, американського викладача й підприємця, які у YouTube&nbsp;переглянули мільйони людей.</p>
+<p style="word-spacing: 1.1px;">Персональне навчальне середовище &mdash; це інформаційне середовище, призначене для індивідуального використання особою, яка самостійно керує своїм навчанням для досягнення визначеної навчальної мети.</p>
+<p style="word-spacing: 1.1px;">Типове ПНС охоплює весь набір ресурсів, за допомогою яких можна забезпечити зміст навчання та зробити його процес більш наочним, створювати зворотний зв&rsquo;язок із колегами та друзями. ПНС має великі можливості для самоосвіти,&nbsp;дозволяє вчитися дистанційно, контролювати свої навчальні&nbsp;ресурси (змінювати їхню структуру, інтегрувати навчальні ресурси з різних установ і джерел тощо).</p>
+<p style="word-spacing: 1.1px;">ПНС складають сукупність апаратних засобів, сервісів, які підтримують роботу над спільним проектом, і програмних засобів для навчання. Вважають, що ПНС є результатом розвитку Веб 2.0 і його впливу на навчальний процес.</p>
+<p style="word-spacing: 1.1px;">Пост &mdash; повідомлення блогу (містить заголовок, дату публікації, зміст). Користувачів, які&nbsp;ведуть блоги, називають бло-герами.</p>
+<p style="word-spacing: 1.1px;">Подкаст (Podcast) &mdash; інноваційний спосіб проведення занять у формі записаних аудіо- та ві-деофрагментів.</p>
+<p style="word-spacing: 1.1px;">Крім Prezi, для створення онлайн-презентацій і відео&nbsp;використовують такі сервіси,&nbsp;як Google Slides (є складовою&nbsp;Google Docs), PowerPoint Online,&nbsp;YouTube Video Editor, SlideShare&nbsp;(YouTube для презентацій &mdash;&nbsp;частина Linkedln), Adobe Voice,&nbsp;Office Sway (онлайн-додаток&nbsp;у складі Microsoft Office).</p>
+<p style="word-spacing: 1.1px;">Професійними платформами є WordPress, Joomla (за хос-тинг блогу необхідно вносити оплату) тощо. Перевагою&nbsp;Wordpress.com є взаємозв'язок із програмами соціальних&nbsp;медіасередовищ: YouTube.com,&nbsp;SlideShare.net, Vimeo.com.</p>
+<p style="word-spacing: 1.1px;">На сайтах Ukr.Media, Ukr.Net, Yandex^ дозволяється безкоштовно створити власний&nbsp;блог, проте його функціональність буде зменшеною.</p>
+<p style="word-spacing: 1.1px;">Пригадайте, які сервіси має Веб 2.0. Які месенджери ви знаєте?</p>
+<p style="word-spacing: 1.1px;">Особливе місце у створенні ПНС займають сервіси Веб 2.0. Такі сервіси Веб 2.0, як блог, вікі, Delicious, YouTube, зручні&nbsp;у використанні та мають властивості (доступність, дружність,&nbsp;безкоштовність тощо), які дозволяють ефективно застосовувати&nbsp;їх у навчальному процесі.</p>
+<p style="word-spacing: 1.1px;">Блог (від англ. blog, web log) &mdash; інтернет-журнал подій, інтернет-щоденник, у який регулярно додаються записи&nbsp;у вигляді тексту, зображень або мультимедіа. Від особистого щоденника відрізняється тим, що до його перегляду мають доступ читачі, які можуть залишати коментарі. У блозі&nbsp;передбачена можливість показувати або приховувати певний&nbsp;матеріал за бажанням власника блогу.</p>
+<p style="word-spacing: 1.1px;">Створення блогу, його ведення (оновлення) відбувається за допомогою спеціальних мережевих сервісів, які називають блог-платформою. Це повністю автоматизований інтерактивний сайт, на якому користувач створює й веде власний сайт.</p>
+<p style="word-spacing: 1.1px;">Створення блогу на блог-платформі є простим і доступним кожному користувачу процесом, який не передбачає знання&nbsp;програмування і вміння створювати сайти. Популярними безкоштовними блог-платформами є Google Blogger (blogger.com),&nbsp;livejournal (livejournal.com) та ін.</p>
+<p style="word-spacing: 1.1px;">Вік: (WikiWiki) &mdash; веб-сайт, структуру і вміст якого користувачі можуть спільно змінювати за допомогою інструментів, які й надаються сайтом. Найбільшим відомим і поширеним&nbsp;вікі-сайтом є Вікіпедія (wikipedia.com).</p>
+<p style="word-spacing: 1.1px;">Prezi.com &mdash; сервіс для створення презентацій, головною особливістю яких є будова &laquo;хмаринками&raquo;. Сервіс дуже зручний у використанні, принципи роботи в його середовищі такі&nbsp;самі, як і в середовищі офісних систем презентацій.</p>
+<p style="word-spacing: 1.1px;">Delicious (від англ. delicious &mdash; чудовий) &mdash; сайт, який безкоштовно надає зареєстрованим користувачам послуги зберігання й публікації закладок на дібрані з певною метою сторінки Всесвітньої мережі. (Про закладки та використання цього сайта для створення закладок ви дізнаєтесь у &sect; 7.3.)</p>
+<p style="word-spacing: 1.1px;">Для створення блогу на блог-платформі Googte Blogger необхідно мати обліковий запис у Googffi. Якщо ви маєте&nbsp;доступ (обліковий запис) до одного із сервісів Google, то&nbsp;можете користуватися можливостями всіх інших сервісів&nbsp;Google. Згадаємо, що обліковий запис &mdash; це об&rsquo;єднана система входу, яка дозволяє отримати доступ до різноманітних&nbsp;послуг сервісу.</p>
+<p style="word-spacing: 1.1px;">Розглянемо процес створення блоку на сервісі Blogger.com.</p>
+<p style="word-spacing: 1.1px;">Для знайомства з можливостями створення блогу виконаємо завдання (с. 123).</p>
+<p style="word-spacing: 1.1px;">Для проектування вигляду блогу користуються пунктом меню Макет, у якому вибирають команду Усі стовпці ^ Додати&nbsp;гаджет (рис. 1).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-188.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Blogger.com надає також можливість створення онлайн-опитування для з&rsquo;ясування ставлення користувачів до різних питань. Вікно для створення форм опитування має інтуїтивно&nbsp;зрозумілий інтерфейс. Розглянемо, які є поля для заповнення&nbsp;у вікні Налаштування опитування (рис. 2).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-189.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Для розміщення блогу на серверах є українські безкоштовні хостинги, які спеціалізуються&nbsp;на блогах (TopUa &mdash; сервери&nbsp;хостингу знаходяться у Німеччині; Ho.ua, InfiumHost &mdash; сервери хостингів знаходяться&nbsp;в Україні).</p>
+<p style="word-spacing: 1.1px;">Гаджет &mdash; додатковий функціональний засіб, який власник може розмістити на своєму&nbsp;блозі (практично, це складова&nbsp;блогу з визначеними функціями) &mdash; сторінки, список посилань, мітки, канал, логотип&nbsp;тощо.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які види освітніх інтернет-середовищ ви знаєте?</p>
+<p style="word-spacing: 1.1px;">Що означає поняття &laquo;персональне освітнє середовище&raquo;?</p>
+<p style="word-spacing: 1.1px;">Які інтернет-сервіси використовують в освіті?</p>
+<p style="word-spacing: 1.1px;">Які особливості має блог?</p>
+<p style="word-spacing: 1.1px;">Як створити форму опитування за допомогою інтернет-сервіса?</p>
+<p style="word-spacing: 1.1px;">З'ясуйте, чим блог відрізняється від сайта.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">І Перейдіть за посиланням http://www.blogger.com.</p>
+<p style="word-spacing: 1.1px;">І Виконайте команду Створити блог. У вікні (рис. 3) вкажіть назву блогу, його майбутню&nbsp;адресу в Інтернеті (бажано, щоб адреса містила тематику блогу).</p>
+<p style="word-spacing: 1.1px;">І Виберіть шаблон блогу. Натисніть кнопку Створити блог.</p>
+<p style="word-spacing: 1.1px;">І Для наповнення сторінки інформацією в колонці меню виберіть Публікації та активізуйте команду Новий допис &mdash; у результаті відкриється вікно редагування, в робочу&nbsp;зону якого можна ввести текст, графічні та&nbsp;відеозображення, створити посилання тощо.</p>
+<p style="word-spacing: 1.1px;">Вікно також містить меню з інструментами для роботи команд редагування символів,&nbsp;абзаців (рис. 4).</p>
+<p style="word-spacing: 1.1px;">Додайте до блогу текст, підберіть і розмістіть графічне зображення. Виберіть команду Переглянути, і, якщо вас задовольняє вигляд блогу,&mdash; команди Зберегти, Закрити.</p>
+<p style="word-spacing: 1.1px;">Перейдіть у меню Налаштування, активізуйте команду Дописи, коментарі та спільний доступ. Налаштуйте доступ до свого блогу.&nbsp;(У налаштуваннях автоматично створюються розділи &laquo;Архів блога&raquo;, &laquo;Постійні читачі&raquo;,&nbsp;&laquo;Про мене&raquo;.) Збережіть блог.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-190.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-191.jpg" alt="" /></p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><strong>7.2. Організація та планування колективної&nbsp;діяльності. Використання офісних веб-програм для створення спільних документів</strong></p>
+<p style="word-spacing: 1.1px;">Для спільного створення й редагування файлів існують он-лайнові сервіси, наприклад Google Docs, Zoho Docs,&nbsp;Microsoft Office 365, Stixy,&nbsp;Dabbleboard. Вони дозволяють&nbsp;створювати текстові документи,&nbsp;електронні таблиці, презентації,&nbsp;обмінюватися ними, можуть використовуватися як онлайнове&nbsp;сховище.</p>
+<p style="word-spacing: 1.1px;">Можливості онлайн-сервісів</p>
+<p style="word-spacing: 1.1px;">для роботи з документами:</p>
+<p style="word-spacing: 1.1px;">&bull; дозволяє працювати з документами відразу кільком&nbsp;особам на рівні доступу до&nbsp;документів</p>
+<p style="word-spacing: 1.1px;">&bull; підтримує велику кількість&nbsp;популярних форматів (наприклад, DOCX, PDF, ODT,&nbsp;RTF, TXT, HTML)</p>
+<p style="word-spacing: 1.1px;">&bull; зберігає історію редагування, що дозволяє повернутися на кілька кроків назад (до&nbsp;більш ранньої версії)</p>
+<p style="word-spacing: 1.1px;">&bull; дозволяє створювати й редагувати документи на Google&nbsp;iPhone, IPad і Android</p>
+<p style="word-spacing: 1.1px;">&bull; надає можливість працювати&nbsp;в режимі офлайн (без Інтер-нету); файли доступні в автономному режимі, після під'єд-нання до мережі автоматично оновлюються на сервері</p>
+<p style="word-spacing: 1.1px;">Чи доводилося вам доопрацьовувати в класі документ, створений удома? Чи брали ви участь у колективній роботі&nbsp;зі створення документів у програмах, які входять до офісних&nbsp;пакетів? Опишіть особливості колективної роботи.</p>
+<p style="word-spacing: 1.1px;">Ви вже знайомі з сервісами Інтернету, в середовищі яких можна створити документ для перегляду іншими особами&nbsp;з можливістю залишити в ньому коментарі. Такий документ&nbsp;створюється власником, це може бути одна особа, а може&nbsp;бути й кілька осіб.</p>
+<p style="word-spacing: 1.1px;">Колективною діяльністю є діяльність групи з кількох осіб, спрямована на отримання результату. Якщо відбувається колективна діяльність зі створення та опрацювання документів, то такі документи називають спільними.</p>
+<p style="word-spacing: 1.1px;">Оскільки файли зберігаються на спеціальних серверах, доступ до цих файлів надається користувачам зі спеціальними правами доступу (можна або лише передивлятись документи,&nbsp;або ще й редагувати їх, залишати коментарі, спілкуватись&nbsp;безпосередньо в документі).</p>
+<p style="word-spacing: 1.1px;">Доступ до ресурсів сервера та спільне використання програмного забезпечення є важливим аспектом колективної роботи, адже на комп&rsquo;ютерах може бути встановлено різні&nbsp;версії програм. Це може створити проблеми під час спільного&nbsp;опрацювання файлів.</p>
+<p style="word-spacing: 1.1px;">Розглянемо можливості сервіса Google для колективної роботи з документами різного типу.</p>
+<p style="word-spacing: 1.1px;">G oogle Документи &mdash; безкоштовний онлайн-офіс, який надає послуги створення й опрацювання текстових документів, таблиць (аналогів електронних таблиць) та&nbsp;презентацій, а також інтернет-сервіс хмарного зберігання файлів із функціями файлообміну.</p>
+<p style="word-spacing: 1.1px;">Щоб увійти на веб-сторінку за адресою https://docs.google.com, необхідно ввести логін і пароль вашого облікового запису&nbsp;в Google. Якщо облікового запису Google немає, то Google пропонує зареєструватися, перейшовши за посиланням Створити&nbsp;обліковий запис, після чого у браузері відкривається вікно&nbsp;Google Документ з елементами, наведеними на рис. 1.</p>
+<p style="word-spacing: 1.1px;">Зазвичай робоча зона містить документи, з якими користувач вже працював у сервісі Google. Якщо ж користувач вперше відкрив Google Документ, робоча зона буде порожньою.</p>
+<p style="word-spacing: 1.1px;">Щоб створити новий документ, потрібно скористатися кнопкою створення нового документа (червоною кнопкою зі знаком + у правому нижньому куті робочої зони).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-192.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Роботу з новим документом або редагування вже існуючого документа також можна розпочати за допомогою команд додатку Google-документів: Файл ^ Створити ^ створити новий&nbsp;файл або Файл ^ Відкрити ^ Імпортувати існуючий файл. Після&nbsp;цього слід вибрати команду Завантажити.</p>
+<p style="word-spacing: 1.1px;">Сервіс Google Документ призначено для створення й опрацювання текстових документів, таблиць (аналог електронних таблиць) і презентацій. Щоб визначити тип документа, слід&nbsp;скористатися кнопкою головного меню з одноіменними командами. Головне меню також містить команди налаштування&nbsp;мови і режиму оновлення документа після його опрацювання&nbsp;в автономному режимі. Але для цього необхідно працювати&nbsp;у браузері Google Chrome.</p>
+<p style="word-spacing: 1.1px;">На рис. 2 наведено вікна завантаження режиму роботи з документами, таблицями або презентаціями відповідно. Всі&nbsp;додатки містять рядок меню з командами опрацювання документа вибраного типу.</p>
+<p style="word-spacing: 1.1px;">Сервісом передбачено як створення нового документа, так і завантаження існуючого &mdash;&nbsp;сервіс працює з такими типами&nbsp;форматів файлів, як DOC (DOCХ),&nbsp;XLS (XLSW, ODT, ODS, RTF, CSV,&nbsp;PPT. Це веб-орієнтоване програмне забезпечення, тобто&nbsp;воно є програмою, яка працює&nbsp;в рамках веб-браузера без інсталяції на комп'ютер користувача. Такі програми називаються веб-програмами.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-193.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Створений документ містить один аркуш. Для додавання нового аркуша вибирають &laquo;+&raquo; на нижній панелі.</p>
+<p style="word-spacing: 1.1px;">Після створення нового документа (будемо називати документом і текстовий файл, і таблицю, і презентацію) Google запропонує встановити спільний доступ до файла, що опрацьовується. У правій частині рядка меню з&rsquo;являється команда встановлення режиму доступу. При переході до цієї команди&nbsp;з&rsquo;являється вікно Надати доступ іншим користувачам (рис. 3, а).&nbsp;У ньому визначається адреса посилання на документ (рис. 3, б)&nbsp;та налаштовуються права облікових записів користувачів для&nbsp;спільної роботи (рис. 4): перегляд, редагування тощо.</p>
+<p style="word-spacing: 1.1px;">З верніть увагу на те, що членам колективу, який працює над створенням документа, варто надати право редагування, а решті користувачів, які знатимуть адресу розміщення документа,&mdash; право перегляду.</p>
+<p style="word-spacing: 1.1px;">Для публікації готових робіт в Інтернеті користуються командою Файл ^ Опублікувати в Інтернеті. Решта команд меню вам знайомі, оскільки такі самі команди містять офісні програми.</p>
+<p style="word-spacing: 1.1px;">Сервіс Google Документи також дозволяє створювати форми. Google-форми призначені для створення форм опитування, які надсилають передплатникам розсилки або вбудовують у сторінки сайта. Сервісом передбачено створення статистики&nbsp;по відповідях у зручній формі.</p>
+<p style="word-spacing: 1.1px;">Розглянемо порядок дій для створення форми за допомогою Google-сервісу.</p>
+<p style="word-spacing: 1.1px;">Приступаючи до роботи, слід вибрати команду Таблиця, а потім команду Вставити ^ Форма &mdash; з&rsquo;являється вікно створення форми (рис. 5). Якщо в адресному полі браузера набрати docs.&nbsp;google.com/forms, то відбудеться звернення одразу до сторінки&nbsp;створення форми. Далі потрібно ввести назву форми в рядок&nbsp;заголовка і почати роботу з питаннями та відповідями до них.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-194.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-195.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Праворуч від бланка форми міститься меню для вибору вигляду питання: текстове, у вигляді графічного або відео-зображення. Питання можуть бути розподілені за розділами&nbsp;(остання команда меню); для додавання нового питання призначена кнопка із знаком &laquo;+&raquo;.</p>
+<p style="word-spacing: 1.1px;">Після введення питання відкривають список. Для кожного питання вибирають тип відповідей, який визначає тип питання: множинний вибір, текст, текст абзацу, прапорці, шкала,&nbsp;сітка, дата, час (рис. 6).</p>
+<p style="word-spacing: 1.1px;">Команди, що містяться у правому нижньому куті вікна, надають можливості копіювання, вилучення та опрацювання&nbsp;питань.</p>
+<p style="word-spacing: 1.1px;">За потреби питанню можна встановити статус обов&rsquo;язкового &mdash; після створення форми воно буде позначено червоною зірочкою. Якщо користувач не вводить відповідь до такого&nbsp;питання, заповнена форма не надсилається. Також можна перемішувати варіанти, якщо у формі створюються тести для&nbsp;широкого кола осіб, які одночасно дають відповіді на питання.</p>
+<p style="word-spacing: 1.1px;">Створивши форму, її зберігають як таблицю або одразу розсилають користувачам: після запуску команди Надіслати&nbsp;з&rsquo;являється вікно (рис. 7), у поля якого вводять дані.</p>
+<p style="word-spacing: 1.1px;">Меню роботи з таблицями містить пункт Форми, в якому розміщені команди редагування поточної форми, надсилання&nbsp;або розміщення на сайті, перегляду відповідей.</p>
+<p style="word-spacing: 1.1px;">Статистику відповідей, у тому числі у вигляді діаграми, знаходять у формі, а відповіді респондентів &mdash; в автоматично&nbsp;створеній таблиці Google, яку можна зберігати на комп&rsquo;ютері&nbsp;як таблицю Excel.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-196.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Поясніть поняття спільного документа та сутність колективної роботи з ним.</p>
+<p style="word-spacing: 1.1px;">Назвіть програми, які зручно використати для колективної роботи.</p>
+<p style="word-spacing: 1.1px;">Які можливості має сервіс Google Документи для організації колективної роботи?</p>
+<p style="word-spacing: 1.1px;">Файли яких типів можна створювати і розміщувати в Google-документи?</p>
+<p style="word-spacing: 1.1px;">Як створити форму опитування за допомогою сервіса Google Документи?</p>
+<p style="word-spacing: 1.1px;">З'ясуйте, чим відрізняється форма блогу від Google-форми.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Перейдіть за посиланням https://docs.google.com.</p>
+<p style="word-spacing: 1.1px;">Активізуйте кнопку Створити (має вигляд папки в меню налаштування вікна перегляду документів).</p>
+<p style="word-spacing: 1.1px;">У вікні Створити в рядку меню виберіть команду Завантажити.</p>
+<p style="word-spacing: 1.1px;">Скористайтеся командою Виберіть файл з комп'ютера, якщо ви працюєте з вікном</p>
+<p style="word-spacing: 1.1px;">у повноекранному режимі &mdash; відкриється звичайне вікно відкриття файлів.</p>
+<p style="word-spacing: 1.1px;">Виберіть необхідний для завантаження файл. Він завантажиться і відкриється для&nbsp;перегляду та редагування у вікні документів.</p>
+<p style="word-spacing: 1.1px;">Якщо не плануєте працювати із змістом файла, закрийте його. Файл буде закачано&nbsp;у сховище Google.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>7.3. Створення і використання спільних електронних закладок</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте призначення команди Закладка (панель Вставлення ^ група Посилання) у текстовому процесорі&nbsp;Microsoft Word.</p>
+<p style="word-spacing: 1.1px;">Раніше учням під час підготовки, наприклад до іспиту чи написання твору, доводилося закладати потрібні сторінки&nbsp;книжок. Тому доводилося тримати на столі купу посібників.</p>
+<p style="word-spacing: 1.1px;">Закладки, створені в електронному вигляді (див. рисунок), відіграють таку саму роль.</p>
+<p style="word-spacing: 1.1px;">Персональне навчальне середовище призначене для навчання та розвитку особи, тож у ньому доцільно мати закладки на джерела з тематики середовища.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-197.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Закладкою (інколи називають вибране) є посилання на необхідне джерело, виконане як запис, який складається з адреси сайта, його назви, додаткових параметрів. Додатковими параметрами є короткий опис та&nbsp;мітки (ключові слова).</p>
+<p style="word-spacing: 1.1px;">Закладки можна створювати в браузері для збереження посилань на часто відвідувані сайти чи веб-сторінки. Всі створені закладки розташовано у відповідному рядку браузера.</p>
+<p style="word-spacing: 1.1px;">Для створення та використання закладок користувач має виконати мінімум операцій. Сервіси, які використовуються для ПНС, для колективної роботи з документами мають послуги&nbsp;створення та опрацювання (оновлення, вилучення) закладок.</p>
+<p style="word-spacing: 1.1px;">Інколи виникає потреба створити посилання не на весь документ (він може бути досить об&rsquo;ємним), а на його частину, або перейти з одного місця документа в інше без прокручування.</p>
+<p style="word-spacing: 1.1px;">Розглянемо можливості сервіса Google щодо створення та використання закладок у текстовому документі (для таблиць&nbsp;і презентацій функція створення закладок відсутня).</p>
+<p style="word-spacing: 1.1px;">Приклад.</p>
+<p style="word-spacing: 1.1px;">1) Створення закладки</p>
+<p style="word-spacing: 1.1px;">Створюємо або відкриваємо документ у середовищі Google (попередньо перейшовши за посиланням https://docs.google.com).</p>
+<p style="word-spacing: 1.1px;">Встановлюємо вказівник миші в місце для закладки або виділяємо фрагмент тексту,&nbsp;який і буде закладкою.</p>
+<p style="word-spacing: 1.1px;">Звертаємося до пункту меню Вставити та активізуємо команду Закладки &mdash; з&rsquo;явиться&nbsp;вікно встановлення закладок.</p>
+<p style="word-spacing: 1.1px;">Вибираємо в цьому вікні команду Посилання та клацаємо кнопку ОК.</p>
+<p style="word-spacing: 1.1px;">Як результат, документ міститиме прапорець на полі.</p>
+<p style="word-spacing: 1.1px;">Закладка має сенс, якщо користувач може переглянути вміст, позначений закладкою.&nbsp;Для створення посилання на закладку здійснюємо перехід встановленням посилання на&nbsp;неї з потрібного місця &mdash; у документі виділіть текст, який і буде посиланням. Із пункту&nbsp;меню Вставити вибираємо команду Посилання,&nbsp;а у вікні Закладки, що відкриється,&mdash; буде показано всі встановлені закладки (і не тільки&nbsp;з поточного документа). Далі вибираємо потрібну закладку і команду Застосувати.</p>
+<p style="word-spacing: 1.1px;">2) Використання закладок Цей крок є найпростішим, адже посилання&nbsp;на закладку в документі виокремлено іншим&nbsp;кольором. Якщо наведемо на посилання вказівник миші й клацнемо, відбудеться перехід&nbsp;до зазначеного місця тексту.</p>
+<p style="word-spacing: 1.1px;">Якщо під час колективної роботи певний документ є спільним, то текст, позначений&nbsp;закладками, буде доступний іншим користувачам. Для закладок до окремих частин, наприклад власного блогу, можна привласнити&nbsp;мітки.</p>
+<p style="word-spacing: 1.1px;">Міткою є окремі ключові слова або фрази, які визначають закладки, за якими здійснюється перехід по тексту документа.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-198.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Як ми вже говорили, у звичайній книжці закладкою є паперова смужка. Вона вкладається в певне місце книжки і полегшує пошук потрібної сторінки. Мітка в електронному документі обов&rsquo;язково має назву, по суті є посиланням на місце, для якого створювалася. Сайт може містити кілька сторінок,&nbsp;тематично пов&rsquo;язаних між собою, які доцільно позначити мітками з однаковою назвою. У разі звернення до мітки з певною&nbsp;назвою будуть відкриті всі публікації сайта з такою міткою.</p>
+<p style="word-spacing: 1.1px;">Наприклад, блог містить публікації, серед міток яких є однакові. Під час переглядання публікації під її назвою будуть зазначені мітки. Після активування однієї з них на сторінці&nbsp;сайта з&rsquo;являться всі публікації з такою міткою.</p>
+<p style="word-spacing: 1.1px;">Для ознайомлення з алгоритмом створення й перегляду міток виконайте пропоноване завдання.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Відкрийте створений вами блог. Створіть порожню публікацію: виконайте команду&nbsp;Новий допис, уведіть назву публікації&nbsp;Публікація 1.</p>
+<p style="word-spacing: 1.1px;">У вікні Налаштування публікації виберіть команду Мітки (див. рис. 1 до завдання).</p>
+<p style="word-spacing: 1.1px;">У полі для введення міток уведіть ключове слово, яке відбиває тему публікації, наприклад олімпіада, бази даних. На підтвердження операції створення міток&nbsp;виберіть команду Готово.</p>
+<p style="word-spacing: 1.1px;">Створіть так само ще дві порожні публікації з назвами Публікація 2 і Публікація 3 з мітками: інформаційні технології, олімпіада та інформаційні технології, презентації відповідно. Поверніться у блог&nbsp;на сторінку Публікації.</p>
+<p style="word-spacing: 1.1px;">Скористайтеся списком Усі мітки, щоб побачити, скільки публікацій відповідають темі тієї чи іншої мітки (див. рис. 2 до завдання).&nbsp;Перейдіть за міткою Олімпіади &mdash; на сторінці Публікації буде показано тільки ті публікації, які й позначено міткою Олімпіади.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Поясніть поняття закладки.</p>
+<p style="word-spacing: 1.1px;">Поясніть поняття мітки.</p>
+<p style="word-spacing: 1.1px;">Назвіть сервіс Інтернету, створений для формування системи закладок.</p>
+<p style="word-spacing: 1.1px;">Поясніть, для яких об'єктів можна створити закладку в Google-документі.</p>
+<p style="word-spacing: 1.1px;">Як створити закладку за допомогою сервіса Google?</p>
+<p style="word-spacing: 1.1px;">З'ясуйте, як створюють бібліотеку закладок.</p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>7.4. Канали новин</strong></p>
+<p style="word-spacing: 1.1px;">Файл формату XML (англ. extensible Markup Language &mdash; це розширена&nbsp;мова розмітки) &mdash; звичайний&nbsp;текстовий файл, у якому за допомогою спеціальних кодів, які&nbsp;називаються тегами (іноді маркерами), визначається структура документа та його зміст.&nbsp;XML-файл можна редагувати&nbsp;будь-яким тестовим процесором&nbsp;і опрацьовувати стандартними&nbsp;XML-аналізаторами. Прикладами&nbsp;формату XML є формати XSLT,&nbsp;XAML, XUL, MathML, GraphML,&nbsp;XHTML, SVG, XML Schema.</p>
+<p style="word-spacing: 1.1px;">Напевно, є сайти, які ви періодично відвідуєте, читаєте статті, слідкуєте за новинами. Як ви дізнаєтесь про&nbsp;оновлення змісту сайтів?</p>
+<p style="word-spacing: 1.1px;">Основою кожного сайта є його контент &mdash; статті, новини, коментарі, який він періодично оновлюється. Особам, які цікавляться тематикою певних сайтів, необхідно слідкувати за&nbsp;оновленням інформації на них. Щоб уникнути періодичного&nbsp;відвідування сайта з метою відслідковування новин, є сенс&nbsp;підписатись на канал новин.</p>
+<p style="word-spacing: 1.1px;">Каналом новин є формат подання оновлених даних сайта (XML-формат даних) з визначеної тематики, за&nbsp;допомогою якого відслідковують оновлення інформації на сайті.</p>
+<p style="word-spacing: 1.1px;">Канал новин складається із посилань на оновлену на певному сайті інформацію. Він містить заголовок, анонс на публікацію чи саму публікацію (залежить від послуг, які надаються спеціальними програмами), дані автора каналу або сайта.</p>
+<p style="word-spacing: 1.1px;">Щоб автоматично отримувати, наприклад, оновлені новини улюбленого сайта, здійснюють підписання на його новини. Для цього потрібно знайти на цьому сайті посилання на RSS-канал, яке зазвичай подається у вигляді піктограми &mdash;&nbsp;це загальноприйняте візуальне позначення RSS (рис. 1).</p>
+<p style="word-spacing: 1.1px;">RSS &mdash; це множина XML-форматів, яку використовують для публікації та постачання інформації, що часто оновлюється.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-199.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Документ у стандарті RSS називають RSS-каналом новин (RSS-каналом) або RSS-стрічкою (стрічкою, веб-стрічкою).&nbsp;Багато сучасних браузерів, поштових клієнтів і програм&nbsp;миттєвого обміну повідомленнями вміють працювати з RSS-каналами. Процес підписання на RSS-канал передбачає також отримання повідомлень про оновлені дані на поштову&nbsp;скриньку.</p>
+<p style="word-spacing: 1.1px;">Канали новин опрацьовуються спеціальними програмами &mdash; RSS-агрегаторами. Агрегаторами можуть бути веб-сервіси &mdash; онлайн-агрегатори і програми на локальному комп&rsquo;ютері &mdash; локальні агрегатори.</p>
+<p style="word-spacing: 1.1px;">Локальні агрегатори вбудовані у браузери, поштовий сервіс або можуть бути окремим додатком. Вони мають відслідковувати оновлення на сайтах. Якщо інформація на сайті оновилась, агрегатор має подати анонс або повідомлення (залежно&nbsp;від налаштувань).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-200.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Контент-агрегатором є програма або сервіс, що виконує завдання накопичення інформації з різних сайтів, форумів,&nbsp;блогів в одне джерело.</p>
+<p style="word-spacing: 1.1px;">Онлайн-агрегатори нагадують поштові сервіси: в одному із сервісів необхідно створити обліковий запис, і всі канали новин будуть надсилатися на поштову адресу облікового&nbsp;запису користувача. Отже, оновлення онлайнового матеріалу, який цікавить користувача, відбуватиметься незалежно&nbsp;від того, працює користувач за комп&rsquo;ютером, під&rsquo;єднаним&nbsp;до мережі, чи ні. Перевірити свою поштову скриньку можна в будь-який час на будь-якому пристрої, під&rsquo;єднаному&nbsp;до мережі.</p>
+<p style="word-spacing: 1.1px;">RSS-канал має універсальні характеристики для об&rsquo;єднання матеріалу. В його основі може бути будь-який мережевий&nbsp;ресурс: сайт, блог, форум, прайс-лист мережевого магазину&nbsp;тощо. Кількість каналів на одному сайті не обмежується.</p>
+<p style="word-spacing: 1.1px;">Переваги використання RSS-каналів:</p>
+<p style="word-spacing: 1.1px;">&bull; швидке ознайомлення зі змінами змісту сайта без відвідування самого сайта;</p>
+<p style="word-spacing: 1.1px;">&bull; достатність одного RSS-агрегатора для підписки на безліч каналів різних сайтів;</p>
+<p style="word-spacing: 1.1px;">&bull; миттєве розповсюдження інформації для підписувачів на&nbsp;RSS-канал без анонсів електронною поштою або в інший&nbsp;спосіб.</p>
+<p style="word-spacing: 1.1px;">Є дуже популярні веб-агрегатори, що являють собою сайти для збирання та відображення RSS-каналів. Додати RSS-канал новин можна в середовищі каталогу каналів за посиланням http://rssnews.org.ua/.</p>
+<p style="word-spacing: 1.1px;">Сервіс має такі можливості:</p>
+<p style="word-spacing: 1.1px;">&bull; компоновка найбільш популярних каналів новин (за популярністю, за певними рубриками тощо);</p>
+<p style="word-spacing: 1.1px;">&bull; додавання власного каналу в середовище сервісу;</p>
+<p style="word-spacing: 1.1px;">&bull; трансляція каналів &mdash; відображення каналів на своєму&nbsp;сайті, що дозволяє одразу відслідковувати оновлення.</p>
+<p style="word-spacing: 1.1px;">RSS-канал можна налагодити в інтернет-браузері.</p>
+<p style="word-spacing: 1.1px;">Щоб підписатися на канал новин певного сайта, необхідно знайти посилання на RSS-канал на цьому сайті &mdash; зазвичай воно має вигляд невеликої піктограми. Посилання на RSS-канал також може виглядати як звичайне текстове посилання (рис. 2). При переході за посиланням необхідно відслідковувати команди сайта, оскільки їх налаштування для&nbsp;окремих сайтів різні.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-201.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Поясніть поняття каналу новин.</p>
+<p style="word-spacing: 1.1px;">Поясніть призначення каналу новин.</p>
+<p style="word-spacing: 1.1px;">Як ще називають RSS-канали?</p>
+<p style="word-spacing: 1.1px;">Поясніть різницю між локальним та онлай-новим агрегаторами.</p>
+<p style="word-spacing: 1.1px;">Які можливості має RSS-агрегатор?</p>
+<p style="word-spacing: 1.1px;">Назвіть можливості каталогу каналів новин. Наведіть приклад.</p>
+<p style="word-spacing: 1.1px;"><strong>7.5. Синхронізація даних</strong></p>
+<p style="word-spacing: 1.1px;">Назвіть засоби збереження даних. Поміркуйте над ситуацією: виконучи домашнє завдання, ви вдома створили файл&nbsp;і зберегли на електронному носії, а в школі його відредагували.&nbsp;Чи різним буде вміст файлів, збережених на електронному&nbsp;носії та в домашньому комп'ютері?</p>
+<p style="word-spacing: 1.1px;">Багатьом користувачам сьогодні доводиться працювати на двох і навіть більше комп&rsquo;ютерах, що спонукає до додаткової&nbsp;роботи з файлами. Для відстеження змін у файлах і папках&nbsp;необхідно копіювати їх з одного комп&rsquo;ютера на інший. Щоб&nbsp;уникнути такої роботи, для основних папок створюють завдання синхронізації і запускають в автоматичному режимі,&nbsp;наприклад коли вмикають комп&rsquo;ютер. Синхронізація можлива для комп&rsquo;ютерів, з&rsquo;єднаних мережею (локальною чи Ін-тернетом).</p>
+<p style="word-spacing: 1.1px;">Синхронізація даних &mdash; процес перевірки та реалізації ідентичності вибраних даних на різних пристроях.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-202.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Синхронізація процесів є режимом взаємодії кількох процесів, при якому певні стадії різних процесів відбуваються&nbsp;у визначеному порядку або&nbsp;одночасно.</p>
+<p style="word-spacing: 1.1px;">Наприклад, створений текстовий документ міститься у файлах на кількох комп&rsquo;ютерах, під&rsquo;єднаних до сервісу.&nbsp;Якщо на одному з комп&rsquo;ютерів у документ увести зміни, то&nbsp;на інших комп&rsquo;ютерах відбудеться оновлення змісту відповідних файлів. Також синхронізація допоможе зберегти ваші&nbsp;дані, якщо файли вашого комп&rsquo;ютера пошкодить вірус.</p>
+<p style="word-spacing: 1.1px;">Під&rsquo;єднання комп&rsquo;ютерів або інших пристроїв (планшетів, смартфонів тощо) до сервісу синхронізації означає використання на пристроях відповідного інтернет-сервісу, який передбачає встановлення на пристроях спеціальних програм.&nbsp;Програма створить папку, в якій і будуть зберігатись файли&nbsp;для синхронізації. Файли також будуть завантажені у сховище інтернет-сервісу, до папки з файлами буде надано доступ із будь-якого пристрою за умови під&rsquo;єднання пристрою&nbsp;до Інтернету.</p>
+<p style="word-spacing: 1.1px;">Завдання синхронізації:</p>
+<p style="word-spacing: 1.1px;">&bull; перевірка ідентичності даних на кількох комп&rsquo;ютерах&nbsp;(робочому і домашньому, ноутбуку і стаціонарному тощо);</p>
+<p style="word-spacing: 1.1px;">&bull; перевірка ідентичності вмісту робочих папок на локальному комп&rsquo;ютері з оновленням сайта;</p>
+<p style="word-spacing: 1.1px;">&bull; створення резервних копій даних &mdash; копіювання даних,&nbsp;які не змінювались, не відбувається;</p>
+<p style="word-spacing: 1.1px;">&bull; порівняння даних (програми синхронізації в процесі перевірки даних виявлять і повідомлять про файли, в яких&nbsp;не збігаються дані);</p>
+<p style="word-spacing: 1.1px;">&bull; обмін файлами з іншими особами за наданим посиланням.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-203.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Як уже зазначалося, для здійснення синхронізації на своєму пристрої небхідно встановити спеціальні програми.</p>
+<p style="word-spacing: 1.1px;">Всі додатки Google мають функцію автоматичної синхронізації для облікового запису користувача.</p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм установлення синхронізації.</p>
+<p style="word-spacing: 1.1px;">Запустіть сервіс Google. Перейдіть у вікно вашого сховища на Google.</p>
+<p style="word-spacing: 1.1px;">Виберіть з меню налаштувань команду синхронізації.</p>
+<p style="word-spacing: 1.1px;">Налаштуйте синхронізацію та підтвердьте вибір &mdash; дані будуть синхронізовані.</p>
+<p style="word-spacing: 1.1px;">Для ознайомленя з порядком синхронізації даних на Google Диску виконайте завдання та розгляньте алгоритм скасування синхронізації даних з облікового запису.</p>
+<p style="word-spacing: 1.1px;">Алгоритм скасування синхронізації даних</p>
+<p style="word-spacing: 1.1px;">У новій вкладці в браузері Chrome відкрийте вікно Налаштування.</p>
+<p style="word-spacing: 1.1px;">Перейдіть за командою Інформаційна панель Google.</p>
+<p style="word-spacing: 1.1px;">У вікні, що відкрилося, натисніть Скинути синхронізацію.</p>
+<p style="word-spacing: 1.1px;">Після цього синхронізовані дані будуть видалені з облікового запису, тобто на локальному комп&rsquo;ютері вони залишаться, але перейти до них з інших пристроїв, під&rsquo;єднаних до Ін-тернету, буде неможливо.</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Поясніть поняття синхронізації даних.</p>
+<p style="word-spacing: 1.1px;">Навіщо використовують синхронізацію даних?</p>
+<p style="word-spacing: 1.1px;">Поясніть, які завдання вирішуються синхронізацією даних.</p>
+<p style="word-spacing: 1.1px;">Яку локалізацію мають дані, що синхронізують?</p>
+<p style="word-spacing: 1.1px;">Як здійснити синхронізацію даних?</p>
+<p style="word-spacing: 1.1px;">Як скасувати для даних їхню синхронізацію в обліковому записі?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Увійдіть у сервіс Google Документи. У меню сервіса зверніться до команди запуска власного диску &mdash; в робочій зоні будуть відображені ваші файли та папки, збережені в хмарному середовищі (або увійдіть у ваш диск&nbsp;на Google сервісі: https://drive.google.com).</p>
+<p style="word-spacing: 1.1px;">Розкрийте меню браузера &mdash; після адресного рядка розташована кнопка меню команд.</p>
+<p style="word-spacing: 1.1px;">Виберіть команду Налаштування &mdash; відкриється вікно налаштувань.</p>
+<p style="word-spacing: 1.1px;">Виберіть команду Параметри синхронізації &mdash; відкриється вікно налаштування параметрів синхронізації.</p>
+<p style="word-spacing: 1.1px;">Встановіть параметри синхронізації: в разі потреби синхронізування всіх об'єктів, виберіть команду Синхронізувати всі&nbsp;об'єкти;</p>
+<p style="word-spacing: 1.1px;">для синхронізування тільки вибраних об'єктів активізуйте відповідні команди (клацанням по маркеру команди встановіть прапорець або перемістіть перемикач&nbsp;у положення ВКЛЮЧЕНО для різних версій&nbsp;Windows).</p>
+<p style="word-spacing: 1.1px;">У розділі Параметри шифрування виберіть спосіб захисту даних.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><strong>7.6. Етапи створення веб-сторінок. Конструювання&nbsp;сайтів. Поняття мови розмітки гіпертексту</strong></p>
+<p style="word-spacing: 1.1px;">Який документ називають сайтом? Яка послуга Інтернету дозволяє переглядати сайти? Чи однакове значення мають&nbsp;поняття веб-сторінки та сайта? Поясніть поняття&nbsp;хостингу.</p>
+<p style="word-spacing: 1.1px;">Створення сайта складається з кількох етапів (рис. 1) і починається з аналізу його тематики, аудиторії для перегляду й використання та планування його змісту та структури. Необхідно визначити, які розділи повинен містити сайт, на яких&nbsp;сторінках має бути той чи інший розділ, якою буде навігація&nbsp;по сайту. Визначають також кількість сторінок сайта та навігацію між ними.</p>
+<p style="word-spacing: 1.1px;">Сайти поділяють на сайти з лінійною та ієрархічною структурою &mdash; на рис. 2 сторінки визначаються блоками, а навігація &mdash; стрілками між ними. Також є сайти з довільною структурою, на яких навігація здійснюється в довільному порядку. Cайтом з довільною структурою є, наприклад, Вікіпедія.</p>
+<p style="word-spacing: 1.1px;">Дизайн сайта має відповідати його тематиці, складу аудиторії, на яку розраховано матеріал. Після визначення структури сайта та оформлення його сторінок необхідно визначитися з розміщенням матеріалу та приступити до конструювання сайтів, яке здійснюють за допомогою мови розмітки гіпертексту HTML або з використанням програм автоматизованого створення сайтів.</p>
+<p style="word-spacing: 1.1px;">Мова розмітки гіпертексту HTML &mdash; набір вказівок (тегів), які браузер інтерпретує для відтворення сторінок сайта у своєму вікні.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-204.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад сайта з лінійною структурою &mdash; сайт навчання&nbsp;певного курсу; приклад сайта&nbsp;з ієрархічною структурою &mdash;&nbsp;сайт із каталогами джерел, впорядкованих за тематикою.</p>
+<p style="word-spacing: 1.1px;">Для написання тегів можна скористатися текстовим редактором, але зберегти файл із розширення .htm, щоб він відкривався браузером. Для створення інтерактивності сайта використовують такі мови програмування, як Java Script, PHP.</p>
+<p style="word-spacing: 1.1px;">Створення сайтів із прямим указанням тегів HTML, кодів Java Script, PHP називають конструюванням сайтів вручну.</p>
+<p style="word-spacing: 1.1px;">Існують спеціальні середовища для створення сайтів, які надають можливість створювати сайти звичайним користувачам і роблять їхню роботу зручною. Адже автоматизоване&nbsp;створення сайтів не вимагає досконалих знань тегів (приклади програм Microsoft FrontPage, DreamWeaver (Macromedia)).</p>
+<p style="word-spacing: 1.1px;">Створення сайтів за допомогою спеціальних програм називають автоматизованим конструюванням сайтів.</p>
+<p style="word-spacing: 1.1px;">Програми для створення сайтів містять готові шаблони, складові яких розташовують на сторінках сайта, їх наповнюють потрібною інформацією. Такі програми встановлюють на&nbsp;локальному комп&rsquo;ютері &mdash; для конструювання сайта Інтер-нет не потрібен. Існують інтернет-сервіси, які дозволяють</p>
+<p style="word-spacing: 1.1px;">організувати онлайн-роботу зі створення сайта, вони організовують створення сайта в середовищі &mdash; системі управління веб-контентом, наданому платними або безкоштовними сервісними службами.</p>
+<p style="word-spacing: 1.1px;">Онлайн-сервіси надають послуги створення сайта і супроводження їх у подальшому.</p>
+<p style="word-spacing: 1.1px;">HTML (HyperText Markup Language) мова розмітки гіпертексту. Для перегляду тегів будь-якої&nbsp;завантаженої в браузер сторінки виходять у меню браузера&nbsp;і використовують команду Інші&nbsp;інструменти &mdash; Інструменти&nbsp;розробника. У результаті зона&nbsp;показу сайта буде розділена&nbsp;на дві: в одній сайт, а в другій&nbsp;теги створення цього сайта.</p>
+<p style="word-spacing: 1.1px;">Перевагами онлайн-сервісів є:</p>
+<p style="word-spacing: 1.1px;">&bull; конструювання сайта не потребує досконалого знання&nbsp;мови тегів і додаткових мов програмування;</p>
+<p style="word-spacing: 1.1px;">&bull; наявність готових шаблонів;</p>
+<p style="word-spacing: 1.1px;">&bull; оперативна публікація сторінок;</p>
+<p style="word-spacing: 1.1px;">&bull; можливість редагування в режимі онлайн;</p>
+<p style="word-spacing: 1.1px;">&bull; зручний інтерфейс.</p>
+<p style="word-spacing: 1.1px;">Ознайомимося з алгоритмом створення сайта за допомогою інтернет-сервісів.</p>
+<p style="word-spacing: 1.1px;">Увійдіть у свій обліковий запис на сервісі або зареєструйтесь, якщо обліковий запис відсутній.</p>
+<p style="word-spacing: 1.1px;">Виберіть ім'я сайта та визначте шаблон його оформлення.</p>
+<p style="word-spacing: 1.1px;">Створіть сторінки сайта та систему навігації.</p>
+<p style="word-spacing: 1.1px;">Заповніть сторінки сайта інформаційними матеріалами.</p>
+<p style="word-spacing: 1.1px;">Процес створення сайта в режимі онлайн розглянемо на прикладі сервіса Google.</p>
+<p style="word-spacing: 1.1px;">Приклад. Переходимо за посиланням https:// sites.google.com/; вводимо логін і пароль вашого&nbsp;облікового запису, після чого відкриється вікно&nbsp;створення сайтів. Далі після запуску команди&nbsp;Створити вибираємо режим створення сайтів,&nbsp;наприклад Створити в новій версії (а після вибору команди Створити в класичній версії буде запропоновано вибрати шаблон сайта).</p>
+<p style="word-spacing: 1.1px;">Відкриється вікно, яке містить зону складових сайта, які необхідно заповнити інформацією, та рядок меню з командами: Відмови та повернення операцій, Попередній перегляд, Додати редакторів (зазначені команди подані піктограмами), Опублікувати, Додати, Сторінки, Теми.</p>
+<p style="word-spacing: 1.1px;">Назви команд вказують на їх функціональне призначення. Командою Додати редакторів можна&nbsp;встановити колективний режим створення сайта. Команда Додати призначена для додавання&nbsp;на сторінки сайта тексту, графічного зображення, матеріалу, розміщеного за посиланням із зазначенням адреси URL або в хмарному сховищі.</p>
+<p style="word-spacing: 1.1px;">На початку роботи над сайтом йому необхідно дати назву. Для цього у вікні створення сайтів є спеціальне поле. Одночасно в автоматичному режимі в рядку адреси сайта буде&nbsp;запропонована URL-адреса головної сторінки&nbsp;сайта: https://sites.google.com/site/... (тут ... &mdash;&nbsp;назва сайта). Якщо ви надали назву сайта кирилицею, то зробіть зміни в адресі сайта &mdash;&nbsp;вона складається з літер латиниці та цифр.</p>
+<p style="word-spacing: 1.1px;">Заповнення необхідних полів створення сайта підтвердьте командою Створити. У вікні браузера&nbsp;відкриється домашня сторінка сайта з назвою,&nbsp;панеллю навігації сайта із заголовком &laquo;Домашня сторінка&raquo;. Панель навігації складається&nbsp;з двох пунктів (Домашня сторінка та Карта сайта,&nbsp;яка містить посилання на Домашню сторінку).</p>
+<p style="word-spacing: 1.1px;">Для створення нових сторінок сайта та наповнення їх інформацією користуються командами рядка меню. У процесі створення сайта варто використовувати команду перегляду, щоб знати, як буде виглядати сторінка.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Назвіть етапи створення сайтів.</p>
+<p style="word-spacing: 1.1px;">За допомогою якої мови створюють сайти?</p>
+<p style="word-spacing: 1.1px;">Як переглянути HTML-теги, за допомогою яких створено сайт?</p>
+<p style="word-spacing: 1.1px;">Назвіть переваги використання онлайн-сер-вісів для створення сайтів.</p>
+<p style="word-spacing: 1.1px;">Порівняйте поняття веб-сторінки та сайта, поясніть їх різницю.</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність поняття хостингу. Чи потрібен хостинг для сайтів, створених у середовищі будь-якого онлайн-сервіса?</p>
+<p style="word-spacing: 1.1px;">Практична робота № 14</p>
+<p style="word-spacing: 1.1px;">Тема. Офісні веб-програми для створення спільних документів. Опитування з використанням онлайн-форм.</p>
+<p style="word-spacing: 1.1px;">Завдання: створити форму для проведення онлайн-опитування на тему &laquo;Історія розвитку обчислювальної техніки&raquo;.</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер, під'єднаний до мережі Інтернет, обліковий запис у сервісі Google, файл із фотографією Глушкова В. М.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Перейдіть за посиланням docs.google.com/forms &mdash; відкриється вікно&nbsp;форм сервісу. (Якщо ви створюєте форму&nbsp;не вперше, в робочій зоні будуть створені&nbsp;раніше форми.)</p>
+<p style="word-spacing: 1.1px;">Запустіть команду створення нової форми (кнопка із знаком &laquo;+&raquo;).</p>
+<p style="word-spacing: 1.1px;">У вікні, що відкрилось, у поле Форма без назви введіть назву форми &laquo;Історія розвитку обчислювальної техніки&raquo;.</p>
+<p style="word-spacing: 1.1px;">У поле Запитання без назви введіть прізвище, клас учня.</p>
+<p style="word-spacing: 1.1px;">Виберіть тип відповіді &mdash; Абзац.</p>
+<p style="word-spacing: 1.1px;">У поле Запитання без назви введіть питання Який рік вважають початком механічного періоду розвитку обчислювальної техніки.</p>
+<p style="word-spacing: 1.1px;">Виберіть тип відповіді &mdash; З короткими відповідями.</p>
+<p style="word-spacing: 1.1px;">Додайте питання &mdash; використайте знак + у меню праворуч від бланка форми.</p>
+<p style="word-spacing: 1.1px;">Виберіть прізвище автора аналітичної машини. Виберіть тип питання: З варіантами відповіді та вставте чотири варіанти відповідей (один із них &mdash; Беббідж).</p>
+<p style="word-spacing: 1.1px;">Уведіть нове питання Хто зображений на фото і вставте з файла фотографію</p>
+<p style="word-spacing: 1.1px;">Глушкова В. М. Виберіть тип відповіді Прапорці та вставте 6 варіантів відповідей &mdash; обов&rsquo;язково мають бути Глуш-ков В. М.; Піонер комп&rsquo;ютерної техніки; Засновник інформатики в Україні.&nbsp;Додайте ще три питання з різними варіантами відповідей на власний розсуд.&nbsp;Додайте питання Дата опитування, виберіть тип відповіді Дата.</p>
+<p style="word-spacing: 1.1px;">Перейдіть до налаштування форми &mdash; використайте іконку налаштування в рядку меню і виберіть команду Презентація; поставте прапорець біля команди Перемішати запитання. Виберіть команду Зберегти.</p>
+<p style="word-spacing: 1.1px;">Поверніться до вікна форм за допомогою стрілочки в лівому верхньому куті вікна.&nbsp;Примітка. У процесі створення форми&nbsp;в нижньому правому куті вікна є знак &laquo;?&raquo;&nbsp;для переходу до довідкової системи. Скористайтесь довідкою, щоб дізнатись, як&nbsp;вставляти відеофрагмент у форму.</p>
+<p style="word-spacing: 1.1px;">Запустіть форму декілька разів, перевірте її роботу. Покажіть роботу вчителеві.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновки: чому питання подаються щоразу в різному порядку; у яких випадках недоцільно змінювати порядок&nbsp;показу запитань, наведіть приклади.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 15</p>
+<p style="word-spacing: 1.1px;">Тема. Конструювання сайтів з використанням онлайн-систем.</p>
+<p style="word-spacing: 1.1px;">Завдання: створити сайт на задану тему (наприклад, про життя вашого класу).</p>
+<p style="word-spacing: 1.1px;">Обладнання: комп'ютер, під'єднаний до мережі Інтернет, обліковий запис у сервісі Google, файли з фотографіями зі шкільного життя.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи з комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Перейдіть за посиланням https://sites.google.com &mdash; відкриється вікно&nbsp;перегляду та створення сайтів у сервісі&nbsp;Google.</p>
+<p style="word-spacing: 1.1px;">Увійдіть у свій обліковий запис на сервісі Google &mdash; відкривається вікно сайтів на Google.</p>
+<p style="word-spacing: 1.1px;">Перейдіть до режиму створення сайта &mdash; натисніть кнопку Створити й у списку виберіть команду У класичній версії.</p>
+<p style="word-spacing: 1.1px;">У вікні, що відкрилось:</p>
+<p style="word-spacing: 1.1px;">1) виберіть шаблон сайта на власний розсуд;</p>
+<p style="word-spacing: 1.1px;">2) уведіть назву сайта (Життя нашого класу);</p>
+<p style="word-spacing: 1.1px;">3) уведіть адресу сайта;</p>
+<p style="word-spacing: 1.1px;">4) виберіть тему оформлення сайта.</p>
+<p style="word-spacing: 1.1px;">Підтвердьте, що ви не робот, надайте відповіді у вікні, що відкриється; виберіть команду Створити.</p>
+<p style="word-spacing: 1.1px;">Виберіть команду Створити сайт (одна сторінка сайта створена &mdash; зазвичай вона називається головною або домашньою).</p>
+<p style="word-spacing: 1.1px;">За допомогою головного меню перейдіть до свого сайта. Виконайте команду Сторінки для створення нової сторінки сайта.</p>
+<p style="word-spacing: 1.1px;">Уведіть назву сторінки у відповідне поле (наприклад, Клас і події у школі), підтвердите введення за допомогою команди&nbsp;Готово.</p>
+<p style="word-spacing: 1.1px;">Перейдіть до перегляду сторінки &mdash; вона порожня, містить тільки назву та панель&nbsp;навігації. Перевірте, як працює навігація.&nbsp;Закрийте режим перегляду. У правій частині показано перелік сторінок.</p>
+<p style="word-spacing: 1.1px;">Перейдіть до домашньої сторінки і за допомогою команд меню Додати, заповніть сторінку описом матеріалів, які буде розміщено на сторінках сайта.</p>
+<p style="word-spacing: 1.1px;">Заповніть сторінку, присвячену подіям у вашому закладі (Клас і події у школі),&nbsp;в яких брав участь ваш клас. Виберіть&nbsp;шаблон сторінки на власний розсуд. Розмістіть фотографії на сторінці за тематикою подій.</p>
+<p style="word-spacing: 1.1px;">Створіть сторінку, присвячену подорожам вашого класу або окремих осіб. Додайте&nbsp;фотографії з подорожей, якщо вони існують, а також знайдіть в Інтернеті матеріал про місця подорожей та додайте на&nbsp;сторінку.</p>
+<p style="word-spacing: 1.1px;">Повідомте учителю URL-адресу вашого сайта.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновки: чи була б у вас можливість за час, витрачений на створення сайта, створити сайт з використанням мови розмітки HTML. Відповідь обґрунтуйте.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="747-servsi-veb-20.html">Сервіси Веб 2.0</a></li><li><a href="660-stvorennya-saytv-veb-stornki-sayti.html">Створення сайтів. Веб-сторінки і сайти</a></li><li><a href="659-napovnennya-personalnogo-navchalnogo-seredovischa.html">Наповнення персонального навчального середовища</a></li><li><a href="658-personalne-navchalne-seredovische-ta-distancyna-robota-z-danimi.html">Персональне навчальне середовище та дистанційна робота з даними</a></li><li><a href="646-suchasn-servsi-nternetu.html">Сучасні сервіси Інтернету</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

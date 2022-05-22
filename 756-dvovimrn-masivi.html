@@ -1,0 +1,774 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Двовимірні масиви &raquo; mozok.click</title>
+<meta name="description" content="Наведіть означення одновимірного масиву. Як оголошуються одновимірні масиви? Які існують класичні алгоритми опрацювання значень елементів одновимірного масиву? Чим, на вашу думку, відрізняют" />
+<meta name="keywords" content="масиву, масиви, одновимірного, думку, елементів, значень, двовимірні, одновимірних, опрацювання, відрізняються, класичні, оголошуються, означення, одновимірні, існують, Наведіть, алгоритми" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="engine/opensearch.php" title="mozok.click" />
+<script type="text/javascript" src="engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="engine/classes/js/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="engine/classes/masha/masha.js"></script>
+<link rel="shortcut icon" href="templates/Gemini/images/favicon.png" />
+<link media="screen" href="templates/Gemini/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="templates/Gemini/style/engine.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templates/Gemini/js/libs.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2773044261387404",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'Gemini';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+
+var allow_dle_delete_news   = false;
+
+var dle_search_delay   = false;
+var dle_search_value   = '';
+$(function(){
+	FastSearch();
+});
+
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});
+//-->
+</script>
+<div class="wwide topline">&nbsp;</div>
+<div class="wrapper">
+	<div id="header" class="container">
+		<h1><a id="headerlogo" class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h1>
+		<div class="rcol">
+			<div class="headlinks">
+				<ul class="reset">
+					<li><a href="index.php.html"><i>Головна</i></a></li>
+					<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="shadlr"><div class="shadlr">
+		<div class="container">
+﻿<noindex>
+<div class="darkbg"><div id="menubar">
+<div class="lcol">
+<ul class="reset">
+<li><a href="index.php.html"><i>На головну</i></a></li>
+<li><a href="index.php%3Fdo=feedback.html"><i>Контакти</i></a></li>
+</ul>
+</div>
+<form method="post" action='756-dvovimrn-masivi.html'>
+<input type="hidden" name="do" value="search" />
+<input type="hidden" name="subaction" value="search" />
+<ul class="searchbar reset">
+<li class="lfield"><input id="story" name="story" value="Пошук..." onblur="if(this.value=='') this.value='Пошук...';" onfocus="if(this.value=='Пошук...') this.value='';" type="text" /></li>
+<li class="lbtn"><input title="Пошук" alt="Пошук" type="image" src="templates/Gemini/images/spacer.gif" /></li>
+</ul>
+</form>
+</div></div>
+</noindex>
+			<div class="body">
+				<div class="vsep">
+					<div id="midside" class="lcol">
+						<div class="speedbar lines"><span id='dle-speedbar'><a href="index.html">mozok.click</a> &raquo; <a href="informatika/index.html">Інформатика</a> &raquo; Двовимірні масиви</span></div>
+						
+						
+						<div id='dle-content'><div class="base fullstory">
+	<script type="text/javascript">//<![CDATA[
+	$(function(){ $("#infb756").Button("#infc756"); });
+	//]]></script>
+	<div class="infbtn">
+		<span id="infb756" class="thide" title="Інформація про новину">Інформація про новину</span>
+		<div id="infc756" class="infcont">
+			<ul>
+				<li><i>Переглядів: 21433</i></li>
+				<li><i>Автор: <a onclick="ShowProfile('admin', 'https://mozok.click/user/admin/', '0'); return false;" href="https://mozok.click/user/admin/">admin</a></i></li>
+				<li><i>Дата: 18-09-2017, 10:51</i></li>
+			</ul>
+			<div class="ratebox"><div class="rate">
+<div id='ratig-layer-756'><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:0px;">0</li>
+		<li><a href="756-dvovimrn-masivi.html#" title="Плохо" class="r1-unit" onclick="doRate('1', '756'); return false;">1</a></li>
+		<li><a href="756-dvovimrn-masivi.html#" title="Приемлемо" class="r2-unit" onclick="doRate('2', '756'); return false;">2</a></li>
+		<li><a href="756-dvovimrn-masivi.html#" title="Средне" class="r3-unit" onclick="doRate('3', '756'); return false;">3</a></li>
+		<li><a href="756-dvovimrn-masivi.html#" title="Хорошо" class="r4-unit" onclick="doRate('4', '756'); return false;">4</a></li>
+		<li><a href="756-dvovimrn-masivi.html#" title="Отлично" class="r5-unit" onclick="doRate('5', '756'); return false;">5</a></li>
+		</ul>
+</div></div></div></div>
+		</div>
+	</div>
+	<span class="argbox"><a href="2017/09/18/index.html" ><i>18-09-2017, 10:51</i></a></span>
+	<h3 class="btl"><span id="news-title">Двовимірні масиви</span></h3>
+	<p class="argcat"><i>Категорія: <a href="informatika/index.html">Інформатика</a></i></p>
+	<div class="maincont">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+<div id="news-id-756" style="display:inline;"><p><strong>11.1. Загальні відомості про двовимірні масиви</strong></p>
+<p style="word-spacing: 1.1px;">Наведіть означення одновимірного масиву. Як оголошуються одновимірні масиви? Які існують класичні алгоритми&nbsp;опрацювання значень елементів одновимірного масиву?&nbsp;Чим, на вашу думку, відрізняються двовимірні масиви від&nbsp;одновимірних?</p>
+<p style="word-spacing: 1.1px;">Ви вже знаєте, що масив &mdash; це структурований тип даних, елементи якого мають один тип.</p>
+<p style="word-spacing: 1.1px;">Двовимірний масив являє собою таблицю, що складається з фіксованої кількості рядків і стовпців.</p>
+<p style="word-spacing: 1.1px;">Елемент двовимірного масиву має два індекси: номер рядка і номер стовпця (приклади 1, 2).</p>
+<p style="word-spacing: 1.1px;">Приклад 1. Двовимірний масив цілих чисел із трьома рядками і чотирма стовпцями може&nbsp;мати такий вигляд:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-310.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 2. Кількість пального, що доставляють з нафтобази на станцію заправки у робочі дні, можна подати у вигляді двовимірного масиву (таблиці):</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-311.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У кожній клітинці вказана кількість пального (в тоннах), що постачається на станцію. Для опрацювання такого масиву&nbsp;потрібно дні тижня ототожнювати з номерами стовпців, а назви станцій &mdash; із номерами рядків.</p>
+<p style="word-spacing: 1.1px;">Загальну структуру двовимірного масиву можна подати в такому вигляді:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-312.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">У квадратних дужках &mdash; індекси елемента масиву. Місце елемента у двовимірному масиві визначається двома індексами. Перший індекс &mdash; це номер рядка масиву, другий &mdash; номер стовпця.</p>
+<p style="word-spacing: 1.1px;">Способи оголошення двовимірного масиву принципово не відрізняються від оголошення одновимірного масиву. Різниця в тому, що в оголошенні двовимірного масиву через дві&nbsp;крапки вказується діапазон індексів рядків, а потім, відокремлюючи комою, &mdash; діапазон індексів стовпців (приклад 3).</p>
+<p style="word-spacing: 1.1px;">Приклад 3.</p>
+<p style="word-spacing: 1.1px;">var mas: array [1..4,1..5] of char; &mdash; оголошено двовимірний масив символів mas, що має&nbsp;чотири рядки з номерами&nbsp;від 1 до 4 і п&rsquo;ять стовпців&nbsp;із номерами від 1 до 5.</p>
+<p style="word-spacing: 1.1px;">Приклад 4.</p>
+<p style="word-spacing: 1.1px;">type nov=array [1 ..8,1 ..10] of real; var mas: nov; &mdash; оголошено числовий масив дійсного типу&nbsp;з іменем mas, у якому 8 рядків і 10 стовпців.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-313.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Брендан Айк, автор мови програмування j&#097;vascript, що є стандартом для веб-програмування. Брав участь устворенні американської компанії Mozilla, яка&nbsp;розробляє браузер Firefox.</p>
+<p style="word-spacing: 1.1px;">У розділі змінних структура оголошення двовимірного масиву така:</p>
+<p style="word-spacing: 1.1px;">var &lt;ім'я змінної&gt;: array [діапазон рядків, діапазон стовпців] of &lt;тип елементів&gt;;</p>
+<p style="word-spacing: 1.1px;">Оголосити двовимірний масив можна і так: оголосити новий тип даних, а потім описати змінну нового типу (приклад 4):</p>
+<p style="word-spacing: 1.1px;">type &lt;ім'я типу&gt;=аггау [діапазон рядків, діапазон стовпців] of &lt;тип елементів&gt;;</p>
+<p style="word-spacing: 1.1px;">var &lt;ім'я змінної&gt;: &lt;ім'я типу&gt;;</p>
+<p style="word-spacing: 1.1px;">Для оголошення масиву можна використовувати константи, визначені у розділі оголошення констант. Наприклад:</p>
+<p style="word-spacing: 1.1px;">const n=7: m=5:</p>
+<p style="word-spacing: 1.1px;">var mas: array [1..n,1..m] of integer;</p>
+<p style="word-spacing: 1.1px;">Для звернення до елемента двовимірного масиву слід вказати ім&rsquo;я масиву і значення індексів у квадратних дужках. Наприклад, для звернення до елемента, розташованого&nbsp;у третьому рядку четвертого стовпця слід вказати: mas[3,4].</p>
+<p style="word-spacing: 1.1px;">Будь-якому символу можна присвоїти певне значення, наприклад: mas[2, 4]:=5 &mdash; елементу двовимірного масиву,&nbsp;розташованому у другому рядку четвертого стовпця, присвоєно символ 5.</p>
+<p style="word-spacing: 1.1px;">Двовимірні масиви можна вводити як у консольному, так і у візуальному режимах. Як правило, для введення значень&nbsp;елементів двовимірного масиву використовують вкладені цикли. Внутрішній цикл використовується для введення значень елементів різних стовпців одного рядка, а зовнішній &mdash;&nbsp;для переходу до нового рядка. Для введення значень елементів масиву в консольному режимі використовується оператор&nbsp;readln (read), а для виведення &mdash; оператор writeln (write).</p>
+<p style="word-spacing: 1.1px;">Розглянемо два приклади введення і виведення двовимірних масивів у консольних додатках.</p>
+<p style="word-spacing: 1.1px;">Приклад 5. На рис. 1 зображено консольну програму формування двовимірного масиву&nbsp;цілими випадковими числами і виведення їх&nbsp;за допомогою оператора write по рядках.</p>
+<p style="word-spacing: 1.1px;">Після виконання програми на екран буде виведено імена елементів масиву та їхні значення (рис. 2).</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-314.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Консольна програма формування елементів масиву випадковими числами</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-315.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 6. На рис. З зображено консольну програму створення двовимірного масиву шляхом уведення значення кожного елемента&nbsp;з клавіатури і виведення цього масиву. Якщо</p>
+<p style="word-spacing: 1.1px;">після запуску програми послідовно вводити з клавіатури числа від 1 до 12, то отримаємо&nbsp;результат, поданий на рис. 4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-316.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Консольна програма введення масиву з клавіатури і його виведення</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-317.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Наведіть означення двовимірного масиву.</p>
+<p style="word-spacing: 1.1px;">Наведіть загальну структуру двовимірного масиву.</p>
+<p style="word-spacing: 1.1px;">Як здійснюється звернення до окремих елементів двовимірного масиву?</p>
+<p style="word-spacing: 1.1px;">Як оголошується двовимірний масив у розділі змінних?</p>
+<p style="word-spacing: 1.1px;">Як оголошується двовимірний масив у розділі типів?</p>
+<p style="word-spacing: 1.1px;">Наведіть приклад оголошення двовимірного масиву з використанням іменованих констант.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Визначте помилки в операторах:</p>
+<p style="word-spacing: 1.1px;">а) type mas=array [1..4,5] of real; var mas;</p>
+<p style="word-spacing: 1.1px;">б) var a; array [3,4] of integer;</p>
+<p style="word-spacing: 1.1px;">Розробіть консольну програму введення і виведення двовимірного масиву розмірами</p>
+<p style="word-spacing: 1.1px;">3 х 4, елементами якого є назви геометричних фігур (трикутник, прямокутник та ін.).</p>
+<p style="word-spacing: 1.1px;">Знайдіть в Інтернеті 8 найбільших озер України. Збережіть назви цих озер у двовимірному масиві, розмір якого визначте самостійно. Розробіть консольну програму реалізації цього завдання.</p></div><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/>
+<div style="text-align:center;"></div><div>
+ <p style="word-spacing: 1.1px;"><strong>11.2. Введення і виведення значень елементів&nbsp;двовимірних масивів у візуальному режимі</strong></p>
+<p style="word-spacing: 1.1px;">Яку структуру мають двовимірні масиви і як вони оголошуються? Поясніть порядок звернення до окремих елементів двовимірного масиву. За допомогою яких операторів здійснюється введення і виведення значень елементів масиву&nbsp;в консольному режимі?</p>
+<p style="word-spacing: 1.1px;">Середовище Lazarus має різноманітні компоненти для організації введення/виведення даних у візуальному режимі. Раніше вже були описані й наведені приклади використання&nbsp;компонентів TEdit, TLabel, TMemo, TListBox і функцій InputBox(),&nbsp;ShowMessage(). Ці засоби застосовувалися у процесі введення-виведення одновимірних масивів. Досить зручним для організації введення/виведення значень двовимірних масивів є компонент TStringGrid (таблиця рядків). Він визначений у модулі&nbsp;Grids, а його піктограма розташована на вкладці Additional палітри компонентів. Компонент переноситься на форму і стає&nbsp;об&rsquo;єктом так само, як і інші компоненти. Основні властивості&nbsp;об&rsquo;єкта наведено в табл. 1.</p>
+<p style="word-spacing: 1.1px;">Таблиця 1. ОСНОВНІ ВЛАСТИВОСТІ ОБ'ЄКТА StringGrid</p>
+<table style="word-spacing: 1.1px; max-width: 80%;" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p>Назва властивості</p>
+</td>
+<td>
+<p>Призначення властивості</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Name</p>
+</td>
+<td>
+<p>Визначає ім'я об'єкта</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ColCount</p>
+</td>
+<td>
+<p>Визначає кількість стовпців</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RowCount</p>
+</td>
+<td>
+<p>Визначає кількість рядків</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Gells [col, row]</p>
+</td>
+<td>
+<p>Вказує клітинку, розташовану на перехресті стовпця номер col і рядка номер row (стовпці нумеруються від 0 до ColCount - 1, а рядки &mdash; від 0 до RowCount - 1)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>FixedCols</p>
+</td>
+<td>
+<p>Визначає кількість лівих стовпців, які виділяються кольором і залишаються на місці у процесі прокручування горизонтальної смуги</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>FixedRows</p>
+</td>
+<td>
+<p>Визначає кількість верхніх рядків, які виділяються іншим кольором і залишаються на місці у процесі прокручування вертикальної смуги</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ScrollBars</p>
+</td>
+<td>
+<p>Визначає наявність смуг прокручування</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Options.goEditing</p>
+</td>
+<td>
+<p>Значення властивості true дозволяє редагування масиву, а значення false забороняє його редагування</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>DefaultColWidth</p>
+</td>
+<td>
+<p>Визначає ширину стовпців</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>DefaultRowHeight</p>
+</td>
+<td>
+<p>Визначає висоту рядків</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Height</p>
+</td>
+<td>
+<p>Визначає висоту об'єкта</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Width</p>
+</td>
+<td>
+<p>Визначає ширину об'єкта</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Font</p>
+</td>
+<td>
+<p>Визначає шрифт, яким відображається вміст клітинок</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="word-spacing: 1.1px;">Приклад 1. Розглянемо приклад уведення цифрових значень у клітинки об&rsquo;єкта StringGridl за допомогою клавіатури, створення&nbsp;двовимірного масиву із цих елементів і виведення значень масиву у зворотному порядку&nbsp;в клітинки об&rsquo;єкта StringGrid2.</p>
+<p style="word-spacing: 1.1px;">Для цього розмістимо на формі два компоненти TStringGrid і компонент TButton. Надамо такі значення властивостям об&rsquo;єктів StringGridl&nbsp;і StringGrid2: ColCount &mdash; 4; RowCount &mdash; 3;&nbsp;FixedCols &mdash; 0; FixedRows &mdash; 0; Options &mdash; goEdi-ting &mdash; true.</p>
+<p style="word-spacing: 1.1px;">Значення інших властивостей залишимо за замовчуванням. Після цього двічі клацнемо поле об&rsquo;єкта StringGridl, розташованого на&nbsp;формі. Відкриється вікно Редактор StringGrid,&nbsp;зображене на рис. 1. У клітинки цього редактора введемо в 3 рядки і 4 стовпці цілочислові значення так, як показано на рис. 1.</p>
+<p style="word-spacing: 1.1px;">Після завершення введення цифрових значень клацнемо кнопку Гаразд. Форма набуде вигляду, як на рис. 2.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-318.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">На рис. З зображено код, за допомогою якого послідовно зчитуються значення клітинок об&rsquo;єкта StringGridl, зі значень яких формується&nbsp;двовимірний масив mas розмірністю 3x4. Потім&nbsp;значення цього масиву виводяться у зворотному порядку в клітинки об&rsquo;єкта StringGrid2.</p>
+<p style="word-spacing: 1.1px;">Звернемо увагу на те, що у властивості Cells спочатку вказується номер стовпця, потім &mdash;&nbsp;номер рядка, а в масиві &mdash; навпаки.</p>
+<p style="word-spacing: 1.1px;">Після успішної компіляції та виконання програми отримаємо результат, поданий на&nbsp;рис. 4.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-319.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Код введення і виведення масиву за допомогою об'єктів StringGridl і StringGrid2</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-320.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 2. Створимо двовимірний масив розмірністю п х т, елементами якого є цілі&nbsp;випадкові числа з діапазону від 0 до 20 і виведемо елементи цього масиву в клітинки&nbsp;об&rsquo;єкта StringGridl. Додамо на форму компонент&nbsp;TButton, для якого визначимо подію &#111;nclick.</p>
+<p style="word-spacing: 1.1px;">Значення основних властивостей об&rsquo;єкта StringGridl обираємо такі самі, як у прикладі 1.&nbsp;Програму реалізації цього завдання наведено&nbsp;на рис. 5.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми зображено на рис. 6.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-321.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 5. Код створення і виведення масиву в клітинки об'єкта StringGridl</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-322.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 3. Перший член спадної геометричної прогресії дорівнює а, знаменник q. Обчислити 12 перших членів цієї прогресії&nbsp;і створити з їх значень масив розмірністю&nbsp;3x4. Елементи масиву розмістити в порядку&nbsp;зменшення їхніх значень. Вивести елементи&nbsp;масиву за допомогою компонента TStringGrid.</p>
+<p style="word-spacing: 1.1px;">Надамо основним властивостям об&rsquo;єкта StringGridl такі значення, як і в попередніх&nbsp;прикладах. Програму реалізації завдання зображено на рис. 7.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми наведено на рис. 8.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-323.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 7. Код створення масиву з членів спадної геометричної прогресії</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-324.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Lazarus забезпечує роботу не тільки зі статичними, але й із динамічними масивами. Для динамічних масивів значення їх розмірів під час оголошення масиву не задаються,&nbsp;вказується лише тип елементів масиву. Якщо розмір масиву&nbsp;невідомий, то не можна відвести для нього і пам&rsquo;ять. Для&nbsp;відведення пам&rsquo;яті й надання програмі можливості використовувати такі масиви виконується їх ініціалізація за допомогою функції SetLength (ім&rsquo;я масиву, кількість елементів&nbsp;у масиві).</p>
+<p style="word-spacing: 1.1px;">Інші способи введення значень елементів двовимірних масивів будуть розглянуті в наступних розділах.</p>
+<p style="word-spacing: 1.1px;">Якщо для динамічного масиву не вистачає пам'яті, виникає помилка EOutOfMemory. Якщо після використання динамічного масиву потреба&nbsp;в ньому відпадає, його можна&nbsp;знищити за допомогою процедури Finalize (ім'я масиву).</p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Які компоненти забезпечують введення/ви-ведення даних?</p>
+<p style="word-spacing: 1.1px;">Який компонент зручний для введення/ви-ведення двовимірних масивів?</p>
+<p style="word-spacing: 1.1px;">Як нумеруються стовпці й рядки об'єкта StringGrid?</p>
+<p style="word-spacing: 1.1px;">Яке призначення мають властивості ColCount і RowCount?</p>
+<p style="word-spacing: 1.1px;">Назвіть основні властивості об'єкта StringGrid.</p>
+<p style="word-spacing: 1.1px;">Для чого призначено вікно редактора об'єкта StringGrid?</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">У школі 3 дев'яті класи. Від кожного класу в кросі на 1 км беруть участь по 4 учні. Використайте компонент TStringGrid для введення результатів забігу. Створіть відповідний двовимірний масив. Результати учнів кожного класу відобразіть за допомогою компонентів TListBox.</p>
+<p style="word-spacing: 1.1px;">Чотири учасники гри, починаючи з першого, по черзі кидають 5 разів гральний кубик із цифрами від 1 до 6. Зареєструйте результати кидання кубика у масиві й виведіть результати за допомогою компонента TStringGrid.</p>
+<p style="word-spacing: 1.1px;">Відомі результати зовнішнього незалежного оцінювання п'яти учнів з української мови,&nbsp;історії, математики і фізики. За допомогою&nbsp;функції InputBox() уведіть ці результати&nbsp;в масив і виведіть його значення за допомогою функції ShowMessage().</p>
+<p style="word-spacing: 1.1px;">У табл. 2 наведено 4 кращі команди чемпіонату України з футболу з 2011 до 2015 року. Використайте 2 компоненти TStringGrid для&nbsp;створення відповідного масиву та виведення його значень.</p>
+<p style="word-spacing: 1.1px;">Таблиця 2</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-325.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;"><strong>11.3. Класичні алгоритми опрацювання значень&nbsp;елементів двовимірних масивів</strong></p>
+<p style="word-spacing: 1.1px;">Пригадайте, які компоненти вже використовувалися для введення і виведення значень елементів масиву. Які з них доцільно&nbsp;застосовувати для двовимірних масивів? Які алгоритми, на ваш&nbsp;погляд, можна назвати класичними для двовимірних масивів?</p>
+<p style="word-spacing: 1.1px;">До класичних алгоритмів опрацювання двовимірних масивів можна віднести обчислення загальної суми значень елементів масиву, суми значень елементів головної і побічної діагоналей, суми значень елементів кожного рядка і кожного стовпця.</p>
+<p style="word-spacing: 1.1px;">&bull; Обчислення загальної суми значень елементів двовимірного масиву.</p>
+<p style="word-spacing: 1.1px;">Сутність алгоритму обчислення загальної суми значень елементів двовимірного масиву розглянемо на прикладі такого масиву:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-326.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Існують різні підходи до обчислення суми значень елементів масиву. Зокрема, можна знайти суму чисел у кожному рядку,&nbsp;а потім додати значення отриманих сум або обчислити суму&nbsp;чисел у кожному стовпці, а потім додати значення отриманих сум. Однак частіше застосовується метод &laquo;накопичення&raquo;,&nbsp;сутність якого полягає в тому, що на початку значення суми&nbsp;дорівнює нулю. Потім до цього значення додається перший&nbsp;елемент першого рядка, до отриманої суми &mdash; другий елемент&nbsp;того самого рядка і так далі до останнього елемента цього рядка. До суми чисел першого рядка додається перший елемент&nbsp;другого рядка, потім другий елемент другого рядка і так далі&nbsp;до останнього елемента.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-327.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Математик, професор Дорт-мундського коледжу (США) Джон (Янош) Кемені (на фото&nbsp;праворуч) разом із Томасом&nbsp;Курцем розробив мову програмування ВАSIС та мережеву&nbsp;систему користування декількома комп'ютерами одночасно (англ. timesharing). Є одним&nbsp;із піонерів викладання основ&nbsp;програмування.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-328.jpg" alt="" /><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-329.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 1. Блок-схема алгоритму обчислення суми значень елементів&nbsp;двовимірного масиву</p>
+<p style="word-spacing: 1.1px;">У блок-схемі використано такі змінні: і, j &mdash; лічильники циклів (і &mdash; лічильник рядків, j &mdash; лічильник стовпців), m &mdash;&nbsp;кількість рядків у масиві, n &mdash; кількість стовпців у масиві,&nbsp;s &mdash; сума значень елементів масиву.</p>
+<p style="word-spacing: 1.1px;">За допомогою внутрішнього циклу обчислюється сума чисел у рядку, а за допомогою зовнішнього циклу &mdash; перехід до чергового рядка. Використання вкладених циклів характерне для більшості програм опрацювання двовимірних масивів.</p>
+<p style="word-spacing: 1.1px;">Приклад 3. Розмістимо на формі компонент TLabel і компонент TButton. Для об&rsquo;єкта Buttonl обираємо подію &#111;nclick. Програму,&nbsp;що реалізує алгоритм обчислення загальної&nbsp;суми значень елементів масиву, зображено&nbsp;на рис. 2.</p>
+<p style="word-spacing: 1.1px;">Після успішної компіляції програми запустимо її на виконання й уведемо такі значення:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-330.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Результат виконання програми подано на рис. 3.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-331.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 2. Програма обчислення суми значень елементів двовимірного масиву</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-332.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 3. Результат обчислення суми значень елементів двовимірного масиву</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-333.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&bull; Обчислення суми значень елементів масиву, розташованих на головній і побічній діагоналях.</p>
+<p style="word-spacing: 1.1px;">Термін &laquo;головна діагональ&raquo; зазвичай використовується у масивах, у яких кількість рядків і стовпців однакова. Головна діагональ &mdash; це діагональ, що з&rsquo;єднує лівий верхній&nbsp;елемент масиву з правим нижнім. Якщо, приміром, масив&nbsp;має розмірність 4 х 4, то на головній діагоналі розташовані&nbsp;елементи a[1,1], a[2,2], a[3,3] і a[4,4] (приклад 4).</p>
+<p style="word-spacing: 1.1px;">Побічна діагональ &mdash; це діагональ, що з&rsquo;єднує правий верхній елемент масиву з лівим нижнім. На цій діагоналі&nbsp;для наведеного вище масиву розташовані елементи a[1,4],&nbsp;a[2,3], a[3,2], a[4,1].</p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм обчислення значень елементів, розташованих на головній діагоналі. Позначимо змінною&nbsp;s значення суми елементів, змінною n &mdash; кількість рядків&nbsp;і стовпців у масиві, змінною i &mdash; поточний номер рядка&nbsp;(стовпця), mas[i, і] &mdash; значення елемента масиву на головній&nbsp;діагоналі. З урахуванням таких позначень алгоритм обчислення суми значень цих елементів, можна подати так:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-334.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 5. Двовимірний масив розмірністю п х п набуває значень членів арифметичної прогресії, перший член якої позначимо змінною а,&nbsp;різницю прогресії &mdash; змінною d. На рис. 4&nbsp;зображено програму створення двовимірного</p>
+<p style="word-spacing: 1.1px;">масиву зі значень членів цієї прогресії й обчислення суми значень елементів головної діагоналі.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми наведено на рис. 5.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-335.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 4. Програма обчислення значень елементів головної діагоналі масиву</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-336.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм обчислення значень елементів побічної діагоналі масиву розмірністю n х n. Використаємо ті самі позначення змінних, що й у попередньому&nbsp;алгоритмі.</p>
+<p style="word-spacing: 1.1px;">Цей алгоритм можна подати так.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-337.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 6. Елементи масиву розмірністю 5x5 набувають значень випадкових цілих&nbsp;чисел. Для виведення цього масиву використаємо компонент TStringGrid. Для виведення&nbsp;суми значень побічної діагоналі &mdash; компонент TLabel. Для об&rsquo;єкта Buttonl обрано подію&nbsp;&#111;nclick. Для об&rsquo;єкта StringGridl встановлено такі</p>
+<p style="word-spacing: 1.1px;">значення основних властивостей: ColCount &mdash; 5, RowCount &mdash; 5, FixedCols &mdash; 0, FixedRows &mdash; 0.&nbsp;Програму обчислення суми чисел побічної діагоналі зображено на рис. 6.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми наведено на рис. 7.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-338.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 6. Програма обчислення значень елементів побічної діагоналі</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-339.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Обчислення суми значень елементів кожного рядка масиву.</p>
+<p style="word-spacing: 1.1px;">Алгоритм обчислення суми значень елементів в одному рядку двовимірного масиву принципово не відрізняється від&nbsp;алгоритму обчислення суми значень елементів одновимірно-го масиву. Тому задача обчислення суми значень елементів&nbsp;кожного рядка двовимірного масиву зводиться до обчислення&nbsp;суми значень елементів n одновимірних масивів. У процесі</p>
+<p style="word-spacing: 1.1px;">розробки алгоритму використаємо такі змінні: n &mdash; кількість рядків, m &mdash; кількість стовпців, і &mdash; поточний номер рядка,&nbsp;j &mdash; поточний номер стовпця, s &mdash; сума значень елементів&nbsp;рядка. Цей алгоритм можна подати так.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-340.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 7. Програму реалізації алгоритму зображено на рис. 8. Для введення масиву використано функцію InputBoxO, для виведення масиву &mdash; компонент TStringGrid,&nbsp;для виведення суми значень елементів рядків &mdash; компонент TListBox, для виконання програми &mdash; компонент TButton з подією &#111;nclick.&nbsp;Для компонентів, розташованих на формі,</p>
+<p style="word-spacing: 1.1px;">використано значення властивостей, аналогічних тим, які використовувалися у попередніх прикладах (звертаємо увагу на те, що для об&rsquo;єкта StringGridl значення властивостей&nbsp;FixedCols і FixedRows слід встановити такими,&nbsp;що дорівнюють нулю).</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми наведено на рис. 9.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-341.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 8. Програма обчислення суми значень рядків двовимірного масиву</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-342.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Гарний програміст у 10 разів продуктивніший, ніж середній,&nbsp;а відмінний &mdash; у 20-100 разів&nbsp;продуктивніший, ніж середній.</p>
+<p style="word-spacing: 1.1px;">&bull; Обчислення кількості заданих значень у масиві Алгоритм обчислення кількості заданих значень у двовимірному масиві аналогічний алгоритму обчислення таких значень у одновимірному масиві. Різниця полягає лише&nbsp;в тому, що після завершення аналізу одного рядка необхідно&nbsp;здійснити перехід на наступний рядок. Розглянемо алгоритм&nbsp;обчислення кількості чисел, менших від значення с, у масиві mas[n, m]. Кількість таких чисел присвоюється змінній k.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-343.jpg" alt="" /></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний мозок -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/></div>
+		<div> <p style="word-spacing: 1.1px;">Приклад 8. Програму реалізації алгоритму зображено на рис. 10. Масив формується випадковими числами з діапазону від 0 до 20.&nbsp;Значення елементів цього масиву виведено&nbsp;в клітинки об&rsquo;єкта StringGridl, а результат &mdash;&nbsp;в поле об&rsquo;єкта Labell.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми зображено на рис. 11. Зверніть увагу на те, що</p>
+<p style="word-spacing: 1.1px;">у верхньому рядку і лівому стовпці записано номери рядків і номери стовпців. Це означає, що кількість стовпців і рядків у об&rsquo;єкті&nbsp;StringGridl на одиницю більша за кількість&nbsp;рядків і стовпців у масиві. Тому властивість&nbsp;ColCount повинна мати значення 5, властивість RowCount &mdash; значення 4, а властивості&nbsp;FixedCols і FixedRows &mdash; значення 1.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-344.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 10. Програма обчислення кількості заданих значень у масиві</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-345.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">&bull; Пошук мінімального і максимального значень у двовимірному масиві</p>
+<p style="word-spacing: 1.1px;">Сутність алгоритму пошуку максимального (мінімального) значення елемента двовимірного масиву полягає в тому, що спочатку максимальним (мінімальним) обирається значення елемента першого рядка першого стовпця. Це максимальне (мінімальне) значення послідовно порівнюється зі&nbsp;значеннями всіх елементів масиву. Кожного разу, коли поточне значення елемента більше за максимальне (менше від&nbsp;мінімального), поточне присвоюється максимальному (мінімальному). Процес порівняння елементів продовжується до&nbsp;останнього елемента масиву.</p>
+<p style="word-spacing: 1.1px;">Розглянемо алгоритм пошуку максимального і мінімального значень елемента в масиві mas[n, m]. Значення максимального елемента зберігається у змінній max, а мінімального &mdash; у змінній min.</p>
+<p style="word-spacing: 1.1px;">Поганий програміст не тільки не виконує свою роботу, але&nbsp;й створює проблеми, які доводиться вирішувати іншим.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-346.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Приклад 9. На рис. 12 зображено програму реалізації алгоритму. У програмі за допомогою клавіатури у 3 рядки і 4 стовпці об&rsquo;єкта StringGridl уводяться цілі числа,&nbsp;з яких створюється масив mas[3, 4]. Значення</p>
+<p style="word-spacing: 1.1px;">максимального і мінімального елементів виводиться за допомогою двох компонентів TEdit.</p>
+<p style="word-spacing: 1.1px;">Результат виконання програми наведено на рис. 13.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-347.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Рис. 12. Програма пошуку максимального і мінімального елементів</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-348.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Запитання для перевірки знань</p>
+<p style="word-spacing: 1.1px;">Що називають головною діагоналлю двовимірного масиву?</p>
+<p style="word-spacing: 1.1px;">Накресліть блок-схему алгоритму обчислення загальної суми значень елементів двовимірного масиву.</p>
+<p style="word-spacing: 1.1px;">Поясніть сутність алгоритму обчислення суми значень рядків двовимірного масиву.&nbsp;Наведіть алгоритм обчислення суми значень елементів головної діагоналі двовимірного масиву.</p>
+<p style="word-spacing: 1.1px;">Завдання для самостійного виконання</p>
+<p style="word-spacing: 1.1px;">Із клавіатури за допомогою функції Input-Box() у масив розмірністю n х m уводять додатні і від'ємні числа. Розробіть алгоритм і програму заміни додатних чисел одиницею, а від'ємних &mdash; нулем. Виведіть новий&nbsp;масив у поле об'єкта StringGridl.</p>
+<p style="word-spacing: 1.1px;">У таблиці наведено середні ціни реалізації продукції сільського господарства в окремих регіонах України у 2015 році (грн</p>
+<p style="word-spacing: 1.1px;">за тонну). Створіть масив із наведених даних. Розробіть алгоритм і програму обчислення середньої ціни продукції за цими регіонами.</p>
+<p style="word-spacing: 1.1px;">Протягом п'яти днів від чотирьох господарств району на елеватор надходить зерно нового врожаю. Розробіть алгоритм і програму визначення, з якого господарства надійшло найбільше зернових.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-349.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Практична робота № 21</p>
+<p style="word-spacing: 1.1px;">Тема. Розробка алгоритмів з двовимірними масивами і їх реалізація у вигляді програм. Завдання: розробити алгоритм і програму для реалізації завдання одного з наведених варіантів.&nbsp;Обладнання: комп'ютер із встановленою програмою &mdash; середовищем програмування.</p>
+<p style="word-spacing: 1.1px;">Варіант 1. Елементи двовимірного масиву розмірністю n х m набувають випадкових значень з діапазону від 0 до 20. Розробіть алгоритм і програму обчислення кількості чисел&nbsp;у масиві, менших від 15.</p>
+<p style="word-spacing: 1.1px;">Завдання бажано виконувати у такій послідовності.</p>
+<p style="word-spacing: 1.1px;">1. Розробити алгоритм реалізації завдання.</p>
+<p style="word-spacing: 1.1px;">2. Розмістити на формі компоненти: TButton,&nbsp;TLabel і TStringGrid.</p>
+<p style="word-spacing: 1.1px;">3. Установити необхідні властивості компонентів.</p>
+<p style="word-spacing: 1.1px;">4. У програмі передбачити:</p>
+<p style="word-spacing: 1.1px;">&bull; виведення значень елементів масиву&nbsp;в клітинки об&rsquo;єкта StringGrid1;</p>
+<p style="word-spacing: 1.1px;">&bull; для виведення результату використати&nbsp;об&rsquo;єкт Label1.</p>
+<p style="word-spacing: 1.1px;">Варіант 2. Відомі рейтинги восьми марок 3-річних автомобілів за два роки:</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-350.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Із таблиці видно, що найвищий рейтинг як у 2015, так і у 2016 роках має марка автомобіля Lexus. Розробіть алгоритм і програму визначення середнього рейтингу кожної марки&nbsp;за два роки і розмістіть назви марок у порядку зменшення їх рейтингу.</p>
+<p style="word-spacing: 1.1px;">Після розробки алгоритму бажано дотримуватися такого порядку виконання роботи.</p>
+<p style="word-spacing: 1.1px;">1. Із клавіатури за допомогою функції InputBox() увести дані таблиці в клітинки&nbsp;об&rsquo;єкта StringGrid1.</p>
+<p style="word-spacing: 1.1px;">2. На основі даних, що містяться в об&rsquo;єкті&nbsp;StringGrid1, створити двовимірний масив&nbsp;рейтингів.</p>
+<p style="word-spacing: 1.1px;">3. Також на основі даних об&rsquo;єкта StringGrid1&nbsp;створити одновимірний масив марок автомобілів.</p>
+<p style="word-spacing: 1.1px;">4. Опрацювати двовимірний масив, а саме:&nbsp;обчислити середнє значення рейтингів,&nbsp;із яких створити одновимірний масив за&nbsp;два роки.</p>
+<p style="word-spacing: 1.1px;">5. Упорядкувати одновимірний масив рейтингів у порядку їх зростання, відповідно до яких розмістити у масиві марки&nbsp;автомобілів.</p>
+<p style="word-spacing: 1.1px;">6. Вивести масив назв марок автомобілів,&nbsp;наприклад, у клітинки об&rsquo;єкта ListBox1.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи за комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Виберіть один із варіантів завдань за вказівкою вчителя або самостійно.</p>
+<p style="word-spacing: 1.1px;">(У разі успішного виконання одного варіанта, виконайте іншій).</p>
+<p style="word-spacing: 1.1px;">Проаналізуйте умову задачі, побудуйте інформаційну модель.</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм і реалізуйте його у середовищі програмування за наведеним планом.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму. Проаналізуйте отриманий результат.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: які компоненти можуть бути використані у цій роботі.</p>
+<p style="word-spacing: 1.1px;">Практична робота № 22</p>
+<p style="word-spacing: 1.1px;">Тема. Класичні алгоритми для роботи з двовимірними масивами, їх реалізація у вигляді програм.</p>
+<p style="word-spacing: 1.1px;">Завдання: розробити алгоритм і програму для реалізації завдання одного з наведених варіантів. Обладнання: комп'ютер із встановленою програмою &mdash; середовищем програмування.</p>
+<p style="word-spacing: 1.1px;">Варіант 1. У шаховому турнірі брали участь 6 шахістів. Нижче у таблиці наведено результати турніру.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-351.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Розробити алгоритм і програму визначення прізвищ учасників, які виконали норматив&nbsp;першого розряду (для присвоювання першого&nbsp;розряду потрібно набрати не менше 50 % від&nbsp;максимально можливої кількості очок).</p>
+<p style="word-spacing: 1.1px;">Доцільно дотримуватися такого порядку виконання роботи.</p>
+<p style="word-spacing: 1.1px;">1. Розробити алгоритм розв&rsquo;язування.</p>
+<p style="word-spacing: 1.1px;">2. Розмістити на формі компоненти:&nbsp;TButton, TStringGrid, TMemo. Вибрати для&nbsp;об&rsquo;єкта Button1 подію &#111;nclick.</p>
+<p style="word-spacing: 1.1px;">3. Розробити програму реалізації алгоритму. У програмі слід передбачити:</p>
+<p style="word-spacing: 1.1px;">&bull; уведення за допомогою функції InputBox()&nbsp;у поле об&rsquo;єкта StringGrid1 результатів турніру;</p>
+<p style="word-spacing: 1.1px;">&bull; створення на основі даних об&rsquo;єкта&nbsp;StringGrid1 двовимірного масиву результатів учасників;</p>
+<p style="word-spacing: 1.1px;">&bull; обчислення результатів кожного учасника і створення на основі цих результатів&nbsp;одновимірного масиву;</p>
+<p style="word-spacing: 1.1px;">&bull; пошук у створеному одновимірному масиві значень, рівних або більших за 3;</p>
+<p style="word-spacing: 1.1px;">&bull; виведення у поле об&rsquo;єкта Memo1 прізвищ&nbsp;учасників, результати яких відповідають нормі першого розряду.</p>
+<p style="word-spacing: 1.1px;">Варіант 2. У таблиці наведено результати оцінювання учнів з окремих предметів.</p>
+<p style="word-spacing: 1.1px;"><img style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="uploads/informatika-pohlybleno-rudenko/informatika-pohlybleno-rudenko-352.jpg" alt="" /></p>
+<p style="word-spacing: 1.1px;">Визначте, з якого предмета учні мають найвищій середній бал успішності. Роботу рекомендується виконувати у такій послідовності.</p>
+<p style="word-spacing: 1.1px;">1. Розробити алгоритм розв&rsquo;язування.</p>
+<p style="word-spacing: 1.1px;">2. Розмістити на формі компоненти: TLabel,&nbsp;TButton, TStringGrid.</p>
+<p style="word-spacing: 1.1px;">3. Вибрати для об&rsquo;єкта Button1 подію &#111;nclick.</p>
+<p style="word-spacing: 1.1px;">4. Розробити програму реалізації алгоритму, у якій виконати такі дії:</p>
+<p style="word-spacing: 1.1px;">&bull; увести з клавіатури за допомогою функції InputBox() у клітинки об&rsquo;єкта StringGrid1&nbsp;дані, наведені в таблиці;</p>
+<p style="word-spacing: 1.1px;">&bull; створити двовимірний масив результатів&nbsp;оцінювання учнів;</p>
+<p style="word-spacing: 1.1px;">&bull; обчислити середнє значення кожного&nbsp;стовпця двовимірного масиву і з обчислених значень створити одновимірний</p>
+<p style="word-spacing: 1.1px;">масив;</p>
+<p style="word-spacing: 1.1px;">&bull; знайти максимальне значення однови-мірного масиву;</p>
+<p style="word-spacing: 1.1px;">&bull; вивести за допомогою об&rsquo;єкта Label1 відповідну назву предмета.</p>
+<p style="word-spacing: 1.1px;">Хід роботи</p>
+<p style="word-spacing: 1.1px;">Під час роботи за комп&rsquo;ютером дотримуйтесь правил безпеки.</p>
+<p style="word-spacing: 1.1px;">Виберіть один із варіантів завдань за вказівкою вчителя або самостійно.</p>
+<p style="word-spacing: 1.1px;">(Можливе виконання завдання командою з двох-трьох учнів).</p>
+<p style="word-spacing: 1.1px;">Проаналізуйте умову задачі, побудуйте інформаційну модель.</p>
+<p style="word-spacing: 1.1px;">Розробіть алгоритм і реалізуйте його в середовищі програмування за наведеними вказівками.</p>
+<p style="word-spacing: 1.1px;">Виконайте програму. Проаналізуйте отриманий результат.</p>
+<p style="word-spacing: 1.1px;">Зробіть висновок: чи можна виконати цю роботу без операторів циклу.</p>
+<p style="word-spacing: 1.1px;">&nbsp;</p>
+<p style="word-spacing: 1.1px;"><em><span style="font-size: large;">Це матеріал з підручника&nbsp;<a href="761-pdruchnik-nformatika-9-klas-rudenko-chitati-onlayn-poglibleniy-rven.html">Інформатика 9 клас Руденко (поглиблений рівень)</a></span></em></p>
+<p><em>&nbsp;</em></p> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок нетборд -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:580px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6118813923"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/></div>
+		<div class="clr"></div>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+	</div>
+	<div class="storenumber"></div>
+	<div class="mlink">
+		<span class="argback"><a href="javascript:history.go(-1)"><b>Назад</b></a></span>
+		
+	</div>
+	<div class="linesbg related">
+		<span>Читайте також:</span> 
+		<ul class="reset">
+			<li><a href="683-opracyuvannya-elementv-masivu.html">Опрацювання елементів масиву</a></li><li><a href="679-opracyuvannya-dvovimrnih-masivv-danih.html">Опрацювання двовимірних масивів даних</a></li><li><a href="678-dvovimrniy-masiv-danih.html">Двовимірний масив даних</a></li><li><a href="675-vdobrazhennya-danih-u-tablichny-form.html">Відображення даних у табличній формі</a></li><li><a href="672-odnovimrniy-masiv-danih.html">Одновимірний масив даних</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4927600309"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+
+</div>
+					</div>
+					<div id="sidebar" class="rcol">
+						<noindex>
+<div id="rightmenu" class="block">
+	<div class="dtop"><h4 class="btl">Категорії</h4></div>
+	<ul id="slidemenu" class="reset">
+		<li><a href="algebra/index.html">Алгебра</a></li>
+		<li><a href="english/index.html">Англійська мова	</a></li>
+		<li><a href="biology/index.html">Біологія</a></li>	
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ssulki mozok -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="5514507834"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<li><a href="world-history/index.html">Всесвітня історія</a></li>		
+		<li><a href="geography/index.html">Географія</a></li>
+		<li><a href="geometry/index.html">Геометрія</a></li>
+		<li><a href="informatika/index.html">Інформатика</a></li>
+		<li><a href="ukraine-history/index.html">Історія України</a></li>
+		<li><a href="mystetstvo/index.html">Мистецтво</a></li>		
+		<li><a href="deutsch/index.html">Німецька мова</a></li>
+		<li><a href="health/index.html">Основи здоров'я</a></li>
+		<li><a href="russian/index.html">Російська мова</a></li>
+		<li><a href="ukr-mova/index.html">Українська мова</a></li>
+		<li><a href="ukrlit/index.html">Українська література</a></li>
+		<li><a href="pravo/index.html">Правознавство</a></li>	
+		<li><a href="svitlit/index.html">Світова література</a></li>
+		<li><a href="trudove-navchannia/index.html">Трудове навчання</a></li>
+		<li><a href="himiya/index.html">Хімія</a></li>		
+		<li><a href="fizyka/index.html">Фізика</a></li>	
+		<li><a href="pidruchniki/index.html">Підручники</a></li>	
+		<li><a href="polish-textbooks/index.html">Podręczniki w języku polskim</a></li>	
+		<li><a href="manuale-in-romana/index.html">Manuale in romana</a></li>			
+		<li><a href="index.php%3Fdo=search&amp;mode=advanced.html">Пошук</a></li>
+	</ul>
+</div>
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- мозок сайдбарчик -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:240px;height:400px"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="4396993558"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script></center><br/><br/>
+<div id="aside1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивний -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2773044261387404"
+     data-ad-slot="6940643294"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<style>
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+</style>
+<script>
+(function(){
+var a = document.querySelector('#aside1'), b = null;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false); 
+function Ascroll() {
+  if (b == null) { 
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) { 
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild); 
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) { 
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px'; 
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  if (a.getBoundingClientRect().top <= 0) { 
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script>
+</noindex>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+<div class="wwide footbg">
+	<div class="wrapper">
+		<div class="container">
+			<div class="darkbg"><div id="footbox">
+
+			<div class="clr"></div>
+				<span class="thide ribbon">^</span>
+			</div></div>
+			<div id="footer">
+				<h2><a class="thide" href="index.php.html" title="mozok.click">mozok.click</a></h2>				<div style="float:left; margin-top:25px;"><!--LiveInternet counter--><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click' "+"target=_blank><img src='https://counter.yadro.ru/hit?t50.13;r&quot;+escape(document.referrer)+((typeof(screen)==&quot;undefined&quot;)?&quot;&quot;:&quot;;s&quot;+screen.width+&quot;*&quot;+screen.height+&quot;*&quot;+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+&quot;;u&quot;+escape(document.URL)+&quot;;&quot;+Math.random()+&quot;' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet--></div>
+				<div class="copyright">&nbsp;&nbsp;&nbsp; Copyright &copy; 2017-2018 *Всі матеріали взяті з відкритих джерел та належать їхнім власникам* <a href="index.html">mozok.click</a> 
+				</div>
+
+			</div>
+			<div class="shadow">&nbsp;</div>
+		</div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35722404-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->
